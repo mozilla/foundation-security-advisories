@@ -1,0 +1,2 @@
+pathlib==1.0
+pyquery==1.2.8
