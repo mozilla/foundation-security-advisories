@@ -4,7 +4,7 @@ Canonical source for Mozilla Foundation Security Advisories. http://www.mozilla.
 
 ## Import Script
 
-`import-html.py` is a script that will convert the Mozilla Foundation Security Announcement HTML (PHP) files from [the SVN repository](http://svn.mozilla.org/projects/mozilla.org/trunk/security/) into markdown snippets suitable for inclusion in [bedrock](https://github.com/mozilla/bedrock/) (the new backend for www.mozilla.org).
+`import_html.py` is a script that will convert the Mozilla Foundation Security Announcement HTML (PHP) files from [the SVN repository](http://svn.mozilla.org/projects/mozilla.org/trunk/security/) into markdown snippets suitable for inclusion in [bedrock](https://github.com/mozilla/bedrock/) (the new backend for www.mozilla.org).
 
 ### Usage
 
@@ -19,8 +19,8 @@ Then point the script at the directory the above command created:
 Full usage options are available in the help:
 
 ```
-$ ./import-html.py -h
-usage: import-html.py [-h] [-o OUT] DIR
+$ ./import_html.py -h
+usage: import_html.py [-h] [-o OUT] DIR
 
 Import and convert security HTML
 
