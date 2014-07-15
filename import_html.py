@@ -21,9 +21,8 @@ from pyquery import PyQuery as pq
 
 
 BASE_PATH = Path(__file__).resolve().parent
-TITLE_RE = re.compile('\$html_title = [\'"](.*)[\'"];')
+TITLE_RE = re.compile('\$html_title = [\'"]MFSA (\d{4}-\d{2,4}):?\s+(.*?)[\'"];')
 DIE_PHP = re.compile(r'<\?.*?\?>', re.DOTALL)
-MFSA_ID_RE = re.compile(r'\d{4}-\d{2,4}')
 
 config = {}
 
@@ -35,7 +34,7 @@ def die_php_die(file_path):
         contents = fh.read()
 
     m = TITLE_RE.search(contents)
-    return m.group(1), DIE_PHP.sub('', contents)
+    return m.group(1), m.group(2), DIE_PHP.sub('', contents)
 
 
 def extract_metadata(doc):
@@ -67,11 +66,7 @@ def extract_metadata(doc):
                     metadata[curr_key][-1] += ' '
                 metadata[curr_key][-1] += etree.tostring(el)
 
-    if doc.eq(0).is_('h1'):
-        doc = pq(doc[2:])
-    else:
-        doc = pq(doc[1:])
-    return metadata, doc
+    return metadata, pq(doc[doc.index(doc('p')[0]) + 1:])
 
 
 def slugify(value):
@@ -110,7 +105,8 @@ def process_announce():
     announce_path = config['input_path'] / 'announce'
     counter = 0
     for announcement in announce_path.glob('*/mfsa*.html'):
-        title, html = die_php_die(announcement)
+        id, title, html = die_php_die(announcement)
+        title = title.replace(r"\'", "'")
         doc = pq(html)
         if doc('#main-content'):
             # it's the old style
@@ -120,8 +116,9 @@ def process_announce():
             doc = pq(doc.children()[2:])
 
         metadata, doc = extract_metadata(doc)
-        metadata['page_title'] = [title]
-        metadata['mfsa_id'] = [MFSA_ID_RE.search(title).group(0)]
+        if 'title' not in metadata:
+            metadata['title'] = [title]
+        metadata['mfsa_id'] = [id]
         write_file(announcement, metadata, unicode(doc))
         counter += 1
 
