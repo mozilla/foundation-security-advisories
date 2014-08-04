@@ -125,19 +125,12 @@ def process_announce():
     print '\nWrote {} MFSAs.'.format(counter)
 
 
-def process_vulnerability():
-    # Not sure these can or should be automatically converted
-    vuln_path = config['input_path'] / 'known-vulnerabilities'
-    for vuln in vuln_path.glob('*.html'):
-        print vuln
-
-
 def main():
     parser = argparse.ArgumentParser(description='Import and convert security HTML')
     parser.add_argument('dir', metavar='DIR',
                         help='Path to "security" directory from mozilla.org SVN.')
-    parser.add_argument('-o', metavar='OUT', default=str(BASE_PATH / 'security'),
-                        help='Output directory (default: ./security)')
+    parser.add_argument('-o', metavar='OUT', default=str(BASE_PATH),
+                        help='Output directory (default: script dir)')
     args = parser.parse_args()
     config['input_path'] = Path(args.dir).resolve()
     config['output_path'] = Path(args.o)
@@ -148,7 +141,6 @@ def main():
 
     try:
         process_announce()
-        # process_vulnerability()
     except Exception as e:
         print 'ERROR: {}'.format(e)
         return 1
