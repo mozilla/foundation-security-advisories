@@ -5,12 +5,13 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 """
-Import security advisories and known-vulnerabilities from
-old HTML/PHP files and convert to snippets of Markdown.
+Import security advisories from old HTML/PHP files
+and convert to snippets of Markdown.
 """
 from __future__ import unicode_literals
 
 import argparse
+from collections import defaultdict
 import re
 import sys
 from cgi import escape
@@ -18,11 +19,17 @@ from xml.etree import ElementTree as etree
 
 from pathlib import Path
 from pyquery import PyQuery as pq
+from yaml import dump, safe_dump
 
 
 BASE_PATH = Path(__file__).resolve().parent
 TITLE_RE = re.compile('\$html_title = [\'"]MFSA (\d{4}-\d{2,4}):?\s+(.*?)[\'"];')
 DIE_PHP = re.compile(r'<\?.*?\?>', re.DOTALL)
+META_KEY_MAP = {
+    'data': 'announced',
+    'severity': 'impact',
+}
+ALL_DATES = {}
 
 config = {}
 
@@ -66,6 +73,32 @@ def extract_metadata(doc):
                     metadata[curr_key][-1] += ' '
                 metadata[curr_key][-1] += etree.tostring(el)
 
+    # reduce all but specific keys to single entries
+    for k, v in metadata.iteritems():
+        if k not in ('fixed_in',) and len(v) == 1:
+            metadata[k] = v[0]
+
+    products = {}
+    new_fixed_in = []
+    for product in metadata['fixed_in']:
+        if ',' in product:
+            product_list = [prod.strip() for prod in product.split(',')]
+        else:
+            product_list = [product]
+
+        new_fixed_in.extend(product_list)
+        for prod_vers in product_list:
+            prod_name = prod_vers.rsplit(None, 1)[0]
+            products[prod_name] = 1
+
+    metadata['fixed_in'] = new_fixed_in
+    metadata['products'] = products.keys()
+
+    # fix some keys
+    for old_key, new_key in META_KEY_MAP.items():
+        if old_key in metadata:
+            metadata[new_key] = metadata.pop(old_key)
+
     return metadata, pq(doc[doc.index(doc('p')[0]) + 1:])
 
 
@@ -76,16 +109,8 @@ def slugify(value):
 
 
 def format_metadata(metadata):
-    lines = []
-    for k in sorted(metadata.keys()):
-        v = metadata[k]
-        if v:
-            lines.append('{}: {}'.format(k, v.pop()))
-            for extra in v:
-                lines.append('{0:>{width}}'.format(extra, width=max(len(k), 4) + 2 + len(extra)))
-        else:
-            lines.append(k)
-    return '\n'.join(lines)
+    yaml = safe_dump(metadata, default_flow_style=False)
+    return '---\n{0}---'.format(yaml)
 
 
 def write_file(in_file_path, metadata, contents):
@@ -95,10 +120,28 @@ def write_file(in_file_path, metadata, contents):
         out_file_path.parent.mkdir(parents=True)
     except OSError:
         pass
+
     with out_file_path.open('w') as fh:
         fh.write('\n\n'.join([format_metadata(metadata), contents]))
         sys.stdout.write('.')
         sys.stdout.flush()
+
+
+def get_all_announce_dates():
+    date_re = re.compile('<h3>(.*)</h3>', flags=re.IGNORECASE)
+    id_re = re.compile('MFSA\s+([0-9-]+)')
+    file_path = config['input_path'] / 'announce' / 'index.html'
+    current_date = None
+    with file_path.open() as fh:
+        for line in fh:
+            match = date_re.search(line)
+            if match:
+                current_date = match.group(1).strip()
+                continue
+
+            match = id_re.search(line)
+            if match:
+                ALL_DATES[match.group(1)] = current_date
 
 
 def process_announce():
@@ -117,8 +160,10 @@ def process_announce():
 
         metadata, doc = extract_metadata(doc)
         if 'title' not in metadata:
-            metadata['title'] = [title]
-        metadata['mfsa_id'] = [id]
+            metadata['title'] = title
+        metadata['mfsa_id'] = id
+        if 'announced' not in metadata:
+            metadata['announced'] = ALL_DATES[id]
         write_file(announcement, metadata, unicode(doc))
         counter += 1
 
@@ -139,10 +184,13 @@ def main():
     except OSError:
         pass
 
+    get_all_announce_dates()
+
     try:
         process_announce()
     except Exception as e:
         print 'ERROR: {}'.format(e)
+        raise
         return 1
 
     print 'Thanks.'
