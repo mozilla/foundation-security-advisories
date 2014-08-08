@@ -26,7 +26,7 @@ BASE_PATH = Path(__file__).resolve().parent
 TITLE_RE = re.compile('\$html_title = [\'"]MFSA (\d{4}-\d{2,4}):?\s+(.*?)[\'"];')
 DIE_PHP = re.compile(r'<\?.*?\?>', re.DOTALL)
 META_KEY_MAP = {
-    'data': 'announced',
+    'date': 'announced',
     'severity': 'impact',
 }
 ALL_DATES = {}
