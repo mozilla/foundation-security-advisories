@@ -73,12 +73,17 @@ def extract_metadata(doc):
                     metadata[curr_key][-1] += ' '
                 metadata[curr_key][-1] += etree.tostring(el)
 
+    # we'll use "fixed_in" for products lists.
+    try:
+        del metadata['products']
+    except KeyError:
+        pass
+
     # reduce all but specific keys to single entries
     for k, v in metadata.iteritems():
-        if k not in ('fixed_in',) and len(v) == 1:
+        if k != 'fixed_in' and len(v) == 1:
             metadata[k] = v[0]
 
-    products = {}
     new_fixed_in = []
     for product in metadata['fixed_in']:
         if ',' in product:
@@ -87,12 +92,8 @@ def extract_metadata(doc):
             product_list = [product]
 
         new_fixed_in.extend(product_list)
-        for prod_vers in product_list:
-            prod_name = prod_vers.rsplit(None, 1)[0]
-            products[prod_name] = 1
 
     metadata['fixed_in'] = new_fixed_in
-    metadata['products'] = products.keys()
 
     # fix some keys
     for old_key, new_key in META_KEY_MAP.items():
