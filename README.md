@@ -8,7 +8,7 @@ Announcements are written in [Markdown](http://daringfireball.net/projects/markd
 be named in the pattern `announce/YYYY/mfsaYYYY-XX.md` where `YYYY` is the 4 digit year, and `XX` is
 the next in the sequence. Once the file is created some data about the file should be added to the
 [Front Matter](http://jekyllrb.com/docs/frontmatter/). Front Matter is [YAML](http://yaml.org/spec/1.1/)
-encoded data surrounded by lines containing 3 dashes. Then the Markdown content can be added below the 
+encoded data surrounded by lines consisting of 3 dashes. Then the Markdown content can be added below the 
 Front Matter. For example:
 
 ```markdown
@@ -20,7 +20,6 @@ fixed_in:
 - Thunderbird 24.5
 - Seamonkey 2.26
 impact: High
-mfsa_id: 2014-38
 reporter: Abhishek Arya
 title: Buffer overflow when using non-XBL object as XBL
 ---
@@ -33,6 +32,8 @@ how font resources and tables are handled. This leads to use-after-free of a
 DirectWrite font-face object, resulting in a potentially exploitable crash.
 ```
 
+> **NOTE:** There is no need to include the MFSA ID in the front matter, it will be extracted from the file name.
+
 > **NOTE:** HTML is valid Markdown. So if you need extra features or classes, just add them.
 
 ### Metadata spec
@@ -43,7 +44,6 @@ There are some required elements in the Front Matter data (metadata). They are:
 announced: Date in Month Day, Year format
 fixed_in: List of product names and versions (see example above)
 impact: one of (Critical, High, Moderate, Low)
-mfsa_id: YYYY-XX (same as file name)
 reporter: Name of bug reporter
 title: Title of the advisory (may contain HTML).
 ```
