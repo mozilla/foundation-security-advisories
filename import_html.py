@@ -149,7 +149,7 @@ def process_announce():
     announce_path = config['input_path'] / 'announce'
     counter = 0
     for announcement in announce_path.glob('*/mfsa*.html'):
-        id, title, html = die_php_die(announcement)
+        mfsa_id, title, html = die_php_die(announcement)
         title = title.replace(r"\'", "'")
         doc = pq(html)
         if doc('#main-content'):
@@ -162,9 +162,8 @@ def process_announce():
         metadata, doc = extract_metadata(doc)
         if 'title' not in metadata:
             metadata['title'] = title
-        metadata['mfsa_id'] = id
         if 'announced' not in metadata:
-            metadata['announced'] = ALL_DATES[id]
+            metadata['announced'] = ALL_DATES[mfsa_id]
         write_file(announcement, metadata, unicode(doc))
         counter += 1
 
