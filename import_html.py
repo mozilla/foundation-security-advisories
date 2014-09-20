@@ -59,8 +59,10 @@ def extract_metadata(doc):
                 metadata[curr_key][-1] += text
         elif hasattr(el, 'tag'):
             if el.tag == 'span':
-                key = slugify(unicode(el.text))
-                if key and not key.startswith('&'):
+                key = el.text
+                if key:
+                    key = slugify(unicode(key))
+                if key and not key == curr_key and not key.startswith('&'):
                     metadata[key] = ['']
                     curr_key = key
                 else:
@@ -76,6 +78,10 @@ def extract_metadata(doc):
     # we'll use "fixed_in" for products lists.
     try:
         del metadata['products']
+    except KeyError:
+        pass
+    try:
+        del metadata['product']
     except KeyError:
         pass
 
