@@ -2,6 +2,8 @@
 
 Canonical source for Mozilla Foundation Security Advisories. http://www.mozilla.org/security/announce/
 
+[![Build Status](https://travis-ci.org/mozilla/foundation-security-advisories.svg?branch=master)](https://travis-ci.org/mozilla/foundation-security-advisories)
+
 ## Writing new announcements
 
 Announcements are written in [Markdown](http://daringfireball.net/projects/markdown/basics). They should
