@@ -11,7 +11,6 @@ and convert to snippets of Markdown.
 from __future__ import unicode_literals
 
 import argparse
-from collections import defaultdict
 import re
 import sys
 from cgi import escape
@@ -19,7 +18,7 @@ from xml.etree import ElementTree as etree
 
 from pathlib import Path
 from pyquery import PyQuery as pq
-from yaml import dump, safe_dump
+from yaml import safe_dump
 
 
 BASE_PATH = Path(__file__).resolve().parent
