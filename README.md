@@ -53,6 +53,43 @@ Other data will be displayed, but the above will be expected in the template and
 > **NOTE:** You should *NOT* add a `products:` section to the data. The list of products is extracted
 > from the `fixed_in:` list when imported into the website.
 
+## Linter Script
+
+There is a script in the repo called `check_advisories.py` that will tell you when you've gotten something wrong. It uses
+the same parsing algorithm as bedrock and so it should catch errors before they cause problems
+on the website. By default it will check all modified advisory files in the repo. If you want
+to check them all you can pass the `--all` switch. And if you only want it to check the changes
+staged in git's index you can pass the `--staged` switch (this is mostly good for a git pre-commit hook).
+
+You'll need a couple of dependency libraries. You can get them with the following command:
+
+```shell
+$ pip install -r requirements.txt
+```
+
+It's best to do that within a [virtualenv](http://virtualenv.readthedocs.org/en/latest/).
+Then you can run the command:
+
+```shell
+$ ./check_advisories.py
+Checked 3 files. Found 0 errors.
+```
+
+Use the `--help` switch to see all options.
+
+### Use as a git hook
+
+The best way to use this linter script is to add a git pre-commit hook. Included in the repo is a
+shell script useful for this purpose. To install it issue the following commands from the root
+directory of the repo:
+
+```shell
+$ cd .git/hooks && ln -s ../../pre-commit-hook.sh pre-commit
+```
+
+After this if you attempt to commit a change to a file that has a problem being parsed, you'll be
+informed which file has a problem and the commit will be aborted.
+
 ## Import Script
 
 `import_html.py` is a script that will convert the Mozilla Foundation Security Announcement HTML (PHP) files from [the SVN repository](http://svn.mozilla.org/projects/mozilla.org/trunk/security/) into markdown snippets suitable for inclusion in [bedrock](https://github.com/mozilla/bedrock/) (the new backend for www.mozilla.org).
