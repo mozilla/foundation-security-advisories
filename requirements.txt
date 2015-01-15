@@ -1,4 +1,2 @@
-pathlib==1.0
-pyquery==1.2.8
 PyYAML==3.11
 Markdown==2.5.2
