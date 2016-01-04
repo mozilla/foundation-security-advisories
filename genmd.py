@@ -72,6 +72,7 @@ class BugzillaUrl(object):
             args = "bug_id=%s" % ",".join([str(x) for x in self.bugs])
         return "%s/%s?%s" % (self.base_uri, script, args)
 
+
 #############################################################################################################
 
 class MfsaMd(object):
@@ -290,6 +291,7 @@ class MfsaMd(object):
                 raise Exception("Unknown MFSA header: %s" % line)
 
         # body = minidom.parseString("<html>" + bod + "</html>")
+        # print MfsaMd.xmlheader + bod + MfsaMd.xmlfooter
         body = minidom.parseString(MfsaMd.xmlheader + bod + MfsaMd.xmlfooter)
 
         return header, body
@@ -435,6 +437,7 @@ class MfsaDB(object):
             f.write(content)
 
     def advisoryInfo(self, name):
+        # print name
         adv = MfsaMd(self.getAdvisory(name))
         return {"name": name, "header": adv.header, "bugs": adv.bugRefs()}
 
@@ -472,14 +475,22 @@ class BugzillaSecurityCSV(object):
                     ret[bug_id] = dict(zip(header[1:], line[1:]))
         return ret
 
+    def checkFields(self, fields):
+        line = self.csv[self.csv.keys()[0]]
+        for f in fields:
+            if f not in line:
+                return False
+        return True
+
 #############################################################################################################
 
 def wrapIntoAdvisoryStub(bugid, csvitem):
+    # TODO: use current date and release version
     advisory = MfsaMd()
-    advisory.header["announced"] = "July 20, 2015"
+    advisory.header["announced"] = "July 20, 2015 FIXME FIXME"
     advisory.header["title"] = csvitem["Summary"]
     advisory.header["reporter"] = csvitem["Reporter Real Name"]
-    advisory.header["fixed_in"] = ["Firefox OS 2.2"]
+    advisory.header["fixed_in"] = ["Firefox OS 2.2 FIXME FIXME"]
     impact = "Unrated"
     if "sec-low" in csvitem["Keywords"]:
         impact = "Low"
@@ -526,6 +537,10 @@ def wrapIntoAdvisoryStub(bugid, csvitem):
 def advisoryRoundup(opt):
     adv = MfsaDB()
     csv = BugzillaSecurityCSV(opt.bugcsv)
+    required_fields = ["Reporter Real Name", "Summary", "Keywords", "Whiteboard"]
+    if not csv.checkFields(required_fields):
+        print >>sys.stderr, "CSV must have the following fields: %s" % repr(required_fields)
+        return
 
     bug_to_advisory = adv.bugsToAdvisories()
     next_offset = 1
@@ -571,11 +586,11 @@ def advisoryRoundup(opt):
     for needsfix in uniq_needs_fixedin:
         print "Fixing", needsfix
         unfixed = MfsaMd(adv.getAdvisory(needsfix))
-        fixed = unfixed.addFixedinToOriginal(opt.fxosversion)
+        fixed = unfixed.addFixedinToOriginal("Firefox OS %s" % opt.fxosversion)
         if not opt.dryrun:
             adv.writeAdvisory(needsfix, fixed)
         else:
-            print >>sys.stderr, "WARNING: skipping write to %s" % filename
+            print >>sys.stderr, "WARNING: skipping write to %s" % needsfix
 
     print "\n\nHere's your TODO list:\n"
     for dirpath, dirnames, filenames in os.walk("TODO"):
