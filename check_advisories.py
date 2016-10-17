@@ -24,12 +24,21 @@ from markdown import markdown
 
 GIT = os.getenv('GIT_BIN', 'git')
 ADVISORIES_DIR = 'announce'
-FILENAME_RE = re.compile('mfsa(\d{4}-\d{2,3})\.md$')
+FILENAME_RE = re.compile('mfsa(\d{4}-\d{2,3})\.(md|yml)$')
 REQUIRED_FIELDS = (
     'fixed_in',
-    'impact',
     'title',
 )
+REQUIRED_YAML_FIELDS = REQUIRED_FIELDS + (
+    'advisories',
+)
+REQUIRED_YAML_ADVISORY_FIELDS = (
+    'title',
+    'impact',
+    'reporter',
+    'description',
+)
+
 
 
 def mfsa_id_from_filename(filename):
@@ -78,7 +87,7 @@ def get_all_files():
     """
     file_names = []
     for root, dirnames, filenames in os.walk(ADVISORIES_DIR):
-        for filename in fnmatch.filter(filenames, '*.md'):
+        for filename in fnmatch.filter(filenames, 'mfsa*.*'):
             file_names.append(os.path.join(root, filename))
 
     return file_names
@@ -90,17 +99,33 @@ def check_file(file_name):
     :param file_name: file name to check
     :return: str error message.
     """
+    if file_name.endswith('.md'):
+        parser = parse_md_file
+        required_fields = REQUIRED_FIELDS
+    elif file_name.endswith('.yml'):
+        parser = parse_yml_file
+        required_fields = REQUIRED_YAML_FIELDS
+    else:
+        return 'Unknown file type: %s' % file_name
+
     try:
-        data, html = parse_md_file(file_name)
+        data = parser(file_name)
     except Exception as e:
         return str(e)
 
     if 'mfsa_id' not in data:
         return 'The MFSA ID must be in the filename or metadata.'
 
-    for field in REQUIRED_FIELDS:
+    for field in required_fields:
         if field not in data:
             return 'The {0} field is required in the file metadata.'.format(field)
+
+    if file_name.endswith('.yml'):
+        for cve, advisory in data['advisories'].items():
+            for field in REQUIRED_YAML_ADVISORY_FIELDS:
+                if field not in advisory:
+                    return 'The {0} field is required in the ' \
+                           'file metadata for {1}.'.format(field, cve)
 
     return None
 
@@ -133,6 +158,18 @@ def parse_md_front_matter(lines):
     return ''.join(yaml_lines), ''.join(md_lines)
 
 
+def parse_yml_file(file_name):
+    """Return the YAML data for file_name."""
+    with codecs.open(file_name, encoding='utf8') as fh:
+        data = yaml.safe_load(fh)
+
+    if 'mfsa_id' not in data:
+        mfsa_id = mfsa_id_from_filename(file_name)
+        if mfsa_id:
+            data['mfsa_id'] = mfsa_id
+    return data
+
+
 def parse_md_file(file_name):
     """Return the YAML and MD sections for file_name."""
     with codecs.open(file_name, encoding='utf8') as fh:
@@ -143,7 +180,9 @@ def parse_md_file(file_name):
         mfsa_id = mfsa_id_from_filename(file_name)
         if mfsa_id:
             data['mfsa_id'] = mfsa_id
-    return data, markdown(mdtext)
+    # run it through parser in case of exception
+    markdown(mdtext)
+    return data
 
 
 def main():
