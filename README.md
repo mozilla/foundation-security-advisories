@@ -6,9 +6,13 @@ Canonical source for Mozilla Foundation Security Advisories. http://www.mozilla.
 
 ## Writing new announcements
 
-Announcements are written in [Markdown](http://daringfireball.net/projects/markdown/basics). They should
-be named in the pattern `announce/YYYY/mfsaYYYY-XX.md` where `YYYY` is the 4 digit year, and `XX` is
-the next in the sequence. Once the file is created some data about the file should be added to the
+Announcements are written in [Markdown](http://daringfireball.net/projects/markdown/basics) or [YAML](http://yaml.org/spec/1.1/). They should
+be named in the pattern `announce/YYYY/mfsaYYYY-XX.EXT` where `YYYY` is the 4 digit year, `XX` is
+the next in the sequence, and `EXT` is either `md` or `yml`. 
+
+### Markdown Format
+
+Once the file is created some data about the file should be added to the
 [Front Matter](http://jekyllrb.com/docs/frontmatter/). Front Matter is [YAML](http://yaml.org/spec/1.1/)
 encoded data surrounded by lines consisting of 3 dashes. Then the Markdown content can be added below the 
 Front Matter. For example:
@@ -38,7 +42,7 @@ DirectWrite font-face object, resulting in a potentially exploitable crash.
 
 > **NOTE:** HTML is valid Markdown. So if you need extra features or classes, just add them.
 
-### Metadata spec
+#### Metadata spec
 
 There are some required elements in the Front Matter data (metadata). They are:
 
@@ -54,6 +58,67 @@ Other data will be displayed, but the above will be expected in the template and
 
 > **NOTE:** You should *NOT* add a `products:` section to the data. The list of products is extracted
 > from the `fixed_in:` list when imported into the website.
+
+### YAML Format
+
+The YAML type is for advisories that are actually a roll-up of multiple advisories. These files are all YAML
+as opposed to the `.md` files which are only partially YAML. The following example should demonstrate the
+features of this file type:
+
+```yaml
+announced: September 20, 2016
+fixed_in:
+- Thunderbird 45.4
+title: Security vulnerabilities fixed in Thunderbird 45.4
+description: |
+  Text that will appear at the top of the file. ***Markdown*** allowed.
+  
+  ### An h3 is sometimes good
+  
+  Then you can explain further.
+advisories:
+  CVE-2016-5270:
+    title: Heap-buffer-overflow in nsCaseTransformTextRunFactory::TransformString
+    impact: high
+    reporter: Atte Kettunen
+    description: |
+      Short description <strong>with HTML</strong> and multiple lines!
+
+      Can also have full breaks and ***markdown***!
+    bugs:
+      - url: 1291016
+        desc: The text for the bug link
+  CVE-2016-5272:
+    title: Bad cast in nsImageGeometryMixin
+    impact: high
+    reporter: Abhishek Arya
+    description: A bad cast when processing layout with <code>input</code> elements can result in a potentially exploitable crash.
+    bugs:
+      - url: 1297934
+  CVE-2016-5276:
+    title: Heap-use-after-free in mozilla::a11y::DocAccessible::ProcessInvalidationList
+    impact: high
+    reporter: Nils
+    description: A use-after-free vulnerability triggered by setting a <code>aria-owns</code> attribute
+    bugs:
+      - url: 1287721
+```
+
+The main part of the data is the same as the front-matter of the `.md` files. The primary difference is the `advisories`
+key, which contains a list of CVEs with their individual data. A CVE entry can have a list of bug urls. These can be:
+
+* A bugzilla bug number. These will be converted to a bugzilla link.
+* A comma separated list of bug numbers. These will be converted to a link to a bugzilla list of bugs.
+* A valid URL will be kept as is.
+
+Along with the `url` field of a bug, a `desc` may optionally be supplied. This will be the link text
+for the bug link. If it is not supplied the default is `Bug {url}`. For example, the link text for
+the bug in `CVE-2016-5276` above would be `Bug 1287721`.
+
+The main `description` field as well as those of the CVE entries can be multi-line and will be processed
+as markdown. The YAML spec provides [different ways of enabling multi-line](http://yaml.org/spec/1.1/#id926836), 
+but the best for this application is to use the `|` character after the `:` 
+like you see in the example for the main description and `CVE-2016-5270` above.
 
 ## Linter Script
 
