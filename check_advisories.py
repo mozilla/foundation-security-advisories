@@ -83,14 +83,12 @@ def get_modified_files(staged_only):
 def get_all_files():
     """
     Return all advisory file names in the repo.
-    :return: list file names.
+
+    :return: generator of file names.
     """
-    file_names = []
     for root, dirnames, filenames in os.walk(ADVISORIES_DIR):
         for filename in fnmatch.filter(filenames, 'mfsa*.*'):
-            file_names.append(os.path.join(root, filename))
-
-    return file_names
+            yield os.path.join(root, filename)
 
 
 def check_file(file_name):
@@ -206,7 +204,9 @@ def main():
         files_to_check = get_modified_files(args.staged)
 
     errors = []
+    num_files = 0
     for file_name in files_to_check:
+        num_files += 1
         error_msg = check_file(file_name)
         if error_msg:
             errors.append((file_name, error_msg))
@@ -215,7 +215,6 @@ def main():
             sys.stdout.write('E' if error_msg else '.')
             sys.stdout.flush()
 
-    num_files = len(files_to_check)
     files_plural = '' if num_files == 1 else 's'
     num_errors = len(errors)
     errors_plural = '' if num_errors == 1 else 's'
