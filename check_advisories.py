@@ -19,6 +19,7 @@ import sys
 from subprocess import Popen, PIPE
 
 import yaml
+from dateutil.parser import parse as parsedate
 from markdown import markdown
 
 
@@ -38,7 +39,6 @@ REQUIRED_YAML_ADVISORY_FIELDS = (
     'reporter',
     'description',
 )
-
 
 
 def mfsa_id_from_filename(filename):
@@ -119,6 +119,12 @@ def check_file(file_name):
     for field in required_fields:
         if field not in data:
             return 'The {0} field is required in the file metadata.'.format(field)
+
+    if 'announced' in data:
+        try:
+            parsedate(data['announced']).date()
+        except Exception:
+            return 'Failed to parse "{}" as a date'.format(data['announced'])
 
     if file_name.endswith('.yml'):
         for cve, advisory in data['advisories'].items():
