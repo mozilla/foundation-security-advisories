@@ -1,0 +1,156 @@
+## mfsa2016-85.yml
+announced: September 20, 2016
+fixed_in:
+- Firefox 49
+title: Security vulnerabilities fixed in Firefox 49
+advisories:
+  CVE-2016-2827:
+    title: Out-of-bounds read in mozilla::net::IsValidReferrerPolicy
+    impact: low
+    reporter: Atte Kettunen
+    description: |
+      A content security policy (CSP) containing a <code>referrer</code> directive with no values can cause a non-exploitable crash.
+    bugs:
+      - url: 1289085
+        desc: Bug 1289085
+  CVE-2016-5270:
+    title: Heap-buffer-overflow in nsCaseTransformTextRunFactory::TransformString
+    impact: high
+    reporter: Atte Kettunen
+    description: An out-of-bounds write of a boolean value during text conversion with some unicode characters
+    bugs:
+      - url: 1291016
+        desc: Bug 1291016
+  CVE-2016-5271:
+    title: Out-of-bounds read in PropertyProvider::GetSpacingInternal
+    impact: low
+    reporter: Abhishek Arya
+    description: |
+      An out-of-bounds read during the processing of text runs in some pages using <code>display:contents</code>.
+    bugs:
+      - url: 1288946
+        desc: Bug 1288946
+  CVE-2016-5272:
+    title: Bad cast in nsImageGeometryMixin
+    impact: high
+    reporter: Abhishek Arya
+    description: |
+      A bad cast when processing layout with <code>input</code> elements can result in a potentially exploitable crash.
+    bugs:
+      - url: 129793
+        desc: Bug 129793
+  CVE-2016-5273:
+    title: crash in mozilla::a11y::HyperTextAccessible::GetChildOffset
+    impact: high
+    reporter: Nils
+    description: A potentially exploitable crash in accessibility.
+    bugs:
+      - url: 1280387
+        desc: Bug 1280387
+  CVE-2016-5276:
+    title: Heap-use-after-free in mozilla::a11y::DocAccessible::ProcessInvalidationList
+    impact: high
+    reporter: Nils
+    description: |
+      A use-after-free vulnerability triggered by setting a <code>aria-owns</code> attribute.
+    bugs:
+      - url: 1287721
+        desc: Bug 1287721
+  CVE-2016-5274:
+    title: use-after-free in nsFrameManager::CaptureFrameState
+    impact: high
+    reporter: Nils
+    description: A use-after-free issue in web animations during restyling.
+    bugs:
+      - url: 1282076
+        desc: Bug 1282076
+  CVE-2016-5277:
+    title: Heap-use-after-free in nsRefreshDriver::Tick
+    impact: high
+    reporter: Nils
+    description: A use-after-free vulnerability with web animations when destroying a timeline.
+    bugs:
+      - url: 1291665
+        desc: Bug 1291665
+  CVE-2016-5275:
+    title: 
+    impact: critical
+    reporter: Nils
+    description: A buffer overflow when working with empty filters during canvas rendering.
+    bugs:
+      - url: 1287316
+        desc: Bug 1287316
+  CVE-2016-5278:
+    title: Heap-buffer-overflow in nsBMPEncoder::AddImageFrame
+    impact: critical
+    reporter: Nils
+    description: A potentially exploitable crash caused by a buffer overflow while encoding image frames to images.
+    bugs:
+      - url: 1294677
+        desc: Bug 1294677
+  CVE-2016-5279:
+    title: Full local path of files is available to web pages after drag and drop
+    impact: moderate
+    reporter: Rafael Gieschke
+    description: The full path to local files is available to scripts when local files are drag and dropped into Firefox.
+    bugs:
+      - url: 1249522
+        desc: Bug 1249522
+  CVE-2016-5280:
+    title: Use-after-free in mozilla::nsTextNodeDirectionalityMap::RemoveElementFromMap
+    impact: high
+    reporter: Mei Wang
+    description: Use-after-free vulnerability when changing text direction.
+    bugs:
+      - url: 1289970
+        desc: Bug 1289970
+  CVE-2016-5281:
+    title: use-after-free in DOMSVGLength
+    impact: high
+    reporter: Brian Carpenter
+    description: Use-after-free vulnerability when manipulating SVG format content through script.
+    bugs:
+      - url: 1284690
+        desc: Bug 1284690
+  CVE-2016-5282:
+    title: Don't allow content to request favicons from non-whitelisted schemes
+    impact: moderate
+    reporter: Richard Newman
+    description: |
+      Favicons can be loaded through non-whitelisted protocols, such as <code>jar:</code>.
+    bugs:
+      - url: 932335
+        desc: Bug 932335
+  CVE-2016-5283:
+    title:  Iframe src fragment timing attack can reveal cross-origin data
+    impact: high
+    reporter: Gavin Sharp
+    description: A timing attack vulnerability using iframes to potentially reveal private data using document resizes and link colors.
+    bugs:
+      - url: 928187
+        desc: Bug 928187
+  CVE-2016-5284:
+    title:  Add-on update site certificate pin expiration
+    impact: high
+    reporter: Multiple people
+    description: |
+      Due to <a href="https://blog.mozilla.org/security/2016/09/16/update-on-add-on-pinning-vulnerability/">flaws in the process we used to update "Preloaded Public Key Pinning"</a> in our releases, the pinning for add-on updates became ineffective in early September. An attacker who was able to get a mis-issued certificate for a Mozilla web site could send malicious add-on updates to users on networks controlled by the attacker. Users who have not installed any add-ons are not affected.
+    bugs:
+      - url: 1303127
+        desc: 1303127
+  CVE-2016-5256:
+    title: Memory safety bugs fixed in Firefox 49
+    impact: critical
+    reporter: Mozilla developers
+    description: Mozilla developers Christoph Diehl, Christian Holler, Gary Kwong, Nathan Froyd, Honza Bambas, Seth Fowler, and Michael Smith reported memory safety bugs present in Firefox 48. Some of these bugs showed evidence of memory corruption under certain circumstances could potentially exploited to run arbitrary code.
+    bugs:
+      - url: 1290244, 1282746, 1268034, 1296078, 1297099, 1276413, 1296087
+        desc: Memory safety bugs fixed in Firefox 49
+  CVE-2016-5257:
+    title: Memory safety bugs fixed in Firefox 49 and Firefox ESR 45.4
+    impact: critical
+    reporter: Mozilla developers
+    description: Mozilla developers and community members Christoph Diehl, Andrew McCreight, Dan Minor, Byron Campen, Jon Coppeard, Steve Fink, Tyson Smith, Philipp, and Carsten Book reported memory safety bugs present in Firefox 48 and Firefox ESR 45.3. Some of these bugs showed evidence of memory corruption and we presume that with enough effort at least some of these could be exploited to run arbitrary code.
+    bugs:
+      - url: 1288588, 1287204, 1294407, 1293347, 1288780, 1288555, 1289280, 1294095, 1277213
+        desc: Memory safety bugs fixed in Firefox 49 and Firefox ESR 45.4
