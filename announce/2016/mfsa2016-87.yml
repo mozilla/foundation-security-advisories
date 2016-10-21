@@ -11,7 +11,7 @@ advisories:
     description: A potentially exploitable use-after-free crash during actor destruction with service workers. This issue does not affect releases earlier than Firefox 49.
     bugs:
       - url: 1309823
-        desc: Bug 1309823     
+        desc: Bug 1309823
   CVE-2016-5288:
     title: Web content can read cache entries
     impact: high
