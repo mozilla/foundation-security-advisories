@@ -1,0 +1,22 @@
+## mfsa2016-87.yml
+announced: October 20, 2016
+fixed_in:
+- Firefox 49.0.2
+title: Security vulnerabilities fixed in Firefox 49.0.2
+advisories:
+  CVE-2016-5287:
+    title: Crash in nsTArray_base&lt;T&gt;::SwapArrayElements
+    impact: high
+    reporter: Philipp
+    description: A potentially exploitable use-after-free crash during actor destruction with service workers. This issue does not affect releases earlier than Firefox 49.
+    bugs:
+      - url: 1309823
+        desc: Bug 1309823     
+  CVE-2016-5288:
+    title: Web content can read cache entries
+    impact: high
+    reporter: Developers at Cliqz.com
+    description: A Cliqz.com developer demonstrated that web content could access information in the HTTP cache if e10s is disabled. This can reveal some visited URLs and the contents of those pages. This issue affects Firefox 48 and 49.
+    bugs:
+      - url: 1310183
+        desc: Bug 1310183 
