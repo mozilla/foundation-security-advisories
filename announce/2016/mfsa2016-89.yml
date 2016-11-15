@@ -21,11 +21,11 @@ advisories:
       - url: 1288482
         desc: 
   CVE-2016-5293:
-    title: Write to arbitrary file with updater and moz maintenance service using updater.log hardlink
+    title: Write to arbitrary file with Mozilla Updater and Maintenance Service using updater.log hardlink
     impact: high
     reporter: Holger Fuhrmannek
     description: |
-      When the Mozilla updater is run, if the updater's log file in the working directory points to a hardlink, data can be appended to an arbitrary local file. This vulnerability requires local system access. <br>*Note: this issue only affects Windows operating systems.*
+      When the Mozilla Updater is run, if the Updater's log file in the working directory points to a hardlink, data can be appended to an arbitrary local file. This vulnerability requires local system access. <br>*Note: this issue only affects Windows operating systems.*
     bugs:
       - url: 1246945
         desc: 
@@ -39,7 +39,7 @@ advisories:
       - url: 1246972
         desc: 
   CVE-2016-5297:
-    title: Incorrect argument length checking in Javascript
+    title: Incorrect argument length checking in JavaScript
     impact: high
     reporter: André Bargull
     description: An error in argument length checking in JavaScript, leading to potential integer overflows or other bounds checking issues.
@@ -47,10 +47,10 @@ advisories:
       - url: 1303678
         desc: 
   CVE-2016-9064:
-    title: Addons update must verify IDs match between current and new versions
+    title: Add-ons update must verify IDs match between current and new versions
     impact: high
     reporter: Multiple people
-    description: Addon updates failed to verify that the add-on ID inside the signed package matched the ID of the add-on being updated. An attacker who could perform a man-in-the-middle attack on the user's connection to the update server and defeat the certificate pinning protection could provide a malicious signed add-on instead of a valid update.
+    description: Add-on updates failed to verify that the add-on ID inside the signed package matched the ID of the add-on being updated. An attacker who could perform a man-in-the-middle attack on the user's connection to the update server and defeat the certificate pinning protection could provide a malicious signed add-on instead of a valid update.
     bugs:
       - url: 1303418
         desc: 
@@ -110,7 +110,7 @@ advisories:
     title:  Canvas filters allow feDisplacementMaps to be applied to cross-origin images, allowing timing attacks on them
     impact: high
     reporter: Markus Stange
-    description: Canvas allows the use of the feDisplacementMap filter on images loaded cross-origin. The rendering by the filter is variable depending on the input pixel, allowing for timing attacks when the images are loaded from third party locations.
+    description: Canvas allows the use of the <code>feDisplacementMap</code> filter on images loaded cross-origin. The rendering by the filter is variable depending on the input pixel, allowing for timing attacks when the images are loaded from third party locations.
     bugs:
       - url: 1298552
         desc: 
@@ -127,7 +127,7 @@ advisories:
     impact: moderate
     reporter: Holger Fuhrmannek
     description: |
-       This vulnerability allows an attacker to use the Mozilla Maintenance Service to escalate privilege by having the Maintenance Service invoke the Mozlla updater to run malicious local files. This vulnerability requires local system access and is a variant of MFSA2013-44. <br>*Note: this issue only affects Windows operating systems.*
+       This vulnerability allows an attacker to use the Mozilla Maintenance Service to escalate privilege by having the Maintenance Service invoke the Mozilla Updater to run malicious local files. This vulnerability requires local system access and is a variant of MFSA2013-44. <br>*Note: this issue only affects Windows operating systems.*
     bugs:
       - url: 1247239
         desc: 
@@ -147,25 +147,25 @@ advisories:
     impact: moderate
     reporter: Ken Okuyama
     description: |
-      A previously installed malicious installed Android application with same signature-level permissions as Firefox can intercept AuthTokens meant for Firefox only. <br>*Note: This issue only affects Firefox for Android. Other versions and operating systems are unaffected.*
+      A previously installed malicious Android application with same signature-level permissions as Firefox can intercept AuthTokens meant for Firefox only. <br>*Note: This issue only affects Firefox for Android. Other versions and operating systems are unaffected.*
     bugs:
       - url: 1245791
         desc: 
   CVE-2016-9061:
-    title: API Key (glocation) in broadcast protected with signature-level permission can be accessed by an application installed beforehand that defines the same permissions
+    title: API key (glocation) in broadcast protected with signature-level permission can be accessed by an application installed beforehand that defines the same permissions
     impact: moderate
     reporter: Ken Okuyama
     description: |
-       A previously installed malicious installed Android application which defines a specific signature-level permissions used by Firefox can access API keys meant for Firefox only. <br>*Note: This issue only affects Firefox for Android. Other versions and operating systems are unaffected.*
+       A previously installed malicious Android application which defines a specific signature-level permissions used by Firefox can access API keys meant for Firefox only. <br>*Note: This issue only affects Firefox for Android. Other versions and operating systems are unaffected.*
     bugs:
       - url: 1245795
         desc: 
   CVE-2016-9062:
-    title: Private browsing browser traces (android) in browser.db and wal file
+    title: Private browsing browser traces (Android) in browser.db and wal file
     impact: moderate
     reporter: Daniel D.
     description: |
-       Private browsing mode leaves metadata information, such as URLs, for sites visited in browser.db and browser.db-wal files within the Firefox profile after the mode is exited. <br>*Note: This issue only affects Firefox for Android. Other versions and operating systems are unaffected.*
+       Private browsing mode leaves metadata information, such as URLs, for sites visited in <code>browser.db</code> and <code>browser.db-wal</code> files within the Firefox profile after the mode is exited. <br>*Note: This issue only affects Firefox for Android. Other versions and operating systems are unaffected.*
     bugs:
       - url: 1294438
         desc: 
@@ -204,7 +204,7 @@ advisories:
       - url: 1276976
         desc: 
   CVE-2016-9063:
-    title: Possible integer overflow to fix inside XML_Parse in expat
+    title: Possible integer overflow to fix inside XML_Parse in Expat
     impact: low
     reporter: Gustavo Grieco
     description: An integer overflow during the parsing of XML using the Expat library.
