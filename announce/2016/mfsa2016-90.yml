@@ -13,11 +13,11 @@ advisories:
       - url: 1292443
         desc: 
   CVE-2016-5293:
-    title: Write to arbitrary file with updater and moz maintenance service using updater.log hardlink
+    title: Write to arbitrary file with Mozilla Updater and Maintenance Service using updater.log hardlink
     impact: high
     reporter: Holger Fuhrmannek
     description: |
-      When the Mozilla updater is run, if the updater's log file in the working directory points to a hardlink, data can be appended to an arbitrary local file. This vulnerability requires local system access. <br>*Note: this issue only affects Windows operating systems.*
+      When the Mozilla Updater is run, if the Updater's log file in the working directory points to a hardlink, data can be appended to an arbitrary local file. This vulnerability requires local system access. <br>*Note: this issue only affects Windows operating systems.*
     bugs:
       - url: 1246945
         desc: 
@@ -31,7 +31,7 @@ advisories:
       - url: 1246972
         desc: 
   CVE-2016-5297:
-    title: Incorrect argument length checking in Javascript
+    title: Incorrect argument length checking in JavaScript
     impact: high
     reporter: André Bargull
     description: An error in argument length checking in JavaScript, leading to potential integer overflows or other bounds checking issues.
@@ -39,11 +39,11 @@ advisories:
       - url: 1303678
         desc: 
   CVE-2016-9064:
-    title: Addons update must verify IDs match between current and new versions
+    title: Add-ons update must verify IDs match between current and new versions
     impact: high
     reporter: Multiple people
     description: |
-      Addon updates failed to verify that the add-on ID inside the signed package matched the ID of the add-on being updated. An attacker who could perform a man-in-the-middle attack on the user's connection to the update server and defeat the certificate pinning protection could provide a malicious signed add-on instead of a valid update.
+      Add-on updates failed to verify that the add-on ID inside the signed package matched the ID of the add-on being updated. An attacker who could perform a man-in-the-middle attack on the user's connection to the update server and defeat the certificate pinning protection could provide a malicious signed add-on instead of a valid update.
     bugs:
       - url: 1303418
         desc: 
