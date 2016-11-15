@@ -1,0 +1,239 @@
+## mfsa2016-89.yml
+announced: November 15, 2016
+fixed_in:
+- Firefox 50
+title: Security vulnerabilities fixed in Firefox 50
+advisories:
+  CVE-2016-5296:
+    title: Heap-buffer-overflow WRITE in rasterize_edges_1
+    impact: critical
+    reporter: Abhishek Arya
+    description: A heap-buffer-overflow in Cairo when processing SVG content caused by compiler optimization, resulting in a potentially expoitable crash.
+    bugs:
+      - url: 1292443
+        desc: 
+  CVE-2016-5292:
+    title: URL parsing causes crash
+    impact: high
+    reporter: Daniel Browning
+    description: During URL parsing, a maliciously crafted URL can cause a potentially exploitable crash.
+    bugs:
+      - url: 1288482
+        desc: 
+  CVE-2016-5293:
+    title: Write to arbitrary file with updater and moz maintenance service using updater.log hardlink
+    impact: high
+    reporter: Holger Fuhrmannek
+    description: |
+      When the Mozilla updater is run, if the updater's log file in the working directory points to a hardlink, data can be appended to an arbitrary local file. This vulnerability requires local system access. <br>*Note: this issue only affects Windows operating systems.*
+    bugs:
+      - url: 1246945
+        desc: 
+  CVE-2016-5294:
+    title: Arbitrary target directory for result files of update process
+    impact: high
+    reporter: Holger Fuhrmannek
+    description: |
+      The Mozilla Updater can be made to choose an arbitrary target working directory for output files resulting from the update process. This vulnerability requires local system access. <br>*Note: this issue only affects Windows operating systems.*
+    bugs:
+      - url: 1246972
+        desc: 
+  CVE-2016-5297:
+    title: Incorrect argument length checking in Javascript
+    impact: high
+    reporter: André Bargull
+    description: An error in argument length checking in JavaScript, leading to potential integer overflows or other bounds checking issues.
+    bugs:
+      - url: 1303678
+        desc: 
+  CVE-2016-9064:
+    title: Addons update must verify IDs match between current and new versions
+    impact: high
+    reporter: Multiple people
+    description: Addon updates failed to verify that the add-on ID inside the signed package matched the ID of the add-on being updated. An attacker who could perform a man-in-the-middle attack on the user's connection to the update server and defeat the certificate pinning protection could provide a malicious signed add-on instead of a valid update.
+    bugs:
+      - url: 1303418
+        desc: 
+  CVE-2016-9065:
+    title: Firefox for Android location bar spoofing using fullscreen
+    impact: high
+    reporter: Raphael
+    description: |
+      The location bar in Firefox for Android can be spoofed by forcing a user into fullscreen mode, blocking its exiting, and creating of a fake location bar without any user notification. <br>*Note: This issue only affects Firefox for Android. Other versions and operating systems are unaffected.*
+    bugs:
+      - url: 1306696
+        desc: 
+  CVE-2016-9066:
+    title: Integer overflow leading to a buffer overflow in nsScriptLoadHandler
+    impact: high
+    reporter: Samuel Groß
+    description: A buffer overflow resulting in a potentially exploitable crash due to memory allocation issues when handling large amounts of incoming data.
+    bugs:
+      - url: 1299686
+        desc: 
+  CVE-2016-9067:
+    title: heap-use-after-free in nsINode::ReplaceOrInsertBefore
+    impact: high
+    reporter: Nils
+    description: Two use-after-free errors during DOM operations resulting in potentially exploitable crashes.
+    bugs:
+      - url: 1301777
+        desc: Bug 1301777 (CVE-2016-9067)
+      - url: 1308922
+        desc: Bug 1308922 (CVE-2016-9069)
+  CVE-2016-9068:
+    title: heap-use-after-free in nsRefreshDriver
+    impact: high
+    reporter: Nils
+    description: A use-after-free during web animations when working with timelines resulting in a potentially exploitable crash.
+    bugs:
+      - url: 1302973
+        desc: 
+  CVE-2016-9072:
+    title: 64-bit NPAPI sandbox isn't enabled on fresh profile
+    impact: high
+    reporter: Bob Owen
+    description: |
+      When a new Firefox profile is created on 64-bit Windows installations, the sandbox for 64-bit NPAPI plugins is not enabled by default. <br>*Note: This issue only affects 64-bit Windows. 32-bit Windows and other operating systems are unaffected.*
+    bugs:
+      - url: 1300083
+        desc: 
+  CVE-2016-9075:
+    title: WebExtensions can access the mozAddonManager API and use it to gain elevated privileges
+    impact: high
+    reporter: Kris Maglione
+    description: An issue where WebExtensions can use the mozAddonManager API to elevate privilege due to privileged pages being allowed in the permissions list. This allows a malicious extension to then install additional extensions without explicit user permission.
+    bugs:
+      - url: 1295324
+        desc: 
+  CVE-2016-9077:
+    title:  Canvas filters allow feDisplacementMaps to be applied to cross-origin images, allowing timing attacks on them
+    impact: high
+    reporter: Markus Stange
+    description: Canvas allows the use of the feDisplacementMap filter on images loaded cross-origin. The rendering by the filter is variable depending on the input pixel, allowing for timing attacks when the images are loaded from third party locations.
+    bugs:
+      - url: 1298552
+        desc: 
+  CVE-2016-5291:
+    title: Same-origin policy violation using local HTML file and saved shortcut file
+    impact: moderate
+    reporter: Yuyang Zhou
+    description: A same-origin policy bypass with local shortcut files to load arbitrary local content from disk.
+    bugs:
+      - url: 1292159
+        desc: 
+  CVE-2016-5295:
+    title: "Mozilla Maintenance Service: Ability to read arbitrary files as SYSTEM"
+    impact: moderate
+    reporter: Holger Fuhrmannek
+    description: |
+       This vulnerability allows an attacker to use the Mozilla Maintenance Service to escalate privilege by having the Maintenance Service invoke the Mozlla updater to run malicious local files. This vulnerability requires local system access and is a variant of MFSA2013-44. <br>*Note: this issue only affects Windows operating systems.*
+    bugs:
+      - url: 1247239
+        desc: 
+      - url: https://www.mozilla.org/en-US/security/advisories/mfsa2013-44/
+        desc: MFSA2013-44 - Local privilege escalation through Mozilla Maintenance Service
+  CVE-2016-5298:
+    title: SSL indicator can mislead the user about the real URL visited 
+    impact: moderate
+    reporter: Jordi Chancel
+    description: |
+       A mechanism where disruption of the loading of a new web page can cause the previous page's favicon and SSL indicator to not be reset when the new page is loaded. <br>*Note: this issue only affects Firefox for Android. Desktop Firefox is unaffected.*
+    bugs:
+      - url: 1227538
+        desc: 
+  CVE-2016-5299:
+    title: Firefox AuthToken in broadcast protected with signature-level permission can be accessed by an application installed beforehand that defines the same permissions
+    impact: moderate
+    reporter: Ken Okuyama
+    description: |
+      A previously installed malicious installed Android application with same signature-level permissions as Firefox can intercept AuthTokens meant for Firefox only. <br>*Note: This issue only affects Firefox for Android. Other versions and operating systems are unaffected.*
+    bugs:
+      - url: 1245791
+        desc: 
+  CVE-2016-9061:
+    title: API Key (glocation) in broadcast protected with signature-level permission can be accessed by an application installed beforehand that defines the same permissions
+    impact: moderate
+    reporter: Ken Okuyama
+    description: |
+       A previously installed malicious installed Android application which defines a specific signature-level permissions used by Firefox can access API keys meant for Firefox only. <br>*Note: This issue only affects Firefox for Android. Other versions and operating systems are unaffected.*
+    bugs:
+      - url: 1245795
+        desc: 
+  CVE-2016-9062:
+    title: Private browsing browser traces (android) in browser.db and wal file
+    impact: moderate
+    reporter: Daniel D.
+    description: |
+       Private browsing mode leaves metadata information, such as URLs, for sites visited in browser.db and browser.db-wal files within the Firefox profile after the mode is exited. <br>*Note: This issue only affects Firefox for Android. Other versions and operating systems are unaffected.*
+    bugs:
+      - url: 1294438
+        desc: 
+  CVE-2016-9070:
+    title: Sidebar bookmark can have reference to chrome window
+    impact: moderate
+    reporter: Abdulrahman Alqabandi
+    description: A maliciously crafted page loaded to the sidebar through a bookmark can reference a privileged chrome window and engage in limited JavaScript operations violating cross-origin protections.
+    bugs:
+      - url: 1281071
+        desc: 
+  CVE-2016-9073:
+    title: |
+      windows.create schema doesn't specify "format": "relativeUrl"
+    impact: moderate
+    reporter: Will Bamberg
+    description: WebExtensions can bypass security checks to load privileged URLs and potentially escape the WebExtension sandbox.
+    bugs:
+      - url: 1289273
+        desc: 
+  CVE-2016-9074:
+    title: Insufficient timing side-channel resistance in divSpoiler
+    impact: moderate
+    reporter: Franziskus Kiefer
+    description: An existing mitigation of timing side-channel attacks is insufficient in some circumstances. This issue is addressed in Network Security Services (NSS) 3.26.1.
+    bugs:
+      - url: 1293334
+        desc: 
+  CVE-2016-9076:
+    title: select dropdown menu can be used for URL bar spoofing on e10s
+    impact: moderate
+    reporter: Mats Palmgren
+    description: |
+      An issue where a <code>&lt;select&gt;</code> dropdown menu can be used to cover location bar content, resulting in potential spoofing attacks. This attack requires e10s to be enabled in order to function.
+    bugs:
+      - url: 1276976
+        desc: 
+  CVE-2016-9063:
+    title: Possible integer overflow to fix inside XML_Parse in expat
+    impact: low
+    reporter: Gustavo Grieco
+    description: An integer overflow during the parsing of XML using the Expat library.
+    bugs:
+      - url: 1274777
+        desc: 
+  CVE-2016-9071:
+    title: Probe browser history via HSTS/301 redirect + CSP
+    impact: low
+    reporter: Xiaoyin Liu
+    description: Content Security Policy combined with HTTP to HTTPS redirection can be used by malicious server to verify whether a known site is within a user's browser history.
+    bugs:
+      - url: 1285003
+        desc: 
+  CVE-2016-5289:
+    title: Memory safety bugs fixed in Firefox 50
+    impact: critical
+    reporter: Mozilla developers
+    description: |
+      Mozilla developers and community members Christian Holler, Andrew McCreight, Dan Minor, Tyson Smith, Jon Coppeard, Jan-Ivar Bruaroey, Jesse Ruderman, and Markus Stange reported memory safety bugs present in Firefox 49. Some of these bugs showed evidence of memory corruption and we presume that with enough effort that some of these could be exploited to run arbitrary code.
+    bugs:
+      - url: 1296649, 1298107, 1300129, 1305876, 1314667, 1301252, 1277866, 1307254, 1252511, 1264053
+        desc: Memory safety bugs fixed in Firefox 50
+  CVE-2016-5290:
+    title: Memory safety bugs fixed in Firefox 50 and Firefox ESR 45.5
+    impact: critical
+    reporter: Mozilla developers
+    description: |
+      Mozilla developers and community members Olli Pettay, Christian Holler, Ehsan Akhgari, Jon Coppeard, Gary Kwong, Tooru Fujisawa, Philipp, and Randell Jesup reported memory safety bugs present in Firefox 49 and Firefox ESR 45.4. Some of these bugs showed evidence of memory corruption and we presume that with enough effort that some of these could be exploited to run arbitrary code.
+    bugs:
+      - url: 1309720, 1297062, 1303710, 1018486, 1292590, 1301343, 1301496, 1308048, 1308346, 1299519, 1286911, 1298169
+        desc: Memory safety bugs fixed in Firefox 50 and Firefox ESR 45.5

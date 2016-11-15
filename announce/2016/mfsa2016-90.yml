@@ -1,0 +1,84 @@
+## mfsa2016-90.yml
+announced: November 15, 2016
+fixed_in:
+- Firefox ESR 45.5
+title: Security vulnerabilities fixed in Firefox ESR 45.5
+advisories:
+  CVE-2016-5296:
+    title: Heap-buffer-overflow WRITE in rasterize_edges_1
+    impact: critical
+    reporter: Abhishek Arya
+    description: A heap-buffer-overflow in Cairo when processing SVG content caused by compiler optimization, resulting in a potentially expoitable crash.
+    bugs:
+      - url: 1292443
+        desc: 
+  CVE-2016-5293:
+    title: Write to arbitrary file with updater and moz maintenance service using updater.log hardlink
+    impact: high
+    reporter: Holger Fuhrmannek
+    description: |
+      When the Mozilla updater is run, if the updater's log file in the working directory points to a hardlink, data can be appended to an arbitrary local file. This vulnerability requires local system access. <br>*Note: this issue only affects Windows operating systems.*
+    bugs:
+      - url: 1246945
+        desc: 
+  CVE-2016-5294:
+    title: Arbitrary target directory for result files of update process
+    impact: high
+    reporter: Holger Fuhrmannek
+    description: |
+      The Mozilla Updater can be made to choose an arbitrary target working directory for output files resulting from the update process. This vulnerability requires local system access. <br>*Note: this issue only affects Windows operating systems.*
+    bugs:
+      - url: 1246972
+        desc: 
+  CVE-2016-5297:
+    title: Incorrect argument length checking in Javascript
+    impact: high
+    reporter: André Bargull
+    description: An error in argument length checking in JavaScript, leading to potential integer overflows or other bounds checking issues.
+    bugs:
+      - url: 1303678
+        desc: 
+  CVE-2016-9064:
+    title: Addons update must verify IDs match between current and new versions
+    impact: high
+    reporter: Multiple people
+    description: |
+      Addon updates failed to verify that the add-on ID inside the signed package matched the ID of the add-on being updated. An attacker who could perform a man-in-the-middle attack on the user's connection to the update server and defeat the certificate pinning protection could provide a malicious signed add-on instead of a valid update.
+    bugs:
+      - url: 1303418
+        desc: 
+  CVE-2016-9066:
+    title: Integer overflow leading to a buffer overflow in nsScriptLoadHandler
+    impact: high
+    reporter: Samuel Groß
+    description: A buffer overflow resulting in a potentially exploitable crash due to memory allocation issues when handling large amounts of incoming data.
+    bugs:
+      - url: 1299686
+        desc: 
+  CVE-2016-5291:
+    title: Same-origin policy violation using local HTML file and saved shortcut file
+    impact: moderate
+    reporter: Yuyang Zhou
+    description: |
+      A same-origin policy bypass with local shortcut files to load arbitrary local content from disk.
+    bugs:
+      - url: 1292159
+        desc: 
+  CVE-2016-9074:
+    title: Insufficient timing side-channel resistance in divSpoiler
+    impact: moderate
+    reporter: Franziskus Kiefer
+    description: An existing mitigation of timing side-channel attacks is insufficient in some circumstances. This issue is addressed in Network Security Services (NSS) 3.26.1.
+    bugs:
+      - url: 1293334
+        desc: 
+  CVE-2016-5290:
+    title: Memory safety bugs fixed in Firefox 50 and Firefox ESR 45.5
+    impact: critical
+    reporter: Mozilla developers
+    description: |
+      Mozilla developers and community members Olli Pettay, Christian Holler, Ehsan Akhgari, Jon Coppeard, Gary Kwong, Tooru Fujisawa, Philipp, and Randell Jesup reported memory safety bugs present in Firefox 49 and Firefox ESR 45.4. Some of these bugs showed evidence of memory corruption and we presume that with enough effort that some of these could be exploited to run arbitrary code.
+    bugs:
+      - url: 1309720, 1297062, 1303710, 1018486, 1292590, 1301343, 1301496, 1308048, 1308346, 1299519, 1286911, 1298169
+        desc: Memory safety bugs fixed in Firefox 50 and Firefox ESR 45.5
+
