@@ -8,7 +8,7 @@ advisories:
     title: Heap-buffer-overflow WRITE in rasterize_edges_1
     impact: critical
     reporter: Abhishek Arya
-    description: A heap-buffer-overflow in Cairo when processing SVG content caused by compiler optimization, resulting in a potentially expoitable crash.
+    description: A heap-buffer-overflow in Cairo when processing SVG content caused by compiler optimization, resulting in a potentially exploitable crash.
     bugs:
       - url: 1292443
         desc: 
