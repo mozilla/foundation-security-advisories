@@ -1,0 +1,16 @@
+## mfsa2016-91.yml
+announced: November 28, 2016
+fixed_in:
+- Firefox 50.0.1
+title: Security vulnerabilities fixed in Firefox 50.0.1
+advisories:
+  CVE-2016-9078:
+    title:   |
+      data: URL can inherit wrong origin after an HTTP redirect
+    impact: critical
+    reporter: Alexander Inführ
+    description:  |
+      Redirection from an HTTP connection to a <code>data:</code> URL assigns the referring site's origin to the <code>data:</code> URL in some circumstances. This can result in same-origin violations against a domain if it loads resources from malicious sites. Cross-origin setting of cookies has been demonstrated without the ability to read them. <br>*Note: This issue only affects Firefox 49 and 50.*
+    bugs:
+      - url: 1317641
+        desc: 
