@@ -1,0 +1,17 @@
+## mfsa2016-92.yml
+announced: November 30, 2016
+fixed_in:
+- Firefox 50.0.2
+- Firefox ESR 45.5.1
+- Thunderbird 45.5.1
+title: Firefox SVG Animation Remote Code Execution
+advisories:
+  CVE-2016-9079:
+    title:  Use-after-free in SVG Animation
+    impact: critical
+    reporter: Obscured Team
+    description:  |
+      A use-after-free vulnerability in SVG Animation has been discovered. An exploit built on this vulnerability has been discovered in the wild targeting Firefox and Tor Browser users on Windows.
+    bugs:
+      - url: 1321066
+        desc: Iterator invalidation in nsSMILTimeContainer::NotifyTimeChange()

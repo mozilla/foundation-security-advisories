@@ -1,0 +1,68 @@
+## mfsa2016-93.yml
+announced: November 18, 2016
+fixed_in:
+- Thunderbird 45.5
+title: Security vulnerabilities fixed in Thunderbird 45.5
+description: |
+    *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
+advisories:
+  CVE-2016-5296:
+    title: Heap-buffer-overflow WRITE in rasterize_edges_1
+    impact: critical
+    reporter: Abhishek Arya
+    description: A heap-buffer-overflow in Cairo when processing SVG content caused by compiler optimization, resulting in a potentially exploitable crash.
+    bugs:
+      - url: 1292443
+        desc: 
+  CVE-2016-5294:
+    title: Arbitrary target directory for result files of update process
+    impact: high
+    reporter: Holger Fuhrmannek
+    description: |
+      The Mozilla Updater can be made to choose an arbitrary target working directory for output files resulting from the update process. This vulnerability requires local system access. <br>*Note: this issue only affects Windows operating systems.*
+    bugs:
+      - url: 1246972
+        desc: 
+  CVE-2016-5297:
+    title: Incorrect argument length checking in JavaScript
+    impact: high
+    reporter: André Bargull
+    description: An error in argument length checking in JavaScript, leading to potential integer overflows or other bounds checking issues.
+    bugs:
+      - url: 1303678
+        desc: 
+  CVE-2016-9066:
+    title: Integer overflow leading to a buffer overflow in nsScriptLoadHandler
+    impact: high
+    reporter: Samuel Groß
+    description: A buffer overflow resulting in a potentially exploitable crash due to memory allocation issues when handling large amounts of incoming data.
+    bugs:
+      - url: 1299686
+        desc: 
+  CVE-2016-5291:
+    title: Same-origin policy violation using local HTML file and saved shortcut file
+    impact: moderate
+    reporter: Yuyang Zhou
+    description: |
+      A same-origin policy bypass with local shortcut files to load arbitrary local content from disk.
+    bugs:
+      - url: 1292159
+        desc: 
+  CVE-2016-9074:
+    title: Insufficient timing side-channel resistance in divSpoiler
+    impact: moderate
+    reporter: Franziskus Kiefer
+    description: An existing mitigation of timing side-channel attacks is insufficient in some circumstances. This issue is addressed in Network Security Services (NSS) 3.26.1.
+    bugs:
+      - url: 1293334
+        desc: 
+  CVE-2016-5290:
+    title: Memory safety bugs fixed in Thunderbird 45.5
+    impact: critical
+    reporter: Mozilla developers
+    description: |
+      Mozilla developers and community members Olli Pettay, Christian Holler, Ehsan Akhgari, Jon Coppeard, Gary Kwong, Tooru Fujisawa, Philipp, and Randell Jesup reported memory safety bugs present in Thunderbird ESR 45.4. Some of these bugs showed evidence of memory corruption and we presume that with enough effort that some of these could be exploited to run arbitrary code.
+    bugs:
+      - url: 1309720, 1297062, 1303710, 1018486, 1292590, 1301343, 1301496, 1308048, 1308346, 1299519, 1286911, 1298169
+        desc: Memory safety bugs fixed in in Thunderbird ESR 45.5
+
