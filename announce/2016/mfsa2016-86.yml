@@ -1,5 +1,6 @@
 ## mfsa2016-86.yml
 announced: September 20, 2016
+impact: critical
 fixed_in:
 - Firefox ESR 45.4
 title: Security vulnerabilities fixed in Firefox ESR 45.4

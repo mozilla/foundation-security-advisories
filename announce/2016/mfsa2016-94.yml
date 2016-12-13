@@ -1,5 +1,6 @@
 ## mfsa2016-94.yml
 announced: December 13, 2016
+impact: critical
 fixed_in:
 - Firefox 50.1
 title: Security vulnerabilities fixed in Firefox 50.1

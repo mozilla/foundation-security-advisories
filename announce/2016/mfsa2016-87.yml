@@ -1,5 +1,6 @@
 ## mfsa2016-87.yml
 announced: October 20, 2016
+impact: high
 fixed_in:
 - Firefox 49.0.2
 title: Security vulnerabilities fixed in Firefox 49.0.2
