@@ -1,0 +1,94 @@
+## mfsa2016-95.yml
+announced: December 13, 2016
+fixed_in:
+- Firefox ESR 45.6
+title: Security vulnerabilities fixed in Firefox ESR 45.6
+advisories:
+  CVE-2016-9899:
+    title: Use-after-free while manipulating DOM events and audio elements
+    impact: critical
+    reporter: echo
+    description: |
+      Use-after-free while manipulating DOM events and removing audio elements due to errors in the handling of node adoption.
+    bugs:
+      - url: 1317409
+        desc: 
+  CVE-2016-9895:
+    title: CSP bypass using marquee tag
+    impact: high
+    reporter: Andrew Krasichkov
+    description: |
+      Event handlers on <code>marquee</code> elements were executed despite a strict Content Security Policy (CSP) that disallowed inline JavaScript.
+    bugs:
+      - url: 1312272
+        desc: 
+  CVE-2016-9897:
+    title: Memory corruption in libGLES
+    impact: high
+    reporter: Aral
+    description: Memory corruption resulting in a potentially exploitable crash during WebGL functions using a vector constructor with a varying array within libGLES.
+    bugs:
+      - url: 1301381
+        desc: 
+  CVE-2016-9898:
+    title: Use-after-free in Editor while manipulating DOM subtrees
+    impact: high
+    reporter: Nils
+    description: Use-after-free resulting in potentially exploitable crash when manipulating DOM subtrees in the Editor.
+    bugs:
+      - url: 1314442
+        desc: 
+  CVE-2016-9900:
+    title: Restricted external resources can be loaded by SVG images through data URLs
+    impact: high
+    reporter: insertscript
+    description: |
+      External resources that should be blocked when loaded by SVG images can bypass security restrictions through the use of <code>data:</code> URLs. This could allow for cross-domain data leakage.
+    bugs:
+      - url: 1319122
+        desc: 
+  CVE-2016-9904:
+    title:  Cross-origin information leak in shared atoms
+    impact: high
+    reporter:  Jann Horn
+    description: |
+      An attacker could use a JavaScript Map/Set timing attack to determine whether an atom is used by another compartment/zone in specific contexts. This could be used to leak information, such as usernames embedded in JavaScript code, across websites.
+    bugs:
+      - url: 1317936
+        desc: 
+  CVE-2016-9905:
+    title:  Crash in EnumerateSubDocuments
+    impact: high
+    reporter:  Philipp
+    description:  |
+      A potentially exploitable crash in <code>EnumerateSubDocuments</code> while adding or removing sub-documents.
+    bugs:
+      - url: 1293985
+        desc: 
+  CVE-2016-9901:
+    title: Data from Pocket server improperly sanitized before execution
+    impact: moderate
+    reporter: Wladimir Palant
+    description: |
+      HTML tags received from the Pocket server will be processed without sanitization and any JavaScript code executed will be run in the <code>about:pocket-saved</code> (unprivileged) page, giving it access to Pocket's messaging API through HTML injection.
+    bugs:
+      - url: 1320057
+        desc: 
+  CVE-2016-9902:
+    title: Pocket extension does not validate the origin of events
+    impact: moderate
+    reporter: Wladimir Palant
+    description: |
+      The Pocket toolbar button, once activated, listens for events fired from it's own pages but does not verify the origin of incoming events. This allows content from other origins to fire events and inject content and commands into the Pocket context. <br>*Note: this issue does not affect users with e10s enabled.*
+    bugs:
+      - url: 1320039
+        desc: 
+  CVE-2016-9893:
+    title: Memory safety bugs fixed in Firefox 50.1 and Firefox ESR 45.6
+    impact: critical
+    reporter: Mozilla developers
+    description: |
+      Mozilla developers and community members Jan de Mooij, Iris Hsiao, Christian Holler, Carsten Book, Timothy Nikkel, Christoph Diehl, Olli Pettay, Raymond Forbes, and Boris Zbarsky reported memory safety bugs present in Firefox 50.0.2 and Firefox ESR 45.5.1. Some of these bugs showed evidence of memory corruption and we presume that with enough effort that some of these could be exploited to run arbitrary code.
+    bugs:
+      - url: 1319524, 1298773, 1299098, 1309834, 1312609, 1313212, 1317805, 1312548, 1315631, 1287912
+        desc: Memory safety bugs fixed in Firefox 50.1 and Firefox ESR 45.6

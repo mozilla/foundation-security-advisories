@@ -1,5 +1,6 @@
 ## mfsa2016-93.yml
 announced: November 18, 2016
+impact: critical
 fixed_in:
 - Thunderbird 45.5
 title: Security vulnerabilities fixed in Thunderbird 45.5
