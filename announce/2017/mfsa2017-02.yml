@@ -4,8 +4,6 @@ impact: critical
 fixed_in:
 - Firefox ESR 45.7
 title: Security vulnerabilities fixed in Firefox ESR 45.7
-description: |
-    Some front matter with markdown and HTML here.
 advisories:
   CVE-2017-5375:
     title: Excessive JIT code allocation allows bypass of ASLR and DEP
