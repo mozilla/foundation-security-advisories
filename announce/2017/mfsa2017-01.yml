@@ -131,7 +131,7 @@ advisories:
     impact: moderate
     reporter: Jordi Chancel
     description: |
-    A location bar spoofing attack where the location bar of loaded page will be shown over the content of another tab due to a series of JavaScript events combined with fullscreen mode. <br>*Note: This issue only affects Firefox for Android. Other operating systems are not affected.*
+      A location bar spoofing attack where the location bar of loaded page will be shown over the content of another tab due to a series of JavaScript events combined with fullscreen mode. <br>*Note: This issue only affects Firefox for Android. Other operating systems are not affected.*
     bugs:
       - url: 1222798
   CVE-2017-5391:
@@ -163,7 +163,7 @@ advisories:
     impact: low
     reporter: Jordi Chancel
     description: |
-    Malicious sites can display a spoofed location bar on a subsequently loaded page when the existing location bar on the new page is scrolled out of view if navigations between pages can be timed correctly. <br>*Note: This issue only affects Firefox for Android. Other operating systems are not affected.*
+      Malicious sites can display a spoofed location bar on a subsequently loaded page when the existing location bar on the new page is scrolled out of view if navigations between pages can be timed correctly. <br>*Note: This issue only affects Firefox for Android. Other operating systems are not affected.*
     bugs:
       - url: 1293463
   CVE-2017-5387:
