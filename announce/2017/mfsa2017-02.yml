@@ -1,0 +1,82 @@
+## mfsa2017-02.yml
+announced: January 24, 2016
+fixed_in:
+- Firefox ESR 45.7
+title: Security vulnerabilities fixed in Firefox ESR 45.7
+description: |
+    Some front matter with markdown and HTML here.
+advisories:
+  CVE-2017-5375:
+    title: Excessive JIT code allocation allows bypass of ASLR and DEP
+    impact: critical
+    reporter: Rh0
+    description: JIT code allocation can allow for a bypass of ASLR and DEP protections leading to potential memory corruption attacks.
+    bugs:
+      - url: 1325200
+  CVE-2017-5376:
+    title: Use-after-free in XSL
+    impact: critical
+    reporter: Nicolas Grégoire
+    description: Use-after-free while manipulating XSL in XSLT documents
+    bugs:
+      - url: 1311687
+  CVE-2017-5378:
+    title: Pointer and frame data leakage of Javascript objects
+    impact: high
+    reporter: Jann Horn
+    description: |
+      Hashed codes of JavaScript objects are shared between pages. This allows for pointer leaks because an object’s address can be discovered through hash codes, and also allows for data leakage of an object’s content using these hash codes.
+    bugs:
+      - url: 1312001
+      - url: 1330769
+  CVE-2017-5380:
+    title: Potential use-after-free during DOM manipulations
+    impact: high
+    reporter: Nils
+    description: |
+      A potential use-after-free found through fuzzing during DOM manipulation of SVG content. 
+    bugs:
+      - url: 1322107
+  CVE-2017-5390:
+    title: Insecure communication methods in Developer Tools JSON viewer
+    impact: high
+    reporter: Jerri Rice
+    description: |
+      The JSON viewer in the Developer Tools uses insecure methods to create a communication channel for copying and viewing JSON or HTTP headers data, allowing for potential privilege escalation.
+    bugs:
+      - url: 1297361
+  CVE-2017-5396:
+    title: Use-after-free with Media Decoder
+    impact: high
+    reporter: Filipe Gomes
+    description: |
+      A use-after-free vulnerability in the Media Decoder when working with media files when some events are fired after the media elements are freed from memory.
+    bugs:
+      - url: 1329403
+  CVE-2017-5383:
+    title: Location bar spoofing with unicode characters
+    impact: moderate
+    reporter: Armin Razmjou
+    description: |
+      URLs containing certain unicode glyphs for alternative hyphens and quotes do not properly trigger punycode display, allowing for domain name spoofing attacks in the location bar.
+    bugs:
+      - url: 1323338
+      - url: 1324716
+  CVE-2017-5386:
+    title: "WebExtensions can use data: protocol to affect other extensions"
+    impact: moderate
+    reporter: Muneaki Nishimura
+    description: |
+      WebExtension scripts can use the <code>data:</code> protocol to affect pages loaded by other web extensions using this protocol, leading to potential data disclosure or privilege escalation in affected extensions. 
+    bugs:
+      - url: 1319070
+  CVE-2017-5373:
+    title: Memory safety bugs fixed in Firefox 51 and Firefox ESR 45.7
+    impact: critical
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers and community members Christian Holler, Gary Kwong, André Bargull, Jan de Mooij, Tom Schuster, and Oriol reported memory safety bugs present in Firefox 50.1 and Firefox ESR 45.6. Some of these bugs showed evidence of memory corruption and we presume that with enough effort that some of these could be exploited to run arbitrary code.
+    bugs:
+      - url: 1322315, 1328834, 1322420, 1285833, 1285960, 1328251, 1331058, 1325938, 1325877
+        desc: Memory safety bugs fixed in Firefox 51 and Firefox ESR 45.7
+

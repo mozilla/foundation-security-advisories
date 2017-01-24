@@ -114,7 +114,7 @@ advisories:
     impact: critical
     reporter: Mozilla developers
     description: |
-      Mozilla developers and community members Jan de Mooij, Iris Hsiao, Christian Holler, Carsten Book, Timothy Nikkel, Christoph Diehl, Olli Pettay, Raymond Forbes, and Boris Zbarsky reported memory safety bugs present in Firefox 50.0.2 and Firefox ESR 45.5.1. Some of these bugs showed evidence of memory corruption and we presume that with enough effort that some of these could be exploited to run arbitrary code.
+      Mozilla developers and community members Jan de Mooij, Iris Hsiao, Christian Holler, Carsten Book, Timothy Nikkel, Christoph Diehl, Olli Pettay, Raymond Forbes, Boris Zbarsky, and Marco Castelluccio reported memory safety bugs present in Firefox 50.0.2 and Firefox ESR 45.5.1. Some of these bugs showed evidence of memory corruption and we presume that with enough effort that some of these could be exploited to run arbitrary code.
     bugs:
-      - url: 1319524, 1298773, 1299098, 1309834, 1312609, 1313212, 1317805, 1312548, 1315631, 1287912
+      - url: 1319524, 1298773, 1299098, 1309834, 1312609, 1313212, 1317805, 1312548, 1315631, 1287912, 1328642
         desc: Memory safety bugs fixed in Firefox 50.1 and Firefox ESR 45.6
