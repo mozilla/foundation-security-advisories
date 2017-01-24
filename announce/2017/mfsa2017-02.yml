@@ -1,5 +1,6 @@
 ## mfsa2017-02.yml
 announced: January 24, 2016
+impact: critical
 fixed_in:
 - Firefox ESR 45.7
 title: Security vulnerabilities fixed in Firefox ESR 45.7
