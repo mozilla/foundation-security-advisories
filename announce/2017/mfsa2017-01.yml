@@ -155,7 +155,7 @@ advisories:
     impact: moderate
     reporter: Stuart Colville
     description: |
-      The <code>mozAddonManager<code> allows for the installation of extensions from the CDN for addons.mozilla.org, a publicly accessible site. This could allow malicious extensions to install additional extensions from the CDN in combination with an XSS attack on Mozilla AMO sites. 
+      The <code>mozAddonManager</code> allows for the installation of extensions from the CDN for addons.mozilla.org, a publicly accessible site. This could allow malicious extensions to install additional extensions from the CDN in combination with an XSS attack on Mozilla AMO sites. 
     bugs:
       - url: 1309282
   CVE-2017-5395:
