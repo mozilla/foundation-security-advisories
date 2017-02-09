@@ -1,0 +1,16 @@
+## mfsa2017-04.yml
+announced: February 9, 2017
+impact: critical
+fixed_in:
+- Firefox 51.0.3
+title: Security vulnerabilities fixed in Firefox 51.0.3
+description: |
+    *Firefox 51.0.3 is an Android only release. The security issue listed does not affect Firefox for other operating systems.*
+advisories:
+  CVE-2017-5397:
+    title: Firefox for Android cache directory is world writable
+    impact: critical
+    reporter: Jim Chen
+    description: The cache directory on the local file system is set to be world writable. Firefox defaults to extracting libraries from this cache. This allows for the possibility of an installed malicious application or tools with write access to the file system to replace files used by Firefox with their own versions.
+    bugs:
+      - url: 1337304
