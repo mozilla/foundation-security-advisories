@@ -1,0 +1,88 @@
+## mfsa2017-06.yml
+announced: March 7, 2017
+impact: critical
+fixed_in:
+- Firefox ESR 45.8
+title: Security vulnerabilities fixed in Firefox ESR 45.8
+advisories:
+  CVE-2017-5400:
+    title: asm.js JIT-spray bypass of ASLR and DEP
+    impact: critical
+    reporter: Rh0
+    description: |
+      JIT-spray targeting asm.js combined with a heap spray allows for a bypass of ASLR and DEP protections leading to potential memory corruption attacks.
+    bugs:
+      - url: 1334933
+  CVE-2017-5401:
+    title: Memory Corruption when handling ErrorResult
+    impact: critical
+    reporter: Anton Eliasson
+    description: |
+      A crash triggerable by web content in which an <code>ErrorResult</code> references unassigned memory due to a logic error. The resulting crash may be exploitable.
+    bugs:
+      - url: 1328861
+  CVE-2017-5402:
+    title: Use-after-free working with events in FontFace objects
+    impact: critical
+    reporter: Nils
+    description: |
+      A use-after-free can occur when events are fired for a <code>FontFace</code> object after the object has been already been destroyed while working with fonts. This results in a potentially exploitable crash.
+    bugs:
+      - url: 1334876
+  CVE-2017-5404:
+    title: Use-after-free working with ranges in selections
+    impact: critical
+    reporter: Ivan Fratric of Google Project Zero
+    description: |
+      A use-after-free error can occur when manipulating ranges in selections with one node inside a native anonymous tree and one node outside of it. This results in a potentially exploitable crash.
+    bugs:
+      - url: 1340138
+  CVE-2017-5407:
+    title: Pixel and history stealing via floating-point timing side channel with SVG filters
+    impact: high
+    reporter: David Kohlbrenner
+    description: |
+      Using SVG filters that don't use the fixed point math implementation on a target iframe, a malicious page can extract pixel values from a targeted user. This can be used to extract history information and read text values across domains. This violates same-origin policy and leads to information disclosure.
+    bugs:
+      - url: 1336622
+  CVE-2017-5410:
+    title: Memory corruption during JavaScript garbage collection incremental sweeping
+    impact: high
+    reporter: Jerri Rice
+    description: |
+      Memory corruption resulting in a potentially exploitable crash during garbage collection of JavaScript due errors in how incremental sweeping is managed for memory cleanup.
+    bugs:
+      - url: 1330687
+  CVE-2017-5409:
+    title: File deletion via callback parameter in Mozilla Windows Updater and Maintenance Service
+    impact: moderate
+    reporter: Holger Fuhrmannek
+    description: |
+      The Mozilla Windows updater can be called by a non-privileged user to delete an arbitrary local file by passing a special path to the callback parameter through the Mozilla Maintenance Service, which has privileged access. <br>*Note: This attack requires local system access and only affects Windows. Other operating systems are not affected.*
+    bugs:
+      - url: 1321814
+  CVE-2017-5408:
+    title: Cross-origin reading of video captions in violation of CORS
+    impact: moderate
+    reporter: Eric Lawrence of Chrome Security
+    description: |
+      Video files loaded video captions cross-origin without checking for the presence of  CORS headers permitting such cross-origin use, leading to potential information disclosure for video captions.
+    bugs:
+      - url: 1313711
+  CVE-2017-5405:
+    title: FTP response codes can cause use of uninitialized values for ports
+    impact: low
+    reporter: Anonymous
+    description: |
+      Certain response codes in FTP connections can result in the use of uninitialized values for ports in FTP operations.
+    bugs:
+      - url: 1336699
+  CVE-2017-5398:
+    title: Memory safety bugs fixed in Firefox 52 and Firefox ESR 45.8
+    impact: critical
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers and community members Boris Zbarsky, Christian Holler, Honza Bambas, Jon Coppeard, Randell Jesup, André Bargull, Kan-Ru Chen, and Nathan Froyd reported memory safety bugs present in Firefox 51 and Firefox ESR 45.7. Some of these bugs showed evidence of memory corruption and we presume that with enough effort that some of these could be exploited to run arbitrary code.
+    bugs:
+      - url: 1332550, 1332597, 1338383, 1321612, 1322971, 1333568, 1333887, 1335450, 1325052, 1324379, 1336510
+        desc: Memory safety bugs fixed in Firefox 52 and Firefox ESR 45.8
