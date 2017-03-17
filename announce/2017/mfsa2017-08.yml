@@ -1,0 +1,16 @@
+## mfsa2017-08.yml
+announced: March 17, 2017
+impact: critical
+fixed_in:
+- Firefox 52.0.1
+- Firefox ESR 52.0.1
+title: integer overflow in createImageBitmap()
+advisories:
+  CVE-2017-5428:
+    title: integer overflow in createImageBitmap()
+    impact: critical
+    reporter: Chaitin Security Research Lab via Trend Micro's Zero Day Initiative
+    description: |
+      An integer overflow in <code>createImageBitmap()</code> was reported through the Pwn2Own contest. The fix for this vulnerability disables the experimental extensions to the <code>createImageBitmap</code> API. This function runs in the content sandbox, requiring a second vulnerability to compromise a user's computer.
+    bugs:
+      - url: 1348168
