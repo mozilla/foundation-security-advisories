@@ -1,0 +1,195 @@
+## mfsa2017-09.yml
+announced: April 5, 2017
+impact: critical
+fixed_in:
+- - Thunderbird 52
+title: Security vulnerabilities fixed in - Thunderbird 52
+description: |
+    *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
+advisories:
+  CVE-2017-5400:
+    title: asm.js JIT-spray bypass of ASLR and DEP
+    impact: critical
+    reporter: Rh0
+    description: |
+      JIT-spray targeting asm.js combined with a heap spray allows for a bypass of ASLR and DEP protections leading to potential memory corruption attacks.
+    bugs:
+      - url: 1334933
+  CVE-2017-5401:
+    title: Memory Corruption when handling ErrorResult
+    impact: critical
+    reporter: Anton Eliasson
+    description: |
+      A crash triggerable by web content in which an <code>ErrorResult</code> references unassigned memory due to a logic error. The resulting crash may be exploitable.
+    bugs:
+      - url: 1328861
+  CVE-2017-5402:
+    title: Use-after-free working with events in FontFace objects
+    impact: critical
+    reporter: Nils
+    description: |
+      A use-after-free can occur when events are fired for a <code>FontFace</code> object after the object has been already been destroyed while working with fonts. This results in a potentially exploitable crash.
+    bugs:
+      - url: 1334876
+  CVE-2017-5403:
+    title: Use-after-free using addRange to add range to an incorrect root object
+    impact: critical
+    reporter: Nils
+    description: |
+      When adding a range to an object in the DOM, it is possible to use <code>addRange</code> to add the range to an incorrect root object. This triggers a use-after-free, resulting in a potentially exploitable crash.
+    bugs:
+      - url: 1340186
+  CVE-2017-5404:
+    title: Use-after-free working with ranges in selections
+    impact: critical
+    reporter: Ivan Fratric of Google Project Zero
+    description: |
+      A use-after-free error can occur when manipulating ranges in selections with one node inside a native anonymous tree and one node outside of it. This results in a potentially exploitable crash.
+    bugs:
+      - url: 1340138
+  CVE-2017-5406:
+    title: Segmentation fault in Skia with canvas operations
+    impact: high
+    reporter: Atte Kettunen
+    description: |
+      A segmentation fault can occur in the Skia graphics library during some canvas operations due to issues with mask/clip intersection and empty masks.
+    bugs:
+      - url: 1306890
+  CVE-2017-5407:
+    title: Pixel and history stealing via floating-point timing side channel with SVG filters
+    impact: high
+    reporter: David Kohlbrenner
+    description: |
+      Using SVG filters that don't use the fixed point math implementation on a target iframe, a malicious page can extract pixel values from a targeted user. This can be used to extract history information and read text values across domains. This violates same-origin policy and leads to information disclosure.
+    bugs:
+      - url: 1336622
+  CVE-2017-5410:
+    title: Memory corruption during JavaScript garbage collection incremental sweeping
+    impact: high
+    reporter: Jerri Rice
+    description: |
+      Memory corruption resulting in a potentially exploitable crash during garbage collection of JavaScript due errors in how incremental sweeping is managed for memory cleanup.
+    bugs:
+      - url: 1330687
+  CVE-2017-5411:
+    title: Use-after-free in Buffer Storage in libGLES
+    impact: high
+    reporter: Looben Yang
+    description: |
+      A use-after-free can occur during buffer storage operations within the ANGLE graphics library, used for WebGL content. The buffer storage can be freed while still in use in some circumstances, leading to a potentially exploitable crash. <br>*Note: This issue is in <code>libGLES</code>, which is only in use on Windows. Other operating systems are not affected.*
+    bugs:
+      - url: 1325511
+  CVE-2017-5408:
+    title: Cross-origin reading of video captions in violation of CORS
+    impact: moderate
+    reporter: Eric Lawrence of Chrome Security
+    description: |
+      Video files loaded video captions cross-origin without checking for the presence of  CORS headers permitting such cross-origin use, leading to potential information disclosure for video captions.
+    bugs:
+      - url: 1313711
+  CVE-2017-5412:
+    title: Buffer overflow read in SVG filters
+    impact: moderate
+    reporter: Atte Kettunen
+    description: |
+      A buffer overflow read during SVG filter color value operations, resulting in data exposure. 
+    bugs:
+      - url: 1328323
+  CVE-2017-5413:
+    title: Segmentation fault during bidirectional operations
+    impact: moderate
+    reporter: Atte Kettunen
+    description: |
+      A segmentation fault can occur during some bidirectional layout operations.
+    bugs:
+      - url: 1337504
+  CVE-2017-5414:
+    title: File picker can choose incorrect default directory
+    impact: moderate
+    reporter: Abdulrahman Alqabandi
+    description: |
+      The file picker dialog can choose and display the wrong local default directory when instantiated. On some operating systems, this can lead to information disclosure, such as the operating system or the local account name.
+    bugs:
+      - url: 1319370
+  CVE-2017-5416:
+    title: Null dereference crash in HttpChannel
+    impact: moderate
+    reporter: Radek 'sysKin' Czyz
+    description: |
+      In certain circumstances a networking event listener can be prematurely released. This appears to result in a null dereference in practice. 
+    bugs:
+      - url: 1328121
+  CVE-2017-5425:
+    title: Overly permissive Gecko Media Plugin sandbox regular expression access
+    impact: moderate
+    reporter: Haik Aftandilian
+    description: |
+      The Gecko Media Plugin sandbox allows access to local files that match specific regular expressions. On OS OX, this matching allows access to some data in subdirectories of <code>/private/var</code> that could expose personal or temporary data. This has been updated to not allow access to <code>/private/var</code> and its subdirectories. <br>*Note: this issue only affects OS X. Other operating systems are not affected.*
+    bugs:
+      - url: 1322716
+  CVE-2017-5426:
+    title: Gecko Media Plugin sandbox is not started if seccomp-bpf filter is running
+    impact: moderate
+    reporter: Jed Davis
+    description: |
+      On Linux, if the secure computing mode BPF (seccomp-bpf) filter is running when the Gecko Media Plugin sandbox is started, the sandbox fails to be applied and items that would run within the sandbox are run protected only by the running filter which is typically weak compared to the sandbox. <br>*Note: this issue only affects Linux. Other operating systems are not affected.*
+    bugs:
+      - url: 1257361
+  CVE-2017-5418:
+    title: Out of bounds read when parsing HTTP digest authorization responses
+    impact: low
+    reporter: Anonymous
+    description: |
+      An out of bounds read error occurs when parsing some HTTP digest authorization responses, resulting in information leakage through the reading of random memory containing matches to specifically set patterns.
+    bugs:
+      - url: 1338876
+  CVE-2017-5419:
+    title: Repeated authentication prompts lead to DOS attack
+    impact: low
+    reporter: Chris Hamono
+    description: |
+      If a malicious site repeatedly triggers a modal authentication prompt, eventually the browser UI will become non-responsive, requiring shutdown through the operating system. This is a denial of service (DOS) attack.
+    bugs:
+      - url: 1312243
+  CVE-2017-5405:
+    title: FTP response codes can cause use of uninitialized values for ports
+    impact: low
+    reporter: Anonymous
+    description: |
+      Certain response codes in FTP connections can result in the use of uninitialized values for ports in FTP operations.
+    bugs:
+      - url: 1336699
+  CVE-2017-5421:
+    title: Print preview spoofing
+    impact: low
+    reporter: Abdulrahman Alqabandi
+    description: |
+      A malicious site could spoof the contents of the print preview window if popup windows are enabled, resulting in user confusion of what site is currently loaded.
+    bugs:
+      - url: 1301876
+  CVE-2017-5422:
+    title: "DOS attack by using view-source: protocol repeatedly in one hyperlink"
+    impact: low
+    reporter: Alex Bolton
+    description: |
+      If a malicious site uses the <code>view-source:</code> protocol in a series within a single hyperlink, it can trigger a non-exploitable browser crash when the hyperlink is selected. This was fixed by no longer making <code>view-source:</code> linkable.
+    bugs:
+      - url: 1295002
+  CVE-2017-5399:
+    title: Memory safety bugs fixed in Thunderbird 52
+    impact: critical
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers and community members Carsten Book, Calixte Denizet, Christian Holler, Andrew McCreight, David Bolter, David Keeler, Jon Coppeard, Tyson Smith, Ronald Crane, Tooru Fujisawa, Ben Kelly, Bob Owen, Jed Davis, Julian Seward, Julian Hector, Philipp, Markus Stange, and  André Bargull reported memory safety bugs present in Firefox 51. Some of these bugs showed evidence of memory corruption and we presume that with enough effort that some of these could be exploited to run arbitrary code.
+    bugs:
+      - url: 1332569, 1315248, 1261335, 1321038, 1331771, 1339566, 1339591, 1240893, 1341905, 1323241, 1336467, 1270288, 1295299, 1296024, 1304201, 1306142, 1307557, 1308036, 1334246, 1334290, 1317085, 1339116, 1324000, 1323150, 1332501, 1320894, 1333752, 1303713, 1321566, 1264053, 1343513
+        desc: Memory safety bugs fixed in Thunderbird 52
+  CVE-2017-5398:
+    title: Memory safety bugs fixed in Thunderbird 52 and Thunderbird 45.8
+    impact: critical
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers and community members Boris Zbarsky, Christian Holler, Honza Bambas, Jon Coppeard, Randell Jesup, André Bargull, Kan-Ru Chen, and Nathan Froyd reported memory safety bugs present in Firefox 51 and Firefox ESR 45.7. Some of these bugs showed evidence of memory corruption and we presume that with enough effort that some of these could be exploited to run arbitrary code.
+    bugs:
+      - url: 1332550, 1332597, 1338383, 1321612, 1322971, 1333568, 1333887, 1335450, 1325052, 1324379, 1336510
+        desc: Memory safety bugs fixed in Thunderbird 52 and Thunderbird ESR 45.8
