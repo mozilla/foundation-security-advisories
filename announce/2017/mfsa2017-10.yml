@@ -1,0 +1,321 @@
+## mfsa2017-10.yml
+announced: April 19, 2017
+impact: critical
+fixed_in:
+- Firefox 53
+title: Security vulnerabilities fixed in Firefox 53
+advisories:
+  CVE-2017-5433:
+    title: Use-after-free in SMIL animation functions
+    impact: critical
+    reporter: Nils
+    description: |
+      A use-after-free vulnerability in SMIL animation functions occurs when pointers to animation elements in an array are dropped from the animation controller while still in use. This results in a potentially exploitable crash.
+    bugs:
+      - url: 1347168
+  CVE-2017-5435:
+    title: Use-after-free during transaction processing in the editor
+    impact: critical
+    reporter: Nils
+    description: A use-after-free vulnerability occurs during transaction processing in the editor during design mode interactions. This results in a potentially exploitable crash.
+    bugs:
+      - url: 1350683
+  CVE-2017-5436:
+    title: Out-of-bounds write with malicious font in Graphite 2
+    impact: critical
+    reporter: Holger Fuhrmannek
+    description: |
+       An out-of-bounds write in the Graphite 2 library triggered with a maliciously crafted Graphite font. This results in a potentially exploitable crash. This issue was fixed in the Graphite 2 library as well as Mozilla products.
+    bugs:
+      - url: 1345461
+  CVE-2017-5461:
+    title: Out-of-bounds write in Base64 encoding in NSS
+    impact: critical
+    reporter: Ronald Crane
+    description: |
+      An out-of-bounds write during Base64 decoding operation in the Network Security Services (NSS) library due to insufficient memory being allocated to the buffer. This results in a potentially exploitable crash. The NSS library has been updated to fix this issue to address this issue and Firefox 53 has been updated with NSS version 3.29.5.
+    bugs:
+      - url: 1344380
+  CVE-2017-5459:
+    title: Buffer overflow in WebGL
+    impact: critical
+    reporter: Atte Kettunen
+    description: |
+      A buffer overflow in WebGL triggerable by web content, resulting in a potentially exploitable crash.
+    bugs:
+      - url: 1333858
+  CVE-2017-5466:
+    title: "Origin confusion when reloading isolated data:text/html URL"
+    impact: critical
+    reporter: Takeshi Terada
+    description: |
+      If a page is loaded from an original site through a hyperlink and contains a redirect to a <code>data:text/html</code> URL, triggering a reload will run the reloaded <code>data:text/html</code> page with its origin set incorrectly. This allows for a cross-site scripting (XSS) attack.
+    bugs:
+      - url: 1353975
+  CVE-2017-5434:
+    title: Use-after-free during focus handling
+    impact: high
+    reporter: Nils
+    description: A use-after-free vulnerability occurs when redirecting focus handling which results in a potentially exploitable crash.
+    bugs:
+      - url: 1349946
+  CVE-2017-5432:
+    title: Use-after-free in text input selection
+    impact: high
+    reporter: Nils
+    description: |
+      A use-after-free vulnerability occurs during certain text input selection resulting in a potentially exploitable crash.
+    bugs:
+      - url: 1346654
+  CVE-2017-5460:
+    title: Use-after-free in frame selection
+    impact: high
+    reporter: Nils
+    description: |
+      A use-after-free vulnerability in frame selection triggered by a combination of malicious script content and key presses by a user. This results in a potentially exploitable crash.
+    bugs:
+      - url: 1343642
+  CVE-2017-5438:
+    title: Use-after-free in nsAutoPtr during XSLT processing
+    impact: high
+    reporter: Nicolas Grégoire
+    description: |
+      A use-after-free vulnerability during XSLT processing due to the result handler being held by a freed handler during handling. This results in a potentially exploitable crash.
+    bugs:
+      - url: 1336828
+  CVE-2017-5439:
+    title: Use-after-free in nsTArray Length() during XSLT processing
+    impact: high
+    reporter: Nicolas Grégoire
+    description: |
+      A use-after-free vulnerability during XSLT processing due to poor handling of template parameters. This results in a potentially exploitable crash.
+    bugs:
+      - url: 1336830
+  CVE-2017-5440:
+    title: Use-after-free in txExecutionState destructor during XSLT processing
+    impact: high
+    reporter: Nicolas Grégoire
+    description: |
+      A use-after-free vulnerability during XSLT processing due to a failure to propagate error conditions during matching while evaluating context, leading to objects being used when they no longer exist. This results in a potentially exploitable crash.
+    bugs:
+      - url: 1336832
+  CVE-2017-5441:
+    title: Use-after-free with selection during scroll events
+    impact: high
+    reporter: Nils
+    description: |
+      A use-after-free vulnerability when holding a selection during scroll events. This results in a potentially exploitable crash.
+    bugs:
+      - url: 1343795
+  CVE-2017-5442:
+    title: Use-after-free during style changes
+    impact: high
+    reporter: Nils
+    description: |
+      A use-after-free vulnerability during changes in style when manipulating DOM elements. This results in a potentially exploitable crash.
+    bugs:
+      - url: 1347979
+  CVE-2017-5464:
+    title: Memory corruption with accessibility and DOM manipulation
+    impact: high
+    reporter: Nils
+    description: |
+       During DOM manipulations of the accessibility tree through script, the DOM tree can become out of sync with the accessibility tree, leading to memory corruption and a potentially exploitable crash. 
+    bugs:
+      - url: 1347075
+  CVE-2017-5443:
+    title: Out-of-bounds write during BinHex decoding
+    impact: high
+    reporter: Chamal De Silva
+    description: |
+      An out-of-bounds write vulnerability while decoding improperly formed BinHex format archives.
+    bugs:
+      - url: 1342661
+  CVE-2017-5444:
+    title: Buffer overflow while parsing application/http-index-format content
+    impact: high
+    reporter: Chamal De Silva
+    description: |
+      A buffer overflow vulnerability while parsing <code>application/http-index-format</code> format content when the header contains improperly formatted data. This allows for an out-of-bounds read of data from memory.
+    bugs:
+      - url: 1344461
+  CVE-2017-5446:
+    title: Out-of-bounds read when HTTP/2 DATA frames are sent with incorrect data
+    impact: high
+    reporter: Chun Han Hsiao
+    description: |
+      An out-of-bounds read when an HTTP/2 connection to a servers sends <code>DATA</code> frames with incorrect data content. This leads to a potentially exploitable crash. 
+    bugs:
+      - url: 1343505
+  CVE-2017-5447:
+    title: Out-of-bounds read during glyph processing
+    impact: high
+    reporter: Ivan Fratric of Google Project Zero
+    description: |
+      An out-of-bounds read during the processing of glyph widths during text layout. This results in a potentially exploitable crash and could allow an attacker to read otherwise inaccessible memory. 
+    bugs:
+      - url: 1343552
+  CVE-2017-5465:
+    title: Out-of-bounds read in ConvolvePixel
+    impact: high
+    reporter: Ivan Fratric of Google Project Zero
+    description: |
+      An out-of-bounds read while processing SVG content in <code>ConvolvePixel</code>. This results in a crash and also allows for otherwise inaccessible memory being copied into SVG graphic content, which could then displayed.
+    bugs:
+      - url: 1347617
+  CVE-2017-5448:
+    title: Out-of-bounds write in ClearKeyDecryptor
+    impact: high
+    reporter: Anonymous working with Trend Micro's Zero Day Initiative
+    description: |
+      An out-of-bounds write in <code>ClearKeyDecryptor</code> while decrypting some Clearkey-encrypted media content. The <code>ClearKeyDecryptor</code> code runs within the  Gecko Media Plugin (GMP) sandbox. If a second mechanism is found to escape the sandbox, this vulnerability allows for the writing of arbitrary data within memory, resulting in a potentially exploitable crash.
+    bugs:
+      - url: 1346648
+  CVE-2017-5437:
+    title: Vulnerabilities in Libevent library
+    impact: high
+    reporter: Huzaifa Sidhpurwala
+    description: |
+      Three vulnerabilities were reported in the Libevent library that allow for out-of-bounds reads and denial of service (DoS) attacks:  [CVE-2016-10195](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-10195), [CVE-2016-10196](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-10196), and [CVE-2016-10197](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-10197). These were fixed in the Libevent library and these changes were ported to Mozilla code.
+    bugs:
+      - url: 1343453
+  CVE-2017-5454:
+    title: Sandbox escape allowing file system read access through file picker
+    impact: high
+    reporter: Haik Aftandilian
+    description: |
+      A mechanism to bypass file system access protections in the sandbox to use the file picker to access different files than those selected in the file picker through the use of relative paths. This allows for read only access to the local file system.
+    bugs:
+      - url: 1349276
+  CVE-2017-5455:
+    title: Sandbox escape through internal feed reader APIs
+    impact: high
+    reporter: Paul Theriault
+    description: |
+      The internal feed reader APIs that crossed the sandbox barrier allowed for a sandbox escape and escalation of privilege if combined with another vulnerability that resulted in remote code execution inside the sandboxed process. 
+    bugs:
+      - url: 1341191
+  CVE-2017-5456:
+    title: Sandbox escape allowing local file system access
+    impact: high
+    reporter:  Julian Hector
+    description: |
+      A mechanism to bypass file system access protections in the sandbox using the file system request constructor through an IPC message. This allows for read and write access to the local file system.
+    bugs:
+      - url: 1344415
+  CVE-2017-5469:
+    title: Potential Buffer overflow in flex-generated code
+    impact: high
+    reporter: Petr Cerny
+    description: |
+      Fixed potential buffer overflows in generated Firefox code due to [CVE-2016-6354](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-6354) issue in Flex.
+    bugs:
+      - url: 1292534
+  CVE-2017-5445:
+    title: Uninitialized values used while parsing application/http-index-format content
+    impact: moderate
+    reporter: Chamal De Silva
+    description: |
+      A vulnerability while parsing <code>application/http-index-format</code> format content where uninitialized values are used to create an array. This could allow the reading of uninitialized memory into the arrays affected.
+    bugs:
+      - url: 1344467
+  CVE-2017-5449:
+    title: Crash during bidirectional unicode manipulation with animation
+    impact: moderate
+    reporter: Nils
+    description: |
+      A possibly exploitable crash triggered during layout and manipulation of bidirectional unicode text in concert with CSS animations.
+    bugs:
+      - url: 1340127
+  CVE-2017-5450:
+    title:  "Addressbar spoofing using javascript: URI on Firefox for Android"
+    impact: moderate
+    reporter: Haosheng Wang
+    description: |
+       A mechanism to spoof the Firefox for Android addressbar using a <code>javascript:</code> URI. On Firefox for Android, the base domain is parsed incorrectly, making the resulting location less visibly a spoofed site and showing an incorrect domain in appended notifications.
+    bugs:
+      - url: 1325955
+  CVE-2017-5451:
+    title: Addressbar spoofing with onblur event
+    impact: moderate
+    reporter: Jordi Chancel
+    description: |
+      A mechanism to spoof the addressbar through the user interaction on the addressbar and the <code>onblur</code> event. The event could be used by script to affect text display to make the loaded site appear to be different from the one actually loaded within the addressbar.
+    bugs:
+      - url: 1273537 
+  CVE-2017-5462:
+    title: DRBG flaw in NSS
+    impact: moderate
+    reporter: Vladimir Klebanov, Franziskus Kiefer
+    description: |
+        A flaw in DRBG number generation within the Network Security Services (NSS) library where the internal state V does not correctly carry bits over. The NSS library has been updated to fix this issue to address this issue and Firefox 53 has been updated with NSS version 3.29.5.
+    bugs:
+      - url: 1345089
+  CVE-2017-5463:
+    title: Addressbar spoofing through reader view on Firefox for Android
+    impact: moderate
+    reporter: Muneaki Nishimura
+    description: |
+      Android intents can be used to launch Firefox for Android in reader mode with a user specified URL. This allows an attacker to spoof the contents of the addressbar as displayed to users. <br>*Note: This attack only affects Firefox for Android. Other operating systems are not affected.*
+    bugs:
+      - url: 1338867
+  CVE-2017-5467:
+    title: Memory corruption when drawing Skia content
+    impact: moderate
+    reporter: Heather Miller of Google Skia team
+    description: |
+      A potential memory corruption and crash when using Skia content when drawing content outside of the bounds of a clipping region.
+    bugs:
+      - url: 1347262
+  CVE-2017-5452:
+    title: Addressbar spoofing during scrolling with editable content on Firefox for Android
+    impact: low
+    reporter: Jordi Chancel
+    description: |
+      Malicious sites can display a spoofed addressbar on a page when the existing location bar on the new page is scrolled out of view if an HTML editable page element is user selected. <br>*Note: This attack only affects Firefox for Android. Other operating systems are not affected.*
+    bugs:
+      - url: 1344517
+  CVE-2017-5453:
+    title: HTML injection into RSS Reader feed preview page through TITLE element
+    impact: low
+    reporter: Jose María Acuña
+    description: |
+      A mechanism to inject static HTML into the RSS reader preview page due to a failure to escape characters sent as URL parameters for a feed's <code>TITLE</code> element. This vulnerability allows for spoofing but no scripted content can be run.
+    bugs:
+      - url: 1321247
+  CVE-2017-5458:
+    title: "Drag and drop of javascript: URLs can allow for self-XSS"
+    impact: low
+    reporter: Daniel Veditz
+    description: |
+      When a <code>javascript:</code> URL is drag and dropped by a user into the addressbar, the URL will be processed and executed. This allows for users to be socially engineered to execute an XSS attack on themselves.
+    bugs:
+      - url: 1229426
+  CVE-2017-5468:
+    title: Incorrect ownership model for Private Browsing information
+    impact: low
+    reporter: Anonymous
+    description: |
+      An issue with incorrect ownership model of <code>privateBrowsing</code> information exposed through developer tools. This can result in a non-exploitable crash when manually triggered during debugging. 
+    bugs:
+      - url: 1329521
+  CVE-2017-5430:
+    title: Memory safety bugs fixed in Firefox 53 and Firefox ESR 52.1
+    impact: critical
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers and community members Christian Holler, Jon Coppeard, Milan Sreckovic, Tyson Smith, Ronald Crane, Randell Jesup, Philipp, Tooru Fujisawa, and Kan-Ru Chen reported memory safety bugs present in Firefox 52 and Firefox ESR 52. Some of these bugs showed evidence of memory corruption and we presume that with enough effort that some of these could be exploited to run arbitrary code.
+    bugs:
+      - url: 1342101, 1340482, 1344686, 1329796, 1346419, 1349621, 1344081, 1344305, 1348143, 1349719, 1353476, 1337418, 1346140, 1339722
+        desc: Memory safety bugs fixed in Firefox 53 and Firefox ESR 52.1
+  CVE-2017-5429:
+    title: Memory safety bugs fixed in Firefox 53, Firefox ESR 45.9, and Firefox ESR 52.1
+    impact: critical
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers and community members Christian Holler, Jon Coppeard, Marcia Knous, David Baron, Mats Palmgren, Ronald Crane, Bob Clary, and Chris Peterson reported memory safety bugs present in Firefox 52, Firefox ESR 45.8, and Firefox ESR 52. Some of these bugs showed evidence of memory corruption and we presume that with enough effort that some of these could be exploited to run arbitrary code.
+    bugs:
+      - url: 1343261, 1350844, 1341096, 1342823, 1348894, 1348941, 1349340, 1352926, 1353088, 
+        desc: Memory safety bugs fixed in Firefox 53, Firefox ESR 45.9, and Firefox ESR 52.1
+
+
