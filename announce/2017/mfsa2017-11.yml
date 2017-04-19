@@ -33,7 +33,7 @@ advisories:
     impact: critical
     reporter: Ronald Crane
     description: |
-      An out-of-bounds write during Base64 decoding operation in the Network Security Services (NSS) library due to insufficient memory being allocated to the buffer. This results in a potentially exploitable crash. The NSS library has been updated to fix this issue to address this issue and Firefox 53 has been updated with NSS version 3.21.4.
+      An out-of-bounds write during Base64 decoding operation in the Network Security Services (NSS) library due to insufficient memory being allocated to the buffer. This results in a potentially exploitable crash. The NSS library has been updated to fix this issue to address this issue and Firefox ESR 45.9 has been updated with NSS version 3.21.4.
     bugs:
       - url: 1344380
   CVE-2017-5459:
@@ -192,7 +192,7 @@ advisories:
     impact: moderate
     reporter: Vladimir Klebanov, Franziskus Kiefer
     description: |
-        A flaw in DRBG number generation within the Network Security Services (NSS) library where the internal state V does not correctly carry bits over. The NSS library has been updated to fix this issue to address this issue and Firefox 53 has been updated with NSS version 3.21.4.
+        A flaw in DRBG number generation within the Network Security Services (NSS) library where the internal state V does not correctly carry bits over. The NSS library has been updated to fix this issue to address this issue and Firefox ESR 45.9 has been updated with NSS version 3.21.4.
     bugs:
       - url: 1345089
   CVE-2017-5429:
