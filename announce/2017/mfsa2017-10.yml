@@ -171,14 +171,18 @@ advisories:
       An out-of-bounds write in <code>ClearKeyDecryptor</code> while decrypting some Clearkey-encrypted media content. The <code>ClearKeyDecryptor</code> code runs within the  Gecko Media Plugin (GMP) sandbox. If a second mechanism is found to escape the sandbox, this vulnerability allows for the writing of arbitrary data within memory, resulting in a potentially exploitable crash.
     bugs:
       - url: 1346648
-  CVE-2017-5437:
+  CVE-2016-10196:
     title: Vulnerabilities in Libevent library
     impact: high
     reporter: Huzaifa Sidhpurwala
     description: |
-      Three vulnerabilities were reported in the Libevent library that allow for out-of-bounds reads and denial of service (DoS) attacks:  [CVE-2016-10195](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-10195), [CVE-2016-10196](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-10196), and [CVE-2016-10197](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-10197). These were fixed in the Libevent library and these changes were ported to Mozilla code.
+      Three vulnerabilities were reported in the Libevent library that allow for out-of-bounds reads and denial of service (DoS) attacks. These were fixed in the Libevent library and these changes were ported to Mozilla code.
     bugs:
       - url: 1343453
+      - url: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-10195
+        desc: CVE-2016-10195
+      - url: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-10197
+        desc: CVE-2016-10197
   CVE-2017-5454:
     title: Sandbox escape allowing file system read access through file picker
     impact: high
