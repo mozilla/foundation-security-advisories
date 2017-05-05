@@ -181,6 +181,8 @@ advisories:
       - url: 1343453
       - url: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-10195
         desc: CVE-2016-10195
+      - url: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-10196
+        desc: CVE-2016-10196
       - url: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-10197
         desc: CVE-2016-10197
   CVE-2017-5454:
