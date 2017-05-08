@@ -9,7 +9,7 @@ advisories:
   CVE-2017-5031:
     title: Use after free in ANGLE
     impact: high
-    reporter: Looben Yang
+    reporter: Bob Clary, Looben Yang
     description: |
       A use-after-free can occur during Buffer11 API calls within the ANGLE graphics library, used for WebGL content. This can lead to a potentially exploitable crash. <br>*Note: This issue is in <code>libGLES</code>, which is only in use on Windows. Other operating systems are not affected.*
     bugs:
