@@ -147,7 +147,7 @@ advisories:
     impact: moderate
     reporter: Michał Bentkowski
     description: |
-      Default fonts on macOS display some Tibetan characters as whitespace. When used in the addressbar as part of an IDN this can be used for domain name spoofing attacks.
+      Default fonts on OS X display some Tibetan characters as whitespace. When used in the addressbar as part of an IDN this can be used for domain name spoofing attacks. <br>*Note: This attack only affects OS X operating systems. Other operating systems are unaffected.*
     bugs:
       - url: 1360309
   CVE-2017-7764:
