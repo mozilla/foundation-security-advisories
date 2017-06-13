@@ -192,6 +192,14 @@ advisories:
       The Mozilla Maintenance Service can be invoked by an unprivileged user to read 32 bytes of any arbitrary file on the local system by convincing the service that it is reading a status file provided by the Mozilla Windows Updater. The Mozilla Maintenance Service executes with privileged access, bypassing system protections against unprivileged users. <br>*Note: This attack requires local system access and only affects Windows. Other operating systems are not affected.*
     bugs:
       - url: 1336979
+  CVE-2017-7770:
+    title: Addressbar spoofing with JavaScript events and fullscreen mode
+    impact: moderate
+    reporter: Jordi Chancel
+    description: |
+      A mechanism where when a new tab is loaded through JavaScript events, if fullscreen mode is then entered, the addressbar will not be rendered. This would allow a malicious site to displayed a spoofed addressbar,showing the location of an arbitrary website instead of the one loaded. <br>*Note: this issue only affects Firefox for Android. Desktop Firefox is unaffected.*
+    bugs:
+      - url: 1317242
   CVE-2017-5471:
     title: Memory safety bugs fixed in Firefox 54
     impact: critical
