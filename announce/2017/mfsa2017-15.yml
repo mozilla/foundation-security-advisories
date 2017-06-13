@@ -1,0 +1,213 @@
+## mfsa2017-15.yml
+announced: June 13, 2017
+impact: critical
+fixed_in:
+- Firefox 54
+title: Security vulnerabilities fixed in Firefox 54
+advisories:
+  CVE-2017-5472:
+    title: Use-after-free using destroyed node when regenerating trees
+    impact: critical
+    reporter: Nils
+    description: |
+      A use-after-free vulnerability with the frameloader during tree reconstruction while regenerating CSS layout when attempting to use a node in the tree that no longer exists. This results in a potentially exploitable crash.
+    bugs:
+      - url: 1365602 
+  CVE-2017-7749:
+    title: Use-after-free during docshell reloading
+    impact: high
+    reporter: Nils
+    description: |
+      A use-after-free vulnerability when using an incorrect URL during the reloading of a docshell. This results in a potentially exploitable crash.
+    bugs:
+      - url: 1355039
+  CVE-2017-7750:
+    title: Use-after-free with track elements
+    impact: high
+    reporter: Nils
+    description: |
+       A use-after-free vulnerability during video control operations when a <code>&lt;track&gt;</code> element holds a reference to an older window if that window has been replaced in the DOM. This results in a potentially exploitable crash.
+    bugs:
+      - url: 1356558
+  CVE-2017-7751:
+    title: Use-after-free with content viewer listeners
+    impact: high
+    reporter: Nils
+    description: |
+      A use-after-free vulnerability with content viewer listeners that results in a potentially exploitable crash.
+    bugs:
+      - url: 1363396
+  CVE-2017-7752:
+    title: Use-after-free with IME input
+    impact: moderate
+    reporter: Nils
+    description: |
+      A use-after-free vulnerability during specific user interactions with the input method editor (IME) in some languages due to how events are handled. This results in a potentially exploitable crash but would require specific user interaction to trigger.
+    bugs:
+      - url: 1359547
+  CVE-2017-7754:
+    title: Out-of-bounds read in WebGL with ImageInfo object
+    impact: high
+    reporter: Tobias Klein
+    description: |
+      An out-of-bounds read in WebGL with a maliciously crafted <code>ImageInfo</code> object during WebGL operations.
+    bugs:
+      - url: 1357090
+  CVE-2017-7755:
+    title: Privilege escalation through Firefox Installer with same directory DLL files
+    impact: high
+    reporter: Yuji Tounai of NTT Communications
+    description: |
+      The Firefox installer on Windows can be made to load malicious DLL files stored in the same directory as the installer when it is run. This allows privileged execution if the installer is run with elevated privileges. <br>*Note: This attack only affects Windows operating systems. Other operating systems are unaffected.*
+    bugs:
+      - url: 1361326
+  CVE-2017-7756:
+    title: Use-after-free and use-after-scope logging XHR header errors
+    impact: high
+    reporter: Abhishek Arya
+    description: |
+      A use-after-free and use-after-scope vulnerability when logging errors from headers for XML HTTP Requests (XHR). This could result in a potentially exploitable crash.
+    bugs:
+      - url: 1366595
+  CVE-2017-7757:
+    title: Use-after-free in IndexedDB
+    impact: high
+    reporter: F. Alonso (revskills)
+    description: |
+      A use-after-free vulnerability in IndexedDB when one of its objects is destroyed in memory while a method on it is still being executed. This results in a potentially exploitable crash.
+    bugs:
+      - url: 1356824
+  CVE-2017-7778:
+    title: Vulnerabilities in the Graphite 2 library
+    impact: high
+    reporter: Holger Fuhrmannek, Tyson Smith
+    description: |
+      A number of security vulnerabilities in the Graphite 2 library including out-of-bounds reads, buffer overflow reads and writes, and the use of uninitialized memory. These issues were addressed in Graphite 2 version 1.3.10.
+    bugs:
+      - url: 1349310
+        desc: Graphite2 lz4::decompress out of bounds write (CVE-2017-7778)
+      - url: 1350047
+        desc: Graphite2 out of bounds read [@ graphite2::Pass::readPass] (CVE-2017-7771)
+      - url: 1352745
+        desc: Graphite2 heap-buffer-overflow write [@ lz4::decompress] (CVE-2017-7772)
+      - url: 1352747
+        desc: Graphite2 heap-buffer-overflow write [@ lz4::decompress] src/Decompressor (CVE-2017-7773)
+      - url: 1355174
+        desc: Graphite2 out of bounds read [@ graphite2::Silf::readGraphite] (CVE-2017-7774)
+      - url: 1355182
+        desc: Graphite2 Assertion 'size() > n' failed (CVE-2017-7775)
+      - url: 1356607
+        desc: Graphite2 heap-buffer-overflow read [@ graphite2::Silf::getClassGlyph] (CVE-2017-7776)
+      - url: 1358551
+        desc: Graphite2 use of uninitialized memory [@ graphite2::GlyphCache::Loader::read_glyph] (CVE-2017-7777)
+  CVE-2017-7758:
+    title: Out-of-bounds read in Opus encoder
+    impact: high
+    reporter: Nicolas Trippar of Zimperium zLabs 
+    description: |
+      An out-of-bounds read vulnerability with the Opus encoder when the number of channels in an audio stream changes while the encoder is in use.
+    bugs:
+      - url: 1368490 
+  CVE-2017-7759:
+    title: Android intent URLs can cause navigation to local file system
+    impact: high
+    reporter: Takeshi Terada
+    description: |
+      Android intent URLs given to Firefox for Android can be used to navigate from HTTP or HTTPS URLs to local <code>file:</code> URLs, allowing for the reading of local data through a violation of same-origin policy. <br>*Note: This attack only affects Firefox for Android. Other operating systems are not affected.*
+    bugs:
+      - url: 1356893
+  CVE-2017-7760:
+    title: File manipulation and privilege escalation via callback parameter in Mozilla Windows Updater and Maintenance Service
+    impact: high
+    reporter: Holger Fuhrmannek
+    description: |
+      The Mozilla Windows updater modifies some files to be updated by reading the original file and applying changes to it. The location of the original file can be altered by a malicious user by passing a special path to the callback parameter through the Mozilla Maintenance Service, allowing the manipulation of files in the installation directory and privilege escalation by manipulating the Mozilla Maintenance Service, which has privileged access. <br>*Note: This attack requires local system access and only affects Windows. Other operating systems are not affected.*
+    bugs:
+      - url: 1348645
+  CVE-2017-7761:
+    title: File deletion and privilege escalation through Mozilla Maintenance Service helper.exe application
+    impact: moderate
+    reporter: Holger Fuhrmannek
+    description: |
+      The Mozilla Maintenance Service <code>helper.exe</code> application creates a temporary directory writable by non-privileged users. When this is combined with creation of a junction (a form of symbolic link), protected files in the target directory of the junction can be deleted by the Mozilla Maintenance Service, which has privileged access. <br>*Note: This attack requires local system access and only affects Windows. Other operating systems are not affected.*
+    bugs:
+      - url: 1215648
+      - url: https://sourceforge.net/p/nsis/bugs/1125/
+        desc: Code execution / Privilege escalation problems with NSIS installers
+  CVE-2017-7762:
+    title: Addressbar spoofing in Reader mode
+    impact: moderate
+    reporter: Jun Kokatsu
+    description: |
+      When entered directly, Reader Mode did not strip the username and password section of URLs displayed in the addressbar. This can be used for spoofing the domain of the current page.
+    bugs:
+      - url: 1358248
+  CVE-2017-7763:
+    title: Mac fonts render some unicode characters as spaces
+    impact: moderate
+    reporter: Michał Bentkowski
+    description: |
+      Default fonts on macOS display some Tibetan characters as whitespace. When used in the addressbar as part of an IDN this can be used for domain name spoofing attacks.
+    bugs:
+      - url: 1360309
+  CVE-2017-7764:
+    title: Domain spoofing with combination of Canadian Syllabics and other unicode blocks
+    impact: moderate
+    reporter: Samuel Erb
+    description: |
+      Characters from the "Canadian Syllabics" unicode block can be mixed with characters from other unicode blocks in the addressbar instead of being rendered as their raw "punycode" form, allowing for domain name spoofing attacks through character confusion. The current Unicode standard allows characters from "Aspirational Use Scripts" such as Canadian Syllabics to be mixed with Latin characters in the "moderately restrictive" IDN profile. We have changed Firefox behavior to match the upcoming Unicode version 10.0 which removes this category and treats them as "Limited Use Scripts." 
+    bugs:
+      - url: 1364283
+      - url: http://www.unicode.org/reports/tr31/tr31-26.html#Aspirational_Use_Scripts 
+        desc: Proposed Update to Unicode Standard Annex #31
+  CVE-2017-7765:
+    title: Mark of the Web bypass when saving executable files
+    impact: moderate
+    reporter: Jonathan Birch and Microsoft Vulnerability Research
+    description: |
+      The "Mark of the Web" was not correctly saved on Windows when files with very long names were downloaded from the Internet. Without the Mark of the Web data, the security warning that Windows displays before running executables downloaded from the Internet is not shown. <br>*Note: This attack only affects Windows operating systems. Other operating systems are unaffected.*
+    bugs:
+      - url: 1273265
+  CVE-2017-7766:
+    title: File execution and privilege escalation through updater.ini, Mozilla Windows Updater, and Mozilla Maintenance Service
+    impact: high
+    reporter: Seb Patane
+    description: |
+      An attack using manipulation of <code>updater.ini</code> contents, used by the Mozilla Windows Updater, and privilege escalation through the Mozilla Maintenance Service to allow for arbitrary file execution and deletion by the Maintenance Service, which has privileged access. <br>*Note: This attack requires local system access and only affects Windows. Other operating systems are not affected.*
+    bugs:
+      - url: 1342742
+  CVE-2017-7767:
+    title: Privilege escalation and arbitrary file overwrites through Mozilla Windows Updater and Mozilla Maintenance Service
+    impact: moderate
+    reporter: Seb Patane
+    description: |
+      The Mozilla Maintenance Service can be invoked by an unprivileged user to overwrite arbitrary files with junk data using the Mozilla Windows Updater, which runs with the Maintenance Service's privileged access. <br>*Note: This attack requires local system access and only affects Windows. Other operating systems are not affected.*
+    bugs:
+      - url: 1336964
+  CVE-2017-7768:
+    title: 32 byte arbitrary file read through Mozilla Maintenance Service
+    impact: moderate
+    reporter: Seb Patane
+    description: |
+      The Mozilla Maintenance Service can be invoked by an unprivileged user to read 32 bytes of any arbitrary file on the local system by convincing the service that it is reading a status file provided by the Mozilla Windows Updater. The Mozilla Maintenance Service executes with privileged access, bypassing system protections against unprivileged users. <br>*Note: This attack requires local system access and only affects Windows. Other operating systems are not affected.*
+    bugs:
+      - url: 1336979
+  CVE-2017-5471:
+    title: Memory safety bugs fixed in Firefox 54
+    impact: critical
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers and community members Mats Palmgren, Philipp, Byron Campen, Christian Holler, Gary Kwong, Benjamin Bouvier, Bob Clary, Jon Coppeard, and Michael Layzell reported memory safety bugs present in Firefox 53. Some of these bugs showed evidence of memory corruption and we presume that with enough effort that some of these could be exploited to run arbitrary code.
+    bugs:
+      - url: 1349604, 1318645, 1361098, 1361100, 1341026, 1349421, 1360852, 1299147, 1352073, 1354853, 1366446, 1342181, 1343069
+        desc: Memory safety bugs fixed in Firefox 54
+  CVE-2017-5470:
+    title: Memory safety bugs fixed in Firefox 54 and Firefox ESR 52.2
+    impact: critical
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers and community members Tyson Smith, Mats Palmgren, Philipp, Masayuki Nakano, Christian Holler, Andrew McCreight, Gary Kwong, André Bargull, Carsten Book, Jesse Schwartzentruber, Julian Hector, Marcia Knous, Ronald Crane, and Nils Ohlmeier reported memory safety bugs present in Firefox 53 and Firefox ESR 52.1. Some of these bugs showed evidence of memory corruption and we presume that with enough effort that some of these could be exploited to run arbitrary code.
+    bugs:
+      - url: 1359639, 1349595, 1352295, 1352556, 1342552, 1342567, 1346012, 1366140, 1368732, 1297111, 1362590, 1357462, 1363280, 1349266, 1352093, 1348424, 1347748, 1356025, 1325513, 1367692
+        desc: Memory safety bugs fixed in Firefox 54 and Firefox ESR 52.2
+
