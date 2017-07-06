@@ -39,6 +39,14 @@ advisories:
       A use-after-free vulnerability with content viewer listeners that results in a potentially exploitable crash.
     bugs:
       - url: 1363396
+  CVE-2017-7755:
+    title: Privilege escalation through Firefox Installer with same directory DLL files
+    impact: high
+    reporter: Yuji Tounai of NTT Communications, Eili Masami of Tachibana Lab
+    description: |
+      The Firefox installer on Windows can be made to load malicious DLL files stored in the same directory as the installer when it is run. This allows privileged execution if the installer is run with elevated privileges. <br>*Note: This attack only affects Windows operating systems. Other operating systems are unaffected.*
+    bugs:
+      - url: 1361326
   CVE-2017-7752:
     title: Use-after-free with IME input
     impact: moderate
