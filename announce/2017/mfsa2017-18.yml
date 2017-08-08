@@ -3,7 +3,6 @@ announced: August 8, 2017
 impact: critical
 fixed_in:
 - Firefox 55
-- Firefox ESR 52.3
 title: Security vulnerabilities fixed in Firefox 55
 advisories:
   CVE-2017-7798:
