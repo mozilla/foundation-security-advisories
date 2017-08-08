@@ -1,0 +1,140 @@
+## mfsa2017-19.yml
+announced: August 8, 2017
+impact: critical
+fixed_in:
+- Firefox ESR 52.3
+title: Security vulnerabilities fixed in Firefox ESR 52.3
+advisories:
+  CVE-2017-7798:
+    title: XUL injection in the style editor in devtools
+    impact: critical
+    reporter: Frederik Braun
+    description: |
+       The Developer Tools feature suffers from a XUL injection vulnerability due to improper sanitization of the web page source code. In the worst case, this could allow arbitrary code execution when opening a malicious page with the style editor tool.
+    bugs:
+      - url: 1371586, 1372112
+  CVE-2017-7800:
+    title: Use-after-free in WebSockets during disconnection
+    impact: critical
+    reporter: Looben Yang
+    description: |
+      A use-after-free vulnerability can occur in WebSockets when the object holding the connection is freed before the disconnection operation is finished. This results in an exploitable crash.
+    bugs:
+      - url: 1374047
+  CVE-2017-7801:
+    title: Use-after-free with marquee during window resizing
+    impact: critical
+    reporter: Nils
+    description: |
+      A use-after-free vulnerability can occur while re-computing layout for a <code>marquee</code> element during window resizing where the updated style object is freed while still in use. This results in a potentially exploitable crash.
+    bugs:
+      - url: 1371259
+  CVE-2017-7784:
+    title: Use-after-free with image observers
+    impact: high
+    reporter: Nils
+    description: |
+      A use-after-free vulnerability can occur when reading an image observer during frame reconstruction after the observer has been freed. This results in a potentially exploitable crash.
+    bugs:
+      - url: 1376087
+  CVE-2017-7802:
+    title: Use-after-free resizing image elements
+    impact: high
+    reporter: Nils
+    description: |
+      A use-after-free vulnerability can occur when manipulating the DOM during the resize event of an image element. If these elements have been freed due to a lack of strong references, a potentially exploitable crash may occur when the freed elements are accessed.
+    bugs:
+      - url: 1378147
+  CVE-2017-7785:
+    title: Buffer overflow manipulating ARIA attributes in DOM
+    impact: high
+    reporter: Nils
+    description: |
+      A buffer overflow can occur when manipulating Accessible Rich Internet Applications (ARIA) attributes within the DOM. This results in a potentially exploitable crash.
+    bugs:
+      - url: 1356985
+  CVE-2017-7786:
+    title: Buffer overflow while painting non-displayable SVG
+    impact: high
+    reporter: Nils 
+    description: |
+      A buffer overflow can occur when the image renderer attempts to paint non-displayable SVG elements. This results in a potentially exploitable crash.
+    bugs:
+      - url: 1365189
+  CVE-2017-7753:
+    title: Out-of-bounds read with cached style data and pseudo-elements
+    impact: high
+    reporter: SkyLined
+    description: |
+      An out-of-bounds read occurs when applying style rules to pseudo-elements, such as ::first-line, using cached style data.
+    bugs:
+      - url: 1353312
+  CVE-2017-7787:
+    title: Same-origin policy bypass with iframes through page reloads 
+    impact: high
+    reporter: Oliver Wagner
+    description: |
+      Same-origin policy protections can be bypassed on pages with embedded iframes during page reloads, allowing the iframes to access content on the top level page, leading to information disclosure.
+    bugs:
+      - url: 1322896
+  CVE-2017-7807:
+    title: Domain hijacking through AppCache fallback
+    impact: high
+    reporter: Mathias Karlsson
+    description: |
+       A mechanism that uses AppCache to hijack a URL in a domain using fallback by serving the files from a sub-path on the domain. This has been addressed by requiring fallback files be inside the manifest directory.
+    bugs:
+      - url: 1376459
+  CVE-2017-7792:
+    title: Buffer overflow viewing certificates with an extremely long OID
+    impact: high
+    reporter: Fraser Tweedale
+    description: |
+      A buffer overflow will occur when viewing a certificate in the certificate manager if the certificate has an extremely long object identifier (OID). This results in a potentially exploitable crash.
+    bugs:
+      - url: 1368652 
+  CVE-2017-7804:
+    title: Memory protection bypass through WindowsDllDetourPatcher
+    impact: high
+    reporter: Stephen Fewer
+    description: |
+      The destructor function for the <code>WindowsDllDetourPatcher</code> class can be re-purposed by malicious code in concert with another vulnerability to write arbitrary data to an attacker controlled location in memory. This can be used to bypass existing memory protections in this situation.
+    bugs:
+      - url: 1372849
+  CVE-2017-7791:
+    title: "Spoofing following page navigation with data: protocol and modal alerts"
+    impact: moderate
+    reporter: Jose María Acuña
+    description: |
+      On pages containing an iframe, the <code>data:</code> protocol can be used to create a modal alert that will render over arbitrary domains following page navigation, spoofing of the origin of the modal alert from the iframe content.
+    bugs:
+      - url: 1365875
+  CVE-2017-7782:
+    title: WindowsDllDetourPatcher allocates memory without DEP protections
+    impact: moderate
+    reporter: Arthur Edelstein
+    description: |
+      An error in the <code>WindowsDllDetourPatcher</code> where a RWX ("Read/Write/Execute") 4k block is allocated but never protected, violating DEP protections.
+    bugs:
+      - url: 1344034
+  CVE-2017-7803:
+    title: CSP containing 'sandbox' improperly applied
+    impact: moderate
+    reporter: Rhys Enniks
+    description: |
+      When a page’s content security policy (CSP) header contains a <code>sandbox</code> directive, other directives are ignored. This results in the incorrect enforcement of CSP.
+    bugs:
+      - url: 1377426
+  CVE-2017-7779:
+    title: Memory safety bugs fixed in Firefox 55 and Firefox ESR 52.3
+    impact: critical
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers and community members Masayuki Nakano, Gary Kwong, Ronald Crane, Andrew McCreight, Tyson Smith, Bevis Tseng, Christian Holler, Bryce Van Dyk, Dragana Damjanovic, Kartikaya Gupta, Philipp, Tristan Bourvon, and Andi-Bogdan Postelnicu reported memory safety bugs present in Firefox 54 and Firefox ESR 52.2. Some of these bugs showed evidence of memory corruption and we presume that with enough effort that some of these could be exploited to run arbitrary code.
+    bugs:
+      - url: 1354443, 1368576, 1366903, 1369913, 1371424, 1346590, 1371890, 1372985, 1362924, 1368105, 1369994, 1371283, 1368362, 1378826, 1380426, 1368030, 1373220, 1321384, 1383002
+        desc: Memory safety bugs fixed in Firefox 55 and Firefox ESR 52.3
+
+
+
+
