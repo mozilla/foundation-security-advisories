@@ -29,6 +29,14 @@ advisories:
       A use-after-free vulnerability can occur while re-computing layout for a <code>marquee</code> element during window resizing where the updated style object is freed while still in use. This results in a potentially exploitable crash.
     bugs:
       - url: 1371259
+  CVE-2017-7809:
+    title: Use-after-free while deleting attached editor DOM node
+    impact: high
+    reporter: Nils
+    description: |
+      A use-after-free vulnerability can occur when an editor DOM node is deleted prematurely during tree traversal while still bound to the document. This results in a potentially exploitable crash.
+    bugs:
+      - url: 1380284
   CVE-2017-7784:
     title: Use-after-free with image observers
     impact: high
