@@ -114,7 +114,7 @@ advisories:
     impact: high
     reporter: Stephen Fewer
     description: |
-      The destructor function for the <code>WindowsDllDetourPatcher</code> class can be re-purposed by malicious code in concert with another vulnerability to write arbitrary data to an attacker controlled location in memory. This can be used to bypass existing memory protections in this situation.
+      The destructor function for the <code>WindowsDllDetourPatcher</code> class can be re-purposed by malicious code in concert with another vulnerability to write arbitrary data to an attacker controlled location in memory. This can be used to bypass existing memory protections in this situation. <br>*Note: This attack only affects Windows operating systems. Other operating systems are not affected.*
     bugs:
       - url: 1372849
   CVE-2017-7791:
@@ -138,7 +138,7 @@ advisories:
     impact: moderate
     reporter: Arthur Edelstein
     description: |
-      An error in the <code>WindowsDllDetourPatcher</code> where a RWX ("Read/Write/Execute") 4k block is allocated but never protected, violating DEP protections.
+      An error in the <code>WindowsDllDetourPatcher</code> where a RWX ("Read/Write/Execute") 4k block is allocated but never protected, violating DEP protections. <br>*Note: This attack only affects Windows operating systems. Other operating systems are not affected.*
     bugs:
       - url: 1344034
   CVE-2017-7781:
