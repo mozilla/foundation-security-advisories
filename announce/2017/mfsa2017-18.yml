@@ -170,7 +170,7 @@ advisories:
     impact: moderate
     reporter: Frederik Braun
     description: |
-      JavaScript in the <code>about:webrtc</code> page is not sanitized properly being being assigned to <code>innerHTML</code>. Data on this page is supplied by WebRTC usage and is not under third-party control, making this difficult to exploit, but the vulnerability could possibly be used for a cross-site scripting (XSS) attack.
+      JavaScript in the <code>about:webrtc</code> page is not sanitized properly being assigned to <code>innerHTML</code>. Data on this page is supplied by WebRTC usage and is not under third-party control, making this difficult to exploit, but the vulnerability could possibly be used for a cross-site scripting (XSS) attack.
     bugs:
       - url: 1372509
   CVE-2017-7783:
