@@ -137,7 +137,7 @@ advisories:
     bugs:
       - url: 1273265
   CVE-2017-5470:
-    title: Memory safety bugs fixed in Firefox 54 and Firefox ESR 52.2, and Thunderbird 52.2
+    title: Memory safety bugs fixed in Firefox 54, Firefox ESR 52.2, and Thunderbird 52.2
     impact: critical
     reporter: Mozilla developers and community
     description: |
