@@ -1,0 +1,81 @@
+## mfsa2017-22.yml
+announced: September 28, 2017
+impact: critical
+fixed_in:
+- Firefox ESR 52.4
+title: Security vulnerabilities fixed in Firefox ESR52.4
+advisories:
+  CVE-2017-7793:
+    title: Use-after-free with Fetch API
+    impact: high
+    reporter: Abhishek Arya
+    description: |
+      A use-after-free vulnerability can occur in the Fetch API when the worker or the associated window are freed when still in use, resulting in a potentially exploitable crash.
+    bugs:
+      - url: 1371889
+  CVE-2017-7818:
+    title: Use-after-free during ARIA array manipulation
+    impact: high
+    reporter: Nils
+    description: |
+       A use-after-free vulnerability can occur when manipulating arrays of Accessible Rich Internet Applications (ARIA) elements within containers through the DOM. This results in a potentially exploitable crash.
+    bugs:
+      - url: 1363723
+  CVE-2017-7819:
+    title: Use-after-free while resizing images in design mode
+    impact: high
+    reporter: Nils 
+    description: |
+      A use-after-free vulnerability can occur in design mode when image objects are resized if objects referenced during the resizing have been freed from memory. This results in a potentially exploitable crash.  
+    bugs:
+      - url: 1380292
+  CVE-2017-7824:
+    title: Buffer overflow when drawing and validating elements with ANGLE
+    impact: high
+    reporter: Omair, Andre Weissflog
+    description: |
+      A buffer overflow occurs when drawing and validating elements with the ANGLE graphics library, used for WebGL content. This is due to an incorrect value being passed within the library during checks and results in a potentially exploitable crash. 
+    bugs:
+      - url: 1398381
+  CVE-2017-7805:
+    title: Use-after-free in TLS 1.2 generating handshake hashes
+    impact: high
+    reporter: Martin Thomson
+    description: |
+      During TLS 1.2 exchanges, handshake hashes are generated which point to a message buffer. This saved data is used for later messages but in some cases, the handshake transcript can exceed the space available in the current buffer, causing the allocation of a new buffer. This leaves a pointer pointing to the old, freed buffer, resulting in a use-after-free when handshake hashes are then calculated afterwards. This can result in a potentially exploitable crash.
+    bugs:
+      - url: 1377618
+  CVE-2017-7814:
+    title: Blob and data URLs bypass phishing and malware protection warnings
+    impact: moderate
+    reporter: François Marier
+    description: |
+      File downloads encoded with <code>blob:</code> and <code>data:</code> URL elements bypassed normal file download checks though the Phishing and Malware Protection feature and its block lists of suspicious sites and files. This would allow malicious sites to lure users into downloading executables that would otherwise be detected as suspicious.
+    bugs:
+      - url: 1376036
+  CVE-2017-7825:
+    title: OS X fonts render some Tibetan and Arabic unicode characters as spaces
+    impact: moderate
+    reporter: Khalil Zhani 
+    description: |
+      Several fonts on OS X display some Tibetan and Arabic characters as whitespace. When used in the addressbar as part of an IDN this can be used for domain name spoofing attacks. <br>*Note: This attack only affects OS X operating systems. Other operating systems are unaffected.* 
+    bugs:
+      - url: 1393624
+      - url: 1390980
+  CVE-2017-7823:
+    title: CSP sandbox directive did not create a unique origin
+    impact: moderate
+    reporter: Jun Kokatsu
+    description: |
+       The content security policy (CSP) <code>sandbox</code> directive did not create a unique origin for the document, causing it to behave as if the <code>allow-same-origin</code> keyword were always specified. This could allow a Cross-Site Scripting (XSS) attack to be launched from unsafe content. 
+    bugs:
+      - url: 1396320
+  CVE-2017-7810:
+    title: Memory safety bugs fixed in Firefox 56 and Firefox ESR 52.4
+    impact: critical
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers and community members Christoph Diehl, Jan de Mooij, Jason Kratzer, Randell Jesup, Tom Ritter, Tyson Smith, and Sebastian Hengst reported memory safety bugs present in Firefox 55 and Firefox ESR 52.3. Some of these bugs showed evidence of memory corruption and we presume that with enough effort that some of these could be exploited to run arbitrary code.
+    bugs:
+      - url: 1386787, 1389974, 1371657, 1360334, 1390550, 1380824, 1387918, 1395598
+        desc: Memory safety bugs fixed in Firefox 56 and Firefox ESR 52.4
