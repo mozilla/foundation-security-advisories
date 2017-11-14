@@ -1,0 +1,34 @@
+## mfsa2017-25.yml
+announced: November 14, 2017
+impact: critical
+fixed_in:
+- Firefox ESR 52.5
+title: Security vulnerabilities fixed in Firefox ESR 52.5
+advisories:
+  CVE-2017-7828:
+    title: Use-after-free of PressShell while restyling layout
+    impact: critical
+    reporter: Nils
+    description: |
+      A use-after-free vulnerability can occur when flushing and resizing layout because the <code>PressShell</code> object has been freed while still in use. This results in a potentially exploitable crash during these operations.
+    bugs:
+      - url: 1406750
+      - url: 1412252
+  CVE-2017-7830:
+    title: Cross-origin URL information leak through Resource Timing API
+    impact: high
+    reporter: Jun Kokatsu
+    description: |
+      The Resource Timing API incorrectly revealed navigations in cross-origin iframes. This is a same-origin policy violation and could allow for data theft of URLs loaded by users. 
+    bugs:
+      - url: 1408990
+        desc: Memory safety bugs fixed in Firefox 57
+  CVE-2017-7826:
+    title: Memory safety bugs fixed in Firefox 57 and Firefox ESR 52.5
+    impact: critical
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers and community members Christian Holler, David Keeler, Jon Coppeard, Julien Cristau, Jan de Mooij, Jason Kratzer, Philipp, Nicholas Nethercote, Oriol Brufau, André Bargull, Bob Clary, Jet Villegas, Randell Jesup, Tyson Smith, Gary Kwong, and Ryan VanderMeulen reported memory safety bugs present in Firefox 56 and Firefox ESR 52.4. Some of these bugs showed evidence of memory corruption and we presume that with enough effort that some of these could be exploited to run arbitrary code.
+    bugs:
+      - url: 1394530, 1369561, 1411458, 1400003, 1395138, 1408412, 1393840, 1400763, 1339259, 1394265, 1407740, 1407751, 1408005, 1406398, 1387799, 1261175, 1400554, 1375146, 1397811, 1404636, 1401804
+        desc: Memory safety bugs fixed in Firefox 57 and Firefox ESR 52.5
