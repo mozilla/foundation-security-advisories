@@ -1,0 +1,130 @@
+## mfsa2017-24.yml
+announced: November 14, 2017
+impact: critical
+fixed_in:
+- Firefox 57
+title: Security vulnerabilities fixed in Firefox 57
+advisories:
+  CVE-2017-7828:
+    title: Use-after-free of PressShell while restyling layout
+    impact: critical
+    reporter: Nils
+    description: |
+      A use-after-free vulnerability can occur when flushing and resizing layout because the <code>PressShell</code> object has been freed while still in use. This results in a potentially exploitable crash during these operations.
+    bugs:
+      - url: 1406750
+      - url: 1412252
+  CVE-2017-7830:
+    title: Cross-origin URL information leak through Resource Timing API
+    impact: high
+    reporter: Jun Kokatsu
+    description: |
+      The Resource Timing API incorrectly revealed navigations in cross-origin iframes. This is a same-origin policy violation and could allow for data theft of URLs loaded by users. 
+    bugs:
+      - url: 1408990
+  CVE-2017-7831:
+    title: Information disclosure of exposed properties on JavaScript proxy objects
+    impact: moderate
+    reporter: Oriol Brufau
+    description: |
+      A vulnerability where the security wrapper does not deny access to some exposed properties using the deprecated <code>_exposedProps_</code> mechanism on proxy objects. These properties should be explicitly unavailable to proxy objects. 
+    bugs:
+      - url: 1392026
+  CVE-2017-7832:
+    title: "Domain spoofing through use of dotless 'i' character followed by accent markers"
+    impact: moderate
+    reporter: Jonathan Kew
+    description: |
+      The combined, single character, version of the letter 'i' with any of the potential accents in unicode, such as acute or grave, can be spoofed in the addressbar by the dotless version of 'i' followed by the same accent as a second character with most font sets. This allows for domain spoofing attacks because these combined domain names do not display as punycode.
+    bugs:
+      - url: 1408782
+  CVE-2017-7833:
+    title: Domain spoofing with Arabic and Indic vowel marker characters
+    impact: moderate
+    reporter: Rayyan Bijoora
+    description: |
+      Some Arabic and Indic vowel marker characters can be combined with Latin characters in a domain name to eclipse the non-Latin character with some font sets on the addressbar. The non-Latin character will not be visible to most viewers. This allows for domain spoofing attacks because these combined domain names do not display as punycode.
+    bugs:
+      - url: 1370497
+  CVE-2017-7834:
+    title: "data: URLs opened in new tabs bypass CSP protections"
+    impact: moderate
+    reporter: Jordi Chancel
+    description: |
+      A <code>data:</code> URL loaded in a new tab did not inherit the Content Security Policy (CSP) of the original page, allowing for bypasses of the policy including the execution of JavaScript. In prior versions when <code>data:</code> documents also inherited the context of the original page this would allow for potential cross-site scripting (XSS) attacks. 
+    bugs:
+      - url: 1358009
+  CVE-2017-7835:
+    title: Mixed content blocking incorrectly applies with redirects
+    impact: moderate
+    reporter: Ben Kelly
+    description: |
+      Mixed content blocking of insecure (HTTP) sub-resources in a secure (HTTPS) document was not correctly applied for resources that redirect from HTTPS to HTTP, allowing content that should be blocked, such as scripts, to be loaded on a page.  
+    bugs:
+      - url: 1402363
+  CVE-2017-7836:
+    title: Pingsender dynamically loads libcurl on Linux and OS X
+    impact: moderate
+    reporter: Ezra Caltum
+    description: |
+      The "pingsender" executable used by the Firefox Health Report dynamically loads a system copy of libcurl, which an attacker could replace. This allows for privilege escalation as the replaced libcurl code will run with Firefox's privileges. <br>*Note: This attack requires an attacker have local system access and only affects OS X and Linux. Windows systems are not affected.*
+    bugs:
+      - url: 1401339
+  CVE-2017-7837:
+    title: "SVG loaded as <img> can use meta tags to set cookies"
+    impact: moderate
+    reporter: Jun Kokatsu
+    description: |
+      SVG loaded through <code>&lt;img&gt;</code> tags can use <code>&lt;meta&gt;</code> tags within the SVG data to set cookies for that page.
+    bugs:
+      - url: 1325923
+  CVE-2017-7838:
+    title: Failure of individual decoding of labels in international domain names triggers punycode display of entire IDN
+    impact: low
+    reporter: Corey Bonnell
+    description: |
+      Punycode format text will be displayed for entire qualified international domain names in some instances when a sub-domain triggers the punycode display instead of the primary domain being displayed in native script and the sub-domain only displaying as punycode. This could be used for limited spoofing attacks due to user confusion.
+    bugs:
+      - url: 1399540
+  CVE-2017-7839:
+    title: "Control characters before javascript: URLs defeats self-XSS prevention mechanism"
+    impact: low
+    reporter: Eric Lawrence
+    description: |
+      Control characters prepended before <code>javascript:</code> URLs pasted in the addressbar can cause the leading characters to be ignored and the pasted JavaScript to be executed instead of being blocked. This could be used in social engineering and self-cross-site-scripting (self-XSS) attacks where users are convinced to copy and paste text into the addressbar.
+    bugs:
+      - url: 1402896
+  CVE-2017-7840:
+    title: Exported bookmarks do not strip script elements from user-supplied tags
+    impact: low
+    reporter: Hanno Böck
+    description: |
+      JavaScript can be injected into an exported bookmarks file by placing JavaScript code into user-supplied tags in saved bookmarks. If the resulting exported HTML file is later opened in a browser this JavaScript will be executed. This could be used in social engineering and self-cross-site-scripting (self-XSS) attacks if users were convinced to add malicious tags to bookmarks, export them, and then open the resulting file.
+    bugs:
+      - url: 1366420
+  CVE-2017-7842:
+    title: "Referrer Policy is not always respected for <link> elements"
+    impact: low
+    reporter: Jun Kokatsu
+    description: |
+      If a document’s Referrer Policy attribute is set to "no-referrer" sometimes two network requests are made for <code>&lt;link&gt;</code> elements instead of one. One of these requests includes the referrer instead of respecting the set policy to not include a referrer on requests.
+    bugs:
+      - url: 1397064
+  CVE-2017-7827:
+    title: Memory safety bugs fixed in Firefox 57
+    impact: critical
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers and community members Boris Zbarsky, Carsten Book, Christian Holler, Byron Campen, Jan de Mooij, Jason Kratzer, Jesse Schwartzentruber, Marcia Knous, Randell Jesup, Tyson Smith, and Ting-Yu Chou reported memory safety bugs present in Firefox 56. Some of these bugs showed evidence of memory corruption and we presume that with enough effort that some of these could be exploited to run arbitrary code.
+    bugs:
+      - url: 1399922, 1403646, 1403716, 1365894, 1402876, 1406154, 1384121, 1384615, 1407375, 1339485, 1361432, 1394031, 1383019, 1407032, 1387845, 1386490
+        desc: Memory safety bugs fixed in Firefox 57
+  CVE-2017-7826:
+    title: Memory safety bugs fixed in Firefox 57 and Firefox ESR 52.5
+    impact: critical
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers and community members Christian Holler, David Keeler, Jon Coppeard, Julien Cristau, Jan de Mooij, Jason Kratzer, Philipp, Nicholas Nethercote, Oriol Brufau, André Bargull, Bob Clary, Jet Villegas, Randell Jesup, Tyson Smith, Gary Kwong, and Ryan VanderMeulen reported memory safety bugs present in Firefox 56 and Firefox ESR 52.4. Some of these bugs showed evidence of memory corruption and we presume that with enough effort that some of these could be exploited to run arbitrary code.
+    bugs:
+      - url: 1394530, 1369561, 1411458, 1400003, 1395138, 1408412, 1393840, 1400763, 1339259, 1394265, 1407740, 1407751, 1408005, 1406398, 1387799, 1261175, 1400554, 1375146, 1397811, 1404636, 1401804
+        desc: Memory safety bugs fixed in Firefox 57 and Firefox ESR 52.5
