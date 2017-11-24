@@ -1,9 +1,11 @@
-## mfsa2017-25.yml
-announced: November 14, 2017
+## mfsa2017-26.yml
+announced: November 23, 2017
 impact: critical
 fixed_in:
-- Firefox ESR 52.5
-title: Security vulnerabilities fixed in Firefox ESR 52.5
+- Thunderbird 52.5
+title: Security vulnerabilities fixed in Thunderbird 52.5
+description: |
+    *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
 advisories:
   CVE-2017-7828:
     title: Use-after-free of PressShell while restyling layout
@@ -23,11 +25,11 @@ advisories:
     bugs:
       - url: 1408990
   CVE-2017-7826:
-    title: Memory safety bugs fixed in Firefox 57 and Firefox ESR 52.5
+    title: Memory safety bugs fixed in Firefox 57, Firefox ESR 52.5, and Thunderbird 52.5
     impact: critical
     reporter: Mozilla developers and community
     description: |
-      Mozilla developers and community members Christian Holler, David Keeler, Jon Coppeard, Julien Cristau, Jan de Mooij, Jason Kratzer, Philipp, Nicholas Nethercote, Oriol Brufau, André Bargull, Bob Clary, Jet Villegas, Randell Jesup, Tyson Smith, Gary Kwong, and Ryan VanderMeulen reported memory safety bugs present in Firefox 56 and Firefox ESR 52.4. Some of these bugs showed evidence of memory corruption and we presume that with enough effort that some of these could be exploited to run arbitrary code.
+      Mozilla developers and community members Christian Holler, David Keeler, Jon Coppeard, Julien Cristau, Jan de Mooij, Jason Kratzer, Philipp, Nicholas Nethercote, Oriol Brufau, André Bargull, Bob Clary, Jet Villegas, Randell Jesup, Tyson Smith, Gary Kwong, and Ryan VanderMeulen reported memory safety bugs present in Firefox 56, Firefox ESR 52.4, and Thunderbird 52.4. Some of these bugs showed evidence of memory corruption and we presume that with enough effort that some of these could be exploited to run arbitrary code.
     bugs:
       - url: 1394530, 1369561, 1411458, 1400003, 1395138, 1408412, 1393840, 1400763, 1339259, 1394265, 1407740, 1407751, 1408005, 1406398, 1387799, 1261175, 1400554, 1375146, 1397811, 1404636, 1401804
-        desc: Memory safety bugs fixed in Firefox 57 and Firefox ESR 52.5
+        desc: Memory safety bugs fixed in Firefox 57, Firefox ESR 52.5, and Thunderbird 52.5
