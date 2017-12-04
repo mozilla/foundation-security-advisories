@@ -3,7 +3,7 @@ announced: September 28, 2017
 impact: critical
 fixed_in:
 - Firefox ESR 52.4
-title: Security vulnerabilities fixed in Firefox ESR52.4
+title: Security vulnerabilities fixed in Firefox ESR 52.4
 advisories:
   CVE-2017-7793:
     title: Use-after-free with Fetch API
