@@ -1,0 +1,15 @@
+## mfsa2017-29.yml
+announced: December 7, 2017
+impact: critical
+fixed_in:
+- Firefox 57.0.2
+title: Security vulnerabilities fixed in Firefox 57.0.2
+advisories:
+  CVE-2017-7845:
+    title: Buffer overflow when drawing and validating elements with ANGLE library using Direct 3D 9
+    impact: critical
+    reporter: Omair
+    description: |
+      A buffer overflow occurs when drawing and validating elements using Direct 3D 9 with the ANGLE graphics library, used for WebGL content. This is due to an incorrect value being passed within the library during checks and results in a potentially exploitable crash. <br>*Note: This attack only affects Windows operating systems. Other operating systems are unaffected.* 
+    bugs:
+      - url: 1402372

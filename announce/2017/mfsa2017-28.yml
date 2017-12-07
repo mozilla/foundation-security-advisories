@@ -1,0 +1,23 @@
+## mfsa2017-28.yml
+announced: December 7, 2017
+impact: critical
+fixed_in:
+- Firefox ESR 52.5.2
+title: Security vulnerabilities fixed in Firefox ESR 52.5.2
+advisories:
+  CVE-2017-7843:
+    title: Web worker in Private Browsing mode can write IndexedDB data
+    impact: high
+    reporter: Konark
+    description: |
+      When Private Browsing mode is used, it is possible for a web worker to write persistent data to IndexedDB and fingerprint a user uniquely. IndexedDB should not be available in Private Browsing mode and this stored data will persist across multiple private browsing mode sessions because it is not cleared when exiting.
+    bugs:
+      - url: 1410106
+  CVE-2017-7845:
+    title: Buffer overflow when drawing and validating elements with ANGLE library using Direct 3D 9
+    impact: critical
+    reporter: Omair
+    description: |
+      A buffer overflow occurs when drawing and validating elements using Direct 3D 9 with the ANGLE graphics library, used for WebGL content. This is due to an incorrect value being passed within the library during checks and results in a potentially exploitable crash. <br>*Note: This attack only affects Windows operating systems. Other operating systems are unaffected.* 
+    bugs:
+      - url: 1402372
