@@ -15,24 +15,26 @@ advisories:
       - url: 1402372
   CVE-2017-7846:
     title: JavaScript Execution via RSS in mailbox:// origin
-    reporter: cure53
     impact: high
+    reporter: cure53
     description: |
       It is possible to execute JavaScript in the parsed RSS feed when RSS feed is viewed as a website, e.g. via “View -> Feed article -> Website” or in the standard format of “View -> Feed article -> default format”.
     bugs:
       - url: 1411716
   CVE-2017-7847:
     title: Local path string can be leaked from RSS feed
-    reporter: cure53
     impact: high
-    description: Crafted CSS in an RSS feed can leak and reveal local path strings, which may contain user name.
+    reporter: cure53
+    description: |
+      Crafted CSS in an RSS feed can leak and reveal local path strings, which may contain user name.
     bugs:
       - url: 1411708
   CVE-2017-7848:
     title: RSS Feed vulnerable to new line Injection
-    reporter: cure53
     impact: moderate
-    description: RSS fields can inject new lines into the created email structure, modifying the message body.
+    reporter: cure53
+    description: |
+      RSS fields can inject new lines into the created email structure, modifying the message body.
     bugs:
       - url: 1411699
   CVE-2017-7829:
@@ -43,4 +45,3 @@ advisories:
       It is possible to spoof the sender's email address and display an arbitrary sender address to the email recipient. The real sender's address is not displayed if preceded by a null character in the display string.
     bugs:
       - url: 1423432
-  
