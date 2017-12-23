@@ -38,7 +38,7 @@ advisories:
     bugs:
       - url: 1411699
   CVE-2017-7829:
-    title: Mailsploit part 1: From address with encoded null character is cut off in message header display
+    title: "Mailsploit part 1: From address with encoded null character is cut off in message header display"
     impact: low
     reporter: Sabri Haddouche
     description: |
