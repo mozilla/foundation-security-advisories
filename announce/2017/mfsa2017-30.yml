@@ -1,0 +1,46 @@
+## mfsa2017-30.yml
+announced: December 22, 2017
+impact: critical
+fixed_in:
+- Thunderbird 52.5.2
+title: Security vulnerabilities fixed in Thunderbird 52.5.2
+advisories:
+  CVE-2017-7845:
+    title: Buffer overflow when drawing and validating elements with ANGLE library using Direct 3D 9
+    impact: critical
+    reporter: Omair
+    description: |
+      A buffer overflow occurs when drawing and validating elements using Direct 3D 9 with the ANGLE graphics library, used for WebGL content. This is due to an incorrect value being passed within the library during checks and results in a potentially exploitable crash. <br>*Note: This attack only affects Windows operating systems. Other operating systems are unaffected.* 
+    bugs:
+      - url: 1402372
+  CVE-2017-7846:
+    title: JavaScript Execution via RSS in mailbox:// origin
+    reporter: cure53
+    impact: high
+    description: |
+      It is possible to execute JavaScript in the parsed RSS feed when RSS feed is viewed as a website, e.g. via “View -> Feed article -> Website” or in the standard format of “View -> Feed article -> default format”.
+    bugs:
+      - url: 1411716
+  CVE-2017-7847:
+    title: Local path string can be leaked from RSS feed
+    reporter: cure53
+    impact: high
+    description: Crafted CSS in an RSS feed can leak and reveal local path strings, which may contain user name.
+    bugs:
+      - url: 1411708
+  CVE-2017-7848:
+    title: RSS Feed vulnerable to new line Injection
+    reporter: cure53
+    impact: moderate
+    description: RSS fields can inject new lines into the created email structure, modifying the message body.
+    bugs:
+      - url: 1411699
+  CVE-2017-7829:
+    title: Mailsploit part 1: From address with encoded null character is cut off in message header display
+    impact: low
+    reporter: Sabri Haddouche
+    description: |
+      It is possible to spoof the sender's email address and display an arbitrary sender address to the email recipient. The real sender's address is not displayed if preceded by a null character in the display string.
+    bugs:
+      - url: 1423432
+  
