@@ -1,0 +1,267 @@
+## mfsa2018-02.yml
+announced: January 23, 2018
+impact: critical
+fixed_in:
+- Firefox 58
+title: Security vulnerabilities fixed in Firefox 58
+advisories:
+  CVE-2018-5091:
+    title: Use-after-free with DTMF timers
+    impact: critical
+    reporter: Looben Yang
+    description: |
+      A use-after-free vulnerability can occur during WebRTC connections when interacting with the DTMF timers. This results in a potentially exploitable crash.  
+    bugs:
+      - url: 1423086
+  CVE-2018-5092:
+    title: Use-after-free in Web Workers
+    impact: high
+    reporter: Looben Yang
+    description: |
+      A use-after-free vulnerability can occur when the thread for a Web Worker is freed from memory prematurely instead of from memory in the main thread while cancelling fetch operations. 
+    bugs:
+      - url: 1418074
+  CVE-2018-5093:
+    title: Buffer overflow in WebAssembly during Memory/Table resizing
+    impact: high
+    reporter: OSS-Fuzz
+    description: |
+      A heap buffer overflow vulnerability may occur in WebAssembly during Memory/Table resizing, resulting in a potentially exploitable crash.
+    bugs:
+      - url: 1415291
+  CVE-2018-5094:
+    title: Buffer overflow in WebAssembly with garbage collection on uninitialized memory
+    impact: high
+    reporter: OSS-Fuzz
+    description: |
+      A heap buffer overflow vulnerability may occur in WebAssembly when <code>shrinkElements</code> is called followed by garbage collection on memory that is now uninitialized. This results in a potentially exploitable crash. 
+    bugs:
+      - url: 1415883
+  CVE-2018-5095:
+    title: Integer overflow in Skia library during edge builder allocation
+    impact: high
+    reporter: Anonymous
+    description: |
+      An integer overflow vulnerability in the Skia library when allocating memory for edge builders on some systems with at least 8 GB of RAM. This results in the use of uninitialized memory, resulting in a potentially exploitable crash. 
+    bugs:
+      - url: 1418447
+  CVE-2018-5097:
+    title: Use-after-free when source document is manipulated during XSLT
+    impact: high
+    reporter: Nils
+    description: |
+      A use-after-free vulnerability can occur during XSL transformations when the source document for the transformation is manipulated by script content during the transformation. This results in a potentially exploitable crash.
+    bugs:
+      - url: 1387427
+  CVE-2018-5098:
+    title: Use-after-free while manipulating form input elements
+    impact: high
+    reporter: Nils
+    description: |
+      A use-after-free vulnerability can occur when form input elements, focus, and selections are manipulated by script content. This results in a potentially exploitable crash.
+    bugs:
+      - url: 1399400
+  CVE-2018-5099:
+    title: Use-after-free with widget listener
+    impact: high
+    reporter: Nils
+    description: |
+      A use-after-free vulnerability can occur when the widget listener is holding strong references to browser objects that have previously been freed, resulting in a potentially exploitable crash when these references are used.
+    bugs:
+      - url: 1416878
+  CVE-2018-5100:
+    title: Use-after-free when IsPotentiallyScrollable arguments are freed from memory
+    impact: high
+    reporter: Nils
+    description: |
+      A use-after-free vulnerability can occur when arguments passed to the <code>IsPotentiallyScrollable</code> function are freed while still in use by scripts. This results in a potentially exploitable crash.
+    bugs:
+      - url: 1417405
+  CVE-2018-5101:
+    title: Use-after-free with floating first-letter style elements
+    impact: high
+    reporter: Nils
+    description: |
+      A use-after-free vulnerability can occur when manipulating floating <code>first-letter</code> style elements, resulting in a potentially exploitable crash.
+    bugs:
+      - url: 1417661
+  CVE-2018-5102:
+    title: Use-after-free in HTML media elements
+    impact: high
+    reporter: Nils
+    description: |
+      A use-after-free vulnerability can occur when manipulating HTML media elements with media streams, resulting in a potentially exploitable crash.
+    bugs:
+      - url: 1419363
+  CVE-2018-5103:
+    title: Use-after-free during mouse event handling 
+    impact: high
+    reporter: Nils
+    description: |
+      A use-after-free vulnerability can occur during mouse event handling due to issues with multiprocess support. This results in a potentially exploitable crash.
+    bugs:
+      - url: 1423159
+  CVE-2018-5104:
+    title: Use-after-free during font face manipulation
+    impact: high
+    reporter: Nils
+    description: |
+      A use-after-free vulnerability can occur during font face manipulation when a font face is freed while still in use, resulting in a potentially exploitable crash. 
+    bugs:
+      - url: 1425000
+  CVE-2018-5105:
+    title: WebExtensions can save and execute files on local file system without user prompts
+    impact: high
+    reporter: Rob Wu
+    description: |
+      WebExtensions can bypass user prompts to first save and then open an arbitrarily downloaded file. This can result in an executable file running with local user privileges without explicit user consent.  
+    bugs:
+      - url: 1390882
+  CVE-2018-5106:
+    title: Developer Tools can expose style editor information cross-origin through service worker
+    impact: moderate
+    reporter: Jun Kokatsu
+    description: |
+      Style editor traffic in the Developer Tools can be routed through a service worker hosted on a third party website if a user selects error links when these tools are open. This can allow style editor information used within Developer Tools to leak cross-origin.
+    bugs:
+      - url: 1408708
+  CVE-2018-5107:
+    title: Printing process will follow symlinks for local file access
+    impact: moderate
+    reporter: Alex Gaynor
+    description: |
+      The printing process can bypass local access protections to read files available through symlinks, bypassing local file restrictions. The printing process requires files in a specific format so arbitrary data cannot be read but it is possible that some local file information could be exposed. 
+    bugs:
+      - url: 1379276
+  CVE-2018-5108:
+    title: Manually entered blob URL can be accessed by subsequent private browsing tabs
+    impact: moderate
+    reporter: Andrea Marchesini
+    description: |
+      A Blob URL can violate origin attribute segregation, allowing it to be accessed from a private browsing tab and for data to be passed between the private browsing tab and a normal tab. This could allow for the leaking of private information specific to the private browsing context. This issue is mitigated by the requirement that the user enter the Blob URL manually in order for the access violation to occur.  
+    bugs:
+      - url: 1421099
+  CVE-2018-5109:
+    title: Audio capture prompts and starts with incorrect origin attribution
+    impact: moderate
+    reporter: Andreas Pehrson
+    description: |
+      An audio capture session can started under an incorrect origin from the site making the capture request. Users are still prompted to allow the request but the prompt can display the wrong origin, leading to user confusion about which site is making the request to capture an audio stream.
+    bugs:
+      - url: 1405599
+  CVE-2018-5110:
+    title: Cursor can be made invisible on OS X
+    impact: moderate
+    reporter: Ron Warholic
+    description: |
+       If cursor visibility is toggled by script using from 'none' to an image and back through script, the cursor will be rendered temporarily invisible within Firefox. <br>*Note: This vulnerability only affects OS X. Other operating systems are not affected.*
+    bugs:
+      - url: 1423275
+  CVE-2018-5111:
+    title: URL spoofing in addressbar through drag and drop
+    impact: moderate
+    reporter: Mario Gomes
+    description: |
+      When the text of a specially formatted URL is dragged to the addressbar from page content, the displayed URL can be spoofed to show a different site than the one loaded. This allows for phishing attacks where a malicious page can spoof the identify of another site. 
+    bugs:
+      - url: 1321619
+  CVE-2018-5112:
+    title: Extension development tools panel can open a non-relative URL in the panel
+    impact: moderate
+    reporter: Abdulrahman Alqabandi
+    description: |
+      Development Tools panels of an extension are required to load URLs for the panels as relative URLs from the extension manifest file but this requirement was not enforced in all instances. This could allow the development tools panel for the extension to load a URL that it should not be able to access, including potentially privileged pages.
+    bugs:
+      - url: 1425224
+  CVE-2018-5113:
+    title: WebExtensions can load non-HTTPS pages with browser.identity.launchWebAuthFlow
+    impact: moderate
+    reporter: Abdulrahman Alqabandi
+    description: |
+      The <code>browser.identity.launchWebAuthFlow</code> function of WebExtensions is only allowed to load content over <code>https:</code> but this requirement was not properly enforced. This can potentially allow privileged pages to be loaded by the extension.
+    bugs:
+      - url: 1425267
+  CVE-2018-5114:
+    title: The old value of a cookie changed to HttpOnly remains accessible to scripts
+    impact: moderate
+    reporter: Inkognito
+    description: |
+       If an existing cookie is changed to be <code>HttpOnly</code> while a document is open, the original value remains accessible through script until that document is closed. Network requests correctly use the changed HttpOnly cookie.
+    bugs:
+      - url: 1421324
+  CVE-2018-5115:
+    title: Background network requests can open HTTP authentication in unrelated foreground tabs
+    impact: moderate
+    reporter: Jerry Decime
+    description: |
+      If an HTTP authentication prompt is triggered by a background network request from a page or extension, it is displayed over the currently loaded foreground page. Although the prompt contains the real domain making the request, this can result in user confusion about the originating site of the authentication request and may cause users to mistakenly send private credential information to a third party site.
+    bugs:
+      - url: 1409449
+  CVE-2018-5116:
+    title: WebExtension ActiveTab permission allows cross-origin frame content access
+    impact: moderate
+    reporter: Ronen Zilberman
+    description: |
+      WebExtensions with the <code>ActiveTab</code> permission are able to access frames hosted within the active tab even if the frames are cross-origin. Malicious extensions can inject frames from arbitrary origins into the loaded page and then interact with them, bypassing same-origin user expectations with this permission.
+    bugs:
+      - url: 1396399
+  CVE-2018-5117:
+    title: URL spoofing with right-to-left text aligned left-to-right 
+    impact: moderate
+    reporter: Xisigr 
+    description: |
+      If right-to-left text is used in the addressbar with left-to-right alignment, it is possible in some circumstances to scroll this text to spoof the displayed URL. This issue could result in the wrong URL being displayed as a location, which can mislead users to believe they are on a different site than the one loaded.  
+    bugs:
+      - url: 1395508
+  CVE-2018-5118:
+    title: "Activity Stream images can attempt to load local content through file:"
+    impact: moderate
+    reporter: Paul Theriault
+    description: |
+      The screenshot images displayed in the Activity Stream page displayed when a new tab is opened is created from the meta tags of websites. An issue was discovered where the page could attempt to create these images through <code>file:</code> URLs from the local file system. This loading is blocked by the sandbox but could expose local data if combined with another attack that escapes sandbox protections.
+    bugs:
+      - url: 1420049
+  CVE-2018-5119:
+    title: Reader view will load cross-origin content in violation of CORS headers
+    impact: low
+    reporter: Jun Kokatsu
+    description: |
+      The reader view will display cross-origin content when CORS headers are set to prohibit the loading of cross-origin content by a site. This could allow access to content that should be restricted in reader view.
+    bugs:
+      - url: 1420507
+  CVE-2018-5121:
+    title: OS X Tibetan characters render incompletely in the addressbar
+    impact: low
+    reporter: Khalil Zhani
+    description: |
+      Low descenders on some Tibetan characters in several fonts on OS X are clipped when rendered in the addressbar. When used as part of an Internationalized Domain Name (IDN) this can be used for domain name spoofing attacks. <br>*Note: This attack only affects OS X operating systems. Other operating systems are unaffected.*
+    bugs:
+      - url: 1402368
+  CVE-2018-5122:
+    title: Potential integer overflow in DoCrypt
+    impact: low
+    reporter: Casper of Tencent's Xuanwu Lab
+    description: |
+      A potential integer overflow in the <code>DoCrypt</code> function of WebCrypto was identified. If a means was found of exploiting it, it could result in an out-of-bounds write.
+    bugs:
+      - url: 1413841
+  CVE-2018-5090:
+    title: Memory safety bugs fixed in Firefox 58
+    impact: critical
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers and community members Calixte Denizet, Christian Holler, Alex Gaynor, Yoshi Huang, Bob Clary, Nils Ohlmeier, Jason Kratzer, Jesse Ruderman, Philipp, Mike Taylor, Marcia Knous, Paul Adenot, Randell Jesup, JW Wang, Tyson Smith, Emilio Cobos Álvarez, Ted Campbell, Stephen Fewer, and Tristan Bourvon reported memory safety bugs present in Firefox 57. Some of these bugs showed evidence of memory corruption and we presume that with enough effort that some of these could be exploited to run arbitrary code.
+    bugs:
+      - url: 1413857, 1412653, 1418966, 1427126, 1412942, 1401459, 1364399, 1382851, 1423770, 1401420, 1281965, 1389561, 1409179, 1416879, 1421786, 1426449, 1416799, 1400912, 1415158, 1415748, 1415788, 1371891, 1415770, 1416519, 1413143, 1418841, 1384544, 1410140, 1411631, 1412313, 1412641, 1412645, 1412646, 1412648
+        desc: Memory safety bugs fixed in Firefox 58
+  CVE-2018-5089:
+    title: Memory safety bugs fixed in Firefox 58 and Firefox ESR 52.6
+    impact: critical
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers and community members Christian Holler, Jason Kratzer, Marcia Knous, Nathan Froyd, Oriol Brufau, Ronald Crane, Randell Jesup, Tyson Smith, Emilio Cobos Álvarez, Ryan VanderMeulen, Sebastian Hengst, Karl Tomlinson, Xidorn Quan, Ludovic Hirlimann, and Jason Orendorff reported memory safety bugs present in Firefox 57 and Firefox ESR 52.5. Some of these bugs showed evidence of memory corruption and we presume that with enough effort that some of these could be exploited to run arbitrary code.
+    bugs:
+      - url: 1412420, 1426783, 1422389, 1415598, 1410134, 1408017, 1224396, 1382366, 1415582, 1417797, 1409951, 1414452, 1428589, 1425780, 1399520, 1418854, 1408276, 1412145, 1331209, 1425612
+        desc: Memory safety bugs fixed in Firefox 58 and Firefox ESR 52.6
+
+
