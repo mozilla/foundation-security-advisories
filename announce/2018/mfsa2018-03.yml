@@ -1,0 +1,98 @@
+## mfsa2018-02.yml
+announced: January 23, 2018
+impact: critical
+fixed_in:
+- Firefox ESR 52.6
+title: Security vulnerabilities fixed in Firefox ESR 52.6
+advisories:
+  CVE-2018-5091:
+    title: Use-after-free with DTMF timers
+    impact: critical
+    reporter: Looben Yang
+    description: |
+      A use-after-free vulnerability can occur during WebRTC connections when interacting with the DTMF timers. This results in a potentially exploitable crash.  
+    bugs:
+      - url: 1423086
+  CVE-2018-5095:
+    title: Integer overflow in Skia library during edge builder allocation
+    impact: high
+    reporter: Anonymous
+    description: |
+      An integer overflow vulnerability in the Skia library when allocating memory for edge builders on some systems with at least 8 GB of RAM. This results in the use of uninitialized memory, resulting in a potentially exploitable crash. 
+    bugs:
+      - url: 1418447
+  CVE-2018-5096:
+    title: Use-after-free while editing form elements
+    impact: high
+    reporter: Nils
+    description: |
+      A use-after-free vulnerability can occur while editing events in form elements on a page, resulting in a potentially exploitable crash.
+    bugs:
+      - url: 1418922
+  CVE-2018-5097:
+    title: Use-after-free when source document is manipulated during XSLT
+    impact: high
+    reporter: Nils
+    description: |
+      A use-after-free vulnerability can occur during XSL transformations when the source document for the transformation is manipulated by script content during the transformation. This results in a potentially exploitable crash.
+    bugs:
+      - url: 1387427
+  CVE-2018-5098:
+    title: Use-after-free while manipulating form input elements
+    impact: high
+    reporter: Nils
+    description: |
+      A use-after-free vulnerability can occur when form input elements, focus, and selections are manipulated by script content. This results in a potentially exploitable crash.
+    bugs:
+      - url: 1399400
+  CVE-2018-5099:
+    title: Use-after-free with widget listener
+    impact: high
+    reporter: Nils
+    description: |
+      A use-after-free vulnerability can occur when the widget listener is holding strong references to browser objects that have previously been freed, resulting in a potentially exploitable crash when these references are used.
+    bugs:
+      - url: 1416878
+  CVE-2018-5102:
+    title: Use-after-free in HTML media elements
+    impact: high
+    reporter: Nils
+    description: |
+      A use-after-free vulnerability can occur when manipulating HTML media elements with media streams, resulting in a potentially exploitable crash.
+    bugs:
+      - url: 1419363
+  CVE-2018-5103:
+    title: Use-after-free during mouse event handling 
+    impact: high
+    reporter: Nils
+    description: |
+      A use-after-free vulnerability can occur during mouse event handling due to issues with multiprocess support. This results in a potentially exploitable crash.
+    bugs:
+      - url: 1423159
+  CVE-2018-5104:
+    title: Use-after-free during font face manipulation
+    impact: high
+    reporter: Nils
+    description: |
+      A use-after-free vulnerability can occur during font face manipulation when a font face is freed while still in use, resulting in a potentially exploitable crash. 
+    bugs:
+      - url: 1425000
+  CVE-2018-5117:
+    title: URL spoofing with right-to-left text aligned left-to-right 
+    impact: moderate
+    reporter: Xisigr 
+    description: |
+      If right-to-left text is used in the addressbar with left-to-right alignment, it is possible in some circumstances to scroll this text to spoof the displayed URL. This issue could result in the wrong URL being displayed as a location, which can mislead users to believe they are on a different site than the one loaded.  
+    bugs:
+      - url: 1395508
+  CVE-2018-5089:
+    title: Memory safety bugs fixed in Firefox 58 and Firefox ESR 52.6
+    impact: critical
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers and community members Christian Holler, Jason Kratzer, Marcia Knous, Nathan Froyd, Oriol Brufau, Ronald Crane, Randell Jesup, Tyson Smith, Emilio Cobos Álvarez, Ryan VanderMeulen, Sebastian Hengst, Karl Tomlinson, Xidorn Quan, Ludovic Hirlimann, and Jason Orendorff reported memory safety bugs present in Firefox 57 and Firefox ESR 52.5. Some of these bugs showed evidence of memory corruption and we presume that with enough effort that some of these could be exploited to run arbitrary code.
+    bugs:
+      - url: 1412420, 1426783, 1422389, 1415598, 1410134, 1408017, 1224396, 1382366, 1415582, 1417797, 1409951, 1414452, 1428589, 1425780, 1399520, 1418854, 1408276, 1412145, 1331209, 1425612
+        desc: Memory safety bugs fixed in Firefox 58 and Firefox ESR 52.6
+
+
