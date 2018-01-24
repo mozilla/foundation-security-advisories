@@ -184,7 +184,7 @@ advisories:
   CVE-2018-5114:
     title: The old value of a cookie changed to HttpOnly remains accessible to scripts
     impact: moderate
-    reporter: Inkognito
+    reporter: Inko
     description: |
        If an existing cookie is changed to be <code>HttpOnly</code> while a document is open, the original value remains accessible through script until that document is closed. Network requests correctly use the changed HttpOnly cookie.
     bugs:
