@@ -208,7 +208,7 @@ advisories:
   CVE-2018-5117:
     title: URL spoofing with right-to-left text aligned left-to-right 
     impact: moderate
-    reporter: Xisigr 
+    reporter: xisigr of Tencent's Xuanwu Lab 
     description: |
       If right-to-left text is used in the addressbar with left-to-right alignment, it is possible in some circumstances to scroll this text to spoof the displayed URL. This issue could result in the wrong URL being displayed as a location, which can mislead users to believe they are on a different site than the one loaded.  
     bugs:
