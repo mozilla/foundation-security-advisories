@@ -16,6 +16,8 @@ import fnmatch
 import os
 import re
 import sys
+from datetime import date
+from glob import glob
 from subprocess import Popen, PIPE
 
 import yaml
@@ -25,7 +27,9 @@ from markdown import markdown
 
 GIT = os.getenv('GIT_BIN', 'git')
 ADVISORIES_DIR = 'announce'
-FILENAME_RE = re.compile('mfsa(\d{4}-\d{2,3})\.(md|yml)$')
+HOF_DIR = 'bug-bounty-hof'
+MFSA_FILENAME_RE = re.compile('mfsa(\d{4}-\d{2,3})\.(md|yml)$')
+HOF_FILENAME_RE = re.compile('bug-bounty-hof/\w+\.yml$')
 REQUIRED_FIELDS = (
     'fixed_in',
     'title',
@@ -42,7 +46,7 @@ REQUIRED_YAML_ADVISORY_FIELDS = (
 
 
 def mfsa_id_from_filename(filename):
-    match = FILENAME_RE.search(filename)
+    match = MFSA_FILENAME_RE.search(filename)
     if match:
         return match.group(1)
 
@@ -62,7 +66,8 @@ def git_diff(staged):
     proc = Popen(command, stdout=PIPE)
     git_out = proc.communicate()[0].split()
 
-    return [fn for fn in git_out if FILENAME_RE.search(fn)]
+    return [fn for fn in git_out if
+            MFSA_FILENAME_RE.search(fn) or HOF_FILENAME_RE.search(fn)]
 
 
 def get_modified_files(staged_only):
@@ -90,6 +95,29 @@ def get_all_files():
         for filename in fnmatch.filter(filenames, 'mfsa*.*'):
             yield os.path.join(root, filename)
 
+    for filename in glob('{}/*.yml'.format(HOF_DIR)):
+        yield filename
+
+
+def check_hof_data(data):
+    if 'names' not in data:
+        return 'Missing required key: names'
+
+    if len(data['names']) < 100:
+        return 'Suspiciously few names returned. File may be corrupted.'
+
+    for name in data['names']:
+        if 'name' not in name:
+            return 'Key "name" required for every entry in "names"'
+        if 'date' not in name:
+            return 'Key "date" required for every entry in "names"'
+        if not isinstance(name['date'], date):
+            return 'Key "date" should be formatted as a date (YYYY-MM-DD): %s' % name['date']
+        if name['date'] < date(2004, 11, 9):
+            return 'A date can\'t be set before the launch date of Firefox'
+
+    return None
+
 
 def check_file(file_name):
     """
@@ -110,6 +138,9 @@ def check_file(file_name):
         data = parser(file_name)
     except Exception as e:
         return str(e)
+
+    if HOF_FILENAME_RE.search(file_name):
+        return check_hof_data(data)
 
     if 'mfsa_id' not in data:
         return 'The MFSA ID must be in the filename or metadata.'
