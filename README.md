@@ -120,11 +120,22 @@ as markdown. The YAML spec provides [different ways of enabling multi-line](http
 but the best for this application is to use the `|` character after the `:` 
 like you see in the example for the main description and `CVE-2016-5270` above.
 
+## Bug Bounty Hall of Fame Files
+
+This repo also contains data that bedrock uses to generate the
+[client](https://www.mozilla.org/en-US/security/bug-bounty/hall-of-fame/) and 
+[web](https://www.mozilla.org/en-US/security/bug-bounty/web-hall-of-fame/) hall of fame pages.
+These are the YAML files in the `bug-bounty-hof` directory. The data format for these YAML files is rather simple. 
+The only required field in the file is `names`: this is a list of data structures about each name in the hall of fame. 
+For each name entry only `name` and `date` are required. The `date` field must be in the format `YYYY-MM-DD`.
+You can optionally add a `url` field and the entry on the page will link to this url. You are free to add other 
+data to each entry (e.g. `bug`, `organization`), but at present bedrock will not use these items on the site.
+
 ## Linter Script
 
 There is a script in the repo called `check_advisories.py` that will tell you when you've gotten something wrong. It uses
 the same parsing algorithm as bedrock and so it should catch errors before they cause problems
-on the website. By default it will check all modified advisory files in the repo. If you want
+on the website. By default it will check all modified advisory and bug bounty files in the repo. If you want
 to check them all you can pass the `--all` switch. And if you only want it to check the changes
 staged in git's index you can pass the `--staged` switch (this is mostly good for a git pre-commit hook).
 

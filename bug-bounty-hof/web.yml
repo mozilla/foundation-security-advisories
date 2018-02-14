@@ -1,0 +1,464 @@
+names:
+- name: "Juba Baghdad"
+  date: 2017-10-01
+  url: "https://twitter.com/JubaBaghdad"
+- name: "Sergey Bobrov"
+  date: 2017-10-01
+  url: "https://twitter.com/Black2Fan"
+- name: "Manish Gupta"
+  date: 2017-10-01
+  url: "https://www.linkedin.com/in/cehmanish/"
+- name: "Vineet Kumar"
+  date: 2017-10-01
+  url: "https://bughunter.withgoogle.com/profile/80ae25f5-877d-4402-94e8-7902cacdb4b9"
+- name: "Vishal Shukla"
+  date: 2017-10-01
+  url: "https://www.facebook.com/shukla304"
+- name: "Sandeep Singh"
+  date: 2017-10-01
+  url: "http://s4ndeep.com/"
+- name: "Takashi Suzuki"
+  date: 2017-10-01
+  url: "https://hackerone.com/kamikaze/"
+- name: "EdOverflow"
+  date: 2017-07-01
+  url: "https://edoverflow.com"
+- name: "Avram Marius Gabriel"
+  date: 2017-07-01
+  url: "https://twitter.com/securityshell"
+- name: "Tyler Hawkins"
+  date: 2017-07-01
+  url: "https://www.linkedin.com/in/tyler-hawkins-149ba2b2/"
+- name: "Jędrzej Krysztofiak"
+  date: 2017-07-01
+  url: "https://twitter.com/yendrzei"
+- name: "michon2"
+  date: 2017-07-01
+- name: "Paresh Parmar"
+  date: 2017-07-01
+  url: "http://www.pareshparmar.com/"
+- name: "Tarek Bouali Taoud"
+  date: 2017-07-01
+  url: "https://tarspace.net"
+- name: "Dodi Ara"
+  date: 2017-04-01
+- name: "Sergey Bobrov"
+  date: 2017-04-01
+  url: "https://twitter.com/Black2Fan"
+- name: "Aam Chandra"
+  date: 2017-04-01
+- name: "Leandro Chaves"
+  date: 2017-04-01
+  url: "https://twitter.com/cecleandro"
+- name: "Tooru Fujisawa [:arai]"
+  date: 2017-04-01
+- name: "Tyler Hawkins"
+  date: 2017-04-01
+  url: "https://www.linkedin.com/in/tyler-hawkins-149ba2b2/"
+- name: "Vladimir Metnew"
+  date: 2017-04-01
+  url: "https://github.com/Metnew"
+- name: "Hisham Mir"
+  date: 2017-04-01
+  url: "https://securitywall.co/"
+- name: "Sadik Shaikh"
+  date: 2017-04-01
+- name: "Shashank"
+  date: 2017-04-01
+  url: "https://twitter.com/cyberboyIndia"
+- name: "Waseem Ullah Siddiqui"
+  date: 2017-04-01
+  url: "https://www.facebook.com/ullahwasim"
+- name: "Yasin Soliman"
+  date: 2017-04-01
+  url: "https://twitter.com/SecurityYasin"
+- name: "Fredrik Nordberg Almroth"
+  date: 2017-01-01
+  url: "https://detectify.com/"
+- name: "Mario Gomes"
+  date: 2017-01-01
+- name: "Akita (Lucas Moreira)"
+  date: 2017-01-01
+  url: "https://twitter.com/knowledge_2014"
+- name: "Muhammad Hassham Nagori"
+  date: 2017-01-01
+- name: "Wladimir Palant"
+  date: 2017-01-01
+- name: "Paresh Parmar"
+  date: 2017-01-01
+  url: "http://www.pareshparmar.com/"
+- name: "Yasin Soliman"
+  date: 2017-01-01
+  url: "https://twitter.com/SecurityYasin"
+- name: "Yann CAM"
+  date: 2016-10-01
+- name: "Griffin Francis"
+  date: 2016-10-01
+- name: "Tooru Fujisawa"
+  date: 2016-10-01
+- name: "Matjaz Horvat"
+  date: 2016-10-01
+- name: "Muzammmil Abbas Kayani"
+  date: 2016-10-01
+- name: "Wladimir Palant"
+  date: 2016-10-01
+- name: "Aliaksei Panamarenka"
+  date: 2016-10-01
+- name: "Arne Swinnen"
+  date: 2016-10-01
+- name: "Fredrik Nordberg"
+  date: 2016-07-01
+- name: "Griffin Francis"
+  date: 2016-07-01
+- name: "Amir Saad"
+  date: 2016-07-01
+- name: "Lucio Corsa"
+  date: 2016-07-01
+- name: "Arne Swinnen"
+  date: 2016-07-01
+- name: "Wladimir Palant"
+  date: 2016-07-01
+- name: "Sergey Bobrov"
+  date: 2016-04-01
+- name: "Griffin Francis"
+  date: 2016-04-01
+- name: "Takashi Suzuki"
+  date: 2016-04-01
+- name: "Mario Gomes"
+  date: 2016-04-01
+- name: "Aleh Boitsau"
+  date: 2016-04-01
+- name: "Sergey Bobrov"
+  date: 2016-04-01
+- name: "Karim Valiev"
+  date: 2016-04-01
+- name: "Adel Afsharipour"
+  date: 2016-04-01
+- name: "Yassine Aboukir"
+  date: 2016-04-01
+- name: "Jose Carlos Exposito Bueno"
+  date: 2016-04-01
+- name: "Ashar Javed"
+  date: 2016-01-01
+- name: "Francisco A."
+  date: 2016-01-01
+- name: "Griffin Francis"
+  date: 2016-01-01
+- name: "Jose Antonio Perez"
+  date: 2016-01-01
+- name: "Luca De Fulgentis"
+  date: 2016-01-01
+- name: "Mahadev Subedi"
+  date: 2016-01-01
+- name: "Muhammed Gamal"
+  date: 2016-01-01
+- name: "Paresh"
+  date: 2016-01-01
+- name: "Rafael"
+  date: 2016-01-01
+- name: "Robin Puri (Deep Inder Singh Puri)"
+  date: 2016-01-01
+- name: "seb0"
+  date: 2016-01-01
+- name: "Sergey Bobrov"
+  date: 2016-01-01
+- name: "Tom Prince"
+  date: 2016-01-01
+- name: "Wladimir Palant"
+  date: 2016-01-01
+- name: "Daniel Tomescu"
+  date: 2016-01-01
+- name: "Shahar Albeck"
+  date: 2016-01-01
+- name: "Andrew"
+  date: 2016-01-01
+- name: "Daniel Tomescu"
+  date: 2015-10-01
+- name: "Fabian Cuchietti (0xlabs.com)"
+  date: 2015-10-01
+- name: "Griffin Francis"
+  date: 2015-10-01
+- name: "Holger Fuhrmannek"
+  date: 2015-10-01
+- name: "Jason"
+  date: 2015-10-01
+- name: "Mario Gomes"
+  date: 2015-10-01
+- name: "Wladimir Palant"
+  date: 2015-10-01
+- name: "Yassine ABOUKIR"
+  date: 2015-10-01
+- name: "Daniel Tomescu"
+  date: 2015-07-01
+- name: "Fernando Munoz"
+  date: 2015-07-01
+- name: "Francis Lalnunmawi Joute"
+  date: 2015-07-01
+- name: "Mario Gomes"
+  date: 2015-07-01
+- name: "Netanel Rubin"
+  date: 2015-07-01
+- name: "vijay kumar1"
+  date: 2015-07-01
+- name: "Yassine ABOUKIR"
+  date: 2015-07-01
+- name: "Fernando Munoz"
+  date: 2015-04-01
+- name: "Harsha Boppana"
+  date: 2015-04-01
+- name: "Mario Gomes"
+  date: 2015-04-01
+- name: "Omer Iqbal"
+  date: 2015-04-01
+- name: "Yassine ABOUKIR"
+  date: 2015-04-01
+- name: "gschmitz"
+  date: 2015-01-01
+- name: "Muhammad Shahmeer"
+  date: 2015-01-01
+- name: "Sergey"
+  date: 2015-01-01
+- name: "Tushar Parab"
+  date: 2015-01-01
+- name: "Yassine ABOUKIR"
+  date: 2015-01-01
+- name: "gschmitz"
+  date: 2014-10-01
+- name: "Hamza Bettache"
+  date: 2014-10-01
+- name: "Ingo Pan"
+  date: 2014-10-01
+- name: "Mazin Ahmed"
+  date: 2014-10-01
+- name: "Mohamed A. Baset"
+  date: 2014-10-01
+- name: "Mario Gomes"
+  date: 2014-07-01
+- name: "Narendra Bhati"
+  date: 2014-07-01
+- name: "Netanel Rubin"
+  date: 2014-07-01
+- name: "schuenjia"
+  date: 2014-07-01
+- name: "Sergey"
+  date: 2014-07-01
+- name: "Simon Green"
+  date: 2014-07-01
+- name: "sysmox"
+  date: 2014-07-01
+- name: "Andreas Wagner"
+  date: 2014-04-01
+- name: "Antoine Delignat-Lavaud"
+  date: 2014-04-01
+- name: "Daniel Tomescu"
+  date: 2014-04-01
+- name: "Shahee Mirza"
+  date: 2014-04-01
+- name: "Umer Shakil"
+  date: 2014-04-01
+- name: "Dawid Czagan"
+  date: 2014-01-01
+- name: "Manish Goregaokar"
+  date: 2014-01-01
+- name: "Jose Pino"
+  date: 2013-10-01
+- name: "Jelmer de Hen"
+  date: 2013-10-01
+- name: "Luca De Fulgentis"
+  date: 2013-10-01
+- name: "Mario Gomes"
+  date: 2013-10-01
+- name: "Mateusz Goik"
+  date: 2013-10-01
+- name: "Sergey"
+  date: 2013-10-01
+- name: "gschmitz"
+  date: 2013-07-01
+- name: "James Kettle"
+  date: 2013-07-01
+- name: "Jay Turla"
+  date: 2013-07-01
+- name: "Malte Batram"
+  date: 2013-07-01
+- name: "Mahadev Subedi"
+  date: 2013-07-01
+- name: "Mateusz Goik"
+  date: 2013-07-01
+- name: "Nikhil Srivastava"
+  date: 2013-07-01
+- name: "Riaz"
+  date: 2013-07-01
+- name: "Shubham Mittal"
+  date: 2013-07-01
+- name: "Simon Green"
+  date: 2013-07-01
+- name: "Siddesh Gawde"
+  date: 2013-04-01
+- name: "Frans Rosen"
+  date: 2013-04-01
+- name: "Gschmitz"
+  date: 2013-04-01
+- name: "Jack W"
+  date: 2013-04-01
+- name: "James Kettle"
+  date: 2013-04-01
+- name: "Karthik Bhargavan"
+  date: 2013-04-01
+- name: "Khavish"
+  date: 2013-04-01
+- name: "Neal Poole"
+  date: 2013-04-01
+- name: "Sergey"
+  date: 2013-04-01
+- name: "Andrea Santese"
+  date: 2013-01-01
+- name: "Fabian Cuchietti (0xlabs.com)"
+  date: 2013-01-01
+- name: "Fredrik N. Almroth"
+  date: 2013-01-01
+- name: "Griffin Francis"
+  date: 2013-01-01
+- name: "Marius"
+  date: 2013-01-01
+- name: "Mateusz Goik"
+  date: 2013-01-01
+- name: "Ryan Dewhurst"
+  date: 2013-01-01
+- name: "Sergey"
+  date: 2013-01-01
+- name: "Simon Rozhkov"
+  date: 2013-01-01
+- name: "Simranjeet Singh"
+  date: 2013-01-01
+- name: "Ajay Singh Negi"
+  date: 2012-10-01
+- name: "James Kettle"
+  date: 2012-10-01
+- name: "Sergey"
+  date: 2012-10-01
+- name: "chetan1"
+  date: 2012-07-01
+- name: "hristian Matthies"
+  date: 2012-07-01
+- name: "Cocking70"
+  date: 2012-07-01
+- name: "James Kettle"
+  date: 2012-07-01
+- name: "Luca De Fulgentis"
+  date: 2012-07-01
+- name: "Mario Gomes"
+  date: 2012-07-01
+- name: "Mateusz Goik"
+  date: 2012-07-01
+- name: "Michael Blake"
+  date: 2012-07-01
+- name: "Sergey"
+  date: 2012-07-01
+- name: "Siddhesh Gawde"
+  date: 2012-07-01
+- name: "Sony"
+  date: 2012-07-01
+- name: "Frederic Buclin"
+  date: 2012-04-01
+- name: "Kostya Rouderfer"
+  date: 2012-04-01
+- name: "James Kettle"
+  date: 2012-04-01
+- name: "Mateusz Goik"
+  date: 2012-04-01
+- name: "Mario Gomes"
+  date: 2012-04-01
+- name: "Martin Obiols"
+  date: 2012-04-01
+- name: "Mike"
+  date: 2012-04-01
+- name: "Prajal Kulkarni"
+  date: 2012-04-01
+- name: "Riyaz Walikar"
+  date: 2012-04-01
+- name: "Sony"
+  date: 2012-04-01
+- name: "Subodh Iyengar"
+  date: 2012-04-01
+- name: "Andonov"
+  date: 2012-01-01
+- name: "Artur Czyz"
+  date: 2012-01-01
+- name: "Jack"
+  date: 2012-01-01
+- name: "João Lucas Melo Brasio"
+  date: 2012-01-01
+- name: "Luca De Fulgentis"
+  date: 2012-01-01
+- name: "Mario Gomes"
+  date: 2012-01-01
+- name: "Sergey"
+  date: 2012-01-01
+- name: "Soroush Dalili"
+  date: 2012-01-01
+- name: "Noah Wilcox"
+  date: 2012-01-01
+- name: "Ernesto M Hermida"
+  date: 2011-10-01
+- name: "James Kettle"
+  date: 2011-10-01
+- name: "Mario Gomes"
+  date: 2011-10-01
+- name: "Marius"
+  date: 2011-10-01
+- name: "Luca De Fulgentis"
+  date: 2011-07-01
+- name: "Mateusz Goik"
+  date: 2011-07-01
+- name: "Mike"
+  date: 2011-07-01
+- name: "Gianni Gnesa"
+  date: 2011-04-01
+- name: "James Kettle"
+  date: 2011-04-01
+- name: "Luca De Fulgentis"
+  date: 2011-04-01
+- name: "Marius"
+  date: 2011-04-01
+- name: "Sergey"
+  date: 2011-04-01
+- name: "Simranjeet Singh"
+  date: 2011-04-01
+- name: "0x5042"
+  date: 2011-01-01
+- name: "James Kettle"
+  date: 2011-01-01
+- name: "Luca De Fulgentis"
+  date: 2011-01-01
+- name: "Marius"
+  date: 2011-01-01
+- name: "Mike"
+  date: 2011-01-01
+- name: "Neal Poole"
+  date: 2011-01-01
+- name: "Nikolas Sotiriu"
+  date: 2011-01-01
+- name: "David"
+  date: 2010-10-01
+- name: "Damon Haidary"
+  date: 2010-10-01
+- name: "Ervis Tusha"
+  date: 2010-10-01
+- name: "Flow"
+  date: 2010-10-01
+- name: "Jose A Vasquez"
+  date: 2010-10-01
+- name: "Mike"
+  date: 2010-10-01
+- name: "Neal Poole"
+  date: 2010-10-01
+- name: "Patrick B"
+  date: 2010-10-01
+- name: "Ricky Zhou"
+  date: 2010-10-01
+- name: "Schuenjia"
+  date: 2010-10-01
+- name: "Sean Malone"
+  date: 2010-10-01
+- name: "Willem"
+  date: 2010-10-01
