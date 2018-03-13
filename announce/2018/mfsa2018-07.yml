@@ -1,0 +1,65 @@
+## mfsa2018-07.yml
+announced: March 13, 2018
+impact: critical
+fixed_in:
+- Firefox ESR 52.7
+title: Security vulnerabilities fixed in Firefox ESR 52.7
+advisories:
+  CVE-2018-5127:
+    title: Buffer overflow manipulating SVG animatedPathSegList
+    impact: high
+    reporter: Nils 
+    description: |
+       A buffer overflow can occur when manipulating the SVG <code>animatedPathSegList</code> through script. This results in a potentially exploitable crash.
+    bugs:
+      - url: 1430557 
+  CVE-2018-5129:
+    title: Out-of-bounds write with malformed IPC messages
+    impact: high
+    reporter: James Grant
+    description: |
+      A lack of parameter validation on IPC messages results in a potential out-of-bounds write through malformed IPC messages. This can potentially allow for sandbox escape through memory corruption in the parent process.
+    bugs:
+      - url: 1428947
+  CVE-2018-5130:
+    title: Mismatched RTP payload type can trigger memory corruption
+    impact: high
+    reporter: Tony Paloma
+    description: |
+      When packets with a mismatched RTP payload type are sent in WebRTC connections, in some circumstances a potentially exploitable crash is triggered.
+    bugs:
+      - url: 1433005
+  CVE-2018-5131:
+    title: Fetch API improperly returns cached copies of no-store/no-cache resources
+    impact: moderate
+    reporter: Ben Kelly
+    description: |
+      Under certain circumstances the <code>fetch()</code> API can return transient local copies of resources that were sent with a <code>no-store</code> or <code>no-cache</code> cache header instead of downloading a copy from the network as it should. This can result in previously stored, locally cached data of a website being accessible to users if they share a common profile while browsing.
+    bugs:
+      - url: 1440775
+  CVE-2018-5144:
+    title: Integer overflow during Unicode conversion
+    impact: moderate
+    reporter: Root Object 
+    description: |
+      An integer overflow can occur during conversion of text to some Unicode character sets due to an unchecked length parameter.
+    bugs:
+      - url: 1440926
+  CVE-2018-5125:
+    title: Memory safety bugs fixed in Firefox 59 and Firefox ESR 52.7
+    impact: critical
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers and community members Bob Clary, Olli Pettay, Christoph Diehl, Christian Holler, Nils Ohlmeier, Randell Jesup, Tyson Smith, Ralph Giles, and Philipp reported memory safety bugs present in Firefox 58 and Firefox ESR 52.6. Some of these bugs showed evidence of memory corruption and we presume that with enough effort that some of these could be exploited to run arbitrary code.
+    bugs:
+      - url: 1416529, 1434580, 1388020, 1434384, 1437450, 1437507, 1426988, 1438425, 1324042, 1437087, 1443865, 1425520
+        desc: Memory safety bugs fixed in Firefox 59 and Firefox ESR 52.7
+  CVE-2018-5145:
+    title: Memory safety bugs fixed in Firefox ESR 52.7
+    impact: critical
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers Jet Villegas and Randell Jesup reported memory safety bugs present in Firefox ESR 52.6. These bugs showed evidence of memory corruption and we presume that with enough effort that some of these could be exploited to run arbitrary code.
+    bugs:
+      - url: 1261175, 1348955
+        desc: Memory safety bugs fixed in Firefox ESR 52.7

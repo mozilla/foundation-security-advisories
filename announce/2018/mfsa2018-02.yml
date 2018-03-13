@@ -250,9 +250,9 @@ advisories:
     impact: critical
     reporter: Mozilla developers and community
     description: |
-      Mozilla developers and community members Calixte Denizet, Christian Holler, Alex Gaynor, Yoshi Huang, Bob Clary, Nils Ohlmeier, Jason Kratzer, Jesse Ruderman, Philipp, Mike Taylor, Marcia Knous, Paul Adenot, Randell Jesup, JW Wang, Tyson Smith, Emilio Cobos Álvarez, Ted Campbell, Stephen Fewer, and Tristan Bourvon reported memory safety bugs present in Firefox 57. Some of these bugs showed evidence of memory corruption and we presume that with enough effort that some of these could be exploited to run arbitrary code.
+      Mozilla developers and community members Calixte Denizet, Christian Holler, Alex Gaynor, Yoshi Huang, Bob Clary, Nils Ohlmeier, Jason Kratzer, Jesse Ruderman, Philipp, Mike Taylor, Marcia Knous, Paul Adenot, Randell Jesup, JW Wang, Tyson Smith, Emilio Cobos Álvarez, Ted Campbell, Stephen Fewer, Tristan Bourvon, and Jet Villegas reported memory safety bugs present in Firefox 57. Some of these bugs showed evidence of memory corruption and we presume that with enough effort that some of these could be exploited to run arbitrary code.
     bugs:
-      - url: 1413857, 1412653, 1418966, 1427126, 1412942, 1401459, 1364399, 1382851, 1423770, 1401420, 1281965, 1389561, 1409179, 1416879, 1421786, 1426449, 1416799, 1400912, 1415158, 1415748, 1415788, 1371891, 1415770, 1416519, 1413143, 1418841, 1384544, 1410140, 1411631, 1412313, 1412641, 1412645, 1412646, 1412648
+      - url: 1413857, 1412653, 1418966, 1427126, 1412942, 1401459, 1364399, 1382851, 1423770, 1401420, 1281965, 1389561, 1409179, 1416879, 1421786, 1426449, 1416799, 1400912, 1415158, 1415748, 1415788, 1371891, 1415770, 1416519, 1413143, 1418841, 1384544, 1410140, 1411631, 1412313, 1412641, 1412645, 1412646, 1412648, 1261175
         desc: Memory safety bugs fixed in Firefox 58
   CVE-2018-5089:
     title: Memory safety bugs fixed in Firefox 58 and Firefox ESR 52.6

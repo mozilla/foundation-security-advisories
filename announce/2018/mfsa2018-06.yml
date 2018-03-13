@@ -1,0 +1,154 @@
+## mfsa2018-06.yml
+announced: March 13, 2018
+impact: critical
+fixed_in:
+- Firefox 59
+title: Security vulnerabilities fixed in Firefox 59
+advisories:
+  CVE-2018-5127:
+    title: Buffer overflow manipulating SVG animatedPathSegList
+    impact: high
+    reporter: Nils 
+    description: |
+       A buffer overflow can occur when manipulating the SVG <code>animatedPathSegList</code> through script. This results in a potentially exploitable crash.
+    bugs:
+      - url: 1430557 
+  CVE-2018-5128:
+    title: Use-after-free manipulating editor selection ranges
+    impact: high
+    reporter: Nils 
+    description: |
+      A use-after-free vulnerability can occur when manipulating elements, events, and selection ranges during editor operations. This results in a potentially exploitable crash.
+    bugs:
+      - url: 1431336
+  CVE-2018-5129:
+    title: Out-of-bounds write with malformed IPC messages
+    impact: high
+    reporter: James Grant
+    description: |
+      A lack of parameter validation on IPC messages results in a potential out-of-bounds write through malformed IPC messages. This can potentially allow for sandbox escape through memory corruption in the parent process.
+    bugs:
+      - url: 1428947
+  CVE-2018-5130:
+    title: Mismatched RTP payload type can trigger memory corruption
+    impact: high
+    reporter: Tony Paloma
+    description: |
+      When packets with a mismatched RTP payload type are sent in WebRTC connections, in some circumstances a potentially exploitable crash is triggered.
+    bugs:
+      - url: 1433005
+  CVE-2018-5131:
+    title: Fetch API improperly returns cached copies of no-store/no-cache resources
+    impact: moderate
+    reporter: Ben Kelly
+    description: |
+      Under certain circumstances the <code>fetch()</code> API can return transient local copies of resources that were sent with a <code>no-store</code> or <code>no-cache</code> cache header instead of downloading a copy from the network as it should. This can result in previously stored, locally cached data of a website being accessible to users if they share a common profile while browsing.
+    bugs:
+      - url: 1440775
+  CVE-2018-5132:
+    title:  WebExtension Find API can search privileged pages
+    impact: moderate
+    reporter: Andy McKay
+    description: |
+      The Find API for WebExtensions can search some privileged pages, such as <code>about:debugging</code>, if these pages are open in a tab. This could allow a malicious WebExtension to search for otherwise protected data if a user has it open.
+    bugs:
+      - url: 1408194
+  CVE-2018-5133:
+    title: Value of the app.support.baseURL preference is not properly sanitized
+    impact: moderate
+    reporter: François Lajeunesse-Robert
+    description: |
+      If the <code>app.support.baseURL</code> preference is changed by a malicious local program to contain HTML and script content, this content is not sanitized. It will be executed if a user loads <code>chrome://browser/content/preferences/in-content/preferences.xul</code> directly in a tab and executes a search. This stored preference is also executed whenever an EME video player plugin displays a CDM-disabled message as a notification message.
+    bugs:
+      - url: 1430511
+      - url: 1430974
+  CVE-2018-5134:
+    title: "WebExtensions may use view-source: URLs to bypass content restrictions"
+    impact: moderate
+    reporter: Abdulrahman Alqabandi
+    description: |
+      WebExtensions may use <code>view-source:</code> URLs to view local <code>file:</code> URL content, as well as content stored in <code>about:cache</code>, bypassing restrictions that only allow WebExtensions to view specific content.
+    bugs:
+      - url: 1429379
+  CVE-2018-5135:
+    title: WebExtension browserAction can inject scripts into unintended contexts
+    impact: moderate
+    reporter: Abdulrahman Alqabandi
+    description: |
+      WebExtensions can bypass normal restrictions in some circumstances and use <code>browser.tabs.executeScript</code> to inject scripts into contexts where this should not be allowed, such as pages from other WebExtensions or unprivileged <code>about:</code> pages.
+    bugs:
+      - url: 1431371
+  CVE-2018-5136:
+    title: "Same-origin policy violation with data: URL shared workers"
+    impact: moderate
+    reporter: Jun Kokatsu
+    description: |
+      A shared worker created from a <code>data:</code> URL in one tab can be shared by another tab with a different origin, bypassing the same-origin policy.
+    bugs:
+      - url: 1419166
+  CVE-2018-5137:
+    title: Script content can access legacy extension non-contentaccessible resources
+    impact: moderate
+    reporter: Masato Kinugawa
+    description: |
+      A legacy extension's non-contentaccessible, defined resources can be loaded by an arbitrary web page through script. This script does this by using a maliciously crafted path string to reference the resources. <br>*Note: this vulnerability does not affect WebExtensions.*  
+    bugs:
+      - url: 1432870
+  CVE-2018-5138:
+    title: Android Custom Tab address spoofing through long domain names
+    impact: low
+    reporter: rugk
+    description: |
+      A spoofing vulnerability can occur when a malicious site with an extremely long domain name is opened in an Android Custom Tab (a browser panel inside another app) and the default browser is Firefox for Android. This could allow an attacker to spoof which page is actually loaded and in use. <br>*Note: this issue only affects Firefox for Android. Other versions and operating systems are unaffected.*
+    bugs:
+      - url: 1432624
+  CVE-2018-5140:
+    title: "Moz-icon images accessible to web content through moz-icon: protocol"
+    impact: low
+    reporter: Abdulrahman Alqabandi
+    description: |
+      Image for moz-icons can be accessed through the <code>moz-icon:</code> protocol through script in web content even when otherwise prohibited. This could allow for information leakage of which applications are associated with specific MIME types by a malicious page.
+    bugs:
+      - url: 1424261
+  CVE-2018-5141:
+    title: DOS attack through notifications Push API 
+    impact: low
+    reporter: Zohar
+    description: |
+      A vulnerability in the notifications Push API where notifications can be sent through service workers by web content without direct user interaction. This could be used to open new tabs in a denial of service (DOS) attack or to display unwanted content from arbitrary URLs to users.
+    bugs:
+      - url: 1429093
+  CVE-2018-5142:
+    title: "Media Capture and Streams API permissions display incorrect origin with data: and blob: URLs"
+    impact: low
+    reporter: Jun Kokatsu
+    description: |
+      If Media Capture and Streams API permission is requested from documents with <code>data:</code> or <code>blob:</code> URLs, the permission notifications do not properly display the originating domain. The notification states "Unknown protocol" as the requestee, leading to user confusion about which site is asking for this permission.
+    bugs:
+      - url: 1366357
+  CVE-2018-5143:
+    title: "Self-XSS pasting javascript: URL with embedded tab into addressbar"
+    impact: low
+    reporter: Masato Kinugawa
+    description: |
+      URLs using <code>javascript:</code> have the protocol removed when pasted into the addressbar to protect users from cross-site scripting (XSS) attacks, but if a tab character is embedded in the <code>javascript:</code> URL the protocol is not removed and the script will execute. This could allow users to be socially engineered to run an XSS attack against themselves.
+    bugs:
+      - url: 1422643
+  CVE-2018-5126:
+    title: Memory safety bugs fixed in Firefox 59
+    impact: critical
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers and community members Calixte Denizet, Christian Holler, Sebastian Hengst, Jason Kratzer, Tyson Smith, Ryan VanderMeulen, Noemi Erli, Karl Tomlinson, Philipp, Gary Kwong, and Ronald Crane reported memory safety bugs present in Firefox 58. Some of these bugs showed evidence of memory corruption and we presume that with enough effort that some of these could be exploited to run arbitrary code.
+    bugs: 
+      - url: 1433671, 1414768, 1416523, 1425691, 1441006, 1429768, 1426002, 1297740, 1435566, 1432855, 1442318, 1421963, 1422631, 1426603, 1404297, 1425257, 1373934, 1423173, 1416940
+        desc: Memory safety bugs fixed in Firefox 59
+  CVE-2018-5125:
+    title: Memory safety bugs fixed in Firefox 59 and Firefox ESR 52.7
+    impact: critical
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers and community members Bob Clary, Olli Pettay, Christoph Diehl, Christian Holler, Nils Ohlmeier, Randell Jesup, Tyson Smith, Ralph Giles, and Philipp reported memory safety bugs present in Firefox 58 and Firefox ESR 52.6. Some of these bugs showed evidence of memory corruption and we presume that with enough effort that some of these could be exploited to run arbitrary code.
+    bugs:
+      - url: 1416529, 1434580, 1388020, 1434384, 1437450, 1437507, 1426988, 1438425, 1324042, 1437087, 1443865, 1425520
+        desc: Memory safety bugs fixed in Firefox 59 and Firefox ESR 52.7
