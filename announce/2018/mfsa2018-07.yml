@@ -50,9 +50,9 @@ advisories:
     impact: critical
     reporter: Mozilla developers and community
     description: |
-      Mozilla developers and community members Bob Clary, Olli Pettay, Christoph Diehl, Christian Holler, Nils Ohlmeier, Randell Jesup, Tyson Smith, Ralph Giles, and Philipp reported memory safety bugs present in Firefox 58 and Firefox ESR 52.6. Some of these bugs showed evidence of memory corruption and we presume that with enough effort that some of these could be exploited to run arbitrary code.
+      Mozilla developers and community members Bob Clary, Olli Pettay, Christian Holler, Nils Ohlmeier, Randell Jesup, Tyson Smith, Ralph Giles, and Philipp reported memory safety bugs present in Firefox 58 and Firefox ESR 52.6. Some of these bugs showed evidence of memory corruption and we presume that with enough effort that some of these could be exploited to run arbitrary code.
     bugs:
-      - url: 1416529, 1434580, 1388020, 1434384, 1437450, 1437507, 1426988, 1438425, 1324042, 1437087, 1443865, 1425520
+      - url: 1416529, 1434580, 1434384, 1437450, 1437507, 1426988, 1438425, 1324042, 1437087, 1443865, 1425520
         desc: Memory safety bugs fixed in Firefox 59 and Firefox ESR 52.7
   CVE-2018-5145:
     title: Memory safety bugs fixed in Firefox ESR 52.7
