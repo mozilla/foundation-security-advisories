@@ -1,0 +1,24 @@
+## mfsa2018-08.yml
+announced: March 16, 2018
+impact: critical
+fixed_in:
+- Firefox 59.0.1
+- Firefox ESR 52.7.2
+title: Out of bounds memory write while processing Vorbis audio data
+advisories:
+  CVE-2018-5146:
+    title: Out of bounds memory write in libvorbis
+    impact: critical
+    reporter: Richard Zhu via Trend Micro's Zero Day Initiative
+    description: |
+      An out of bounds memory write while processing Vorbis audio data was reported through the Pwn2Own contest.
+    bugs:
+      - url: 1446062
+  CVE-2018-5147:
+    title: Out of bounds memory write in libtremor
+    impact: critical
+    reporter: Huzaifa Sidhpurwala
+    description: |
+      The libtremor library has the same flaw as CVE-2018-5146. This library is used by Firefox in place of libvorbis on Android and ARM platforms.
+    bugs:
+      - url: 1446365
