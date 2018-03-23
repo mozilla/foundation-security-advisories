@@ -1,0 +1,59 @@
+## mfsa2018-09.yml
+announced: March 23, 2018
+impact: critical
+fixed_in:
+- Thunderbird 52.7
+title: Security vulnerabilities fixed in Thunderbird 52.7
+description: |
+    *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
+advisories:
+  CVE-2018-5127:
+    title: Buffer overflow manipulating SVG animatedPathSegList
+    impact: high
+    reporter: Nils 
+    description: |
+       A buffer overflow can occur when manipulating the SVG <code>animatedPathSegList</code> through script. This results in a potentially exploitable crash.
+    bugs:
+      - url: 1430557 
+  CVE-2018-5129:
+    title: Out-of-bounds write with malformed IPC messages
+    impact: high
+    reporter: James Grant
+    description: |
+      A lack of parameter validation on IPC messages results in a potential out-of-bounds write through malformed IPC messages. This can potentially allow for sandbox escape through memory corruption in the parent process.
+    bugs:
+      - url: 1428947
+  CVE-2018-5144:
+    title: Integer overflow during Unicode conversion
+    impact: moderate
+    reporter: Root Object 
+    description: |
+      An integer overflow can occur during conversion of text to some Unicode character sets due to an unchecked length parameter.
+    bugs:
+      - url: 1440926
+  CVE-2018-5146:
+    title: Out of bounds memory write in libvorbis
+    impact: critical
+    reporter: Richard Zhu via Trend Micro's Zero Day Initiative
+    description: |
+      An out of bounds memory write while processing Vorbis audio data was reported through the Pwn2Own contest.
+    bugs:
+      - url: 1446062
+  CVE-2018-5125:
+    title: Memory safety bugs fixed in Firefox 59, Firefox ESR 52.7, and Thunderbird 52.7
+    impact: critical
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers and community members Bob Clary, Olli Pettay, Christian Holler, Nils Ohlmeier, Randell Jesup, Tyson Smith, Ralph Giles, and Philipp reported memory safety bugs present in Firefox 58, Firefox ESR 52.6, and Thunderbird 52.6. Some of these bugs showed evidence of memory corruption and we presume that with enough effort that some of these could be exploited to run arbitrary code.
+    bugs:
+      - url: 1416529, 1434580, 1434384, 1437450, 1437507, 1426988, 1438425, 1324042, 1437087, 1443865, 1425520
+        desc: Memory safety bugs fixed in Firefox 59, Firefox ESR 52.7, and Thunderbird 52.7
+  CVE-2018-5145:
+    title: Memory safety bugs fixed in Firefox ESR 52.7 and Thunderbird 52.7
+    impact: critical
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers Jet Villegas and Randell Jesup reported memory safety bugs present in Firefox ESR 52.6 and Thunderbird 52.6. These bugs showed evidence of memory corruption and we presume that with enough effort that some of these could be exploited to run arbitrary code.
+    bugs:
+      - url: 1261175, 1348955
+        desc: Memory safety bugs fixed in Firefox ESR 52.7 and Thunderbird 52.7
