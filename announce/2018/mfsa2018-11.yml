@@ -1,0 +1,218 @@
+## mfsa2018-01.yml
+announced: May 9, 2018
+impact: critical
+fixed_in:
+- Firefox 60
+title: Security vulnerabilities fixed in Firefox 60
+advisories:
+  CVE-2018-5154:
+    title: Use-after-free with SVG animations and clip paths
+    impact: high
+    reporter: Nils
+    description: |
+      A use-after-free vulnerability can occur while enumerating attributes during SVG animations with clip paths. This results in a potentially exploitable crash.
+    bugs:
+      - url: 1443092
+  CVE-2018-5155:
+    title: Use-after-free with SVG animations and text paths
+    impact: high
+    reporter: Nils
+    description: |
+      A use-after-free vulnerability can occur while adjusting layout during SVG animations with text paths. This results in a potentially exploitable crash.
+    bugs:
+      - url: 1448774
+  CVE-2018-5157:
+    title: Same-origin bypass of PDF Viewer to view protected PDF files
+    impact: high
+    reporter: Wladimir Palant 
+    description: |
+      Same-origin protections for the PDF viewer can be bypassed, allowing a malicious site to intercept messages meant for the viewer. This could allow the site to retrieve PDF files restricted to viewing by an authenticated user on a third-party website. 
+    bugs:
+      - url: 1449898
+  CVE-2018-5158:
+    title: Malicious PDF can inject JavaScript into PDF Viewer
+    impact: high
+    reporter: Wladimir Palant
+    description: |
+      The PDF viewer does not sufficiently sanitize PostScript calculator functions, allowing malicious JavaScript to be injected through a crafted PDF file. This JavaScript can then be run with the permissions of the PDF viewer by its worker.
+    bugs:
+      - url: 1452075
+  CVE-2018-5159:
+    title: Integer overflow and out-of-bounds write in Skia
+    impact: high
+    reporter: Ivan Fratric
+    description: |
+      An integer overflow can occur in the Skia library due to 32-bit integer use in an array without integer overflow checks, resulting in possible out-of-bounds writes. This could lead to a potentially exploitable crash triggerable by web content.
+    bugs:
+      - url: 1441941
+  CVE-2018-5160:
+    title: Uninitialized memory use by WebRTC encoder
+    impact: high
+    reporter: Andreas Perhson
+    description: |
+      WebRTC can use a <code>WrappedI420Buffer</code> pixel buffer but the owning image object can be freed while it is still in use. This can result in the WebRTC encoder using uninitialized memory, leading to a potentially exploitable crash.
+    bugs:
+      - url: 1436117
+  CVE-2018-5152:
+    title: WebExtensions information leak through webRequest API
+    impact: moderate
+    reporter: Andy McKay
+    description: |
+      WebExtensions with the appropriate permissions can attach content scripts to Mozilla sites such as accounts.firefox.com and listen to network traffic to the site through the <code>webRequest</code> API. For example, this allows for the interception of username and an encrypted password during login to Firefox Accounts. This issue does not expose synchronization traffic directly and is limited to the process of user login to the website and the data displayed to the user once logged in.
+    bugs:
+      - url: 1415644
+      - url: 1427289
+  CVE-2018-5153:
+    title: Out-of-bounds read in mixed content websocket messages
+    impact: moderate
+    reporter: Dennis Fuchs
+    description: |
+      If websocket data is sent with mixed text and binary in a single message, the binary data can be corrupted. This can result in an out-of-bounds read with the read memory sent to the originating server in response. 
+    bugs:
+      - url: 1436809
+  CVE-2018-5163:
+    title: Replacing cached data in JavaScript Start-up Bytecode Cache
+    impact: moderate
+    reporter: Nicolas B. Pierron
+    description: |
+      If a malicious attacker has used another vulnerability to gain full control over a content process, they may be able to replace the alternate data resources stored in the JavaScript Start-up Bytecode Cache (JSBC) for other JavaScript code. If the parent process then runs this replaced code, the executed script would be run with the parent process' privileges, escaping the sandbox on content processes.
+    bugs:
+      - url: 1426353
+  CVE-2018-5164:
+    title: CSP not applied to all multipart content sent with multipart/x-mixed-replace
+    impact: moderate
+    reporter: Khalil Zhani
+    description: |
+      Content Security Policy (CSP) is not applied correctly to all parts of multipart content sent with the <code>multipart/x-mixed-replace</code> MIME type. This could allow for script to run where CSP should block it, allowing for cross-site scripting (XSS) and other attacks. 
+    bugs:
+      - url: 1416045
+  CVE-2018-5166:
+    title: WebExtension host permission bypass through filterReponseData
+    impact: moderate
+    reporter: Francois Lajeunesse Robert
+    description: |
+      WebExtensions can use request redirection and a <code>filterReponseData</code> filter to bypass host permission settings to redirect network traffic and access content from a host for which they do not have explicit user permission.
+    bugs:
+      - url: 1437325
+  CVE-2018-5167:
+    title: "Improper linkification of chrome: and javascript: content in web console and JavaScript debugger"
+    impact: moderate
+    reporter: Wladimir Palant
+    description: |
+      The web console and JavaScript debugger do not sanitize all output that can be hyperlinked. Both will display <code>chrome:</code> links as active, clickable hyperlinks in their output. Web sites should not be able to directly link to internal chrome pages. Additionally, the JavaScript debugger will display <code>javascript:</code> links, which users could be tricked into clicking by malicious sites. 
+    bugs:
+      - url: 1447969
+  CVE-2018-5168:
+    title: Lightweight themes can be installed without user interaction
+    impact: moderate
+    reporter: Wladimir Palant
+    description: |
+      Sites can bypass security checks on permissions to install lightweight themes by manipulating the <code>baseURI</code> property of the theme element. This could allow a malicious site to install a theme without user interaction which could contain offensive or embarrassing images. 
+    bugs:
+      - url: 1449548
+  CVE-2018-5169:
+    title: Dragging and dropping link text onto home button can set home page to include chrome pages
+    impact: moderate
+    reporter: Abdulrahman Alqabandi
+    description: |
+      If manipulated hyperlinked text with <code>chrome:</code> URL contained in it is dragged and dropped on the "home" icon, the home page can be reset to include a normally-unlinkable chrome page as one of the home page tabs. 
+    bugs:
+      - url: 1319157
+  CVE-2018-5172:
+    title: Pasted script from clipboard can run in the Live Bookmarks page or PDF viewer
+    impact: moderate
+    reporter: Abdulrahman Alqabandi
+    description: |
+      The Live Bookmarks page and the PDF viewer can run injected script content if a user pastes script from the clipboard into them while viewing RSS feeds or PDF files. This could allow a malicious site to socially engineer a user to copy and paste malicious script content that could then run with the context of either page but does not allow for privilege escalation.
+    bugs:
+      - url: 1436482
+  CVE-2018-5173:
+    title: File name spoofing of Downloads panel with Unicode characters
+    impact: moderate
+    reporter: Abdulrahman Alqabandi
+    description: |
+      The filename appearing in the <code>Downloads</code> panel improperly renders some Unicode characters, allowing for the file name to be spoofed. This can be used to obscure the file extension of potentially executable files from user view in the panel. <br>*Note: the dialog to open the file will show the full, correct filename and whether it is executable or not.*   
+    bugs:
+      - url: 1438025
+  CVE-2018-5174:
+    title: Windows Defender SmartScreen UI runs with less secure behavior for downloaded files in Windows 10 April 2018 Update
+    impact: moderate
+    reporter: Jimmy
+    description: |
+       In the Windows 10 April 2018 Update, Windows Defender SmartScreen honors the <code>SEE_MASK_FLAG_NO_UI</code> flag associated with downloaded files and will not show any UI. Files that are unknown and potentially dangerous will be allowed to run because SmartScreen will not prompt the user for a decision, and if the user is offline all files will be allowed to be opened because Windows won’t prompt the user to ask what to do. Firefox incorrectly sets this flag when downloading files, leading to less secure behavior from SmartScreen. <br>*Note: this issue only affects Windows 10 users running the April 2018 update or later. It does not affect other Windows users or other operating systems.*
+    bugs:
+      - url: 1447080
+  CVE-2018-5175:
+    title: Universal CSP bypass on sites using strict-dynamic in their policies
+    impact: moderate
+    reporter: Masato Kinugawa
+    description: |
+      A mechanism to bypass Content Security Policy (CSP) protections on sites that have a <code>script-src</code> policy of <code>'strict-dynamic'</code>. If a target website contains an HTML injection flaw an attacker could inject a reference to a copy of the <code>require.js</code> library that is part of Firefox’s Developer Tools, and then use a known technique using that library to bypass the CSP restrictions on executing injected scripts.
+    bugs:
+      - url: 1432358
+  CVE-2018-5176:
+    title: JSON Viewer script injection
+    impact: moderate
+    reporter: Tadj Youssouf
+    description: |
+      The JSON Viewer displays clickable hyperlinks for strings that are parseable as URLs, including <code>javascript:</code> links. If a JSON file contains malicious JavaScript script embedded as <code>javascript:</code> links, users may be tricked into clicking and running this code in the context of the JSON Viewer. This can allow for the theft of cookies and authorization tokens which are accessible to that context.
+    bugs:
+      - url: 1442840
+  CVE-2018-5177:
+    title: Buffer overflow in XSLT during number formatting
+    impact: moderate
+    reporter: Guyio
+    description: |
+      A vulnerability exists in XSLT during number formatting where a negative buffer size may be allocated in some instances, leading to a buffer overflow and crash if it occurs. 
+    bugs:
+      - url: 1451908
+  CVE-2018-5165:
+    title: Checkbox for enabling Flash protected mode is inverted in 32-bit Firefox
+    impact: low
+    reporter: David Parks
+    description: |
+      In 32-bit versions of Firefox, the Adobe Flash plugin setting for "Enable Adobe Flash protected mode" is unchecked by default even though the Adobe Flash sandbox is actually enabled. The displayed state is the reverse of the true setting, resulting in user confusion. This could cause users to select this setting intending to activate it and inadvertently turn protections off.
+    bugs:
+      - url: 1451452
+  CVE-2018-5180:
+    title: heap-use-after-free in mozilla::WebGLContext::DrawElementsInstanced
+    impact: low
+    reporter: Nils
+    description: |
+      A use-after-free vulnerability can occur during WebGL operations. While this results in a potentially exploitable crash, the vulnerability is limited because the memory is freed and reused in a brief window of time during the freeing of the same callstack.
+    bugs:
+      - url: 1444086
+  CVE-2018-5181:
+    title: Local file can be displayed in noopener tab through drag and drop of hyperlink
+    impact: low
+    reporter: Abdulrahman Alqabandi
+    description: |
+      If a URL using the <code>file:</code> protocol is dragged and dropped onto an open tab that is running in a different child process the tab will open a local file corresponding to the dropped URL, contrary to policy. One way to make the target tab open more reliably in a separate process is to open it with the <code>noopener</code> keyword. 
+    bugs:
+      - url: 1424107
+  CVE-2018-5182:
+    title: Local file can be displayed from hyperlink dragged and dropped on addressbar
+    impact: low
+    reporter: Jordi Chancel
+    description: |
+      If a text string that happens to be a filename in the operating system's native format is dragged and dropped onto the addressbar the specified local file will be opened. This is contrary to policy and is what would happen if the string were the equivalent <code>file:</code> URL.
+    bugs:
+      - url: 1435908
+  CVE-2018-5151:
+    title: Memory safety bugs fixed in Firefox 60
+    impact: critical
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers and community members Christoph Diehl, Christian Holler, Jon Coppeard, Jason Kratzer, Nathan Froyd, Paul Theriault, Ryan VanderMeulen, Tyson Smith, Sebastian Hengst, Byron Campen, Emilio Cobos Álvarez, Ronald Crane, and Phillipp reported memory safety bugs present in Firefox 59. Some of these bugs showed evidence of memory corruption and we presume that with enough effort that some of these could be exploited to run arbitrary code.
+    bugs: 
+      - url: 1445234, 1449530, 1437455, 1447989, 1438827, 1436983, 1435036, 1440465, 1439723, 1448771, 1453653, 1454359, 1432323, 1454126, 1436759, 1439655, 1448612, 1449358, 1367727, 1452417
+        desc: Memory safety bugs fixed in Firefox 60
+  CVE-2018-5150:
+    title: Memory safety bugs fixed in Firefox 60 and Firefox ESR 52.8
+    impact: critical
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers and community members Christoph Diehl, Randell Jesup, Tyson Smith, Alex Gaynor, Ronald Crane, Julian Hector, Kannan Vijayan, and Jason Kratzer reported memory safety bugs present in Firefox 59 and Firefox ESR 52.7. Some of these bugs showed evidence of memory corruption and we presume that with enough effort that some of these could be exploited to run arbitrary code.
+    bugs:
+      - url: 1388020, 1433609, 1409440, 1448705, 1451376, 1452202, 1444668, 1393367, 1411415, 1426129
+        desc: Memory safety bugs fixed in Firefox 60 and Firefox ESR 52.8

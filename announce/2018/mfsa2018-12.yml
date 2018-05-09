@@ -1,0 +1,88 @@
+## mfsa2018-12.yml
+announced: May 9, 2018
+impact: critical
+fixed_in:
+- Firefox ESR 52.8
+title: Security vulnerabilities fixed in Firefox ESR 52.8
+advisories:
+  CVE-2018-5183:
+    title: Backport critical security fixes in Skia
+    impact: critical
+    reporter: Mozilla Developers
+    description: |
+      Mozilla developers backported selected changes in the Skia library to the ESR52 branch of Firefox. These changes correct memory corruption issues including invalid buffer reads and writes during graphic operations.
+    bugs:
+      - url: 1454692
+  CVE-2018-5154:
+    title: Use-after-free with SVG animations and clip paths
+    impact: high
+    reporter: Nils
+    description: |
+      A use-after-free vulnerability can occur while enumerating attributes during SVG animations with clip paths. This results in a potentially exploitable crash.
+    bugs:
+      - url: 1443092
+  CVE-2018-5155:
+    title: Use-after-free with SVG animations and text paths
+    impact: high
+    reporter: Nils
+    description: |
+      A use-after-free vulnerability can occur while adjusting layout during SVG animations with text paths. This results in a potentially exploitable crash.
+    bugs:
+      - url: 1448774
+  CVE-2018-5157:
+    title: Same-origin bypass of PDF Viewer to view protected PDF files
+    impact: high
+    reporter: Wladimir Palant 
+    description: |
+      Same-origin protections for the PDF viewer can be bypassed, allowing a malicious site to intercept messages meant for the viewer. This could allow the site to retrieve PDF files restricted to viewing by an authenticated user on a third-party website. 
+    bugs:
+      - url: 1449898
+  CVE-2018-5158:
+    title: Malicious PDF can inject JavaScript into PDF Viewer
+    impact: high
+    reporter: Wladimir Palant
+    description: |
+      The PDF viewer does not sufficiently sanitize PostScript calculator functions, allowing malicious JavaScript to be injected through a crafted PDF file. This JavaScript can then be run with the permissions of the PDF viewer by its worker.
+    bugs:
+      - url: 1452075
+  CVE-2018-5159:
+    title: Integer overflow and out-of-bounds write in Skia
+    impact: high
+    reporter: Ivan Fratric
+    description: |
+      An integer overflow can occur in the Skia library due to 32-bit integer use in an array without integer overflow checks, resulting in possible out-of-bounds writes. This could lead to a potentially exploitable crash triggerable by web content.
+    bugs:
+      - url: 1441941
+  CVE-2018-5168:
+    title: Lightweight themes can be installed without user interaction
+    impact: moderate
+    reporter: Wladimir Palant
+    description: |
+      Sites can bypass security checks on permissions to install lightweight themes by manipulating the <code>baseURI</code> property of the theme element. This could allow a malicious site to install a theme without user interaction which could contain offensive or embarrassing images. 
+    bugs:
+      - url: 1449548
+  CVE-2018-5174:
+    title: Windows Defender SmartScreen UI runs with less secure behavior for downloaded files in Windows 10 April 2018 Update
+    impact: moderate
+    reporter: Jimmy
+    description: |
+       In the Windows 10 April 2018 Update, Windows Defender SmartScreen honors the <code>SEE_MASK_FLAG_NO_UI</code> flag associated with downloaded files and will not show any UI. Files that are unknown and potentially dangerous will be allowed to run because SmartScreen will not prompt the user for a decision, and if the user is offline all files will be allowed to be opened because Windows won’t prompt the user to ask what to do. Firefox incorrectly sets this flag when downloading files, leading to less secure behavior from SmartScreen. <br>*Note: this issue only affects Windows 10 users running the April 2018 update or later. It does not affect other Windows users or other operating systems.*
+    bugs:
+      - url: 1447080
+  CVE-2018-5178:
+    title: Buffer overflow during UTF-8 to Unicode string conversion through legacy extension
+    impact: moderate
+    reporter: Root Object
+    description: |
+      A buffer overflow was found during UTF8 to Unicode string conversion within JavaScript with extremely large amounts of data. This vulnerability requires the use of a malicious or vulnerable legacy extension in order to occur.  
+    bugs:
+      - url: 1443891
+  CVE-2018-5150:
+    title: Memory safety bugs fixed in Firefox 60 and Firefox ESR 52.8
+    impact: critical
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers and community members Christoph Diehl, Randell Jesup, Tyson Smith, Alex Gaynor, Ronald Crane, Julian Hector, Kannan Vijayan, and Jason Kratzer reported memory safety bugs present in Firefox 59 and Firefox ESR 52.7. Some of these bugs showed evidence of memory corruption and we presume that with enough effort that some of these could be exploited to run arbitrary code.
+    bugs:
+      - url: 1388020, 1433609, 1409440, 1448705, 1451376, 1452202, 1444668, 1393367, 1411415, 1426129
+        desc: Memory safety bugs fixed in Firefox 60 and Firefox ESR 52.8
