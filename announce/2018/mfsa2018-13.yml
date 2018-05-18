@@ -2,7 +2,7 @@
 announced: May 18, 2018
 impact: critical
 fixed_in:
-- Thunderbird ESR 52.8
+- Thunderbird 52.8
 title: Security vulnerabilities fixed in Thunderbird 52.8
 description: |
     *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
