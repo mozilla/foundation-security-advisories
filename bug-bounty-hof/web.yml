@@ -1,4 +1,23 @@
 names:
+- name: "Ak1t4"
+  date: 2018-01-01
+  url: "https://twitter.com/knowledge_2014"
+- name: "Holger Fuhrmannek"
+  date: 2018-01-01
+- name: "James Kettle (PortSwigger Web Security)"
+  date: 2018-01-01
+  url: "https://skeletonscribe.net/"
+- name: "Hardik Makwana"
+  date: 2018-01-01
+- name: "Wladimir Palant"
+  date: 2018-01-01
+  url: "https://palant.de/"
+- name: "Vladimir Polyakov (JohnDoe1492)"
+  date: 2018-01-01
+  url: "https://twitter.com/John08369305"
+- name: "Yasin Soliman"
+  date: 2018-01-01
+  url: "https://twitter.com/securityyasin"
 - name: "Juba Baghdad"
   date: 2017-10-01
   url: "https://twitter.com/JubaBaghdad"
@@ -8,9 +27,14 @@ names:
 - name: "Manish Gupta"
   date: 2017-10-01
   url: "https://www.linkedin.com/in/cehmanish/"
+- name: "Anurag Jain"
+  date: 2017-10-01
+  url: "https://twitter.com/csanuragjain"
 - name: "Vineet Kumar"
   date: 2017-10-01
   url: "https://bughunter.withgoogle.com/profile/80ae25f5-877d-4402-94e8-7902cacdb4b9"
+- name: "Shubham Shah"
+  date: 2017-10-01
 - name: "Vishal Shukla"
   date: 2017-10-01
   url: "https://www.facebook.com/shukla304"
@@ -20,6 +44,9 @@ names:
 - name: "Takashi Suzuki"
   date: 2017-10-01
   url: "https://hackerone.com/kamikaze/"
+- name: "Yusuf Yazir"
+  date: 2017-10-01
+  url: "https://twitter.com/hacklad"
 - name: "EdOverflow"
   date: 2017-07-01
   url: "https://edoverflow.com"
@@ -77,13 +104,14 @@ names:
   url: "https://detectify.com/"
 - name: "Mario Gomes"
   date: 2017-01-01
-- name: "Akita (Lucas Moreira)"
+- name: "Ak1t4"
   date: 2017-01-01
   url: "https://twitter.com/knowledge_2014"
 - name: "Muhammad Hassham Nagori"
   date: 2017-01-01
 - name: "Wladimir Palant"
   date: 2017-01-01
+  url: "https://palant.de/"
 - name: "Paresh Parmar"
   date: 2017-01-01
   url: "http://www.pareshparmar.com/"
@@ -102,6 +130,7 @@ names:
   date: 2016-10-01
 - name: "Wladimir Palant"
   date: 2016-10-01
+  url: "https://palant.de/"
 - name: "Aliaksei Panamarenka"
   date: 2016-10-01
 - name: "Arne Swinnen"
@@ -118,6 +147,7 @@ names:
   date: 2016-07-01
 - name: "Wladimir Palant"
   date: 2016-07-01
+  url: "https://palant.de/"
 - name: "Sergey Bobrov"
   date: 2016-04-01
 - name: "Griffin Francis"
@@ -166,6 +196,7 @@ names:
   date: 2016-01-01
 - name: "Wladimir Palant"
   date: 2016-01-01
+  url: "https://palant.de/"
 - name: "Daniel Tomescu"
   date: 2016-01-01
 - name: "Shahar Albeck"
@@ -186,6 +217,7 @@ names:
   date: 2015-10-01
 - name: "Wladimir Palant"
   date: 2015-10-01
+  url: "https://palant.de/"
 - name: "Yassine ABOUKIR"
   date: 2015-10-01
 - name: "Daniel Tomescu"
