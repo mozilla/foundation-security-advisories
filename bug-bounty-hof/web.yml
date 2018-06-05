@@ -18,6 +18,9 @@ names:
 - name: "Yasin Soliman"
   date: 2018-01-01
   url: "https://twitter.com/securityyasin"
+- name: "Takashi Suzuki"
+  date: 2018-01-01
+  url: "https://hackerone.com/kamikaze"
 - name: "Juba Baghdad"
   date: 2017-10-01
   url: "https://twitter.com/JubaBaghdad"
@@ -427,6 +430,8 @@ names:
 - name: "Sergey"
   date: 2012-01-01
 - name: "Soroush Dalili"
+  date: 2012-01-01
+- name: "Cody Ward"
   date: 2012-01-01
 - name: "Noah Wilcox"
   date: 2012-01-01
