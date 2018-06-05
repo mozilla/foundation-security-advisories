@@ -166,6 +166,7 @@ advisories:
     bugs:
       - url: 1347617
   CVE-2016-10196:
+    feed: false
     title: Vulnerabilities in Libevent library
     impact: high
     reporter: Huzaifa Sidhpurwala

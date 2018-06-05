@@ -63,7 +63,7 @@ advisories:
     bugs:
       - url: 1289970
         desc: 1289970
-  CVE-2016-528:
+  CVE-2016-5281:
     title: use-after-free in DOMSVGLength
     impact: high
     reporter: Brian Carpenter

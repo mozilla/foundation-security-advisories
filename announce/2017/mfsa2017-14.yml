@@ -1,6 +1,7 @@
 ## mfsa2017-14.yml
 announced: May 5, 2017
 impact: high
+feed: false
 fixed_in:
 - Firefox 53.0.2
 - Firefox ESR 52.1.1
