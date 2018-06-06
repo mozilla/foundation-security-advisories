@@ -1,0 +1,21 @@
+## mfsa2018-14.yml
+announced: June 6, 2018
+impact: critical
+fixed_in:
+- Firefox 60.0.2
+- Firefox ESR 60.0.2
+- Firefox ESR 52.8.1
+title: Security vulnerabilities fixed in Firefox 60.0.2
+advisories:
+  CVE-2018-6126:
+    feed: false
+    title: Heap buffer overflow rasterizing paths in SVG with Skia
+    impact: high
+    reporter: Ivan Fratric of Google Project Zero
+    description: |
+      A heap buffer overflow can occur in the Skia library when rasterizing paths using a maliciously crafted SVG file with anti-aliasing turned off. This results in a potentially exploitable crash.
+    bugs:
+      - url: 1462682
+
+
+
