@@ -1,0 +1,90 @@
+## mfsa2018-17.yml
+announced: June 26, 2018
+impact: critical
+fixed_in:
+- Firefox ESR 52.9
+title: Security vulnerabilities fixed in Firefox ESR 52.9
+advisories:
+  CVE-2018-12359:
+    title: Buffer overflow using computed size of canvas element
+    impact: critical
+    reporter: Nils
+    description: |
+      A buffer overflow can occur when rendering canvas content while adjusting the height and width of the <code>&lt;canvas&gt;</code> element dynamically, causing data to be written outside of the currently computed boundaries. This results in a potentially exploitable crash.
+    bugs:
+      - url: 1459162
+  CVE-2018-12360:
+    title: Use-after-free when using focus()
+    impact: critical
+    reporter: Nils
+    description: |
+      A use-after-free vulnerability can occur when deleting an <code>input</code> element during a mutation event handler triggered by focusing that element. This results in a potentially exploitable crash.
+    bugs:
+      - url: 1459693
+  CVE-2018-12362:
+    title: Integer overflow in SSSE3 scaler
+    impact: high
+    reporter: F. Alonso (revskills)
+    description: |
+      An integer overflow can occur during graphics operations done by the Supplemental Streaming SIMD Extensions 3 (SSSE3) scaler, resulting in a potentially exploitable crash.
+    bugs:
+      - url: 1452375
+  CVE-2018-5156:
+    title: Media recorder segmentation fault when track type is changed during capture
+    impact: high
+    reporter: Nils
+    description: |
+      A vulnerability can occur when capturing a media stream when the media source type is changed as the capture is occuring. This can result in stream data being cast to the wrong type causing a potentially exploitable crash. 
+    bugs:
+      - url: 1453127
+  CVE-2018-12363:
+    title: Use-after-free when appending DOM nodes
+    impact: high
+    reporter: Nils
+    description: |
+      A use-after-free vulnerability can occur when script uses mutation events to move DOM nodes between documents, resulting in the old document that held the node being freed but the node still having a pointer referencing it. This results in a potentially exploitable crash.
+    bugs:
+      - url: 1464784
+  CVE-2018-12364:
+    title: CSRF attacks through 307 redirects and NPAPI plugins
+    impact: high
+    reporter: David Black
+    description: |
+      NPAPI plugins, such as Adobe Flash, can send non-simple cross-origin requests, bypassing CORS by making a same-origin POST that does a 307 redirect to the target site. This allows for a malicious site to engage in cross-site request forgery (CSRF) attacks.
+    bugs:
+      - url: 1436241 
+  CVE-2018-12365:
+    title: Compromised IPC child process can list local filenames
+    impact: moderate
+    reporter: Alex Gaynor
+    description: |
+      A compromised IPC child process can escape the content sandbox and list the names of arbitrary files on the file system without user consent or interaction. This could result in exposure of private local files. 
+    bugs: 
+      - url: 1459206
+  CVE-2018-12366:
+    title: Invalid data handling during QCMS transformations
+    impact: moderate
+    reporter: OSS-Fuzz
+    description: |
+      An invalid grid size during QCMS (color profile) transformations can result in the out-of-bounds read interpreted as a float value. This could leak private data into the output. 
+    bugs:
+      - url: 1464039
+  CVE-2018-12368:
+    title: No warning when opening executable SettingContent-ms files
+    impact: moderate
+    reporter: Abdulrahman Alqabandi
+    description: |
+      Windows 10 does not warn users before opening executable files with the <code>SettingContent-ms</code> extension even when they have been downloaded from the internet and have the "Mark of the Web." Without the warning, unsuspecting users unfamiliar with this new file type might run an unwanted executable. This also allows a WebExtension with the limited <code>downloads.open</code> permission to execute arbitrary code without user interaction on Windows 10 systems <br>*Note: this issue only affects Windows operating systems. Other operating systems are unaffected.*
+    bugs:
+      - url: 1468217
+      - url: https://posts.specterops.io/the-tale-of-settingcontent-ms-files-f1ea253e4d39
+        desc: The Tale of SettingContent-ms Files
+  CVE-2018-5188:
+    title: Memory safety bugs fixed in Firefox 60, Firefox ESR 60.1, and Firefox ESR 52.9
+    impact: critical
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers and community members Alex Gaynor, Christoph Diehl, Christian Holler, Jason Kratzer, David Major, Jon Coppeard, Nicolas B. Pierron, Jason Kratzer, Marcia Knous, and Ronald Crane reported memory safety bugs present in Firefox 60, Firefox ESR 60, and Firefox ESR 52.8. Some of these bugs showed evidence of memory corruption and we presume that with enough effort that some of these could be exploited to run arbitrary code.
+    bugs:
+      - url: 1456189, 1456975, 1465898, 1392739, 1451297, 1464063, 1437842, 1442722, 1452576, 1450688, 1458264, 1458270, 1465108, 1464829, 1464079, 1463494, 1458048
+        desc: Memory safety bugs fixed in Firefox 61, Firefox ESR 60.1, and Firefox ESR 52.9
