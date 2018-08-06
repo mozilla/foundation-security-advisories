@@ -80,7 +80,7 @@ advisories:
       - url: https://posts.specterops.io/the-tale-of-settingcontent-ms-files-f1ea253e4d39
         desc: The Tale of SettingContent-ms Files
   CVE-2018-5188:
-    title: Memory safety bugs fixed in Firefox 60, Firefox ESR 60.1, and Firefox ESR 52.9
+    title: Memory safety bugs fixed in Firefox 61, Firefox ESR 60.1, and Firefox ESR 52.9
     impact: critical
     reporter: Mozilla developers and community
     description: |

@@ -1,9 +1,9 @@
-## mfsa2018-18.yml
-announced: July 3, 2018
+## mfsa2018-19.yml
+announced: August, 2018
 impact: critical
 fixed_in:
-- Thunderbird 52.9
-title: Security vulnerabilities fixed in Thunderbird 52.9
+- Thunderbird 60
+title: Security vulnerabilities fixed in Thunderbird 60
 description: |
     *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
 advisories:
@@ -23,25 +23,14 @@ advisories:
       A use-after-free vulnerability can occur when deleting an <code>input</code> element during a mutation event handler triggered by focusing that element. This results in a potentially exploitable crash.
     bugs:
       - url: 1459693
-  CVE-2018-12372:
-    title: S/MIME and PGP decryption oracles can be built with HTML emails
-    impact: high
-    reporter: Damian Poddebniak, Christian Dresen, Jens Müller, Fabian Ising, Sebastian Schinzel, Simon Friedberger, Juraj Somorovsky, Jörg Schwenk
+  CVE-2018-12361:
+    title: Integer overflow in SwizzleData
+    impact: critical
+    reporter: R
     description: |
-      Decrypted S/MIME parts, when included in HTML crafted for an attack, can leak plaintext when included in a a HTML reply/forward.
+      An integer overflow can occur in the <code>SwizzleData</code> code while calculating buffer sizes. The overflowed value is used for subsequent graphics computations when their inputs are not sanitized which results in a potentially exploitable crash.
     bugs:
-      - url: 1419417
-  CVE-2018-12373:
-    title: S/MIME plaintext can be leaked through HTML reply/forward
-    impact: high
-    reporter: Damian Poddebniak, Christian Dresen, Jens Müller, Fabian Ising, Sebastian Schinzel, Simon Friedberger, Juraj Somorovsky, Jörg Schwenk
-    description: |
-      dDecrypted S/MIME parts hidden with CSS or <code>&lt;plaintext&gt;</code> can leak plaintext when included in a HTML reply/forward.
-    bugs:
-      - url: 1464056 
-        desc: CVE-2018-12373
-      - url: 1464667
-        desc: Suppress &lt;plaintext&gt; in email messages 
+      - url: 1463244
   CVE-2018-12362:
     title: Integer overflow in SSSE3 scaler
     impact: high
@@ -50,6 +39,14 @@ advisories:
       An integer overflow can occur during graphics operations done by the Supplemental Streaming SIMD Extensions 3 (SSSE3) scaler, resulting in a potentially exploitable crash.
     bugs:
       - url: 1452375
+  CVE-2018-5156:
+    title: Media recorder segmentation fault when track type is changed during capture
+    impact: high
+    reporter: Nils
+    description: |
+      A vulnerability can occur when capturing a media stream when the media source type is changed as the capture is occuring. This can result in stream data being cast to the wrong type causing a potentially exploitable crash. 
+    bugs:
+      - url: 1453127
   CVE-2018-12363:
     title: Use-after-free when appending DOM nodes
     impact: high
@@ -74,6 +71,15 @@ advisories:
       A compromised IPC child process can escape the content sandbox and list the names of arbitrary files on the file system without user consent or interaction. This could result in exposure of private local files. 
     bugs: 
       - url: 1459206
+  CVE-2018-12371:
+    feed: false  
+    title: Integer overflow in Skia library during edge builder allocation
+    impact: moderate
+    reporter: anonymous
+    description: |
+      An integer overflow vulnerability in the Skia library when allocating memory for edge builders on some systems with at least 16 GB of RAM. This results in the use of uninitialized memory, resulting in a potentially exploitable crash.
+    bugs:
+      - url: 1465686
   CVE-2018-12366:
     title: Invalid data handling during QCMS transformations
     impact: moderate
@@ -82,6 +88,14 @@ advisories:
       An invalid grid size during QCMS (color profile) transformations can result in the out-of-bounds read interpreted as a float value. This could leak private data into the output. 
     bugs:
       - url: 1464039
+  CVE-2018-12367:
+    title: Timing attack mitigation of PerformanceNavigationTiming
+    impact: moderate
+    reporter: Andrea Marchesini 
+    description: |
+      In the previous mitigations for Spectre, the resolution or precision of various methods was reduced to counteract the ability to measure precise time intervals. In that work, <code>PerformanceNavigationTiming</code> was not adjusted but it was found that it could be used as a precision timer.
+    bugs:
+      - url: 1462891
   CVE-2018-12368:
     title: No warning when opening executable SettingContent-ms files
     impact: moderate
@@ -92,20 +106,21 @@ advisories:
       - url: 1468217
       - url: https://posts.specterops.io/the-tale-of-settingcontent-ms-files-f1ea253e4d39
         desc: The Tale of SettingContent-ms Files
-  CVE-2018-12374:
-    title: Using form to exfiltrate encrypted mail part by pressing enter in form field
-    impact: low
-    reporter: Hanno Boeck 
-    description: |
-      Plaintext of decrypted emails can leak through by user submitting an embedded form by pressing enter key within a text input field.
-    bugs:
-      - url: 1462910
-  CVE-2018-5188:
-    title: Memory safety bugs fixed in Firefox 61, Firefox ESR 60.1, Firefox ESR 52.9, and Thunderbird 52.9
+  CVE-2018-5187:
+    title: Memory safety bugs fixed in Firefox 61, Firefox ESR 60.1, and Thunderbird 60
     impact: critical
     reporter: Mozilla developers and community
     description: |
-      Mozilla developers and community members Alex Gaynor, Christoph Diehl, Christian Holler, Jason Kratzer, David Major, Jon Coppeard, Nicolas B. Pierron, Jason Kratzer, Marcia Knous, and Ronald Crane reported memory safety bugs present in Firefox 60, Firefox ESR 60, Firefox ESR 52.8, and Thunderbird 52.8. Some of these bugs showed evidence of memory corruption and we presume that with enough effort that some of these could be exploited to run arbitrary code.
+      Mozilla developers and community members Christian Holler, Sebastian Hengst, Nils Ohlmeier, Jon Coppeard, Randell Jesup, Ted Campbell, Gary Kwong, and Jean-Yves Avenard reported memory safety bugs present in Firefox 60 and Firefox ESR 60. Some of these bugs showed evidence of memory corruption and we presume that with enough effort that some of these could be exploited to run arbitrary code.
+    bugs:
+      - url: 1461324, 1414829, 1395246, 1467938, 1461619, 1425930, 1438556, 1454285, 1459568, 1463884
+        desc: Memory safety bugs fixed in Firefox 61, Firefox ESR 60.1, and Thunderbird 60
+  CVE-2018-5188:
+    title: Memory safety bugs fixed in Firefox 61, Firefox ESR 60.1, Firefox ESR 52.9, and Thunderbird 60
+    impact: critical
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers and community members Alex Gaynor, Christoph Diehl, Christian Holler, Jason Kratzer, David Major, Jon Coppeard, Nicolas B. Pierron, Jason Kratzer, Marcia Knous, and Ronald Crane reported memory safety bugs present in Firefox 60, Firefox ESR 60, and Firefox ESR 52.8. Some of these bugs showed evidence of memory corruption and we presume that with enough effort that some of these could be exploited to run arbitrary code.
     bugs:
       - url: 1456189, 1456975, 1465898, 1392739, 1451297, 1464063, 1437842, 1442722, 1452576, 1450688, 1458264, 1458270, 1465108, 1464829, 1464079, 1463494, 1458048
-        desc: Memory safety bugs fixed in Firefox 61, Firefox ESR 60.1, Firefox ESR 52.9, and Thunderbird 52.9
+        desc: Memory safety bugs fixed in Firefox 61, Firefox ESR 60.1, Firefox ESR 52.9, and Thunderbird 60

@@ -138,7 +138,7 @@ advisories:
       - url: 1464872, 1463329, 1419373, 1412882, 1413033, 1444673, 1454448, 1453505, 1438671
         desc: Memory safety bugs fixed in Firefox 61
   CVE-2018-5187:
-    title: Memory safety bugs fixed in Firefox 60 and Firefox ESR 60.1
+    title: Memory safety bugs fixed in Firefox 61 and Firefox ESR 60.1
     impact: critical
     reporter: Mozilla developers and community
     description: |
@@ -147,7 +147,7 @@ advisories:
       - url: 1461324, 1414829, 1395246, 1467938, 1461619, 1425930, 1438556, 1454285, 1459568, 1463884
         desc: Memory safety bugs fixed in Firefox 61 and Firefox ESR 60.1
   CVE-2018-5188:
-    title: Memory safety bugs fixed in Firefox 60, Firefox ESR 60.1, and Firefox ESR 52.9
+    title: Memory safety bugs fixed in Firefox 61, Firefox ESR 60.1, and Firefox ESR 52.9
     impact: critical
     reporter: Mozilla developers and community
     description: |
