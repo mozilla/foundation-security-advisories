@@ -102,7 +102,7 @@ credit_entries = {
     "mrgrek1@gmail.com":"Vladimir Ivanov",
     "netfuzzerr@gmail.com":"Mario Gomes",
     "nikhil.srivastava@techdefence.com":"Advance Techdefence Pvt. Ltd.",
-    "nikita.arykov@gmail.com":"Nikita Arykov - Security Architect at Pushwoosh Inc.",
+    "nikita.arykov@gmail.com":"Nikita Arykov Web-Security.Guru",
     "nils@vulndev.org":"Nils",
     "ntrippar@gmail.com":"Nicolas Trippar of Zimperium zLabs",
     "oc3f.dz@gmail.com":"Tadj Youssouf",
