@@ -1,0 +1,85 @@
+## mfsa2018-20.yml
+announced: September 5, 2018
+impact: critical
+fixed_in:
+- Firefox 62
+title: Security vulnerabilities fixed in Firefox 62
+advisories:
+  CVE-2018-12377:
+    title: Use-after-free in refresh driver timers
+    impact: high
+    reporter: Nils
+    description: |
+      A use-after-free vulnerability can occur when refresh driver timers are refreshed in some circumstances during shutdown when the timer is deleted while still in use. This results in a potentially exploitable crash.
+    bugs:
+      - url: 1470260
+  CVE-2018-12378:
+    title: Use-after-free in IndexedDB
+    impact: high
+    reporter: Zhanjia Song
+    description: |
+      A use-after-free vulnerability can occur when an IndexedDB index is deleted while still in use by JavaScript code that is providing payload values to be stored. This results in a potentially exploitable crash.
+    bugs:
+      - url: 1459383
+  CVE-2018-12379:
+    title: Out-of-bounds write with malicious MAR file
+    impact: moderate
+    reporter: Holger Fuhrmannek
+    description: |
+      When the Mozilla Updater opens a MAR format file which contains a very long item filename, an out-of-bounds write can be triggered, leading to a potentially exploitable crash. This requires running the Mozilla Updater manually on the local system with the malicious MAR file in order to occur. 
+    bugs:
+      - url: 1473113
+  CVE-2017-16541:
+    title: Proxy bypass using automount and autofs
+    impact: moderate
+    reporter: Filippo Cavallarin
+    description: |
+      Browser proxy settings can be bypassed by using the automount feature with autofs to create a mount point on the local file system. Content can be loaded from this mounted file system directly using a <code>file:</code> URI, bypassing configured proxy settings. <br>*Note: this issue only affects OS X in default configurations. On Linux systems, autofs must be installed for the vulnerability to occur and Windows is not affected.*
+    bugs:
+      - url: 1412081
+  CVE-2018-12381:
+    title: Dragging and dropping Outlook email message results in page navigation
+    impact: low
+    reporter: Jana Squires
+    description: |
+      Manually dragging and dropping an Outlook email message into the browser will trigger a page navigation when the message's mail columns are incorrectly interpreted as a URL. <br>*Note: this issue only affects Windows operating systems with Outlook installed. Other operating systems are not affected.*
+    bugs:
+      - url: 1435319
+  CVE-2018-12382:
+    title: Addressbar spoofing with javascript URI on Firefox for Android
+    impact: low
+    reporter: Jordi Chancel
+    description: |
+      The displayed addressbar URL can be spoofed on Firefox for Android using a <code>javascript:</code> URI in concert with JavaScript to insert text before the loaded domain name, scrolling the loaded domain out of view to the right. This can lead to user confusion. <br>*This vulnerability only affects Firefox for Android.*
+    bugs:
+      - url: 1479311
+  CVE-2018-12383:
+    title: Setting a master password post-Firefox 58 does not delete unencrypted previously stored passwords
+    impact: low
+    reporter: Jurgen Gaeremyn
+    description: |
+      If a user saved passwords before Firefox 58 and then later set a master password, an unencrypted copy of these passwords is still accessible. This is because the older stored password file was not deleted when the data was copied to a new format starting in Firefox 58. The new master password is added only on the new file. This could allow the exposure of stored password data outside of user expectations.
+    bugs:
+      - url: 1475775
+  CVE-2018-12375:
+    title: Memory safety bugs fixed in Firefox 62
+    impact: high
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers and community members Christian Holler, Looben Yang, Jesse Ruderman, Sebastian Hengst, Nicolas Grunbaum, and Gary Kwong reported memory safety bugs present in Firefox 61. Some of these bugs showed evidence of memory corruption and we presume that with enough effort that some of these could be exploited to run arbitrary code.
+    bugs: 
+      - url: 1478849, 1433502, 1480965, 894215, 1462693, 1475431, 1461027
+        desc: Memory safety bugs fixed in Firefox 62
+  CVE-2018-12376:
+    title: Memory safety bugs fixed in Firefox 62 and Firefox ESR 60.2
+    impact: critical
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers and community members Alex Gaynor, Boris Zbarsky, Christoph Diehl, Christian Holler, Jason Kratzer, Jed Davis, Nika Layzell, Tyson Smith, Bogdan Tara, Karl Tomlinson, Mats Palmgren, Nika Layzell, and Ted Campbell reported memory safety bugs present in Firefox 61 and Firefox ESR 60.1. Some of these bugs showed evidence of memory corruption and we presume that with enough effort that some of these could be exploited to run arbitrary code.
+    bugs:
+      - url: 1469309, 1469914, 1450989, 1480092, 1480517, 1481093, 1478575, 1471953, 1473161, 1466991, 1468738, 1483120, 1467363, 1472925, 1466577, 1467889, 1480521
+        desc: Memory safety bugs fixed in Firefox 62 and Firefox ESR 60.2
+
+
+
+
