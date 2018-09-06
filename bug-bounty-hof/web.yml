@@ -1,8 +1,26 @@
 names:
+- name: "Holger Fuhrmannek"
+  date: 2018-04-01
+- name: "Jun Kokatsu"
+  date: 2018-04-01
+  url: "https://twitter.com/shhnjk"
+- name: "Wladimir Palant"
+  date: 2018-04-01
+  url: "https://palant.de/"
+- name: "Vladimir Polyakov (JohnDoe1492)"
+  date: 2018-04-01
+  url: "https://twitter.com/John08369305"
+- name: "Richard Strnad"
+  date: 2018-04-01
+  url: "https://twitter.com/NateTheRiver"
+- name: "Will Vandevanter"
+  date: 2018-04-01
 - name: "Ak1t4"
   date: 2018-01-01
   url: "https://twitter.com/knowledge_2014"
 - name: "Holger Fuhrmannek"
+  date: 2018-01-01
+- name: "Mario Gomes"
   date: 2018-01-01
 - name: "James Kettle (PortSwigger Web Security)"
   date: 2018-01-01
@@ -15,6 +33,9 @@ names:
 - name: "Vladimir Polyakov (JohnDoe1492)"
   date: 2018-01-01
   url: "https://twitter.com/John08369305"
+- name: "Aryan Sinha"
+  date: 2018-01-01
+  url: "https://www.aryansinha.com/"
 - name: "Yasin Soliman"
   date: 2018-01-01
   url: "https://twitter.com/securityyasin"
@@ -56,6 +77,9 @@ names:
 - name: "Avram Marius Gabriel"
   date: 2017-07-01
   url: "https://twitter.com/securityshell"
+- name: "Martin Gubri"
+  date: 2017-07-01
+  url: "https://mg.frama.io"
 - name: "Tyler Hawkins"
   date: 2017-07-01
   url: "https://www.linkedin.com/in/tyler-hawkins-149ba2b2/"
