@@ -74,7 +74,7 @@ advisories:
       - url: 1291665
         desc: Bug 1291665
   CVE-2016-5275:
-    title: 
+    title: Buffer overflow in mozilla::gfx::FilterSupport::ComputeSourceNeededRegions 
     impact: critical
     reporter: Nils
     description: A buffer overflow when working with empty filters during canvas rendering.

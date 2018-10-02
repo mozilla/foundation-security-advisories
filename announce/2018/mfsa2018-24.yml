@@ -1,0 +1,27 @@
+## mfsa2018-24.yml
+announced: October 2, 2018
+impact: critical
+fixed_in:
+- Firefox 62.0.3
+- Firefox ESR 60.2.2
+title: Security vulnerabilities fixed in Firefox 62.0.3 and Firefox ESR 60.2.2
+advisories:
+  CVE-2018-12386:
+    title: Type confusion in JavaScript
+    impact: critical
+    reporter: Niklas Baumstark, Samuel Groß, Bruno Keith via Beyond Security’s SecuriTeam Secure Disclosure program
+    description: |
+      A vulnerability in register allocation in JavaScript can lead to type confusion, allowing for an arbitrary read and write. This leads to remote code execution inside the sandboxed content process when triggered.
+    bugs:
+      - url: 1493900
+  CVE-2018-12387:
+    title: 
+    impact: critical
+    reporter: Bruno Keith, Niklas Baumstark via Beyond Security’s SecuriTeam Secure Disclosure program
+    description: |
+      A vulnerability where the JavaScript JIT compiler inlines Array.prototype.push with multiple arguments that results in the stack pointer being off by 8 bytes after a bailout. This leaks a memory address to the calling function which can be used as part of an exploit inside the sandboxed content process.
+    bugs:
+      - url: 1493903
+
+
+
