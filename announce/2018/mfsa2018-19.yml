@@ -72,7 +72,6 @@ advisories:
     bugs: 
       - url: 1459206
   CVE-2018-12371:
-    feed: false  
     title: Integer overflow in Skia library during edge builder allocation
     impact: moderate
     reporter: anonymous
