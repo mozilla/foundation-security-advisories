@@ -1,0 +1,123 @@
+## mfsa2018-26.yml
+announced: October 23, 2018
+impact: critical
+fixed_in:
+- Firefox 63
+title: Security vulnerabilities fixed in Firefox 63
+advisories:
+  CVE-2018-12391:
+    title: HTTP Live Stream audio data is accessible cross-origin
+    impact: high
+    reporter: Jun Kokatsu
+    description: |
+      During HTTP Live Stream playback on Firefox for Android, audio data can be accessed across origins in violation of security policies. Because the problem is in the underlying Android service, this issue is addressed by treating all HLS streams as cross-origin and opaque to access. <br>*Note: this issue only affects Firefox for Android. Desktop versions of Firefox are unaffected.*
+    bugs:
+      - url: 1478843
+  CVE-2018-12392:
+    title: Crash with nested event loops
+    impact: high
+    reporter: Nils
+    description: |
+      When manipulating user events in nested loops while opening a document through script, it is possible to trigger a potentially exploitable crash due to poor event handling. 
+    bugs:
+      - url: 1492823
+  CVE-2018-12393:
+    title: Integer overflow during Unicode conversion while loading JavaScript
+    impact: high
+    reporter: r
+    description: |
+      A potential vulnerability was found in 32-bit builds where an integer overflow during the conversion of scripts to an internal UTF-16 representation could result in allocating a buffer too small for the conversion. This leads to a possible out-of-bounds write. <br>*Note: 64-bit builds are not vulnerable to this issue.*
+    bugs:
+      - url: 1495011
+  CVE-2018-12395:
+    title: WebExtension bypass of domain restrictions through header rewriting
+    impact: moderate
+    reporter: Rob Wu, Andrew Swan
+    description: |
+      By rewriting the <code>Host</code> request headers using the <code>webRequest</code> API, a WebExtension can bypass domain restrictions through domain fronting. This would allow access to domains that share a host that are otherwise restricted.
+    bugs:
+      - url: 1467523
+  CVE-2018-12396:
+    title: WebExtension content scripts can execute in disallowed contexts
+    impact: moderate
+    reporter: Rob Wu
+    description: |
+      A vulnerability where a WebExtension can run content scripts in disallowed contexts following navigation or other events. This allows for potential privilege escalation by the WebExtension on sites where content scripts should not be run.
+    bugs:
+      - url: 1483602
+  CVE-2018-12397:
+    title: 
+    impact: moderate
+    reporter: Rob Wu
+    description: |
+      A WebExtension can request access to local files without the warning prompt stating that the extension will "Access your data for all websites" being displayed to the user. This allows extensions to run content scripts in local pages without permission warnings when a local file is opened.
+    bugs:
+      - url: 1487478
+  CVE-2018-12398:
+    title: CSP bypass through stylesheet injection in resource URIs
+    impact: moderate
+    reporter:  cgvwzq 
+    description: |
+      By using the reflected URL in some special resource URIs, such as <code>chrome:</code>, it is possible to inject stylesheets and bypass Content Security Policy (CSP).
+    bugs:
+      - url: 1460538
+      - url: 1488061
+  CVE-2018-12399:
+    title: Spoofing of protocol registration notification bar
+    impact: low
+    reporter:  Mathias Wu 
+    description: |
+      When a new protocol handler is registered, the API accepts a title argument which can be used to mislead users about which domain is registering the new protocol. This may result in the user approving a protocol handler that they otherwise would not have. 
+    bugs:
+      - url: 1490276
+  CVE-2018-12400:
+    title: Favicons are cached in private browsing mode on Firefox for Android
+    impact: low
+    reporter: Konark Modi
+    description: |
+      In private browsing mode on Firefox for Android, favicons are cached in the <code>cache/icons</code> folder as they are in non-private mode. This allows information leakage of sites visited during private browsing sessions. <br>*Note: this issue only affects Firefox for Android. Desktop versions of Firefox are unaffected.*
+    bugs:
+      - url: 1448305
+  CVE-2018-12401:
+    title: DOS attack through special resource URI parsing
+    impact: low
+    reporter: Abdulrahman Alqabandi
+    description: |
+      Some special resource URIs will cause a non-exploitable crash if loaded with optional parameters following a '?' in the parsed string. This could lead to denial of service (DOS) attacks.
+    bugs:
+      - url: 1422456
+  CVE-2018-12402:
+    title: SameSite cookies leak when pages are explicitly saved
+    impact: low
+    reporter: 1lastBr3ath
+    description: |
+      SameSite cookies are sent on cross-origin requests when the "Save Page As..." menu item is selected to save a page, violating cookie policy. This can result in saving the wrong version of resources based on those cookies.
+    bugs:
+      - url: 1469916
+  CVE-2018-12403:
+    title: Mixed content warning is not displayed when HTTPS page loads a favicon over HTTP
+    impact: low
+    reporter: Yiğit Can Yilmaz
+    description: |
+      If a site is loaded over a HTTPS connection but loads a favicon resource over HTTP, the mixed content warning is not displayed to users. 
+    bugs:
+      - url: 1484753
+  CVE-2018-12388:
+    title: Memory safety bugs fixed in Firefox 63
+    impact: critical
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers and community members Christian Holler, Dana Keeler, Ronald Crane, Marcia Knous, Tyson Smith, Daniel Veditz, and Steve Fink reported memory safety bugs present in Firefox 62. Some of these bugs showed evidence of memory corruption and we presume that with enough effort that some of these could be exploited to run arbitrary code.
+    bugs: 
+      - url: 1472639, 1485698, 1301547, 1471427, 1379411, 1482122, 1486314, 1487167
+        desc: Memory safety bugs fixed in Firefox 63
+  CVE-2018-12390:
+    title: Memory safety bugs fixed in Firefox 63 and Firefox ESR 60.3
+    impact: critical
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers and community members Christian Holler, Bob Owen, Boris Zbarsky, Calixte Denizet, Jason Kratzer, Jed Davis, Taegeon Lee, Philipp, Ronald Crane, Raul Gurzau, Gary Kwong, Tyson Smith, Raymond Forbes, and Bogdan Tara reported memory safety bugs present in Firefox 62 and Firefox ESR 60.2. Some of these bugs showed evidence of memory corruption and we presume that with enough effort that some of these could be exploited to run arbitrary code.
+    bugs:
+      - url: 1487098, 1487660, 1490234, 1496159, 1443748, 1496340, 1483905, 1493347, 1488803, 1498701, 1498482, 1442010, 1495245, 1483699, 1469486, 1484905, 1490561, 1492524, 1481844
+        desc: Memory safety bugs fixed in Firefox 63 and Firefox ESR 60.3
+
