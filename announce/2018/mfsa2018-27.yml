@@ -1,0 +1,74 @@
+## mfsa2018-27.yml
+announced: October 23, 2018
+impact: critical
+fixed_in:
+- Firefox ESR 60.3
+title: Security vulnerabilities fixed in Firefox ESR 60.3
+advisories:
+  CVE-2018-12391:
+    title: HTTP Live Stream audio data is accessible cross-origin
+    impact: high
+    reporter: Jun Kokatsu
+    description: |
+      During HTTP Live Stream playback on Firefox for Android, audio data can be accessed across origins in violation of security policies. Because the problem is in the underlying Android service, this issue is addressed by treating all HLS streams as cross-origin and opaque to access. <br>*Note: this issue only affects Firefox for Android. Desktop versions of Firefox are unaffected.*
+    bugs:
+      - url: 1478843
+  CVE-2018-12392:
+    title: Crash with nested event loops
+    impact: high
+    reporter: Nils
+    description: |
+      When manipulating user events in nested loops while opening a document through script, it is possible to trigger a potentially exploitable crash due to poor event handling. 
+    bugs:
+      - url: 1492823
+  CVE-2018-12393:
+    title: Integer overflow during Unicode conversion while loading JavaScript
+    impact: high
+    reporter: r
+    description: |
+      A potential vulnerability was found in 32-bit builds where an integer overflow during the conversion of scripts to an internal UTF-16 representation could result in allocating a buffer too small for the conversion. This leads to a possible out-of-bounds write. <br>*Note: 64-bit builds are not vulnerable to this issue.*
+    bugs:
+      - url: 1495011
+  CVE-2018-12395:
+    title: WebExtension bypass of domain restrictions through header rewriting
+    impact: moderate
+    reporter: Rob Wu, Andrew Swan
+    description: |
+      By rewriting the <code>Host</code> request headers using the <code>webRequest</code> API, a WebExtension can bypass domain restrictions through domain fronting. This would allow access to domains that share a host that are otherwise restricted.
+    bugs:
+      - url: 1467523
+  CVE-2018-12396:
+    title: WebExtension content scripts can execute in disallowed contexts
+    impact: moderate
+    reporter: Rob Wu
+    description: |
+      A vulnerability where a WebExtension can run content scripts in disallowed contexts following navigation or other events. This allows for potential privilege escalation by the WebExtension on sites where content scripts should not be run.
+    bugs:
+      - url: 1483602
+  CVE-2018-12397:
+    title: 
+    impact: moderate
+    reporter: Rob Wu
+    description: |
+      A WebExtension can request access to local files without the warning prompt stating that the extension will "Access your data for all websites" being displayed to the user. This allows extensions to run content scripts in local pages without permission warnings when a local file is opened.
+    bugs:
+      - url: 1487478
+  CVE-2018-12389:
+    title: Memory safety bugs fixed in Firefox ESR 60.3
+    impact: high
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers and community members Daniel Veditz and Philipp reported memory safety bugs present in Firefox ESR 60.2. Some of these bugs showed evidence of memory corruption and we presume that with enough effort that some of these could be exploited to run arbitrary code.
+    bugs: 
+      - url: 1498460, 1499198
+        desc: Memory safety bugs fixed in Firefox ESR 60.3
+  CVE-2018-12390:
+    title: Memory safety bugs fixed in Firefox 63 and Firefox ESR 60.3
+    impact: critical
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers and community members Christian Holler, Bob Owen, Boris Zbarsky, Calixte Denizet, Jason Kratzer, Jed Davis, Taegeon Lee, Philipp, Ronald Crane, Raul Gurzau, Gary Kwong, Tyson Smith, Raymond Forbes, and Bogdan Tara reported memory safety bugs present in Firefox 62 and Firefox ESR 60.2. Some of these bugs showed evidence of memory corruption and we presume that with enough effort that some of these could be exploited to run arbitrary code.
+    bugs:
+      - url: 1487098, 1487660, 1490234, 1496159, 1443748, 1496340, 1483905, 1493347, 1488803, 1498701, 1498482, 1442010, 1495245, 1483699, 1469486, 1484905, 1490561, 1492524, 1481844
+        desc: Memory safety bugs fixed in Firefox 63 and Firefox ESR 60.3
+
