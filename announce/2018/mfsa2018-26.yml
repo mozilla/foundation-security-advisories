@@ -46,7 +46,7 @@ advisories:
     bugs:
       - url: 1483602
   CVE-2018-12397:
-    title: 
+    title: Missing warning prompt when WebExtension requests local file access
     impact: moderate
     reporter: Rob Wu
     description: |
