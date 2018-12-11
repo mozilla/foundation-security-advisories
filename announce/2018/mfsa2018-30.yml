@@ -1,0 +1,59 @@
+## mfsa2018-30.yml
+announced: December 11, 2018
+impact: critical
+fixed_in:
+- Firefox ESR 60.4
+title: Security vulnerabilities fixed in Firefox ESR 60.4
+advisories:
+  CVE-2018-17466:
+    title: Buffer overflow and out-of-bounds read in ANGLE library with TextureStorage11
+    impact: high
+    reporter: Omair
+    description: |
+      A buffer overflow and out-of-bounds read can occur in <code>TextureStorage11</code> within the ANGLE graphics library, used for WebGL content. This results in a potentially exploitable crash.
+    bugs:
+      - url: 1488295
+  CVE-2018-18492:
+    title: Use-after-free with select element
+    impact: high
+    reporter: Nils
+    description: |
+      A use-after-free vulnerability can occur after deleting a selection element due to a weak reference to the <code>select</code> element in the <code>options</code> collection. This results in a potentially exploitable crash.
+    bugs:
+      - url: 1499861
+  CVE-2018-18493:
+    title: Buffer overflow in accelerated 2D canvas with Skia
+    impact: high
+    reporter: Atte Kettunen
+    description: |
+      A buffer overflow can occur in the Skia library during buffer offset calculations with hardware accelerated canvas 2D actions due to the use of 32-bit calculations instead of 64-bit. This results in a potentially exploitable crash.
+    bugs:
+      - url: 1504452
+  CVE-2018-18494:
+    title: Same-origin policy violation using location attribute and performance.getEntries to steal cross-origin URLs
+    impact: high
+    reporter: James Lee of Kryptos Logic
+    description: |
+      A same-origin policy violation allowing the theft of cross-origin URL entries when using the Javascript <code>location</code> property to cause a redirection to another site using <code>performance.getEntries()</code>. This is a same-origin policy violation and could allow for data theft. 
+    bugs:
+      - url: 1487964
+  CVE-2018-18498:
+    title: Integer overflow when calculating buffer sizes for images
+    impact: low
+    reporter: r
+    description: |
+      A potential vulnerability leading to an integer overflow can occur during buffer size calculations for images when a raw value is used instead of the checked value. This leads to a possible out-of-bounds write. 
+    bugs:
+      - url: 1500011
+  CVE-2018-12405:
+    title: Memory safety bugs fixed in Firefox 64 and Firefox ESR 60.4
+    impact: critical
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers and community members Christian Holler, Diego Calleja, Andrew McCreight, Jon Coppeard, Natalia Csoregi, Nicolas B. Pierron, and Tyson Smith reported memory safety bugs present in Firefox 63 and Firefox ESR 60.3. Some of these bugs showed evidence of memory corruption and we presume that with enough effort that some of these could be exploited to run arbitrary code.
+    bugs:
+      - url: 1494752, 1503326, 1505181, 1500759, 1504365, 1506640, 1503082, 1502013, 1510471
+        desc: Memory safety bugs fixed in Firefox 64 and Firefox ESR 60.4
+
+
+
