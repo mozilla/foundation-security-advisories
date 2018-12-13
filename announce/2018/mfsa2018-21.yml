@@ -21,6 +21,14 @@ advisories:
       A use-after-free vulnerability can occur when an IndexedDB index is deleted while still in use by JavaScript code that is providing payload values to be stored. This results in a potentially exploitable crash.
     bugs:
       - url: 1459383
+  CVE-2018-18499:
+    title: Same-origin policy violation using meta refresh and performance.getEntries to steal cross-origin URLs
+    impact: high
+    reporter: James Lee of Kryptos Logic
+    description: |
+      A same-origin policy violation allowing the theft of cross-origin URL entries when using a <code>&lt;meta&gt; meta http-equiv="refresh"</code> on a page to cause a redirection to another site using <code>performance.getEntries()</code>. This is a same-origin policy violation and could allow for data theft.  
+    bugs:
+      - url: 1468523
   CVE-2018-12379:
     title: Out-of-bounds write with malicious MAR file
     impact: moderate
