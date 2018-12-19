@@ -62,6 +62,15 @@ advisories:
     bugs:
       - url: 1460538
       - url: 1488061
+  CVE-2018-12402:
+    title: WebBrowserPersist uses incorrect origin information
+    impact: moderate
+    reporter: Björn Ruytenberg, 1lastBr3ath
+    description: |
+      The internal <code>WebBrowserPersist</code> code does not use correct origin context for a resource being saved. This manifests when sub-resources are loaded as part of "Save Page As..." functionality. For example, a malicious page could recover a visitor's Windows username and NTLM hash by including resources otherwise unreachable to the malicious page, if they can convince the visitor to save the complete web page. Similarly, SameSite cookies are sent on cross-origin requests when the "Save Page As..." menu item is selected to save a page, which can result in saving the wrong version of resources based on those cookies.
+    bugs:
+      - url: 1447087
+      - url: 1469916
   CVE-2018-12399:
     title: Spoofing of protocol registration notification bar
     impact: low
@@ -86,14 +95,6 @@ advisories:
       Some special resource URIs will cause a non-exploitable crash if loaded with optional parameters following a '?' in the parsed string. This could lead to denial of service (DOS) attacks.
     bugs:
       - url: 1422456
-  CVE-2018-12402:
-    title: SameSite cookies leak when pages are explicitly saved
-    impact: low
-    reporter: 1lastBr3ath
-    description: |
-      SameSite cookies are sent on cross-origin requests when the "Save Page As..." menu item is selected to save a page, violating cookie policy. This can result in saving the wrong version of resources based on those cookies.
-    bugs:
-      - url: 1469916
   CVE-2018-12403:
     title: Mixed content warning is not displayed when HTTPS page loads a favicon over HTTP
     impact: low
