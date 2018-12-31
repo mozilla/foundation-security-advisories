@@ -1,4 +1,20 @@
 names:
+- name: "Sergey Bobrov"
+  date: 2018-10-01
+  url: "https://twitter.com/Black2Fan"
+- name: "Dinesh Manoharan"
+  date: 2018-10-01
+- name: "Wladimir Palant"
+  date: 2018-10-01
+  url: "https://palant.de/"
+- name: "[:unnamed:]"
+  date: 2018-10-01
+- name: "Sergey Bobrov"
+  date: 2018-07-01
+  url: "https://twitter.com/Black2Fan"
+- name: "Antony Garand"
+  date: 2018-07-01
+  url: "https://twitter.com/AntoGarand"
 - name: "Holger Fuhrmannek"
   date: 2018-04-01
 - name: "Jun Kokatsu"
