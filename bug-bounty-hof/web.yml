@@ -2,11 +2,17 @@ names:
 - name: "Sergey Bobrov"
   date: 2018-10-01
   url: "https://twitter.com/Black2Fan"
+- name: "Mustafa Hasan"
+  date: 2018-10-01
+  url: "https://twitter.com/strukt93"
 - name: "Dinesh Manoharan"
   date: 2018-10-01
 - name: "Wladimir Palant"
   date: 2018-10-01
   url: "https://palant.de/"
+- name: "Vladimir Polyakov (JohnDoe1492)"
+  date: 2018-10-01
+  url: "https://twitter.com/John08369305"
 - name: "[:unnamed:]"
   date: 2018-10-01
 - name: "Sergey Bobrov"
