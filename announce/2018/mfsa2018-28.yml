@@ -26,7 +26,7 @@ advisories:
   CVE-2018-12393:
     title: Integer overflow during Unicode conversion while loading JavaScript
     impact: high
-    reporter: r
+    reporter: R at Zero Day LLC
     description: |
       A potential vulnerability was found in 32-bit builds where an integer overflow during the conversion of scripts to an internal UTF-16 representation could result in allocating a buffer too small for the conversion. This leads to a possible out-of-bounds write. <br>*Note: 64-bit builds are not vulnerable to this issue.*
     bugs:

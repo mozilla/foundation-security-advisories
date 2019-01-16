@@ -26,7 +26,7 @@ advisories:
   CVE-2018-12361:
     title: Integer overflow in SwizzleData
     impact: critical
-    reporter: R
+    reporter: R at Zero Day LLC
     description: |
       An integer overflow can occur in the <code>SwizzleData</code> code while calculating buffer sizes. The overflowed value is used for subsequent graphics computations when their inputs are not sanitized which results in a potentially exploitable crash.
     bugs:
