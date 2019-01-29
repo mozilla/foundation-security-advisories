@@ -1,0 +1,68 @@
+## mfsa2019-01.yml
+announced: January 29, 2019
+impact: critical
+fixed_in:
+- Firefox 65
+title: Security vulnerabilities fixed in Firefox 65
+advisories:
+  CVE-2018-18500:
+    title: Use-after-free parsing HTML5 stream
+    impact: critical
+    reporter: Yaniv Frank with SophosLabs
+    description: |
+      A use-after-free vulnerability can occur while parsing an HTML5 stream in concert with custom HTML elements. This results in the stream parser object being freed while still in use, leading to a potentially exploitable crash. 
+    bugs:
+      - url: 1510114
+  CVE-2018-18503:
+    title: Memory corruption with Audio Buffer
+    impact: high
+    reporter: Nils
+    description: |
+      When JavaScript is used to create and manipulate an audio buffer, a potentially exploitable crash may occur because of a compartment mismatch in some situations. 
+    bugs:
+      - url: 1509442
+  CVE-2018-18504:
+    title: Memory corruption and out-of-bounds read of texture client buffer
+    impact: high
+    reporter: Markus Vervier of X41 D-SEC GmbH
+    description: |
+      A crash and out-of-bounds read can occur when the buffer of a texture client is freed while it is still in use during graphic operations. This results in a potentially exploitable crash and the possibility of reading from the memory of the freed buffers.
+    bugs:
+      - url: 1496413
+  CVE-2018-18505:
+    title: Privilege escalation through IPC channel messages
+    impact: high
+    reporter: Jed Davis
+    description: |
+      An earlier fix for an Inter-process Communication (IPC) vulnerability, CVE-2011-3079, added authentication to communication between IPC endpoints and server parents during IPC process creation. This authentication is insufficient for channels created after the IPC process is started, leading to the authentication not being correctly applied to later channels. This could allow for a sandbox escape through IPC channels due to lack of message validation in the listener process.
+    bugs:
+      - url: 1497749
+      - url: 1087565
+        desc: CVE-2011-3079
+  CVE-2018-18506:
+    title: Proxy Auto-Configuration file can define localhost access to be proxied
+    impact: moderate
+    reporter: Jann Horn
+    description: |
+      When proxy auto-detection is enabled, if a web server serves a Proxy Auto-Configuration (PAC) file or if a PAC file is loaded locally, this PAC file can specify that requests to the localhost are to be sent through the proxy to another server. This behavior is disallowed by default when a proxy is manually configured, but when enabled could allow for attacks on services and tools that bind to the localhost for networked behavior if they are accessed through browsing.
+    bugs:
+      - url: 1503393
+  CVE-2018-18502:
+    title: Memory safety bugs fixed in Firefox 65
+    impact: critical
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers and community members Arthur Iakab, Christoph Diehl, Christian Holler, Kalel, Emilio Cobos Álvarez, Cristina Coroiu, Noemi Erli, Natalia Csoregi, Julian Seward, Gary Kwong, Tyson Smith, Yaron Tausky, and Ronald Crane reported memory safety bugs present in Firefox 64. Some of these bugs showed evidence of memory corruption and we presume that with enough effort that some of these could be exploited to run arbitrary code.
+    bugs: 
+      - url: 1499426, 1480090, 1472990, 1514762, 1501482, 1505887, 1508102, 1508618, 1511580, 1493497, 1510145, 1516289, 1506798, 1512758
+        desc: Memory safety bugs fixed in Firefox 65
+  CVE-2018-18501:
+    title: Memory safety bugs fixed in Firefox 65 and Firefox ESR 60.5
+    impact: critical
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers and community members Alex Gaynor, Christoph Diehl, Steven Crane, Jason Kratzer, Gary Kwong, and Christian Holler reported memory safety bugs present in Firefox 64 and Firefox ESR 60.4. Some of these bugs showed evidence of memory corruption and we presume that with enough effort that some of these could be exploited to run arbitrary code.
+    bugs:
+      - url: 1512450, 1517542, 1513201, 1460619, 1502871, 1516738, 1516514
+        desc: Memory safety bugs fixed in Firefox 65 and Firefox ESR 60.5
+

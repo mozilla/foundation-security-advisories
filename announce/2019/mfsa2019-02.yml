@@ -1,0 +1,35 @@
+## mfsa2019-02.yml
+announced: January 29, 2019
+impact: critical
+fixed_in:
+- Firefox ESR 60.5
+title: Security vulnerabilities fixed in Firefox ESR 60.5
+advisories:
+  CVE-2018-18500:
+    title: Use-after-free parsing HTML5 stream
+    impact: critical
+    reporter: Yaniv Frank with SophosLabs
+    description: |
+      A use-after-free vulnerability can occur while parsing an HTML5 stream in concert with custom HTML elements. This results in the stream parser object being freed while still in use, leading to a potentially exploitable crash. 
+    bugs:
+      - url: 1510114
+  CVE-2018-18505:
+    title: Privilege escalation through IPC channel messages
+    impact: high
+    reporter: Jed Davis
+    description: |
+      An earlier fix for an Inter-process Communication (IPC) vulnerability, CVE-2011-3079, added authentication to communication between IPC endpoints and server parents during IPC process creation. This authentication is insufficient for channels created after the IPC process is started, leading to the authentication not being correctly applied to later channels. This could allow for a sandbox escape through IPC channels due to lack of message validation in the listener process.
+    bugs:
+      - url: 1497749
+      - url: 1087565
+        desc: CVE-2011-3079
+  CVE-2018-18501:
+    title: Memory safety bugs fixed in Firefox 65 and Firefox ESR 60.5
+    impact: critical
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers and community members Alex Gaynor, Christoph Diehl, Steven Crane, Jason Kratzer, Gary Kwong, and Christian Holler reported memory safety bugs present in Firefox 64 and Firefox ESR 60.4. Some of these bugs showed evidence of memory corruption and we presume that with enough effort that some of these could be exploited to run arbitrary code.
+    bugs:
+      - url: 1512450, 1517542, 1513201, 1460619, 1502871, 1516738, 1516514
+        desc: Memory safety bugs fixed in Firefox 65 and Firefox ESR 60.5
+
