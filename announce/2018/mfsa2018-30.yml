@@ -32,7 +32,7 @@ advisories:
   CVE-2018-18494:
     title: Same-origin policy violation using location attribute and performance.getEntries to steal cross-origin URLs
     impact: high
-    reporter: James Lee of Kryptos Logic
+    reporter: James Lee (@Windowsrcer) of Kryptos Logic
     description: |
       A same-origin policy violation allowing the theft of cross-origin URL entries when using the Javascript <code>location</code> property to cause a redirection to another site using <code>performance.getEntries()</code>. This is a same-origin policy violation and could allow for data theft. 
     bugs:
