@@ -42,7 +42,7 @@ advisories:
     impact: high
     reporter: James Lee of Kryptos Logic
     description: |
-      A same-origin policy violation allowing the theft of cross-origin URL entries when using the Javascript <code>location</code> property to cause a redirection to another site using <code>performance.getEntries()</code>. This is a same-origin policy violation and could allow for data theft. 
+      A same-origin policy violation allowing the theft of cross-origin URL entries when using the Javascript <code>location</code> property to cause a redirection to another site using <code>performance.getEntries()</code>. This is a same-origin policy violation and could allow for data theft.
     bugs:
       - url: 1487964
   CVE-2018-18495:
@@ -74,16 +74,24 @@ advisories:
     impact: low
     reporter: R at Zero Day LLC
     description: |
-      A potential vulnerability leading to an integer overflow can occur during buffer size calculations for images when a raw value is used instead of the checked value. This can lead to an out-of-bounds write. 
+      A potential vulnerability leading to an integer overflow can occur during buffer size calculations for images when a raw value is used instead of the checked value. This can lead to an out-of-bounds write.
     bugs:
       - url: 1500011
+  CVE-2018-18510:
+    title: "Web content can link to internal about:crashcontent and about:crashparent pages"
+    impact: low
+    reporter: Hanno Boeck
+    description: |
+      The <code>about:crashcontent</code> and <code>about:crashparent</code> pages can be triggered by web content. These pages are used to crash the loaded page or the browser for test purposes. This issue allows for a non-persistent denial of service (DOS) attack by a malicious site which links to these pages.
+    bugs:
+      - url: 1507702
   CVE-2018-12406:
     title: Memory safety bugs fixed in Firefox 64
     impact: critical
     reporter: Mozilla developers and community
     description: |
       Mozilla developers and community members Alex Gaynor, André Bargull, Boris Zbarsky, Christian Holler, Jan de Mooij, Jason Kratzer, Philipp, Ronald Crane, Natalia Csoregi, and Paul Theriault reported memory safety bugs present in Firefox 63. Some of these bugs showed evidence of memory corruption and we presume that with enough effort that some of these could be exploited to run arbitrary code.
-    bugs: 
+    bugs:
       - url: 1456947, 1475669, 1504816, 1502886, 1500064, 1500310, 1500696, 1499198, 1434490, 1481745, 1458129
         desc: Memory safety bugs fixed in Firefox 64
   CVE-2018-12405:
@@ -95,6 +103,3 @@ advisories:
     bugs:
       - url: 1494752, 1498765, 1503326, 1505181, 1500759, 1504365, 1506640, 1503082, 1502013, 1510471
         desc: Memory safety bugs fixed in Firefox 64 and Firefox ESR 60.4
-
-
-
