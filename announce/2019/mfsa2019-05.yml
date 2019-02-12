@@ -1,0 +1,36 @@
+## mfsa2019-05.yml
+announced: February 12, 2019
+impact: high
+fixed_in:
+- Firefox ESR 60.5.1
+title: Security vulnerabilities fixed in Firefox ESR 60.5.1
+advisories:
+  CVE-2018-18356:
+    title: Use-after-free in Skia
+    impact: high
+    feed: false
+    reporter: Tran Tien Hung of Viettel Cyber Security
+    description: |
+      A use-after-free vulnerability in the Skia library can occur when creating a path, leading to a potentially exploitable crash.
+    bugs:
+      - url: 1525817
+  CVE-2019-5785:
+    title: Integer overflow in Skia
+    impact: high
+    feed: false
+    reporter: Ivan Fratric of Google Project Zero
+    description: |
+      An integer overflow vulnerability in the Skia library can occur after specific transform operations, leading to a potentially exploitable crash.
+    bugs:
+      - url: 1525433
+      - url: https://googleprojectzero.blogspot.com/2019/02/the-curious-case-of-convexity-confusion.html 
+        desc: The Curious Case of Convexity Confusion
+  CVE-2018-18335:
+    title: Buffer overflow in Skia with accelerated Canvas 2D
+    impact: high
+    feed: false
+    reporter: Anonymous
+    description: |
+      A buffer overflow vulnerability in the Skia library can occur with Canvas 2D acceleration on macOS. This issue was addressed by disabling Canvas 2D acceleration in Firefox ESR. <br>*Note: this does not affect other versions and platforms where Canvas 2D acceleration is already disabled by default.* 
+    bugs:
+      - url: 1525815

@@ -1,0 +1,35 @@
+## mfsa2019-04.yml
+announced: February 12, 2019
+impact: high
+fixed_in:
+- Firefox 65.0.1
+title: Security vulnerabilities fixed in Firefox 65.0.1
+advisories:
+  CVE-2018-18356:
+    title: Use-after-free in Skia
+    impact: high
+    feed: false
+    reporter: Tran Tien Hung of Viettel Cyber Security
+    description: |
+      A use-after-free vulnerability in the Skia library can occur when creating a path, leading to a potentially exploitable crash.
+    bugs:
+      - url: 1525817
+  CVE-2019-5785:
+    title: Integer overflow in Skia
+    impact: high
+    feed: false
+    reporter: Ivan Fratric of Google Project Zero
+    description: |
+      An integer overflow vulnerability in the Skia library can occur after specific transform operations, leading to a potentially exploitable crash.
+    bugs:
+      - url: 1525433
+      - url: https://googleprojectzero.blogspot.com/2019/02/the-curious-case-of-convexity-confusion.html 
+        desc: The Curious Case of Convexity Confusion
+  CVE-2018-18511:
+    title: Cross-origin theft of images with ImageBitmapRenderingContext
+    impact: high
+    reporter: AaylaSecura1138
+    description: |
+      Cross-origin images can be read from a <code>canvas</code> element in violation of the same-origin policy using the <code>transferFromImageBitmap</code> method. <br> *Note: This only affects Firefox 65. Previous versions are unaffected.*
+    bugs:
+      - url: 1526218
