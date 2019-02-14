@@ -10,6 +10,7 @@ advisories:
   CVE-2018-17466:
     title: Buffer overflow and out-of-bounds read in ANGLE library with TextureStorage11
     impact: high
+    feed: false
     reporter: Omair
     description: |
       A buffer overflow and out-of-bounds read can occur in <code>TextureStorage11</code> within the ANGLE graphics library, used for WebGL content. This results in a potentially exploitable crash.
