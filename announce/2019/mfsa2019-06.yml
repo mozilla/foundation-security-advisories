@@ -1,0 +1,46 @@
+## mfsa2019-06.yml
+announced: February 14, 2019
+impact: high
+fixed_in:
+- Thunderbird 60.5.1
+title: Security vulnerabilities fixed in Thunderbird 60.5.1
+description: |
+    *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
+advisories:
+  CVE-2018-18356:
+    title: Use-after-free in Skia
+    impact: high
+    feed: false
+    reporter: Tran Tien Hung of Viettel Cyber Security
+    description: |
+      A use-after-free vulnerability in the Skia library can occur when creating a path, leading to a potentially exploitable crash.
+    bugs:
+      - url: 1525817
+  CVE-2019-5785:
+    title: Integer overflow in Skia
+    impact: high
+    feed: false
+    reporter: Ivan Fratric of Google Project Zero
+    description: |
+      An integer overflow vulnerability in the Skia library can occur after specific transform operations, leading to a potentially exploitable crash.
+    bugs:
+      - url: 1525433
+      - url: https://googleprojectzero.blogspot.com/2019/02/the-curious-case-of-convexity-confusion.html 
+        desc: The Curious Case of Convexity Confusion
+  CVE-2018-18335:
+    title: Buffer overflow in Skia with accelerated Canvas 2D
+    impact: high
+    feed: false
+    reporter: Anonymous
+    description: |
+      A buffer overflow vulnerability in the Skia library can occur with Canvas 2D acceleration on macOS. This issue was addressed by disabling Canvas 2D acceleration in Firefox ESR. <br>*Note: this does not affect other versions and platforms where Canvas 2D acceleration is already disabled by default.* 
+    bugs:
+      - url: 1525815
+  CVE-2018-18509:
+    title: S/MIME signature spoofing
+    impact: high
+    reporter: Damian Poddebniak
+    description: |
+      A flaw during verification of certain S/MIME signatures causes emails to be shown in Thunderbird as having a valid digital signature, even if the shown message contents aren't covered by the signature. The flaw allows an attacker to reuse a valid S/MIME signature to craft an email message with arbitrary content.
+    bugs:
+      - url: 1507218
