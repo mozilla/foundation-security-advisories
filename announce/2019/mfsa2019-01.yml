@@ -13,14 +13,6 @@ advisories:
       A use-after-free vulnerability can occur while parsing an HTML5 stream in concert with custom HTML elements. This results in the stream parser object being freed while still in use, leading to a potentially exploitable crash. 
     bugs:
       - url: 1510114
-  CVE-2018-18503:
-    title: Memory corruption with Audio Buffer
-    impact: high
-    reporter: Nils
-    description: |
-      When JavaScript is used to create and manipulate an audio buffer, a potentially exploitable crash may occur because of a compartment mismatch in some situations. 
-    bugs:
-      - url: 1509442
   CVE-2018-18504:
     title: Memory corruption and out-of-bounds read of texture client buffer
     impact: high
@@ -39,6 +31,14 @@ advisories:
       - url: 1497749
       - url: 1087565
         desc: CVE-2011-3079
+  CVE-2018-18503:
+    title: Memory corruption with Audio Buffer
+    impact: moderate
+    reporter: Nils
+    description: |
+      When JavaScript is used to create and manipulate an audio buffer, a potentially exploitable crash may occur because of a compartment mismatch in some situations. 
+    bugs:
+      - url: 1509442
   CVE-2018-18506:
     title: Proxy Auto-Configuration file can define localhost access to be proxied
     impact: moderate
