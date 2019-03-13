@@ -25,6 +25,14 @@ advisories:
       - url: 1497749
       - url: 1087565
         desc: CVE-2011-3079
+  CVE-2018-18512:
+    title: Use-after-free during sound notifications
+    impact: high
+    reporter: Wayne Mery
+    description: |
+       A use-after-free vulnerability can occur while playing a sound notification in Thunderbird. The memory storing the sound data is immediately freed, although the sound is still being played asynchronously, leading to a potentially exploitable crash.
+    bugs:
+      - url: 1482659
   CVE-2016-5824:
     title: DoS (use-after-free) via a crafted ics file
     impact: low
