@@ -81,7 +81,7 @@ advisories:
   CVE-2018-18510:
     title: "Web content can link to internal about:crashcontent and about:crashparent pages"
     impact: low
-    reporter: Hanno Boeck
+    reporter: Hanno Böck
     description: |
       The <code>about:crashcontent</code> and <code>about:crashparent</code> pages can be triggered by web content. These pages are used to crash the loaded page or the browser for test purposes. This issue allows for a non-persistent denial of service (DOS) attack by a malicious site which links to these pages.
     bugs:
