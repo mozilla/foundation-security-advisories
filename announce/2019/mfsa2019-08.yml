@@ -1,0 +1,91 @@
+## mfsa2019-08.yml
+announced: March 19, 2019
+impact: critical
+fixed_in:
+- Firefox ESR 60.6
+title: Security vulnerabilities fixed in Firefox ESR 60.6
+advisories:
+  CVE-2019-9790:
+    title: Use-after-free when removing in-use DOM elements
+    impact: critical
+    reporter: Brandon Wieser
+    description: |
+      A use-after-free vulnerability can occur when a raw pointer to a DOM element on a page is obtained using JavaScript and the element is then removed while still in use. This results in a potentially exploitable crash. 
+    bugs:
+      - url: 1525145
+  CVE-2019-9791:
+    title: Type inference is incorrect for constructors entered through on-stack replacement with IonMonkey
+    impact: critical
+    reporter: Samuel Groß of Google Project Zero
+    description: |
+      The type inference system allows the compilation of functions that can cause type confusions between arbitrary objects when compiled through the IonMonkey just-in-time (JIT) compiler and when the constructor function is entered through on-stack replacement (OSR). This allows for possible arbitrary reading and writing of objects during an exploitable crash.
+    bugs:
+      - url: 1530958
+  CVE-2019-9792:
+    title: IonMonkey leaks JS_OPTIMIZED_OUT magic value to script
+    impact: critical
+    reporter: Samuel Groß of Google Project Zero
+    description: |
+      The IonMonkey just-in-time (JIT) compiler can leak an internal <code>JS_OPTIMIZED_OUT</code> magic value to the running script during a bailout. This magic value can then be used by JavaScript to achieve memory corruption, which results in a potentially exploitable crash.
+    bugs:
+      - url: 1532599
+  CVE-2019-9793:
+    title: Improper bounds checks when Spectre mitigations are disabled
+    impact: high
+    reporter: "Bruno Keith & Niklas Baumstark from the phoenhex team"
+    description: |
+      A mechanism was discovered that removes some bounds checking for string, array, or typed array accesses if Spectre mitigations have been disabled. This vulnerability could allow an attacker to create an arbitrary value in compiled JavaScript, for which the range analysis will infer a fully controlled, incorrect range in circumstances where users have explicitly disabled Spectre mitigations. <br> *Note: Spectre mitigations are currently enabled for all users by default settings.*
+    bugs:
+      - url: 1528829
+  CVE-2019-9794:
+    title: Command line arguments not discarded during execution
+    impact: high
+    reporter: Joshua Graham
+    description: |
+      A vulnerability was discovered where specific command line arguments are not properly discarded during Firefox invocation as a shell handler for URLs. This could be used to retrieve and execute files whose location is supplied through these command line arguments if Firefox is configured as the default URI handler for a given URI scheme in third party applications and these applications insufficiently sanitize URL data. <br> *Note: This issue only affects Windows operating systems. Other operating systems are unaffected.*
+    bugs:
+      - url: 1530103
+  CVE-2019-9795:
+    title: Type-confusion in IonMonkey JIT compiler
+    impact: high
+    reporter: Nils
+    description: |
+      A vulnerability where type-confusion in the IonMonkey just-in-time (JIT) compiler could potentially be used by malicious JavaScript to trigger a potentially exploitable crash. 
+    bugs:
+      - url: 1514682
+  CVE-2019-9796:
+    title: Use-after-free with SMIL animation controller
+    impact: high
+    reporter: Nils
+    description: |
+      A use-after-free vulnerability can occur when the SMIL animation controller incorrectly registers with the refresh driver twice when only a single registration is expected. When a registration is later freed with the removal of the animation controller element, the refresh driver incorrectly leaves a dangling pointer to the driver's observer array.
+    bugs:
+      - url: 1531277
+  CVE-2019-9801:
+    title: "Windows programs that are not 'URL Handlers' are exposed to web content"
+    impact: moderate
+    reporter: Daniel Veditz
+    description: |
+      Firefox will accept any registered Program ID as an external protocol handler and offer to launch this local application when given a matching URL on Windows operating systems. This should only happen if the program has specifically registered itself as a "URL Handler" in the Windows registry. <br> *Note: This issue only affects Windows operating systems. Other operating systems are unaffected.*
+    bugs:
+      - url: 1527717
+  CVE-2018-18506:
+    title: Proxy Auto-Configuration file can define localhost access to be proxied
+    impact: moderate
+    reporter: Jann Horn
+    description: |
+      When proxy auto-detection is enabled, if a web server serves a Proxy Auto-Configuration (PAC) file or if a PAC file is loaded locally, this PAC file can specify that requests to the localhost are to be sent through the proxy to another server. This behavior is disallowed by default when a proxy is manually configured, but when enabled could allow for attacks on services and tools that bind to the localhost for networked behavior if they are accessed through browsing.
+    bugs:
+      - url: 1503393
+  CVE-2019-9788:
+    title: Memory safety bugs fixed in Firefox 66 and Firefox ESR 60.6
+    impact: critical
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers and community members Bob Clary, Chun-Min Chang, Aral Yaman, Andreea Pavel, Jonathan Kew, Gary Kwong, Alex Gaynor, Masayuki Nakano, and Anne van Kesteren reported memory safety bugs present in Firefox 65 and Firefox ESR 60.5. Some of these bugs showed evidence of memory corruption and we presume that with enough effort that some of these could be exploited to run arbitrary code.
+    bugs:
+      - url: 1518001, 1521304, 1521214, 1506665, 1516834, 1518774, 1524755, 1523362, 1524214, 1529203
+        desc: Memory safety bugs fixed in Firefox 66 and Firefox ESR 60.6
+
+
+
