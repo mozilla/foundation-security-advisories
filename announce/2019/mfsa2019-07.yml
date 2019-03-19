@@ -1,0 +1,184 @@
+## mfsa2019-07.yml
+announced: March 19, 2019
+impact: critical
+fixed_in:
+- Firefox 66
+title: Security vulnerabilities fixed in Firefox 66
+advisories:
+  CVE-2019-9790:
+    title: Use-after-free when removing in-use DOM elements
+    impact: critical
+    reporter: Brandon Wieser
+    description: |
+      A use-after-free vulnerability can occur when a raw pointer to a DOM element on a page is obtained using JavaScript and the element is then removed while still in use. This results in a potentially exploitable crash. 
+    bugs:
+      - url: 1525145
+  CVE-2019-9791:
+    title: Type inference is incorrect for constructors entered through on-stack replacement with IonMonkey
+    impact: critical
+    reporter: Samuel Groß of Google Project Zero
+    description: |
+      The type inference system allows the compilation of functions that can cause type confusions between arbitrary objects when compiled through the IonMonkey just-in-time (JIT) compiler and when the constructor function is entered through on-stack replacement (OSR). This allows for possible arbitrary reading and writing of objects during an exploitable crash.
+    bugs:
+      - url: 1530958
+  CVE-2019-9792:
+    title: IonMonkey leaks JS_OPTIMIZED_OUT magic value to script
+    impact: critical
+    reporter: Samuel Groß of Google Project Zero
+    description: |
+      The IonMonkey just-in-time (JIT) compiler can leak an internal <code>JS_OPTIMIZED_OUT</code> magic value to the running script during a bailout. This magic value can then be used by JavaScript to achieve memory corruption, which results in a potentially exploitable crash.
+    bugs:
+      - url: 1532599
+  CVE-2019-9793:
+    title: Improper bounds checks when Spectre mitigations are disabled
+    impact: high
+    reporter: "Bruno Keith & Niklas Baumstark from the phoenhex team"
+    description: |
+      A mechanism was discovered that removes some bounds checking for string, array, or typed array accesses if Spectre mitigations have been disabled. This vulnerability could allow an attacker to create an arbitrary value in compiled JavaScript, for which the range analysis will infer a fully controlled, incorrect range in circumstances where users have explicitly disabled Spectre mitigations. <br> *Note: Spectre mitigations are currently enabled for all users by default settings.*
+    bugs:
+      - url: 1528829
+  CVE-2019-9794:
+    title: Command line arguments not discarded during execution
+    impact: high
+    reporter: Joshua Graham
+    description: |
+      A vulnerability was discovered where specific command line arguments are not properly discarded during Firefox invocation as a shell handler for URLs. This could be used to retrieve and execute files whose location is supplied through these command line arguments if Firefox is configured as the default URI handler for a given URI scheme in third party applications and these applications insufficiently sanitize URL data. <br> *Note: This issue only affects Windows operating systems. Other operating systems are unaffected.*
+    bugs:
+      - url: 1530103
+  CVE-2019-9795:
+    title: Type-confusion in IonMonkey JIT compiler
+    impact: high
+    reporter: Nils
+    description: |
+      A vulnerability where type-confusion in the IonMonkey just-in-time (JIT) compiler could potentially be used by malicious JavaScript to trigger a potentially exploitable crash. 
+    bugs:
+      - url: 1514682
+  CVE-2019-9796:
+    title: Use-after-free with SMIL animation controller
+    impact: high
+    reporter: Nils
+    description: |
+      A use-after-free vulnerability can occur when the SMIL animation controller incorrectly registers with the refresh driver twice when only a single registration is expected. When a registration is later freed with the removal of the animation controller element, the refresh driver incorrectly leaves a dangling pointer to the driver's observer array.
+    bugs:
+      - url: 1531277
+  CVE-2019-9797:
+    title: Cross-origin theft of images with createImageBitmap
+    impact: high
+    reporter: AaylaSecura1138
+    description: |
+      Cross-origin images can be read in violation of the same-origin policy by exporting an image after using <code>createImageBitmap</code> to read the image and then rendering the resulting bitmap image within a <code>canvas</code> element.
+    bugs:
+      - url: 1528909
+  CVE-2019-9798:
+    title: Library is loaded from world writable APITRACE_LIB location
+    impact: high
+    reporter: Jeff Gilbert
+    description: |
+      On Android systems, Firefox can load a library from <code>APITRACE_LIB</code>, which is writable by all users and applications. This could allow malicious third party applications to execute a man-in-the-middle attack if a malicious code was written to that location and loaded. <br> *Note: This issue only affects Android. Other operating systems are unaffected.*
+    bugs:
+      - url: 1527534
+  CVE-2019-9799:
+    title: Information disclosure via IPC channel messages 
+    impact: high
+    reporter: Paul Theriault
+    description: |
+      Insufficient bounds checking of data during inter-process communication might allow a compromised content process to be able to read memory from the parent process under certain conditions.
+    bugs:
+      - url: 1505678
+  CVE-2019-9801:
+    title: "Windows programs that are not 'URL Handlers' are exposed to web content"
+    impact: moderate
+    reporter: Daniel Veditz
+    description: |
+      Firefox will accept any registered Program ID as an external protocol handler and offer to launch this local application when given a matching URL on Windows operating systems. This should only happen if the program has specifically registered itself as a "URL Handler" in the Windows registry. <br> *Note: This issue only affects Windows operating systems. Other operating systems are unaffected.*
+    bugs:
+      - url: 1527717
+  CVE-2019-9802:
+    title: Chrome process information leak
+    impact: moderate
+    reporter: Stephen Fewer
+    description: |
+      If a Sandbox content process is compromised, it can initiate an FTP download which will then use a child process to render the downloaded data. The downloaded data can then be passed to the Chrome process with an arbitrary file length supplied by an attacker, bypassing sandbox protections and allow for a potential memory read of adjacent data from the privileged Chrome process, which may include sensitive data.
+    bugs:
+      - url: 1415508
+  CVE-2019-9803:
+    title: Upgrade-Insecure-Requests incorrectly enforced for same-origin navigation
+    impact: moderate
+    reporter: Xiaoyin Liu, Vinothkumar Nagasayanan
+    description: |
+      The Upgrade-Insecure-Requests (UIR) specification states that if UIR is enabled through Content Security Policy (CSP), navigation to a same-origin URL must be upgraded to HTTPS. Firefox will incorrectly navigate to an HTTP URL rather than perform the security upgrade requested by the CSP in some circumstances, allowing for potential man-in-the-middle attacks on the linked resources.
+    bugs:
+      - url: 1515863
+      - url: 1437009
+      - url: https://w3c.github.io/webappsec-upgrade-insecure-requests/
+        desc: "'Upgrade Insecure Requests' specification"
+  CVE-2019-9804:
+    title: "Code execution through 'Copy as cURL' in Firefox Developer Tools on macOS"
+    impact: moderate
+    reporter: potatoe
+    description: |
+      In Firefox Developer Tools it is possible that pasting the result of the 'Copy as cURL'  command into a command shell on macOS will cause the execution of unintended additional bash script commands if the URL was maliciously crafted. This is the result of an issue with the native version of Bash on macOS. <br> *Note: This issue only affects macOS. Other operating systems are unaffected.*
+    bugs:
+      - url: 1518026
+  CVE-2019-9805:
+    title: Potential use of uninitialized memory in Prio
+    impact: moderate
+    reporter: mlfbrown
+    description: |
+      A latent vulnerability exists in the Prio library where data may be read from uninitialized memory for some functions, leading to potential memory corruption.
+    bugs:
+      - url: 1521360
+  CVE-2019-9806:
+    title: Denial of service through successive FTP authorization prompts
+    impact: low
+    reporter: Hanno Böck, Anca Soncutean
+    description: |
+      A vulnerability exists during authorization prompting for FTP transaction where successive modal prompts are displayed and cannot be immediately dismissed. This allows for a denial of service (DOS) attack.
+    bugs:
+      - url: 1525267
+  CVE-2019-9807:
+    title: Text sent through FTP connection can be incorporated into alert messages
+    impact: low
+    reporter: Hanno Böck
+    description: |
+      When arbitrary text is sent over an FTP connection and a page reload is initiated, it is possible to create a modal alert message with this text as the content. This could potentially be used for social engineering attacks.
+    bugs:
+      - url: 1362050
+  CVE-2019-9809:
+    title: Denial of service through FTP modal alert error messages
+    impact: low
+    reporter: schattendeatroth, Hanno Böck
+    description: |
+      If the source for resources on a page is through an FTP connection, it is possible to trigger a series of modal alert messages for these resources through invalid credentials or locations. These messages cannot be immediately dismissed, allowing for a denial of service (DOS) attack.
+    bugs:
+      - url: 1282430
+      - url: 1523249
+  CVE-2019-9808:
+    title: "WebRTC permissions can display incorrect origin with data: and blob: URLs"
+    impact: low
+    reporter: Jun Kokatsu
+    description: |
+      If WebRTC permission is requested from documents with data: or blob: URLs, the permission notifications do not properly display the originating domain. The notification states "Unknown origin" as the requestee, leading to user confusion about which site is asking for this permission.
+    bugs:
+      - url: 1434634
+  CVE-2019-9789:
+    title: Memory safety bugs fixed in Firefox 66
+    impact: critical
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers and community members Dragana Damjanovic, Emilio Cobos Álvarez, Henri Sivonen, Narcis Beleuzu, Julian Seward, Marcia Knous, Gary Kwong, Tyson Smith, Yaron Tausky, Ronald Crane, and André Bargull reported memory safety bugs present in Firefox 65. Some of these bugs showed evidence of memory corruption and we presume that with enough effort that some of these could be exploited to run arbitrary code.
+    bugs: 
+      - url: 1520483, 1522987, 1528199, 1519337, 1525549, 1516179, 1518524, 1518331, 1526579, 1512567, 1524335, 1448505, 1518821
+        desc: Memory safety bugs fixed in Firefox 66
+  CVE-2019-9788:
+    title: Memory safety bugs fixed in Firefox 66 and Firefox ESR 60.6
+    impact: critical
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers and community members Bob Clary, Chun-Min Chang, Aral Yaman, Andreea Pavel, Jonathan Kew, Gary Kwong, Alex Gaynor, Masayuki Nakano, and Anne van Kesteren reported memory safety bugs present in Firefox 65 and Firefox ESR 60.5. Some of these bugs showed evidence of memory corruption and we presume that with enough effort that some of these could be exploited to run arbitrary code.
+    bugs:
+      - url: 1518001, 1521304, 1521214, 1506665, 1516834, 1518774, 1524755, 1523362, 1524214, 1529203
+        desc: Memory safety bugs fixed in Firefox 66 and Firefox ESR 60.6
+
+
+
