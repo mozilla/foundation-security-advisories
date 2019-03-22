@@ -1,0 +1,23 @@
+## mfsa2019-10.yml
+announced: March 22, 2019
+impact: critical
+fixed_in:
+- Firefox ESR 60.6.1
+title: Security vulnerabilities fixed in Firefox 60.6.1
+advisories:
+  CVE-2019-9810:
+    title: IonMonkey MArraySlice has incorrect alias information
+    impact: critical
+    reporter: Richard Zhu and Amat Cama via Trend Micro's Zero Day Initiative
+    description: |
+      Incorrect alias information in IonMonkey JIT compiler for Array.prototype.slice method may lead to missing bounds check and a buffer overflow.
+    bugs:
+      - url: 1537924
+  CVE-2019-9813:
+    title: Ionmonkey type confusion with __proto__ mutations
+    impact: critical
+    reporter: Niklas Baumstark via Trend Micro's Zero Day Initiative
+    description: |
+      Incorrect handling of __proto__ mutations may lead to type confusion in IonMonkey JIT code and can be leveraged for arbitrary memory read and write.
+    bugs:
+      - url: 1538006
