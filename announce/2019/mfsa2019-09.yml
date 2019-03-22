@@ -18,6 +18,6 @@ advisories:
     impact: critical
     reporter: Niklas Baumstark via Trend Micro's Zero Day Initiative
     description: |
-      Incorrect handling of __proto__ mutations may lead to type confusion in IonMonkey JIT code and can be leveraged for arbitrary memory read and write.
+      Incorrect handling of \_\_proto\_\_ mutations may lead to type confusion in IonMonkey JIT code and can be leveraged for arbitrary memory read and write.
     bugs:
       - url: 1538006
