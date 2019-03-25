@@ -1,0 +1,25 @@
+## mfsa2019-12.yml
+announced: March 25, 2019
+impact: critical
+fixed_in:
+- Thunderbird 60.6.1
+title: Security vulnerabilities fixed in Thunderbird 60.6.1
+description: |
+    *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
+advisories:
+  CVE-2019-9810:
+    title: IonMonkey MArraySlice has incorrect alias information
+    impact: critical
+    reporter: Richard Zhu and Amat Cama via Trend Micro's Zero Day Initiative
+    description: |
+      Incorrect alias information in IonMonkey JIT compiler for Array.prototype.slice method may lead to missing bounds check and a buffer overflow.
+    bugs:
+      - url: 1537924
+  CVE-2019-9813:
+    title: Ionmonkey type confusion with __proto__ mutations
+    impact: critical
+    reporter: Niklas Baumstark via Trend Micro's Zero Day Initiative
+    description: |
+      Incorrect handling of \_\_proto\_\_ mutations may lead to type confusion in IonMonkey JIT code and can be leveraged for arbitrary memory read and write.
+    bugs:
+      - url: 1538006
