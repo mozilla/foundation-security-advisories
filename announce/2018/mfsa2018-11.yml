@@ -198,6 +198,14 @@ advisories:
       If a text string that happens to be a filename in the operating system's native format is dragged and dropped onto the addressbar the specified local file will be opened. This is contrary to policy and is what would happen if the string were the equivalent <code>file:</code> URL.
     bugs:
       - url: 1435908
+  CVE-2018-5179:
+    title: Service workers can self update to keep a worker running
+    impact: low
+    reporter: Yannic Bonenberger
+    description: |
+      A service worker can send the "activate" event on itself periodically which allows it to run perpetually. This would allow any malicious activity, such as logging an IP address by the service worker, to occur in the background.
+    bugs:
+      - url: 1432846
   CVE-2018-5151:
     title: Memory safety bugs fixed in Firefox 60
     impact: critical
