@@ -1,5 +1,25 @@
 names:
 - name: "Sergey Bobrov"
+  date: 2019-01-01
+  url: "https://twitter.com/Black2Fan"
+- name: "Griffin Francis"
+  date: 2019-01-01
+  url: "https://twitter.com/aussinfosec"
+- name: "Tyler Hawkins"
+  date: 2019-01-01
+  url: "https://hawkinsecurity.com"
+- name: "Damian Schwyrz"
+  date: 2019-01-01
+  url: "https://www.damianschwyrz.de"
+- name: "Tushar"
+  date: 2019-01-01
+  url: "https://hackerone.com/whitehattushu"
+- name: "Aashish Yadav"
+  date: 2019-01-01
+  url: "https://twitter.com/aa5h15h"
+- name: "[:unnamed:]"
+  date: 2019-01-01
+- name: "Sergey Bobrov"
   date: 2018-10-01
   url: "https://twitter.com/Black2Fan"
 - name: "Mustafa Hasan"
@@ -174,6 +194,7 @@ names:
   date: 2016-10-01
 - name: "Griffin Francis"
   date: 2016-10-01
+  url: "https://twitter.com/aussinfosec"
 - name: "Tooru Fujisawa"
   date: 2016-10-01
 - name: "Matjaz Horvat"
@@ -191,6 +212,7 @@ names:
   date: 2016-07-01
 - name: "Griffin Francis"
   date: 2016-07-01
+  url: "https://twitter.com/aussinfosec"
 - name: "Amir Saad"
   date: 2016-07-01
 - name: "Lucio Corsa"
@@ -204,6 +226,7 @@ names:
   date: 2016-04-01
 - name: "Griffin Francis"
   date: 2016-04-01
+  url: "https://twitter.com/aussinfosec"
 - name: "Takashi Suzuki"
   date: 2016-04-01
 - name: "Mario Gomes"
@@ -226,6 +249,7 @@ names:
   date: 2016-01-01
 - name: "Griffin Francis"
   date: 2016-01-01
+  url: "https://twitter.com/aussinfosec"
 - name: "Jose Antonio Perez"
   date: 2016-01-01
 - name: "Luca De Fulgentis"
@@ -261,6 +285,7 @@ names:
   date: 2015-10-01
 - name: "Griffin Francis"
   date: 2015-10-01
+  url: "https://twitter.com/aussinfosec"
 - name: "Holger Fuhrmannek"
   date: 2015-10-01
 - name: "Jason"
@@ -402,6 +427,7 @@ names:
   date: 2013-01-01
 - name: "Griffin Francis"
   date: 2013-01-01
+  url: "https://twitter.com/aussinfosec"
 - name: "Marius"
   date: 2013-01-01
 - name: "Mateusz Goik"
