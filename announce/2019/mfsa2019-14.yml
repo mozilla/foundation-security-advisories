@@ -88,6 +88,22 @@ advisories:
       A use-after-free vulnerability was discovered in the <code>png_image_free</code> function in the libpng library. This could lead to denial of service or a potentially exploitable crash when a malformed image is processed.
     bugs:
       - url: 1542829
+  CVE-2019-9797:
+    title: Cross-origin theft of images with createImageBitmap
+    impact: high
+    reporter: AaylaSecura1138
+    description: |
+      Cross-origin images can be read in violation of the same-origin policy by exporting an image after using <code>createImageBitmap</code> to read the image and then rendering the resulting bitmap image within a <code>canvas</code> element.
+    bugs:
+      - url: 1528909
+  CVE-2018-18511:
+    title: Cross-origin theft of images with ImageBitmapRenderingContext
+    impact: high
+    reporter: AaylaSecura1138
+    description: |
+      Cross-origin images can be read from a <code>canvas</code> element in violation of the same-origin policy using the <code>transferFromImageBitmap</code> method. <br> *Note: This only affects Firefox 65. Previous versions are unaffected.*
+    bugs:
+      - url: 1526218
   CVE-2019-11694:
     title: Uninitialized memory memory leakage in Windows sandbox
     impact: moderate
@@ -104,6 +120,15 @@ advisories:
       If a crafted hyperlink is dragged and dropped to the bookmark bar or sidebar and the resulting bookmark is subsequently dragged and dropped into the web content area, an arbitrary query of a user's browser history can be run and transmitted to the content page via <code>drop</code> event data. This allows for the theft of browser history by a malicious site. 
     bugs:
       - url: 1543191
+  CVE-2019-5798:
+    title: Out-of-bounds read in Skia
+    impact: moderate
+    feed: false
+    reporter: Tran Tien Hung of Viettel Cyber Security
+    description: |
+      An out-of-bounds read can occur in the Skia library during path transformations. This could result in the exposure of data stored in memory.
+    bugs:
+      - url: 1535518
   CVE-2019-9800:
     title: Memory safety bugs fixed in Firefox 67 and Firefox ESR 60.7
     impact: critical
