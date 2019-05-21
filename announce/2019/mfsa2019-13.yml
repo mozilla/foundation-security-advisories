@@ -36,7 +36,7 @@ advisories:
     impact: high
     reporter: Thomas Imbert
     description: |
-      A race condition is present in the crash generation server used to generate data for the crash reporter. This issue can lead to a use-after-free in the main process, resulting in a potentially exploitable crash and a sandbox escape. <br>*>Note: this vulnerability only affects Windows. Other operating systems are unaffected.*
+      A race condition is present in the crash generation server used to generate data for the crash reporter. This issue can lead to a use-after-free in the main process, resulting in a potentially exploitable crash and a sandbox escape. <br>*Note: this vulnerability only affects Windows. Other operating systems are unaffected.*
     bugs:
       - url: 1542581
   CVE-2019-9819:
