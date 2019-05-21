@@ -1,0 +1,115 @@
+## mfsa2019-14.yml
+announced: May 21, 2019
+impact: critical
+fixed_in:
+- Firefox ESR 60.7
+title: Security vulnerabilities fixed in Firefox ESR 60.7
+advisories:
+  CVE-2019-9815:
+    title: Disable hyperthreading on content JavaScript threads on macOS
+    impact: high
+    reporter: <a href="https://mdsattacks.com/#People">Multiple independent researchers</a>
+    description: |
+      If hyperthreading is not disabled, a timing attack vulnerability exists, similar to previous Spectre attacks. Apple has shipped macOS 10.14.5 with an option to disable hyperthreading in applications running untrusted code in a thread through a new sysctl. Firefox now makes use of it on the main thread and any worker threads. <br>*Note: users need to update to macOS 10.14.5 in order to take advantage of this change.*
+    bugs:
+      - url: 1546544
+      - url: https://mdsattacks.com/
+        desc: "RIDL and Fallout: MDS attacks"
+  CVE-2019-9816:
+    title: Type confusion with object groups and UnboxedObjects
+    impact: high
+    reporter: Samuel Groß of Google Project Zero
+    description: |
+      A possible vulnerability exists where type confusion can occur when manipulating JavaScript objects in object groups, allowing for the bypassing of security checks within these groups. <br>*Note: this vulnerability has only been demonstrated with <code>UnboxedObjects</code>, which are disabled by default on all supported releases.*
+    bugs:
+      - url: 1536768
+  CVE-2019-9817:
+    title: Stealing of cross-domain images using canvas
+    impact: high
+    reporter: Luật Nguyễn
+    description: |
+      Images from a different domain can be read using a canvas object in some circumstances. This could be used to steal image data from a different site in violation of same-origin policy.
+    bugs:
+      - url: 1540221
+  CVE-2019-9818:
+    title: Use-after-free in crash generation server
+    impact: high
+    reporter: Thomas Imbert
+    description: |
+      A race condition is present in the crash generation server used to generate data for the crash reporter. This issue can lead to a use-after-free in the main process, resulting in a potentially exploitable crash and a sandbox escape. <br>*>Note: this vulnerability only affects Windows. Other operating systems are unaffected.*
+    bugs:
+      - url: 1542581
+  CVE-2019-9819:
+    title: Compartment mismatch with fetch API
+    impact: high
+    reporter: Nils
+    description: |
+      A vulnerability where a JavaScript compartment mismatch can occur while working with the <code>fetch</code> API, resulting in a potentially exploitable crash.
+    bugs:
+      - url: 1532553
+  CVE-2019-9820:
+    title: Use-after-free of ChromeEventHandler by DocShell
+    impact: high
+    reporter: Nils
+    description: |
+      A use-after-free vulnerability can occur in the chrome event handler when it is freed while still in use. This results in a potentially exploitable crash. 
+    bugs:
+      - url: 1536405
+  CVE-2019-11691:
+    title: Use-after-free in XMLHttpRequest
+    impact: high
+    reporter: Nils
+    description: |
+      A use-after-free vulnerability can occur when working with <code>XMLHttpRequest</code> (XHR) in an event loop, causing the XHR main thread to be called after it has been freed. This results in a potentially exploitable crash. 
+    bugs:
+      - url: 1542465
+  CVE-2019-11692:
+    title: Use-after-free removing listeners in the event listener manager
+    impact: high
+    reporter: Nils 
+    description: |
+      A use-after-free vulnerability can occur when listeners are removed from the event listener manager while still in use, resulting in a potentially exploitable crash.
+    bugs:
+      - url: 1544670
+  CVE-2019-11693:
+    title: Buffer overflow in WebGL bufferdata on Linux
+    impact: high
+    reporter: crixer
+    description: |
+      The <code>bufferdata</code> function in WebGL is vulnerable to a buffer overflow with specific graphics drivers on Linux. This could result in malicious content freezing a tab or triggering a potentially exploitable crash. <br>*Note: this issue only occurs on Linux. Other operating systems are unaffected.*
+    bugs:
+      - url: 1532525
+  CVE-2019-7317:
+    title: Use-after-free in png_image_free of libpng library
+    impact: high
+    feed: false
+    reporter: Salvatore Bonaccorso
+    description: |
+      A use-after-free vulnerability was discovered in the <code>png_image_free</code> function in the libpng library. This could lead to denial of service or a potentially exploitable crash when a malformed image is processed.
+    bugs:
+      - url: 1542829
+  CVE-2019-11694:
+    title: Uninitialized memory memory leakage in Windows sandbox
+    impact: moderate
+    reporter: Jeremy Fetiveau of SSD Secure Disclosure
+    description: |
+      A vulnerability exists in the Windows sandbox where an uninitialized value in memory can be leaked to a renderer from a broker when making a call to access an otherwise unavailable file. This results in the potential leaking of information stored at that memory location. <br>*Note: this issue only occurs on Windows. Other operating systems are unaffected.*
+    bugs:
+      - url: 1534196
+  CVE-2019-11698:
+    title: Theft of user history data through drag and drop of hyperlinks to and from bookmarks
+    impact: moderate
+    reporter: Abdulrahman Alqabandi
+    description: |
+      If a crafted hyperlink is dragged and dropped to the bookmark bar or sidebar and the resulting bookmark is subsequently dragged and dropped into the web content area, an arbitrary query of a user's browser history can be run and transmitted to the content page via <code>drop</code> event data. This allows for the theft of browser history by a malicious site. 
+    bugs:
+      - url: 1543191
+  CVE-2019-9800:
+    title: Memory safety bugs fixed in Firefox 67 and Firefox ESR 60.7
+    impact: critical
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers and community members Olli Pettay, Bogdan Tara, Jan de Mooij, Jason Kratzer, Jan Varga, Gary Kwong, Tim Guan-tin Chien, Tyson Smith, Ronald Crane, and Ted Campbell reported memory safety bugs present in Firefox 66 and Firefox ESR 60.6. Some of these bugs showed evidence of memory corruption and we presume that with enough effort that some of these could be exploited to run arbitrary code.
+    bugs:
+      - url: 1540166, 1534593, 1546327, 1540136, 1538736, 1538042, 1535612, 1499719, 1499108, 1538619, 1535194, 1516325, 1542324, 1542097, 1532465, 1533554, 1541580
+        desc: Memory safety bugs fixed in Firefox 67 and Firefox ESR 60.7
