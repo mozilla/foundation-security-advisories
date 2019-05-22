@@ -103,7 +103,7 @@ advisories:
     impact: high
     reporter: AaylaSecura1138
     description: |
-      Cross-origin images can be read from a <code>canvas</code> element in violation of the same-origin policy using the <code>transferFromImageBitmap</code> method. <br> *Note: This only affects Firefox 65. Previous versions are unaffected.*
+      Cross-origin images can be read from a <code>canvas</code> element in violation of the same-origin policy using the <code>transferFromImageBitmap</code> method. 
     bugs:
       - url: 1526218
   CVE-2019-11694:
