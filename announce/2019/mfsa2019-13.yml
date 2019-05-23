@@ -91,7 +91,7 @@ advisories:
     title: Use-after-free in png_image_free of libpng library
     impact: high
     feed: false
-    reporter: Salvatore Bonaccorso
+    reporter: OSS-Fuzz, Eddie Lee
     description: |
       A use-after-free vulnerability was discovered in the <code>png_image_free</code> function in the libpng library. This could lead to denial of service or a potentially exploitable crash when a malformed image is processed.
     bugs:
