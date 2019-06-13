@@ -1,6 +1,6 @@
 ## mfsa2019-17.yml
 announced: June 13, 2019
-impact: critical
+impact: high
 fixed_in:
 - Thunderbird 60.7.1
 title: Security vulnerabilities fixed in Thunderbird 60.7.1
