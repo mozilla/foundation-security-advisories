@@ -1,0 +1,42 @@
+## mfsa2019-17.yml
+announced: June 13, 2019
+impact: critical
+fixed_in:
+- Thunderbird 60.7.1
+title: Security vulnerabilities fixed in Thunderbird 60.7.1
+description: |
+    *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
+  CVE-2019-11703:
+    title: Heap buffer overflow in icalparser.c
+    impact: high
+    reporter: Luis Merino of X41 D-Sec
+    description: |
+      A flaw in Thunderbird's implementation of iCal causes a heap buffer overflow in <code>parser_get_next_char</code> when processing certain email messages, resulting in a potentially exploitable crash.
+    bugs:
+      - url: 1553820
+  CVE-2019-11704:
+    title: Heap buffer overflow in icalvalue.c
+    impact: high
+    reporter: Luis Merino of X41 D-Sec
+    description: |
+      A flaw in Thunderbird's implementation of iCal causes a heap buffer overflow in <code>icalmemory_strdup_and_dequote</code> when processing certain email messages, resulting in a potentially exploitable crash.
+    bugs:
+      - url: 1553814
+  CVE-2019-11705:
+    title: Stack buffer overflow in icalrecur.c
+    impact: high
+    reporter: Luis Merino of X41 D-Sec
+    description: |
+      A flaw in Thunderbird's implementation of iCal causes a stack buffer overflow in <code>icalrecur_add_bydayrules</code> when processing certain email messages, resulting in a potentially exploitable crash.
+    bugs:
+      - url: 1553808
+  CVE-2019-11706:
+    title: Type confusion in icalproperty.c
+    impact: low
+    reporter: Luis Merino of X41 D-Sec
+    description: |
+      A flaw in Thunderbird's implementation of iCal causes a type confusion in <code>icaltimezone_get_vtimezone_properties</code> when processing certain email messages, resulting in a crash.
+    bugs:
+      - url: 1555646
+
+
