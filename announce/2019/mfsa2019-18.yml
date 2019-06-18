@@ -1,0 +1,16 @@
+## mfsa2019-18.yml
+announced: June 18, 2019
+impact: critical
+fixed_in:
+- Firefox 67.0.3
+- Firefox 60.7.1
+title: Security vulnerabilities fixed in Firefox 67.0.3 and Firefox ESR 607.1
+advisories:
+  CVE-2019-11707:
+    title: Type confusion in Array.pop
+    impact: critical
+    reporter: Samuel Groß of Google Project Zero, Coinbase Security
+    description: |
+      A type confusion vulnerability can occur when manipulating JavaScript objects due to issues in <code>Array.pop</code>. This can allow for an exploitable crash. We are aware of targeted attacks in the wild abusing this flaw.
+    bugs:
+      - url: 1544386
