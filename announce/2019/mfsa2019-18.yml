@@ -3,8 +3,8 @@ announced: June 18, 2019
 impact: critical
 fixed_in:
 - Firefox 67.0.3
-- Firefox 60.7.1
-title: Security vulnerabilities fixed in Firefox 67.0.3 and Firefox ESR 607.1
+- Firefox ESR 60.7.1
+title: Security vulnerabilities fixed in Firefox 67.0.3 and Firefox ESR 60.7.1
 advisories:
   CVE-2019-11707:
     title: Type confusion in Array.pop
