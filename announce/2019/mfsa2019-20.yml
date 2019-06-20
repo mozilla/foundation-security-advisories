@@ -1,0 +1,25 @@
+## mfsa2019-20.yml
+announced: June 20, 2019
+impact: high
+fixed_in:
+- Thunderbird 60.7.2
+title: Security vulnerabilities fixed in Thunderbird 60.7.2
+description: |
+    *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
+advisories:
+  CVE-2019-11707:
+    title: Type confusion in Array.pop
+    impact: critical
+    reporter: Samuel Groß of Google Project Zero, Coinbase Security
+    description: |
+      A type confusion vulnerability can occur when manipulating JavaScript objects due to issues in <code>Array.pop</code>. This can allow for an exploitable crash. We are aware of targeted attacks in the wild abusing this flaw.
+    bugs:
+      - url: 1544386
+  CVE-2019-11708:
+    title: "sandbox escape using Prompt:Open"
+    impact: high
+    reporter: Coinbase Security
+    description: |
+      Insufficient vetting of parameters passed with the <code>Prompt:Open</code> IPC message between child and parent processes can result in the non-sandboxed parent process opening web content chosen by a compromised child process. When combined with additional vulnerabilities this could result in executing arbitrary code on the user's computer.
+    bugs:
+      - url: 1559858
