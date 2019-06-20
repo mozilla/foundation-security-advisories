@@ -1,0 +1,20 @@
+## mfsa2019-19.yml
+announced: June 20, 2019
+impact: high
+fixed_in:
+- Firefox 67.0.4
+- Firefox ESR 60.7.2
+title: Security vulnerabilities fixed in Firefox 67.0.4 and Firefox ESR 60.7.2
+advisories:
+  CVE-2019-11708:
+    title: "sandbox escape using Prompt:Open"
+    impact: high
+    reporter: Coinbase Security
+    description: |
+      Insufficient vetting of parameters passed with the <code>Prompt:Open</code>
+      IPC message between child and parent processes can result in the non-sandboxed
+      parent process opening web content chosen by a compromised child process.
+      When combined with additional vulnerabilities
+      this could result in executing arbitrary code on the user's computer.
+    bugs:
+      - url: 1559858
