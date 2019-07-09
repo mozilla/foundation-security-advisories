@@ -1,6 +1,6 @@
 ## mfsa2019-21.yml
 announced: July 9, 2019
-impact: high
+impact: critical
 fixed_in:
 - Firefox 68
 title: Security vulnerabilities fixed in Firefox 68
