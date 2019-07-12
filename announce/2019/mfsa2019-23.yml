@@ -1,0 +1,92 @@
+## mfsa2019-22.yml
+announced: July 9, 2019
+impact: critical
+fixed_in:
+- Thunderbird 60.8
+title: Security vulnerabilities fixed in Thunderbird 60.8
+description: |
+    *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
+advisories:
+  CVE-2019-9811:
+    title: Sandbox escape via installation of malicious language pack
+    impact: high
+    reporter: Niklas Baumstark
+    description: |
+      As part of his winning Pwn2Own entry, Niklas Baumstark demonstrated a sandbox escape by installing a malicious language pack and then opening a browser feature that used the compromised translation. 
+    bugs:
+      - url: 1538007
+      - url: 1539598
+      - url: 1563327
+  CVE-2019-11711:
+    title: Script injection within domain through inner window reuse
+    impact: high
+    reporter: Boris Zbarsky
+    description: |
+      When an inner window is reused, it does not consider the use of <code>document.domain</code> for cross-origin protections. If pages on different subdomains ever cooperatively use <code>document.domain</code>, then either page can abuse this to inject script into arbitrary pages on the other subdomain, even those that did not use <code>document.domain</code> to relax their origin security.
+    bugs:
+      - url: 1552541
+  CVE-2019-11712:
+    title: Cross-origin POST requests can be made with NPAPI plugins by following 308 redirects
+    impact: high
+    reporter: Gregory Smiley of Security Compass
+    description: |
+      POST requests made by NPAPI plugins, such as Flash, that receive a status 308 redirect response can bypass CORS requirements. This can allow an attacker to perform Cross-Site Request Forgery (CSRF) attacks.
+    bugs:
+      - url: 1543804
+  CVE-2019-11713:
+    title: Use-after-free with HTTP/2 cached stream
+    impact: high
+    reporter: Hanno Böck
+    description: |
+      A use-after-free vulnerability can occur in HTTP/2 when a cached HTTP/2 stream is closed while still in use, resulting in a potentially exploitable crash.
+    bugs:
+      - url: 1528481
+  CVE-2019-11729:
+    title: Empty or malformed p256-ECDH public keys may trigger a segmentation fault
+    impact: moderate
+    reporter: Jonas Allmann
+    description: |
+      Empty or malformed p256-ECDH public keys may trigger a segmentation fault due values being improperly sanitized before being copied into memory and used.
+    bugs:
+      - url: 1515342
+  CVE-2019-11715:
+    title: HTML parsing error can contribute to content XSS
+    impact: moderate
+    reporter: Linus Särud
+    description: |
+      Due to an error while parsing page content, it is possible for properly sanitized user input to be misinterpreted and lead to XSS hazards on web sites in certain circumstances. 
+    bugs:
+      - url: 1555523
+  CVE-2019-11717:
+    title: Caret character improperly escaped in origins
+    impact: moderate
+    reporter: Tyson Smith
+    description: |
+      A vulnerability exists where the caret ("^") character is improperly escaped constructing some URIs due to it being used as a separator, allowing for possible spoofing of origin attributes. 
+    bugs:
+      - url: 1548306
+  CVE-2019-11719:
+    title: Out-of-bounds read when importing curve25519 private key
+    impact: moderate 
+    reporter: Henry Corrigan-Gibbs
+    description: |
+      When importing a curve25519 private key in PKCS#8format with leading 0x00 bytes, it is possible to trigger an out-of-bounds read in the Network Security Services (NSS) library. This could lead to information disclosure.
+    bugs:
+      - url: 1540541
+  CVE-2019-11730:
+    title: Same-origin policy treats all files in a directory as having the same-origin
+    impact: moderate
+    reporter: Luigi Gubello
+    description: |
+      A vulnerability exists where if a user opens a locally saved HTML file, this file can use <code>file:</code> URIs to access other files in the same directory or sub-directories if the names are known or guessed. The Fetch API can then be used to read the contents of any files stored in these directories and they may uploaded to a server. Luigi Gubello demonstrated that in combination with a popular Android messaging app, if a malicious HTML attachment is sent to a user and they opened that attachment in Firefox, due to that app's predictable pattern for locally-saved file names, it is possible to read attachments the victim received from other correspondents.
+    bugs:
+      - url: 1558299
+  CVE-2019-11709:
+    title: Memory safety bugs fixed in Firefox 68, Firefox ESR 60.8, and Thunderbird 60.8
+    impact: critical
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers and community members Andreea Pavel, Christian Holler, Honza Bambas, Jason Kratzer, and Jeff Gilbert reported memory safety bugs present in Firefox 67, Firefox ESR 60.7, and Thunderbird 60.7. Some of these bugs showed evidence of memory corruption and we presume that with enough effort that some of these could be exploited to run arbitrary code.
+    bugs:
+      - url: 1547266, 1540759, 1548822, 1550498, 1515052, 1539219, 1547757, 1550498, 1533522
+        desc: Memory safety bugs fixed in Firefox 68, Firefox ESR 60.8, and Thunderbird 60.8
