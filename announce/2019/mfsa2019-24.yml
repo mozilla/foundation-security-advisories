@@ -1,0 +1,16 @@
+## mfsa2019-24.yml
+announced: August 14, 2019
+impact: moderate
+fixed_in:
+- Firefox 68.0.2
+- Firefox ESR 68.0.2
+title: Stored passwords in 'Saved Logins' can be copied without master password entry
+advisories:
+  CVE-2019-11733:
+    title: Stored passwords in 'Saved Logins' can be copied without master password entry
+    impact: moderate
+    reporter: 
+    description: |
+      When a master password is set, it is required to be entered before stored passwords can be accessed in the 'Saved Logins' dialog. It was found that locally stored passwords can be copied to the clipboard thorough the 'copy password' context menu item without first entering the master password, allowing for potential theft of stored passwords.
+    bugs:
+      - url: 1565780
