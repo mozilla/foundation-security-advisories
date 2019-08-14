@@ -1,16 +1,46 @@
 names:
+- name: "Mikhail Egorov"
+  date: 2019-04-01
+  url: "https://twitter.com/0ang3el"
+- name: "Griffin Francis"
+  date: 2019-04-01
+  url: "https://twitter.com/aussinfosec"
+- name: "Jonathan Leitschuh"
+  date: 2019-04-10
+  url: "https://twitter.com/JLLeitschuh"
+- name: "Gaurav Popalghat"
+  date: 2019-04-01
+  url: "https://www.linkedin.com/in/gaurav-popalghat-a23605171"
+- name: "Karthik Sunny"
+  date: 2019-04-01
+- name: "Takashi Suzuki"
+  date: 2019-04-01
+  url: "https://twitter.com/taka_1690"
+- name: "Tinu Tomy"
+  date: 2019-04-01
+  url: "https://twitter.com/TinuRock007"
+- name: "Olivier Beg"
+  date: 2019-01-01
 - name: "Sergey Bobrov"
   date: 2019-01-01
   url: "https://twitter.com/Black2Fan"
 - name: "Griffin Francis"
   date: 2019-01-01
   url: "https://twitter.com/aussinfosec"
+- name: "Harry Gertos"
+  date: 2019-01-01
+  url: "https://twitter.com/Gertyboy27"
 - name: "Tyler Hawkins"
   date: 2019-01-01
   url: "https://hawkinsecurity.com"
+- name: "Jens Müller"
+  date: 2019-01-01
+  url: "https://www.nds.ruhr-uni-bochum.de/chair/people/jmueller/"
 - name: "Damian Schwyrz"
   date: 2019-01-01
   url: "https://www.damianschwyrz.de"
+- name: "tomatinfosec"
+  date: 2019-01-01
 - name: "Tushar"
   date: 2019-01-01
   url: "https://hackerone.com/whitehattushu"
