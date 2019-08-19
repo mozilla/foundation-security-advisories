@@ -11,6 +11,6 @@ advisories:
     impact: moderate
     reporter: 
     description: |
-      When a master password is set, it is required to be entered before stored passwords can be accessed in the 'Saved Logins' dialog. It was found that locally stored passwords can be copied to the clipboard thorough the 'copy password' context menu item without first entering the master password, allowing for potential theft of stored passwords.
+      When a master password is set, it is required to be entered again before stored passwords can be accessed in the 'Saved Logins' dialog. It was found that locally stored passwords can be copied to the clipboard thorough the 'copy password' context menu item without re-entering the master password if the master password had been previously entered in the same session, allowing for potential theft of stored passwords.
     bugs:
       - url: 1565780
