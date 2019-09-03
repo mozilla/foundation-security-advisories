@@ -1,0 +1,175 @@
+## mfsa2019-25.yml
+announced: September 3, 2019
+impact: critical
+fixed_in:
+- Firefox 69
+title: Security vulnerabilities fixed in Firefox 69
+advisories:
+  CVE-2019-11751:
+    title: Malicious code execution through command line parameters
+    impact: critical
+    reporter: Ping Fan (Zetta) Ke of VXRL working with iDefense Labs
+    description: |
+      Logging-related command line parameters are not properly sanitized when Firefox is launched by another program, such as when a user clicks on malicious links in a chat application. This can be used to write a log file to an arbitrary location such as the Windows 'Startup' folder. <br>*Note: this issue only affects Firefox on Windows operating systems.*
+    bugs:
+      - url: 1572838
+  CVE-2019-11746:
+    title: Use-after-free while manipulating video
+    impact: high
+    reporter: Nils
+    description: |
+      A use-after-free vulnerability can occur while manipulating video elements if the body is freed while still in use. This results in a potentially exploitable crash.
+    bugs:
+      - url: 1564449
+  CVE-2019-11744:
+    title: XSS by breaking out of title and textarea elements using innerHTML
+    impact: high
+    reporter: Rakesh Mane
+    description: |
+      Some HTML elements, such as <code>&lt;title&gt;</code> and <code>&lt;textarea&gt;</code>, can contain literal angle brackets without treating them as markup. It is possible to pass a literal closing tag to <code>.innerHTML</code> on these elements, and subsequent content after that will be parsed as if it were outside the tag. This can lead to XSS if a site does not filter user input as strictly for these elements as it does for other elements.
+    bugs:
+      - url: 1562033
+  CVE-2019-11742:
+    title: Same-origin policy violation with SVG filters and canvas to steal cross-origin images
+    impact: high
+    reporter: Paul Stone
+    description: |
+      A same-origin policy violation occurs allowing the theft of cross-origin images through a combination of SVG filters and a <code>&lt;canvas&gt;</code> element due to an error in how same-origin policy is applied to cached image content. The resulting same-origin policy violation could allow for data theft.
+    bugs:
+      - url: 1559715
+  CVE-2019-11736:
+    title: File manipulation and privilege escalation in Mozilla Maintenance Service
+    impact: high
+    reporter: Seb Patane
+    description: |
+      The Mozilla Maintenance Service does not guard against files being hardlinked to another file in the <code>updates</code> directory, allowing for the replacement of local files, including the Maintenance Service executable, which is run with privileged access. Additionally, there was a race condition during checks for junctions and symbolic links by the Maintenance Service, allowing for potential local file and directory manipulation to be undetected in some circumstances. This allows for potential privilege escalation by a user with unprivileged local access. <br>*Note: These attacks requires local system access and only affects Windows. Other operating systems are not affected.*
+    bugs:
+      - url: 1551913
+      - url: 1552206
+  CVE-2019-11753:
+    title: Privilege escalation with Mozilla Maintenance Service in custom Firefox installation location
+    impact: high
+    reporter: Holger Fuhrmannek
+    description: |
+      The Firefox installer allows Firefox to be installed to a custom user writable location, leaving it unprotected from manipulation by unprivileged users or malware. If the Mozilla Maintenance Service is manipulated to update this unprotected location and the updated maintenance service in the unprotected location has been altered, the altered maintenance service can run with elevated privileges during the update process due to a lack of integrity checks. This allows for privilege escalation if the executable has been replaced locally. <br>*Note: This attack requires local system access and only affects Windows. Other operating systems are not affected.*
+    bugs:
+      - url: 1574980
+  CVE-2019-11752:
+    title: Use-after-free while extracting a key value in IndexedDB
+    impact: high
+    reporter: Zhanjia Song
+    description: |
+      It is possible to delete an IndexedDB key value and subsequently try to extract it during conversion. This results in a use-after-free and a potentially exploitable crash.
+    bugs:
+      - url: 1501152
+  CVE-2019-9812:
+    title: Sandbox escape through Firefox Sync
+    impact: high
+    reporter: Niklas Baumstark via TrendMicro's Zero Day Initiative
+    description: |
+      Given a compromised sandboxed content process due to a separate vulnerability, it is possible to escape that sandbox by loading <code>accounts.firefox.com</code> in that process and forcing a log-in to a malicious Firefox Sync account. Preference settings that disable the sandbox are then synchronized to the local machine and the compromised browser would restart without the sandbox if a crash is triggered.
+    bugs:
+      - url: 1538008
+      - url: 1538015
+  CVE-2019-11741:
+    title: Isolate addons.mozilla.org and accounts.firefox.com
+    impact: high
+    reporter: Niklas Baumstark via TrendMicro's Zero Day Initiative
+    description: |
+      A compromised sandboxed content process can perform a Universal Cross-site Scripting (UXSS) attack on content from any site it can cause to be loaded in the same process. Because <code>addons.mozilla.org</code> and <code>accounts.firefox.com</code> have close ties to the Firefox product, malicious manipulation of these sites within the browser can potentially be used to modify a user's Firefox configuration. These two sites will now be isolated into their own process and not allowed to be loaded in a standard content process.
+    bugs:
+      - url: 1539595
+  CVE-2019-11743:
+    title: Cross-origin access to unload event attributes
+    impact: moderate
+    reporter: Yoav Weiss
+    description: |
+      Navigation events were not fully adhering to the W3C's "Navigation-Timing Level 2" draft specification in some instances for the <code>unload</code> event, which restricts access to detailed timing attributes to only be same-origin. This resulted in potential cross-origin information exposure of history through timing side-channel attacks.
+    bugs:
+      - url: 1560495
+      - url: https://w3c.github.io/navigation-timing
+        desc: Navigation-Timing Level 2 specification
+  CVE-2019-11748:
+    title: Persistence of WebRTC permissions in a third party context
+    impact: moderate
+    reporter: Jan-Ivar Bruaroey
+    description: |
+      WebRTC in Firefox will honor persisted permissions given to sites for access to microphone and camera resources even when in a third-party context. In light of recent high profile vulnerabilities in other software, a decision was made to no longer persist these permissions. This avoids the possibility of trusted WebRTC resources being invisibly embedded in web content and abusing permissions previously given by users. Users will now be prompted for permissions on each use.
+    bugs:
+      - url: 1564588
+  CVE-2019-11749:
+    title: Camera information available without prompting using getUserMedia
+    impact: moderate
+    reporter: Andreas Pehrson
+    description: |
+      A vulnerability exists in WebRTC where malicious web content can use probing techniques on the <code>getUserMedia</code> API using constraints to reveal device properties of cameras on the system without triggering a user prompt or notification. This allows for the potential fingerprinting of users.
+    bugs:
+      - url: 1565374
+  CVE-2019-5849:
+    title: Out-of-bounds read in Skia
+    impact: moderate
+    feed: false
+    reporter: Zhen Zhou of NSFOCUS Security Team
+    description: |
+      An out-of-bounds read vulnerability exists in the Skia graphics library, allowing for the possible leaking of data from memory.
+    bugs:
+      - url: 1555838
+  CVE-2019-11750:
+    title: Type confusion in Spidermonkey
+    impact: moderate
+    reporter: Qixun Zhao of Qihoo 360 Vulcan Team
+    description: |
+      A type confusion vulnerability exists in Spidermonkey, which results in a non-exploitable crash. 
+    bugs:
+      - url: 1568397
+  CVE-2019-11737:
+    title: Content security policy directives ignore port and path if host is a wildcard
+    impact: low
+    reporter: Xiaoyin Liu
+    description: |
+      If a wildcard ('*') is specified for the host in Content Security Policy (CSP) directives, any port or path restriction of the directive will be ignored, leading to CSP directives not being properly applied to content.
+    bugs:
+      - url: 1388015
+  CVE-2019-11738:
+    title: Content security policy bypass through hash-based sources in directives
+    impact: low
+    reporter: Wladimir Palant
+    description: |
+      If a Content Security Policy (CSP) directive is defined that uses a hash-based source that takes the empty string as input, execution of any <code>javascript:</code> URIs will be allowed. This could allow for malicious JavaScript content to be run, bypassing CSP permissions. 
+    bugs:
+      - url: 1452037
+  CVE-2019-11747:
+    title: "'Forget about this site' removes sites from pre-loaded HSTS list"
+    impact: low
+    reporter: Thomas Henlich
+    description: |
+      The "Forget about this site" feature in the History pane is intended to remove all saved user data that indicates a user has visited a site. This includes removing any HTTP Strict Transport Security (HSTS) settings received from sites that use it. Due to a bug, sites on the pre-load list also have their HSTS setting removed. On the next visit to that site if the user specifies an <code>http:</code> URL rather than secure <code>https:</code> they will not be protected by the pre-loaded HSTS setting. After that visit the site's HSTS setting will be restored.
+    bugs:
+      - url: 1564481
+  CVE-2019-11734:
+    title: Memory safety bugs fixed in Firefox 69
+    impact: high
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers and community members Randell Jesup, Philipp, Cosmin Sabou, and Natalia Csoregi reported memory safety bugs present in Firefox 68. Some of these bugs showed evidence of memory corruption and we presume that with enough effort that some of these could be exploited to run arbitrary code.
+    bugs: 
+      - url: 1352875, 1536227, 1557208, 1560641
+        desc: Memory safety bugs fixed in Firefox 69
+  CVE-2019-11735:
+    title: Memory safety bugs fixed in Firefox 69 and Firefox ESR 68.1
+    impact: high
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers and community members Mikhail Gavrilov, Tyson Smith, Marcia Knous, Tom Ritter, Philipp, and Bob Owens reported memory safety bugs present in Firefox 68 and Firefox ESR 68. Some of these bugs showed evidence of memory corruption and we presume that with enough effort that some of these could be exploited to run arbitrary code.
+    bugs:
+      - url: 1561404, 1561484, 1568047, 1561912, 1565744, 1568858, 1570358
+        desc: Memory safety bugs fixed in Firefox 69 and Firefox ESR 68.1
+  CVE-2019-11740:
+    title: Memory safety bugs fixed in Firefox 69, Firefox ESR 68.1, and Firefox ESR 60.9
+    impact: high
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers and community members Tyson Smith and Nathan Froyd reported memory safety bugs present in Firefox 68, Firefox ESR 68, and Firefox 60.8. Some of these bugs showed evidence of memory corruption and we presume that with enough effort that some of these could be exploited to run arbitrary code.
+    bugs:
+      - url: 1563133, 1573160
+        desc: Memory safety bugs fixed in Firefox 69, Firefox ESR 68.1, and Firefox ESR 60.9

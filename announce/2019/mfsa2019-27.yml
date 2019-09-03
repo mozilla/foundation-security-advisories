@@ -1,0 +1,75 @@
+## mfsa2019-27.yml
+announced: September 3, 2019
+impact: critical
+fixed_in:
+- Firefox ESR 60.9
+title: Security vulnerabilities fixed in Firefox ESR 60.9
+advisories:
+  CVE-2019-11746:
+    title: Use-after-free while manipulating video
+    impact: high
+    reporter: Nils
+    description: |
+      A use-after-free vulnerability can occur while manipulating video elements if the body is freed while still in use. This results in a potentially exploitable crash.
+    bugs:
+      - url: 1564449
+  CVE-2019-11744:
+    title: XSS by breaking out of title and textarea elements using innerHTML
+    impact: high
+    reporter: Rakesh Mane
+    description: |
+      Some HTML elements, such as <code>&lt;title&gt;</code> and <code>&lt;textarea&gt;</code>, can contain literal angle brackets without treating them as markup. It is possible to pass a literal closing tag to <code>.innerHTML</code> on these elements, and subsequent content after that will be parsed as if it were outside the tag. This can lead to XSS if a site does not filter user input as strictly for these elements as it does for other elements.
+    bugs:
+      - url: 1562033
+  CVE-2019-11742:
+    title: Same-origin policy violation with SVG filters and canvas to steal cross-origin images
+    impact: high
+    reporter: Paul Stone
+    description: |
+      A same-origin policy violation occurs allowing the theft of cross-origin images through a combination of SVG filters and a <code>&lt;canvas&gt;</code> element due to an error in how same-origin policy is applied to cached image content. The resulting same-origin policy violation could allow for data theft.
+    bugs:
+      - url: 1559715
+  CVE-2019-11753:
+    title: Privilege escalation with Mozilla Maintenance Service in custom Firefox installation location
+    impact: high
+    reporter: Holger Fuhrmannek
+    description: |
+      The Firefox installer allows Firefox to be installed to a custom user writable location, leaving it unprotected from manipulation by unprivileged users or malware. If the Mozilla Maintenance Service is manipulated to update this unprotected location and the updated maintenance service in the unprotected location has been altered, the altered maintenance service can run with elevated privileges during the update process due to a lack of integrity checks. This allows for privilege escalation if the executable has been replaced locally. <br>*Note: This attack requires local system access and only affects Windows. Other operating systems are not affected.*
+    bugs:
+      - url: 1574980
+  CVE-2019-11752:
+    title: Use-after-free while extracting a key value in IndexedDB
+    impact: high
+    reporter: Zhanjia Song
+    description: |
+      It is possible to delete an IndexedDB key value and subsequently try to extract it during conversion. This results in a use-after-free and a potentially exploitable crash.
+    bugs:
+      - url: 1501152
+  CVE-2019-9812:
+    title: Sandbox escape through Firefox Sync
+    impact: high
+    reporter: Niklas Baumstark via TrendMicro's Zero Day Initiative
+    description: |
+      Given a compromised sandboxed content process due to a separate vulnerability, it is possible to escape that sandbox by loading <code>accounts.firefox.com</code> in that process and forcing a log-in to a malicious Firefox Sync account. Preference settings that disable the sandbox are then synchronized to the local machine and the compromised browser would restart without the sandbox if a crash is triggered.
+    bugs:
+      - url: 1538008
+      - url: 1538015
+  CVE-2019-11743:
+    title: Cross-origin access to unload event attributes
+    impact: moderate
+    reporter: Yoav Weiss
+    description: |
+      Navigation events were not fully adhering to the W3C's "Navigation-Timing Level 2" draft specification in some instances for the <code>unload</code> event, which restricts access to detailed timing attributes to only be same-origin. This resulted in potential cross-origin information exposure of history through timing side-channel attacks.
+    bugs:
+      - url: 1560495
+      - url: https://w3c.github.io/navigation-timing
+        desc: Navigation-Timing Level 2 specification
+  CVE-2019-11740:
+    title: Memory safety bugs fixed in Firefox 69, Firefox ESR 68.1, and Firefox ESR 60.9
+    impact: high
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers and community members Tyson Smith and Nathan Froyd reported memory safety bugs present in Firefox 68, Firefox ESR 68, and Firefox 60.8. Some of these bugs showed evidence of memory corruption and we presume that with enough effort that some of these could be exploited to run arbitrary code.
+    bugs:
+      - url: 1563133, 1573160
+        desc: Memory safety bugs fixed in Firefox 69, Firefox ESR 68.1, and Firefox ESR 60.9
