@@ -168,7 +168,7 @@ advisories:
     description: |
       Mozilla developers and community members André Bargull, Christian Holler, Natalia Csoregi, Raul Gurzau, Daniel Varga, Jon Coppeard, Marcia Knous, Gary Kwong, Randell Jesup, David Bolter, Jeff Gilbert, and Deian Stefan reported memory safety bugs present in Firefox 67. Some of these bugs showed evidence of memory corruption and we presume that with enough effort that some of these could be exploited to run arbitrary code.
     bugs: 
-      - url: 1549768, 1548611, 1533842, 1537692, 1540590, 1551907, 1510345, 1535482, 1535848, 1547472, 1547760, 1507696, 1544180
+      - url: 1549768, 1548611, 1533842, 1537692, 1540590, 1551907, 1510345, 1535482, 1535848, 1547472, 1547760, 1507696, 1544180, 1400563
         desc: Memory safety bugs fixed in Firefox 68
   CVE-2019-11709:
     title: Memory safety bugs fixed in Firefox 68 and Firefox ESR 60.8
