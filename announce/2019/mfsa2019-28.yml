@@ -1,0 +1,163 @@
+## mfsa2019-28.yml
+announced: August 27, 2019
+impact: critical
+fixed_in:
+- Thunderbird 68
+title: Security vulnerabilities fixed in Thunderbird 68
+description: |
+    *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
+advisories:
+  CVE-2019-11711:
+    title: Script injection within domain through inner window reuse
+    impact: high
+    reporter: Boris Zbarsky
+    description: |
+      When an inner window is reused, it does not consider the use of <code>document.domain</code> for cross-origin protections. If pages on different subdomains ever cooperatively use <code>document.domain</code>, then either page can abuse this to inject script into arbitrary pages on the other subdomain, even those that did not use <code>document.domain</code> to relax their origin security.
+    bugs:
+      - url: 1552541
+  CVE-2019-11712:
+    title: Cross-origin POST requests can be made with NPAPI plugins by following 308 redirects
+    impact: high
+    reporter: Gregory Smiley of Security Compass
+    description: |
+      POST requests made by NPAPI plugins, such as Flash, that receive a status 308 redirect response can bypass CORS requirements. This can allow an attacker to perform Cross-Site Request Forgery (CSRF) attacks.
+    bugs:
+      - url: 1543804
+  CVE-2019-11713:
+    title: Use-after-free with HTTP/2 cached stream
+    impact: high
+    reporter: Hanno Böck
+    description: |
+      A use-after-free vulnerability can occur in HTTP/2 when a cached HTTP/2 stream is closed while still in use, resulting in a potentially exploitable crash.
+    bugs:
+      - url: 1528481
+  CVE-2019-11714:
+    title: NeckoChild can trigger crash when accessed off of main thread
+    impact: moderate
+    reporter: Hanno Böck
+    description: |
+      Necko can access a child on the wrong thread during UDP connections, resulting in a potentially exploitable crash in some instances. 
+    bugs:
+      - url: 1542593
+  CVE-2019-11729:
+    title: Empty or malformed p256-ECDH public keys may trigger a segmentation fault
+    impact: moderate
+    reporter: Jonas Allmann
+    description: |
+      Empty or malformed p256-ECDH public keys may trigger a segmentation fault due values being improperly sanitized before being copied into memory and used.
+    bugs:
+      - url: 1515342
+  CVE-2019-11715:
+    title: HTML parsing error can contribute to content XSS
+    impact: moderate
+    reporter: Linus Särud
+    description: |
+      Due to an error while parsing page content, it is possible for properly sanitized user input to be misinterpreted and lead to XSS hazards on web sites in certain circumstances. 
+    bugs:
+      - url: 1555523
+  CVE-2019-11716:
+    title: globalThis not enumerable until accessed
+    impact: moderate
+    reporter: Chris Hacking
+    description: |
+      Until explicitly accessed by script, <code>window.globalThis</code> is not enumerable and, as a result, is not visible to code such as <code>Object.getOwnPropertyNames(window)</code>. Sites that deploy a sandboxing that depends on enumerating and freezing access to the window object may miss this, allowing their sandboxes to be bypassed.
+    bugs:
+      - url: 1552632
+  CVE-2019-11717:
+    title: Caret character improperly escaped in origins
+    impact: moderate
+    reporter: Tyson Smith
+    description: |
+      A vulnerability exists where the caret ("^") character is improperly escaped constructing some URIs due to it being used as a separator, allowing for possible spoofing of origin attributes. 
+    bugs:
+      - url: 1548306
+  CVE-2019-11719:
+    title: Out-of-bounds read when importing curve25519 private key
+    impact: moderate 
+    reporter: Henry Corrigan-Gibbs
+    description: |
+      When importing a curve25519 private key in PKCS#8format with leading 0x00 bytes, it is possible to trigger an out-of-bounds read in the Network Security Services (NSS) library. This could lead to information disclosure.
+    bugs:
+      - url: 1540541
+  CVE-2019-11720:
+    title: Character encoding XSS vulnerability
+    impact: moderate
+    reporter: Rakesh Mane
+    description: |
+      Some unicode characters are incorrectly treated as whitespace during the parsing of web content instead of triggering parsing errors. This allows malicious code to then be processed, evading cross-site scripting (XSS) filtering. 
+    bugs:
+      - url: 1556230
+  CVE-2019-11721:
+    title: "Domain spoofing through unicode latin 'kra' character"
+    impact: moderate
+    reporter: Anonymous
+    description: |
+      The unicode latin 'kra' character can be used to spoof a standard 'k' character in the addressbar. This allows for domain spoofing attacks as do not display as punycode text, allowing for user confusion.
+    bugs:
+      - url: 1256009
+  CVE-2019-11730:
+    title: Same-origin policy treats all files in a directory as having the same-origin
+    impact: moderate
+    reporter: Luigi Gubello
+    description: |
+      A vulnerability exists where if a user opens a locally saved HTML file, this file can use <code>file:</code> URIs to access other files in the same directory or sub-directories if the names are known or guessed. The Fetch API can then be used to read the contents of any files stored in these directories and they may uploaded to a server. Luigi Gubello demonstrated that in combination with a popular Android messaging app, if a malicious HTML attachment is sent to a user and they opened that attachment in Firefox, due to that app's predictable pattern for locally-saved file names, it is possible to read attachments the victim received from other correspondents.
+    bugs:
+      - url: 1558299
+  CVE-2019-11723:
+    title: Cookie leakage during add-on fetching across private browsing boundaries
+    impact: low
+    reporter: Andreas Wagner
+    description: |
+      A vulnerability exists during the installation of add-ons where the initial fetch ignored the origin attributes of the browsing context. This could leak cookies in private browsing mode or across different "containers" for people who use the Firefox Multi-Account Containers Web Extension.
+    bugs:
+      - url: 1528335
+  CVE-2019-11724:
+    title: Retired site input.mozilla.org has remote troubleshooting permissions
+    impact: low
+    reporter: Frederik Braun
+    description: |
+      Application permissions give additional remote troubleshooting permission to the site input.mozilla.org, which has been retired and now redirects to another site. This additional permission is unnecessary and is a potential vector for malicious attacks. 
+    bugs:
+      - url: 1512511
+  CVE-2019-11725:
+    title: Websocket resources bypass safebrowsing protections
+    impact: low
+    reporter: Andrey
+    description: |
+      When a user navigates to site marked as unsafe by the Safebrowsing API, warning messages are displayed and navigation is interrupted but resources from the same site loaded through websockets are not blocked, leading to the loading of unsafe resources and bypassing safebrowsing protections.
+    bugs:
+      - url: 1483510
+  CVE-2019-11727:
+    title: PKCS#1 v1.5 signatures can be used for TLS 1.3 
+    impact: low
+    reporter: Hubert Kario
+    description: |
+      A vulnerability exists where it possible to force Network Security Services (NSS) to sign <code>CertificateVerify</code> with PKCS#1 v1.5 signatures when those are the only ones advertised by server in <code>CertificateRequest</code> in TLS 1.3. PKCS#1 v1.5 signatures should not be used for TLS 1.3 messages.
+    bugs:
+      - url: 1552208
+  CVE-2019-11728:
+    title: Port scanning through Alt-Svc header
+    impact: low
+    reporter: Trishita Tiwari, Ari Trachtenberg
+    description: |
+      The HTTP Alternative Services header, <code>Alt-Svc</code>, can be used by a malicious site to scan all TCP ports of any host that the accessible to a user when web content is loaded.
+    bugs:
+      - url: 1552993
+  CVE-2019-11710:
+    title: Memory safety bugs fixed in Firefox 68 and Thunderbird 68
+    impact: critical
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers and community members André Bargull, Christian Holler, Natalia Csoregi, Raul Gurzau, Daniel Varga, Jon Coppeard, Marcia Knous, Gary Kwong, Randell Jesup, David Bolter, Jeff Gilbert, and Deian Stefan reported memory safety bugs fixed in Firefox 68 and Thunderbird 68. Some of these bugs showed evidence of memory corruption and we presume that with enough effort that some of these could be exploited to run arbitrary code.
+    bugs: 
+      - url: 1549768, 1548611, 1533842, 1537692, 1540590, 1551907, 1510345, 1535482, 1535848, 1547472, 1547760, 1507696, 1544180, 1400563
+        desc: Memory safety bugs fixed in Firefox 68 and Thunderbird 68
+  CVE-2019-11709:
+    title: Memory safety bugs fixed in Firefox 68, Firefox ESR 60.8, and Thunderbird 68
+    impact: critical
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers and community members Andreea Pavel, Christian Holler, Honza Bambas, Jason Kratzer, and Jeff Gilbert reported memory safety bugs fixed in Firefox 68, Firefox ESR 60.8, and Thunderbird 68. Some of these bugs showed evidence of memory corruption and we presume that with enough effort that some of these could be exploited to run arbitrary code.
+    bugs:
+      - url: 1547266, 1540759, 1548822, 1550498, 1515052, 1539219, 1547757, 1550498, 1533522
+        desc: Memory safety bugs fixed in Firefox 68, Firefox ESR 60.8, and Thunderbird 68
