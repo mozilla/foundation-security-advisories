@@ -1,0 +1,68 @@
+## mfsa2019-30.yml
+announced: September 11, 2019
+impact: high
+fixed_in:
+- Thunderbird 68.1
+title: Security vulnerabilities fixed in - Thunderbird 68.1
+description: |
+    *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
+advisories:
+  CVE-2019-11739:
+    title: Covert Content Attack on S/MIME encryption using a crafted multipart/alternative message
+    impact: high
+    reporter: Jens Müller, Marcus Brinkmann, Damian Poddebniak, Sebastian Schinzel, Jörg Schwenk
+    description: |
+      Encrypted S/MIME parts in a crafted multipart/alternative message can leak plaintext when included in a a HTML reply/forward.
+    bugs:
+      - url: 1571481
+  CVE-2019-11746:
+    title: Use-after-free while manipulating video
+    impact: high
+    reporter: Nils
+    description: |
+      A use-after-free vulnerability can occur while manipulating video elements if the body is freed while still in use. This results in a potentially exploitable crash.
+    bugs:
+      - url: 1564449
+  CVE-2019-11744:
+    title: XSS by breaking out of title and textarea elements using innerHTML
+    impact: high
+    reporter: Rakesh Mane
+    description: |
+      Some HTML elements, such as <code>&lt;title&gt;</code> and <code>&lt;textarea&gt;</code>, can contain literal angle brackets without treating them as markup. It is possible to pass a literal closing tag to <code>.innerHTML</code> on these elements, and subsequent content after that will be parsed as if it were outside the tag. This can lead to XSS if a site does not filter user input as strictly for these elements as it does for other elements.
+    bugs:
+      - url: 1562033
+  CVE-2019-11742:
+    title: Same-origin policy violation with SVG filters and canvas to steal cross-origin images
+    impact: high
+    reporter: Paul Stone
+    description: |
+      A same-origin policy violation occurs allowing the theft of cross-origin images through a combination of SVG filters and a <code>&lt;canvas&gt;</code> element due to an error in how same-origin policy is applied to cached image content. The resulting same-origin policy violation could allow for data theft.
+    bugs:
+      - url: 1559715
+  CVE-2019-11752:
+    title: Use-after-free while extracting a key value in IndexedDB
+    impact: high
+    reporter: Zhanjia Song
+    description: |
+      It is possible to delete an IndexedDB key value and subsequently try to extract it during conversion. This results in a use-after-free and a potentially exploitable crash.
+    bugs:
+      - url: 1501152
+  CVE-2019-11743:
+    title: Cross-origin access to unload event attributes
+    impact: moderate
+    reporter: Yoav Weiss
+    description: |
+      Navigation events were not fully adhering to the W3C's "Navigation-Timing Level 2" draft specification in some instances for the <code>unload</code> event, which restricts access to detailed timing attributes to only be same-origin. This resulted in potential cross-origin information exposure of history through timing side-channel attacks.
+    bugs:
+      - url: 1560495
+      - url: https://w3c.github.io/navigation-timing
+        desc: Navigation-Timing Level 2 specification
+  CVE-2019-11740:
+    title: Memory safety bugs fixed in Firefox 69, Firefox ESR 68.1, Firefox ESR 60.9, Thunderbird 68.1, and Thunderbird 60.9
+    impact: high
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers and community members Tyson Smith and Nathan Froyd reported memory safety bugs present in Firefox 68, Firefox ESR 68, Firefox 60.8, Thunderbird 68, and Thunderbird 60.8. Some of these bugs showed evidence of memory corruption and we presume that with enough effort that some of these could be exploited to run arbitrary code.
+    bugs:
+      - url: 1563133, 1573160
+        desc: Memory safety bugs fixed in Firefox 69, Firefox ESR 68.1, Firefox ESR 60.9, Thunderbird 68.1, and Thunderbird 60.9
