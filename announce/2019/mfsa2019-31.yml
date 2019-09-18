@@ -1,0 +1,15 @@
+## mfsa2019-31.yml
+announced: September 18, 2019
+impact: moderate
+fixed_in:
+- Firefox 69.0.1
+title: Security vulnerabilities fixed in Firefox 69.0.1
+advisories:
+  CVE-2019-11754:
+    title: Pointer Lock is enabled with no user notification
+    impact: moderate
+    reporter: Johann Hofmann
+    description: |
+      When the pointer lock is enabled by a website though <code>requestPointerLock()</code>, no user notification is given. This could allow a malicious website to hijack the mouse pointer and confuse users.
+    bugs:
+      - url: 1580506
