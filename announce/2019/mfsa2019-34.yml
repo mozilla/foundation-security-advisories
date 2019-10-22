@@ -95,7 +95,7 @@ advisories:
       A Content-Security-Policy that blocks in-line scripts could be bypassed using an object tag to execute JavaScript in the protected document (cross-site scripting). This is a separate bypass from CVE-2019-17000.<br>*Note: This flaw only affected Firefox 69 and was not present in earlier versions.*
     bugs:
       - url: 1587976
-  CVE-2019-XXXX:
+  CVE-2019-17002:
     title: upgrade-insecure-requests was not being honored for links dragged and dropped
     impact: low
     reporter: Kevin Brosnan
