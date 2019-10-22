@@ -153,8 +153,16 @@ advisories:
     description: |
       Mozilla developers and community members Randell Jesup, Philipp, Cosmin Sabou, and Natalia Csoregi reported memory safety bugs present in Firefox 68. Some of these bugs showed evidence of memory corruption and we presume that with enough effort that some of these could be exploited to run arbitrary code.
     bugs: 
-      - url: 1352875, 1536227, 1557208, 1560641
+      - url: 1352875, 1557208, 1560641
         desc: Memory safety bugs fixed in Firefox 69
+  CVE-2019-11758:
+    title: Potentially exploitable crash due to 360 Total Security
+    impact: high
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developer Philipp reported a memory safety bug present in Firefox 68 when 360 Total Security was installed. This bug showed evidence of memory corruption in the accessibility engine and we presume that with enough effort that it could be exploited to run arbitrary code.
+    bugs:
+      - url: 1536227
   CVE-2019-11735:
     title: Memory safety bugs fixed in Firefox 69 and Firefox ESR 68.1
     impact: high

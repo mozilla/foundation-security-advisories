@@ -1,0 +1,114 @@
+## mfsa2019-34.yml
+announced: October 22, 2019
+impact: critical
+fixed_in:
+- Firefox 70
+title: Security vulnerabilities fixed in - Firefox 70
+advisories:
+  CVE-2018-6156:
+    title: Heap buffer overflow in FEC processing in WebRTC
+    impact: high
+    reporter: Google Project Zero
+    feed: false
+    description: |
+      Incorrect derivation of a packet length in WebRTC caused heap corruption via a crafted video file. This resulted in a potentially exploitable crash.
+    bugs:
+      - url: 1480088
+  CVE-2019-15903:
+    title: Heap overflow in expat library in XML_GetCurrentLineNumber
+    impact: high
+    reporter: Sebastian Pipping
+    feed: false
+    description: |
+      In libexpat before 2.2.8, crafted XML input could fool the parser into changing from DTD parsing to document parsing too early. A subsequent call to <code>XML_GetCurrentLineNumber</code> or <code>XML_GetCurrentColumnNumber</code> then resulted in a heap-based buffer over-read.
+    bugs:
+      - url: 1584907
+  CVE-2019-11757:
+    title: Use-after-free when creating index updates in IndexedDB
+    impact: high
+    reporter: Zhanjia Song
+    description: |
+      When storing a value in IndexedDB, the value's prototype chain is followed and it was possible to retain a reference to a locale, delete it, and subsequently reference it. This resulted in a use-after-free and a potentially exploitable crash.
+    bugs:
+      - url: 1577107
+  CVE-2019-11759:
+    title: Stack buffer overflow in HKDF output
+    impact: moderate
+    reporter: Guido Vranken 
+    description: |
+      An attacker could have caused 4 bytes of HMAC output to be written past the end of a buffer stored on the stack. This could be used by an attacker to execute arbitrary code or more likely lead to a crash.
+    bugs:
+      - url: 1577953
+  CVE-2019-11760:
+    title: Stack buffer overflow in WebRTC networking
+    impact: moderate
+    reporter: Nils
+    description: |
+      A fixed-size stack buffer could overflow in nrappkit when doing WebRTC signaling. This resulted in a potentially exploitable crash in some instances.
+    bugs:
+      - url: 1577719
+  CVE-2019-11761:
+    title: Unintended access to a privileged JSONView object 
+    impact: moderate
+    reporter: Cody Crews
+    description: |
+      By using a form with a data URI it was possible to gain access to the privileged <code>JSONView</code> object that had been cloned into content. Impact from exposing this object appears to be minimal, however it was a bypass of existing defense in depth mechanisms.
+    bugs:
+      - url: 1561502
+  CVE-2019-11762:
+    title: document.domain-based origin isolation has same-origin-property violation
+    impact: moderate
+    reporter: Kris Maglione
+    description: |
+      If two same-origin documents set document.domain differently to become cross-origin, it was possible for them to call arbitrary DOM methods/getters/setters on the now-cross-origin window.
+    bugs:
+      - url: 1582857
+  CVE-2019-11763:
+    title: Incorrect HTML parsing results in XSS bypass technique 
+    impact: moderate
+    reporter: Gareth Heyes
+    description: |
+      Failure to correctly handle null bytes when processing HTML entities resulted in Firefox incorrectly parsing these entities. This could have led to HTML comment text being treated as HTML which could have led to XSS in a web application under certain conditions. It could have also led to HTML entities being masked from filters, enabling the use of entities to mask the actual characters of interest from filters.
+    bugs:
+      - url: 1584216
+  CVE-2019-11765:
+    title: Incorrect permissions could be granted to a website
+    impact: moderate
+    reporter: Paul Theriault
+    description: |
+      A compromised content process could send a message to the parent process that would cause the 'Click to Play' permission prompt to be shown. However, due to lack of validation from the parent process, if the user accepted the permission request an attacker-controlled permission would be granted rather than the 'Click to Play' permission.
+    bugs:
+      - url: 1562582
+  CVE-2019-17000:
+    title: 'CSP bypass using object tag with data: URI'
+    impact: moderate
+    reporter: Yangzheng Li
+    description: |
+      An object tag with a data URI did not correctly inherit the document's Content Security Policy. This allowed a CSP bypass in a cross-origin frame if the document's policy explicitly allowed <code>data:</code> URIs.
+    bugs:
+      - url: 1441468
+  CVE-2019-17001:
+    title: CSP bypass using object tag when script-src 'none' is specified
+    impact: moderate
+    reporter: Matheus Vrech
+    description: |
+      A Content-Security-Policy that blocks in-line scripts could be bypassed using an object tag to execute JavaScript in the protected document (cross-site scripting). This is a separate bypass from CVE-2019-17000.<br>*Note: This flaw only affected Firefox 69 and was not present in earlier versions.*
+    bugs:
+      - url: 1587976
+  CVE-2019-XXXX:
+    title: upgrade-insecure-requests was not being honored for links dragged and dropped
+    impact: low
+    reporter: Kevin Brosnan
+    description: |
+      If <code>upgrade-insecure-requests</code> was specified in the Content Security Policy, and a link was dragged and dropped from that page, the link was not upgraded to https.
+    bugs:
+      - url: 1561056
+  CVE-2019-11764:
+    title: Memory safety bugs fixed in Firefox 70 and Firefox ESR 68.2
+    impact: critical
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers and community members Bob Clary, Jason Kratzer, Aaron Klotz, Iain Ireland, Tyson Smith, Christian Holler, Steve Fink, Honza Bambas, Byron Campen, and Cristian Brindusan reported memory safety bugs present in Firefox 69 and Firefox ESR 68.1. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could be exploited to run arbitrary code.
+    bugs:
+      - url: 1558522, 1577061, 1548044, 1571223, 1573048, 1578933, 1575217, 1583684, 1586845, 1581950, 1583463, 1586599
+        desc: Memory safety bugs fixed in Firefox 70 and Firefox ESR 68.2
