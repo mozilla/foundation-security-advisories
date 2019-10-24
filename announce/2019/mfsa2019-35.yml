@@ -1,0 +1,81 @@
+## mfsa2019-33.yml
+announced: October 22, 2019
+impact: critical
+fixed_in:
+- Thunderbird 68.2
+title: Security vulnerabilities fixed in - Thunderbird 68.2
+advisories:
+  CVE-2019-15903:
+    title: Heap overflow in expat library in XML_GetCurrentLineNumber
+    impact: high
+    reporter: Sebastian Pipping
+    feed: false
+    description: |
+      In libexpat before 2.2.8, crafted XML input could fool the parser into changing from DTD parsing to document parsing too early. A subsequent call to <code>XML_GetCurrentLineNumber</code> or <code>XML_GetCurrentColumnNumber</code> then resulted in a heap-based buffer over-read.
+    bugs:
+      - url: 1584907
+  CVE-2019-11757:
+    title: Use-after-free when creating index updates in IndexedDB
+    impact: high
+    reporter: Zhanjia Song
+    description: |
+      When following the value's prototype chain, it was possible to retain a reference to a locale, delete it, and subsequently reference it. This resulted in a use-after-free and a potentially exploitable crash.
+    bugs:
+      - url: 1577107
+  CVE-2019-11758:
+    title: Potentially exploitable crash due to 360 Total Security
+    impact: high
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla community member Philipp reported a memory safety bug present in Firefox 68 when 360 Total Security was installed. This bug showed evidence of memory corruption in the accessibility engine and we presume that with enough effort that it could be exploited to run arbitrary code.
+    bugs: 
+      - url: 1536227
+  CVE-2019-11759:
+    title: Stack buffer overflow in HKDF output
+    impact: moderate
+    reporter: Guido Vranken 
+    description: |
+      An attacker could have caused 4 bytes of HMAC output to be written past the end of a buffer stored on the stack. This could be used by an attacker to execute arbitrary code or more likely lead to a crash.
+    bugs:
+      - url: 1577953
+  CVE-2019-11760:
+    title: Stack buffer overflow in WebRTC networking
+    impact: moderate
+    reporter: Nils
+    description: |
+      A fixed-size stack buffer could overflow in nrappkit when doing WebRTC signaling. This resulted in a potentially exploitable crash in some instances.
+    bugs:
+      - url: 1577719
+  CVE-2019-11761:
+    title: Unintended access to a privileged JSONView object 
+    impact: moderate
+    reporter: Cody Crews
+    description: |
+      By using a form with a data URI it was possible to gain access to the privileged <code>JSONView</code> object that had been cloned into content. Impact from exposing this object appears to be minimal, however it was a bypass of existing defense in depth mechanisms.
+    bugs:
+      - url: 1561502
+  CVE-2019-11762:
+    title: document.domain-based origin isolation has same-origin-property violation
+    impact: moderate
+    reporter: Kris Maglione
+    description: |
+      If two same-origin documents set document.domain differently to become cross-origin, it was possible for them to call arbitrary DOM methods/getters/setters on the now-cross-origin window.
+    bugs:
+      - url: 1582857
+  CVE-2019-11763:
+    title: Incorrect HTML parsing results in XSS bypass technique 
+    impact: moderate
+    reporter: Gareth Heyes
+    description: |
+      Failure to correctly handle null bytes when processing HTML entities resulted in Firefox incorrectly parsing these entities. This could have led to HTML comment text being treated as HTML which could have led to XSS in a web application under certain conditions. It could have also led to HTML entities being masked from filters - enabling the use of entities to mask the actual characters of interest from filters.
+    bugs:
+      - url: 1584216
+  CVE-2019-11764:
+    title: Memory safety bugs fixed in Thunderbird 68.2
+    impact: critical
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers and community members Bob Clary, Jason Kratzer, Aaron Klotz, Iain Ireland, Tyson Smith, Christian Holler, Steve Fink, Honza Bambas, Byron Campen, and Cristian Brindusan reported memory safety bugs present in Firefox 69 and Firefox ESR 68.1. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could be exploited to run arbitrary code.
+    bugs:
+      - url: 1558522, 1577061, 1548044, 1571223, 1573048, 1578933, 1575217, 1583684, 1586845, 1581950, 1583463, 1586599
+        desc: Memory safety bugs fixed in Firefox 70 and Firefox ESR 68.2
