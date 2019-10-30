@@ -8,7 +8,7 @@
 Parse markdown files and verify syntax of YAML front-matter. Designed for use as a
 git pre-commit hook.
 """
-from __future__ import unicode_literals
+from __future__ import unicode_literals, print_function
 
 import argparse
 import codecs
@@ -18,7 +18,7 @@ import re
 import sys
 from datetime import date
 from glob import glob
-from subprocess import Popen, PIPE
+from subprocess import check_output
 
 import yaml
 from dateutil.parser import parse as parsedate
@@ -63,9 +63,7 @@ def git_diff(staged):
     if staged:
         command.append('--cached')
 
-    proc = Popen(command, stdout=PIPE)
-    git_out = proc.communicate()[0].split()
-
+    git_out = check_output(command, universal_newlines=True).split()
     return [fn for fn in git_out if
             MFSA_FILENAME_RE.search(fn) or HOF_FILENAME_RE.search(fn)]
 
@@ -229,7 +227,7 @@ def main():
     args = parser.parse_args()
 
     if args.all:
-        print 'Checking all files\n'
+        print('Checking all files')
         files_to_check = get_all_files()
     else:
         files_to_check = get_modified_files(args.staged)
@@ -250,14 +248,14 @@ def main():
     num_errors = len(errors)
     errors_plural = '' if num_errors == 1 else 's'
     if args.all:
-        print
-    print 'Checked {0} file{1}. Found {2} error{3}.'.format(num_files, files_plural,
-                                                            num_errors, errors_plural)
+        print()
+    print('Checked {0} file{1}. Found {2} error{3}.'.format(num_files, files_plural,
+                                                            num_errors, errors_plural))
 
     if errors:
-        print '\nERRORS:'
+        print('\nERRORS:')
         for error_tuple in errors:
-            print '  - {0}: {1}'.format(*error_tuple)
+            print('  - {0}: {1}'.format(*error_tuple))
         return 1
 
     return 0
