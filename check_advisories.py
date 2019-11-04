@@ -28,6 +28,7 @@ from markdown import markdown
 GIT = os.getenv('GIT_BIN', 'git')
 ADVISORIES_DIR = 'announce'
 HOF_DIR = 'bug-bounty-hof'
+CVE_RE = re.compile('^CVE-20[0-9]{2}-[0-9]{4,9}$')
 MFSA_FILENAME_RE = re.compile('mfsa(\d{4}-\d{2,3})\.(md|yml)$')
 HOF_FILENAME_RE = re.compile('bug-bounty-hof/\w+\.yml$')
 REQUIRED_FIELDS = (
@@ -157,6 +158,8 @@ def check_file(file_name):
 
     if file_name.endswith('.yml'):
         for cve, advisory in data['advisories'].items():
+            if not CVE_RE.search(cve):
+                return 'The cve field {0} does not appear to be valid.'.format(cve)
             for field in REQUIRED_YAML_ADVISORY_FIELDS:
                 if field not in advisory:
                     return 'The {0} field is required in the ' \
