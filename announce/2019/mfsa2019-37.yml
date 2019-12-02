@@ -1,0 +1,73 @@
+## mfsa2019-37.yml
+announced: December 3, 2019
+impact: high
+fixed_in:
+- Firefox 68.3
+title: Security Vulnerabilities fixed in - Firefox 68.3
+advisories:
+  CVE-2019-17008:
+    title: Use-after-free in worker destruction
+    impact: high
+    reporter: Looben Yang 
+    description: |
+      When using nested workers, a use-after-free could occur during worker destruction. This resulted in a potentially exploitable crash.
+    bugs:
+      - url: 1546331
+  CVE-2019-13722:
+    title: Stack corruption due to incorrect number of arguments in WebRTC code
+    impact: high
+    feed: false
+    reporter: Alexandru Michis
+    description: |
+      When setting a thread name on Windows in WebRTC, an incorrect number of arguments could have been supplied, leading to stack corruption and a potentially exploitable crash.
+    bugs:
+      - url: 1580156
+  CVE-2019-11745:
+    title: Out of bounds write in NSS when encrypting with a block cipher
+    impact: high
+    reporter: Craig Disselkoen
+    description: |
+      When encrypting with a block cipher, if a call to <code>NSC_EncryptUpdate</code> was made with data smaller than the block size, a small out of bounds write could occur. This could have caused heap corruption and a potentially exploitable crash.
+    bugs:
+      - url: 1586176
+  CVE-2019-17009:
+    title: Updater temporary files accessible to unprivileged processes
+    impact: moderate
+    reporter: Robert Strong
+    description: |
+      When running, the updater service wrote status and log files to an unrestricted location; potentially allowing an unprivileged process to locate and exploit a vulnerability in file handling in the updater service.
+    bugs:
+      - url: 1510494
+  CVE-2019-17010:
+    title: Use-after-free when performing device orientation checks
+    impact: moderate
+    reporter: Nils
+    description: |
+      Under certain conditions, when checking the Resist Fingerprinting preference during device orientation checks, a race condition could have caused a use-after-free and a potentially exploitable crash.
+    bugs:
+      - url: 1581084
+  CVE-2019-17005:
+    title: Buffer overflow in plain text serializer
+    impact: moderate
+    reporter: Mirko Brodesser
+    description: |
+      The plain text serializer used a fixed-size array for the number of <ol> elements it could process; however it was possible to overflow the static-sized array leading to memory corruption and a potentially exploitable crash.
+    bugs:
+      - url: 1584170
+  CVE-2019-17011:
+    title: Use-after-free when retrieving a document in antitracking
+    impact: moderate
+    reporter: Nils
+    description: |
+      Under certain conditions, when retrieving a document from a DocShell in the antitracking code, a race condition could cause a use-after-free condition and a potentially exploitable crash.
+    bugs:
+      - url: 1591334
+  CVE-2019-17012:
+    title: Memory safety bugs fixed in Firefox 71 and Firefox ESR 68.3
+    impact: high
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers Christoph Diehl, Nathan Froyd, Jason Kratzer, Christian Holler, Karl Tomlinson, Tyson Smith reported memory safety bugs present in Firefox 70 and Firefox ESR 68.2. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1449736, 1533957, 1560667, 1567209, 1580288, 1585760, 1592502
+      - desc: Memory safety bugs fixed in Firefox 71 and Firefox ESR 68.3
