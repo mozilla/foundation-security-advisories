@@ -16,7 +16,7 @@ advisories:
   CVE-2019-17008:
     title: Use-after-free in worker destruction
     impact: high
-    reporter: Looben Yang 
+    reporter: Looben Yang
     description: |
       When using nested workers, a use-after-free could occur during worker destruction. This resulted in a potentially exploitable crash.
     bugs:
@@ -41,7 +41,7 @@ advisories:
   CVE-2019-17014:
     title: Dragging and dropping a cross-origin resource, incorrectly loaded as an image, could result in information disclosure
     impact: moderate
-    reporter: Abdulrahman Alqabandi 
+    reporter: Abdulrahman Alqabandi
     description: |
       If an image had not loaded correctly (such as when it is not actually an image), it could be dragged and dropped cross-domain, resulting in a cross-origin information leak.
     bugs:
@@ -86,7 +86,7 @@ advisories:
       Mozilla developers Christoph Diehl, Nathan Froyd, Jason Kratzer, Christian Holler, Karl Tomlinson, Tyson Smith reported memory safety bugs present in Firefox 70 and Firefox ESR 68.2. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
     bugs:
       - url: 1449736, 1533957, 1560667, 1567209, 1580288, 1585760, 1592502
-      - desc: Memory safety bugs fixed in Firefox 71 and Firefox ESR 68.3
+        desc: Memory safety bugs fixed in Firefox 71 and Firefox ESR 68.3
   CVE-2019-17013:
     title: Memory safety bugs fixed in Firefox 71
     impact: high
@@ -95,4 +95,4 @@ advisories:
       Mozilla developers and community members Philipp, Diego Calleja, Mikhail Gavrilov, Jason Kratzer, Christian Holler, Markus Stange, Tyson Smith reported memory safety bugs present in Firefox 70. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
     bugs:
       - url: 1298509, 1472328, 1577439, 1577937, 1580320, 1584195, 1585106, 1586293, 1593865, 1594181
-      - desc: Memory safety bugs fixed in Firefox 71
+        desc: Memory safety bugs fixed in Firefox 71
