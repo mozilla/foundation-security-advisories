@@ -162,6 +162,10 @@ def check_file(file_name):
                 if field not in advisory:
                     return 'The {0} field is required in the ' \
                            'file metadata for {1}.'.format(field, cve)
+            if 'bugs' in advisory:
+                for bug in advisory['bugs']:
+                    if 'url' not in bug:
+                        return 'There is a bug entry in {} without a "url" field.'.format(cve)
 
     return None
 
