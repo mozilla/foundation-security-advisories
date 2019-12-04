@@ -19,7 +19,7 @@ advisories:
     feed: false
     reporter: Alexandru Michis
     description: |
-      When setting a thread name on Windows in WebRTC, an incorrect number of arguments could have been supplied, leading to stack corruption and a potentially exploitable crash.
+      When setting a thread name on Windows in WebRTC, an incorrect number of arguments could have been supplied, leading to stack corruption and a potentially exploitable crash.  <br>*Note: this issue only occurs on Windows. Other operating systems are unaffected.*
     bugs:
       - url: 1580156
   CVE-2019-11745:
@@ -35,7 +35,7 @@ advisories:
     impact: moderate
     reporter: Robert Strong
     description: |
-      When running, the updater service wrote status and log files to an unrestricted location; potentially allowing an unprivileged process to locate and exploit a vulnerability in file handling in the updater service.
+      When running, the updater service wrote status and log files to an unrestricted location; potentially allowing an unprivileged process to locate and exploit a vulnerability in file handling in the updater service.  <br>*Note: This attack requires local system access and only affects Windows. Other operating systems are not affected.*
     bugs:
       - url: 1510494
   CVE-2019-17010:
