@@ -1,4 +1,25 @@
 names:
+- name: "Fredrik Nordberg Almroth"
+  date: 2019-07-01
+  url: "https://twitter.com/almroot"
+- name: "Jason Kielpinski"
+  date: 2019-07-01
+  url: "https://twitter.com/f2jason"
+- name: "Xu Long"
+  date: 2019-07-01
+  url: "https://mp.weixin.qq.com/s/6l8o9b93uI9_ISWdC9TEjQ"
+- name: "Allyson O'Malley"
+  date: 2019-07-01
+  url: "https://twitter.com/ally_o_malley"
+- name: "Yaroslav Olejnik - OJA"
+  date: 2019-07-01
+  url: "https://twitter.com/oja_c7s"
+- name: "Onkar Sonawane"
+  date: 2019-07-01
+  url: "http://alancesec.co.in"
+- name: "Will Vandevanter"
+  date: 2019-07-01
+  url: "https://www.silentrobots.com/"
 - name: "Mikhail Egorov"
   date: 2019-04-01
   url: "https://twitter.com/0ang3el"
@@ -90,6 +111,9 @@ names:
 - name: "Ak1t4"
   date: 2018-01-01
   url: "https://twitter.com/knowledge_2014"
+- name: "Griffin Francis"
+  date: 2018-01-01
+  url: "https://twitter.com/aussinfosec"
 - name: "Holger Fuhrmannek"
   date: 2018-01-01
 - name: "Mario Gomes"
@@ -123,6 +147,9 @@ names:
 - name: "Sergey Bobrov"
   date: 2017-10-01
   url: "https://twitter.com/Black2Fan"
+- name: "Griffin Francis"
+  date: 2017-10-01
+  url: "https://twitter.com/aussinfosec"
 - name: "Manish Gupta"
   date: 2017-10-01
   url: "https://www.linkedin.com/in/cehmanish/"
