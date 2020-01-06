@@ -1,0 +1,97 @@
+## mfsa2020-01.yml
+announced: January 7, 2020
+impact: high
+fixed_in:
+- Firefox 72
+title: Security Vulnerabilities fixed in Firefox 72
+advisories:
+  CVE-2019-17015:
+    title: Memory corruption in parent process during new content process initialization on Windows
+    impact: high
+    reporter: Thomas Imbert
+    description: |
+      During the initialization of a new content process, a pointer offset can be manipulated leading to memory corruption and a potentially exploitable crash in the parent process. <br>*Note: this issue only occurs on Windows. Other operating systems are unaffected.*
+    bugs:
+      - url: 1599005
+  CVE-2019-17016:
+    title: Bypass of @namespace CSS sanitization during pasting
+    impact: high
+    reporter: Michał Bentkowski
+    description: |
+      When pasting a <code>&lt;style&gt;</code> tag from the clipboard into a rich text editor, the CSS sanitizer incorrectly rewrites a @namespace rule. This could allow for injection into certain types of websites resulting in data exfiltration.
+    bugs:
+      - url: 1599181
+  CVE-2019-17017:
+    title: Type Confusion in XPCVariant.cpp
+    impact: high
+    reporter: bo13oy
+    description: |
+      Due to a missing case handling object types, a type confusion vulnerability could occur, resulting in a crash. We presume that with enough effort that it could be exploited to run arbitrary code.
+    bugs:
+      - url: 1603055
+  CVE-2019-17018:
+    title: Windows Keyboard in Private Browsing Mode may retain word suggestions
+    impact: moderate
+    reporter: Siye Lui
+    description: |
+      When in Private Browsing Mode on Windows 10, the Windows keyboard may retain word suggestions to improve the accuracy of the keyboard.
+    bugs:
+      - url: 1549394
+  CVE-2019-17019:
+    title: Python files could be inadvertently executed upon opening a download
+    impact: moderate
+    reporter: Prithwishk Kumar Pal
+    description: |
+      When Python was installed on Windows, a python file being served with the MIME type of <code>text/plain</code> could be executed by Python instead of being opened as a text file when the Open option was selected upon download. <br>*Note: this issue only occurs on Windows. Other operating systems are unaffected.*
+    bugs:
+      - url: 1568003
+  CVE-2019-17020:
+    title: Content Security Policy not applied to XSL stylesheets applied to XML documents
+    impact: moderate
+    reporter: Matthew Somerville
+    description: |
+      If an XML file is served with a Content Security Policy and the XML file includes an XSL stylesheet, the Content Security Policy will not be applied to the contents of the XSL stylesheet. If the XSL sheet e.g. includes JavaScript, it would bypass any of the restrictions of the Content Security Policy applied to the XML document.
+    bugs:
+      - url: 1597645
+  CVE-2019-17021:
+    title: Heap address disclosure in parent process during content process initialization on Windows
+    impact: moderate
+    reporter: Thomas Imbert
+    description: |
+      During the initialization of a new content process, a race condition occurs that can allow a content process to disclose heap addresses from the parent process. <br>*Note: this issue only occurs on Windows. Other operating systems are unaffected.*
+    bugs:
+      - url: 1599008
+  CVE-2019-17022:
+    title: CSS sanitization does not escape HTML tags
+    impact: moderate
+    reporter: Michał Bentkowski
+    description: |
+      When pasting a <code>&lt;style&gt;</code> tag from the clipboard into a rich text editor, the CSS sanitizer does not escape &lt; and &gt; characters. Because the resulting string is pasted directly into the text node of the element this does not result in a direct injection into the webpage; however, if a webpage subsequently copies the node's innerHTML, assigning it to another innerHTML, this would result in an XSS vulnerability. Two WYSIWYG editors were identified with this behavior, more may exist.
+    bugs:
+      - url: 1602843
+  CVE-2019-17023:
+    title: NSS may negotiate TLS 1.2 or below after a TLS 1.3 HelloRetryRequest had been sent
+    impact: low
+    reporter: Google oss-fuzz
+    description: |
+      After a HelloRetryRequest has been sent, the client may negotiate a lower protocol that TLS 1.3, resulting in an invalid state transition in the TLS State Machine. If the client gets into this state, incoming Application Data records will be ignored.
+    bugs:
+      - url: 1590001
+  CVE-2019-17024:
+    title: Memory safety bugs fixed in Firefox 72 and Firefox ESR 68.4
+    impact: high
+    reporter: Mozilla developers
+    description: |
+      Mozilla developers Jason Kratzer, Christian Holler, and Bob Clary reported memory safety bugs present in Firefox 71 and Firefox ESR 68.3. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1507180, 1595470, 1598605, 1601826
+        desc: Memory safety bugs fixed in Firefox 72 and Firefox ESR 68.4
+  CVE-2019-17025:
+    title: Memory safety bugs fixed in Firefox 72
+    impact: high
+    reporter: Mozilla developers
+    description: |
+      Mozilla developers Karl Tomlinson, Jason Kratzer, Tyson Smith, Jon Coppeard, and Christian Holler reported memory safety bugs present in Firefox 71. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1328295, 1328300, 1590447, 1590965, 1595692, 1597321, 1597481
+        desc: Memory safety bugs fixed in Firefox 72
