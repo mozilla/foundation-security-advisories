@@ -1,0 +1,16 @@
+## mfsa2020-03.yml
+announced: January 8, 2020
+impact: critical
+fixed_in:
+- Firefox 72.0.1
+- Firefox ESR 68.4.1
+title: Security Vulnerabilities fixed in Firefox 72.0.1 and Firefox ESR 68.4.1
+advisories:
+  CVE-2019-17026:
+    title: IonMonkey type confusion with <code>StoreElementHole</code> and <code>FallibleStoreElement</code>
+    impact: critical
+    reporter: Qihoo 360 ATA
+    description: |
+      Incorrect alias information in IonMonkey JIT compiler for setting array elements could lead to a type confusion. We are aware of targeted attacks in the wild abusing this flaw.
+    bugs:
+      - url: 1607443
