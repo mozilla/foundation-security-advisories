@@ -7,7 +7,7 @@ fixed_in:
 title: Security Vulnerabilities fixed in Firefox 72.0.1 and Firefox ESR 68.4.1
 advisories:
   CVE-2019-17026:
-    title: IonMonkey type confusion with <code>StoreElementHole</code> and <code>FallibleStoreElement</code>
+    title: IonMonkey type confusion with StoreElementHole and FallibleStoreElement
     impact: critical
     reporter: Qihoo 360 ATA
     description: |
