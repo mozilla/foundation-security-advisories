@@ -1,0 +1,66 @@
+## mfsa2020-04.yml
+announced: January 10, 2020
+impact: critical
+fixed_in:
+- Thunderbird 68.4.1
+title: Security Vulnerabilities fixed in Thunderbird 68.4.1
+description: |
+    *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
+advisories:
+  CVE-2019-17026:
+    title: IonMonkey type confusion with StoreElementHole and FallibleStoreElement
+    impact: critical
+    reporter: Qihoo 360 ATA
+    description: |
+      Incorrect alias information in IonMonkey JIT compiler for setting array elements could lead to a type confusion. We are aware of targeted attacks in the wild abusing this flaw.
+    bugs:
+      - url: 1607443
+  CVE-2019-17015:
+    title: Memory corruption in parent process during new content process initialization on Windows
+    impact: high
+    reporter: Thomas Imbert
+    description: |
+      During the initialization of a new content process, a pointer offset can be manipulated leading to memory corruption and a potentially exploitable crash in the parent process. <br>*Note: this issue only occurs on Windows. Other operating systems are unaffected.*
+    bugs:
+      - url: 1599005
+  CVE-2019-17016:
+    title: Bypass of @namespace CSS sanitization during pasting
+    impact: high
+    reporter: Michał Bentkowski
+    description: |
+      When pasting a <code>&lt;style&gt;</code> tag from the clipboard into a rich text editor, the CSS sanitizer incorrectly rewrites a @namespace rule. This could allow for injection into certain types of websites resulting in data exfiltration.
+    bugs:
+      - url: 1599181
+  CVE-2019-17017:
+    title: Type Confusion in XPCVariant.cpp
+    impact: high
+    reporter: bo13oy
+    description: |
+      Due to a missing case handling object types, a type confusion vulnerability could occur, resulting in a crash. We presume that with enough effort that it could be exploited to run arbitrary code.
+    bugs:
+      - url: 1603055
+  CVE-2019-17021:
+    title: Heap address disclosure in parent process during content process initialization on Windows
+    impact: moderate
+    reporter: Thomas Imbert
+    description: |
+      During the initialization of a new content process, a race condition occurs that can allow a content process to disclose heap addresses from the parent process. <br>*Note: this issue only occurs on Windows. Other operating systems are unaffected.*
+    bugs:
+      - url: 1599008
+  CVE-2019-17022:
+    title: CSS sanitization does not escape HTML tags
+    impact: moderate
+    reporter: Michał Bentkowski
+    description: |
+      When pasting a <code>&lt;style&gt;</code> tag from the clipboard into a rich text editor, the CSS sanitizer does not escape &lt; and &gt; characters. Because the resulting string is pasted directly into the text node of the element this does not result in a direct injection into the webpage; however, if a webpage subsequently copies the node's innerHTML, assigning it to another innerHTML, this would result in an XSS vulnerability. Two WYSIWYG editors were identified with this behavior, more may exist.
+    bugs:
+      - url: 1602843
+  CVE-2019-17024:
+    title: Memory safety bugs fixed in Thunderbird 68.4.1
+    impact: high
+    reporter: Mozilla developers
+    description: |
+      Mozilla developers Jason Kratzer, Christian Holler, and Bob Clary reported memory safety bugs present in Thunderbird 68.3. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1507180, 1595470, 1598605, 1601826
+        desc: Memory safety bugs fixed in Thunderbird 68.4.1
