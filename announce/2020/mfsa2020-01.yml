@@ -40,7 +40,7 @@ advisories:
   CVE-2019-17019:
     title: Python files could be inadvertently executed upon opening a download
     impact: moderate
-    reporter: Prithwishk Kumar Pal
+    reporter: Prithwish Kumar Pal
     description: |
       When Python was installed on Windows, a python file being served with the MIME type of <code>text/plain</code> could be executed by Python instead of being opened as a text file when the Open option was selected upon download. <br>*Note: this issue only occurs on Windows. Other operating systems are unaffected.*
     bugs:
