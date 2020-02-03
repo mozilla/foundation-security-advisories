@@ -4,15 +4,92 @@ import pprint
 import sys
 import re
 from datetime import datetime
-import collections
 import os
 
 HEADERS = { 'Accept': 'application/json' }
 BASE_URL = 'https://bugzilla.mozilla.org/rest/'
-search_url = BASE_URL + 'bug' + '?quicksearch=ALL%20flag%3Asec-bounty%2b&list_id=12789124&limit=0'
-hof_entries = {}
+search_url = BASE_URL + 'bug' + \
+"""
+?x=x
+&limit=0
+&chfield=bug_status
+&chfieldfrom=-10y
+&f1=classification
+&o1=notequals
+&v1=Graveyard
+&f2=OP
+&f3=OP
+&j3=OR
+&f4=flagtypes.name
+&o4=substring
+&v4=sec-bounty-hof%2B
+&f5=flagtypes.name
+&o5=substring
+&v5=sec-bounty%2B
+&f6=CP
+&f7=CP
+&classification=Client%20Software
+&classification=Developer%20Infrastructure
+&classification=Components
+&classification=Server%20Software
+&classification=Other
+&product=Core
+&product=External%20Software%20Affecting%20Firefox
+&product=Firefox
+&product=Firefox%20for%20Android
+&product=Firefox%20for%20iOS
+&product=Focus-iOS
+&product=MailNews%20Core
+&product=NSPR
+&product=NSS
+&product=Pocket
+&product=Thunderbird
+&product=Toolkit
+""".replace("\n", "")
 
 credit_entries = {
+    "yosuke.hasegawa@gmail.com":"Team sutegoma2 - Japanese CTF team from AVTOKYO",
+    "manhluat93.php@gmail.com":"Luật Nguyễn",
+    "whucjj@gmail.com":"Jianjun Chen",
+    "alexdvorov@gmail.com":"Vitaly Nevgen",
+    "mitja.kolsek@acrossecurity.com":"ACROS",
+    "vladimirmetnew@gmail.com":"Vladimir Metnew",
+    "cdisselk@cs.ucsd.edu":"Craig Disselkoen",
+    "cs.anurag.jain@gmail.com":"Anurag Jain",
+    "nikhil.mittal641@gmail.com":"Nikhil Mittal",
+    "choller@mozilla.com":"Taegeon Lee",
+    "rakeshmane12345@gmail.com":"Rakesh Mane",
+    "geeknik@protonmail.ch":"Brian Carpenter",
+    "rakeshmane12345@gmail.com":"Rakesh Mane",
+    "bugzilla@sarud.se":" Linus Särud",
+    "gsmiley@securitycompass.com":"Gregory Smiley of Security Compass",
+    "mastho64@gmail.com":"Thomas Imbert",
+    "jens.a.mueller@rub.de":"jensvoid",
+    "pwning.me@gmail.com":"crixer",
+    "jpg.inc.au@gmail.com":"Joshua Graham of TSS & Brendan Scarvell",
+    "aayla.secura.1138@gmail.com":"AaylaSecura1138",
+    "wieser.brandon@gmail.com":"Brandon Wieser",
+    "choller@mozilla.com":"Kalel",
+    "mlfbrown@stanford.edu":"mlfbrown",
+    "harrygertos@ymail.com":"Harry Gertos",
+    "p4fg@shellcode.se":"p4fg",
+    "yaniv.frank@sophos.com":"Yaniv Frank with SophosLabs",
+    "kall7el@gmail.com":"Kalel",
+    "diegocg@gmail.com":"Diego Calleja",
+    "Virtual@teknik.io":"Artur Osiński (Virtual_ManPL)",
+    "r2@0day.ru":"R at Zero Day LLC",
+    "wirch.eduard@gmail.com":"Eduard Wirch",
+    "ash153311@gmail.com":"Taegeon Lee",
+    "clavoillotte@gmail.com":"Clément Lavoillotte",
+    "clavoillotte@gmail.com":"Clavoillotte",
+    "andreip@posteo.net":"Andrei Cristian Petcu",
+    "proof131072@gmail.com":"James Lee of Kryptos Logic",
+    "r@0day.ru":"R at Zero Day LLC",
+    "zhanjiasong45@gmail.com":"Zhanjia Song",
+    "guyinbara@gmail.com":"guyio",
+    "bjorn@bjornweb.nl":"Björn Ruytenberg",
+    "permutatorem@gmail.com":"Max May",
+    "me@jswrenn.com":"Jack Wrenn",
     "Griffin@dot.net":"Griffin Francis",
     "Laraweron@gmail.com":"Raphael Shaniyazov",
     "Rh01@protonmail.com":"Rh0",
@@ -141,25 +218,28 @@ credit_entries = {
     "wooshi@gmail.com":"team509",
     "yaaboukir@gmail.com":"Yassine AB",
     "z0jncr4lq@ctrlc.hu":"Stefan Marsiske",
-     "zhanghanming@360.cn":"Zhang Hanming from 360 Vulcan team"
+    "zhanghanming@360.cn":"Zhang Hanming from 360 Vulcan team"
 }
 
 twitter_entries = {
+    "manhluat93.php@gmail.com":"l4wio",
+    "whucjj@gmail.com":"whucjj",
+    "vladimirmetnew@gmail.com":"@vladimir_metnew",
+    "cs.anurag.jain@gmail.com":"@csanuragjain",
 }
 
 url_entries = {
+    "websec02.g02@gmail.com":"http://www.mbsd.jp/",
+    "yosuke.hasegawa@gmail.com":"http://ja.avtokyo.org/projects/sutegoma2",
 }
 
 products = [
     "Core",
-    "Core Graveyard",
     "External Software Affecting Firefox",
     "Firefox",
     "Firefox for Android",
-    "Firefox for Android Graveyard",
     "Firefox for iOS",
     "Focus-iOS",
-    "Hello (Loop)",
     "MailNews Core",
     "NSPR",
     "NSS",
@@ -170,14 +250,28 @@ products = [
 
 def main():
     args = command_line()
+
+    # Do this first so we error immediately if the file isn't there.
+    with open(os.path.abspath(args.output), 'r') as f:
+        file_data = f.read()
+        f.close()
+
+    csvlog = open('contactlog.log', 'w')
+
     bugs = gather_bug_list(args.apikey)
-    data ={}
+    hof_entries = []
 
     (begin_date, end_date) = define_dates(args.quarter, args.year)
-    print("Generating Bug Data")
+    print("Generating Bug Data from " + str(len(bugs["bugs"])) + " bugs")
     for bug in bugs["bugs"]:
+        if bug['product'] not in products:
+            continue
+
         bugid = str(bug["id"])
+        found_and_added = False
+        
         reporter_name = ''
+        data ={}
 
         attachment_url = BASE_URL + 'bug/' + bugid + '/attachment'
         try:
@@ -197,60 +291,156 @@ def main():
         # attachment_breakout[8] = url
         
         for attachment in attachments:
-
             if attachment['file_name'] == 'bugbounty.data' and attachment['is_private'] == 1:
-                attachment_breakout = attachment['description'].split(',')
-                award_date = datetime.strptime(attachment_breakout[4], '%Y-%m-%d')
+                try:
+                    attachment_breakout = attachment['description'].split(',')
+                    award_date = datetime.strptime(attachment_breakout[4], '%Y-%m-%d')
 
-                if begin_date < award_date < end_date:
-                    if bug['product'] in products:
-                        print("Generating Data For %s" % attachment_breakout[0]) 
-                        user_url = BASE_URL + 'user?names=' + attachment_breakout[0]
-                        try:
-                            user_response = requests.get(user_url, headers=HEADERS)
-                        except requests.exceptions.RequestException as e:
-                            print(e)
-                            sys.exit(1)
-                        if  attachment_breakout[6]:
+                    if begin_date < award_date < end_date:
+                        if "@mozilla.com" in attachment_breakout[0]:
+                            # Don't add Mozilla employees filing bugs under their work email to the HOF
+                            continue
+
+                        print("Generating Data For Bug %s - %s" % (bugid, attachment_breakout[0]))
+                        numFields = len(attachment_breakout)
+
+                        if not bool(attachment_breakout[5]) or "no" == attachment_breakout[5].lower():
+                            # Do not publish
+                            continue
+
+                        reporter_name = ""
+                        if numFields > 6 and attachment_breakout[6]:
                             reporter_name = attachment_breakout[6]
-                            if attachment_breakout[0] not in credit_entries:
-                                add_credit_to_script(attachment_breakout[0], reporter_name)
-                        elif attachment_breakout[0] in credit_entries:
-                            reporter_name = credit_entries[attachment_breakout[0]]
-                        elif user_response.status_code == 200 and user_response.json()['users'][0]["real_name"]:
-                                reporter_name = user_response.json()['users'][0]["real_name"]
-                        else:
-                            reporter_name = attachment_breakout[0].split('@', 1)[0]
+
+                            if "[paid]" in reporter_name:
+                                reporter_name = ""
+                            elif "no response" in reporter_name:
+                                reporter_name = ""
+                            elif reporter_name[0] == '"' and reporter_name[-1] == '"':
+                                reporter_name = reporter_name[1:-1]
                         
-                        if reporter_name not in hof_entries:
-                            data["date"] = attachment_breakout[4]
-                            hof_entries[reporter_name] = data
+                            if reporter_name and attachment_breakout[0] not in credit_entries and \
+                               check_add_credit_to_script(attachment_breakout[0], reporter_name):
+                                add_credit_to_script(attachment_breakout[0], reporter_name)
+
+                        if not reporter_name and attachment_breakout[0] in credit_entries:
+                            reporter_name = credit_entries[attachment_breakout[0]]
+                        elif not reporter_name:
+                            user_url = BASE_URL + 'user?names=' + attachment_breakout[0]
+                            try:
+                                user_response = requests.get(user_url, headers=HEADERS)
+                            except requests.exceptions.RequestException as e:
+                                print(e)
+                                sys.exit(1)
+
+                            if user_response.status_code == 200 and user_response.json()['users'][0]["real_name"]:
+                                reporter_name = user_response.json()['users'][0]["real_name"]
+                            else:
+                                reporter_name = attachment_breakout[0].split('@', 1)[0]
+                        
+                        data["name"] = reporter_name
+                        data["date"] = attachment_breakout[4]
+                        data["quarter-string"] = data["date"][0:4] + month_to_quarter(data["date"][5:7])
 
                         if attachment_breakout[0] in twitter_entries:
                             data["twitter"] = twitter_entries[attachment_breakout[0]]
-                        elif attachment_breakout[7]:
+                        elif numFields > 7 and attachment_breakout[7]:
                             data["twitter"] = attachment_breakout[7]
                             add_twitter_to_script(attachment_breakout[0], data["twitter"])
 
                         if attachment_breakout[0] in url_entries:
                             data["url"] = url_entries[attachment_breakout[0]]
-                        elif attachment_breakout[8]:
+                        elif numFields > 8 and attachment_breakout[8]:
                             data["url"] = attachment_breakout[8]
                             add_url_to_script(attachment_breakout[0], data["url"])
                         
-                        if attachment_breakout[8]:
-                            data["url"] = attachment_breakout[8]
-                    
-    ordered_entries = collections.OrderedDict(sorted(hof_entries.items()))
+                        if not "url" in data and "twitter" in data:
+                            data["url"] = "https://twitter.com/" + data["twitter"]
 
-    with open(os.path.abspath(args.output), 'r') as f:
-        file_data = f.read()
-        f.close()
+                        hof_entries.append(data)
+                        csvlog.write(attachment_breakout[0] + "," + data["name"] + "," + (data["url"] if 'url' in data else "") + "\n")
+                        found_and_added = True
+                except:
+                    import traceback
+                    print("--------------------------------------------------------")
+                    print("Could not process %s" % bugid)
+                    print("Attachment field: %s" % attachment['description'])
+                    print("Split fields: %s" % attachment['description'].split(','))
+                    print(traceback.format_exc())
+                    print("--------------------------------------------------------")
+                continue
+
+        if found_and_added:
+            continue
+
+        # If we didn't find a bounty attachment, then it's a Hall of Fame Entry
+        if 'cf_last_resolved' not in bug or not bug['cf_last_resolved']:
+            # Unusual case
+            resolved_date = bug['creation_time'].split("T")[0]
+        else:
+            # Normal case
+            resolved_date = bug['cf_last_resolved'].split("T")[0]
+        award_date = datetime.strptime(resolved_date, '%Y-%m-%d')
+        if begin_date < award_date < end_date:
+
+            reporter_name = ""
+            reporter_email = bug['creator_detail']['email']
+            if "@mozilla.com" in reporter_email:
+                # Don't add Mozilla employees filing bugs under their work email to the HOF
+                continue
+            
+            print("Generating Data For Bug %s - %s" % (bugid, reporter_email))
+            if not reporter_name and reporter_email in credit_entries:
+                reporter_name = credit_entries[reporter_email]
+            elif not reporter_name:
+                user_url = BASE_URL + 'user?names=' + reporter_email
+                try:
+                    user_response = requests.get(user_url, headers=HEADERS)
+                except requests.exceptions.RequestException as e:
+                    print(e)
+                    sys.exit(1)
+
+                if user_response.status_code == 200 and user_response.json()['users'][0]["real_name"]:
+                    reporter_name = user_response.json()['users'][0]["real_name"]
+                else:
+                    reporter_name = reporter_email.split('@', 1)[0]
+
+            data["name"] = reporter_name
+            data["date"] = resolved_date
+            data["quarter-string"] = data["date"][0:4] + month_to_quarter(data["date"][5:7])
+
+            if reporter_email in twitter_entries:
+                data["twitter"] = twitter_entries[reporter_email]
+
+            if reporter_email in url_entries:
+                data["url"] = url_entries[reporter_email]
+            
+            if not "url" in data and "twitter" in data:
+                data["url"] = "https://twitter.com/" + data["twitter"]
+
+            hof_entries.append(data)
+            csvlog.write(reporter_email + "," + data["name"] + "," + (data["url"] if 'url' in data else "") + "\n")
+            found_and_added = True
+
+
+                    
+    def soryByDate(val):
+        return val["date"]
+
+    hof_entries.sort(key=soryByDate, reverse=True)
+
+    oneEntryPerQuarter = set()
 
     hof_output = ""
-    for name, data in ordered_entries.items():
-        hof_output = hof_output + "- name: {}\n".format(name)
+    for data in hof_entries:
+        thisData = data["name"] + " " + data["quarter-string"]
+        if thisData in oneEntryPerQuarter:
+            continue
+
+        oneEntryPerQuarter.add(thisData)
+        hof_output = hof_output + "- name: {}\n".format(data["name"])
         hof_output = hof_output + "  date: {}\n".format(data["date"])
+
         if "twitter" in data:
             hof_output = hof_output + "  twitter: {}\n".format(data["twitter"])
         if "url" in data:
@@ -277,7 +467,20 @@ def define_dates(quarter, year):
     else:
         print("not a valid quarter")
         exit(1)
+    begin_date = datetime.strptime("{}-01-01" .format(2010), '%Y-%m-%d')
+    end_date = datetime.strptime("{}-12-31" .format(2019), '%Y-%m-%d')
     return(begin_date, end_date)
+
+def month_to_quarter(month):
+    if int(month) <= 3:
+        return str(1)
+    elif int(month) <= 6:
+        return str(2)
+    elif int(month) <= 9:
+        return str(3)
+    else:
+        return str(4)
+
 
 def command_line():
     parser = argparse.ArgumentParser()
@@ -289,8 +492,19 @@ def command_line():
     args = parser.parse_args()
     return args
 
+def check_add_credit_to_script(email, credit):
+    if " and " in credit:
+        # Do not by default, add double-credits as a mapping.
+        return False
+    if "@mozilla.com" in email:
+        # Do not add mozilla emails to script, we probably filed them for someone else.
+        return False
+    if "@" in credit:
+        raise Exception("It looks like a Twitter handle is in the credit field.")
+    return True
+
 def add_credit_to_script(email, credit):
-    string_to_add = email + ":" + credit
+    string_to_add = '"' + email + '":"' + credit + '",'
     with open(os.path.basename(__file__), 'r', encoding="utf-8") as in_script:
         script_data = in_script.read()
 
@@ -302,7 +516,7 @@ def add_credit_to_script(email, credit):
         out_script.write(final_output)
 
 def add_twitter_to_script(email, twitter):
-    string_to_add = email + ":" + twitter
+    string_to_add = '"' + email + '":"' + twitter + '",'
     with open(os.path.basename(__file__), 'r', encoding="utf-8") as in_script:
         script_data = in_script.read()
 
@@ -314,7 +528,7 @@ def add_twitter_to_script(email, twitter):
         out_script.write(final_output)
 
 def add_url_to_script(email, url):
-    string_to_add = email + ":" + url
+    string_to_add = '"' + email + '":"' + url + '",'
     with open(os.path.basename(__file__), 'r', encoding="utf-8") as in_script:
         script_data = in_script.read()
 
@@ -327,7 +541,7 @@ def add_url_to_script(email, url):
 
 def gather_bug_list(apikey):
     try:
-        bugs = requests.get(search_url, headers=HEADERS, params={'api_key':apikey, 'include_fields': 'id, product'}).json()
+        bugs = requests.get(search_url, headers=HEADERS, params={'api_key':apikey, 'include_fields': 'id, product, cf_last_resolved, creator, creation_time'}).json()
     except requests.exceptions.RequestException as e:
         print(e)
         sys.exit(1)
