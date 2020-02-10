@@ -18,7 +18,7 @@ advisories:
      impact: moderate
      reporter: Jurgen Gaeremyn
      description: |
-       If a user saved passwords before Thunderbird 60 and then later set a master password, an unencrypted file of passwords is not deleted andremains accessible. The new master password is added only on the new format of password file, and the end result exposes previously saved password data outside of user expectations.
+       If a user saved passwords before Thunderbird 60 and then later set a master password, an unencrypted copy of these passwords is still accessible. This is because the older stored password file was not deleted when the data was copied to a new format starting in Thunderbird 60. The new master password is added only on the new file. This could allow the exposure of stored password data outside of user expectations.
      bugs:
        - url: 1606619
   CVE-2020-6795:
