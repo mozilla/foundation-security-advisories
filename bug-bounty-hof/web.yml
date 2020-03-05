@@ -1,4 +1,32 @@
 names:
+- name: "Mohammed Fayez Ahmed Albanna"
+  date: 2019-10-01
+  url: "https://www.linkedin.com/in/mohammedfayez"
+- name: "Arbaz Hussain"
+  date: 2019-10-01
+- name: "Shailesh Kumavat"
+  date: 2019-10-01
+  url: "https://twitter.com/KumavatShailesh"
+- name: "Aditra Andri Laksana"
+  date: 2019-10-01
+  url: "https://twitter.com/Wayc0de"
+- name: "Daniel Maksimovic"
+  date: 2019-10-01
+  url: "https://www.linkedin.com/in/daniel-maksimovic-73537882/"
+- name: "Alexander Nagy"
+  date: 2019-10-01
+  url: "https://axen-cyber.com/"
+- name: "Erlend Oftedal"
+  date: 2019-10-01
+  url: "https://twitter.com/webtonull"
+- name: "Onkar Sonawane"
+  date: 2019-10-01
+  url: "https://www.linkedin.com/in/onkar-sonawane-40a59118a/"
+- name: "Leo Starcevic"
+  date: 2019-10-01
+- name: "Yuji Tounai"
+  date: 2019-10-01
+  url: "https://twitter.com/yousukezan"
 - name: "Fredrik Nordberg Almroth"
   date: 2019-07-01
   url: "https://twitter.com/almroot"
@@ -121,6 +149,9 @@ names:
 - name: "James Kettle (PortSwigger Web Security)"
   date: 2018-01-01
   url: "https://skeletonscribe.net/"
+- name: "Johnathan Simon"
+  date: 2018-01-01
+  url: "http://johnathansimon.com"
 - name: "Hardik Makwana"
   date: 2018-01-01
 - name: "Wladimir Palant"
