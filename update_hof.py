@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# -*- coding: utf8 -*-
+
 import requests
 import argparse
 import pprint
@@ -257,6 +260,7 @@ def main():
         f.close()
 
     csvlog = open('contactlog.log', 'w')
+    paylog = open('paymentlog.log', 'w')
 
     bugs = gather_bug_list(args.apikey)
     hof_entries = []
@@ -277,8 +281,9 @@ def main():
         try:
             attachments = requests.get(attachment_url, headers=HEADERS, params={'api_key' : args.apikey}).json()['bugs'][bugid]
         except requests.exceptions.RequestException as e:
+            print ("Error in " + bugid)
             print (e)
-            sys.exit(1)
+            continue
 
         # attachment_breakout[0] = email
         # attachment_breakout[1] = paid
@@ -295,7 +300,9 @@ def main():
                 try:
                     attachment_breakout = attachment['description'].split(',')
                     award_date = datetime.strptime(attachment_breakout[4], '%Y-%m-%d')
-
+                    
+                    paylog.write(bugid + "," + str(award_date) + "," + str(attachment_breakout[1]) + "\n")
+                    
                     if begin_date < award_date < end_date:
                         if "@mozilla.com" in attachment_breakout[0]:
                             # Don't add Mozilla employees filing bugs under their work email to the HOF
@@ -358,7 +365,10 @@ def main():
                             data["url"] = "https://twitter.com/" + data["twitter"]
 
                         hof_entries.append(data)
-                        csvlog.write(attachment_breakout[0] + "," + data["name"] + "," + (data["url"] if 'url' in data else "") + "\n")
+                        try:
+                            csvlog.write(attachment_breakout[0] + "," + data["name"] + "," + (data["url"] if 'url' in data else "") + "\n")
+                        except:
+                            csvlog.write(bugid + " unicode error")
                         found_and_added = True
                 except:
                     import traceback
@@ -419,7 +429,10 @@ def main():
                 data["url"] = "https://twitter.com/" + data["twitter"]
 
             hof_entries.append(data)
-            csvlog.write(reporter_email + "," + data["name"] + "," + (data["url"] if 'url' in data else "") + "\n")
+            try:
+                csvlog.write(reporter_email + "," + data["name"] + "," + (data["url"] if 'url' in data else "") + "\n")
+            except:
+                csvlog.write(bugid + " unicode error")
             found_and_added = True
 
 
@@ -433,18 +446,21 @@ def main():
 
     hof_output = ""
     for data in hof_entries:
-        thisData = data["name"] + " " + data["quarter-string"]
-        if thisData in oneEntryPerQuarter:
-            continue
+        try:
+            thisData = data["name"] + " " + data["quarter-string"]
+            if thisData in oneEntryPerQuarter:
+                continue
 
-        oneEntryPerQuarter.add(thisData)
-        hof_output = hof_output + "- name: {}\n".format(data["name"])
-        hof_output = hof_output + "  date: {}\n".format(data["date"])
+            oneEntryPerQuarter.add(thisData)
+            hof_output = hof_output + "- name: {}\n".format(data["name"])
+            hof_output = hof_output + "  date: {}\n".format(data["date"])
 
-        if "twitter" in data:
-            hof_output = hof_output + "  twitter: {}\n".format(data["twitter"])
-        if "url" in data:
-            hof_output = hof_output + "  url: {}\n".format(data["url"])
+            if "twitter" in data:
+                hof_output = hof_output + "  twitter: {}\n".format(data["twitter"])
+            if "url" in data:
+                hof_output = hof_output + "  url: {}\n".format(data["url"])
+        except:
+            print("Could not write hof entry for ", data["name"])
 
     final_output = file_data[:6] +'\n' + hof_output.rstrip() + file_data[6:]
 
@@ -467,7 +483,7 @@ def define_dates(quarter, year):
     else:
         print("not a valid quarter")
         exit(1)
-    begin_date = datetime.strptime("{}-01-01" .format(2010), '%Y-%m-%d')
+    begin_date = datetime.strptime("{}-01-01" .format(2000), '%Y-%m-%d')
     end_date = datetime.strptime("{}-12-31" .format(2019), '%Y-%m-%d')
     return(begin_date, end_date)
 
