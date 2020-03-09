@@ -1,0 +1,67 @@
+## mfsa2020-10.yml
+announced: March 10, 2020
+impact: high
+fixed_in:
+- Thunderbird 68.6
+title: Security Vulnerabilities fixed in Thunderbird 68.6
+description: |
+    *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
+advisories:
+  CVE-2020-6805:
+    title: Use-after-free when removing data about origins
+    impact: high
+    reporter: Brian Carpenter
+    description: |
+      When removing data about an origin whose tab was recently closed, a use-after-free could occur in the Quota manager, resulting in a potentially exploitable crash.
+    bugs:
+      - url: 1610880
+  CVE-2020-6806:
+    title: 'BodyStream::OnInputStreamReady was missing protections against state confusion'
+    impact: high
+    reporter: Sergei Glazunov of Google Project Zero
+    description: |
+      By carefully crafting promise resolutions, it was possible to cause an out-of-bounds read off the end of an array resized during script execution. This could have led to memory corruption and a potentially exploitable crash.
+    bugs:
+      - url: 1612308
+  CVE-2020-6807:
+    title: Use-after-free in cubeb during stream destruction
+    impact: high
+    reporter: C.M.Chang
+    description: |
+      When a device was changed while a stream was about to be destroyed, the <code>stream-reinit</code> task may have been executed after the stream was destroyed, causing a use-after-free and a potentially exploitable crash.
+    bugs:
+      - url: 1614971
+  CVE-2020-6811:
+    title: Devtools' 'Copy as cURL' feature did not fully escape website-controlled data, potentially leading to command injection
+    impact: moderate
+    reporter: Ophir LOJKINE
+    description: |
+      The 'Copy as cURL' feature of Devtools' network tab did not properly escape the HTTP method of a request, which can be controlled by the website. If a user used the 'Copy as Curl' feature and pasted the command into a terminal, it could have resulted in command injection and arbitrary command execution.
+    bugs:
+      - url: 1607742
+  CVE-2019-20503:
+    title: Out of bounds reads in sctp_load_addresses_from_init
+    impact: moderate
+    reporter: Natalie Silvanovich of Google Project Zero
+    feed: false
+    description: |
+      The inputs to <code>sctp_load_addresses_from_init</code> are verified by <code>sctp_arethere_unrecognized_parameters</code>; however, the two functions handled parameter bounds differently, resulting in out of bounds reads when parameters are partially outside a chunk.
+    bugs:
+      - url: 1613765
+  CVE-2020-6812:
+    title: The names of AirPods with personally identifiable information were exposed to websites with camera or microphone permission
+    impact: moderate
+    reporter: Jan-Ivar Bruaroey
+    description: |
+      The first time AirPods are connected to an iPhone, they become named after the user's name by default (e.g. Jane Doe's AirPods.)  Websites with camera or microphone permission are able to enumerate device names, disclosing the user's name. To resolve this issue, Firefox added a special case that renames devices containing the substring 'AirPods' to simply 'AirPods'.
+    bugs:
+      - url: 1616661
+  CVE-2020-6814:
+    title: Memory safety bugs fixed in Thunderbird 68.6
+    impact: high
+    reporter: Mozilla developers
+    description: |
+      Mozilla developers Byron Campen, Jason Kratzer, and Christian Holler reported memory safety bugs present in Thunderbird 68.5. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1592078, 1604847, 1608256, 1612636, 1614339
+        desc: Memory safety bugs fixed in Thunderbird 68.6
