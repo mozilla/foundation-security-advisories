@@ -1,0 +1,105 @@
+## mfsa2020-08.yml
+announced: March 10, 2020
+impact: high
+fixed_in:
+- Firefox 74
+title: Security Vulnerabilities fixed in Firefox 74
+advisories:
+  CVE-2020-6805:
+    title: Use-after-free when removing data about origins
+    impact: high
+    reporter: Brian Carpenter
+    description: |
+      When removing data about an origin whose tab was recently closed, a use-after-free could occur in the Quota manager, resulting in a potentially exploitable crash.
+    bugs:
+      - url: 1610880
+  CVE-2020-6806:
+    title: 'BodyStream::OnInputStreamReady was missing protections against state confusion'
+    impact: high
+    reporter: Sergei Glazunov of Google Project Zero
+    description: |
+      By carefully crafting promise resolutions, it was possible to cause an out-of-bounds read off the end of an array resized during script execution. This could have lead to memory corruption and a potentially exploitable crash.
+    bugs:
+      - url: 1612308
+  CVE-2020-6807:
+    title: Use-after-free in cubeb during stream destruction
+    impact: high
+    reporter: C.M.Chang
+    description: |
+      When a device was changed while a stream was about to be destroyed, the <code>stream-reinit</code> task may have been executed after the stream was destroyed, causing a use-after-free and a potentially exploitable crash.
+    bugs:
+      - url: 1614971
+  CVE-2020-6808:
+    title: 'URL Spoofing via javascript: URL'
+    impact: moderate
+    reporter: Abdulrahman Alqabandi
+    description: |
+      When a JavaScript URL (javascript:) is evaluated and the result is a string, this string is parsed to create an HTML document, which is then presented. Previously, this document's URL (as reported by the document.location property, for example) was the originating javascript: URL which could lead to spoofing attacks; it is now correctly the URL of the originating document.
+    bugs:
+      - url: 1247968
+  CVE-2020-6809:
+    title: Web Extensions with the all-urls permission could access local files
+    impact: moderate
+    reporter: Jan Biniok
+    description: |
+      When a Web Extension had the all-urls permission and made a fetch request with a mode set to 'same-origin', it was possible for the Web Extension to read local files.
+    bugs:
+      - url: 1420296
+  CVE-2020-6810:
+    title: Focusing a popup while in fullscreen could have obscured the fullscreen notification
+    impact: moderate
+    reporter: Avi Drissman of the Chrome security team
+    description: |
+      After a website had entered fullscreen mode, it could have used a previously opened popup to obscure the notification that indicates the browser is in fullscreen mode. Combined with spoofing the browser chrome, this could have led to confusing the user about the current origin of the page and credential theft or other attacks.
+    bugs:
+      - url: 1432856
+  CVE-2020-6811:
+    title: Devtools' 'Copy as cURL' feature did not fully escape website-controlled data, potentially leading to command injection
+    impact: moderate
+    reporter: Ophir LOJKINE
+    description: |
+      The 'Copy as cURL' feature of Devtools' network tab did not properly escape the HTTP method of a request, which can be controlled by the website. If a user used the 'Copy as Curl' feature and pasted the command into a terminal, it could have resulted in command injection and arbitrary command execution.
+    bugs:
+      - url: 1607742
+  CVE-2019-20503:
+    title: Out of bounds reads in sctp_load_addresses_from_init
+    impact: moderate
+    reporter: Natalie Silvanovich of Google Project Zero
+    feed: false
+    description: |
+      The inputs to <code>sctp_load_addresses_from_init</code> are verified by <code>sctp_arethere_unrecognized_parameters</code>; however, the two functions handled parameter bounds differently, resulting in out of bounds reads when parameters are partially outside a chunk.
+    bugs:
+      - url: 1613765
+  CVE-2020-6812:
+    title: The names of AirPods with personally identifiable information were exposed to websites with camera or microphone permission
+    impact: moderate
+    reporter: Jan-Ivar Bruaroey
+    description: |
+      The first time AirPods are connected to an iPhone, they become named after the user's name by default (e.g. Jane Doe's AirPods.)  Websites with camera or microphone permission are able to enumerate device names, disclosing the user's name. To resolve this issue, Firefox added a special case that renames devices containing the substring 'AirPods' to simply 'AirPods'.
+    bugs:
+      - url: 1616661
+  CVE-2020-6813:
+    title: '@import statements in CSS could bypass the Content Security Policy nonce feature'
+    impact: low
+    reporter: Matheus Vrech
+    description: |
+      When protecting CSS blocks with the nonce feature of Content Security Policy, the @import statement in the CSS block could allow an attacker to inject arbitrary styles, bypassing the intent of the Content Security Policy.
+    bugs:
+      - url: 1605814
+  CVE-2020-6814:
+    title: Memory safety bugs fixed in Firefox 74 and Firefox ESR 68.6
+    impact: high
+    reporter: Mozilla developers
+    description: |
+      Mozilla developers Byron Campen, Jason Kratzer, and Christian Holler reported memory safety bugs present in Firefox 73 and Firefox ESR 68.5. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1592078, 1604847, 1608256, 1612636, 1614339
+        desc: Memory safety bugs fixed in Firefox 74 and Firefox ESR 68.6
+  CVE-2020-6815:
+    title: Memory and script safety bugs fixed in Firefox 74
+    impact: high
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers Jason Kratzer, Boris Zbarsky, Tyson Smith, and Alexandru Michis reported memory safety and script safety bugs present in Firefox 73. Some of these bugs showed evidence of memory corruption or escalation of privilege and we presume that with enough effort some of these could have been exploited to run arbitrary code.    bugs:
+      - url: 1181957, 1557732, 1557739, 1611457, 1612431
+        desc: Memory and script safety bugs fixed in Firefox 74
