@@ -2,8 +2,8 @@
 announced: February 11, 2020
 impact: high
 fixed_in:
-- Firefox ESR68.5
-title: Security Vulnerabilities fixed in Firefox ESR68.5
+- Firefox ESR 68.5
+title: Security Vulnerabilities fixed in Firefox ESR 68.5
 advisories:
   CVE-2020-6796:
     title: Missing bounds check on shared memory read in the parent process
