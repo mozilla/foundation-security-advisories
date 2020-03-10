@@ -18,7 +18,7 @@ advisories:
     impact: high
     reporter: Sergei Glazunov of Google Project Zero
     description: |
-      By carefully crafting promise resolutions, it was possible to cause an out-of-bounds read off the end of an array resized during script execution. This could have led to memory corruption and a potentially exploitable crash.
+      By carefully crafting promise resolutions, it was possible to cause an out-of-bounds read off the end of an array resized during script execution. This could have lead to memory corruption and a potentially exploitable crash.
     bugs:
       - url: 1612308
   CVE-2020-6807:
@@ -100,6 +100,7 @@ advisories:
     impact: high
     reporter: Mozilla developers and community
     description: |
-      Mozilla developers Jason Kratzer, Boris Zbarsky, Tyson Smith, and Alexandru Michis reported memory safety and script safety bugs present in Firefox 73. Some of these bugs showed evidence of memory corruption or escalation of privilege and we presume that with enough effort some of these could have been exploited to run arbitrary code.    bugs:
+      Mozilla developers Jason Kratzer, Boris Zbarsky, Tyson Smith, and Alexandru Michis reported memory safety and script safety bugs present in Firefox 73. Some of these bugs showed evidence of memory corruption or escalation of privilege and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
       - url: 1181957, 1557732, 1557739, 1611457, 1612431
         desc: Memory and script safety bugs fixed in Firefox 74
