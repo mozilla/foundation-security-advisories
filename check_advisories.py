@@ -44,6 +44,21 @@ REQUIRED_YAML_ADVISORY_FIELDS = (
     'reporter',
     'description',
 )
+PRODUCTS = (
+    'Firefox',
+    'Firefox ESR',
+    'Firefox Mobile',
+    'Firefox OS',
+    'Mozilla Suite',
+    'Netscape Portable Runtime',
+    'NSS',
+    'OpenH264',
+    'SeaMonkey',
+    'Seamonkey',
+    'Thunderbird',
+    'Thunderbird ESR',
+)
+VERSION_RE = re.compile(r'^[0-9]+(\.[0-9]+)*$')
 
 
 def mfsa_id_from_filename(filename):
@@ -147,6 +162,15 @@ def check_file(file_name):
     for field in required_fields:
         if field not in data:
             return 'The {0} field is required in the file metadata.'.format(field)
+
+    for product in data['fixed_in']:
+        # split the product and version number
+        p, v = product.rsplit(None, 1)
+        if p not in PRODUCTS:
+            return '{0} is not a known product name'.format(p)
+        if not VERSION_RE.search(v):
+            return 'Failed to parse "{}" as a version number'.format(v)
+
 
     if 'announced' in data:
         try:
