@@ -148,6 +148,10 @@ def check_file(file_name):
         if field not in data:
             return 'The {0} field is required in the file metadata.'.format(field)
 
+    for f in data['fixed_in']:
+        if "ESR" in f and "ESR " not in f:
+            return "When ESR is specified, it must be of the form 'Firefox ESR XX', not 'Firefox ESRXX' (Found '" + f + "')"
+
     if 'announced' in data:
         try:
             parsedate(data['announced']).date()
