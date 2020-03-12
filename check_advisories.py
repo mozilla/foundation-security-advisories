@@ -43,6 +43,7 @@ REQUIRED_YAML_ADVISORY_FIELDS = (
     'impact',
     'reporter',
     'description',
+    'bugs',
 )
 
 
