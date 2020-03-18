@@ -1,959 +1,1465 @@
 names:
+- name: Thomas Imbert
+  date: 2019-12-30
+  twitter: @masthoon
+  url: https://twitter.com/@masthoon
+- name: Anonymous
+  date: 2019-12-19
+- name: Michał Bentkowski
+  date: 2019-12-13
 - name: Abdulrahman Alqabandi
-  date: 2018-02-12
-- name: David Dworken
-  date: 2018-01-12
-- name: Francisco Alonso of NowSecure Research Team
-  date: 2018-01-25
-- name: Inko
-  date: 2018-01-12
+  date: 2019-12-09
+  twitter: @qab
+  url: https://twitter.com/@qab
+- name: Muhammad R. Maulana
+  date: 2019-12-09
+  twitter: @agamimaulana
+  url: https://twitter.com/@agamimaulana
+- name: Daniel Maksimovic
+  date: 2019-12-09
+  url: https://www.linkedin.com/in/daniel-maksimovic-73537882
+- name: Tushar Rawool
+  date: 2019-12-02
+  url: https://facebook.com/tkrawool
+- name: Matthew Somerville
+  date: 2019-12-02
+- name: Diego Calleja
+  date: 2019-11-26
+- name: Craig Disselkoen
+  date: 2019-11-25
+- name: Mohammed Fayez Ahmed Albanna
+  date: 2019-11-22
+  url: https://www.linkedin.com/in/mohammedfayez
+- name: Looben Yang
+  date: 2019-11-18
+- name: Julien Maladrie
+  date: 2019-11-18
+- name: Nils
+  date: 2019-11-18
+- name: Mikhail
+  date: 2019-11-18
+- name: Vladimir Metnew
+  date: 2019-11-14
+  twitter: @vladimir_metnew
+  url: https://twitter.com/@vladimir_metnew
+- name: Nikhil Mittal
+  date: 2019-11-05
+  twitter: @c0d3G33k
+  url: https://twitter.com/@c0d3G33k
+- name: Konark Modi of Cliqz GmbH
+  date: 2019-10-21
+  twitter: @konarkmodi
+  url: https://twitter.com/@konarkmodi
+- name: Matheus Vrech
+  date: 2019-10-16
+- name: Holger Fuhrmannek
+  date: 2019-10-07
+- name: Zhanjia Song
+  date: 2019-10-07
+- name: Guido Vranken
+  date: 2019-10-07
+- name: Alexander Nagy
+  date: 2019-10-01
+  url: https://axen-cyber.com
+- name: Guido Vranken
+  date: 2019-09-26
+- name: Nils
+  date: 2019-09-23
+- name: Anurag Jain
+  date: 2019-09-23
+  twitter: @csanuragjain
+  url: https://twitter.com/@csanuragjain
+- name: derision.t
+  date: 2019-09-16
+- name: James Lee
+  date: 2019-09-09
+  twitter: @Windowsrcer
+  url: https://twitter.com/@Windowsrcer
+- name: Paul Stone of Context Information Security
+  date: 2019-09-09
+- name: Prateek
+  date: 2019-09-09
+- name: Luan Herrera
+  date: 2019-09-03
+- name: Zhanjia Song
+  date: 2019-08-26
+- name: Francisco Alonso
+  date: 2019-08-26
+  twitter: @revskills
+  url: https://twitter.com/@revskills
+- name: Allyson O'Malley
+  date: 2019-08-26
+  twitter: @ally_o_malley
+  url: https://twitter.com/@ally_o_malley
+- name: Looben Yang
+  date: 2019-08-12
+- name: Seb Patane
+  date: 2019-08-05
+  twitter: @sebbity
+  url: https://twitter.com/@sebbity
+- name: Rakesh Mane
+  date: 2019-08-05
+  url: https://rakeshmane.com/
+- name: Taegeon Lee
+  date: 2019-08-05
+- name: Onkar Sonawane
+  date: 2019-08-05
+- name: Harry Gertos
+  date: 2019-07-31
+- name: Wladimir Palant
+  date: 2019-07-17
+- name: Gaurav Popalghat
+  date: 2019-07-17
+  twitter: @Gaurav_00000
+  url: https://twitter.com/@Gaurav_00000
+- name: Karthik Kumar reddy
+  date: 2019-07-16
+  url: http://linkedin.com/in/karthik-kumar-reddy-3b10b4128
+- name: Hanno Böck
+  date: 2019-07-15
+  url: https://hboeck.de/
+- name: Luigi Gubello
+  date: 2019-07-15
+  url: https://gubello.me
+- name: Mikhail
+  date: 2019-07-15
+- name: Brian Carpenter
+  date: 2019-07-01
+  twitter: @geeknik
+  url: https://twitter.com/@geeknik
+- name:  Linus Särud
+  date: 2019-06-24
+- name: Rakesh Mane
+  date: 2019-06-24
+  url: https://rakeshmane.com/
+- name: Abdulrahman Alqabandi
+  date: 2019-06-10
+  twitter: @qab
+  url: https://twitter.com/@qab
+- name: Gregory Smiley of Security Compass
+  date: 2019-06-10
+- name: James Lee
+  date: 2019-06-03
+  twitter: @Windowsrcer
+  url: https://twitter.com/@Windowsrcer
+- name: Niklas Baumstark
+  date: 2019-05-24
+- name: crixer
+  date: 2019-04-29
+- name: Tushar Rawool
+  date: 2019-04-22
+  url: https://facebook.com/tkrawool
+- name: Luật Nguyễn
+  date: 2019-04-22
+  twitter: l4wio
+  url: https://twitter.com/l4wio
+- name: Thomas Imbert
+  date: 2019-04-22
+  twitter: @masthoon
+  url: https://twitter.com/@masthoon
+- name: Andrey
+  date: 2019-04-18
+- name: Tzachy Horesh
+  date: 2019-04-09
+- name: Philip Okhonko
+  date: 2019-04-09
+- name: Ronald Crane
+  date: 2019-04-08
+  url: https://www.zippenhop.com/
+- name: jensvoid
+  date: 2019-04-01
+  twitter: @jensvoid
+  url: https://twitter.com/@jensvoid
+- name: Niklas Baumstark
+  date: 2019-03-21
+- name: Nils
+  date: 2019-03-11
+- name: Samuel Groß
+  date: 2019-03-11
+- name: Rojan Rijal
+  date: 2019-03-11
+- name: Aral
+  date: 2019-03-04
+- name: Joshua Graham of TSS & Brendan Scarvell
+  date: 2019-03-04
+- name: Bruno Keith and Niklas Baumstark from the Phoenhex Team
+  date: 2019-02-27
+- name: AaylaSecura1138
+  date: 2019-02-27
+- name: cgvwzq
+  date: 2019-02-19
+- name: mlfbrown
+  date: 2019-02-19
+- name: Mikhail
+  date: 2019-02-19
+- name: Brandon Wieser
+  date: 2019-02-19
+  url: www.cybersensei.io
+- name: Jianjun Chen
+  date: 2019-02-11
+  twitter: whucjj
+  url: https://twitter.com/whucjj
+- name: p4fg
+  date: 2019-02-11
+  twitter: @p4fg
+  url: https://twitter.com/@p4fg
+- name: Kalel
+  date: 2019-02-11
+- name: Ronald Crane
+  date: 2019-02-04
+  url: https://www.zippenhop.com/
+- name: Harry Gertos
+  date: 2019-01-28
+- name: Abdulrahman Alqabandi
+  date: 2019-01-28
+  twitter: @qab
+  url: https://twitter.com/@qab
+- name: Hanno Boeck
+  date: 2019-01-28
+  url: https://hboeck.de/
+- name: R at Zero Day LLC
+  date: 2019-01-07
+- name: Yaniv Frank with SophosLabs
+  date: 2019-01-07
+- name: Sree Visakh Jain (@sreevisakhjain)
+  date: 2018-12-28
+  url: https://www.wayanadweb.com
+- name: Clément Lavoillotte
+  date: 2018-12-17
+  twitter: @clavoillotte
+  url: https://twitter.com/@clavoillotte
+- name: James Lee
+  date: 2018-12-17
+  twitter: @Windowsrcer
+  url: https://twitter.com/@Windowsrcer
+- name: Jan Andre Ikenmeyer
+  date: 2018-12-17
+- name: Steven M Crane
+  date: 2018-12-17
+  twitter: @stevenmcrane 
+  url: https://twitter.com/@stevenmcrane 
+- name: Ruslan Habalov and Dario Weißer
+  date: 2018-11-26
+- name: Jack Wrenn
+  date: 2018-11-19
+  url: https://jswrenn.com/
+- name: Kalel
+  date: 2018-11-19
+- name: Björn Ruytenberg
+  date: 2018-11-12
+  url: https://bjornweb.nl/
+- name: Jens Gorontzi
+  date: 2018-11-12
+  url: https://koelner-pc-hilfe.de
+- name: Omair
+  date: 2018-11-12
+  url: https://krashconsulting.com
+- name: Diego Calleja
+  date: 2018-11-12
+- name: Atte Kettunen
+  date: 2018-11-12
+  twitter: @attekett
+  url: https://twitter.com/@attekett
+- name: Zhanjia Song
+  date: 2018-10-29
+- name: R at Zero Day LLC
+  date: 2018-10-23
+- name: Tim Hemel
+  date: 2018-10-15
+  url: www.securesoftware.nl
+- name: Ronald Crane
+  date: 2018-10-15
+  url: https://www.zippenhop.com/
+- name: Artur Osiński (Virtual_ManPL)
+  date: 2018-10-15
+- name: Jun Kokatsu
+  date: 2018-10-08
+  twitter: @shhnjk 
+  url: https://twitter.com/@shhnjk 
+- name: Eduard Wirch
+  date: 2018-10-08
+  url: https://ewirch.github.io/
+- name: Nils
+  date: 2018-09-17
+- name: James Lee of Kryptos Logic
+  date: 2018-09-17
+  twitter: @Windowsrcer
+  url: https://twitter.com/@Windowsrcer
+- name: Taegeon Lee
+  date: 2018-09-17
+- name: Clémentine Maurice
+  date: 2018-09-10
+  twitter: @BloodyTangerine
+  url: https://twitter.com/@BloodyTangerine
+- name: Max May
+  date: 2018-08-30
+- name: Looben Yang
+  date: 2018-08-30
+- name: Clavoillotte
+  date: 2018-08-30
+  twitter: @clavoillotte
+  url: https://twitter.com/@clavoillotte
+- name: Zhanjia Song
+  date: 2018-08-21
+- name: Ronald Crane
+  date: 2018-08-21
+  url: https://www.zippenhop.com/
+- name: Holger Fuhrmannek
+  date: 2018-08-21
+- name: Andrei Cristian Petcu
+  date: 2018-08-21
+- name: Yiğit Can YILMAZ
+  date: 2018-08-21
+- name: Jordi Chancel
+  date: 2018-08-09
+- name: Konark Modi of Cliqz GmbH
+  date: 2018-07-16
+  twitter: @konarkmodi
+  url: https://twitter.com/@konarkmodi
+- name: 1lastBr3ath
+  date: 2018-07-04
+- name: Jun Kokatsu
+  date: 2018-07-02
+  twitter: @shhnjk 
+  url: https://twitter.com/@shhnjk 
+- name: Anonymous
+  date: 2018-07-02
+- name: Ronald Crane
+  date: 2018-06-25
+  url: https://www.zippenhop.com/
+- name: Abdulrahman Alqabandi
+  date: 2018-06-18
+  twitter: @qab
+  url: https://twitter.com/@qab
+- name: Omair
+  date: 2018-06-05
+  url: https://krashconsulting.com
+- name: R at Zero Day LLC
+  date: 2018-06-04
+- name: Francisco Alonso
+  date: 2018-05-31
+  twitter: @revskills
+  url: https://twitter.com/@revskills
+- name: Nils
+  date: 2018-05-21
+- name: guyio
+  date: 2018-04-30
+- name: Jun Kokatsu
+  date: 2018-04-28
+  twitter: @shhnjk 
+  url: https://twitter.com/@shhnjk 
+- name: Wladimir Palant
+  date: 2018-04-24
+- name: Matt Koidin
+  date: 2018-04-02
+- name: Khalil Zhani
+  date: 2018-04-02
+- name: Masato Kinugawa
+  date: 2018-04-02
+- name: Wladimir Palant
+  date: 2018-03-28
+- name: A.
+  date: 2018-03-27
+- name: Nils
+  date: 2018-03-27
+- name: Ronald Crane
+  date: 2018-03-26
+  url: https://www.zippenhop.com/
+- name: xisigr
+  date: 2018-03-12
 - name: James Grant
   date: 2018-03-12
 - name: Jordi Chancel
-  date: 2018-02-12
-- name: Jun Kokatsu
-  date: 2018-02-26
-- name: Konark Modi
-  date: 2018-02-05
-- name: Looben Yang
-  date: 2018-01-12
-- name: Nils
-  date: 2018-01-22
-- name: Omair
-  date: 2018-01-22
-- name: Rob Wu [:robwu]
-  date: 2018-01-22
-- name: Ronen Zilberman
-  date: 2018-01-12
+  date: 2018-03-05
 - name: Root Object
   date: 2018-03-05
-- name: Tadj Youssouf
-  date: 2018-03-26
+  url: http://0days.engineer
+- name: Jun Kokatsu
+  date: 2018-02-26
+  twitter: @shhnjk 
+  url: https://twitter.com/@shhnjk 
+- name: Abdulrahman Alqabandi
+  date: 2018-02-12
+  twitter: @qab
+  url: https://twitter.com/@qab
+- name: rugk
+  date: 2018-02-08
+- name: Konark Modi of Cliqz GmbH
+  date: 2018-02-05
+  twitter: @konarkmodi
+  url: https://twitter.com/@konarkmodi
+- name: Francisco Alonso
+  date: 2018-01-25
+  twitter: @revskills
+  url: https://twitter.com/@revskills
 - name: Zhang Hanming from 360 Vulcan team
   date: 2018-01-25
-- name: mozillabugs
-  date: 2018-02-26
-- name: xisigr
-  date: 2018-03-12
-- name: "abbaolk"
-  date: 2017-10-01
-- name: "Abdulrahman Alqabandi"
-  date: 2017-10-01
-- name: "Daniel Jackson"
-  date: 2017-10-01
-- name: "Dhiraj Mishra"
-  date: 2017-10-01
-- name: "Ezra Caltum"
-  date: 2017-10-01
-- name: "Filipe Gomes"
-  date: 2017-10-01
-- name: "Holger Fuhrmannek"
-  date: 2017-10-01
-- name: "Jerry Decime"
-  date: 2017-10-01
-- name: "Jordi Chancel"
-  date: 2017-10-01
-- name: "Jun Kokatsu"
-  date: 2017-10-01
-- name: "Looben Yang"
-  date: 2017-10-01
-- name: "Muneaki Nishimura"
-  date: 2017-10-01
-- name: "Nils"
-  date: 2017-10-01
-- name: "Omair"
-  date: 2017-10-01
-- name: "Rayyan Bijoora"
-  date: 2017-10-01
-- name: "Ronald E.Crane"
-  date: 2017-10-01
-- name: "Zhang Hanming from 360 Vulcan team"
-  date: 2017-10-01
-- name: "Abdulrahman Alqabandi"
-  date: 2017-07-01
-- name: "Abhishek Arya"
-  date: 2017-07-01
-- name: "Eili Masami of Tachibana Lab"
-  date: 2017-07-01
-- name: "Filipe Gomes"
-  date: 2017-07-01
-- name: "Jack Will Zhani"
-  date: 2017-07-01
-- name: "Jose María Acuña"
-  date: 2017-07-01
-- name: "Jun Kokatsu"
-  date: 2017-07-01
-- name: "Khalil Zhani"
-  date: 2017-07-01
-- name: "Looben Yang"
-  date: 2017-07-01
-- name: "Nils"
-  date: 2017-07-01
-- name: "Raphael Saniyazov"
-  date: 2017-07-01
-- name: "Rhys Enniks"
-  date: 2017-07-01
-- name: "Ronald E.Crane"
-  date: 2017-07-01
-- name: "Wladimir Palant"
-  date: 2017-07-01
-- name: "Abhishek Arya"
-  date: 2017-04-01
-- name: "ak1t4"
-  date: 2017-04-01
-- name: "Ankita-Dhakar"
-  date: 2017-04-01
-- name: "Antonio Sanso"
-  date: 2017-04-01
-- name: "Arthur Edelstein"
-  date: 2017-04-01
-- name: "Atte Kettunen"
-  date: 2017-04-01
-- name: "Brian 'geeknik' Carpenter"
-  date: 2017-04-01
-- name: "Chamal De Silva"
-  date: 2017-04-01
-- name: "Falko Strenzke of cryptosource GmbH"
-  date: 2017-04-01
-- name: "Francisco Alonso of NowSecure Research Team"
-  date: 2017-04-01
-- name: "gharris"
-  date: 2017-04-01
-- name: "Holger Fuhrmannek"
-  date: 2017-04-01
-- name: "Jun Kokatsu"
-  date: 2017-04-01
-- name: "Looben Yang"
-  date: 2017-04-01
-- name: "Michał Bentkowski"
-  date: 2017-04-01
-- name: "Muneaki Nishimura"
-  date: 2017-04-01
-- name: "Nils"
-  date: 2017-04-01
-- name: "Nicolas Trippar of Zimperium zLabs"
-  date: 2017-04-01
-- name: "Oliver Wagner"
-  date: 2017-04-01
-- name: "Rafael Gieschke"
-  date: 2017-04-01
-- name: "Ron Crane"
-  date: 2017-04-01
-- name: "Samuel Erb"
-  date: 2017-04-01
-- name: "Samuel Groß"
-  date: 2017-04-01
-- name: "Seb Patane"
-  date: 2017-04-01
-- name: "Sergey"
-  date: 2017-04-01
-- name: "SkyLined"
-  date: 2017-04-01
-- name: "Takeshi Terada of Mitsui Bussan Secure Directions Inc."
-  date: 2017-04-01
-- name: "Tobias Klein"
-  date: 2017-04-01
-- name: "Tyler Hawkins"
-  date: 2017-04-01
-- name: "Yuji Tounai of NTT Communications"
-  date: 2017-04-01
-- name: "ak1t4"
-  date: 2017-01-01
-- name: "Atte Kettunen from OUSPG"
-  date: 2017-01-01
-- name: "Chamal De Silva"
-  date: 2017-01-01
-- name: "Chun Han Hsiao"
-  date: 2017-01-01
-- name: "Cody Crews"
-  date: 2017-01-01
-- name: "Filipe Gomes"
-  date: 2017-01-01
-- name: "Haosheng Wang"
-  date: 2017-01-01
-- name: "Garming Sam (Catalyst IT)"
-  date: 2017-01-01
-- name: "Jordi Chancel"
-  date: 2017-01-01
-- name: "Mario Gomes"
-  date: 2017-01-01
-- name: "Muhammad Hassham Nagori"
-  date: 2017-01-01
-- name: "Muneaki Nishimura"
-  date: 2017-01-01
-- name: "Nicolas Grégoire"
-  date: 2017-01-01
-- name: "Nils"
-  date: 2017-01-01
-- name: "Rh0"
-  date: 2017-01-01
-- name: "Ronald Crane"
-  date: 2017-01-01
-- name: "Tyler Hawkins"
-  date: 2017-01-01
-- name: "Wladimir Palant"
-  date: 2017-01-01
-- name: "Yasin Soliman"
-  date: 2017-01-01
-- name: "Abdulrahman Alqabandi"
-  date: 2016-10-01
-- name: "Andrew Krasichkov"
-  date: 2016-10-01
-- name: "Aral Yaman"
-  date: 2016-10-01
-- name: "Atte Kettunen from OUSPG"
-  date: 2016-10-01
-- name: "Brian 'geeknik' Carpenter"
-  date: 2016-10-01
-- name: "Carlos McEvilly"
-  date: 2016-10-01
-- name: "Filipe Gomes"
-  date: 2016-10-01
-- name: "Aliaksei Panamarenka"
-  date: 2016-10-01
-- name: "Griffin Francis"
-  date: 2016-10-01
-- name: "insertscript"
-  date: 2016-10-01
-- name: "John Whitlock"
-  date: 2016-10-01
-- name: "Kenney Lu"
-  date: 2016-10-01
-- name: "Looben Yang"
-  date: 2016-10-01
-- name: "Muneaki Nishimura"
-  date: 2016-10-01
-- name: "Nils"
-  date: 2016-10-01
-- name: "Raphael Shaniyazov"
-  date: 2016-10-01
-- name: "Ronald E. Crane"
-  date: 2016-10-01
-- name: "Wladimir Palant"
-  date: 2016-10-01
-- name: "Abdulrahman Alqabandi"
+- name: Rob Wu
+  date: 2018-01-22
+  url: https://robwu.nl
+- name: Omair
+  date: 2018-01-22
+  url: https://krashconsulting.com
+- name: Looben Yang
+  date: 2018-01-12
+- name: Inko
+  date: 2018-01-12
+- name: David Dworken
+  date: 2018-01-12
+- name: Nils
+  date: 2017-12-18
+- name: Jerry Decime
+  date: 2017-12-18
+  twitter: @declme
+  url: https://twitter.com/@declme
+- name: Anonymous
+  date: 2017-12-18
+- name: Dhiraj Mishra
+  date: 2017-12-18
+  twitter: @RandomDhiraj
+  url: https://twitter.com/@RandomDhiraj
+- name: Jun Kokatsu
+  date: 2017-12-18
+  twitter: @shhnjk 
+  url: https://twitter.com/@shhnjk 
+- name: Ronald Crane
+  date: 2017-12-04
+- name: Daniel Jackson
+  date: 2017-12-04
+- name: Filipe Gomes
+  date: 2017-11-20
+- name: Zhang Hanming from 360 Vulcan team
+  date: 2017-11-20
+- name: Looben Yang
+  date: 2017-11-20
+- name: Omair
+  date: 2017-11-13
+  url: https://krashconsulting.com
+- name: Mario Gomes
+  date: 2017-11-09
+  twitter: @netfuzzer
+  url: https://twitter.com/@netfuzzer
+- name: Muneaki Nishimura (a.k.a. nishimunea)
+  date: 2017-10-23
+- name: Khalil Zhani
+  date: 2017-10-11
+- name: Holger Fuhrmannek
+  date: 2017-10-09
+- name: Jordi Chancel
+  date: 2017-10-09
+- name: Rayyan Bijoora
+  date: 2017-10-09
+  url: https://facebook.com/Bijoora
+- name: Ezra Caltum
+  date: 2017-10-09
+- name: Abdulrahman Alqabandi
+  date: 2017-09-18
+  twitter: @qab
+  url: https://twitter.com/@qab
+- name: Ronald Crane
+  date: 2017-09-18
+- name: Nils
+  date: 2017-09-18
+- name: Jun Kokatsu
+  date: 2017-09-11
+  twitter: @shhnjk 
+  url: https://twitter.com/@shhnjk 
+- name: osé María Acuña Morgado
+  date: 2017-09-05
+  url: https://tecnoblog.guru/
+- name: Khalil Zhani
+  date: 2017-09-05
+- name: Raphael Saniyazov
+  date: 2017-08-29
+- name: Abhishek Arya
+  date: 2017-08-29
+- name: Jack Will
+  date: 2017-08-22
+- name: Filipe Gomes
+  date: 2017-07-31
+- name: Wladimir Palant
+  date: 2017-07-31
+- name: Tarek
+  date: 2017-07-24
+- name: Looben Yang
+  date: 2017-07-17
+- name: Rhys Enniks
+  date: 2017-07-17
+- name: Eili Masami of Tachibana Lab
+  date: 2017-07-10
+- name: José María Acuña Morgado
+  date: 2017-07-10
+  url: https://tecnoblog.guru/
+- name: Thanh Bui
+  date: 2017-06-22
+- name: Arthur Edelstein
+  date: 2017-06-19
+- name: Takeshi Terada of Mitsui Bussan Secure Directions Inc.
+  date: 2017-06-19
+  url: http://www.mbsd.jp/
+- name: Abhishek Arya
+  date: 2017-06-19
+- name: Ronald Crane
+  date: 2017-06-19
+- name: Nils
+  date: 2017-06-12
+- name: Yuji Tounai of NTT Communications
+  date: 2017-06-12
+  twitter: @yousukezan
+  url: https://twitter.com/@yousukezan
+- name: Jun Kokatsu
+  date: 2017-06-12
+  twitter: @shhnjk 
+  url: https://twitter.com/@shhnjk 
+- name: Antonio Sanso
+  date: 2017-06-05
+  twitter: @asanso
+  url: https://twitter.com/@asanso
+- name: F. Alonso revskills
+  date: 2017-06-05
+  twitter: @revskills
+  url: https://twitter.com/@revskills
+- name: Tobias Klein
+  date: 2017-06-05
+  url: http://www.trapkit.de/
+- name: Samuel Erb
+  date: 2017-06-05
+- name: Nicolas Trippar of Zimperium zLabs
+  date: 2017-06-05
+- name: Holger Fuhrmannek
+  date: 2017-05-19
+- name: Seb Petane
+  date: 2017-05-19
+  twitter: @sebbity
+  url: https://twitter.com/@sebbity
+- name: Michał Bentkowski
+  date: 2017-05-19
+- name: SkyLined
+  date: 2017-05-15
+  url: https://skylined.nl
+- name: Amit Sangra
+  date: 2017-05-09
+- name: Muneaki Nishimura (a.k.a. nishimunea)
+  date: 2017-04-24
+- name: Rafael Gieschke
+  date: 2017-04-24
+- name: Looben Yang
+  date: 2017-04-24
+- name: Falko Strenzke of cryptosource GmbH
+  date: 2017-04-17
+- name: Oliver Wagner
+  date: 2017-04-10
+- name: Atte Kettunen
+  date: 2017-04-10
+  twitter: @attekett
+  url: https://twitter.com/@attekett
+- name: Chamal De Silva
+  date: 2017-04-10
+- name: Samuel Groß
+  date: 2017-04-10
+- name: Jordi Chancel
+  date: 2017-03-31
+- name: Haosheng Wang
+  date: 2017-03-31
+  twitter: @fatal0_
+  url: https://twitter.com/@fatal0_
+- name: Zhou Yuyang
+  date: 2017-03-31
+- name: Chun Han Hsiao
+  date: 2017-03-31
+- name: Nils
+  date: 2017-03-31
+- name: Ronald Crane
+  date: 2017-03-31
+- name: Nicolas Grégoire of AGARRI
+  date: 2017-03-27
+  url: http://www.agarri.fr/
+- name: Chamal De Silva
+  date: 2017-03-27
+- name: Muneaki Nishimura (a.k.a. nishimunea)
+  date: 2017-03-21
+- name: Yasin Soliman
+  date: 2017-03-20
+- name: Holger Fuhrmannek
+  date: 2017-03-06
+- name: Rh0
+  date: 2017-03-06
+- name:  Abhishek Arya
+  date: 2017-02-22
+- name: Atte Kettunen
+  date: 2017-02-22
+  twitter: @attekett
+  url: https://twitter.com/@attekett
+- name: Looben Yang
+  date: 2017-02-14
+- name: Abdulrahman Alqabandi
+  date: 2017-02-13
+  twitter: @qab
+  url: https://twitter.com/@qab
+- name: Anonymous
+  date: 2017-02-13
+- name: André Bargull
+  date: 2017-01-30
+- name: Garming Sam and Douglas Bagnall (Catalyst IT)
+  date: 2017-01-30
+- name: Filipe Gomes
+  date: 2017-01-30
+- name: Aral Yaman
+  date: 2016-12-19
+- name: Atte Kettunen
+  date: 2016-12-19
+  twitter: @attekett
+  url: https://twitter.com/@attekett
+- name: Andrew Krasichkov
+  date: 2016-12-19
+- name: Ronald Crane
+  date: 2016-12-19
+- name: insertscript
+  date: 2016-12-19
+  twitter: @insertscript
+  url: https://twitter.com/@insertscript
+- name: Abdulrahman Alqabandi
+  date: 2016-12-19
+  twitter: @qab
+  url: https://twitter.com/@qab
+- name: Looben Yang
+  date: 2016-12-19
+- name: Wladimir Palant
+  date: 2016-12-19
+- name: Armin Razmjou
+  date: 2016-12-17
+  url: https://rawsec.net/
+- name: Muneaki Nishimura (a.k.a. nishimunea)
+  date: 2016-12-12
+- name: Filipe Gomes
+  date: 2016-11-28
+- name: Brian Carpenter of Geeknik Labs & Farm
+  date: 2016-11-28
+  twitter: @geeknik
+  url: https://twitter.com/@geeknik
+- name: Nils
+  date: 2016-11-07
+- name: Anonymous
+  date: 2016-11-07
+- name: Raphael Shaniyazov
+  date: 2016-10-10
+- name: q1@lastland.net
+  date: 2016-10-10
+- name: Abhishek Arya
+  date: 2016-10-03
+- name: Joshua Yabut
+  date: 2016-09-30
+- name: Knud
+  date: 2016-09-26
+  url: https://labs.f-secure.com/
+- name: Muneaki Nishimura (a.k.a. nishimunea)
+  date: 2016-09-26
+- name: Samuel Groß
+  date: 2016-09-26
+- name: Holger Fuhrmannek
+  date: 2016-09-12
+- name: Abhishek Arya
+  date: 2016-09-12
+- name: Yuyang Zhou
+  date: 2016-09-12
+- name: Jordi Chancel
+  date: 2016-09-12
+- name: Daniel D.
+  date: 2016-09-12
+- name: Ronald Crane
+  date: 2016-09-12
+- name: Nils
+  date: 2016-08-29
+- name: Abdulrahman Alqabandi
+  date: 2016-08-22
+  twitter: @qab
+  url: https://twitter.com/@qab
+- name: Brian 'geeknik' Carpenter
+  date: 2016-08-15
+- name: Mei Wang of GearTeam Qihoo 360.
+  date: 2016-08-15
+- name: Atte Kettunen
+  date: 2016-08-15
+  twitter: @attekett
+  url: https://twitter.com/@attekett
+- name: Looben Yang
+  date: 2016-08-15
+- name: Gustavo Grieco
+  date: 2016-08-08
+- name: Ken Okuyama
+  date: 2016-07-15
+- name: Rafay Baloch
+  date: 2016-07-15
+- name: Nikita Arykov - Security Architect at Pushwoosh Inc.
   date: 2016-07-01
-- name: "Abhishek Arya"
+- name: Jay Gilbert
   date: 2016-07-01
-- name: "Aleh Boitsau"
+- name:  Abdulrahman Alqabandi
   date: 2016-07-01
-- name: "Amir Saad"
+  twitter: @qab
+  url: https://twitter.com/@qab
+- name: Muneaki Nishimura 
   date: 2016-07-01
-- name: "Arne Swinnen"
+- name: Atte Kettunen 
   date: 2016-07-01
-- name: "Atte Kettunen from OUSPG"
-  date: 2016-07-01
-- name: "Daniel D."
-  date: 2016-07-01
-- name: "Fredrik Nordberg Almroth"
-  date: 2016-07-01
-- name: "Griffin Francis"
-  date: 2016-07-01
-- name: "Holger Fuhrmannek"
-  date: 2016-07-01
-- name: "Jay Gilbert"
-  date: 2016-07-01
-- name: "Jordi Chancel"
-  date: 2016-07-01
-- name: "Joshua Yabut"
-  date: 2016-07-01
-- name: "Karim Valiev"
-  date: 2016-07-01
-- name: "Ken Okuyama"
-  date: 2016-07-01
-- name: "Knud"
-  date: 2016-07-01
-- name: "Looben Yang"
-  date: 2016-07-01
-- name: "Lucio Corsa"
-  date: 2016-07-01
-- name: "Mei Wang of GearTeam Qihoo 360"
-  date: 2016-07-01
-- name: "Muneaki Nishimura"
-  date: 2016-07-01
-- name: "Nikita Arykov - Security Architect at Pushwoosh Inc."
-  date: 2016-07-01
-- name: "Nils"
-  date: 2016-07-01
-- name: "Rafay Baloch"
-  date: 2016-07-01
-- name: "Ronald E. Crane"
-  date: 2016-07-01
-- name: "Samuel GroÃŸ"
-  date: 2016-07-01
-- name: "Wladimir Palant"
-  date: 2016-07-01
-- name: "Zhou Yuyang"
-  date: 2016-07-01
-- name: "Abhishek Arya"
-  date: 2016-04-01
-- name: "Adel Afsharipour"
-  date: 2016-04-01
-- name: "Andrew Krasichkov"
-  date: 2016-04-01
-- name: "Aral Yaman"
-  date: 2016-04-01
-- name: "Mohamed Chamli"
-  date: 2016-04-01
-- name: "Daniel Tomescu"
-  date: 2016-04-01
-- name: "firehack"
-  date: 2016-04-01
-- name: "Georg Koppen"
-  date: 2016-04-01
-- name: "Griffin Francis"
-  date: 2016-04-01
-- name: "Hanno Boeck"
-  date: 2016-04-01
-- name: "Holger Fuhrmannek"
-  date: 2016-04-01
-- name: "Jordi Chancel"
-  date: 2016-04-01
-- name: "Jose Carlos Exposito Bueno"
-  date: 2016-04-01
-- name: "Looben Yang"
-  date: 2016-04-01
-- name: "Mario Gomes"
-  date: 2016-04-01
-- name: "Muhammed Gamal"
-  date: 2016-04-01
-- name: "Muneaki Nishimura"
-  date: 2016-04-01
-- name: "Nils"
-  date: 2016-04-01
-- name: "Rafael Gieschke"
-  date: 2016-04-01
-- name: "Sergey Bobrov"
-  date: 2016-04-01
-- name: "Shahar Albeck"
-  date: 2016-04-01
-- name: "sushi Anton Larsson"
-  date: 2016-04-01
-- name: "Takashi Suzuki"
-  date: 2016-04-01
-- name: "Tom Prince"
-  date: 2016-04-01
-- name: "Toni Huttunen"
-  date: 2016-04-01
-- name: "Vladimir Ivanov"
-  date: 2016-04-01
-- name: "Wladimir Palant"
-  date: 2016-04-01
-- name: "Yassine ABOUKIR"
-  date: 2016-04-01
-- name: "Zhou Yuyang"
-  date: 2016-04-01
-- name: "Abdulrahman Alqabandi"
-  date: 2016-01-01
-- name: "Abhishek Arya"
-  date: 2016-01-01
-- name: "Aki Helin"
-  date: 2016-01-01
-- name: "Alexander Klink"
-  date: 2016-01-01
-- name: "Chamal"
-  date: 2016-01-01
-- name: "Dominique Hazaël-Massieux"
-  date: 2016-01-01
-- name: "Frederic Besler @ LAF INTL"
-  date: 2016-01-01
-- name: "Frédéric Hoguin"
-  date: 2016-01-01
-- name: "Gustavo Grieco"
-  date: 2016-01-01
-- name: "Holger Fuhrmannek"
-  date: 2016-01-01
-- name: "James Clawson"
-  date: 2016-01-01
-- name: "Jason Pang"
-  date: 2016-01-01
-- name: "Jordi Chancel"
-  date: 2016-01-01
-- name: "Looben Yang"
-  date: 2016-01-01
-- name: "Luke Li"
-  date: 2016-01-01
-- name: "Muneaki Nishimura"
-  date: 2016-01-01
-- name: "musicDespiteEverything"
-  date: 2016-01-01
-- name: "Nicolas Golubovic"
-  date: 2016-01-01
-- name: "Nicolas Grégoire"
-  date: 2016-01-01
-- name: "Nils"
-  date: 2016-01-01
-- name: "Philipp Kewisch"
-  date: 2016-01-01
-- name: "Quarkslab security engineer Francis Gabriel"
-  date: 2016-01-01
-- name: "Ronald E. Crane"
-  date: 2016-01-01
-- name: "Sascha Just"
-  date: 2016-01-01
-- name: "Sergey"
-  date: 2016-01-01
-- name: "Tooru Fujisawa"
-  date: 2016-01-01
-- name: "Tsubasa Iinuma"
-  date: 2016-01-01
-- name: "Abhishek Arya"
-  date: 2015-10-01
-- name: "Aki Helin"
-  date: 2015-10-01
-- name: "André Bargull"
-  date: 2015-10-01
-- name: "Armin Razmdjou"
-  date: 2015-10-01
-- name: "Artur Osiński (Virtual_ManPL)"
-  date: 2015-10-01
-- name: "Atte Kettunen from OUSPG"
-  date: 2015-10-01
-- name: "Clement Lefevre"
-  date: 2015-10-01
-- name: "cgvwzq"
-  date: 2015-10-01
-- name: "Dougall Johnson"
-  date: 2015-10-01
-- name: "ediskonstantini"
-  date: 2015-10-01
-- name: "Hanno Boeck"
-  date: 2015-10-01
-- name: "Iaf Intel"
-  date: 2015-10-01
-- name: "Jordi Chancel"
-  date: 2015-10-01
-- name: "Joshua J. Drake"
-  date: 2015-10-01
-- name: "Looben Yang"
-  date: 2015-10-01
-- name: "Muneaki Nishimura"
-  date: 2015-10-01
-- name: "Ronald E. Crane"
-  date: 2015-10-01
-- name: "Scott Bell"
-  date: 2015-10-01
-- name: "Ucha Gobejishvili"
-  date: 2015-10-01
-- name: "Shinto K Anto"
-  date: 2015-10-01
-- name: "Abhishek Arya"
-  date: 2015-07-01
-- name: "Aki Helin"
-  date: 2015-07-01
-- name: "Armin Razmdjou"
-  date: 2015-07-01
-- name: "Atte Kettunen from OUSPG"
-  date: 2015-07-01
-- name: "Bas Venis"
-  date: 2015-07-01
-- name: "Cody Crews"
-  date: 2015-07-01
-- name: "Siraje Amarniss"
-  date: 2015-07-01
-- name: "Francisco Alonso of NowSecure Research Team"
-  date: 2015-07-01
-- name: "Gustavo Grieco"
-  date: 2015-07-01
-- name: "Holger Fuhrmannek"
-  date: 2015-07-01
-- name: "Iaf Intel"
-  date: 2015-07-01
-- name: "Jordi Chancel"
-  date: 2015-07-01
-- name: "Kaleemshaik"
-  date: 2015-07-01
-- name: "Khalil Zhani"
-  date: 2015-07-01
-- name: "Looben Yang"
-  date: 2015-07-01
-- name: "Mario Gomes"
-  date: 2015-07-01
-- name: "Mario Heiderich"
-  date: 2015-07-01
-- name: "Massimiliano Tomassoli"
-  date: 2015-07-01
-- name: "Muneaki Nishimura"
-  date: 2015-07-01
-- name: "musicDespiteEverything"
-  date: 2015-07-01
-- name: "Ronald E. Crane"
-  date: 2015-07-01
-- name: "Shally Li"
-  date: 2015-07-01
-- name: "SkyLined"
-  date: 2015-07-01
-- name: "Spandan Veggalam"
-  date: 2015-07-01
-- name: "Yossi Oren"
-  date: 2015-07-01
-- name: "Abhishek Arya"
-  date: 2015-04-01
-- name: "Aki Helin"
-  date: 2015-04-01
-- name: "André Bargull"
-  date: 2015-04-01
-- name: "Armin Razmdjou"
-  date: 2015-04-01
-- name: "Atte Kettunen from OUSPG"
-  date: 2015-04-01
-- name: "Clement Lefevre"
-  date: 2015-04-01
-- name: "Dougall Johnson"
-  date: 2015-04-01
-- name: "Hanno Boeck"
-  date: 2015-04-01
-- name: "Iaf Intel"
-  date: 2015-04-01
-- name: "Jordi Chancel"
-  date: 2015-04-01
-- name: "Joshua J. Drake"
-  date: 2015-04-01
-- name: "laf"
-  date: 2015-04-01
-- name: "Looben Yang"
-  date: 2015-04-01
-- name: "Muneaki Nishimura"
-  date: 2015-04-01
-- name: "Ronald E. Crane"
-  date: 2015-04-01
-- name: "Scott Bell"
-  date: 2015-04-01
-- name: "Ucha Gobejishvili"
-  date: 2015-04-01
-- name: "Abhishek Arya"
-  date: 2015-01-01
-- name: "Aki Helin"
-  date: 2015-01-01
-- name: "André Bargull"
-  date: 2015-01-01
-- name: "Armin Razmdjou"
-  date: 2015-01-01
-- name: "Atte Kettunen from OUSPG"
-  date: 2015-01-01
-- name: "bhati"
-  date: 2015-01-01
-- name: "David Chan"
-  date: 2015-01-01
-- name: "Enrique Rando"
-  date: 2015-01-01
-- name: "Hamza Bettache"
-  date: 2015-01-01
-- name: "Hanno Boeck"
-  date: 2015-01-01
-- name: "Holger Fuhrmannek"
-  date: 2015-01-01
-- name: "l.pontorieri"
-  date: 2015-01-01
-- name: "Joev"
-  date: 2015-01-01
-- name: "Jordi Chancel"
-  date: 2015-01-01
-- name: "Looben Yang"
-  date: 2015-01-01
-- name: "Marius Mlynski"
-  date: 2015-01-01
-- name: "Michal Zalewski"
-  date: 2015-01-01
-- name: "moz_bug_r_a4"
-  date: 2015-01-01
-- name: "Muneaki Nishimura"
-  date: 2015-01-01
-- name: "Nils"
-  date: 2015-01-01
-- name: "Pantrombka"
-  date: 2015-01-01
-- name: "Paul"
-  date: 2015-01-01
-- name: "Sergey"
-  date: 2015-01-01
-- name: "websec02"
-  date: 2015-01-01
-- name: "Abhishek Arya"
-  date: 2014-10-01
-- name: "Alex"
-  date: 2014-10-01
-- name: "berendjanwever"
-  date: 2014-10-01
-- name: "Check Point Vulnerability Research"
-  date: 2014-10-01
-- name: "Cody Crews"
-  date: 2014-10-01
-- name: "James Kettle"
-  date: 2014-10-01
-- name: "jkeks"
-  date: 2014-10-01
-- name: "lifeasageek"
-  date: 2014-10-01
-- name: "Looben Yang"
-  date: 2014-10-01
-- name: "Michal Zalewski"
-  date: 2014-10-01
-- name: "Mitchell Harper"
-  date: 2014-10-01
-- name: "Skylined"
-  date: 2014-10-01
-- name: "teterinis"
-  date: 2014-10-01
-- name: "Abhishek Arya"
-  date: 2014-07-01
-- name: "Antoine Delignat-Lavaud"
-  date: 2014-07-01
-- name: "Atte Kettunen from OUSPG"
-  date: 2014-07-01
-- name: "Michal Zalewski"
-  date: 2014-07-01
-- name: "regenrecht"
-  date: 2014-07-01
-- name: "Yu Dongsong"
-  date: 2014-07-01
-- name: "Abhishek Arya"
-  date: 2014-04-01
-- name: "Atte Kettunen"
-  date: 2014-04-01
-- name: "Cody Crews"
-  date: 2014-04-01
-- name: "Daniel DeFreez"
-  date: 2014-04-01
-- name: "Holger Fuhrmannek"
-  date: 2014-04-01
-- name: "James Kitchener"
-  date: 2014-04-01
-- name: "Jethro Beekman - Security Researcher at University of California - Berkeley"
-  date: 2014-04-01
-- name: "jkitch"
-  date: 2014-04-01
-- name: "Jordi Chancel"
-  date: 2014-04-01
-- name: "juhonurm"
-  date: 2014-04-01
-- name: "Karl Tomlinson"
-  date: 2014-04-01
-- name: "Looben Yang"
-  date: 2014-04-01
-- name: "Mariusz Mlynski"
-  date: 2014-04-01
-- name: "Nicolas Francois"
-  date: 2014-04-01
-- name: "shaheemirza"
-  date: 2014-04-01
-- name: "Zaza Crub"
-  date: 2014-04-01
-- name: "Abhishek Arya"
-  date: 2014-01-01
-- name: "Aki Helin"
-  date: 2014-01-01
-- name: "Atte Kettunen from OUSPG"
-  date: 2014-01-01
-- name: "Eric Seidel"
-  date: 2014-01-01
-- name: "Fabian Cuchietti"
-  date: 2014-01-01
-- name: "Holger Fuhrmannek"
-  date: 2014-01-01
-- name: "Mariusz Mlynski"
-  date: 2014-01-01
-- name: "Roee Hay"
-  date: 2014-01-01
-- name: "Tyson Smith"
-  date: 2014-01-01
-- name: "Abhishek Arya"
-  date: 2013-10-01
-- name: "Atte Kettunen from OUSPG"
-  date: 2013-10-01
-- name: "Chris"
-  date: 2013-10-01
-- name: "Cody Crews"
-  date: 2013-10-01
-- name: "Jay Turla"
-  date: 2013-10-01
-- name: "Jesse Schwartzentruber"
-  date: 2013-10-01
-- name: "Jordi Chancel"
-  date: 2013-10-01
-- name: "Sachin Shinde"
-  date: 2013-10-01
-- name: "Tyson Smith"
-  date: 2013-10-01
-- name: "Gabor Molnar"
-  date: 2013-10-01
-- name: "Holger Fuhrmannek"
-  date: 2013-10-01
-- name: "Masato Kinugawa"
-  date: 2013-10-01
-- name: "Abhishek Arya"
+  twitter: @attekett
+  url: https://twitter.com/@attekett
+- name: Aral Yaman
+  date: 2016-06-27
+- name: Abhishek Arya
+  date: 2016-06-27
+- name: Georg Koppen
+  date: 2016-06-27
+- name: Nils
+  date: 2016-06-27
+- name: Jordi Chancel
+  date: 2016-06-10
+- name: Gustavo Grieco
+  date: 2016-06-09
+- name: Abhishek Arya 
+  date: 2016-05-23
+- name: Jordi Chancel 
+  date: 2016-05-23
+- name: Toni Huttunen
+  date: 2016-05-16
+- name: firehack
+  date: 2016-05-16
+- name: Looben Yang
+  date: 2016-05-09
+- name: Rafael Gieschke
+  date: 2016-05-02
+- name: Holger Fuhrmannek
+  date: 2016-05-02
+- name: Hanno Böck
+  date: 2016-04-18
+  url: https://hboeck.de/
+- name: sushi Anton Larsson
+  date: 2016-04-18
+- name: Yuyang Zhou
+  date: 2016-04-18
+- name: Muneaki Nishimura (a.k.a. nishimunea)
+  date: 2016-04-11
+- name: Looben Yang 
+  date: 2016-04-08
+- name: Nils
+  date: 2016-03-28
+- name: Francisco Alonso (revskills)
+  date: 2016-03-28
+  twitter: @revskills
+  url: https://twitter.com/@revskills
+- name: Frederic Besler @ LAF INTL
+  date: 2016-03-28
+- name: Looben Yang
+  date: 2016-03-21
+- name: Sascha Just
+  date: 2016-03-21
+- name: Tsubasa Iinuma of Gehirn Inc.
+  date: 2016-03-14
+  twitter: @llamakko_cafe
+  url: https://twitter.com/@llamakko_cafe
+- name: Holger Fuhrmannek 
+  date: 2016-03-07
+- name: Holger Fuhrmannek
+  date: 2016-03-07
+- name: Chamal De Silva
+  date: 2016-03-07
+- name: Dominique Hazaël-Massieux
+  date: 2016-02-29
+- name: Jordi Chancel
+  date: 2016-02-29
+- name: Abdulrahman Alqabandi
+  date: 2016-02-22
+  twitter: @qab
+  url: https://twitter.com/@qab
+- name: Nicolas Golubovic
+  date: 2016-02-22
+- name: Quarkslab security engineer Francis Gabriel
+  date: 2016-02-22
+- name: Luke Li
+  date: 2016-02-19
+- name: Ronald Crane
+  date: 2016-02-16
+- name: James Clawson
+  date: 2016-02-16
+- name: Nicolas Grégoire of AGARRI
+  date: 2016-02-16
+  url: http://www.agarri.fr/
+- name: jasonpang2011
+  date: 2016-02-16
+- name: Philipp Kewisch
+  date: 2016-02-05
+- name: Frédéric Hoguin
+  date: 2016-02-05
+- name: Alexander Klink
+  date: 2016-02-01
+- name: Aki Helin
+  date: 2016-01-25
+- name: Muneaki Nishimura (a.k.a. nishimunea)
+  date: 2016-01-25
+- name: Gustavo Grieco
+  date: 2016-01-25
+- name: musicDespiteEverything
+  date: 2016-01-25
+- name: Tooru Fujisawa
+  date: 2016-01-25
+- name: Abhishek Arya
+  date: 2016-01-11
+- name: Aki Helin 
+  date: 2016-01-04
+- name: Ronald Crane
+  date: 2015-12-28
+- name: Ken Okuyama
+  date: 2015-12-28
+- name: Muneaki Nishimura (a.k.a. nishimunea)
+  date: 2015-12-21
+- name: Tsubasa Iinuma of Gehirn Inc.
+  date: 2015-12-14
+  twitter: @llamakko_cafe
+  url: https://twitter.com/@llamakko_cafe
+- name: Masato Kinugawa
+  date: 2015-12-04
+- name: Holger Fuhrmannek 
+  date: 2015-12-04
+- name: Muneaki Nishimura 
+  date: 2015-11-30
+- name: jmamj90
+  date: 2015-11-24
+- name: Ucha Gobejishvili
+  date: 2015-11-23
+- name: Looben Yang
+  date: 2015-11-20
+- name: cgvwzq
+  date: 2015-11-16
+- name: Artur Osiński (Virtual_ManPL)
+  date: 2015-11-09
+- name: Gustavo Grieco
+  date: 2015-11-02
+- name: Aki Helin 
+  date: 2015-10-26
+- name: Atte Kettunen 
+  date: 2015-10-26
+  twitter: @attekett
+  url: https://twitter.com/@attekett
+- name: Jordi Chancel
+  date: 2015-10-19
+- name: Frans Rosén
+  date: 2015-10-14
+- name: Michał Bentkowski
+  date: 2015-10-12
+- name: Abdulrahman Alqabandi
+  date: 2015-10-12
+  twitter: @qab
+  url: https://twitter.com/@qab
+- name: Shinto K Anto 
+  date: 2015-10-12
+  twitter: @5hint0
+  url: https://twitter.com/@5hint0
+- name: musicDespiteEverything
+  date: 2015-09-28
+- name: Ronald Crane
+  date: 2015-09-28
+- name: Muneaki Nishimura (a.k.a. nishimunea)
+  date: 2015-09-28
+- name: Jordi Chancel
+  date: 2015-09-24
+- name: Gustavo Grieco
+  date: 2015-09-21
+- name: Mario Heiderich
+  date: 2015-09-18
+- name: Spandan Veggalam
+  date: 2015-09-18
+- name: Looben Yang
+  date: 2015-09-14
+- name: Atte Kettunen
+  date: 2015-09-14
+  twitter: @attekett
+  url: https://twitter.com/@attekett
+- name: Armin Razmjou
+  date: 2015-08-31
+  url: https://rawsec.net/
+- name: Bas Venis
+  date: 2015-08-28
+- name: Khalil Zhani
+  date: 2015-08-28
+- name: Juho Nurminen
+  date: 2015-08-28
+- name: Mario Gomes
+  date: 2015-08-25
+  twitter: @netfuzzer
+  url: https://twitter.com/@netfuzzer
+- name: Holger Fuhrmannek
+  date: 2015-08-17
+- name: Siraje Amarniss of Fukusa
+  date: 2015-08-10
+  url: https://fukusa.nl
+- name: Frederic Besler @ LAF INTL
+  date: 2015-08-03
+- name: kaleemshaik786
+  date: 2015-07-27
+- name: Aki Helin
+  date: 2015-07-27
+- name: Massimiliano Tomassoli
+  date: 2015-07-20
+- name: Abhishek Arya
+  date: 2015-07-20
+- name: Yossi Oren
+  date: 2015-07-20
+- name: Francisco Alonso
+  date: 2015-07-20
+  twitter: @revskills
+  url: https://twitter.com/@revskills
+- name: Cody Crews
+  date: 2015-07-20
+- name: SkyLined
+  date: 2015-07-20
+  url: https://skylined.nl
+- name: André Bargull
+  date: 2015-06-29
+- name: Ron Crane
+  date: 2015-06-29
+- name: David Chan
+  date: 2015-06-29
+- name: Ronald Crane
+  date: 2015-06-16
+- name: Looben Yang
+  date: 2015-06-16
+- name: Aki Helin
+  date: 2015-06-15
+- name: Ucha Gobejishvili
+  date: 2015-06-15
+- name: Muneaki Nishimura (a.k.a. nishimunea)
+  date: 2015-06-15
+- name: Al Billings
+  date: 2015-05-28
+- name: Armin Razmjou
+  date: 2015-05-25
+  url: https://rawsec.net/
+- name: Frederic Besler @ LAF INTL
+  date: 2015-05-25
+- name: Atte Kettunen
+  date: 2015-05-25
+  twitter: @attekett
+  url: https://twitter.com/@attekett
+- name: Jann Horn
+  date: 2015-05-23
+- name: Joshua J. Drake
+  date: 2015-05-05
+- name: Abhishek Arya
+  date: 2015-04-27
+- name: Dougall Johnson
+  date: 2015-04-27
+- name: Scott Bell
+  date: 2015-04-20
+- name:  Muneaki Nishimura 
+  date: 2015-04-13
+- name: Jordi Chancel 
+  date: 2015-04-06
+- name: Hanno Boeck 
+  date: 2015-04-06
+  url: https://hboeck.de/
+- name: Armin Razmdjou 
+  date: 2015-04-06
+  url: https://rawsec.net/
+- name: Muneaki Nishimura
+  date: 2015-04-06
+- name: Looben Yang
+  date: 2015-03-30
+- name: Aki Helin
+  date: 2015-03-23
+- name: Paul
+  date: 2015-03-23
+- name: Mariusz Mlynski
+  date: 2015-03-23
+- name: l.pontorieri
+  date: 2015-03-16
+- name: Nils
+  date: 2015-03-16
+- name: Abhishek Arya
+  date: 2015-03-16
+- name: Muneaki Nishimura
+  date: 2015-03-09
+- name: Hanno Boeck 
+  date: 2015-03-09
+  url: https://hboeck.de/
+- name: Takeshi Terada of Mitsui Bussan Secure Directions Inc.
+  date: 2015-03-02
+  url: http://www.mbsd.jp/
+- name: Michal Zalewski
+  date: 2015-02-25
+  url: http://lcamtuf.coredump.cx/
+- name: Aki Helin 
+  date: 2015-02-23
+- name: Armin Razmjou
+  date: 2015-02-23
+  url: https://rawsec.net/
+- name: pantrombka
+  date: 2015-02-23
+- name: joev
+  date: 2015-02-19
+- name: André Bargull
+  date: 2015-02-09
+- name: Hanno Böck
+  date: 2015-02-09
+  url: https://hboeck.de/
+- name: Enrique Rando
+  date: 2015-02-09
+- name: Atte Kettunen
+  date: 2015-01-30
+  twitter: @attekett
+  url: https://twitter.com/@attekett
+- name: Holger Fuhrmannek
+  date: 2015-01-26
+- name: Armin Razmdjou
+  date: 2015-01-26
+  url: https://rawsec.net/
+- name: moz_bug_r_a4
+  date: 2015-01-26
+- name: Jordi Chancel
+  date: 2015-01-12
+- name: Muneaki Nishimura (a.k.a. nishimunea)
+  date: 2015-01-12
+- name: Muneaki Nishimura (a.k.a. nishimunea)
+  date: 2014-12-22
+- name: Mitchell Harper
+  date: 2014-12-22
+  twitter: @HarperMitchell
+  url: https://twitter.com/@HarperMitchell
+- name: Looben Yang
+  date: 2014-12-15
+- name: Abhishek Arya
+  date: 2014-12-12
+- name: Cody Crews
+  date: 2014-12-08
+- name: Atte Kettunen
+  date: 2014-11-20
+  twitter: @attekett
+  url: https://twitter.com/@attekett
+- name: jkeks
+  date: 2014-11-10
+- name: lifeasageek
+  date: 2014-11-10
+- name: SkyLined
+  date: 2014-11-10
+  url: https://skylined.nl
+- name: Brian Smith
+  date: 2014-11-08
+  url: https://briansmith.org/
+- name: Michal Zalewski
+  date: 2014-11-03
+  url: http://lcamtuf.coredump.cx/
+- name: Antoine Delignat-Lavaud
+  date: 2014-09-29
+  url: https://antoine.delignat-lavaud.fr
+- name: Abhishek Arya
+  date: 2014-09-29
+- name: Holger Fuhrmannek
+  date: 2014-09-08
+- name: Atte Kettunen
+  date: 2014-08-25
+  twitter: @attekett
+  url: https://twitter.com/@attekett
+- name: Michal Zalewski
+  date: 2014-08-25
+  url: http://lcamtuf.coredump.cx/
+- name: Yu Dongsong
+  date: 2014-08-11
+- name: Looben Yang
+  date: 2014-08-04
+- name: regenrecht working with HP's Zero Day Initiative
+  date: 2014-08-04
+- name: Tyson Smith
+  date: 2014-07-28
+- name: Jethro Beekman - Security Researcher at University of California - Berkeley
+  date: 2014-07-02
+- name: Tyson Smith
+  date: 2014-06-25
+- name: blinky
+  date: 2014-06-17
+- name: Jordi Chancel
+  date: 2014-06-16
+- name: James Kitchener
+  date: 2014-06-16
+- name: Abhishek Arya
+  date: 2014-06-04
+- name: Looben Yang
+  date: 2014-06-02
+- name: Cody Crews
+  date: 2014-06-02
+- name: Nicolas Francois
+  date: 2014-05-19
+- name: Nils
+  date: 2014-05-15
+- name: Atte Kettunen
+  date: 2014-05-12
+  twitter: @attekett
+  url: https://twitter.com/@attekett
+- name: Holger Fuhrmannek
+  date: 2014-04-28
+- name: Mariusz Mlynski
+  date: 2014-04-21
+- name: Gábor Molnár
+  date: 2014-04-14
+- name: Eric Seidel
+  date: 2014-03-31
+- name: Mariusz Mlynski
+  date: 2014-03-31
+- name: Atte Kettunen
+  date: 2014-03-24
+  twitter: @attekett
+  url: https://twitter.com/@attekett
+- name: Aki Helin
+  date: 2014-03-17
+- name: Abhishek Arya
+  date: 2014-03-17
+- name: Roee Hay
+  date: 2014-02-24
+- name: Juho Nurminen
+  date: 2014-02-24
+  twitter: @jupenur
+  url: https://twitter.com/@jupenur
+- name: Holger Fuhrmannek
+  date: 2014-02-03
+- name: Masato Kinugawa
+  date: 2014-02-03
+- name: Tyson Smith
+  date: 2014-02-03
+- name: TPS
+  date: 2014-01-16
+- name: Jordi Chancel
+  date: 2013-12-16
+- name: Tyson Smith
+  date: 2013-12-09
+- name: Abhishek Arya
+  date: 2013-11-25
+- name: Atte Kettunen
+  date: 2013-11-18
+  twitter: @attekett
+  url: https://twitter.com/@attekett
+- name: jdschwa
+  date: 2013-11-18
+- name: Chris
+  date: 2013-11-06
+- name: sachin shinde
+  date: 2013-11-04
+- name: Cody Crews
+  date: 2013-11-04
+- name: Masato Kinugawa
+  date: 2013-10-16
+- name: Abhishek Arya
+  date: 2013-09-30
+- name: lifeasageek
+  date: 2013-09-30
+- name: Cody Crews
+  date: 2013-09-30
+- name: Takeshi Terada of Mitsui Bussan Secure Directions Inc.
+  date: 2013-09-09
+  url: http://www.mbsd.jp/
+- name: Aki Helin
+  date: 2013-09-09
+- name: Atte Kettunen
+  date: 2013-09-09
+  twitter: @attekett
+  url: https://twitter.com/@attekett
+- name: Scott Bell
+  date: 2013-09-09
+- name: Jordi Chancel
+  date: 2013-07-29
+- name: Context Information Security
+  date: 2013-07-22
+- name: Sebas (@0xroot)
+  date: 2013-07-22
+  url: https://bishopfox.com/
+- name: Seb Patane
+  date: 2013-07-15
+  twitter: @sebbity
+  url: https://twitter.com/@sebbity
+- name: Holger Fuhrmannek
   date: 2013-07-01
-- name: "Ash"
-  date: 2013-07-01
-- name: "Atte Kettunen from OUSPG"
-  date: 2013-07-01
-- name: "Context Information Security"
-  date: 2013-07-01
-- name: "federico lanusse"
-  date: 2013-07-01
-- name: "miaubiz"
-  date: 2013-07-01
-- name: "Seb Patane"
-  date: 2013-07-01
-- name: "Aki Helin"
+- name: Atte Kettunen
+  date: 2013-06-17
+  twitter: @attekett
+  url: https://twitter.com/@attekett
+- name: federico lanusse
+  date: 2013-06-17
+- name: Aki Helin
+  date: 2013-06-10
+- name: Fabián Cuchietti
+  date: 2013-06-03
+- name: Abhishek Arya
+  date: 2013-06-03
+- name: Benjamin Kunz Mejri
+  date: 2013-06-03
+  url: https://www.vulnerability-lab.com
+- name: Paul Stone of Context Information Security
+  date: 2013-05-23
+- name: Johnathan Kuskos
+  date: 2013-05-20
+- name: moz_bug_r_a4
+  date: 2013-05-16
+- name: Mariusz Mlynski
+  date: 2013-05-15
+- name: Seb Patane
+  date: 2013-05-15
+  twitter: @sebbity
+  url: https://twitter.com/@sebbity
+- name: Nils
+  date: 2013-04-14
+- name: Robert Kugler
   date: 2013-04-01
-- name: "Ash"
-  date: 2013-04-01
-- name: "Atte Kettunen from OUSPG"
-  date: 2013-04-01
-- name: "Benjamin Kunz Mejri"
-  date: 2013-04-01
-- name: "Cody Crews"
-  date: 2013-04-01
-- name: "federico lanusse"
-  date: 2013-04-01
-- name: "Harsha Boppana"
-  date: 2013-04-01
-- name: "Johnathan Kuskos"
-  date: 2013-04-01
-- name: "Jordi Chancel"
-  date: 2013-04-01
-- name: "Mariusz Mlynski"
-  date: 2013-04-01
-- name: "Nils"
-  date: 2013-04-01
-- name: "Seb Patane"
-  date: 2013-04-01
-- name: "Abhishek Arya"
-  date: 2013-01-01
-- name: "Ash"
-  date: 2013-01-01
-- name: "Cody Crews"
-  date: 2013-01-01
-- name: "Frederic Hoguin"
-  date: 2013-01-01
-- name: "Fourteenforty Research Institute"
-  date: 2013-01-01
-- name: "Nils"
-  date: 2013-01-01
-- name: "Robert Kugler"
-  date: 2013-01-01
-- name: "Seb Patane"
-  date: 2013-01-01
-- name: "Abhishek Arya"
+- name: Abhishek Arya
+  date: 2013-03-25
+- name: Cody Crews
+  date: 2013-03-25
+- name: Frédéric Hoguin
+  date: 2013-03-11
+- name: Nils
+  date: 2013-03-04
+- name: Holger Fuhrmannek
+  date: 2013-03-04
+- name: Fourteenforty Research Institute Japan
+  date: 2013-03-04
+- name: Scott Bell
+  date: 2013-02-04
+- name: Mariusz Mlynski
+  date: 2013-01-18
+- name: split with Chris McGowan and Michal Zalewski
+  date: 2013-01-09
+- name: Chris McGowen
+  date: 2013-01-08
+- name: ISHIKAWA, Chiaki
+  date: 2013-01-07
+- name: miaubiz
+  date: 2013-01-07
+- name: Atte Kettunen
+  date: 2013-01-07
+  twitter: @attekett
+  url: https://twitter.com/@attekett
+- name: Atte Kettunen
+  date: 2012-12-17
+  twitter: @attekett
+  url: https://twitter.com/@attekett
+- name: Abhishek Arya
+  date: 2012-12-17
+- name: miaubiz
+  date: 2012-12-10
+- name: Mariusz Mlynski
+  date: 2012-12-10
+- name: Arthur Gerkis
+  date: 2012-12-10
+- name: Masato Kinugawa
+  date: 2012-12-03
+- name: Michal Zalewski
+  date: 2012-11-19
+  url: http://lcamtuf.coredump.cx/
+- name: Antoine Delignat-Lavaud
+  date: 2012-10-18
+  url: https://antoine.delignat-lavaud.fr
+- name: alice0775
   date: 2012-10-01
-- name: "Antoine Delignat-Lavaud"
+- name: breen.machine
   date: 2012-10-01
-- name: "Arthur Gerkis"
-  date: 2012-10-01
-- name: "Atte Kettunen"
-  date: 2012-10-01
-- name: "Breen Machine"
-  date: 2012-10-01
-- name: "Cody Crews"
-  date: 2012-10-01
-- name: "Michal Zalewski"
-  date: 2012-10-01
-- name: "Mariusz Mlynski"
-  date: 2012-10-01
-- name: "Masato Kinugawa"
-  date: 2012-10-01
-- name: "miaubiz"
-  date: 2012-10-01
-- name: "Nils"
-  date: 2012-10-01
-- name: "Abhishek Arya"
-  date: 2012-07-01
-- name: "Alice0775 White"
-  date: 2012-07-01
-- name: "Arthur Gerkis"
-  date: 2012-07-01
-- name: "Atte Kettunen from OUSPG"
-  date: 2012-07-01
-- name: "Colby Russell"
-  date: 2012-07-01
-- name: "Frédéric Hoguin"
-  date: 2012-07-01
-- name: "Frederik Braun"
-  date: 2012-07-01
-- name: "Juliano Rizzo and Thai Duong"
-  date: 2012-07-01
-- name: "Mariusz Mlynski"
-  date: 2012-07-01
-- name: "miaubiz"
-  date: 2012-07-01
-- name: "microrffr"
-  date: 2012-07-01
-- name: "Ms2ger"
-  date: 2012-07-01
-- name: "Robert Kugler"
-  date: 2012-07-01
-- name: "Scott Bell"
-  date: 2012-07-01
-- name: "Sevenspade"
-  date: 2012-07-01
-- name: "Abhishek Arya"
-  date: 2012-04-01
-- name: "Adam Barth"
-  date: 2012-04-01
-- name: "Arthur Gerkis"
-  date: 2012-04-01
-- name: "Atte Kettunen from OUSPG"
-  date: 2012-04-01
-- name: "James Forshaw"
-  date: 2012-04-01
-- name: "Karthikeyan Bhargavan"
-  date: 2012-04-01
-- name: "Mario Heiderich"
-  date: 2012-04-01
-- name: "Mariusz Mlynski"
-  date: 2012-04-01
-- name: "Matias Juntunen"
-  date: 2012-04-01
-- name: "Soroush Dalili"
-  date: 2012-04-01
-- name: "Aki Helin"
-  date: 2012-01-01
-- name: "Atte Kettunen from OUSPG"
-  date: 2012-01-01
-- name: "Chris McGowen"
-  date: 2012-01-01
-- name: "Jeroen van der Gun"
-  date: 2012-01-01
-- name: "Kaspar Brand"
-  date: 2012-01-01
-- name: "Mariusz Mlynski"
-  date: 2012-01-01
-- name: "Michal Zalewski"
-  date: 2012-01-01
-- name: "Ms2ger"
-  date: 2012-01-01
-- name: "Soroush Dalili"
-  date: 2012-01-01
-- name: "Aki Helin"
-  date: 2011-10-01
-- name: "Vitaly Nevgen"
-  date: 2011-10-01
-- name: "Jordi Chancel"
-  date: 2011-10-01
-- name: "Nicolas Grégoire"
-  date: 2011-10-01
-- name: "Paul Stone"
-  date: 2011-10-01
-- name: "sczimmer"
-  date: 2011-10-01
-- name: "Soroush Dalili"
-  date: 2011-10-01
-- name: "Team sutegoma2 - Japanese CTF team from AVTOKYO."
-  date: 2011-10-01
-- name: "Ahu"
-  date: 2011-07-01
-- name: "Aral Yaman"
-  date: 2011-07-01
-- name: "Ben Hawkes"
-  date: 2011-07-01
-- name: "Blair Strang"
-  date: 2011-07-01
-- name: "Jordi Chancel"
-  date: 2011-07-01
-- name: "Marc Schoenefeld"
-  date: 2011-07-01
-- name: "Mariusz Mlynski"
-  date: 2011-07-01
-- name: "Mark Kaplan"
-  date: 2011-07-01
-- name: "Paul Stone"
-  date: 2011-07-01
-- name: "Rh0"
-  date: 2011-07-01
-- name: "sczimmer"
-  date: 2011-07-01
-- name: "Yosuke HASEGAWA"
-  date: 2011-07-01
-- name: "Aki Helin"
-  date: 2011-04-01
-- name: "Chris Rohlf"
-  date: 2011-04-01
-- name: "David Rees"
-  date: 2011-04-01
-- name: "Haifei Li"
-  date: 2011-04-01
-- name: "Mariusz Mlynski"
-  date: 2011-04-01
-- name: "Michael Jordon"
-  date: 2011-04-01
-- name: "Mike Cardwell"
-  date: 2011-04-01
-- name: "nasalislarvatus3000"
-  date: 2011-04-01
-- name: "Paul Stone"
-  date: 2011-04-01
-- name: "Rh0"
-  date: 2011-04-01
-- name: "secenv"
-  date: 2011-04-01
-- name: "Thai Dong"
-  date: 2011-04-01
-- name: "Vivekanand Bolajwar"
-  date: 2011-04-01
-- name: "ACROS"
-  date: 2011-01-01
-- name: "Aki Helin"
-  date: 2011-01-01
-- name: "Christian Holler"
-  date: 2011-01-01
-- name: "Daniel Kozlowski"
-  date: 2011-01-01
-- name: "db"
-  date: 2011-01-01
-- name: "Jan de Mooij"
-  date: 2011-01-01
-- name: "Jordi Chancel"
-  date: 2011-01-01
-- name: "Ian Beer"
-  date: 2011-01-01
-- name: "irsdl"
-  date: 2011-01-01
-- name: "Martin Barbella"
-  date: 2011-01-01
-- name: "shutdown"
-  date: 2011-01-01
-- name: "Soroush Dalili"
-  date: 2011-01-01
-- name: "Zach Hoffman"
-  date: 2011-01-01
-- name: "Alex Miller"
-  date: 2010-10-01
-- name: "Aki Helin"
-  date: 2010-10-01
-- name: "Christian Holler"
-  date: 2010-10-01
-- name: "Dirk Heinrich"
-  date: 2010-10-01
-- name: "echo"
-  date: 2010-10-01
-- name: "gfleischer"
-  date: 2010-10-01
-- name: "Giorgio Maone"
-  date: 2010-10-01
-- name: "Jan de Mooij"
-  date: 2010-10-01
-- name: "Jordi Chancel"
-  date: 2010-10-01
-- name: "Konrad"
-  date: 2010-10-01
-- name: "Martin Barbella"
-  date: 2010-10-01
-- name: "Michal Zalewski"
-  date: 2010-10-01
-- name: "timeless"
-  date: 2010-10-01
-- name: "team509"
-  date: 2010-10-01
-- name: "Zach Hoffman"
-  date: 2010-10-01
-- name: "David Lin-Shung Huang"
-  date: 2010-07-01
-- name: "Gregory Fleischer"
-  date: 2010-07-01
-- name: "Marc Schoenefeld"
-  date: 2010-07-01
-- name: "Sergey Glazunov"
-  date: 2010-07-01
-- name: "Siddharth Agarwal"
-  date: 2010-07-01
+- name: Abhishek Arya
+  date: 2012-09-27
+- name: miaubiz
+  date: 2012-09-24
+- name: Atte Kettunen
+  date: 2012-09-22
+  twitter: @attekett
+  url: https://twitter.com/@attekett
+- name: Mariusz Mlynski
+  date: 2012-09-20
+- name: Robert Kugler
+  date: 2012-09-18
+- name: Ms2ger of Igalia
+  date: 2012-08-27
+  url: https://twitter.com/Ms2ger
+- name: Arthur Gerkis
+  date: 2012-08-22
+- name: Soroush Dalili
+  date: 2012-08-15
+- name: Jordi Chancel
+  date: 2012-08-14
+- name: Thai "thaidn" Duong
+  date: 2012-08-04
+  twitter: @xorninja
+  url: https://twitter.com/@xorninja
+- name: microrffr
+  date: 2012-07-30
+- name: Frédéric Hoguin
+  date: 2012-07-20
+- name: Mariusz Mlynski
+  date: 2012-06-28
+- name: Karthikeyan Bhargavan
+  date: 2012-06-26
+- name: Mario Heiderich
+  date: 2012-06-15
+- name: Arthur Gerkis
+  date: 2012-06-10
+- name: Abhishek Arya
+  date: 2012-06-02
+- name: Adam Barth
+  date: 2012-05-04
+- name: Paul Stone of Context Information Security
+  date: 2012-05-03
+- name: James Forshaw
+  date: 2012-05-02
+- name: Matias Juntunen
+  date: 2012-04-10
+- name: Kaspar Brand
+  date: 2012-03-31
+- name: Chris McGowen
+  date: 2012-03-30
+- name: Aki Helin
+  date: 2012-03-28
+- name: Jordi Chancel
+  date: 2012-03-23
+- name: Atte Kettunen
+  date: 2012-03-09
+  twitter: @attekett
+  url: https://twitter.com/@attekett
+- name: Ms2ger of Igalia
+  date: 2012-02-22
+  url: https://twitter.com/Ms2ger
+- name: Soroush Dalili
+  date: 2012-02-21
+- name: Mariusz Mlynski
+  date: 2012-02-04
+- name:  "Atte Kettunen from OUSPG"
+  date: 2012-02-02
+  twitter: @attekett
+  url: https://twitter.com/@attekett
+- name: Nicolas Grégoire of AGARRI
+  date: 2012-01-28
+  url: http://www.agarri.fr/
+- name: Blair Strang
+  date: 2011-12-08
+- name: Vitaly Nevgen
+  date: 2011-12-07
+  url: https://facebook.com/vitaly.nevgen
+- name: Aki Helin
+  date: 2011-11-30
+- name: Scott Zimmermann
+  date: 2011-11-14
+  url: https://github.com/sczi
+- name: Team sutegoma2 - Japanese CTF team from AVTOKYO
+  date: 2011-10-19
+  url: http://ja.avtokyo.org/projects/sutegoma2
+- name: Thai "thaidn" Duong
+  date: 2011-10-02
+  twitter: @xorninja
+  url: https://twitter.com/@xorninja
+- name: Rh0
+  date: 2011-10-02
+- name: Mariusz Mlynski
+  date: 2011-09-30
+- name: Aral Yaman
+  date: 2011-09-26
+- name: Marc Schoenefeld
+  date: 2011-09-21
+- name: Mark Kaplan
+  date: 2011-09-14
+- name: Ben Hawkes
+  date: 2011-09-09
+- name: Scott Zimmermann
+  date: 2011-08-05
+  url: https://github.com/sczi
+- name: David Rees
+  date: 2011-07-25
+- name: ahu
+  date: 2011-07-25
+- name: Mike Cardwell
+  date: 2011-07-21
+  url: https://www.grepular.com/
+- name: Aki Helin
+  date: 2011-07-07
+- name: Michael Jordon of Context IS
+  date: 2011-07-07
+- name: Vivekanand Bolajwar
+  date: 2011-06-24
+- name: Haifei Li
+  date: 2011-06-15
+- name: Chris Rohlf
+  date: 2011-06-15
+  url: https://struct.github.io
+- name: Jordi Chancel
+  date: 2011-06-10
+- name: nasalislarvatus3000
+  date: 2011-06-10
+- name: Rafael Gieschke
+  date: 2011-05-31
+- name: Paul Stone of Context Information Security
+  date: 2011-05-26
+- name: Pablo P
+  date: 2011-05-24
+- name: Rh0
+  date: 2011-05-19
+- name: Ian Beer
+  date: 2011-04-25
+- name: ACROS
+  date: 2011-04-14
+  url: https://acrossecurity.com/
+- name: db
+  date: 2011-03-28
+- name: Zach Hoffman
+  date: 2011-03-03
+  twitter: @zrhoffman
+  url: https://twitter.com/@zrhoffman
+- name: Konrad
+  date: 2011-02-24
+- name: Aki Helin
+  date: 2011-02-24
+- name: Christian Holler
+  date: 2011-02-03
+- name: Jan de Mooij
+  date: 2011-02-03
+- name: Marc Schoenefeld
+  date: 2011-01-28
+- name: Martin Barbella
+  date: 2011-01-28
+- name: Soroush Dalili
+  date: 2011-01-20
+- name: shutdown
+  date: 2011-01-20
+- name: Daniel Kozlowski
+  date: 2011-01-20
+- name: Ian Beer
+  date: 2011-01-07
+- name: Jan de Mooij
+  date: 2010-12-21
+- name: timeless
+  date: 2010-12-14
+- name: Christian Holler
+  date: 2010-12-08
+- name: Zach Hoffman
+  date: 2010-12-06
+  twitter: @zrhoffman
+  url: https://twitter.com/@zrhoffman
+- name: Marc Schoenefeld
+  date: 2010-12-04
+- name: Dirk Heinrich
+  date: 2010-12-04
+- name: Jordi Chancel
+  date: 2010-11-10
+- name: echo
+  date: 2010-11-09
+- name: Christian Holler and Maximilian Grothusmann
+  date: 2010-11-09
+- name: Alex Miller
+  date: 2010-10-26
+- name: David Huang
+  date: 2010-10-11
+  url: https://www.linshunghuang.com/
+- name: Sergey Glazunov
+  date: 2010-10-11
+- name: gfleischer
+  date: 2010-10-11
+- name: Rain
+  date: 2010-10-11
+- name: team509
+  date: 2010-10-11
+- name: Giorgio Maone of NoScript
+  date: 2010-10-11
+  url: https://maone.net
+- name: Michal Zalewski
+  date: 2010-10-11
+  url: http://lcamtuf.coredump.cx/
