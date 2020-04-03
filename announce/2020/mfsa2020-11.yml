@@ -1,0 +1,24 @@
+## mfsa2020-11.yml
+announced: April 3, 2020
+impact: critical
+fixed_in:
+- Firefox 74.0.1
+- Firefox ESR 68.6.1
+title: Security Vulnerabilities fixed in Firefox 74.0.1 and Firefox ESR 68.6.1
+advisories:
+  CVE-2020-FIXME:
+    title: Use-after-free while running the nsDocShell destructor
+    impact: critical
+    reporter: Francisco Alonso @revskills working with Javier Marcos of @JMPSec
+    description: |
+      Under certain conditions, when running the nsDocShell destructor, a race condition can cause a use-after-free. We are aware of targeted attacks in the wild abusing this flaw.
+    bugs:
+      - url: 1620818
+  CVE-2020-FIXME:
+    title: Use-after-free when handling a ReadableStream
+    impact: critical
+    reporter: Francisco Alonso @revskills working with Javier Marcos of @JMPSec
+    description: |
+      Under certain conditions, when handling a ReadableStream, a race condition can cause a use-after-free. We are aware of targeted attacks in the wild abusing this flaw.
+    bugs:
+      - url: 1626728
