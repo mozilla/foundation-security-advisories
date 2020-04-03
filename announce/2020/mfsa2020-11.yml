@@ -6,7 +6,7 @@ fixed_in:
 - Firefox ESR 68.6.1
 title: Security Vulnerabilities fixed in Firefox 74.0.1 and Firefox ESR 68.6.1
 advisories:
-  CVE-2020-FIXME:
+  CVE-2020-6819:
     title: Use-after-free while running the nsDocShell destructor
     impact: critical
     reporter: Francisco Alonso @revskills working with Javier Marcos of @JMPSec
@@ -14,7 +14,7 @@ advisories:
       Under certain conditions, when running the nsDocShell destructor, a race condition can cause a use-after-free. We are aware of targeted attacks in the wild abusing this flaw.
     bugs:
       - url: 1620818
-  CVE-2020-FIXME:
+  CVE-2020-6820:
     title: Use-after-free when handling a ReadableStream
     impact: critical
     reporter: Francisco Alonso @revskills working with Javier Marcos of @JMPSec
