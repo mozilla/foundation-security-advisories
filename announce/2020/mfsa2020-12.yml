@@ -1,0 +1,57 @@
+## mfsa2020-12.yml
+announced: April 7, 2020
+impact: high
+fixed_in:
+- Firefox 75
+title: Security Vulnerabilities fixed in Firefox 75
+advisories:
+  CVE-2020-6821:
+    title: Uninitialized memory could be read when using the WebGL copyTexSubImage method
+    impact: high
+    reporter: Jeff Gilbert, Kenneth Russell
+    description: |
+      When reading from areas partially or fully outside the source resource with WebGL's <code>copyTexSubImage</code> method, the specification requires the returned values be zero. Previously, this memory was uninitialized, leading to potentially sensitive data disclosure.
+    bugs:
+      - url: 1625404
+  CVE-2020-6822:
+    title: Out of bounds write in GMPDecodeData when processing large images
+    impact: moderate
+    reporter: Deian Stefan
+    description: |
+      On 32-bit builds, an out of bounds write could have occurred when processing an image larger than 4 GB in <code>GMPDecodeData</code>. It is possible that with enough effort this could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1544181
+  CVE-2020-6823:
+    title: Malicious Extension could obtain auth codes from OAuth login flows
+    impact: moderate
+    reporter: Leon Visscher
+    description: |
+      A malicious extension could have called <code>browser.identity.launchWebAuthFlow</code>, controlling the redirect_uri, and through the Promise returned, obtain the Auth code and gain access to the user's account at the service provider.
+    bugs:
+      - url: 1614919
+  CVE-2020-6824:
+    title: Generated passwords may be identical on the same site between separate private browsing sessions
+    impact: moderate
+    reporter: Matthew Noorenberghe
+    description: |
+      Initially, a user opens a Private Browsing Window and generates a password for a site, then closes the Private Browsing Window but leaves Firefox open. Subsequently, if the user had opened a new Private Browsing Window, revisited the same site, and generated a new password - the generated passwords would have been identical, rather than independent.
+    bugs:
+      - url: 1621853
+  CVE-2020-6825:
+    title: Memory safety bugs fixed in Firefox 75 and Firefox ESR 68.7
+    impact: high
+    reporter: Mozilla developers
+    description: |
+      Mozilla developers and community members Tyson Smith and Christian Holler reported memory safety bugs present in Firefox 74 and Firefox ESR 68.6. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1572541, 1620193, 1620203
+        desc: Memory safety bugs fixed in Firefox 75 and Firefox ESR 68.7
+  CVE-2020-6826:
+    title: Memory safety bugs fixed in Firefox 75
+    impact: high
+    reporter: Mozilla developers
+    description: |
+      Mozilla developers Tyson Smith, Bob Clary, and Alexandru Michis reported memory safety bugs present in Firefox 74. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1613009, 1613195, 1616734, 1617488, 1619229, 1620719, 1624897
+        desc: Memory safety bugs fixed in Firefox 75
