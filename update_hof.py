@@ -54,13 +54,15 @@ search_url = BASE_URL + 'bug' + \
 &product=Firefox
 &product=Firefox%20for%20Android
 &product=Firefox%20for%20iOS
-&product=Focus-iOS
+&product=Focus
+&product=DevTools
 &product=MailNews%20Core
 &product=NSPR
 &product=NSS
 &product=Pocket
 &product=Thunderbird
 &product=Toolkit
+&product=Calendar
 &product=WebExtensions
 """.replace("\n", "")
 
@@ -357,13 +359,16 @@ products = [
     "Firefox",
     "Firefox for Android",
     "Firefox for iOS",
-    "Focus-iOS",
+    "Focus",
     "MailNews Core",
     "NSPR",
     "NSS",
     "Pocket",
     "Thunderbird",
-    "Toolkit"
+    "Toolkit",
+    "WebExtensions",
+    "DevTools",
+    "Calendar",
 ]
 
 def main():
