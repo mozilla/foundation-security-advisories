@@ -260,6 +260,10 @@ names:
   date: 2018-11-12
   twitter: @attekett
   url: https://twitter.com/@attekett
+- name: Abdulrahman Alqabandi
+  date: 2018-10-29
+  twitter: @qab
+  url: https://twitter.com/@qab
 - name: Zhanjia Song
   date: 2018-10-29
 - name: R at Zero Day LLC
@@ -279,8 +283,9 @@ names:
 - name: Eduard Wirch
   date: 2018-10-08
   url: https://ewirch.github.io/
-- name: Nils
+- name: mathiaswu
   date: 2018-09-17
+- name: Nils
 - name: James Lee of Kryptos Logic
   date: 2018-09-17
   twitter: @Windowsrcer
@@ -534,6 +539,10 @@ names:
   url: https://twitter.com/@sebbity
 - name: Michał Bentkowski
   date: 2017-05-19
+- name: Brian Carpenter of Geeknik Labs & Farm
+  date: 2017-05-15
+  twitter: @geeknik
+  url: https://twitter.com/@geeknik
 - name: SkyLined
   date: 2017-05-15
   url: https://skylined.nl
@@ -604,6 +613,9 @@ names:
   date: 2017-01-30
 - name: Filipe Gomes
   date: 2017-01-30
+- name: José María Acuña Morgado
+  date: 2017-01-10
+  url: https://tecnoblog.guru/
 - name: Aral Yaman
   date: 2016-12-19
 - name: Atte Kettunen
@@ -611,8 +623,6 @@ names:
   twitter: @attekett
   url: https://twitter.com/@attekett
 - name: Andrew Krasichkov
-  date: 2016-12-19
-- name: Ronald Crane
   date: 2016-12-19
 - name: insertscript
   date: 2016-12-19
@@ -643,6 +653,8 @@ names:
   date: 2016-11-07
 - name: Raphael Shaniyazov
   date: 2016-10-10
+- name: Ronald Crane
+  date: 2016-10-10
 - name: q1@lastland.net
   date: 2016-10-10
 - name: Abhishek Arya
@@ -668,6 +680,8 @@ names:
   date: 2016-09-12
 - name: Ronald Crane
   date: 2016-09-12
+- name: Anonymous
+  date: 2016-08-29
 - name: Nils
   date: 2016-08-29
 - name: Abdulrahman Alqabandi
@@ -810,8 +824,6 @@ names:
   date: 2015-12-28
 - name: Ken Okuyama
   date: 2015-12-28
-- name: Muneaki Nishimura (a.k.a. nishimunea)
-  date: 2015-12-21
 - name: Tsubasa Iinuma of Gehirn Inc.
   date: 2015-12-14
   twitter: @llamakko_cafe
@@ -854,6 +866,8 @@ names:
   date: 2015-10-12
   twitter: @5hint0
   url: https://twitter.com/@5hint0
+- name: Muneaki Nishimura (a.k.a. nishimunea)
+  date: 2015-10-12
 - name: musicDespiteEverything
   date: 2015-09-28
 - name: Ronald Crane
@@ -874,6 +888,8 @@ names:
   date: 2015-09-14
   twitter: @attekett
   url: https://twitter.com/@attekett
+- name: Muneaki Nishimura (a.k.a. nishimunea)
+  date: 2015-09-04
 - name: Armin Razmjou
   date: 2015-08-31
   url: https://rawsec.net/
@@ -892,6 +908,8 @@ names:
 - name: Siraje Amarniss of Fukusa
   date: 2015-08-10
   url: https://fukusa.nl
+- name: Shally Li
+  date: 2015-08-03
 - name: Frederic Besler @ LAF INTL
   date: 2015-08-03
 - name: kaleemshaik786
@@ -913,6 +931,8 @@ names:
 - name: SkyLined
   date: 2015-07-20
   url: https://skylined.nl
+- name: Clément Lefèvre
+  date: 2015-06-29
 - name: André Bargull
   date: 2015-06-29
 - name: Ron Crane
@@ -920,7 +940,7 @@ names:
 - name: David Chan
   date: 2015-06-29
 - name: Ronald Crane
-  date: 2015-06-16
+  date: 2015-06-17
 - name: Looben Yang
   date: 2015-06-16
 - name: Aki Helin
@@ -1018,8 +1038,6 @@ names:
   date: 2015-01-12
 - name: Muneaki Nishimura (a.k.a. nishimunea)
   date: 2015-01-12
-- name: Muneaki Nishimura (a.k.a. nishimunea)
-  date: 2014-12-22
 - name: Mitchell Harper
   date: 2014-12-22
   twitter: @HarperMitchell
@@ -1028,6 +1046,8 @@ names:
   date: 2014-12-15
 - name: Abhishek Arya
   date: 2014-12-12
+- name: Muneaki Nishimura (a.k.a. nishimunea)
+  date: 2014-12-08
 - name: Cody Crews
   date: 2014-12-08
 - name: Atte Kettunen
@@ -1089,6 +1109,8 @@ names:
   date: 2014-05-19
 - name: Nils
   date: 2014-05-15
+- name: Daniel DeFreez
+  date: 2014-05-12
 - name: Atte Kettunen
   date: 2014-05-12
   twitter: @attekett
@@ -1149,8 +1171,6 @@ names:
   date: 2013-09-30
 - name: lifeasageek
   date: 2013-09-30
-- name: Cody Crews
-  date: 2013-09-30
 - name: Takeshi Terada of Mitsui Bussan Secure Directions Inc.
   date: 2013-09-09
   url: http://www.mbsd.jp/
@@ -1162,6 +1182,8 @@ names:
   url: https://twitter.com/@attekett
 - name: Scott Bell
   date: 2013-09-09
+- name: Myk Melez
+  date: 2013-08-05
 - name: Jordi Chancel
   date: 2013-07-29
 - name: Context Information Security
@@ -1173,6 +1195,8 @@ names:
   date: 2013-07-15
   twitter: @sebbity
   url: https://twitter.com/@sebbity
+- name: Cody Crews
+  date: 2013-07-01
 - name: Holger Fuhrmannek
   date: 2013-07-01
 - name: Atte Kettunen
@@ -1283,6 +1307,8 @@ names:
   date: 2012-08-04
   twitter: @xorninja
   url: https://twitter.com/@xorninja
+- name: Mark Poticha
+  date: 2012-08-01
 - name: microrffr
   date: 2012-07-30
 - name: Frédéric Hoguin
@@ -1295,6 +1321,8 @@ names:
   date: 2012-06-15
 - name: Arthur Gerkis
   date: 2012-06-10
+- name: Jesse Ruderman
+  date: 2012-06-02
 - name: Abhishek Arya
   date: 2012-06-02
 - name: Adam Barth
@@ -1303,6 +1331,8 @@ names:
   date: 2012-05-03
 - name: James Forshaw
   date: 2012-05-02
+- name: Jeroen van der Gun
+  date: 2012-04-14
 - name: Matias Juntunen
   date: 2012-04-10
 - name: Kaspar Brand
@@ -1463,3 +1493,7 @@ names:
 - name: Michal Zalewski
   date: 2010-10-11
   url: http://lcamtuf.coredump.cx/
+- name: Jordi Chancel
+  date: 2010-05-11
+- name: Brandon Sterne
+  date: 2010-04-10
