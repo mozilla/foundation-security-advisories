@@ -1182,8 +1182,6 @@ names:
   url: https://twitter.com/@attekett
 - name: Scott Bell
   date: 2013-09-09
-- name: Myk Melez
-  date: 2013-08-05
 - name: Jordi Chancel
   date: 2013-07-29
 - name: Context Information Security
@@ -1303,7 +1301,7 @@ names:
   date: 2012-08-15
 - name: Jordi Chancel
   date: 2012-08-14
-- name: Thai "thaidn" Duong
+- name: Juliano Rizzo and Thai Duong
   date: 2012-08-04
   twitter: @xorninja
   url: https://twitter.com/@xorninja
@@ -1321,8 +1319,6 @@ names:
   date: 2012-06-15
 - name: Arthur Gerkis
   date: 2012-06-10
-- name: Jesse Ruderman
-  date: 2012-06-02
 - name: Abhishek Arya
   date: 2012-06-02
 - name: Adam Barth
@@ -1495,5 +1491,3 @@ names:
   url: http://lcamtuf.coredump.cx/
 - name: Jordi Chancel
   date: 2010-05-11
-- name: Brandon Sterne
-  date: 2010-04-10
