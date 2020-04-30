@@ -61,6 +61,7 @@ search_url = BASE_URL + 'bug' + \
 &product=Pocket
 &product=Thunderbird
 &product=Toolkit
+&product=WebExtensions
 """.replace("\n", "")
 
 credit_entries = {

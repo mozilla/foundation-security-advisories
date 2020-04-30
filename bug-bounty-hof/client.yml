@@ -407,6 +407,8 @@ names:
   url: https://krashconsulting.com
 - name: Looben Yang
   date: 2018-01-12
+- name: Ronen Zilberman
+  date: 2018-01-12
 - name: Inko
   date: 2018-01-12
 - name: David Dworken
@@ -659,6 +661,8 @@ names:
   date: 2016-10-10
 - name: Abhishek Arya
   date: 2016-10-03
+- name: "John Whitlock"
+  date: 2016-10-01
 - name: Joshua Yabut
   date: 2016-09-30
 - name: Knud
@@ -868,6 +872,8 @@ names:
   url: https://twitter.com/@5hint0
 - name: Muneaki Nishimura (a.k.a. nishimunea)
   date: 2015-10-12
+- name: "Iaf Intel"
+  date: 2015-10-01
 - name: musicDespiteEverything
   date: 2015-09-28
 - name: Ronald Crane
@@ -931,6 +937,8 @@ names:
 - name: SkyLined
   date: 2015-07-20
   url: https://skylined.nl
+- name: "Iaf Intel"
+  date: 2015-07-01
 - name: Clément Lefèvre
   date: 2015-06-29
 - name: André Bargull
@@ -982,6 +990,8 @@ names:
   url: https://rawsec.net/
 - name: Muneaki Nishimura
   date: 2015-04-06
+- name: "Iaf Intel"
+  date: 2015-04-01
 - name: Looben Yang
   date: 2015-03-30
 - name: Aki Helin
@@ -1067,6 +1077,8 @@ names:
 - name: Michal Zalewski
   date: 2014-11-03
   url: http://lcamtuf.coredump.cx/
+- name: "Check Point Vulnerability Research"
+  date: 2014-10-01
 - name: Antoine Delignat-Lavaud
   date: 2014-09-29
   url: https://antoine.delignat-lavaud.fr
@@ -1121,6 +1133,10 @@ names:
   date: 2014-04-21
 - name: Gábor Molnár
   date: 2014-04-14
+- name: "Zaza Crub"
+  date: 2014-04-01
+- name: "Karl Tomlinson"
+  date: 2014-04-01
 - name: Eric Seidel
   date: 2014-03-31
 - name: Mariusz Mlynski
@@ -1167,6 +1183,8 @@ names:
   date: 2013-11-04
 - name: Masato Kinugawa
   date: 2013-10-16
+- name: "Jesse Schwartzentruber"
+  date: 2013-10-01
 - name: Abhishek Arya
   date: 2013-09-30
 - name: lifeasageek
@@ -1311,6 +1329,10 @@ names:
   date: 2012-07-30
 - name: Frédéric Hoguin
   date: 2012-07-20
+- name: "Sevenspade"
+  date: 2012-07-01
+- name: "Colby Russell"
+  date: 2012-07-01
 - name: Mariusz Mlynski
   date: 2012-06-28
 - name: Karthikeyan Bhargavan
@@ -1489,5 +1511,9 @@ names:
 - name: Michal Zalewski
   date: 2010-10-11
   url: http://lcamtuf.coredump.cx/
+- name: "Gregory Fleischer"
+  date: 2010-07-01
+- name: "Siddharth Agarwal"
+  date: 2010-07-01
 - name: Jordi Chancel
   date: 2010-05-11
