@@ -7,6 +7,7 @@ import pprint
 import sys
 import re
 import hmac
+import time
 from datetime import datetime
 import os
 import base64
@@ -373,7 +374,7 @@ def main():
         f.close()
 
     hmackey = get_hmac_key(args.apikey)
-    debuglog = open('debuglog.log', 'w')
+    debuglog = open('debuglog.' + str(int(time.time())) + '.log', 'w')
 
     bugs = gather_bug_list(args.apikey)
     hof_entries = []
@@ -612,7 +613,10 @@ def main():
         output_file.write(final_output)
 
 def define_dates(quarter, year):
-    if int(quarter) == 1:
+    if quarter == "doitall":
+        begin_date = datetime.strptime("{}-01-01" .format(2000), '%Y-%m-%d')
+        end_date = datetime.strptime("{}-12-31" .format(2019), '%Y-%m-%d')
+    elif int(quarter) == 1:
         begin_date = datetime.strptime("{}-01-01" .format(year), '%Y-%m-%d')
         end_date = datetime.strptime("{}-03-31" .format(year), '%Y-%m-%d')
     elif int(quarter) == 2:
@@ -624,9 +628,6 @@ def define_dates(quarter, year):
     elif int(quarter) == 4:
         begin_date = datetime.strptime("{}-10-01" .format(year), '%Y-%m-%d')
         end_date = datetime.strptime("{}-12-31" .format(year), '%Y-%m-%d')
-    elif quarter == "doitall":
-        begin_date = datetime.strptime("{}-01-01" .format(2000), '%Y-%m-%d')
-        end_date = datetime.strptime("{}-12-31" .format(2019), '%Y-%m-%d')
     else:
         print("not a valid quarter")
         exit(1)
