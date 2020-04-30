@@ -241,6 +241,8 @@ names:
 - name: "Tarek Bouali Taoud"
   date: 2017-07-01
   url: "https://tarspace.net"
+- name: "Ankita-Dhakar"
+  date: 2017-04-01
 - name: "Dodi Ara"
   date: 2017-04-01
 - name: "Sergey Bobrov"
@@ -259,6 +261,8 @@ names:
 - name: "Vladimir Metnew"
   date: 2017-04-01
   url: "https://github.com/Metnew"
+- name: "gharris"
+  date: 2017-04-01
 - name: "Hisham Mir"
   date: 2017-04-01
   url: "https://securitywall.co/"
@@ -299,7 +303,11 @@ names:
   url: "https://twitter.com/aussinfosec"
 - name: "Tooru Fujisawa"
   date: 2016-10-01
+- name: "Kenney Lu"
+  date: 2016-10-01
 - name: "Matjaz Horvat"
+  date: 2016-10-01
+- name: "Carlos McEvilly"
   date: 2016-10-01
 - name: "Muzammmil Abbas Kayani"
   date: 2016-10-01
@@ -324,6 +332,10 @@ names:
 - name: "Wladimir Palant"
   date: 2016-07-01
   url: "https://palant.de/"
+- name: "Vladimir Ivanov"
+  date: 2016-04-01
+- name: "Mohamed Chamli"
+  date: 2016-04-01
 - name: "Sergey Bobrov"
   date: 2016-04-01
 - name: "Griffin Francis"
@@ -433,6 +445,8 @@ names:
   date: 2015-01-01
 - name: "Yassine ABOUKIR"
   date: 2015-01-01
+- name: "ediskonstantini"
+  date: 2015-10-01
 - name: "gschmitz"
   date: 2014-10-01
 - name: "Hamza Bettache"
@@ -458,6 +472,8 @@ names:
 - name: "sysmox"
   date: 2014-07-01
 - name: "Andreas Wagner"
+  date: 2014-04-01
+- name: "shaheemirza"
   date: 2014-04-01
 - name: "Antoine Delignat-Lavaud"
   date: 2014-04-01
