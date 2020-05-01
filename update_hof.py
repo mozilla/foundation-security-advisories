@@ -607,7 +607,7 @@ def main():
             hof_output = hof_output + "  date: {}\n".format(data["date_raw"])
 
             if "twitter" in data:
-                hof_output = hof_output + "  twitter: {}\n".format(data["twitter"])
+                hof_output = hof_output + "  twitter: \"{}\"\n".format(data["twitter"])
             if "url" in data:
                 hof_output = hof_output + "  url: {}\n".format(data["url"])
         except:
