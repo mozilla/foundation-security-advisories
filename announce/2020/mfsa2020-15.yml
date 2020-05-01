@@ -1,0 +1,15 @@
+## mfsa2020-15.yml
+announced: May 1, 2020
+impact: moderate
+fixed_in:
+- Firefox for iOS 25
+title: Security Vulnerabilities fixed in Firefox for iOS 25
+advisories:
+  CVE-2020-6830:
+    title: Native-to-JS bridging security token exploit
+    impact: moderate
+    reporter: Vinoth Kumar
+    description: |
+      For native-to-JS bridging, the app requires a unique token to be passed that ensures non-app code can't call the bridging functions. That token was being used for JS-to-native also, but it isn't needed in this case, and its usage was also leaking this token.
+    bugs:
+      - url: 1632387
