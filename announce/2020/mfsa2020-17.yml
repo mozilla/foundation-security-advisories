@@ -1,0 +1,64 @@
+## mfsa2020-17.yml
+announced: May 5, 2020
+impact: critical
+fixed_in:
+- Firefox ESR 68.8
+title: Security Vulnerabilities fixed in Firefox ESR 68.8
+advisories:
+  CVE-2020-12387:
+    title: Use-after-free during worker shutdown
+    impact: critical
+    reporter: Looben Yang
+    description: |
+      A race condition when running shutdown code for Web Worker led to a use-after-free vulnerability. This resulted in a potentially exploitable crash.
+    bugs:
+      - url: 1545345
+  CVE-2020-12388:
+    title: Sandbox escape with improperly guarded Access Tokens
+    impact: critical
+    reporter: James Forshaw of Google Project Zero
+    description: |
+      The Firefox content processes did not sufficiently lockdown access control which could result in a sandbox escape.<br>*Note: this issue only affects Firefox on Windows operating systems.*
+    bugs:
+      - url: 1618911
+  CVE-2020-12389:
+    title: Sandbox escape with improperly separated process types
+    impact: high
+    reporter: Niklas Baumstark
+    description: |
+      The Firefox content processes did not sufficiently lockdown access control which could result in a sandbox escape.<br>*Note: this issue only affects Firefox on Windows operating systems.*
+    bugs:
+      - url: 1554110
+  CVE-2020-6831
+    title: Buffer overflow in SCTP chunk input validation
+    impact: high
+    reporter: Natalie Silvanovich of Google Project Zero
+    description: |
+      A buffer overflow could occur when parsing and validating SCTP chunks in WebRTC. This could have led to memory corruption and a potentially exploitable crash.
+    bugs:
+      - url: 1632241
+  CVE-2020-12392:
+    title: Arbitrary local file access with 'Copy as cURL'
+    impact: moderate
+    reporter: Ophir LOJKINE
+    description: |
+      The 'Copy as cURL' feature of Devtools' network tab did not properly escape the HTTP POST data of a request, which can be controlled by the website. If a user used the 'Copy as cURL' feature and pasted the command into a terminal, it could have resulted in the disclosure of local files.
+    bugs:
+      - url: 1614468
+  CVE-2020-12393:
+    title: Devtools' 'Copy as cURL' feature did not fully escape website-controlled data, potentially leading to command injection
+    impact: moderate
+    reporter: David Yesland
+    description: |
+      The 'Copy as cURL' feature of Devtools' network tab did not properly escape the HTTP method of a request, which can be controlled by the website. If a user used the 'Copy as cURL' feature and pasted the command into a terminal, it could have resulted in command injection and arbitrary command execution.<br>*Note: this issue only affects Firefox on Windows operating systems.*
+    bugs:
+      - url: 1615471
+  CVE-2020-12395:
+    title: Memory safety bugs fixed in Firefox 76 and Firefox ESR 68.8
+    impact: critical
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers and community members Alexandru Michis, Jason Kratzer, philipp, Ted Campbell, Bas Schouten, André Bargull, and Karl Tomlinson reported memory safety bugs present in Firefox 75 and Firefox ESR 68.7. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1595886, 1611482, 1614704, 1624098, 1625749, 1626382, 1628076, 1631508
+        desc: Memory safety bugs fixed in Firefox 76 and Firefox ESR 68.8
