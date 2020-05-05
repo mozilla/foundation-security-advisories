@@ -29,7 +29,7 @@ advisories:
       The Firefox content processes did not sufficiently lockdown access control which could result in a sandbox escape.<br>*Note: this issue only affects Firefox on Windows operating systems.*
     bugs:
       - url: 1554110
-  CVE-2020-6831
+  CVE-2020-6831:
     title: Buffer overflow in SCTP chunk input validation
     impact: high
     reporter: Natalie Silvanovich of Google Project Zero
