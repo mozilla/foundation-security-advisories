@@ -4,6 +4,7 @@
 import requests
 import argparse
 import pprint
+import json
 import sys
 import re
 import hmac
@@ -19,8 +20,6 @@ search_url = BASE_URL + 'bug' + \
 """
 ?x=x
 &limit=0
-&chfield=bug_status
-&chfieldfrom=-10y
 &f1=classification
 &o1=notequals
 &v1=Graveyard
@@ -67,6 +66,9 @@ search_url = BASE_URL + 'bug' + \
 """.replace("\n", "")
 
 credit_entries = {
+    "7fa6444936bd7ae17ecad924fca93c6d":"Luis Merino - Brandon Perry",
+    "e0d23fbace24417f6260c181a10b0f3f":"Tadj Youssouf",
+    "11adc383a41d3f1fead9661104782014":"Ronen Zilberman",
     "028ff665214190ae419f0febbdff465f":"James Grant",
     "047a2ade7fdc3c6d84d5dbea228fe71e":"Julien Maladrie",
     "e88dc79e62596108bef66ec6d6d103fa":"Wladimir Palant",
@@ -389,14 +391,17 @@ def main():
     print("Generating Bug Data from " + str(len(bugs["bugs"])) + " bugs")
     num_processed = 0
     for bug in bugs["bugs"]:
-        num_processed += 1
-        if num_processed % 100 == 0:
-            print("Processed", num_processed, "of", len(bugs["bugs"]))
-        if bug['product'] not in products:
-            continue
-
         bugid = str(bug["id"])
         debuglog.write(bugid + ",")
+
+        num_processed += 1
+
+        #if num_processed % 100 == 0:
+        print("Processed", num_processed, "of", len(bugs["bugs"]), "currently on", bugid)
+        if bug['product'] not in products:
+            debuglog.write("wrong product: " + bug['product'] + "\n")
+            continue
+
 
         data ={}
 
@@ -444,7 +449,7 @@ def main():
                 data["date_raw"] = attachment_breakout[4] or attachment_breakout[3] or attachment_breakout[2]
                 data["date"] = datetime.strptime(data["date_raw"], '%Y-%m-%d')
                 
-                debuglog.write(data["date_raw"] + "," + data["email"] + "," + data["email_hmac"] + ",")
+                debuglog.write("bounty+," + data["date_raw"] + "," + data["email"] + "," + data["email_hmac"] + ",")
                 
                 if begin_date < data["date"] < end_date:
                     if "@mozilla.com" in data["email"] and mozilla_email_was_employed(data["email"], data["date"]):
@@ -536,7 +541,7 @@ def main():
             # Normal case
             data["date_raw"] = bug['cf_last_resolved'].split("T")[0]
         data["date"] = datetime.strptime(data["date_raw"], '%Y-%m-%d')
-        debuglog.write(data["date_raw"] + ",")
+        debuglog.write("bounty-," + data["date_raw"] + ",")
 
         if begin_date < data["date"] < end_date:
             data["name"] = ""
