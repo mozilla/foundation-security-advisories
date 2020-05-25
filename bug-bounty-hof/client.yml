@@ -144,10 +144,6 @@ names:
 - name: Rakesh Mane
   date: 2019-06-24
   url: https://rakeshmane.com/
-- name: Abdulrahman Alqabandi
-  date: 2019-06-10
-  twitter: "@qab"
-  url: https://twitter.com/@qab
 - name: Gregory Smiley of Security Compass
   date: 2019-06-10
 - name: Abdulrahman Alqabandi
@@ -326,9 +322,6 @@ names:
   url: https://twitter.com/@clavoillotte
 - name: Zhanjia Song
   date: 2018-08-21
-- name: Ronald Crane
-  date: 2018-08-21
-  url: https://www.zippenhop.com/
 - name: Holger Fuhrmannek
   date: 2018-08-21
 - name: Andrei Cristian Petcu
@@ -807,10 +800,6 @@ names:
   date: 2016-02-29
 - name: Jordi Chancel
   date: 2016-02-29
-- name: Abdulrahman Alqabandi
-  date: 2016-02-22
-  twitter: "@qab"
-  url: https://twitter.com/@qab
 - name: Nicolas Golubovic
   date: 2016-02-22
 - name: Quarkslab security engineer Francis Gabriel
@@ -901,8 +890,6 @@ names:
 - name: "Iaf Intel"
   date: 2015-10-01
 - name: musicDespiteEverything
-  date: 2015-09-28
-- name: Ronald Crane
   date: 2015-09-28
 - name: Muneaki Nishimura (a.k.a. nishimunea)
   date: 2015-09-28
@@ -1107,13 +1094,11 @@ names:
   url: http://lcamtuf.coredump.cx/
 - name: "Check Point Vulnerability Research"
   date: 2014-10-01
-- name: Antoine Delignat-Lavaud
-  date: 2014-09-29
-  url: https://antoine.delignat-lavaud.fr
 - name: Abhishek Arya
   date: 2014-09-29
 - name: Antoine Delignat-Lavaud
   date: 2014-09-08
+  url: https://antoine.delignat-lavaud.fr
 - name: Holger Fuhrmannek
   date: 2014-09-08
 - name: Atte Kettunen
