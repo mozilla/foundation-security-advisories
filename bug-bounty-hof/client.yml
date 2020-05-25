@@ -94,8 +94,15 @@ names:
 - name: José María Acuña Morgado
   date: 2019-08-19
   url: https://tecnoblog.guru/
+- name: Atte Kettunen
+  date: 2019-08-19
+  twitter: "@attekett"
+  url: https://twitter.com/@attekett
 - name: Looben Yang
   date: 2019-08-12
+- name: Ronald Crane
+  date: 2019-08-12
+  url: https://www.zippenhop.com/
 - name: Seb Patane
   date: 2019-08-05
   twitter: "@sebbity"
@@ -143,6 +150,10 @@ names:
   url: https://twitter.com/@qab
 - name: Gregory Smiley of Security Compass
   date: 2019-06-10
+- name: Abdulrahman Alqabandi
+  date: 2019-06-03
+  twitter: "@qab"
+  url: https://twitter.com/@qab
 - name: James Lee
   date: 2019-06-03
   twitter: "@Windowsrcer"
@@ -191,6 +202,9 @@ names:
   date: 2019-02-27
 - name: AaylaSecura1138
   date: 2019-02-27
+- name: Tushar Rawool
+  date: 2019-02-23
+  url: https://facebook.com/tkrawool
 - name: cgvwzq
   date: 2019-02-19
 - name: mlfbrown
@@ -539,6 +553,8 @@ names:
   date: 2017-06-05
 - name: Nicolas Trippar of Zimperium zLabs
   date: 2017-06-05
+- name: Ronald Crane
+  date: 2017-05-22
 - name: Holger Fuhrmannek
   date: 2017-05-19
 - name: Seb Petane
@@ -810,6 +826,10 @@ names:
   url: http://www.agarri.fr/
 - name: jasonpang2011
   date: 2016-02-16
+- name: Abdulrahman Alqabandi
+  date: 2016-02-08
+  twitter: "@qab"
+  url: https://twitter.com/@qab
 - name: Philipp Kewisch
   date: 2016-02-05
 - name: Frédéric Hoguin
@@ -888,6 +908,8 @@ names:
   date: 2015-09-28
 - name: Jordi Chancel
   date: 2015-09-24
+- name: Ronald Crane
+  date: 2015-09-21
 - name: Gustavo Grieco
   date: 2015-09-21
 - name: Mario Heiderich
@@ -1090,6 +1112,8 @@ names:
   url: https://antoine.delignat-lavaud.fr
 - name: Abhishek Arya
   date: 2014-09-29
+- name: Antoine Delignat-Lavaud
+  date: 2014-09-08
 - name: Holger Fuhrmannek
   date: 2014-09-08
 - name: Atte Kettunen
