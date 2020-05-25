@@ -1337,6 +1337,8 @@ names:
   date: 2012-07-01
 - name: "Colby Russell"
   date: 2012-07-01
+- name: Soroush Dalili
+  date: 2012-06-29
 - name: Mariusz Mlynski
   date: 2012-06-28
 - name: Karthikeyan Bhargavan
@@ -1515,6 +1517,8 @@ names:
 - name: Michal Zalewski
   date: 2010-10-11
   url: http://lcamtuf.coredump.cx/
+- name: Ilja van Sprundel of IOActive
+  date: 2010-07-24
 - name: "Gregory Fleischer"
   date: 2010-07-01
 - name: "Siddharth Agarwal"
