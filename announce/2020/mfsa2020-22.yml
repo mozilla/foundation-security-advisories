@@ -1,0 +1,53 @@
+## mfsa2020-22.yml
+announced: June 2, 2020
+impact: high
+fixed_in:
+- Thunderbird 68.9.0
+title: Security Vulnerabilities fixed in Thunderbird 68.9.0
+-description: |
+    *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
+advisories:
+  CVE-2020-12399:
+    title: Timing attack on DSA signatures in NSS library
+    impact: high
+    reporter: Cesar Pereida Garcia and the Network and Information Security Group (NISEC) at Tampere University
+    description: |
+      NSS has shown timing differences when performing DSA signatures, which was exploitable and could eventually leak private keys.
+    bugs:
+      - url: 1631576
+  CVE-2020-12405:
+    title: Use-after-free in SharedWorkerService
+    impact: high
+    reporter: Marcin 'Icewall' Noga of Cisco Talos
+    description: |
+      When browsing a malicious page, a race condition in our SharedWorkerService could occur and lead to a potentially exploitable crash.
+    bugs:
+      - url: 1631618
+  CVE-2020-12406:
+    title: JavaScript Type confusion with NativeTypes
+    impact: high
+    reporter: Iain Ireland
+    description: |
+      Mozilla developer Iain Ireland discovered a missing type check during unboxed objects removal, resulting in a crash. We presume that with enough effort that it could be exploited to run arbitrary code.
+    bugs:
+      - url: 1639590
+  CVE-2020-12410:
+    title: Memory safety bugs fixed in Thunderbird 68.9.0
+    impact: high
+    reporter: Mozilla developers
+    description: |
+      Mozilla developers Tom Tung and Karl Tomlinson reported memory safety bugs present in Firefox 68.8. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1619305, 1632717
+        desc: Memory safety bugs fixed in Thunderbird 68.9.0
+  CVE-2020-12398:
+    title: Security downgrade with IMAP STARTTLS leads to information leakage
+    impact: high
+    reporter: Damian Poddebniak
+    description: |
+      If Thunderbird is configured to use STARTTLS for an IMAP
+      server, and the server sends a PREAUTH response, then
+      Thunderbird will continue with an unencrypted connection,
+      causing email data to be sent without protection.
+    bugs:
+      - url: 1613623
