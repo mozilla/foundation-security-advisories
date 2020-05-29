@@ -1,0 +1,73 @@
+## mfsa2020-20.yml
+announced: June 2, 2020
+impact: high
+fixed_in:
+- Firefox 77
+title: Security Vulnerabilities fixed in Firefox 77
+advisories:
+  CVE-2020-12399:
+    title: Timing attack on DSA signatures in NSS library
+    impact: high
+    reporter: Cesar Pereida Garcia and the Network and Information Security Group (NISEC) at Tampere University
+    description: |
+      NSS has shown timing differences when performing DSA signatures, which was exploitable and could eventually leak private keys.
+    bugs:
+      - url: 1631576
+  CVE-2020-12405:
+    title: Use-after-free in SharedWorkerService
+    impact: high
+    reporter: Marcin 'Icewall' Noga of Cisco Talos
+    description: |
+      When browsing a malicious page, a race condition in our SharedWorkerService could occur and lead to a potentially exploitable crash.
+    bugs:
+      - url: 1631618
+  CVE-2020-12406:
+    title: JavaScript type confusion with NativeTypes
+    impact: high
+    reporter: Iain Ireland
+    description: |
+      Mozilla Developer Iain Ireland discovered a missing type check during unboxed objects removal, resulting in a crash. We presume that with enough effort that it could be exploited to run arbitrary code.
+    bugs:
+      - url: 1639590
+  CVE-2020-12407:
+    title: WebRender leaking GPU memory when using border-image CSS directive
+    impact: moderate
+    reporter: Nicolas Silva
+    description: |
+      Mozilla Developer Nicolas Silva found that when using WebRender, Firefox would under certain conditions leak arbitrary GPU memory to the visible screen. The leaked memory content was visible to the user, but not observable from web content.
+    bugs:
+      - url: 1637112
+  CVE-2020-12408:
+    title: URL spoofing when using IP addresses
+    impact: low
+    reporter: Rayyan Bijoora
+    description: |
+      When browsing a document hosted on an IP address, an attacker could insert certain characters to flip domain and path information in the address bar.
+    bugs:
+      - url: 1623888
+  CVE-2020-12409:
+    title: URL spoofing with unicode characters
+    impact: low
+    reporter: Rayyan Bijoora
+    description: |
+      When using certain blank characters in a URL, they where incorrectly rendered as spaces instead of an encoded URL.
+    bugs:
+      - url: 1629506
+    CVE-2020-12410:
+    title: Memory safety bugs fixed in Firefox 77 and Firefox ESR 68.9
+    impact: high
+    reporter: Mozilla developers
+    description: |
+      Mozilla developers Tom Tung and Karl Tomlinson reported memory safety bugs present in Firefox 76 and Firefox ESR 68.8. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1619305, 1632717
+        desc: Memory safety bugs fixed in Firefox 77 and Firefox ESR 68.9
+  CVE-2020-12411:
+    title: Memory safety bugs fixed in Firefox 77
+    impact: high
+    reporter: Mozilla developers
+    description: |
+      Mozilla developers :Gijs (he/him), Randell Jesup reported memory safety bugs present in Firefox 76. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1620972, 1625333
+        desc: Memory safety bugs fixed in Firefox 77
