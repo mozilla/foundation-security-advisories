@@ -303,6 +303,7 @@ twitter_entries = {
     "fe7f319c61c0b44d4cb751afda4f4aeb" : "@Gaurav_00000",
 }
 url_entries = {
+    "e2b442dbd6ddf0e28802b71bb4cf4376" : "https://bugzilla.mozilla.org/user_profile?user_id=342842",
     "2920656b8c8d785f7ccecab735a106a8" : "https://skylined.nl",
     "0f14322cc49704ac5551ffe5835abd69" : "https://www.wayanadweb.com",
     "1248a90a05c7e3a46b97e6aceeb557ce" : "https://skylined.nl",
