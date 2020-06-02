@@ -21,7 +21,7 @@ advisories:
       When browsing a malicious page, a race condition in our SharedWorkerService could occur and lead to a potentially exploitable crash.
     bugs:
       - url: 1631618
-    CVE-2020-12406:
+  CVE-2020-12406:
     title: JavaScript Type confusion with NativeTypes
     impact: high
     reporter: Iain Ireland
@@ -29,7 +29,7 @@ advisories:
       Mozilla developer Iain Ireland discovered a missing type check during unboxed objects removal, resulting in a crash. We presume that with enough effort that it could be exploited to run arbitrary code.
     bugs:
       - url: 1639590
-    CVE-2020-12410:
+  CVE-2020-12410:
     title: Memory safety bugs fixed in Firefox 77 and Firefox ESR 68.9
     impact: high
     reporter: Mozilla developers

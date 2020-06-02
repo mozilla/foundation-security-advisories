@@ -53,7 +53,7 @@ advisories:
       When using certain blank characters in a URL, they where incorrectly rendered as spaces instead of an encoded URL.
     bugs:
       - url: 1629506
-    CVE-2020-12410:
+  CVE-2020-12410:
     title: Memory safety bugs fixed in Firefox 77 and Firefox ESR 68.9
     impact: high
     reporter: Mozilla developers
