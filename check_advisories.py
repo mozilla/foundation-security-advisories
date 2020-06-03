@@ -23,6 +23,7 @@ from subprocess import check_output
 import yaml
 from dateutil.parser import parse as parsedate
 from markdown import markdown
+from schema import Schema, Regex, Optional, Or, SchemaError
 
 
 GIT = os.getenv('GIT_BIN', 'git')
@@ -31,20 +32,36 @@ HOF_DIR = 'bug-bounty-hof'
 CVE_RE = re.compile('^CVE-20[0-9]{2}-[0-9]{4,9}$')
 MFSA_FILENAME_RE = re.compile('mfsa(\d{4}-\d{2,3})\.(md|yml)$')
 HOF_FILENAME_RE = re.compile('bug-bounty-hof/\w+\.yml$')
-REQUIRED_FIELDS = (
-    'fixed_in',
-    'title',
-)
-REQUIRED_YAML_FIELDS = REQUIRED_FIELDS + (
-    'advisories',
-)
-REQUIRED_YAML_ADVISORY_FIELDS = (
-    'title',
-    'impact',
-    'reporter',
-    'description',
-    'bugs',
-)
+md_schema = Schema({
+    'mfsa_id': str,
+    'fixed_in': [str],
+    'title': str,
+    Optional('announced'): str,
+    Optional('impact'): str,
+    Optional('reporter'): str,
+    Optional('risk'): str,
+    Optional('vulnerable'): [str],
+})
+yaml_schema = Schema({
+    'mfsa_id': str,
+    'fixed_in': [str],
+    'title': str,
+    'impact': str,
+    'advisories': {
+        Regex(CVE_RE): {
+            'title': Or(str, type(None)),
+            'impact': str,
+            'reporter': Or(str, type(None)),
+            'description': str,
+            'bugs': [{'url': Or(str, int),
+                      Optional('desc'): Or(str, type(None), int)}],
+            Optional('feed'): bool,
+        },
+    },
+    Optional('announced'): str,
+    Optional('description'): str,
+    Optional('feed'): bool,
+})
 
 
 def mfsa_id_from_filename(filename):
@@ -127,10 +144,10 @@ def check_file(file_name):
     """
     if file_name.endswith('.md'):
         parser = parse_md_file
-        required_fields = REQUIRED_FIELDS
+        schema = md_schema
     elif file_name.endswith('.yml'):
         parser = parse_yml_file
-        required_fields = REQUIRED_YAML_FIELDS
+        schema = yaml_schema
     else:
         return 'Unknown file type: %s' % file_name
 
@@ -145,10 +162,6 @@ def check_file(file_name):
     if 'mfsa_id' not in data:
         return 'The MFSA ID must be in the filename or metadata.'
 
-    for field in required_fields:
-        if field not in data:
-            return 'The {0} field is required in the file metadata.'.format(field)
-
     for f in data['fixed_in']:
         if "ESR" in f and "ESR " not in f:
             return "When ESR is specified, it must be of the form 'Firefox ESR XX', not 'Firefox ESRXX' (Found '" + f + "')"
@@ -159,18 +172,10 @@ def check_file(file_name):
         except Exception:
             return 'Failed to parse "{}" as a date'.format(data['announced'])
 
-    if file_name.endswith('.yml'):
-        for cve, advisory in data['advisories'].items():
-            if not CVE_RE.search(cve):
-                return 'The cve field {0} does not appear to be valid.'.format(cve)
-            for field in REQUIRED_YAML_ADVISORY_FIELDS:
-                if field not in advisory:
-                    return 'The {0} field is required in the ' \
-                           'file metadata for {1}.'.format(field, cve)
-            if 'bugs' in advisory:
-                for bug in advisory['bugs']:
-                    if 'url' not in bug:
-                        return 'There is a bug entry in {} without a "url" field.'.format(cve)
+    try:
+        schema.validate(data)
+    except SchemaError as e:
+        return str(e)
 
     return None
 
