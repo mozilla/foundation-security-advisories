@@ -4,6 +4,7 @@ impact: critical
 fixed_in:
 - Firefox 70
 title: Security vulnerabilities fixed in - Firefox 70
+description: <strong>Note:</strong> We have updated this advisory on June 26, 2020 to include CVE-2020-12412, which was fixed in Firefox 70 but not recognized or acknowledged immediately.
 advisories:
   CVE-2018-6156:
     title: Heap buffer overflow in FEC processing in WebRTC
@@ -31,6 +32,14 @@ advisories:
       When storing a value in IndexedDB, the value's prototype chain is followed and it was possible to retain a reference to a locale, delete it, and subsequently reference it. This resulted in a use-after-free and a potentially exploitable crash.
     bugs:
       - url: 1577107
+  CVE-2020-12412:
+    title: Address bar spoof using history navigation and blocked ports
+    impact: moderate
+    reporter: Adrian Karolak from ING Tech Poland
+    description: |
+      By navigating a tab using the history API, an attacker could cause the address bar to display the incorrect domain (with the https:// scheme, a blocked port number such as '1', and without a lock icon) while controlling the page contents.
+    bugs:
+      - url: 1528587
   CVE-2019-11759:
     title: Stack buffer overflow in HKDF output
     impact: moderate
