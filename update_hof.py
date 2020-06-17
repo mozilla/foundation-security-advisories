@@ -435,7 +435,7 @@ def main():
         foundAttachment = None
         for attachment in attachments:
             if attachment['file_name'] == 'bugbounty.data' and attachment['is_private'] == 1:
-                if foundAttachment:
+                if foundAttachment and bugid not in ["913805"]:
                     raise Exception("Two bug bounty attachments were found for " + bugid)
                 foundAttachment = attachment
 
@@ -444,10 +444,10 @@ def main():
                 attachment = foundAttachment
 
                 data = {}
-                attachment_breakout = attachment['description'].split(',')
-                data["email"] = attachment_breakout[0]
+                attachment_breakout = attachment['description'].split(',').strip()
+                data["email"] = attachment_breakout[0].strip()
                 data["email_hmac"] = hmac_email(hmackey, attachment_breakout[0])
-                data["date_raw"] = attachment_breakout[4] or attachment_breakout[3] or attachment_breakout[2]
+                data["date_raw"] = attachment_breakout[4] or attachment_breakout[3].strip() or attachment_breakout[2].strip()
                 data["date"] = datetime.strptime(data["date_raw"], '%Y-%m-%d')
                 
                 debuglog.write("bounty+," + data["date_raw"] + "," + data["email"] + "," + data["email_hmac"] + ",")
@@ -461,10 +461,13 @@ def main():
                     # print("Generating Data For Bug %s - %s" % (bugid, data["email"]))
                     numFields = len(attachment_breakout)
 
-                    if not bool(attachment_breakout[5]) or "no" == attachment_breakout[5].lower():
+                    if not bool(attachment_breakout[5]):
+                        debuglog.write("Publish was blank,")
+                    elif "no" == attachment_breakout[5].lower() or "false" == attachment_breakout[5].lower():
                         debuglog.write("Do Not Publish\n")
-                        # Do not publish
                         continue
+                    else:
+                        debuglog.write("publish,")
 
                     data["name"] = ""
                     if numFields > 6 and attachment_breakout[6]:
