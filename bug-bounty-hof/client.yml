@@ -1,4 +1,61 @@
 names:
+- name: Adrian
+  date: 2020-03-16
+- name: Daniel Tomescu
+  date: 2020-03-16
+- name: fatal0
+  date: 2020-03-16
+  twitter: "@fatal0_"
+  url: https://twitter.com/@fatal0_
+- name: Juho Nurminen of Mattermost
+  date: 2020-03-16
+- name: Ismail Tasdelen
+  date: 2020-03-09
+  url: https://www.linkedin.com/in/ismailtasdelen/
+- name: Ahmed Elsobky
+  date: 2020-03-02
+  twitter: "@0xsobky"
+  url: https://twitter.com/@0xsobky
+- name: Philip Okhonko
+  date: 2020-02-24
+  twitter: "@sysmus28"
+  url: https://twitter.com/@sysmus28
+- name: Brian Carpenter of Geeknik Labs & Farm
+  date: 2020-02-24
+  twitter: "@geeknik"
+  url: https://twitter.com/@geeknik
+- name: Leon Visscher
+  date: 2020-02-24
+- name: Luan Herrera
+  date: 2020-02-10
+- name: Ophir LOJKINE
+  date: 2020-02-10
+- name: Niklas Baumstark
+  date: 2020-02-03
+- name: terjanq
+  date: 2020-02-03
+- name: Matheus Vrech
+  date: 2020-02-03
+- name: Joshua Graham of TSS
+  date: 2020-02-03
+- name: Thomas Imbert
+  date: 2020-02-03
+  twitter: "@masthoon"
+  url: https://twitter.com/@masthoon
+- name: Antonio Sanso
+  date: 2020-01-13
+  twitter: "@asanso"
+  url: https://twitter.com/@asanso
+- name: Vladimir Metnew
+  date: 2020-01-13
+  twitter: "@vladimir_metnew"
+  url: https://twitter.com/@vladimir_metnew
+- name: Michał Bentkowski
+  date: 2020-01-06
+- name: bo13oy of Qihoo 360 Vulcan Team
+  date: 2020-01-06
+- name: Anonymous
+  date: 2020-01-06
 - name: Thomas Imbert
   date: 2019-12-30
   twitter: "@masthoon"

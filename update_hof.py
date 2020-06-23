@@ -65,7 +65,33 @@ search_url = BASE_URL + 'bug' + \
 &product=WebExtensions
 """.replace("\n", "")
 
+CVE_REVIEW = """
+https://bugzilla.mozilla.org/buglist.cgi?x=x
+&classification=Client%20Software
+&classification=Developer%20Infrastructure
+&classification=Components
+&classification=Server%20Software
+&classification=Other
+&f1=flagtypes.name
+&o1=substring
+&v1=sec-bounty-
+&f2=alias
+&o2=substring
+&v2=CVE-YEAR_REPLACEME
+&f3=flagtypes.name
+&o3=notsubstring
+&v3=sec-bounty-hof%2B
+&o4=notsubstring
+&f4=flagtypes.name
+&v4=sec-bounty-hof-
+""".replace("\n", "")
+
 credit_entries = {
+    "647f1e3053ac60b34405e11876ec02e4":"Juho Nurminen of Mattermost",
+    "abb98d52131c2c03f832122ea7f9308b":"Ismail Tasdelen",
+    "e98a60be99d8cad03ab7bda278934d00":"Matheus Vrech",
+    "b16601816f98299912f0ea692e738c05":"Anonymous",
+    "853c74a41a0a08216a565eb558b2c4c4":"bo13oy of Qihoo 360 Vulcan Team",
     "028ff665214190ae419f0febbdff465f" : "James Grant",
     "047a2ade7fdc3c6d84d5dbea228fe71e" : "Julien Maladrie",
     "05c9059021985684d94c2631e62b9d12" : "Zhang Hanming from 360 Vulcan team",
@@ -147,7 +173,7 @@ credit_entries = {
     "78eeb94fe5fe67f95d9cd574d9ec69db" : "Inko",
     "7a3d52ef9f515ad5d4aad5868c2e65aa" : "Chamal De Silva",
     "7aba285c7e4b7f41df3dae6f4becd2a9" : "Sebas (@0xroot)",
-    "7b33d07bc038c1ec083e51e31e139fdb" : "Joshua Graham of TSS & Brendan Scarvell",
+    "7b33d07bc038c1ec083e51e31e139fdb" : "Joshua Graham of TSS",
     "7bd9d5640cb0f0dd5e59ccd7b02a0349" : "Omair",
     "7bed3bd152a0fd4badc6d2ddd4e86e1b" : "Rafael Gieschke",
     "7dc3304d4c7f8d13fa0f248f54b07a20" : "Kaspar Brand",
@@ -257,6 +283,8 @@ credit_entries = {
     "fea05bd1b815660051bf5d090eb4e522" : "Aral Yaman",
 }
 twitter_entries = {
+    "9d69c86b66ca54565cd98aec6b6baaa3":"@0xsobky",
+    "fa9ffd84a1dd2951bcb0d7f8ebae5c84":"@sysmus28",
     "0c7f4b38ad0b504cfc48042e14564cc8" : "@pdjstone",
     "0cdb9b89f615c444f832e56c844e9e75" : "@ally_o_malley",
     "0eaafbf6f9aabe86a4b040ca50d9191a" : "@5hint0",
@@ -300,6 +328,7 @@ twitter_entries = {
     "fe7f319c61c0b44d4cb751afda4f4aeb" : "@Gaurav_00000",
 }
 url_entries = {
+    "abb98d52131c2c03f832122ea7f9308b":"https://www.linkedin.com/in/ismailtasdelen/",
     "0f14322cc49704ac5551ffe5835abd69" : "https://www.wayanadweb.com",
     "1248a90a05c7e3a46b97e6aceeb557ce" : "https://skylined.nl",
     "192aac4383d85b9acf43554612c6b461" : "https://facebook.com/vitaly.nevgen",
@@ -382,6 +411,11 @@ def main():
     hmackey = get_hmac_key(args.apikey)
     debuglog = open('debuglog.' + str(int(time.time())) + '.log', 'w')
 
+    print("Okay, we're going to start. Have you assigned hof+ to the eligible bugs with bounty- and CVEs?")
+    print("The link for those for you to review is:")
+    print("   ", CVE_REVIEW.replace("YEAR_REPLACEME", args.year))
+    print("If you forgot to do this, kill the script, do it, and start it again.")
+
     bugs = gather_bug_list(args.apikey)
     hof_entries = []
 
@@ -441,10 +475,10 @@ def main():
                 attachment = foundAttachment
 
                 data = {}
-                attachment_breakout = attachment['description'].split(',').strip()
-                data["email"] = attachment_breakout[0].strip()
+                attachment_breakout = [x.strip() for x in attachment['description'].split(',')]
+                data["email"] = attachment_breakout[0]
                 data["email_hmac"] = hmac_email(hmackey, attachment_breakout[0])
-                data["date_raw"] = attachment_breakout[4] or attachment_breakout[3].strip() or attachment_breakout[2].strip()
+                data["date_raw"] = attachment_breakout[4] or attachment_breakout[3] or attachment_breakout[2]
                 data["date"] = datetime.strptime(data["date_raw"], '%Y-%m-%d')
                 
                 debuglog.write("bounty+," + data["date_raw"] + "," + data["email"] + "," + data["email_hmac"] + ",")
