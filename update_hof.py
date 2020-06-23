@@ -87,11 +87,6 @@ https://bugzilla.mozilla.org/buglist.cgi?x=x
 """.replace("\n", "")
 
 credit_entries = {
-    "647f1e3053ac60b34405e11876ec02e4":"Juho Nurminen of Mattermost",
-    "abb98d52131c2c03f832122ea7f9308b":"Ismail Tasdelen",
-    "e98a60be99d8cad03ab7bda278934d00":"Matheus Vrech",
-    "b16601816f98299912f0ea692e738c05":"Anonymous",
-    "853c74a41a0a08216a565eb558b2c4c4":"bo13oy of Qihoo 360 Vulcan Team",
     "028ff665214190ae419f0febbdff465f" : "James Grant",
     "047a2ade7fdc3c6d84d5dbea228fe71e" : "Julien Maladrie",
     "05c9059021985684d94c2631e62b9d12" : "Zhang Hanming from 360 Vulcan team",
@@ -157,6 +152,7 @@ credit_entries = {
     "4ea165c7445cfa9a7ed0685e64cdf1fb" : "Paul Stone of Context Information Security",
     "5080064df3a2c21441c9fb6cc3b5f816" : "Jerry Decime",
     "5fbaf4a6794928a04644d7a0a73f7141" : "Alexander Klink",
+    "647f1e3053ac60b34405e11876ec02e4" : "Juho Nurminen of Mattermost",
     "64e04ce43d3007a00b51c63553c48efb" : "p4fg",
     "654445704639346f526d1ef514d08fd7" : "ACROS Security",
     "690334c0cae6df099269d105526a42f3" : "Jordi Chancel",
@@ -186,6 +182,7 @@ credit_entries = {
     "82d7844614f152d6865e83d43f040a8b" : "Antonio Sanso",
     "8314603008777278fd70c0b9b4f01645" : "Adam Barth",
     "8363fd9f9f37fbaf5d600e676bf3aec5" : "Muhammad R. Maulana",
+    "853c74a41a0a08216a565eb558b2c4c4" : "bo13oy of Qihoo 360 Vulcan Team",
     "87b3f4e2ea33d7e5aea49e26dab8ab5b" : "Jethro Beekman - Security Researcher at University of California - Berkeley",
     "87c66fa50295d7055022c4625c76b208" : "Rain",
     "887ba2d86d5c5c29814a38c371854928" : "Soroush Dalili",
@@ -216,8 +213,10 @@ credit_entries = {
     "ab37a4ca424a143670adc9093c7086b9" : "Scott Bell",
     "ab52f2c4485ec82dcd6b5c36b845e6d5" : "James Kitchener",
     "ab54897026ce6f76bb9cbaf9a86a1fc8" : "Brian 'geeknik' Carpenter",
+    "abb98d52131c2c03f832122ea7f9308b" : "Ismail Tasdelen",
     "ac6cb3312f13091a2b1ab69bb496057d" : "Rob Wu",
     "ad4e3024178ee23278381ebfbc54528f" : "Looben Yang",
+    "b16601816f98299912f0ea692e738c05" : "Anonymous",
     "b18940ae4a081c594022bcd56e7d949a" : "Ronald Crane",
     "b1a7d637734d5dad9b43136609c8f31f" : "Ronald Crane",
     "b1bce803655916f8687d2da2787a17c6" : "Clément Lavoillotte",
@@ -267,6 +266,7 @@ credit_entries = {
     "e88dc79e62596108bef66ec6d6d103fa" : "Wladimir Palant",
     "e8abc376c3254bcb714b250241b75011" : "insertscript",
     "e8df4fcdfce3352bfa7c8cc4f30cf852" : "Thomas Imbert",
+    "e98a60be99d8cad03ab7bda278934d00" : "Matheus Vrech",
     "ea3d4c453e3dcd5b7c3430a9d3b5cecf" : "Jann Horn",
     "ec2382571a4578416a9eef5ec2e8a937" : "Nils",
     "ecbb5f9fa8cdf3d6339da4dc4bd08593" : "Thai \"thaidn\" Duong",
@@ -283,8 +283,6 @@ credit_entries = {
     "fea05bd1b815660051bf5d090eb4e522" : "Aral Yaman",
 }
 twitter_entries = {
-    "9d69c86b66ca54565cd98aec6b6baaa3":"@0xsobky",
-    "fa9ffd84a1dd2951bcb0d7f8ebae5c84":"@sysmus28",
     "0c7f4b38ad0b504cfc48042e14564cc8" : "@pdjstone",
     "0cdb9b89f615c444f832e56c844e9e75" : "@ally_o_malley",
     "0eaafbf6f9aabe86a4b040ca50d9191a" : "@5hint0",
@@ -307,6 +305,7 @@ twitter_entries = {
     "9832ee85d3227243306872874b7157ea" : "whucjj",
     "9a7ef4ebc1fe8c5e7f59016564db97b4" : "@yossioren",
     "9d3bc5f160291389423da6ff52f5bc44" : "l4wio",
+    "9d69c86b66ca54565cd98aec6b6baaa3" : "@0xsobky",
     "9de234ea6d5568ef604dd3431af941e4" : "@Windowsrcer",
     "a9173d90c2151988a643fee35abafb9f" : "@jupenur",
     "b1bce803655916f8687d2da2787a17c6" : "@clavoillotte",
@@ -325,10 +324,10 @@ twitter_entries = {
     "f45fcaee888e8eab311d5d869b48f6e4" : "@zrhoffman",
     "f46a207798ca14de0287172ce8d47783" : "@_zulln",
     "f5550452710913283cbf6db0976e2420" : "@konarkmodi",
+    "fa9ffd84a1dd2951bcb0d7f8ebae5c84" : "@sysmus28",
     "fe7f319c61c0b44d4cb751afda4f4aeb" : "@Gaurav_00000",
 }
 url_entries = {
-    "abb98d52131c2c03f832122ea7f9308b":"https://www.linkedin.com/in/ismailtasdelen/",
     "0f14322cc49704ac5551ffe5835abd69" : "https://www.wayanadweb.com",
     "1248a90a05c7e3a46b97e6aceeb557ce" : "https://skylined.nl",
     "192aac4383d85b9acf43554612c6b461" : "https://facebook.com/vitaly.nevgen",
@@ -361,6 +360,7 @@ url_entries = {
     "9d81009615f1e3b3b269eb78a4abd529" : "https://www.linshunghuang.com/",
     "9e6d48cc96c5931585cbe2bfc66246b8" : "https://haltp.org",
     "a71a35e2a42f69964a986531483ab405" : "https://jswrenn.com/",
+    "abb98d52131c2c03f832122ea7f9308b" : "https://www.linkedin.com/in/ismailtasdelen/",
     "ac6cb3312f13091a2b1ab69bb496057d" : "https://robwu.nl",
     "b1a7d637734d5dad9b43136609c8f31f" : "https://www.zippenhop.com/",
     "b7b33547a73d2d2c7325f2c47406805f" : "https://rakeshmane.com/",
