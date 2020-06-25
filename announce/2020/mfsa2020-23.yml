@@ -1,0 +1,15 @@
+## mfsa2020-23.yml
+announced: June 25, 2020
+impact: moderate
+fixed_in:
+- Firefox for iOS 27
+title: Security Vulnerabilities fixed in Firefox for iOS 27
+advisories:
+  CVE-2020-12414:
+    title: IndexedDB persists in private browsing mode
+    impact: moderate
+    reporter: Konark Modi - @konarkmodi
+    description: |
+      IndexedDB should be cleared when leaving private browsing mode and it is not, the API for WKWebViewConfiguration was being used incorrectly and requires the private instance of this object be deleted when leaving private mode.
+    bugs:
+      - url: 1646756
