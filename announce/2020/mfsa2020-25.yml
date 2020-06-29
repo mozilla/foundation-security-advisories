@@ -1,0 +1,47 @@
+## mfsa2020-25.yml
+announced: June 30, 2020
+impact: high
+fixed_in:
+- Firefox ESR 68.10
+title: Security Vulnerabilities fixed in Firefox ESR 68.10
+advisories:
+  CVE-2020-12417:
+    title: Memory corruption due to missing sign-extension for ValueTags on ARM64
+    impact: high
+    reporter: Deian Stefan
+    description: |
+      Due to confusion about ValueTags on JavaScript Objects, an object may pass through the type barrier, resulting in memory corruption and a potentially exploitable crash.<br>*Note: this issue only affects Firefox on ARM64 platforms.*
+    bugs:
+      - url: 1640737
+  CVE-2020-12418:
+    title: Information disclosure due to manipulated URL object
+    impact: high
+    reporter: Marcin 'Icewall' Noga of Cisco Talos
+    description: |
+      Manipulating individual parts of a  URL object could have caused an out-of-bounds read, leaking process memory to malicious JavaScript.
+    bugs:
+      - url: 1641303
+  CVE-2020-12419:
+    title: Use-after-free in nsGlobalWindowInner
+    impact: high
+    reporter: worcester12345
+    description: |
+      When processing callbacks that occurred during window flushing in the parent process, the associated window may die; causing a use-after-free condition. This could have led to memory corruption and a potentially exploitable crash.
+    bugs:
+      - url: 1643874
+  CVE-2020-12420:
+    title: Use-After-Free when trying to connect to a STUN server
+    impact: high
+    reporter: Byron Campen
+    description: |
+      When trying to connect to a STUN server, a race condition could have caused a use-after-free of a pointer, leading to memory corruption and a potentially exploitable crash.
+    bugs:
+      - url: 1643437
+  CVE-2020-12421:
+    title: Add-On updates did not respect the same certificate trust rules as software updates
+    impact: moderate
+    reporter: Chuck Harmston, Robert Hardy
+    description: |
+      When performing add-on updates, certificate chains terminating in non-built-in-roots were rejected (even if they were legitimately added by an administrator.) This could have caused add-ons to become out-of-date silently without notification to the user.
+    bugs:
+      - url: 1308251
