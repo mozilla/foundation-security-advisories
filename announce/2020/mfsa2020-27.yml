@@ -1,0 +1,15 @@
+## mfsa2020-27.yml
+announced: July 6, 2020
+impact: critical
+fixed_in:
+- Firefox for Android 
+title: Security Vulnerabilities fixed in Firefox for Android 68.10.1
+advisories:
+  MFSA-2020-0002:
+    title: Arbitrary local file access in Firefox for Android
+    impact: critical
+    reporter: Pedro Oliveira
+    description: |
+      A Content Provider in Firefox for Android allowed local files accessible by the browser to be read by a remote webpage, leading to sensitive data disclosure, including cookies for other origins.<br /><em>Note: This issue is pending a CVE assignment and will be updated when one is available.</em>
+    bugs:
+      - url: 1647078
