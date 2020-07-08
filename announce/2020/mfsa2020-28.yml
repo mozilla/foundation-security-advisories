@@ -1,0 +1,15 @@
+## mfsa2020-28.yml
+announced: July 8, 2020
+impact: critical
+fixed_in:
+- Firefox 78.0.2
+title: Security Vulnerabilities fixed in Firefox 78.0.2
+advisories:
+  MFSA-2020-0003:
+    title: X-Frame-Options bypass using object or embed tags
+    impact: moderate
+    reporter: Frederik Braun
+    description: |
+      Using object or embed tags, it was possible to frame other websites, even if they disallowed framing using the X-Frame-Options header.<br /><em>Note: This issue is pending a CVE assignment and will be updated when one is available.</em>
+    bugs:
+      - url: 1644076
