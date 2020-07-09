@@ -1,6 +1,6 @@
 ## mfsa2020-28.yml
 announced: July 8, 2020
-impact: critical
+impact: moderate
 fixed_in:
 - Firefox 78.0.2
 title: Security Vulnerabilities fixed in Firefox 78.0.2
