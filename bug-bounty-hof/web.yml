@@ -1,4 +1,68 @@
 names:
+- name: "Mohammad Hosein Askari"
+  date: 2020-04-01
+  url: "https://www.linkedin.com/in/mohammadhoseinaskari/"
+- name: "Yassine Benfakih"
+  date: 2020-04-01
+  url: "https://twitter.com/yassinek3ch"
+- name: "Mrityunjoy Biswas"
+  date: 2020-04-01
+  url: "https://twitter.com/mitunjoy11"
+- name: "Griffin Francis"
+  date: 2020-04-01
+  url: "https://twitter.com/aussinfosec"
+- name: "Jens Hausdorf (:jens1o)"
+  date: 2020-04-01
+  url: "https://twitter.com/jens1o"
+- name: "Muhammad Khizer Javed"
+  date: 2020-04-01
+  url: "https://whoami.securitybreached.org"
+- name: "Naveen Kumar"
+  date: 2020-04-01
+  url: "https://www.linkedin.com/in/naveen-kumar-8ba517190/"
+- name: "Sajeeb Lohani"
+  date: 2020-04-01
+  url: "https://twitter.com/sml555_"
+- name: "Prakhar Mittal"
+  date: 2020-04-01
+  url: "https://www.linkedin.com/in/prakhar-mittal-457ab2155/"
+- name: "Priyanshu Parihar"
+  date: 2020-04-01
+  url: "https://hackerone.com/priyanshuxo"
+- name: "Johann Rehberger"
+  date: 2020-04-01
+  url: "https://twitter.com/wunderwuzzi23"
+- name: "Andi Rrahmani"
+  date: 2020-04-01
+  url: "https://www.linkedin.com/in/andirrahmani/"
+- name: "Leo Starcevic"
+  date: 2020-04-01
+- name: "streaak"
+  date: 2020-04-01
+  url: "https://twitter.com/streaak"
+- name: "Mohamed Haron Elhoseny"
+  date: 2020-01-01
+  url: "https://www.mohamedharon.com"
+- name: "Muhammad Khizer Javed"
+  date: 2020-01-01
+  url: "https://www.linkedin.com/in/muhammad-khizer-javed/"
+- name: "Lütfü Mert Ceylan"
+  date: 2020-01-01
+  url: "https://lutfumertceylan.com.tr"
+- name: "Yaniv Nizry"
+  date: 2020-01-01
+  url: "https://www.linkedin.com/in/yaniv-n-8b4a76193"
+- name: "Sachin Birendra Pandey"
+  date: 2020-01-01
+  url: "https://twitter.com/SachinP01470613"
+- name: "Onkar Sonawane"
+  date: 2020-01-01
+  url: "https://alancesec.com"
+- name: "Leo Starcevic"
+  date: 2020-01-01
+- name: "Ismail Tasdelen"
+  date: 2020-01-01
+  url: "https://www.linkedin.com/in/ismailtasdelen/"
 - name: "Mohammed Fayez Ahmed Albanna"
   date: 2019-10-01
   url: "https://www.linkedin.com/in/mohammedfayez"
@@ -24,6 +88,9 @@ names:
 - name: "Muhammad. R. Maulana"
   date: 2019-10-01
   url: "https://twitter.com/agamimaulana"
+- name: "Abdellah Nadi"
+  date: 2019-10-01
+  url: "https://www.facebook.com/Fatality04"
 - name: "Alexander Nagy"
   date: 2019-10-01
   url: "https://axen-cyber.com/"
