@@ -39,12 +39,12 @@ advisories:
       When trying to connect to a STUN server, a race condition could have caused a use-after-free of a pointer, leading to memory corruption and a potentially exploitable crash.
     bugs:
       - url: 1643437
-  MFSA-2020-0001:
+  CVE-2020-15646:
      title: Automatic account setup leaks Microsoft Exchange login credentials
      impact: high
      reporter: Magnus Melin
      description: |
-       If an attacker intercepts Thunderbird's initial attempt to perform automatic account setup using the Microsoft Exchange autodiscovery mechanism, and the attacker sends a crafted response, then Thunderbird sends username and password over https to a server controlled by the attacker.<br /><em>Note: This issue is pending a CVE assignment and will be updated when one is available.</em>
+       If an attacker intercepts Thunderbird's initial attempt to perform automatic account setup using the Microsoft Exchange autodiscovery mechanism, and the attacker sends a crafted response, then Thunderbird sends username and password over https to a server controlled by the attacker.
      bugs:
        - url: 1606610
   CVE-2020-12421:
