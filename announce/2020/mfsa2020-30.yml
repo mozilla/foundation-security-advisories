@@ -65,13 +65,13 @@ advisories:
     bugs:
       - url: 1637745
   CVE-2020-15657:
-    title: Firefox DLL hijacking due to incorrect loading path
+    title: DLL hijacking due to incorrect loading path
     impact: low
     reporter: Steve Nyan Lin
     description: |
-      Firefox can be made to load attacker-supplied DLL files from the installation directory.
-      This requires an attacker that is already capable of placing files in the installation directory.
-      <br>*Note: This attack only affects Windows operating systems. Other operating systems are unaffected.*
+      Firefox could be made to load attacker-supplied DLL files from the installation directory.
+      This required an attacker that is already capable of placing files in the installation directory.
+      <br>*Note: This issue only affected Windows operating systems. Other operating systems are unaffected.*
     bugs:
       - url: 1644954
   CVE-2020-15654:
