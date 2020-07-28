@@ -16,6 +16,7 @@ advisories:
     bugs:
       - url: 1634872
   CVE-2020-6514:
+    feed: false
     title: WebRTC data channel leaks internal address to peer
     impact: high
     reporter: Natalie Silvanovich of Google Project Zero

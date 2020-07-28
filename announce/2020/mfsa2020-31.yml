@@ -13,7 +13,8 @@ advisories:
       By observing the stack trace for JavaScript errors in web workers, it was possible to leak the result of a cross-origin redirect. This applied only to content that can be parsed as script.
     bugs:
       - url: 1634872
-  MFSA-2020-0004:
+  CVE-2020-6514:
+    feed: false
     title: WebRTC data channel leaks internal address to peer
     impact: high
     reporter: Natalie Silvanovich of Google Project Zero
