@@ -1,0 +1,94 @@
+## mfsa2020-30.yml
+announced: July 28, 2020
+impact: high
+fixed_in:
+- Firefox 79
+title: Security Vulnerabilities fixed in Firefox 79
+advisories:
+  CVE-2020-15652:
+    title: Potential leak of redirect targets when loading scripts in a worker
+    impact: high
+    reporter: Mikhail Oblozhikhin
+    description: |
+      By observing the stack trace for JavaScript errors in web workers, it was possible to leak the result of a cross-origin redirect. This applied only to content that can be parsed as script.
+    bugs:
+      - url: 1634872
+  CVE-2020-6514:
+    feed: false
+    title: WebRTC data channel leaks internal address to peer
+    impact: high
+    reporter: Natalie Silvanovich of Google Project Zero
+    description: |
+      WebRTC used the memory address of a class instance as a connection identifier.
+      Unfortunately, this value is often transmitted to the peer, which allows bypassing ASLR.
+    bugs:
+      - url: 1642792
+  CVE-2020-15655:
+    title: Extension APIs could be used to bypass Same-Origin Policy
+    impact: high
+    reporter: Rob Wu
+    description: |
+      Mozilla Developer Rob Wu discovered that a redirected HTTP request which is observed or modified through a web extension could bypass existing CORS checks, leading to potential disclosure of cross-origin information.
+    bugs:
+      - url: 1645204
+  CVE-2020-15653:
+    title: Bypassing iframe sandbox when allowing popups
+    impact: moderate
+    reporter: Anne van Kesteren
+    description: |
+      Mozilla developer Anne van Kesteren discovered that <code>&lt;iframe sandbox&gt;</code> with the <code>allow-popups</code> flag could be bypassed when using <code>noopener</code> links. This could have led to security issues for websites relying on sandbox configurations that allowed popups and hosted arbitrary content.
+    bugs:
+      - url: 1521542
+  CVE-2020-6463:
+    title: 'Use-after-free in ANGLE gl::Texture::onUnbindAsSamplerTexture'
+    impact: moderate
+    reporter: Reported by Pawel Wylecial of REDTEAM.PL
+    description: |
+      Crafted media files could lead to a race in texture caches, resulting in a use-after-free, memory corruption, and a potentially exploitable crash.
+    bugs:
+      - url: 1635293
+  CVE-2020-15656:
+    title: Type confusion for special arguments in IonMonkey
+    impact: moderate
+    reporter: Carl Smith, working with Google Project Zero
+    description: |
+      JIT optimizations involving the Javascript <code>arguments</code> object could confuse later optimizations.
+      This risk was already mitigated by various precautions in the code, resulting in this bug rated at only moderate severity.
+    bugs:
+      - url: 1647293
+  CVE-2020-15658:
+    title: Overriding file type when saving to disk
+    impact: low
+    reporter: belden
+    description: |
+      The code for downloading files did not properly take care of special characters,
+      which led to an attacker being able to cut off the file ending at an earlier position, leading to a different file type being downloaded than shown in the dialog.
+    bugs:
+      - url: 1637745
+  CVE-2020-15657:
+    title: DLL hijacking due to incorrect loading path
+    impact: low
+    reporter: Steve Nyan Lin
+    description: |
+      Firefox could be made to load attacker-supplied DLL files from the installation directory.
+      This required an attacker that is already capable of placing files in the installation directory.
+      <br>*Note: This issue only affected Windows operating systems. Other operating systems are unaffected.*
+    bugs:
+      - url: 1644954
+  CVE-2020-15654:
+    title: Custom cursor can overlay user interface
+    impact: low
+    reporter: SophosLabs Offensive Security team
+    description: |
+      When in an endless loop, a website specifying a custom cursor using CSS could make it look like the user is interacting with the user interface, when they are not. This could lead to a perceived broken state, especially when interactions with existing browser dialogs and warnings do not work.
+    bugs:
+      - url: 1648333
+  CVE-2020-15659:
+    title: Memory safety bugs fixed in Firefox 79
+    impact: high
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers and community members Kevin Brosnan, Alexandru Michis, Natalia Csoregi, Jason Kratzer, Christian Holler, Simon Giesecke, Luke Wagner reported memory safety bugs present in Firefox 78. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1550133, 1633880, 1638856, 1643613, 1644839, 1645835, 1646006, 1646220, 1646787, 1649347, 1650811, 1651678
+        desc: Memory safety bugs fixed in Firefox 79
