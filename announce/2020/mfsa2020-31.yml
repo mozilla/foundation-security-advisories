@@ -31,6 +31,24 @@ advisories:
       Crafted media files could lead to a race in texture caches, resulting in a use-after-free, memory corruption, and a potentially exploitable crash.
     bugs:
       - url: 1635293
+  CVE-2020-15650:
+    title: Overwriting local files through malicious file picker application
+    impact: moderate
+    reporter: Pedro Oliveira
+    description: |
+      Given an installed malicious file picker application, an attacker was able to overwrite local files and thus overwrite Firefox settings (but not access the previous profile).
+      <br>*Note: This issue only affected Firefox for Android. Other operating systems are unaffected.*
+    bugs:
+      - url: 1652360
+  CVE-2020-15649:
+    title: Exfiltrating local files through malicious file picker application
+    impact: moderate
+    reporter: Pedro Oliveira
+    description: |
+      Given an installed malicious file picker application, an attacker was able to steal and upload local files of their choosing, regardless of the actually files picked.
+      <br>*Note: This issue only affected Firefox for Android. Other operating systems are unaffected.*
+    bugs:
+      - url: 1652364
   CVE-2020-15659:
     title: Memory safety bugs fixed in Firefox 79 and Firefox ESR 68.11
     impact: high

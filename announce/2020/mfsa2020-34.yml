@@ -1,0 +1,31 @@
+## mfsa2020-34.yml
+announced: July 28, 2020 
+impact: high
+fixed_in:
+- Firefox for iOS 28
+title: Security Vulnerabilities fixed in Firefox for iOS 28
+advisories:
+  CVE-2020-15662:
+    title: Download JS user script can be overidden
+    impact: high
+    reporter: Muneaki Nishimura
+    description: |
+      A rogue webpage could override the injected WKUserScript used by the download feature, this exploit could result in the user downloading an unintended file.
+    bugs:
+      - url: 1653827
+  CVE-2020-15661:
+    title: Login JS user script can be overidden
+    impact: high
+    reporter: Muneaki Nishimura
+    description: |
+      A rogue webpage could override the injected WKUserScript used by the logins autofill, this exploit could result in leaking a password for the current domain.
+    bugs:
+      - url: 1654131
+  CVE-2020-15651:
+    title: 'Download Feature: unicode RTLO char can fake the file extension'
+    impact: low
+    reporter: superxx
+    description: |
+      A unicode RTL order character in the downloaded file name can be used to change the file's name during the download UI flow to change the file extension.
+    bugs:
+      - url: 1649160
