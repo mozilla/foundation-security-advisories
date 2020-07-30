@@ -1,0 +1,44 @@
+## mfsa2020-35.yml
+announced: July 30, 2020
+impact: high
+fixed_in:
+- Thunderbird 68.11
+title: Security Vulnerabilities fixed in Thunderbird 68.11
+description: |
+    *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
+advisories:
+  CVE-2020-15652:
+    title: Potential leak of redirect targets when loading scripts in a worker
+    impact: high
+    reporter: Mikhail Oblozhikhin
+    description: |
+      By observing the stack trace for JavaScript errors in web workers, it was possible to leak the result of a cross-origin redirect. This applied only to content that can be parsed as script.
+    bugs:
+      - url: 1634872
+  CVE-2020-6514:
+    feed: false
+    title: WebRTC data channel leaks internal address to peer
+    impact: high
+    reporter: Natalie Silvanovich of Google Project Zero
+    description: |
+      WebRTC used the memory address of a class instance as a connection identifier.
+      Unfortunately, this value is often transmitted to the peer, which allows bypassing ASLR.
+    bugs:
+      - url: 1642792
+  CVE-2020-6463:
+    title: 'Use-after-free in ANGLE gl::Texture::onUnbindAsSamplerTexture'
+    impact: moderate
+    reporter: Reported by Pawel Wylecial of REDTEAM.PL
+    description: |
+      Crafted media files could lead to a race in texture caches, resulting in a use-after-free, memory corruption, and a potentially exploitable crash.
+    bugs:
+      - url: 1635293
+  CVE-2020-15659:
+    title: Memory safety bugs fixed in Thunderbird 68.11
+    impact: high
+    reporter: Mozilla developers
+    description: |
+      Mozilla developers Jason Kratzer and Luke Wagner reported memory safety bugs present in Thunderbird 68.10. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1550133, 1633880, 1646787, 1650811
+        desc: Memory safety bugs fixed in Thunderbird 68.11

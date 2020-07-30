@@ -52,9 +52,9 @@ advisories:
   CVE-2020-15659:
     title: Memory safety bugs fixed in Firefox 79 and Firefox ESR 68.11
     impact: high
-    reporter: Mozilla developers and community
+    reporter: Mozilla developers
     description: |
-      Mozilla developers Jason Kratzer and Luke Wagner reported memory safety bugs present in Firefox 78 and Firefox ESR 68.01. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+      Mozilla developers Jason Kratzer and Luke Wagner reported memory safety bugs present in Firefox 78 and Firefox ESR 68.10. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
     bugs:
       - url: 1550133, 1633880, 1646787, 1650811
         desc: Memory safety bugs fixed in Firefox 79 and Firefox ESR 68.11
