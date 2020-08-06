@@ -43,12 +43,12 @@ advisories:
   CVE-2020-15649:
     title: Exfiltrating local files through malicious file picker application
     impact: moderate
-    reporter: Pedro Oliveira
+    reporter: Andrea Palazzo, Pedro Oliveira
     description: |
       Given an installed malicious file picker application, an attacker was able to steal and upload local files of their choosing, regardless of the actually files picked.
       <br>*Note: This issue only affected Firefox for Android. Other operating systems are unaffected.*
     bugs:
-      - url: 1652364
+      - url: 1475835, 1652364
   CVE-2020-15659:
     title: Memory safety bugs fixed in Firefox 79 and Firefox ESR 68.11
     impact: high
