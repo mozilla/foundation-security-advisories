@@ -1,0 +1,88 @@
+## mfsa2020-36.yml
+announced: August 25, 2020
+impact: high
+fixed_in:
+- Firefox 80
+title: Security Vulnerabilities fixed in Firefox 80
+advisories:
+  CVE-2020-15663:
+    title: Downgrade attack on the Mozilla Maintenance Service could have resulted in escalation of privilege
+    impact: high
+    reporter: Xiaoyin Liu
+    description: |
+      If Firefox is installed to a user-writable directory, the Mozilla Maintenance Service would execute updater.exe from the install location with administrative privileges. Although the Mozilla Maintenance Service does ensure that updater.exe is signed by Mozilla, the version could have been rolled back to a previous version which would have allowed exploitation of an older bug and arbitrary code execution with system privileges.<br>*Note: This issue only affected Windows operating systems. Other operating systems are unaffected.*
+    bugs:
+      - url: 1643199
+  CVE-2020-15664:
+    title: Attacker-induced prompt for extension installation
+    impact: high
+    reporter: Kaizer Soze
+    description: |
+      By holding a reference to the <code>eval()</code> function from an about:blank window, a malicious webpage could have gained access to the InstallTrigger object which would allow them to prompt the user to install an extension. Combined with user confusion, this could result in an unintended or malicious extension being installed.
+    bugs:
+      - url: 1658214
+  CVE-2020-12401:
+    title: Timing-attack on ECDSA signature generation
+    impact: moderate
+    reporter: Sohaib ul Hassan, Iaroslav Gridin, Ignacio M. Delgado-Lozano, Cesar Pereida García, Jesús-Javier Chi-Domínguez, Alejandro Cabrera Aldaya, and Billy Bob Brumley, Network and Information Security (NISEC) Group, Tampere University, Finland
+    description: |
+      During ECDSA signature generation, padding applied in the nonce designed to ensure constant-time scalar multiplication was removed, resulting in variable-time execution dependent on secret data.
+    bugs:
+      - url: 1631573
+  CVE-2020-6829:
+    title: P-384 and P-521 vulnerable to an electro-magnetic side channel attack on signature generation
+    impact: moderate
+    reporter: Sohaib ul Hassan, Iaroslav Gridin, Ignacio M. Delgado-Lozano, Cesar Pereida García, Jesús-Javier Chi-Domínguez, Alejandro Cabrera Aldaya, and Billy Bob Brumley, Network and Information Security (NISEC) Group, Tampere University, Finland
+    description: |
+      When performing EC scalar point multiplication, the wNAF point multiplication algorithm was used; which leaked partial information about the nonce used during signature generation. Given an electro-magnetic trace of a few signature generations, the private key could have been computed.
+    bugs:
+      - url: 1631583
+  CVE-2020-12400:
+    title: P-384 and P-521 vulnerable to a side channel attack on modular inversion
+    impact: moderate
+    reporter: Sohaib ul Hassan, Iaroslav Gridin, Ignacio M. Delgado-Lozano, Cesar Pereida García, Jesús-Javier Chi-Domínguez, Alejandro Cabrera Aldaya, and Billy Bob Brumley, Network and Information Security (NISEC) Group, Tampere University, Finland
+    description: |
+      When converting coordinates from projective to affine, the modular inversion was not performed in constant time, resulting in a possible timing-based side channel attack.
+    bugs:
+      - url: 1623116
+  CVE-2020-15665:
+    title: Address bar not reset when choosing to stay on a page after the beforeunload dialog is shown
+    impact: moderate
+    reporter: Luan Herrera
+    description: |
+      Firefox did not reset the address bar after the beforeunload dialog was shown if the user chose to remain on the page. This could have resulted in an incorrect URL being shown when used in conjunction with other unexpected browser behaviors.
+    bugs:
+      - url: 1651636
+  CVE-2020-15666:
+    title: MediaError message property leaks cross-origin response status
+    impact: low
+    reporter: Gunes Acar
+    description: |
+      When trying to load a non-video in an audio/video context the exact status code (200, 302, 404, 500, 412, 403, etc.) was disclosed via the MediaError Message. This level of information leakage is inconsistent with the standardized onerror/onsuccess disclosure and can lead to inferring login status to services or device discovery on a local network among other attacks.
+    bugs:
+      - url: 1450853
+  CVE-2020-15667:
+    title: Heap overflow when processing an update file
+    impact: low
+    reporter: crixer
+    description: |
+      When processing a MAR update file, after the signature has been validated, an invalid name length could result in a heap overflow, leading to memory corruption and potentially arbitrary code execution. Within Firefox as released by Mozilla, this issue is only exploitable with the Mozilla-controlled signing key.
+    bugs:
+      - url: 1653371
+  CVE-2020-15668:
+    title: Data Race when reading certificate information
+    impact: low
+    reporter: Tyson Smith
+    description: |
+      A lock was missing when accessing a data structure and importing certificate information into the trust database.
+    bugs:
+      - url: 1651520
+  CVE-2020-15670:
+    title: Memory safety bugs fixed in Firefox 80 and Firefox ESR 78.2
+    impact: high
+    reporter: Mozilla developers
+    description: |
+      Mozilla developers Jason Kratzer, Christian Holler, Byron Campen, and Tyson Smith reported memory safety bugs present in Firefox 79 and Firefox ESR 78.1. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1651001, 1651449, 1653626, 1656957
+        desc: Memory safety bugs fixed in Firefox 80 and Firefox ESR 78.2
