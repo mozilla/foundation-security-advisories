@@ -1,0 +1,33 @@
+## mfsa2020-40.yml
+announced: August 25, 2020
+impact: high
+fixed_in:
+- Thunderbird 68.12
+title: Security Vulnerabilities fixed in Thunderbird 68.12
+description: |
+    *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
+advisories:
+  CVE-2020-15663:
+    title: Downgrade attack on the Mozilla Maintenance Service could have resulted in escalation of privilege
+    impact: high
+    reporter: Xiaoyin Liu
+    description: |
+      If Thunderbird is installed to a user-writable directory, the Mozilla Maintenance Service would execute updater.exe from the install location with system privileges. Although the Mozilla Maintenance Service does ensure that updater.exe is signed by Mozilla, the version could have been rolled back to a previous version which would have allowed exploitation of an older bug and arbitrary code execution with System Privileges.<br>*Note: This issue only affected Windows operating systems. Other operating systems are unaffected.*
+    bugs:
+      - url: 1643199
+  CVE-2020-15664:
+    title: Attacker-induced prompt for extension installation
+    impact: high
+    reporter: Kaizer Soze
+    description: |
+      By holding a reference to the <code>eval()</code> function from an about:blank window, a malicious webpage could have gained access to the InstallTrigger object which would allow them to prompt the user to install an extension. Combined with user confusion, this could result in an unintended or malicious extension being installed.
+    bugs:
+      - url: 1658214
+  CVE-2020-15669:
+    title: Use-After-Free when aborting an operation
+    impact: high
+    reporter: Jason Kratzer
+    description: |
+      When aborting an operation, such as a fetch, an abort signal may be deleted while alerting the objects to be notified. This results in a use-after-free and we presume that with enough effort it could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1656957

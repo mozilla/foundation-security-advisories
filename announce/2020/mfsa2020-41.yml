@@ -1,0 +1,34 @@
+## mfsa2020-41.yml
+announced: August 25, 2020
+impact: high
+fixed_in:
+- Thunderbird 78.2
+title: Security Vulnerabilities fixed in Thunderbird 78.2
+description: |
+    *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
+advisories:
+  CVE-2020-15663:
+    title: Downgrade attack on the Mozilla Maintenance Service could have resulted in escalation of privilege
+    impact: high
+    reporter: Xiaoyin Liu
+    description: |
+      If Thunderbird is installed to a user-writable directory, the Mozilla Maintenance Service would execute updater.exe from the install location with system privileges. Although the Mozilla Maintenance Service does ensure that updater.exe is signed by Mozilla, the version could have been rolled back to a previous version which would have allowed exploitation of an older bug and arbitrary code execution with System Privileges.<br>*Note: This issue only affected Windows operating systems. Other operating systems are unaffected.*
+    bugs:
+      - url: 1643199
+  CVE-2020-15664:
+    title: Attacker-induced prompt for extension installation
+    impact: high
+    reporter: Kaizer Soze
+    description: |
+      By holding a reference to the <code>eval()</code> function from an about:blank window, a malicious webpage could have gained access to the InstallTrigger object which would allow them to prompt the user to install an extension. Combined with user confusion, this could result in an unintended or malicious extension being installed.
+    bugs:
+      - url: 1658214
+  CVE-2020-15670:
+    title: Memory safety bugs fixed in Thunderbird 78.2
+    impact: high
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers Jason Kratzer, Christian Holler, Byron Campen, Tyson Smith reported memory safety bugs present in Thunderbird 78.1. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1651001, 1651449, 1653626, 1656957
+        desc: Memory safety bugs fixed in Thunderbird 78.2
