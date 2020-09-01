@@ -82,7 +82,7 @@ advisories:
     impact: high
     reporter: Mozilla developers
     description: |
-      Mozilla developers Jason Kratzer, Christian Holler, Byron Campen, and Tyson Smith reported memory safety bugs present in Firefox 79 and Firefox ESR 78.1. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+      Mozilla developers Jason Kratzer, Christian Holler, and Byron Campen reported memory safety bugs present in Firefox 79 and Firefox ESR 78.1. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
     bugs:
-      - url: 1651001, 1651449, 1653626, 1656957
+      - url: 1651001, 1653626, 1656957
         desc: Memory safety bugs fixed in Firefox 80 and Firefox ESR 78.2
