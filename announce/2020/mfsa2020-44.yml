@@ -1,0 +1,42 @@
+## mfsa2020-44.yml
+announced: September 22, 2020
+impact: moderate
+fixed_in:
+- Thunderbird 78.3
+title: Security Vulnerabilities fixed in Thunderbird 78.3
+description: |
+    *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
+advisories:
+  CVE-2020-15677:
+    title: Download origin spoofing via redirect
+    impact: moderate
+    reporter: Richard Thomas and Tom Chothia of University of Birmingham
+    description: |
+      By exploiting an Open Redirect vulnerability on a website, an attacker could have spoofed the site displayed in the download file dialog to show the original site (the one suffering from the open redirect) rather than the site the file was actually downloaded from.
+    bugs:
+      - url: 1641487
+  CVE-2020-15676:
+    title: XSS when pasting attacker-controlled data into a contenteditable element
+    impact: moderate
+    reporter: Daniel Fröjdendahl
+    description: |
+      Thunderbird sometimes ran the onload handler for SVG elements that the DOM sanitizer decided to remove, resulting in JavaScript being executed after pasting attacker-controlled data into a contenteditable element.
+    bugs:
+      - url: 1646140
+  CVE-2020-15678:
+    title: When recursing through layers while scrolling, an iterator may have become invalid, resulting in a potential use-after-free scenario
+    impact: moderate
+    reporter: Lukas Bernhard
+    description: |
+      When recursing through graphical layers while scrolling, an iterator may have become invalid, resulting in a potential use-after-free. This occurs because the function <code>APZCTreeManager::ComputeClippedCompositionBounds</code> did not follow iterator invalidation rules.
+    bugs:
+      - url: 1660211
+  CVE-2020-15673:
+    title: Memory safety bugs fixed in Thunderbird 78.3
+    impact: high
+    reporter: Jason Kratzer
+    description: |
+      Mozilla developer Jason Kratzer reported memory safety bugs present in Thunderbird 78.2. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1648493, 1660800
+        desc: Memory safety bugs fixed in Thunderbird 78.3
