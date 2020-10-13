@@ -1,4 +1,39 @@
 names:
+- name: Jesse Luoto
+  date: 2020-06-22
+  twitter: "@luotojesse"
+  url: https://twitter.com/@luotojesse
+- name: Marcin 'Icewall' Noga of Cisco Talos
+  date: 2020-06-22
+- name: Riccardo Ancarani
+  date: 2020-06-22
+  twitter: "@dottor_morte"
+  url: https://twitter.com/@dottor_morte
+- name: Eliya Stein
+  date: 2020-06-08
+- name: Deian Stefan
+  date: 2020-06-08
+- name: Vinoth Kumar
+  date: 2020-06-02
+- name: Abdellah Nadi
+  date: 2020-06-01
+  url: https://www.facebook.com/Fatality04
+- name: Ophir LOJKINE
+  date: 2020-06-01
+- name: David Yesland
+  date: 2020-06-01
+- name: Rayyan Bijoora
+  date: 2020-06-01
+  twitter: "@Bijoora"
+  url: https://facebook.com/Bijoora
+- name: Muneaki Nishimura (a.k.a. nishimunea)
+  date: 2020-05-18
+- name: Francisco Alonso
+  date: 2020-05-18
+  twitter: "@revskills"
+  url: https://twitter.com/@revskills
+- name: Wen Xu of SSLab Georgia Tech
+  date: 2020-05-18
 - name: Adrian
   date: 2020-03-16
 - name: Daniel Tomescu
