@@ -1,4 +1,53 @@
 names:
+- name: Krzysztof `vnd’ Katowicz-Kowalewski
+  date: 2020-09-28
+- name: Rotem Kerner
+  date: 2020-09-22
+  url: http://www.kerneronsec.com/
+- name: Lukas Bernhard
+  date: 2020-09-22
+- name: Brian Carpenter of Geeknik Labs & Farm
+  date: 2020-09-22
+  twitter: "@geeknik"
+  url: https://twitter.com/@geeknik
+- name: Michael Smith
+  date: 2020-09-08
+- name: Daniel Fröjdendahl
+  date: 2020-09-08
+- name: Iain Nicol of Iainteractive
+  date: 2020-09-01
+  url: https://www.iainnicol.com/
+- name: Kaizer Soze
+  date: 2020-08-27
+- name: Richard Thomas and Tom Chothia of University of Birmingham
+  date: 2020-08-25
+- name: Gary Kwong
+  date: 2020-08-11
+- name: Andrea Palazzo
+  date: 2020-08-06
+- name: obmi
+  date: 2020-07-28
+- name: Guido Vranken
+  date: 2020-07-28
+- name: Xiaoyin Liu
+  date: 2020-07-28
+- name: superxx
+  date: 2020-07-28
+- name: Pedro Oliveira
+  date: 2020-07-28
+  twitter: "@kanytu"
+  url: https://twitter.com/@kanytu
+- name: Muneaki Nishimura (a.k.a. nishimunea)
+  date: 2020-07-28
+- name: Johannes Wikner; Cristiano Giuffrida; Herbert Bos and Kaveh Razavi of VUSec; Vrije Universiteit Amsterdam
+  date: 2020-07-14
+- name: Gunes Acar
+  date: 2020-07-10
+- name: Brian Smith
+  date: 2020-07-08
+  url: https://briansmith.org/
+- name: Andrea.
+  date: 2020-07-07
 - name: Jesse Luoto
   date: 2020-06-22
   twitter: "@luotojesse"
