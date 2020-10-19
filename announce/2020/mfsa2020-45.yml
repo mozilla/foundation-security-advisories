@@ -1,0 +1,71 @@
+## mfsa2020-45.yml
+announced: October 20, 2020
+impact: high
+fixed_in:
+- Firefox 82
+title: Security Vulnerabilities fixed in Firefox 82
+advisories:
+  CVE-2020-15969:
+    title: Use-after-free in usersctp
+    impact: high
+    reporter: Mark Wodrich of Google
+    feed: false
+    description: |
+      A use-after-free bug in the usersctp library was reported upstream. We assume this could have led to memory corruption and a potentially exploitable crash.
+    bugs:
+      - url: 1666570
+      - url: https://github.com/sctplab/usrsctp/commit/ffed0925f27d404173c1e3e750d818f432d2c019
+        desc: "[sctplab] upstream usrsctp fix"
+  CVE-2020-15254:
+    title: Undefined behavior in bounded channel of crossbeam rust crate
+    impact: high
+    reporter: Caelum van Ispelen
+    feed: false
+    description: |
+      In the crossbeam rust crate, the bounded channel incorrectly assumed that Vec::from_iter had allocated capacity that was the same as the number of iterator elements. Vec::from_iter does not actually guarantee that and may allocate extra memory. The destructor of the bounded channel reconstructs Vec from the raw pointer based on the incorrect assumptions - this is unsound and caused a deallocation with the incorrect capacity when Vec::from_iter had allocated different sizes than the number of iterator elements. The impact on Firefox is undetermined, but in another use case, the behavior was causing corruption of jemalloc structures.
+    bugs:
+      - url: 1668514
+      - url: https://github.com/crossbeam-rs/crossbeam/security/advisories/GHSA-v5m7-53cv-f3hx
+        desc: "[crossbeam-rs] Undefined Behavior in bounded channel"
+  CVE-2020-15680:
+    title: Presence of external protocol handlers could be determined through image tags
+    impact: moderate
+    reporter: Rotem Kerner
+    description: |
+      If a valid external protocol handler was referenced in an image tag, the resulting broken image size could be distinguished from a broken image size of a non-existent protocol handler. This allowed an attacker to successfully probe whether an external protocol handler was registered.
+    bugs:
+      - url: 1658881
+  CVE-2020-15681:
+    title: Multiple WASM threads may have overwritten each others' stub table entries
+    impact: moderate
+    reporter: Alon Zakai
+    description: |
+      When multiple WASM threads had a reference to a module, and were looking up exported functions, one WASM thread could have overwritten another's entry in a shared stub table, resulting in a potentially exploitable crash.
+    bugs:
+      - url: 1666568
+  CVE-2020-15682:
+    title: The domain associated with the prompt to open an external protocol could be spoofed to display the incorrect origin
+    impact: low
+    reporter: Lijo A.T.
+    description: |
+      When a link to an external protocol was clicked, a prompt was presented that allowed the user to choose what application to open it in. An attacker could induce that prompt to be associated with an origin they didn't control, resulting in a spoofing attack. This was fixed by changing external protocol prompts to be tab-modal while also ensuring they could not be incorrectly associated with a different origin.
+    bugs:
+      - url: 1636654
+  CVE-2020-15683:
+    title: Memory safety bugs fixed in Firefox 82 and Firefox ESR 78.4
+    impact: high
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers and community members Simon Giesecke, Christian Holler, Philipp, and Jason Kratzer reported memory safety bugs present in Firefox 81 and Firefox ESR 78.3. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1576843, 1656987, 1660954, 1662760, 1663439, 1666140
+        desc: Memory safety bugs fixed in Firefox 82 and Firefox ESR 78.4
+  CVE-2020-15684:
+    title: Memory safety bugs fixed in Firefox 82
+    impact: high
+    reporter: Mozilla developers
+    description: |
+      Mozilla developers Christian Holler, Sebastian Hengst, Bogdan Tara, and Tyson Smith reported memory safety bugs present in Firefox 81. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1653764, 1661402, 1662259, 1664257
+        desc: Memory safety bugs fixed in Firefox 82
