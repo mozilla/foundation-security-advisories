@@ -1,0 +1,29 @@
+## mfsa2020-47.yml
+announced: October 21, 2020
+impact: high
+fixed_in:
+- Thunderbird 78.4
+title: Security Vulnerabilities fixed in Thunderbird 78.4
+description: |
+    *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
+advisories:
+  CVE-2020-15969:
+    title: Use-after-free in usersctp
+    impact: high
+    reporter: Mark Wodrich of Google
+    feed: false
+    description: |
+      A use-after-free bug in the usersctp library was reported upstream. We assume this could have led to memory corruption and a potentially exploitable crash.
+    bugs:
+      - url: 1666570
+      - url: https://github.com/sctplab/usrsctp/commit/ffed0925f27d404173c1e3e750d818f432d2c019
+        desc: "[sctplab] upstream usrsctp fix"
+  CVE-2020-15683:
+    title: Memory safety bugs fixed in Thunderbird 78.4
+    impact: high
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers and community members Jason Kratzer, Simon Giesecke, Philipp, and Christian Holler reported memory safety bugs present in Thunderbird 78.3. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1576843, 1656987, 1660954, 1662760, 1663439, 1666140
+        desc: Memory safety bugs fixed in Thunderbird 78.4
