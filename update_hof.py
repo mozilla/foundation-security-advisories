@@ -271,7 +271,7 @@ credit_entries = {
     "e2b442dbd6ddf0e28802b71bb4cf4376" : "Artur Osiński (Virtual_ManPL)",
     "e310574c3c35c503d99ef03885b7ef3a" : "Jay Gilbert",
     "e33752885775e4a274c6db31c995434b" : "Brian Carpenter of Geeknik Labs & Farm",
-    "e4e810ec230795b44abbeb37d56b86e8" : "Abdulrahman Alqabandi",
+    "e4e810ec230795b44abbeb37d56b86e8" : "Abdulrahman Alqabandi of Microsoft Browser Vulnerability Research",
     "e5d2322aa516d90b7eb9a84d7b890938" : "Björn Ruytenberg",
     "e750febf3b1e213b458f017fac835b27" : "Rh0",
     "e751036f55bbf501042162b16c883b4e" : "Nicolas Francois",
