@@ -1,0 +1,24 @@
+## mfsa2020-48.yml
+announced: October 26, 2020
+impact: moderate
+fixed_in:
+- Mozilla VPN Windows 1.2.2
+- Mozilla VPN Android 1.1.0 (1360)
+- Mozilla VPN iOS 1.0.7 (929)
+title: OAuth session fixation vulnerability in Mozilla VPN
+description: |
+    *An OAuth session fixation vulnerability existed in the VPN login flow.  This issue was mitigated server-side and this additional fix is aimed at eliminating residual risk for Windows, Android, and iOS clients.*
+advisories:
+  CVE-2020-15679:
+    title: OAuth Session Fixation on VPN login
+    impact: moderate
+    reporter: Cure53
+    description: |
+      An OAuth session fixation vulnerability existed in the VPN login flow, where an attacker could craft a custom login URL, convince a VPN user to login via that URL, and obtain authenticated access as that user.  This issue is limited to cases where attacker and victim are sharing the same source IP and could allow the ability to view session states and disconnect VPN sessions.
+    bugs:
+      - url: https://github.com/mozilla-services/guardian-vpn-windows/commit/ac6f562973a83f6758cd7ab7aa313e863047d41b
+        desc: Windows commit
+      - url: https://github.com/mozilla-mobile/guardian-vpn-android/commit/981c840276ef3aee98cf5d42993d484ee99b28d9
+        desc: Android commit
+      - url: https://github.com/mozilla-mobile/guardian-vpn-ios/commit/4309f5c9bd2c15cdfd39ac173665fad3f2598b54
+        desc: iOS commit
