@@ -4,7 +4,8 @@ impact: critical
 fixed_in:
 - Firefox 82.0.3
 - Firefox ESR 78.4.1
-title: Security Vulnerabilities fixed in Firefox 82.0.3 and Firefox ESR 78.4.1
+- Thunderbird 78.4.2
+title: Security Vulnerabilities fixed in Firefox 82.0.3, Firefox ESR 78.4.1, and Thunderbird 78.4.2
 advisories:
   CVE-2020-26950:
     title: Write side effects in MCallGetProperty opcode not accounted for
