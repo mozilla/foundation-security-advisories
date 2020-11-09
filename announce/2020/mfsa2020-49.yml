@@ -1,0 +1,16 @@
+## mfsa2020-49.yml
+announced: November 9, 2020
+impact: critical
+fixed_in:
+- Firefox 82.0.3
+- Firefox ESR 78.4.1
+title: Security Vulnerabilities fixed in Firefox 82.0.3 and Firefox ESR 78.4.1
+advisories:
+  CVE-2020-26950:
+    title: Write side effects in MCallGetProperty opcode not accounted for
+    impact: critical
+    reporter: 360政企安全漏洞研究院 in Tianfu Cup 2020 International Cybersecurity Contest
+    description: |
+      In certain circumstances, the MCallGetProperty opcode can be emitted with unmet assumptions resulting in an exploitable use-after-free condition.
+    bugs:
+      - url: 1675905
