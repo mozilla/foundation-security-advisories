@@ -1,4 +1,88 @@
 names:
+- name: Krzysztof `vnd’ Katowicz-Kowalewski
+  date: 2020-09-28
+- name: Rotem Kerner
+  date: 2020-09-22
+  url: http://www.kerneronsec.com/
+- name: Lukas Bernhard
+  date: 2020-09-22
+- name: Brian Carpenter of Geeknik Labs & Farm
+  date: 2020-09-22
+  twitter: "@geeknik"
+  url: https://twitter.com/@geeknik
+- name: Michael Smith
+  date: 2020-09-08
+- name: Daniel Fröjdendahl
+  date: 2020-09-08
+- name: Iain Nicol of Iainteractive
+  date: 2020-09-01
+  url: https://www.iainnicol.com/
+- name: Kaizer Soze
+  date: 2020-08-27
+- name: Richard Thomas and Tom Chothia of University of Birmingham
+  date: 2020-08-25
+- name: Gary Kwong
+  date: 2020-08-11
+- name: Andrea Palazzo
+  date: 2020-08-06
+- name: obmi
+  date: 2020-07-28
+- name: Guido Vranken
+  date: 2020-07-28
+- name: Xiaoyin Liu
+  date: 2020-07-28
+- name: superxx
+  date: 2020-07-28
+- name: Pedro Oliveira
+  date: 2020-07-28
+  twitter: "@kanytu"
+  url: https://twitter.com/@kanytu
+- name: Muneaki Nishimura (a.k.a. nishimunea)
+  date: 2020-07-28
+- name: Johannes Wikner; Cristiano Giuffrida; Herbert Bos and Kaveh Razavi of VUSec; Vrije Universiteit Amsterdam
+  date: 2020-07-14
+- name: Gunes Acar
+  date: 2020-07-10
+- name: Brian Smith
+  date: 2020-07-08
+  url: https://briansmith.org/
+- name: Andrea.
+  date: 2020-07-07
+- name: Jesse Luoto
+  date: 2020-06-22
+  twitter: "@luotojesse"
+  url: https://twitter.com/@luotojesse
+- name: Marcin 'Icewall' Noga of Cisco Talos
+  date: 2020-06-22
+- name: Riccardo Ancarani
+  date: 2020-06-22
+  twitter: "@dottor_morte"
+  url: https://twitter.com/@dottor_morte
+- name: Eliya Stein
+  date: 2020-06-08
+- name: Deian Stefan
+  date: 2020-06-08
+- name: Vinoth Kumar
+  date: 2020-06-02
+- name: Abdellah Nadi
+  date: 2020-06-01
+  url: https://www.facebook.com/Fatality04
+- name: Ophir LOJKINE
+  date: 2020-06-01
+- name: David Yesland
+  date: 2020-06-01
+- name: Rayyan Bijoora
+  date: 2020-06-01
+  twitter: "@Bijoora"
+  url: https://facebook.com/Bijoora
+- name: Muneaki Nishimura (a.k.a. nishimunea)
+  date: 2020-05-18
+- name: Francisco Alonso
+  date: 2020-05-18
+  twitter: "@revskills"
+  url: https://twitter.com/@revskills
+- name: Wen Xu of SSLab Georgia Tech
+  date: 2020-05-18
 - name: Adrian
   date: 2020-03-16
 - name: Daniel Tomescu
@@ -64,7 +148,7 @@ names:
   date: 2019-12-19
 - name: Michał Bentkowski
   date: 2019-12-13
-- name: Abdulrahman Alqabandi
+- name: Abdulrahman Alqabandi of Microsoft Browser Vulnerability Research
   date: 2019-12-09
   twitter: "@qab"
   url: https://twitter.com/@qab
@@ -201,7 +285,7 @@ names:
   url: https://rakeshmane.com/
 - name: Gregory Smiley of Security Compass
   date: 2019-06-10
-- name: Abdulrahman Alqabandi
+- name: Abdulrahman Alqabandi of Microsoft Browser Vulnerability Research
   date: 2019-06-03
   twitter: "@qab"
   url: https://twitter.com/@qab
@@ -280,7 +364,7 @@ names:
   url: https://www.zippenhop.com/
 - name: Harry Gertos
   date: 2019-01-28
-- name: Abdulrahman Alqabandi
+- name: Abdulrahman Alqabandi of Microsoft Browser Vulnerability Research
   date: 2019-01-28
   twitter: "@qab"
   url: https://twitter.com/@qab
@@ -330,7 +414,7 @@ names:
   date: 2018-11-12
   twitter: "@attekett"
   url: https://twitter.com/@attekett
-- name: Abdulrahman Alqabandi
+- name: Abdulrahman Alqabandi of Microsoft Browser Vulnerability Research
   date: 2018-10-29
   twitter: "@qab"
   url: https://twitter.com/@qab
@@ -401,7 +485,7 @@ names:
 - name: Ronald Crane
   date: 2018-06-25
   url: https://www.zippenhop.com/
-- name: Abdulrahman Alqabandi
+- name: Abdulrahman Alqabandi of Microsoft Browser Vulnerability Research
   date: 2018-06-18
   twitter: "@qab"
   url: https://twitter.com/@qab
@@ -454,7 +538,7 @@ names:
   date: 2018-02-26
   twitter: "@shhnjk "
   url: https://twitter.com/@shhnjk 
-- name: Abdulrahman Alqabandi
+- name: Abdulrahman Alqabandi of Microsoft Browser Vulnerability Research
   date: 2018-02-12
   twitter: "@qab"
   url: https://twitter.com/@qab
@@ -530,7 +614,7 @@ names:
   url: https://facebook.com/Bijoora
 - name: Ezra Caltum
   date: 2017-10-09
-- name: Abdulrahman Alqabandi
+- name: Abdulrahman Alqabandi of Microsoft Browser Vulnerability Research
   date: 2017-09-18
   twitter: "@qab"
   url: https://twitter.com/@qab
@@ -674,7 +758,7 @@ names:
   url: https://twitter.com/@attekett
 - name: Looben Yang
   date: 2017-02-14
-- name: Abdulrahman Alqabandi
+- name: Abdulrahman Alqabandi of Microsoft Browser Vulnerability Research
   date: 2017-02-13
   twitter: "@qab"
   url: https://twitter.com/@qab
@@ -701,7 +785,7 @@ names:
   date: 2016-12-19
   twitter: "@insertscript"
   url: https://twitter.com/@insertscript
-- name: Abdulrahman Alqabandi
+- name: Abdulrahman Alqabandi of Microsoft Browser Vulnerability Research
   date: 2016-12-19
   twitter: "@qab"
   url: https://twitter.com/@qab
@@ -759,7 +843,7 @@ names:
   date: 2016-08-29
 - name: Nils
   date: 2016-08-29
-- name: Abdulrahman Alqabandi
+- name: Abdulrahman Alqabandi of Microsoft Browser Vulnerability Research
   date: 2016-08-22
   twitter: "@qab"
   url: https://twitter.com/@qab
@@ -783,7 +867,7 @@ names:
   date: 2016-07-01
 - name: Jay Gilbert
   date: 2016-07-01
-- name:  Abdulrahman Alqabandi
+- name:  Abdulrahman Alqabandi of Microsoft Browser Vulnerability Research
   date: 2016-07-01
   twitter: "@qab"
   url: https://twitter.com/@qab
@@ -871,7 +955,7 @@ names:
   url: http://www.agarri.fr/
 - name: jasonpang2011
   date: 2016-02-16
-- name: Abdulrahman Alqabandi
+- name: Abdulrahman Alqabandi of Microsoft Browser Vulnerability Research
   date: 2016-02-08
   twitter: "@qab"
   url: https://twitter.com/@qab
@@ -934,7 +1018,7 @@ names:
   date: 2015-10-14
 - name: Michał Bentkowski
   date: 2015-10-12
-- name: Abdulrahman Alqabandi
+- name: Abdulrahman Alqabandi of Microsoft Browser Vulnerability Research
   date: 2015-10-12
   twitter: "@qab"
   url: https://twitter.com/@qab
