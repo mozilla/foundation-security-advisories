@@ -1,0 +1,106 @@
+## mfsa2020-FIXME.yml
+announced: November 17, 2020
+impact: high
+fixed_in:
+- Firefox ESR 78.5
+title: Security Vulnerabilities fixed in Firefox ESR 78.5
+advisories:
+  CVE-2020-26951:
+    title: Parsing mismatches could confuse and bypass security sanitizer for chrome privileged code
+    impact: high
+    reporter: Irvan Kurniawan (@sourc7)
+    description: |
+      A parsing and event loading mismatch in Firefox's SVG code could have allowed load events to fire, even after sanitization. An attacker already capable of exploiting an XSS vulnerability in privileged internal pages could have used this attack to bypass our built-in sanitizer.
+    bugs:
+      - url: 1667113
+  CVE-2020-16012:
+    title: Variable time processing of cross-origin images during drawImage calls
+    impact: moderate
+    reporter: Aleksejs Popovs
+    feed: false
+    description: |
+      When drawing a transparent image on top of an unknown cross-origin image, the Skia library <code>drawImage</code> function took a variable amount of time depending on the content of the underlying image. This resulted in potential cross-origin information exposure of image content through timing side-channel attacks.
+    bugs:
+      - url: 1642028
+  CVE-2020-26953:
+    title: Fullscreen could be enabled without displaying the security UI
+    impact: moderate
+    reporter: Abdulrahman Alqabandi of Microsoft Browser Vulnerability Research
+    description: |
+      It was possible to cause the browser to enter fullscreen mode without displaying the security UI; thus making it possible to attempt a phishing attack or otherwise confuse the user.
+    bugs:
+      - url: 1656741
+  CVE-2020-26956:
+    title: XSS through paste (manual and clipboard API)
+    impact: moderate
+    reporter: Irvan Kurniawan (@sourc7)
+    description: |
+      In some cases, removing HTML elements during sanitization would keep existing SVG event handlers and therefore lead to XSS.
+    bugs:
+      - url: 1666300
+  CVE-2020-26958:
+    title: Requests intercepted through ServiceWorkers lacked MIME type restrictions
+    impact: moderate
+    reporter: Moti Harmats
+    description: |
+      Firefox did not block execution of scripts with incorrect MIME types when the response was intercepted and cached through a ServiceWorker. This could lead to a cross-site script inclusion vulnerability, or a Content Security Policy bypass.
+    bugs:
+      - url: 1669355
+  CVE-2020-26959:
+    title: Use-after-free in WebRequestService
+    impact: moderate
+    reporter: Bharadwaj Machiraju
+    description: |
+      During browser shutdown, reference decrementing could have occured on a previously freed object, resulting in a use-after-free, memory corruption, and a potentially exploitable crash.
+    bugs:
+      - url: 1669466
+  CVE-2020-26960:
+    title: Potential use-after-free in uses of nsTArray
+    impact: moderate
+    reporter: Zijie Zhao
+    description: |
+      If the <code>Compact()</code> method was called on an nsTArray, the array could have been reallocated without updating other pointers, leading to a potential use-after-free and exploitable crash.
+    bugs:
+      - url: 1670358
+  CVE-2020-15999:
+    title: Heap buffer overflow in freetype
+    impact: moderate
+    feed: false
+    reporter: Sergei Glazunov of Google Project Zero
+    description: |
+      In Freetype, if PNG images were embedded into fonts, the <code>Load_SBit_Png</code> function contained an integer overflow that led to a heap buffer overflow, memory corruption, and an exploitable crash.<br>*Note: While Project Zero did discover instances of this vulnerability being exploited in the wild against Chrome, in Firefox this vulnerability is only triggerable if a rarely-used, hidden preference is toggled, and only affected Linux and Android operating systems. Other operating systems are unaffected; and Linux and Android are unaffected in the default configuration.*
+    bugs:
+      - url: 1672223
+  CVE-2020-26961:
+    title: DoH did not filter IPv4 mapped IP Addresses
+    impact: moderate
+    reporter: Gabriel Corona
+    description: |
+      When DNS over HTTPS is in use, it intentionally filters RFC1918 and related IP ranges from the responses as these do not make sense coming from a DoH resolver. However when an IPv4 address was mapped through IPv6, these addresses were erroneously let through, leading to a potential DNS Rebinding attack.
+    bugs:
+      - url: 1672528
+  CVE-2020-26965:
+    title: Software keyboards may have remembered typed passwords
+    impact: low
+    reporter: Makoto Kato
+    description: |
+      Some websites have a feature "Show Password" where clicking a button will change a password field into a textbook field, revealing the typed password. If, when using a software keyboard that remembers user input, a user typed their password and used that feature, the type of the password field was changed, resulting in a keyboard layout change and the possibility for the software keyboard to remember the typed password.
+    bugs:
+      - url: 1661617
+  CVE-2020-26966:
+    title: Single-word search queries were also broadcast to local network
+    impact: low
+    reporter: tiebuchen
+    description: |
+      Searching for a single word from the address bar caused an mDNS request to be sent on the local network searching for a hostname consisting of that string; resulting in an information leak.<br>*Note: This issue only affected Windows operating systems. Other operating systems are unaffected.*
+    bugs:
+      - url: 1663571
+  CVE-2020-26968:
+    title: Memory safety bugs fixed in Firefox 83 and Firefox ESR 78.5
+    impact: high
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers Steve Fink, Jason Kratzer, Randell Jesup, Christian Holler, and Byron Campen reported memory safety bugs present in Firefox 82 and Firefox ESR 78.4. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1551615, 1607762, 1656697, 1657739, 1660236, 1667912, 1671479, 1671923
+        desc: Memory safety bugs fixed in Firefox 83 and Firefox ESR 78.5
