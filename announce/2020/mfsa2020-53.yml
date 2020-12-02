@@ -1,0 +1,15 @@
+## mfsa2020-53.yml
+announced: December 1, 2020
+impact: high
+fixed_in:
+- Thunderbird 78.5.1
+title: Security Vulnerabilities fixed in Thunderbird 78.5.1
+advisories:
+  CVE-2020-26970:
+    title: Stack overflow due to incorrect parsing of SMTP server response codes
+    impact: high
+    reporter: Chiaki Ishikawa
+    description: |
+      When reading SMTP server status codes, Thunderbird writes an integer value to a position on the stack that is intended to contain just one byte. Depending on processor architecture and stack layout, this leads to stack corruption that may be exploitable.
+    bugs:
+      - url: 1677338
