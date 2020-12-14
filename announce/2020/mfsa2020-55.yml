@@ -1,0 +1,73 @@
+## mfsa2020-55.yml
+announced: December 15, 2020
+impact: critical
+fixed_in:
+- Firefox ESR 78.6
+title: Security Vulnerabilities fixed in Firefox ESR 78.6
+advisories:
+  CVE-2020-16042:
+    title: Operations on a BigInt could have caused uninitialized memory to be exposed
+    impact: critical
+    reporter: André Bargull
+    feed: false
+    description: |
+      When a BigInt was right-shifted the backing store was not properly cleared, allowing uninitialized memory to be read.
+    bugs:
+      - url: 1679003
+  CVE-2020-26971:
+    title: Heap buffer overflow in WebGL
+    impact: high
+    reporter: Omair, Abraruddin Khan
+    description: |
+      Certain blit values provided by the user were not properly constrained leading to a heap buffer overflow on some video drivers.
+    bugs:
+      - url: 1663466
+  CVE-2020-26973:
+    title: CSS Sanitizer performed incorrect sanitization
+    impact: high
+    reporter: Kai Engert
+    description: |
+      Certain input to the CSS Sanitizer confused it, resulting in incorrect components being removed. This could have been used as a sanitizer bypass.
+    bugs:
+      - url: 1680084
+  CVE-2020-26974:
+    title: Incorrect cast of StyleGenericFlexBasis resulted in a heap use-after-free
+    impact: high
+    reporter: Pham Bao of VinCSS (Member of Vingroup)
+    description: |
+      When <code>flex-basis</code> was used on a table wrapper, a <code>StyleGenericFlexBasis</code> object could have been incorrectly cast to the wrong type. This resulted in a heap user-after-free, memory corruption, and a potentially exploitable crash.
+    bugs:
+      - url: 1681022
+  CVE-2020-26978:
+    title: Internal network hosts could have been probed by a malicious webpage
+    impact: moderate
+    reporter: Samy Kamkar, Ben Seri, and Gregory Vishnepolsky
+    description: |
+      Using techniques that built on the slipstream research, a malicious webpage could have exposed both an internal network's hosts as well as services running on the user's local machine.
+    bugs:
+      - url: 1677047
+  CVE-2020-35111:
+    title: The proxy.onRequest API did not catch view-source URLs
+    impact: low
+    reporter: Yassine Tioual
+    description: |
+      When an extension with the proxy permission registered to receive <code>&lt;all_urls&gt;</code>, the proxy.onRequest callback was not triggered for view-source URLs. While web content cannot navigate to such URLs, a user opening View Source could have inadvertently leaked their IP address.
+    bugs:
+      - url: 1657916
+  CVE-2020-35112:
+    title: Opening an extension-less download may have inadvertently launched an executable instead
+    impact: low
+    reporter: Samuel Attard via the Chrome Security Team
+    description: |
+      If a user downloaded a file lacking an extension on Windows, and then "Open"-ed it from the downloads panel, if there was an executable file in the downloads directory with the same name but with an executable extension (such as .bat or .exe) that executable would have been launched instead.<br>*Note: This issue only affected Windows operating systems. Other operating systems are unaffected.*
+    bugs:
+      - url: 1661365
+  CVE-2020-35113:
+    title: Memory safety bugs fixed in Firefox 84 and Firefox ESR 78.6
+    impact: high
+    reporter: Christian Holler
+    description: |
+      Mozilla developer Christian Holler reported memory safety bugs present in Firefox 83 and Firefox ESR 78.5. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1664831, 1673589
+        desc: Memory safety bugs fixed in Firefox 84 and Firefox ESR 78.6
