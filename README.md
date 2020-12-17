@@ -2,7 +2,7 @@
 
 Canonical source for Mozilla Foundation Security Advisories. http://www.mozilla.org/security/announce/
 
-[![Build Status](https://circleci.com/gh/circleci/mozilla/foundation-security-advisories.svg?style=svg)](https://circleci.com/gh/mozilla/foundation-security-advisories)
+[![Build Status](https://circleci.com/gh/mozilla/foundation-security-advisories.svg?style=svg)](https://circleci.com/gh/mozilla/foundation-security-advisories)
 
 ## Writing new announcements
 
