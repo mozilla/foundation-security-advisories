@@ -1,0 +1,17 @@
+## mfsa2021-02.yml
+announced: January 11, 2021
+impact: critical
+fixed_in:
+- Thunderbird 78.6.1
+title: Security Vulnerabilities fixed in Thunderbird 78.6.1
+description: |
+  *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
+advisories:
+  CVE-2020-16044:
+    title: Use-after-free write when handling a malicious COOKIE-ECHO SCTP chunk
+    impact: critical
+    reporter: Ned Williamson
+    description: |
+      A malicious peer could have modified a COOKIE-ECHO chunk in a SCTP packet in a way that potentially resulted in a use-after-free. We presume that with enough effort it could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1683964
