@@ -87,6 +87,15 @@ https://bugzilla.mozilla.org/buglist.cgi?x=x
 """.replace("\n", "")
 
 credit_entries = {
+    "c154b0d9921cf1fdb945c0b446cc28e7":"Anonymous",
+    "f6628355de51d96186ee030cb936b04b":"Pham Bao of VinCSS (Member of Vingroup)",
+    "6b04af2a3e852190d05cc5a05b438d2e":"Ulrich Günther",
+    "c4d4cb75f73c13335d00b84a245e8543":"Zijie Zhao",
+    "a63f14172a1a1763ebe352317a9c9156":"Nassim Bouali",
+    "43b406ebd2c3d45534aec1e4843ba504":"Bharadwaj Machiraju",
+    "77b1dc2043055d86d9e81b5035efe29f":"Irvan Kurniawan (sourc7)",
+    "b39f833e348ce97f571df4efc94ee88d":"Kaizer Soze",
+    "0add10eeb3f4f6b4ce9aee50e6e8e08d":"Aaron Costello",
     "028ff665214190ae419f0febbdff465f" : "James Grant",
     "047a2ade7fdc3c6d84d5dbea228fe71e" : "Julien Maladrie",
     "05c9059021985684d94c2631e62b9d12" : "Zhang Hanming from 360 Vulcan team",
@@ -348,6 +357,8 @@ twitter_entries = {
     "fe7f319c61c0b44d4cb751afda4f4aeb" : "@Gaurav_00000",
 }
 url_entries = {
+    "a63f14172a1a1763ebe352317a9c9156":"https://hackerone.com/derision",
+    "77b1dc2043055d86d9e81b5035efe29f":"https://www.linkedin.com/in/sourc7/",
     "0f14322cc49704ac5551ffe5835abd69" : "https://www.wayanadweb.com",
     "1248a90a05c7e3a46b97e6aceeb557ce" : "https://skylined.nl",
     "192aac4383d85b9acf43554612c6b461" : "https://facebook.com/vitaly.nevgen",
@@ -494,6 +505,10 @@ def main():
                 foundAttachment = attachment
 
         if foundAttachment:
+            # Old bugs with weird formats
+            if bugid in ['1074642']:
+                continue
+
             try:
                 attachment = foundAttachment
 
