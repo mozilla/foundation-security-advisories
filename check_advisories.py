@@ -29,7 +29,7 @@ from schema import Schema, Regex, Optional, Or, SchemaError
 GIT = os.getenv('GIT_BIN', 'git')
 ADVISORIES_DIR = 'announce'
 HOF_DIR = 'bug-bounty-hof'
-CVE_RE = re.compile('^CVE-20[0-9]{2}-[0-9]{4,9}$')
+CVE_RE = re.compile('^(CVE|MOZ)-20[0-9]{2}-[0-9]{4,9}$')
 MFSA_FILENAME_RE = re.compile('mfsa(\d{4}-\d{2,3})\.(md|yml)$')
 HOF_FILENAME_RE = re.compile('bug-bounty-hof/\w+\.yml$')
 md_schema = Schema({
