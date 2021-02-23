@@ -1,0 +1,106 @@
+## mfsa2021-07.yml
+announced: February 23, 2021
+impact: high
+fixed_in:
+- Firefox 86
+title: Security Vulnerabilities fixed in Firefox 86
+advisories:
+  CVE-2021-23969:
+    title: Content Security Policy violation report could have contained the destination of a redirect
+    impact: high
+    reporter: Masato Kinugawa
+    description: |
+      As specified in the W3C Content Security Policy draft, when creating a violation report, "User agents need to ensure that the source file is the URL requested by the page, pre-redirects. If that’s not possible, user agents need to strip the URL down to an origin to avoid unintentional leakage." Under certain types of redirects, Firefox incorrectly set the source file to be the destination of the redirects. This was fixed to be the redirect destination's origin.
+    bugs:
+      - url: 1542194
+  CVE-2021-23970:
+    title: Multithreaded WASM triggered assertions validating separation of script domains
+    impact: high
+    reporter: J. Ryan Stinnett
+    description: |
+      Context-specific code was included in a shared jump table; resulting in assertions being triggered in multithreaded wasm code.
+    bugs:
+      - url: 1681724
+  CVE-2021-23968:
+    title: Content Security Policy violation report could have contained the destination of a redirect
+    impact: high
+    reporter: Ademar Nowasky Junior
+    description: |
+      If Content Security Policy blocked frame navigation, the full destination of a redirect served in the frame was reported in the violation report; as opposed to the original frame URI. This could be used to leak sensitive information contained in such URIs.
+    bugs:
+      - url: 1687342
+  CVE-2021-23974:
+    title: noscript elements could have led to an HTML Sanitizer bypass
+    impact: moderate
+    reporter: Masato Kinugawa and Michał Bentkowski
+    description: |
+      The DOMParser API did not properly process <code>&lt;noscript&gt;</code> elements for escaping. This could be used as an mXSS vector to bypass an HTML Sanitizer.
+    bugs:
+      - url: 1528997
+      - url: 1683627
+  CVE-2021-23971:
+    title: A website's Referrer-Policy could have been be overridden, potentially resulting in the full URL being sent as a Referrer
+    impact: moderate
+    reporter: Luca Moretto
+    description: |
+      When processing a redirect with a conflicting Referrer-Policy, Firefox would have adopted the redirect's Referrer-Policy. This would have potentially resulted in more information than intended by the original origin being provided to the destination of the redirect.
+    bugs:
+      - url: 1678545
+  CVE-2021-23976:
+    title: Local spoofing of web manifests for arbitrary pages in Firefox for Android
+    impact: moderate
+    reporter: Muneaki Nishimura
+    description: |
+      When accepting a malicious intent from other installed apps, Firefox for Android accepted manifests from arbitrary file paths and allowed declaring webapp manifests for other origins. This could be used to gain fullscreen access for UI spoofing and could also lead to cross-origin attacks on targeted websites.<br>*Note: This issue is a different issue from CVE-2020-26954 and only affected Firefox for Android. Other operating systems are unaffected.*
+    bugs:
+      - url: 1684627
+  CVE-2021-23977:
+    title: Malicious application could read sensitive data from Firefox for Android's application directories
+    impact: moderate
+    reporter: fatal0
+    description: |
+      Firefox for Android suffered from a time-of-check-time-of-use vulnerability that allowed a malicious application to read sensitive data from application directories.<br>*Note: This issue is only affected Firefox for Android. Other operating systems are unaffected.*
+    bugs:
+      - url: 1684761
+  CVE-2021-23972:
+    title: HTTP Auth phishing warning was omitted when a redirect is cached
+    impact: low
+    reporter: Vijay Tikudave
+    description: |
+      One phishing tactic on the web is to provide a link with HTTP Auth. For example <code>https://www.phishingtarget.com@evil.com</code>. To mitigate this type of attack, Firefox will display a warning dialog; however, this warning dialog would not have been displayed if evil.com used a redirect that was cached by the browser.
+    bugs:
+      - url: 1683536
+  CVE-2021-23975:
+    title: 'about:memory’s Measure function caused an incorrect pointer operation'
+    impact: low
+    reporter: Brian Carpenter of Geeknik Labs & Farm
+    description: |
+      The developer page about:memory has a Measure function for exploring what object types the browser has allocated and their sizes. When this function was invoked; we incorrectly called the sizeof function, instead of using the API method that checks for invalid pointers.
+    bugs:
+      - url: 1685145
+  CVE-2021-23973:
+    title: MediaError message property could have leaked information about cross-origin resources
+    impact: low
+    reporter: Andreas Pehrson
+    description: |
+      When trying to load a cross-origin resource in an audio/video context a decoding error may have resulted, and the content of that error may have revealed information about the resource.
+    bugs:
+      - url: 1690976
+  CVE-2021-23978:
+    title: Memory safety bugs fixed in Firefox 86 and Firefox ESR 78.8
+    impact: high
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers Alexis Beingessner, Tyson Smith, Nika Layzell, and Mats Palmgren reported memory safety bugs present in Firefox 85 and Firefox ESR 78.7. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 786797, 1682928, 1687391, 1687597
+        desc: Memory safety bugs fixed in Firefox 86 and Firefox ESR 78.8
+  CVE-2021-23979:
+    title: Memory safety bugs fixed in Firefox 86
+    impact: high
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers Tyson Smith, Lars T Hansen, Valentin Gosu, and Sebastian Hengst reported memory safety bugs present in Firefox 85. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1663222, 1666607, 1672120, 1678463, 1678927, 1679560, 1681297, 1681684, 1683490, 1684377, 1684902
+        desc: Memory safety bugs fixed in Firefox 86
