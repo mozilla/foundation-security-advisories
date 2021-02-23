@@ -36,8 +36,7 @@ advisories:
     description: |
       The DOMParser API did not properly process <code>&lt;noscript&gt;</code> elements for escaping. This could be used as an mXSS vector to bypass an HTML Sanitizer.
     bugs:
-      - url: 1528997
-      - url: 1683627
+      - url: 1528997, 1683627
   CVE-2021-23971:
     title: A website's Referrer-Policy could have been be overridden, potentially resulting in the full URL being sent as a Referrer
     impact: moderate
