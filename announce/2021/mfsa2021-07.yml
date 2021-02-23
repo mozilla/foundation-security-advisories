@@ -70,11 +70,11 @@ advisories:
     bugs:
       - url: 1683536
   CVE-2021-23975:
-    title: 'about:memory’s Measure function caused an incorrect pointer operation'
+    title: about:memory Measure function caused an incorrect pointer operation
     impact: low
     reporter: Brian Carpenter of Geeknik Labs & Farm
     description: |
-      The developer page about:memory has a Measure function for exploring what object types the browser has allocated and their sizes. When this function was invoked; we incorrectly called the sizeof function, instead of using the API method that checks for invalid pointers.
+      The developer page about:memory has a Measure function for exploring what object types the browser has allocated and their sizes. When this function was invoked we incorrectly called the sizeof function, instead of using the API method that checks for invalid pointers.
     bugs:
       - url: 1685145
   CVE-2021-23973:
@@ -97,7 +97,7 @@ advisories:
   CVE-2021-23979:
     title: Memory safety bugs fixed in Firefox 86
     impact: high
-    reporter: Mozilla developers and community
+    reporter: Mozilla developers
     description: |
       Mozilla developers Tyson Smith, Lars T Hansen, Valentin Gosu, and Sebastian Hengst reported memory safety bugs present in Firefox 85. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
     bugs:
