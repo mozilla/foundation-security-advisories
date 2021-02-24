@@ -357,6 +357,7 @@ twitter_entries = {
     "fe7f319c61c0b44d4cb751afda4f4aeb" : "@Gaurav_00000",
 }
 url_entries = {
+    "d77e4bf715af2d76c9c3ae565a21d40f":"https://www.ygitsoftware.com/",
     "a63f14172a1a1763ebe352317a9c9156":"https://hackerone.com/derision",
     "77b1dc2043055d86d9e81b5035efe29f":"https://www.linkedin.com/in/sourc7/",
     "0f14322cc49704ac5551ffe5835abd69" : "https://www.wayanadweb.com",
