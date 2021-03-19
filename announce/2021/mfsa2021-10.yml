@@ -1,0 +1,73 @@
+## mfsa2021-10.yml
+announced: March 23, 2021
+impact: high
+fixed_in:
+- Firefox 87
+title: Security Vulnerabilities fixed in Firefox 87
+advisories:
+  CVE-2021-23981:
+    title: Texture upload into an unbound backing buffer resulted in an out-of-bound read
+    impact: high
+    reporter: Omair
+    description: |
+      A texture upload of a Pixel Buffer Object could have confused the WebGL code to skip binding the buffer used to unpack it, resulting in memory corruption and a potentially exploitable information leak or crash.
+    bugs:
+      - url: 1692832
+  CVE-2021-23982:
+    title: Internal network hosts could have been probed by a malicious webpage
+    impact: moderate
+    reporter: Samy Kamkar, Ben Seri, and Gregory Vishnepolsky
+    description: |
+      Using techniques that built on the slipstream research, a malicious webpage could have scanned both an internal network's hosts as well as services running on the user's local machine utilizing WebRTC connections.
+    bugs:
+      - url: 1677046
+  CVE-2021-23983:
+    title: 'Transitions for invalid ::marker properties resulted in memory corruption'
+    impact: moderate
+    reporter: Irvan Kurniawan
+    description: |
+      By causing a transition on a parent node by removing a CSS rule, an invalid property for a marker could have been applied, resulting in memory corruption and a potentially exploitable crash.
+    bugs:
+      - url: 1692684
+  CVE-2021-23984:
+    title: Malicious extensions could have spoofed popup information
+    impact: moderate
+    reporter: Rob Wu
+    description: |
+      A malicious extension could have opened a popup window lacking an address bar. The title of the popup lacking an address bar should not be fully controllable, but in this situation was. This could have been used to spoof a website and attempt to trick the user into providing credentials.
+    bugs:
+      - url: 1693664
+  CVE-2021-23985:
+    title: Devtools remote debugging feature could have been enabled without indication to the user
+    impact: low
+    reporter: Anonymous working with Trend Micro's Zero Day Initiative
+    description: |
+      If an attacker is able to alter specific about:config values (for example malware running on the user's computer), the Devtools remote debugging feature could have been enabled in a way that was unnoticable to the user. This would have allowed a remote attacker (able to make a direct network connection to the victim) to monitor the user's browsing activity and (plaintext) network traffic. This was addressed by providing a visual cue when Devtools has an open network socket.
+    bugs:
+      - url: 1659129
+  CVE-2021-23986:
+    title: A malicious extension could have performed credential-less same origin policy violations
+    impact: low
+    reporter: Armin Razmjou
+    description: |
+      A malicious extension with the 'search' permission could have installed a new search engine whose favicon referenced a cross-origin URL.  The response to this cross-origin request could have been read by the extension, allowing a same-origin policy bypass by the extension, which should not have cross-origin permissions.  This cross-origin request was made without cookies, so the sensitive information disclosed by the violation was limited to local-network resources or resources that perform IP-based authentication.
+    bugs:
+      - url: 1692623
+  CVE-2021-23987:
+    title: Memory safety bugs fixed in Firefox 87 and Firefox ESR 78.9
+    impact: high
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers and community members Matthew Gregan, Tyson Smith, Julien Wajsberg, and Alexis Beingessner reported memory safety bugs present in Firefox 86 and Firefox ESR 78.8. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1513519, 1683439, 1690169, 1690718
+        desc: Memory safety bugs fixed in Firefox 87 and Firefox ESR 78.9
+  CVE-2021-23988:
+    title: Memory safety bugs fixed in Firefox 87
+    impact: moderate
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers Tyson Smith and Christian Holler reported memory safety bugs present in Firefox 86. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1684994, 1686653
+        desc: Memory safety bugs fixed in Firefox 87

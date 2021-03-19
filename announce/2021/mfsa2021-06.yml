@@ -6,11 +6,11 @@ fixed_in:
 - Firefox ESR 78.7.1
 title: Security Vulnerabilities fixed in Firefox 85.0.1 and Firefox ESR 78.7.1
 advisories:
-  MOZ-2021-0001:
+  CVE-2020-16048:
     title: Buffer overflow in depth pitch calculations for compressed textures
     impact: critical
     reporter: Abraruddin Khan and Omair working with Trend Micro Zero Day Initiative
     description: |
-      In the Angle graphics library, depth pitch computations did not take into account the block size and simply multiplied the row pitch with the pixel height.  This caused the load functions to use a very high depth pitch, reading past the end of the user-supplied buffer.<br>*Note: This issue only affected Windows operating systems. Other operating systems are unaffected.*<br><em>This issue has been assigned a temporary identifier, pending assignment of a CVE.</em>
+      In the Angle graphics library, depth pitch computations did not take into account the block size and simply multiplied the row pitch with the pixel height.  This caused the load functions to use a very high depth pitch, reading past the end of the user-supplied buffer.<br>*Note: This issue only affected Windows operating systems. Other operating systems are unaffected.*
     bugs:
       - url: 1676636
