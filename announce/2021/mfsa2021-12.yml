@@ -1,0 +1,42 @@
+## mfsa2021-12.yml
+announced: March 23, 2021
+impact: high
+fixed_in:
+- Thunderbird 78.9
+title: Security Vulnerabilities fixed in Thunderbird 78.9
+description: |
+  *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
+advisories:
+  CVE-2021-23981:
+    title: Texture upload into an unbound backing buffer resulted in an out-of-bound read
+    impact: high
+    reporter: Omair
+    description: |
+      A texture upload of a Pixel Buffer Object could have confused the WebGL code to skip binding the buffer used to unpack it, resulting in memory corruption and a potentially exploitable information leak or crash.
+    bugs:
+      - url: 1692832
+  CVE-2021-23982:
+    title: Internal network hosts could have been probed by a malicious webpage
+    impact: moderate
+    reporter: Samy Kamkar, Ben Seri, and Gregory Vishnepolsky
+    description: |
+      Using techniques that built on the slipstream research, a malicious webpage could have scanned both an internal network's hosts as well as services running on the user's local machine utilizing WebRTC connections.
+    bugs:
+      - url: 1677046
+  CVE-2021-23984:
+    title: Malicious extensions could have spoofed popup information
+    impact: moderate
+    reporter: Rob Wu
+    description: |
+      A malicious extension could have opened a popup window lacking an address bar. The title of the popup lacking an address bar should not be fully controllable, but in this situation was. This could have been used to spoof a website and attempt to trick the user into providing credentials.
+    bugs:
+      - url: 1693664
+  CVE-2021-23987:
+    title: Memory safety bugs fixed in Thunderbird 78.9
+    impact: high
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers and community members Alexis Beingessner, Tyson Smith, Julien Wajsberg, and Matthew Gregan reported memory safety bugs present in Thunderbird 78.8. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1513519, 1683439, 1690169, 1690718
+        desc: Memory safety bugs fixed in Thunderbird 78.9
