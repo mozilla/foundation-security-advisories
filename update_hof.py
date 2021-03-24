@@ -185,7 +185,7 @@ credit_entries = {
     "7a3d52ef9f515ad5d4aad5868c2e65aa" : "Chamal De Silva",
     "7aba285c7e4b7f41df3dae6f4becd2a9" : "Sebas (@0xroot)",
     "7b33d07bc038c1ec083e51e31e139fdb" : "Joshua Graham of TSS",
-    "7bd9d5640cb0f0dd5e59ccd7b02a0349" : "Omair",
+    "7bd9d5640cb0f0dd5e59ccd7b02a0349" : "Abraruddin Khan and Omair",
     "7bed3bd152a0fd4badc6d2ddd4e86e1b" : "Rafael Gieschke",
     "7dc3304d4c7f8d13fa0f248f54b07a20" : "Kaspar Brand",
     "7e1e41ab0cd46a4a32c82def7b840a6d" : "Mario Heiderich of Cure53",

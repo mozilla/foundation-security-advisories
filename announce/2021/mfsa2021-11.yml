@@ -8,7 +8,7 @@ advisories:
   CVE-2021-23981:
     title: Texture upload into an unbound backing buffer resulted in an out-of-bound read
     impact: high
-    reporter: Omair
+    reporter: Abraruddin Khan and Omair
     description: |
       A texture upload of a Pixel Buffer Object could have confused the WebGL code to skip binding the buffer used to unpack it, resulting in memory corruption and a potentially exploitable information leak or crash.
     bugs:
