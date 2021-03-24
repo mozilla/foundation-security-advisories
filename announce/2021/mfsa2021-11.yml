@@ -13,6 +13,14 @@ advisories:
       A texture upload of a Pixel Buffer Object could have confused the WebGL code to skip binding the buffer used to unpack it, resulting in memory corruption and a potentially exploitable information leak or crash.
     bugs:
       - url: 1692832
+  MOZ-2021-0002:
+    title: Angle graphics library out of date
+    impact: high
+    reporter: Mozilla Developers, Abraruddin Khan and Omair
+    description: |
+      An out of date graphics library (Angle) likely contained vulnerabilities that could potentially be exploited.
+    bugs:
+      - url: 1691547
   CVE-2021-23982:
     title: Internal network hosts could have been probed by a malicious webpage
     impact: moderate
