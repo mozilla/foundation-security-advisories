@@ -178,7 +178,7 @@ names:
   date: 2019-04-01
 - name: "Takashi Suzuki"
   date: 2019-04-01
-  url: "https://twitter.com/taka_1690"
+  url: "https://hackerone.com/kamikaze?type=user"
 - name: "Tinu Tomy"
   date: 2019-04-01
   url: "https://twitter.com/TinuRock007"
@@ -285,7 +285,7 @@ names:
   url: "https://twitter.com/securityyasin"
 - name: "Takashi Suzuki"
   date: 2018-01-01
-  url: "https://hackerone.com/kamikaze"
+  url: "https://hackerone.com/kamikaze?type=user"
 - name: "Juba Baghdad"
   date: 2017-10-01
   url: "https://twitter.com/JubaBaghdad"
@@ -314,7 +314,7 @@ names:
   url: "http://s4ndeep.com/"
 - name: "Takashi Suzuki"
   date: 2017-10-01
-  url: "https://hackerone.com/kamikaze/"
+  url: "https://hackerone.com/kamikaze?type=user"
 - name: "Yusuf Yazir"
   date: 2017-10-01
   url: "https://twitter.com/hacklad"
@@ -443,6 +443,7 @@ names:
   url: "https://twitter.com/aussinfosec"
 - name: "Takashi Suzuki"
   date: 2016-04-01
+  url: "https://hackerone.com/kamikaze?type=user"
 - name: "Mario Gomes"
   date: 2016-04-01
 - name: "Aleh Boitsau"
