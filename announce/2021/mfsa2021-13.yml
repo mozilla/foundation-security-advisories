@@ -13,7 +13,7 @@ advisories:
       If a Thunderbird user has previously imported Alice's OpenPGP key, and Alice has extended the validity period of her key, but Alice's updated key has not yet been imported, an attacker may send an email containing a crafted version of Alice's key with an invalid subkey, Thunderbird might subsequently attempt to use the invalid subkey, and will fail to send encrypted email to Alice.
     bugs:
       - url: 1673240
-  MOZ-2021-23992:
+  CVE-2021-23992:
     title: A crafted OpenPGP key with an invalid user ID could be used to confuse the user
     impact: moderate
     reporter: Neal Walfield
