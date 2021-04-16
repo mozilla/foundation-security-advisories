@@ -1,0 +1,113 @@
+## mfsa2021-16.yml
+announced: April 19, 2021
+impact: high
+fixed_in:
+- Firefox 88
+title: Security Vulnerabilities fixed in Firefox 88
+advisories:
+  CVE-2021-23994:
+    title: Out of bound write due to lazy initialization
+    impact: high
+    reporter: Abraruddin Khan and Omair
+    description: |
+      A WebGL framebuffer was not initialized early enough, resulting in memory corruption and an out of bound write.
+    bugs:
+      - url: 1699077
+  CVE-2021-23995:
+    title: Use-after-free in Responsive Design Mode
+    impact: high
+    reporter: Irvan Kurniawan
+    description: |
+      When Responsive Design Mode was enabled, it used references to objects that were previously freed. We presume that with enough effort this could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1699835
+  CVE-2021-23996:
+    title: Content rendered outside of webpage viewport
+    impact: high
+    reporter: Colin D. Munro
+    description: |
+      By utilizing 3D CSS in conjunction with Javascript, content could have been rendered outside the webpage's viewport, resulting in a spoofing attack that could have been used for phishing or other attacks on a user.
+    bugs:
+      - url: 1701834
+  CVE-2021-23997:
+    title: Use-after-free when freeing fonts from cache
+    impact: high
+    reporter: Irvan Kurniawan
+    description: |
+      Due to unexpected data type conversions, a use-after-free could have occurred when interacting with the font cache. We presume that with enough effort this could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1701942
+  CVE-2021-23998:
+    title: Secure Lock icon could have been spoofed
+    impact: moderate
+    reporter: Jordi Chancel
+    description: |
+      Through complicated navigations with new windows, an HTTP page could have inherited a secure lock icon from an HTTPS page.
+    bugs:
+      - url: 1667456
+  CVE-2021-23999:
+    title: Blob URLs may have been granted additional privileges
+    impact: moderate
+    reporter: Nika Layzell
+    description: |
+      If a Blob URL was loaded through some unusual user interaction, it could have been loaded by the System Principal and granted additional privileges that should not be granted to web content.
+    bugs:
+      - url: 1691153
+  CVE-2021-24000:
+    title: requestPointerLock() could be applied to a tab different from the visible tab
+    impact: moderate
+    reporter: Irvan Kurniawan
+    description: |
+      A race condition with <code>requestPointerLock()</code> and <code>setTimeout()</code> could have resulted in a user interacting with one tab when they believed they were on a separate tab. In conjunction with certain elements (such as <code>&lt;input type="file"&gt;</code>) this could have led to an attack where a user was confused about the origin of the webpage and potentially disclosed information they did not intend to.
+    bugs:
+      - url: 1694698
+  CVE-2021-24001:
+    title: Testing code could have enabled session history manipulations by a compromised content process
+    impact: moderate
+    reporter: Andrew McCreight
+    description: |
+      A compromised content process could have performed session history manipulations it should not have been able to due to testing infrastructure that was not restricted to testing-only configurations.
+    bugs:
+      - url: 1694727
+  CVE-2021-24002:
+    title: Arbitrary FTP command execution on FTP servers using an encoded URL
+    impact: moderate
+    reporter: Daniel Santos
+    description: |
+      When a user clicked on an FTP URL containing encoded newline characters (%0A and %0D), the newlines would have been interpreted as such and allowed arbitrary commands to be sent to the FTP server.
+    bugs:
+      - url: 1702374
+  CVE-2021-29945:
+    title: Incorrect size computation in WebAssembly JIT could lead to null-reads
+    impact: moderate
+    reporter: Christian Holler
+    description: |
+      The WebAssembly JIT could miscalculate the size of a return type, which could lead to a null read and result in a crash.
+      <br>*Note: This issue only affected x86-32 platforms. Other platforms are unaffected.*
+    bugs:
+      - url: 1700690
+  CVE-2021-29944:
+    title: HTML injection vulnerability in Firefox for Android's Reader View
+    impact: low
+    reporter: Wladimir Palant working with Include Security
+    description: |
+      Lack of escaping allowed HTML injection when a webpage was viewed in Reader View. While a Content Security Policy prevents direct code execution, HTML injection is still possible.<br>*Note: This issue only affected Firefox for Android. Other operating systems are unaffected.*
+    bugs:
+      - url: 1697604
+  CVE-2021-29946:
+    title: Port blocking could be bypassed
+    impact: low
+    reporter: Frederik Braun
+    description: |
+      Ports that were written as an integer overflow above the bounds of a 16-bit integer could have bypassed port blocking restrictions when used in the Alt-Svc header.
+    bugs:
+      - url: 1698503
+  CVE-2021-29947:
+    title: Memory safety bugs fixed in Firefox 88
+    impact: high
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers and community members Ryan VanderMeulen, Sean Feng, Tyson Smith, Julian Seward, Christian Holler reported memory safety bugs present in Firefox 87. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1651449, 1674142, 1693476, 1696886, 1700091
+        desc: Memory safety bugs fixed in Firefox 88
