@@ -1,0 +1,82 @@
+## mfsa2021-14.yml
+announced: April 19, 2021
+impact: high
+fixed_in:
+- Thunderbird 78.10
+title: Security Vulnerabilities fixed in Thunderbird 78.10
+description: |
+  *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
+advisories:
+  CVE-2021-23994:
+    title: Out of bound write due to lazy initialization
+    impact: high
+    reporter: Abraruddin Khan and Omair
+    description: |
+      A WebGL framebuffer was not initialized early enough, resulting in memory corruption and an out of bound write.
+    bugs:
+      - url: 1699077
+  CVE-2021-23995:
+    title: Use-after-free in Responsive Design Mode
+    impact: high
+    reporter: Irvan Kurniawan
+    description: |
+      When Responsive Design Mode was enabled, it used references to objects that were previously freed. We presume that with enough effort this could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1699835
+  CVE-2021-23998:
+    title: Secure Lock icon could have been spoofed
+    impact: moderate
+    reporter: Jordi Chancel
+    description: |
+      Through complicated navigations with new windows, an HTTP page could have inherited a secure lock icon from an HTTPS page.
+    bugs:
+      - url: 1667456
+  CVE-2021-23961:
+    title: More internal network hosts could have been probed by a malicious webpage
+    impact: moderate
+    reporter: Samy Kamkar, Ben Seri, and Gregory Vishnepolsky
+    description: |
+      Further techniques that built on the slipstream research combined with a malicious webpage could have exposed both an internal network's hosts as well as services running on the user's local machine.
+    bugs:
+      - url: 1677940
+  CVE-2021-23999:
+    title: Blob URLs may have been granted additional privileges
+    impact: moderate
+    reporter: Nika Layzell
+    description: |
+      If a Blob URL was loaded through some unusual user interaction, it could have been loaded by the System Principal and granted additional privileges that should not be granted to web content.
+    bugs:
+      - url: 1691153
+  CVE-2021-24002:
+    title: Arbitrary FTP command execution on FTP servers using an encoded URL
+    impact: moderate
+    reporter: Daniel Santos
+    description: |
+      When a user clicked on an FTP URL containing encoded newline characters (%0A and %0D), the newlines would have been interpreted as such and allowed arbitrary commands to be sent to the FTP server.
+    bugs:
+      - url: 1702374
+  CVE-2021-29945:
+    title: Incorrect size computation in WebAssembly JIT could lead to null-reads
+    impact: moderate
+    reporter: Christian Holler
+    description: |
+      The WebAssembly JIT could miscalculate the size of a return type, which could lead to a null read and result in a crash.
+      <br>*Note: This issue only affected x86-32 platforms. Other platforms are unaffected.*
+    bugs:
+      - url: 1700690
+  CVE-2021-29946:
+    title: Port blocking could be bypassed
+    impact: low
+    reporter: Frederik Braun
+    description: |
+      Ports that were written as an integer overflow above the bounds of a 16-bit integer could have bypassed port blocking restrictions when used in the Alt-Svc header.
+    bugs:
+      - url: 1698503
+  CVE-2021-29948:
+    title: Race condition when reading from disk while verifying signatures
+    impact: low
+    reporter: Cure53
+    description: |
+      Signatures are written to disk before and read during verification, which might be subject to a race condition when a malicious local process or user is replacing the file.
+    bugs:
+      - url: 1692899
