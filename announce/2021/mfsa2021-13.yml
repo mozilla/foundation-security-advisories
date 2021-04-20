@@ -4,6 +4,8 @@ impact: moderate
 fixed_in:
 - Thunderbird 78.9.1
 title: Security Vulnerabilities fixed in Thunderbird 78.9.1
+description: |
+  <b>Note</b>: This advisory was udpated April 20, 2021 to include CVE-2021-29949 which was also fixed in this release.
 advisories:
   CVE-2021-23991:
     title: An attacker may use Thunderbird's OpenPGP key refresh mechanism to poison an existing key
@@ -29,3 +31,11 @@ advisories:
       An attacker may perform a DoS attack to prevent a user from sending encrypted email to a correspondent. If an attacker creates a crafted OpenPGP key with a subkey that has an invalid self signature, and the Thunderbird user imports the crafted key, then Thunderbird may try to use the invalid subkey, but the RNP library rejects it from being used, causing encryption to fail.
     bugs:
       - url: 1666360
+  CVE-2021-29949:
+      title: Thunderbird might execute an alternative OTR library
+      impact: low
+      reporter: Tuan Vu Pham
+      description: |
+        When loading the shared library that provides the OTR protocol implementation, Thunderbird will initially attempt to open it using a filename that isn't distributed by Thunderbird. If a computer has already been infected with a malicious library of the alternative filename, and the malicious library has been copied to a directory that is contained in the search path for executable libraries, then Thunderbird will load the incorrect library.
+      bugs:
+        - url: 1682101
