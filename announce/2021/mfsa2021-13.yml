@@ -5,7 +5,7 @@ fixed_in:
 - Thunderbird 78.9.1
 title: Security Vulnerabilities fixed in Thunderbird 78.9.1
 description: |
-  <b>Note</b>: This advisory was udpated April 20, 2021 to include CVE-2021-29949 which was also fixed in this release.
+  <b>Note</b>: This advisory was updated April 20, 2021 to include CVE-2021-29949 which was also fixed in this release.
 advisories:
   CVE-2021-23991:
     title: An attacker may use Thunderbird's OpenPGP key refresh mechanism to poison an existing key

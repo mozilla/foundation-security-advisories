@@ -1,0 +1,17 @@
+## mfsa2021-17.yml
+announced: March 8, 2021
+impact: moderate
+fixed_in:
+- Thunderbird 78.8.1
+title: Security Vulnerabilities fixed in Thunderbird 78.9.1
+description: |
+  <b>Note</b>: This advisory was issued April 20, 2021 to include CVE-2021-29950.
+advisories:
+  CVE-2021-29950:
+    title: Logic issue potentially leaves key material unlocked
+    impact: moderate
+    reporter: Cure53
+    description: |
+      Thunderbird unprotects a secret OpenPGP key prior to using it for a decryption, signing or key import task. If the task runs into a failure, the secret key may remain in memory in its unprotected state.
+    bugs:
+     - url: 1673239
