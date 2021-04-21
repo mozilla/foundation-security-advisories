@@ -87,6 +87,11 @@ https://bugzilla.mozilla.org/buglist.cgi?x=x
 """.replace("\n", "")
 
 credit_entries = {
+    "adbee288a6f9cf15602fda47356d5175":"Hany Ragab; Enrico Barberis; Herbert Bos; Cristiano Giuffrida",
+    "480d732942ba3ecdedf961ce3fa9fc64":"Ademar Nowasky Junior",
+    "e8f888d34d0dea54f388def803d7b4ab":"Vladimir Dmitriev",
+    "3f3a7252004367671037582e9dde174d":"Luca Moretto",
+    "eeb20e34ecf97f18c09819a8189a917a":"Masato Kinugawa",
     "c154b0d9921cf1fdb945c0b446cc28e7":"Anonymous",
     "f6628355de51d96186ee030cb936b04b":"Pham Bao of VinCSS (Member of Vingroup)",
     "6b04af2a3e852190d05cc5a05b438d2e":"Ulrich Günther",
@@ -308,6 +313,7 @@ credit_entries = {
     "fea05bd1b815660051bf5d090eb4e522" : "Aral Yaman",
 }
 twitter_entries = {
+    "480d732942ba3ecdedf961ce3fa9fc64" : "@nowaskyjr",
     "0c7f4b38ad0b504cfc48042e14564cc8" : "@pdjstone",
     "0cdb9b89f615c444f832e56c844e9e75" : "@ally_o_malley",
     "0eaafbf6f9aabe86a4b040ca50d9191a" : "@5hint0",
