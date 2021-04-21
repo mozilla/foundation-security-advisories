@@ -3,7 +3,7 @@ announced: March 8, 2021
 impact: moderate
 fixed_in:
 - Thunderbird 78.8.1
-title: Security Vulnerabilities fixed in Thunderbird 78.9.1
+title: Security Vulnerabilities fixed in Thunderbird 78.8.1
 description: |
   <b>Note</b>: This advisory was issued April 20, 2021 to include CVE-2021-29950.
 advisories:
