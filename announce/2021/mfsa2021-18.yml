@@ -1,0 +1,15 @@
+## mfsa2021-18.yml
+announced: May 3, 2021
+impact: moderate
+fixed_in:
+- Firefox ESR 78.10.1
+title: Security Vulnerabilities fixed in Firefox ESR 78.10.1
+advisories:
+  CVE-2021-29951:
+    title: Mozilla Maintenance Service could have been started or stopped by domain users
+    impact: moderate
+    reporter: James Forshaw
+    description: |
+      The Mozilla Maintenance Service granted SERVICE_START access to <code>BUILTIN|Users</code> which, in a domain network, grants normal remote users access to start or stop the service. This could be used to prevent the browser update service from operating (if an attacker spammed the 'Stop' command); but also exposed attack surface in the maintenance service.<br>*Note: This issue only affected Windows operating systems older than Win 10 build 1709. Other operating systems are unaffected.*
+    bugs:
+      - url: 1690062
