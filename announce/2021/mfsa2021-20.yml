@@ -11,7 +11,7 @@ advisories:
     impact: critical
     reporter: Wladimir Palant working with Include Security
     description: |
-      A malicious webpage could have forced a Firefox for Android user into executing attacker-controlled JavaScript in the context of another domain, resulting in a Universal Cross-Site Scripting vulnerability.<br>*Note: This issue is only affected Firefox for Android. Other operating systems are unaffected. Further details are being temporarily withheld to allow users an opportunity to update.*
+      A malicious webpage could have forced a Firefox for Android user into executing attacker-controlled JavaScript in the context of another domain, resulting in a Universal Cross-Site Scripting vulnerability.<br>*Note: This issue only affected Firefox for Android. Other operating systems are unaffected. Further details are being temporarily withheld to allow users an opportunity to update.*
     bugs:
       - url: 1701684
   CVE-2021-29952:
