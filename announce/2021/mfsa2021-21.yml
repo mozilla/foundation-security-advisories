@@ -1,0 +1,78 @@
+announced: May 6th, 2020
+impact: critical
+fixed_in:
+- Hubs Cloud mozillareality/reticulum/1.0.1/20210428201255
+title: Insecure Proxy Configuration in Hubs Cloud Reticulum
+description: |
+  The proxy functionality built into our Reticulum software package was overly permissive allowing access to internal URLs, including the metadata service, which could allow access to credentials specific to a Hubs Cloud Instance. Both existing and new Hubs Cloud instances have since been patched.
+
+  You can determine if your Hubs Cloud stack was abused by inspecting the HTTP access logs on the “app” EC2 instances associated with your Hubs Cloud stack. Check the logs for the presence of “/meta-data/iam/security-credentials/” string in the URI path which resulted in an HTTP 200 response.
+
+  To locate the running instances for your Hubs Cloud instance:
+
+  <ol class="mzp-u-list-styled">
+      <li>Go to AWS Marketplace (https://aws.amazon.com/marketplace) and log into your AWS Marketplace Account</li>
+      <li>In the top right drop down under "Hello, {username}" select "Your Marketplace Software"</li>
+      <li>On the "Manage Subscriptions" page under "Your subscriptions" type "Mozilla" into the search box to pull up all
+          Mozilla products you are subscribed to
+      </li>
+      <li>Select the "Manage" button on the subscription you want to update</li>
+      <li>On the "Manage Subscriptions" page, select the "Actions" dropdown and then "Instances" &gt; "View Instances"
+      </li>
+      <li>In the "View instances" display window you'll see region, instance ID, and status for all instances your Mozilla
+          subscription is running
+      </li>
+  </ol>
+
+  Detailed instructions for checking your logs:
+
+  <ol class="mzp-u-list-styled">
+      <li>In order to access your EC2 instance using SSH, you’ll need to follow the instructions in the “Server Access”
+          section of your Hubs Cloud admin console. You will need the SSH key file that you used when setting up your Hubs
+          Cloud stack.
+      </li>
+      <li>Retrieve the server names for the “app” EC2 instances under your Hubs Cloud stack. The easiest way to do this is
+          to filter the list of EC2 instances in the AWS Console.
+        <ol>
+            <li>Visit the EC2 service in the AWS Console. Make sure you are in the region associated with your Hubs Cloud
+                stack.
+            </li>
+            <li>In the “Instances” panel, filter the instances using “polycosm-type: app”</li>
+        </ol>
+      </li>
+      <li>SSH into the instances in that filtered list using your SSH key file, the EC2 instance name and your internal
+          domain name.
+        <ul>
+            <li> The SSH command will look something like this: <code>ssh -i key_file ubuntu@server_name.domainname</code></li>
+        </ul>
+      </li>
+      <li>Once you’ve accessed your EC2 instance, you can paste the following command into the terminal to determine if
+          the vulnerability was exploited.
+        <ul>
+            <li><code>journalctl | grep "29954-no-results|$(journalctl | grep -i meta-data/iam/security-credentials | grep -o 'request_id=[^ ]\+' | tr '\n' '|' | sed 's/|$//g' | sed 's/|/\\|/g')" | grep ' 200 in ' | wc -l</code></li>
+        </ul>
+      </li>
+      <li>If the output of the command above is a number other than zero (0), your stack was abused and you should contact
+          Mozilla at hubs-support@mozilla.com for help.
+      </li>
+      <li>You will have to do this for each of the “app” EC2 instances, since they each have their own separate access
+          log.
+      </li>
+  </ol>
+
+  *Note: that web requests which contain the string “/meta-data/iam/security-credentials/” and result in an HTTP
+      401 response are an example of patched behavior, and should be treated as benign.*
+
+  If you find any examples of this vulnerability being abused or have any questions, please contact Mozilla directly via
+  <a href="mailto:hubs-support@mozilla.com">hubs-support@mozilla.com</a>
+advisories:
+  CVE-2021-29954:
+    title: Insecure Proxy Configuration
+    impact: critical
+    reporter: Torsten Trumm
+    description: |
+      Proxy functionality built into Hubs Cloud’s Reticulum software allowed access to internal URLs, including the metadata service.
+    bugs:
+      - url: https://bugzilla.mozilla.org/show_bug.cgi?id=1707898
+        desc: Bug Bounty Report
+
