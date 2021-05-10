@@ -55,6 +55,7 @@ search_url = BASE_URL + 'bug' + \
 &product=Firefox%20for%20iOS
 &product=Focus
 &product=DevTools
+&product=Lockwise
 &product=MailNews%20Core
 &product=NSPR
 &product=NSS
