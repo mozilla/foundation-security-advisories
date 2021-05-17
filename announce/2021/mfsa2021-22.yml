@@ -1,0 +1,23 @@
+## mfsa2021-22.yml
+announced: May 17, 2021
+impact: low
+fixed_in:
+- Thunderbird 78.10.2
+title: Security Vulnerabilities fixed in Thunderbird 78.10.2
+advisories:
+  CVE-2021-29957:
+    title: Partial protection of inline OpenPGP message not indicated
+    impact: low
+    reporter: Cure53
+    description: |
+      If a MIME encoded email contains an OpenPGP inline signed or encrypted message part, but also contains an additional unprotected part, Thunderbird did not indicate that only parts of the message are protected.
+    bugs:
+      - url: 1673241
+  CVE-2021-29956:
+    title: Thunderbird stored OpenPGP secret keys without master password protection
+    impact: low
+    reporter: Participants on the Thunderbird E2EE Mailing List
+    description: |
+      OpenPGP secret keys that were imported using Thunderbird version 78.8.1 up to version 78.10.1 were stored unencrypted on the user's local disk. The master password protection was inactive for those keys. Version 78.10.2 will restore the protection mechanism for newly imported keys, and will automatically protect keys that had been imported using affected Thunderbird versions.
+    bugs:
+      - url: 1710290
