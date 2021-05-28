@@ -1,0 +1,15 @@
+## mfsa2021-FIXME.yml
+announced: May 28, 2021
+impact: moderate
+fixed_in:
+- Firefox for iOS 34
+title: Security Vulnerabilities fixed in Firefox for iOS 34
+advisories:
+  CVE-2021-29958:
+    title: File download shares private browsing mode cookies
+    impact: moderate
+    reporter: Muneaki Nishimura
+    description: |
+      When a download was initiated, the client did not check whether it was in normal or private browsing mode, which led to private mode cookies being shared in normal browsing mode.
+    bugs:
+      - url: 1670127
