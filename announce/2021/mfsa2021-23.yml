@@ -1,15 +1,86 @@
 ## mfsa2021-23.yml
 announced: June 1, 2021
-impact: moderate
+impact: high
 fixed_in:
-- Firefox for iOS 34
-title: Security Vulnerabilities fixed in Firefox for iOS 34
+- Firefox 89
+title: Security Vulnerabilities fixed in Firefox 89
 advisories:
-  CVE-2021-29958:
-    title: File download shares private browsing mode cookies
-    impact: moderate
-    reporter: Muneaki Nishimura
+  CVE-2021-29965:
+    title: Password Manager on Firefox for Android susceptible to domain spoofing
+    impact: high
+    reporter: Harshit Mahendra
     description: |
-      When a download was initiated, the client did not check whether it was in normal or private browsing mode, which led to private mode cookies being shared in normal browsing mode.
+      A malicious website that causes an HTTP Authentication dialog to be spawned could trick the built-in password manager to suggest passwords for the currently active website instead of the website that triggered the dialog.
+      <br>*This bug only affects Firefox for Android. Other operating systems are unaffected.*
     bugs:
-      - url: 1670127
+      - url: 1709257
+  CVE-2021-29960:
+    title: Filenames printed from private browsing mode incorrectly retained in preferences
+    impact: moderate
+    reporter: Sebastian Hengst
+    description: |
+      Firefox used to cache the last filename used for printing a file. When generating a filename for printing, Firefox usually suggests the web page title.
+      The caching and suggestion techniques combined may have lead to the title of a website visited during private browsing mode being stored on disk.
+    bugs:
+      - url: 1675965
+  CVE-2021-29961:
+    title: Firefox UI spoof using `<select>` elements and CSS scaling
+    impact: moderate
+    reporter: Irvan Kurniawan
+    description: |
+      When styling and rendering an oversized `<select>` element, Firefox did not apply correct clipping which allowed an attacker to paint over the user interface.
+    bugs:
+      - url: 1700235
+  CVE-2021-29963:
+    title: Shared cookies for search suggestions in private browsing mode
+    impact: moderate
+    reporter: Wladimir Palant working with Include Security
+    description: |
+      Address bar search suggestions in private browsing mode were re-using session data from normal mode.
+      <br>*This bug only affects Firefox for Android. Other operating systems are unaffected.*
+    bugs:
+      - url: 1705068
+  CVE-2021-29964:
+    title: Out of bounds-read when parsing a `WM_COPYDATA` message
+    impact: moderate
+    reporter: Ronald Crane
+    description: |
+      A locally-installed hostile program could send `WM_COPYDATA` messages that Firefox would process incorrectly, leading to an out-of-bounds read. <br>*This bug only affects Firefox on Windows. Other operating systems are unaffected.*
+    bugs:
+      - url: 1706501
+  CVE-2021-29959:
+    title: Devices could be re-enabled without additional permission prompt
+    impact: low
+    reporter: Jan-Ivar Bruaroey
+    description: |
+      When a user has already allowed a website to access microphone and camera, disabling camera sharing would not fully prevent the website from re-enabling it without an additional prompt.
+      This was only possible if the website kept recording with the microphone until re-enabling the camera.
+    bugs:
+      - url: 1395819
+  CVE-2021-29962:
+    title: No rate-limiting for popups on Firefox for Android
+    impact: low
+    reporter: Wladimir Palant working with Include Security
+    description: |
+      Firefox for Android would become unstable and hard-to-recover when a website opened too many popups.
+      <br>*This bug only affects Firefox for Android. Other operating systems are unaffected.*
+    bugs:
+      - url: 1701673
+  CVE-2021-29967:
+    title: Memory safety bugs fixed in Firefox 89 and Firefox ESR 78.11
+    impact: high
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers Christian Holler, Anny Gakhokidze, Alexandru Michis, Gabriele Svelto reported memory safety bugs present in Firefox 88 and Firefox ESR 78.11. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1602862, 1703191, 1703760, 1704722, 1706041
+        desc: Memory safety bugs fixed in Firefox 89 and Firefox ESR 78.11
+  CVE-2021-29966:
+    title: Memory safety bugs fixed in Firefox 89
+    impact: moderate
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers Christian Holler, Tooru Fujisawa, Tyson Smith reported memory safety bugs present in Firefox 88. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1660307, 1686154, 1702948, 1708124
+        desc: Memory safety bugs fixed in Firefox 89
