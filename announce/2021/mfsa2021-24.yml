@@ -19,7 +19,7 @@ advisories:
     impact: high
     reporter: Mozilla developers and community
     description: |
-      Mozilla developers Gabriele Svelto, Anny Gakhokidze, Alexandru Michis, Christian Holler reported memory safety bugs present in Firefox 88 and Firefox ESR 78.11. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+      Mozilla developers Gabriele Svelto, Anny Gakhokidze, Alexandru Michis, Christian Holler reported memory safety bugs present in Firefox 88 and Firefox ESR 78.10. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
     bugs:
       - url: 1602862, 1703191, 1703760, 1704722, 1706041
         desc: Memory safety bugs fixed in Firefox 89 and Firefox ESR 78.11
