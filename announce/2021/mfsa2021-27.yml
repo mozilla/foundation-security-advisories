@@ -1,0 +1,15 @@
+## mfsa2021-27.yml
+announced: June 16, 2021
+impact: moderate
+fixed_in:
+- Firefox 89.0.1
+title: Security Vulnerabilities fixed in Firefox 89.0.1
+advisories:
+  CVE-2021-29968:
+    title: Out of bounds read when drawing text characters onto a Canvas
+    impact: moderate
+    reporter: Pascal Chevrel
+    description: |
+      When drawing text onto a canvas with WebRender disabled, an out of bounds read could occur. <br>*This bug only affects Firefox on Windows. Other operating systems are unaffected.*
+    bugs:
+      - url: 1712047
