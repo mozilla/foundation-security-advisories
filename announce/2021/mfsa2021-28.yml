@@ -1,0 +1,81 @@
+## mfsa2021-28.yml
+announced: July 13, 2021
+impact: high
+fixed_in:
+- Firefox 90
+title: Security Vulnerabilities fixed in Firefox 90
+advisories:
+  CVE-2021-29970:
+    title: Use-after-free in accessibility features of a document
+    impact: high
+    reporter: Irvan Kurniawan
+    description: |
+      A malicious webpage could have triggered a use-after-free, memory corruption, and a potentially exploitable crash. <br>*This bug only affected Firefox when accessibility was enabled.*
+    bugs:
+      - url: 1709976
+  CVE-2021-29971:
+    title: Granted permissions only compared host; omitting scheme and port on Android
+    impact: high
+    reporter: Arturo Mejia
+    description: |
+      If a user had granted a permission to a webpage and saved that grant, any webpage running on the same host - irrespective of scheme or port - would be granted that permission.<br>*This bug only affects Firefox for Android. Other operating systems are unaffected.*
+    bugs:
+      - url: 1713638
+  CVE-2021-30547:
+    title: Out of bounds write in ANGLE
+    impact: high
+    reporter: (Unknown)
+    description: |
+      An out of bounds write in ANGLE could have allowed an attacker to corrupt memory leading to a potentially exploitable crash.
+    bugs:
+      - url: 1715766
+  CVE-2021-29972:
+    title: Use of out-of-date library included use-after-free vulnerability
+    impact: moderate
+    reporter: Irvan Kurniawan
+    description: |
+      A user-after-free vulnerability was found via testing, and traced to an out-of-date Cairo library. Updating the library resolved the issue, and may have remediated other, unknown security vulnerabilities as well.
+    bugs:
+      - url: 1696816
+  CVE-2021-29973:
+    title: Password autofill on HTTP websites was enabled without user interaction on Android
+    impact: moderate
+    reporter: Wladimir Palant working with Include Security
+    description: |
+      Password autofill was enabled without user interaction on insecure websites on Firefox for Android. This was corrected to require user interaction with the page before a user's password would be entered by the browser's autofill functionality.<br>*This bug only affects Firefox for Android. Other operating systems are unaffected.*
+    bugs:
+      - url: 1701932
+  CVE-2021-29974:
+    title: HSTS errors could be overridden when network partitioning was enabled
+    impact: moderate
+    reporter: Peter Gerber
+    description: |
+      When network partitioning was enabled, e.g. as a result of Enhanced Tracking Protection settings, a TLS error page would allow the user to override an error on a domain which had specified HTTP Strict Transport Security (which implies that the error should not be override-able.) This issue did not affect the network connections, and they were correctly upgraded to HTTPS automatically.
+    bugs:
+      - url: 1704843
+  CVE-2021-29975:
+    title: Text message could be overlaid on top of another website
+    impact: moderate
+    reporter: Irvan Kurniawan
+    description: |
+      Through a series of DOM manipulations, a message, over which the attacker had control of the text but not HTML or formatting, could be overlaid on top of another domain (with the new domain correctly shown in the address bar) resulting in possible user confusion.
+    bugs:
+      - url: 1713259
+  CVE-2021-29976:
+    title: Memory safety bugs fixed in Firefox 90 and Firefox ESR 78.12
+    impact: high
+    reporter: Mozilla developers
+    description: |
+      Mozilla developers Emil Ghitta, Tyson Smith, Valentin Gosu, Olli Pettay, and Randell Jesup reported memory safety bugs present in Firefox 89 and Firefox ESR 78.11. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1700895, 1703334, 1706910, 1711576, 1714391
+        desc: Memory safety bugs fixed in Firefox 90 and Firefox ESR 78.12
+  CVE-2021-29977:
+    title: Memory safety bugs fixed in Firefox 90
+    impact: high
+    reporter: Mozilla developers
+    description: |
+      Mozilla developers Andrew McCreight, Tyson Smith, Christian Holler, and Gabriele Svelto reported memory safety bugs present in Firefox 89. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1665836, 1686138, 1704316, 1706314, 1709931, 1712084, 1712357, 1714066
+        desc: Memory safety bugs fixed in Firefox 90

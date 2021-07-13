@@ -1,0 +1,32 @@
+## mfsa2021-29.yml
+announced: July 13, 2021
+impact: high
+fixed_in:
+- Firefox ESR 78.12
+title: Security Vulnerabilities fixed in Firefox ESR 78.12
+advisories:
+  CVE-2021-29970:
+    title: Use-after-free in accessibility features of a document
+    impact: high
+    reporter: Irvan Kurniawan
+    description: |
+      A malicious webpage could have triggered a use-after-free, memory corruption, and a potentially exploitable crash. <br>*This bug only affected Firefox when accessibility was enabled.*
+    bugs:
+      - url: 1709976
+  CVE-2021-30547:
+    title: Out of bounds write in ANGLE
+    impact: high
+    reporter: (Unknown)
+    description: |
+      An out of bounds write in ANGLE could have allowed an attacker to corrupt memory leading to a potentially exploitable crash.
+    bugs:
+      - url: 1715766
+  CVE-2021-29976:
+    title: Memory safety bugs fixed in Firefox 90 and Firefox ESR 78.12
+    impact: high
+    reporter: Mozilla developers
+    description: |
+      Mozilla developers Valentin Gosu, Randell Jesup, Emil Ghitta, Tyson Smith, and Olli Pettay reported memory safety bugs present in Firefox 89 and Firefox ESR 78.11. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1700895, 1703334, 1706910, 1711576, 1714391
+        desc: Memory safety bugs fixed in Firefox 90 and Firefox ESR 78.12
