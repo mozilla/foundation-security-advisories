@@ -1,0 +1,44 @@
+## mfsa2021-31.yml
+announced: July 14, 2021
+impact: low
+fixed_in:
+- Mozilla VPN 2.3
+title: Multiple Low Security Issues in Mozilla VPN
+description: |
+    *Multiple low security issues were discovered in a security audit of Mozilla VPN 2.0 branch*
+advisories:
+  CVE-2021-29978:
+    title: Multiple low security issues were discovered in a security audit of Mozilla VPN 2.0 branch
+    impact: low
+    reporter: Cure53
+    description: |
+      Multiple low security issues were discovered and fixed in a security audit of Mozilla VPN 2.x branch as part of a 3rd party security audit.
+    bugs:
+      - url: https://github.com/mozilla-mobile/mozilla-vpn-client/issues/797
+        desc: Balrog did not verify certificate chain on macOS
+      - url: https://github.com/mozilla-mobile/mozilla-vpn-client/issues/798
+        desc: Balrog incorrectly verified certificate chain
+      - url: https://github.com/mozilla-mobile/mozilla-vpn-client/issues/799
+        desc: ATS policy unnecessarily weakened
+      - url: https://github.com/mozilla-mobile/mozilla-vpn-client/issues/800
+        desc: Authenticationlistener allowed disturbance of login
+      - url: https://github.com/mozilla-mobile/mozilla-vpn-client/issues/801
+        desc: Race condition in Ping Sender could expose gateway IP
+      - url: https://github.com/mozilla-mobile/mozilla-vpn-client/issues/803
+        desc: Android app allowed backups of application data
+      - url: https://github.com/mozilla-mobile/mozilla-vpn-client/issues/804
+        desc: Secure flag missing on views for Android app
+      - url: https://github.com/mozilla-mobile/mozilla-vpn-client/issues/805
+        desc: Android app supported insecure v1 signature
+      - url: https://github.com/mozilla-mobile/mozilla-vpn-client/issues/806
+        desc: Information disclosure via device endpoint
+      - url: https://github.com/mozilla-mobile/mozilla-vpn-client/issues/808
+        desc: Unencrypted shared preferences
+      - url: https://github.com/mozilla-mobile/mozilla-vpn-client/issues/809
+        desc: Android app exposes sensitive data to system logs
+      - url: https://github.com/mozilla-mobile/mozilla-vpn-client/issues/810
+        desc: Cross-site WebSocket hijacking
+      - url: https://github.com/mozilla-mobile/mozilla-vpn-client/issues/812
+        desc: Auth code could be leaked by injecting port
+      - url: https://github.com/mozilla-mobile/mozilla-vpn-client/pull/816
+        desc: Authentication listener allows disturbance of login
