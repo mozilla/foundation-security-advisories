@@ -7,11 +7,11 @@ title: Insecure Sharing of HTML/JS Files in Hubs Cloud Reticulum
 description: |
     *Hubs Cloud allows users to share content with other Hubs Cloud users.  However, the implicit content type that was being used to serve HTML/JS files could give way to XSS vulnerabilities.  To the best of our understanding, this issue was not abused in the wild.  If you believe your Hubs Cloud instance has been abused, please contact Mozilla directly via <a href="mailto:hubs-support@mozilla.com">hubs-support@mozilla.com</a>*
 advisories:
-  CVE-2021-29954:
+  CVE-2021-29979:
     title: Insecure Sharing of HTML/JS Files in Hubs Cloud Reticulum
     impact: high
     reporter: Muhammad R. Maulana
     description: |
       *Hubs Cloud allows users to download shared content, specifically HTML and JS, which could allow javascript execution in the Hub Cloud instance’s primary hosting domain.*
     bugs:
-      - url: 1682370
+      - url: 1712495

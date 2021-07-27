@@ -17,6 +17,7 @@ advisories:
     title: Out of bounds write in ANGLE
     impact: high
     reporter: (Unknown)
+    feed: false
     description: |
       An out of bounds write in ANGLE could have allowed an attacker to corrupt memory leading to a potentially exploitable crash.
     bugs:
