@@ -1,0 +1,97 @@
+## mfsa2021-FIXME.yml
+announced: August 10, 2021
+impact: high
+fixed_in:
+- Firefox 91
+title: Security Vulnerabilities fixed in Firefox 91
+advisories:
+  CVE-2021-29986:
+    title: Race condition when resolving DNS names could have led to memory corruption
+    impact: high
+    reporter: pahhur
+    description: |
+      A suspected race condition when calling <code>getaddrinfo</code> led to memory corruption and a potentially exploitable crash. <br>*Note: This issue only affected Linux operating systems. Other operating systems are unaffected.*
+    bugs:
+      - url: 1696138
+  CVE-2021-29981:
+    title: Live range splitting could have led to conflicting assignments
+    impact: high
+    reporter: Gary Kwong
+    description: |
+      An issue present in lowering/register allocation could have led to obscure but deterministic register confusion failures that would lead to a potentially exploitable crash.
+    bugs:
+      - url: 1707774
+  CVE-2021-29988:
+    title: Memory corruption as a result of incorrect style treatment
+    impact: high
+    reporter: Irvan Kurniawan
+    description: |
+      Firefox incorrectly treated an inline element as a block element, resulting in an out of bounds read or memory corruption, and a potentially exploitable crash.
+    bugs:
+      - url: 1717922
+  CVE-2021-29983:
+    title: Firefox for Android could get stuck in fullscreen mode
+    impact: high
+    reporter: Irvan Kurniawan
+    description: |
+      Firefox for Android could get stuck in fullscreen mode and not exit it even after normal interactions that should cause it to exit. <br>*Note: This issue only affected Firefox for Android. Other operating systems are unaffected.*
+    bugs:
+      - url: 1719088
+  CVE-2021-29984:
+    title: Incorrect instruction reordering during JIT optimization
+    impact: high
+    reporter: Lukas Bernhard
+    description: |
+      Instruction reordering resulted in a sequence of instructions that would cause an object to be incorrectly considered during garbage collection. This led to memory corruption and a potentially exploitable crash.
+    bugs:
+      - url: 1720031
+  CVE-2021-29980:
+    title: Uninitialized memory in a canvas object could have led to memory corruption
+    impact: high
+    reporter: Irvan Kurniawan
+    description: |
+      Uninitialized memory in a canvas object could have caused an incorrect free() leading to memory corruption and a potentially exploitable crash.
+    bugs:
+      - url: 1722204
+  CVE-2021-29987:
+    title: Users could have been tricked into accepting unwanted permissions on Linux
+    impact: moderate
+    reporter: Irvan Kurniawan
+    description: |
+      After requesting multiple permissions, and closing the first permission panel, subsequent permission panels will move but still record a click in the prior location, making it possible to trick a user into accepting a permission they did not want to.<br>*This bug only affects Firefox on Linux. Other operating systems are unaffected.*
+    bugs:
+      - url: 1716129
+  CVE-2021-29985:
+    title: Use-after-free media channels
+    impact: moderate
+    reporter: Marcin 'Icewall' Noga of Cisco Talos
+    description: |
+      A use-after-free vulnerability in media channels could have led to memory corruption and a potentially exploitable crash.
+    bugs:
+      - url: 1722083
+  CVE-2021-29982:
+    title: Single bit data leak due to incorrect JIT optimization and type confusion
+    impact: low
+    reporter: Lukas Bernhard
+    description: |
+      Due to incorrect JIT optimization, we incorrectly interpreted data from the wrong type of object, resulting in the potential leak of a single bit of memory.
+    bugs:
+      - url: 1715318
+  CVE-2021-29989:
+    title: Memory safety bugs fixed in Firefox 91 and Firefox ESR 78.13
+    impact: high
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers Christoph Kerschbaumer, Olli Pettay, Sandor Molnar, and Simon Giesecke reported memory safety bugs present in Firefox 90 and Firefox ESR 78.12. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1662676, 1666184, 1719178, 1719998, 1720568
+        desc: Memory safety bugs fixed in Firefox 91 and Firefox ESR 78.13
+  CVE-2021-29990:
+    title: Memory safety bugs fixed in Firefox 91
+    impact: high
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers and community members Kershaw Chang, Philipp, Chris Peterson, and Sebastian Hengst reported memory safety bugs present in Firefox 90. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1544190, 1716481, 1717778, 1719319, 1722073
+        desc: Memory safety bugs fixed in Firefox 91
