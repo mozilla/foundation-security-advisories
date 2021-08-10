@@ -1,4 +1,4 @@
-## mfsa2021-FIXME.yml
+## mfsa2021-33.yml
 announced: August 10, 2021
 impact: high
 fixed_in:
@@ -14,11 +14,11 @@ advisories:
     bugs:
       - url: 1696138
   CVE-2021-29981:
-    title: Live range splitting could have led to conflicting assignments
+    title: Live range splitting could have led to conflicting assignments in the JIT
     impact: high
     reporter: Gary Kwong
     description: |
-      An issue present in lowering/register allocation could have led to obscure but deterministic register confusion failures that would lead to a potentially exploitable crash.
+      An issue present in lowering/register allocation could have led to obscure but deterministic register confusion failures in JITted code that would lead to a potentially exploitable crash.
     bugs:
       - url: 1707774
   CVE-2021-29988:
@@ -26,7 +26,7 @@ advisories:
     impact: high
     reporter: Irvan Kurniawan
     description: |
-      Firefox incorrectly treated an inline element as a block element, resulting in an out of bounds read or memory corruption, and a potentially exploitable crash.
+      Firefox incorrectly treated an inline list-item element as a block element, resulting in an out of bounds read or memory corruption, and a potentially exploitable crash.
     bugs:
       - url: 1717922
   CVE-2021-29983:
@@ -58,7 +58,7 @@ advisories:
     impact: moderate
     reporter: Irvan Kurniawan
     description: |
-      After requesting multiple permissions, and closing the first permission panel, subsequent permission panels will move but still record a click in the prior location, making it possible to trick a user into accepting a permission they did not want to.<br>*This bug only affects Firefox on Linux. Other operating systems are unaffected.*
+      After requesting multiple permissions, and closing the first permission panel, subsequent permission panels will be displayed in a different position but still record a click in the default location, making it possible to trick a user into accepting a permission they did not want to.<br>*This bug only affects Firefox on Linux. Other operating systems are unaffected.*
     bugs:
       - url: 1716129
   CVE-2021-29985:

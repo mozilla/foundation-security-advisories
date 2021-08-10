@@ -1,4 +1,4 @@
-## mfsa2021-FIXME.yml
+## mfsa2021-34.yml
 announced: August 10, 2021
 impact: high
 fixed_in:
@@ -18,7 +18,7 @@ advisories:
     impact: high
     reporter: Irvan Kurniawan
     description: |
-      Firefox incorrectly treated an inline element as a block element, resulting in an out of bounds read or memory corruption, and a potentially exploitable crash.
+      Firefox incorrectly treated an inline list-item element as a block element, resulting in an out of bounds read or memory corruption, and a potentially exploitable crash.
     bugs:
       - url: 1717922
   CVE-2021-29984:
