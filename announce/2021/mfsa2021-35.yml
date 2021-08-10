@@ -1,0 +1,58 @@
+## mfsa2021-35.yml
+announced: August 10, 2021
+impact: high
+fixed_in:
+- Thunderbird 78.13
+title: Security Vulnerabilities fixed in Thunderbird 78.13
+description: |
+  *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
+advisories:
+  CVE-2021-29986:
+    title: Race condition when resolving DNS names could have led to memory corruption
+    impact: high
+    reporter: pahhur
+    description: |
+      A suspected race condition when calling <code>getaddrinfo</code> led to memory corruption and a potentially exploitable crash. <br>*Note: This issue only affected Linux operating systems. Other operating systems are unaffected.*
+    bugs:
+      - url: 1696138
+  CVE-2021-29988:
+    title: Memory corruption as a result of incorrect style treatment
+    impact: high
+    reporter: Irvan Kurniawan
+    description: |
+      Thunderbird incorrectly treated an inline list-item element as a block element, resulting in an out of bounds read or memory corruption, and a potentially exploitable crash.
+    bugs:
+      - url: 1717922
+  CVE-2021-29984:
+    title: Incorrect instruction reordering during JIT optimization
+    impact: high
+    reporter: Lukas Bernhard
+    description: |
+      Instruction reordering resulted in a sequence of instructions that would cause an object to be incorrectly considered during garbage collection. This led to memory corruption and a potentially exploitable crash.
+    bugs:
+      - url: 1720031
+  CVE-2021-29980:
+    title: Uninitialized memory in a canvas object could have led to memory corruption
+    impact: high
+    reporter: Irvan Kurniawan
+    description: |
+      Uninitialized memory in a canvas object could have caused an incorrect free() leading to memory corruption and a potentially exploitable crash.
+    bugs:
+      - url: 1722204
+  CVE-2021-29985:
+    title: Use-after-free media channels
+    impact: moderate
+    reporter: Marcin 'Icewall' Noga of Cisco Talos
+    description: |
+      A use-after-free vulnerability in media channels could have led to memory corruption and a potentially exploitable crash.
+    bugs:
+      - url: 1722083
+  CVE-2021-29989:
+    title: Memory safety bugs fixed in Thunderbird 78.13
+    impact: high
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers Christoph Kerschbaumer, Simon Giesecke, Sandor Molnar, and Olli Pettay reported memory safety bugs present in Thunderbird 78.12. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1662676, 1666184, 1719178, 1719998, 1720568
+        desc: Memory safety bugs fixed in Thunderbird 78.13
