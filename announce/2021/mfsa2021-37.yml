@@ -3,7 +3,8 @@ announced: August 16, 2021
 impact: high
 fixed_in:
 - Firefox 91.0.1
-title: Security Vulnerabilities fixed in Firefox 91.0.1
+- Thunderbird 91.0.1
+title: Security Vulnerabilities fixed in Firefox 91.0.1 and Thunderbird 91.0.1
 advisories:
   CVE-2021-29991:
     title: Header Splitting possible with HTTP/3 Responses
