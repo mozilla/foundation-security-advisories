@@ -9,7 +9,7 @@ advisories:
   CVE-2021-29991:
     title: Header Splitting possible with HTTP/3 Responses
     impact: high
-    reporter: Neal Poole
+    reporter: Youssef Sammouda
     description: |
       Firefox incorrectly accepted a newline in a HTTP/3 header, interpretting it as two separate headers. This allowed for a header splitting attack against servers using HTTP/3.
     bugs:
