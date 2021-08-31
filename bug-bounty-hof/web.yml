@@ -1,4 +1,74 @@
 names:
+- name: "Griffin Francis"
+  date: 2021-06-30
+  url: "https://twitter.com/aussinfosec"
+- name: "Arshad Kazmi"
+  date: 2021-06-30
+  url: "https://twitter.com/arshadkazmi42"
+- name: "Muhammad R. Maulana"
+  date: 2021-06-30
+  url: "https://twitter.com/agamimaulana"
+- name: "Priyanshu Parihar"
+  date: 2021-06-30
+  url: "https://hackerone.com/priyanshuxo"
+- name: "Andi Rrahmani"
+  date: 2021-06-30
+  url: "https://linkedin.com/in/andirrahmani"
+- name: "Onkar Sonawane"
+  date: 2021-06-30
+  url: "https://alancesec.com"
+- name: "Leo Starcevic"
+  date: 2021-06-30
+- name: "Magnus Stubman"
+  date: 2021-06-30
+  url: "https://dumpco.re"
+- name: "Torsten Trumm"
+  date: 2021-06-30
+- name: "Khalid Matar Alharthi"
+  date: 2021-03-31
+  url: "https://www.twitter.com/Khalid501r"
+- name: "Karl Aparece"
+  date: 2021-03-31
+- name: "Yassine Benfakih"
+  date: 2021-03-31
+  url: "https://www.twitter.com/yassinek3ch"
+- name: "Sergey Bobrov"
+  date: 2021-03-31
+  url: "https://twitter.com/Black2Fan"
+- name: "Peter af Geijerstam"
+  date: 2021-03-31
+  url: "https://twitter.com/p4fg"
+- name: "Ai Ho"
+  date: 2021-03-31
+  url: "https://twitter.com/j3ssiejjj"
+- name: "Kasper Karlsson"
+  date: 2021-03-31
+  url: "https://hackerone.com/kasperkarlsson"
+- name: "Arshad Kazmi"
+  date: 2021-03-31
+  url: "https://twitter.com/arshadkazmi42"
+- name: "Guilherme Keerok"
+  date: 2021-03-31
+  url: "https://twitter.com/k33r0k"
+- name: "James Kettle"
+  date: 2021-03-31
+  url: "https://twitter.com/albinowax"
+- name: "Mohammad Owais"
+  date: 2021-03-31
+  url: "https://twitter.com/_mohammadowais"
+- name: "Michele Romano"
+  date: 2021-03-31
+  url: "https://twitter.com/mik317_"
+- name: "Andi Rrahmani"
+  date: 2021-03-31
+  url: "https://linkedin.com/in/andirrahmani"
+- name: "RyotaK"
+  date: 2021-03-31
+  url: "https://twitter.com/ryotkak"
+- name: "Leo Starcevic"
+  date: 2021-03-31
+- name: "Daniel Tomescu | TheTime"
+  date: 2021-03-31
 - name: "Sergey Bobrov"
   date: 2020-10-01
   url: "https://twitter.com/Black2Fan"
@@ -8,7 +78,7 @@ names:
 - name: "Mohammed Mido"
   date: 2020-10-01
   url: "https://www.linkedin.com/in/mohammed-sherif-635302183"
-- name: "Mohammad Owaiswith"
+- name: "Mohammad Owais"
   date: 2020-10-01
   url: "https://twitter.com/@_mohammadowais"
 - name: "p4fg"
