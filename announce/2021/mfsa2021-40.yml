@@ -5,7 +5,7 @@ fixed_in:
 - Firefox ESR 91.1
 title: Security Vulnerabilities fixed in Firefox ESR 91.1
 advisories:
-  CVE-FIXME-YYY:
+  CVE-2021-38492:
     title: 'Navigating to `mk:` URL scheme could load Internet Explorer'
     impact: moderate
     reporter: James Lee
@@ -14,7 +14,7 @@ advisories:
       <br>*This bug only affects Firefox for Windows. Other operating systems are unaffected.*
     bugs:
       - url: 1721107
-  CVE-XXX-rollup:
+  CVE-2021-38495:
     title: Memory safety bugs fixed in Firefox 92 and Firefox ESR 91.1
     impact: high
     reporter: Mozilla developers and community

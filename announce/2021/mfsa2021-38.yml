@@ -5,16 +5,16 @@ fixed_in:
 - Firefox 92
 title: Security Vulnerabilities fixed in Firefox 92
 advisories:
-  CVE-FIXME-YYY:
-    title: UI spoofing with custom intents
+  CVE-2021-29993:
+    title: Handling custom intents could lead to crashes and UI spoofs
     impact: high
     reporter: Amy Burnett working with Include Security
     description: |
-      Firefox for Android allowed navigations through the `intent://` protocol, which allowed modifying the tab bar.
+      Firefox for Android allowed navigations through the `intent://` protocol, which could be used to cause crashes and UI spoofs.
       <br>*This bug only affects Firefox for Android. Other operating systems are unaffected.*
     bugs:
-      - url: 1712242
-  CVE-FIXME-YYY:
+      - url: 1712242, 1708767, 1712240, 1708544, 1729259
+  CVE-2021-38491:
     title: Mixed-Content-Blocking was unable to check opaque origins
     impact: moderate
     reporter: Jonathan Kingston
@@ -22,25 +22,7 @@ advisories:
       Mixed-content checks were unable to analyze opaque origins which led to some mixed content being loaded.
     bugs:
       - url: 1551886
-  CVE-FIXME-YYY:
-    title: Crash due to unhandled exceptions when handling custom intents
-    impact: moderate
-    reporter: Amy Burnett working with Include Security
-    description: |
-      Firefox for Android allowed navigations through `market://` intents which led to unhandled exceptions, resulting in a crash.
-      <br>*This bug only affects Firefox for Android. Other operating systems are unaffected.*
-    bugs:
-      - url: 1708767
-  CVE-FIXME-YYY:
-    title: UI spoofing with custom intents
-    impact: moderate
-    reporter: Amy Burnett working with Include Security
-    description: |
-      Firefox for Android allowed navigations through the `intent://` protocol, which allowed modifying internal settings, like URL bar placement and coloring.
-      <br>*This bug only affects Firefox for Android. Other operating systems are unaffected.*
-    bugs:
-      - url: 1712240
-  CVE-FIXME-YYY:
+  CVE-2021-38492:
     title: 'Navigating to `mk:` URL scheme could load Internet Explorer'
     impact: moderate
     reporter: James Lee
@@ -49,16 +31,7 @@ advisories:
       <br>*This bug only affects Firefox for Windows. Other operating systems are unaffected.*
     bugs:
       - url: 1721107
-  CVE-FIXME-YYY:
-    title: Popup blocker bypass with custom intents
-    impact: low
-    reporter: Amy Burnett working with Include Security
-    description: |
-      Firefox for Android allowed navigations through the `intent://` protocol, which allowed bypassing security controls like the popup blocker.
-      <br>*This bug only affects Firefox for Android. Other operating systems are unaffected.*
-    bugs:
-      - url: 1708544
-  CVE-XXX-rollup:
+  CVE-2021-38493:
     title: Memory safety bugs fixed in Firefox 92, Firefox ESR 78.14 and Firefox ESR 91.1
     impact: high
     reporter: Mozilla developers and community
@@ -67,7 +40,7 @@ advisories:
     bugs:
       - url: 1723391, 1724101, 1724107
         desc: Memory safety bugs fixed in Firefox 92, Firefox ESR 78.14 and Firefox ESR 91.1
-  CVE-XXX-rollup:
+  CVE-2021-38494:
     title: Memory safety bugs fixed in Firefox 92
     impact: high
     reporter: Mozilla developers and community
