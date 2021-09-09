@@ -2,7 +2,7 @@
 announced: September 7, 2021
 impact: low
 fixed_in:
-- Firefox ESR 91.1
+- Thunderbird 91.1
 title: Security Vulnerabilities fixed in Thunderbird 91.1
 advisories:
   CVE-2021-38492:
