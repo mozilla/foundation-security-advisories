@@ -1,0 +1,51 @@
+## mfsa2021-38.yml
+announced: September 7, 2021
+impact: high
+fixed_in:
+- Firefox 92
+title: Security Vulnerabilities fixed in Firefox 92
+advisories:
+  CVE-2021-29993:
+    title: Handling custom intents could lead to crashes and UI spoofs
+    impact: high
+    reporter: Amy Burnett working with Include Security
+    description: |
+      Firefox for Android allowed navigations through the `intent://` protocol, which could be used to cause crashes and UI spoofs.
+      <br>*This bug only affects Firefox for Android. Other operating systems are unaffected.*
+    bugs:
+      - url: 1712242, 1708767, 1712240, 1708544, 1729259
+  CVE-2021-38491:
+    title: Mixed-Content-Blocking was unable to check opaque origins
+    impact: moderate
+    reporter: Jonathan Kingston
+    description: |
+      Mixed-content checks were unable to analyze opaque origins which led to some mixed content being loaded.
+    bugs:
+      - url: 1551886
+  CVE-2021-38492:
+    title: 'Navigating to `mk:` URL scheme could load Internet Explorer'
+    impact: moderate
+    reporter: James Lee
+    description: |
+      When delegating navigations to the operating system, Firefox would accept the `mk` scheme which might allow attackers to launch pages and execute scripts in Internet Explorer in unprivileged mode.
+      <br>*This bug only affects Firefox for Windows. Other operating systems are unaffected.*
+    bugs:
+      - url: 1721107
+  CVE-2021-38493:
+    title: Memory safety bugs fixed in Firefox 92, Firefox ESR 78.14 and Firefox ESR 91.1
+    impact: high
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers Gabriele Svelto and Tyson Smith reported memory safety bugs present in Firefox 91 and Firefox ESR 78.13. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1723391, 1724101, 1724107
+        desc: Memory safety bugs fixed in Firefox 92, Firefox ESR 78.14 and Firefox ESR 91.1
+  CVE-2021-38494:
+    title: Memory safety bugs fixed in Firefox 92
+    impact: high
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers Christian Holler and Lars T Hansen reported memory safety bugs present in Firefox 91. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1723920, 1725638
+        desc: Memory safety bugs fixed in Firefox 92

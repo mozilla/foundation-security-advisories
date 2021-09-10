@@ -1,0 +1,25 @@
+## mfsa2021-39.yml
+announced: September 7, 2021
+impact: moderate
+fixed_in:
+- Firefox ESR 78.14
+title: Security Vulnerabilities fixed in Firefox ESR 78.14
+advisories:
+  CVE-2021-38492:
+    title: 'Navigating to `mk:` URL scheme could load Internet Explorer'
+    impact: moderate
+    reporter: James Lee
+    description: |
+      When delegating navigations to the operating system, Firefox would accept the `mk` scheme which might allow attackers to launch pages and execute scripts in Internet Explorer in unprivileged mode.
+      <br>*This bug only affects Firefox for Windows. Other operating systems are unaffected.*
+    bugs:
+      - url: 1721107
+  CVE-2021-38493:
+    title: Memory safety bugs fixed in Firefox 92, Firefox ESR 78.14 and Firefox ESR 91.1
+    impact: high
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers Tyson Smith and Gabriele Svelto reported memory safety bugs present in Firefox 91 and Firefox ESR 78.13. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1723391, 1724101, 1724107
+        desc: Memory safety bugs fixed in Firefox 92, Firefox ESR 78.14 and Firefox ESR 91.1
