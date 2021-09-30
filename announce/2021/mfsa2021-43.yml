@@ -1,0 +1,67 @@
+## mfsa2021-43.yml
+announced: October 5, 2021
+impact: high
+fixed_in:
+- Firefox 93
+title: Security Vulnerabilities fixed in Firefox 93
+advisories:
+  CVE-2021-38496:
+    title: Use-after-free in MessageTask
+    impact: high
+    reporter: Yangkang of 360 ATA Team
+    description: |
+      During operations on MessageTasks, a task may have been removed while it was still scheduled, resulting in memory corruption and a potentially exploitable crash.
+    bugs:
+      - url: 1725335
+  CVE-2021-38497:
+    title: Validation message could have been overlaid on another origin
+    impact: moderate
+    reporter: Irvan Kurniawan
+    description: |
+      Through use of <code>reportValidity()</code> and <code>window.open()</code>, a plain-text validation message could have been overlaid on another origin, leading to possible user confusion and spoofing attacks.
+    bugs:
+      - url: 1726621
+  CVE-2021-38498:
+    title: Use-after-free of nsLanguageAtomService object
+    impact: moderate
+    reporter: Yangkang of 360 ATA Team
+    description: |
+      During process shutdown, a document could have caused a use-after-free of a languages service object, leading to memory corruption and a potentially exploitable crash.
+    bugs:
+      - url: 1729642
+  CVE-2021-32810:
+    title: Data race in crossbeam-deque
+    impact: moderate
+    reporter: Maor Kleinberger
+    description: |
+      In the crossbeam crate, one or more tasks in the worker queue could have been be popped twice instead of other tasks that are forgotten and never popped. If tasks are allocated on the heap, this could have caused a double free and a memory leak.
+    bugs:
+      - url: 1729813
+      - url: https://github.com/crossbeam-rs/crossbeam/security/advisories/GHSA-pqqp-xmhj-wgcw
+  CVE-2021-38500:
+    title: Memory safety bugs fixed in Firefox 93, Firefox ESR 78.15, and Firefox ESR 91.2
+    impact: high
+    reporter: Mozilla developers
+    description: |
+      Mozilla developers and community members Andreas Pehrson and Christian Holler reported memory safety bugs present in Firefox 92 and Firefox ESR 91.1. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1725854, 1728321
+        desc: Memory safety bugs fixed in Firefox 93, Firefox ESR 78.15, and Firefox ESR 91.2
+  CVE-2021-38501:
+    title: Memory safety bugs fixed in Firefox 93 and Firefox ESR 91.2
+    impact: high
+    reporter: Mozilla developers
+    description: |
+      Mozilla developers and community members Kevin Brosnan, Mihai Alexandru Michis, and Christian Holler reported memory safety bugs present in Firefox 92 and Firefox ESR 91.1. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1685354, 1715755, 1723176
+        desc: Memory safety bugs fixed in Firefox 93 and Firefox ESR 91.2
+  CVE-2021-38499:
+    title: Memory safety bugs fixed in Firefox 93
+    impact: high
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers and community members Julien Cristau, Christian Holler reported memory safety bugs present in Firefox 92. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1667102, 1723170, 1725356, 1727364
+        desc: Memory safety bugs fixed in Firefox 93

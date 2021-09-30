@@ -1,0 +1,24 @@
+## mfsa2021-44.yml
+announced: October 5, 2021
+impact: high
+fixed_in:
+- Firefox ESR 78.15
+title: Security Vulnerabilities fixed in Firefox ESR 78.15
+advisories:
+  CVE-2021-38496:
+    title: Use-after-free in MessageTask
+    impact: high
+    reporter: Yangkang of 360 ATA Team
+    description: |
+      During operations on MessageTasks, a task may have been removed while it was still scheduled, resulting in memory corruption and a potentially exploitable crash.
+    bugs:
+      - url: 1725335
+  CVE-2021-38500:
+    title: Memory safety bugs fixed in Firefox 93, Firefox ESR 78.15, and Firefox ESR 91.2
+    impact: high
+    reporter: Mozilla developers
+    description: |
+      Mozilla developers and community members Andreas Pehrson and Christian Holler reported memory safety bugs present in Firefox 92 and Firefox ESR 91.1. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1725854, 1728321
+        desc: Memory safety bugs fixed in Firefox 93, Firefox ESR 78.15, and Firefox ESR 91.2
