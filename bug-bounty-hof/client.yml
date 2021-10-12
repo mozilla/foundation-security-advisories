@@ -1,4 +1,40 @@
 names:
+- name: Irvan Kurniawan (sourc7)
+  date: 2021-06-15
+  url: https://www.linkedin.com/in/sourc7/
+- name: Gary Kwong
+  date: 2021-06-08
+  url: https://www.ygitsoftware.com/
+- name: Zhong Zhaochen
+  date: 2021-06-01
+- name: Harshit Mahendra
+  date: 2021-06-01
+  twitter: "@hm_harshit"
+  url: https://twitter.com/@hm_harshit
+- name: Muneaki Nishimura (a.k.a. nishimunea)
+  date: 2021-05-25
+- name: Ronald Crane
+  date: 2021-04-27
+  url: https://www.zippenhop.com/
+- name: Yossi Oren
+  date: 2021-04-13
+- name: Abraruddin Khan and Omair
+  date: 2021-04-13
+  url: https://krashconsulting.com
+- name: Daniel Santos
+  date: 2021-04-13
+  twitter: "@bananabr"
+  url: https://twitter.com/@bananabr
+- name: Dongsung Kim
+  date: 2021-04-06
+  twitter: "@kid1ng"
+  url: https://twitter.com/@kid1ng
+- name: Armin Razmjou
+  date: 2021-04-06
+  url: https://rawsec.net/
+- name: Colin D. Munro
+  date: 2021-04-06
+  url: https://www.tattiebogle.net/
 - name: Muneaki Nishimura (a.k.a. nishimunea)
   date: 2021-03-23
 - name: Irvan Kurniawan (sourc7)
@@ -9,8 +45,6 @@ names:
   url: https://krashconsulting.com
 - name: Hany Ragab; Enrico Barberis; Herbert Bos; Cristiano Giuffrida
   date: 2021-03-16
-- name: Arshad Kazmi
-  date: 2021-03-15
 - name: Ben Seri
   date: 2021-03-02
 - name: Masato Kinugawa
@@ -22,9 +56,15 @@ names:
 - name: Armin Razmjou
   date: 2021-02-23
   url: https://rawsec.net/
+- name: Gabriel Corona
+  date: 2021-02-09
 - name: Arvind
   date: 2021-02-09
   twitter: "@ar_arv1nd"
+- name: fatal0
+  date: 2021-02-02
+  twitter: "@fatal0_"
+  url: https://twitter.com/@fatal0_
 - name: Brian Carpenter of Geeknik Labs & Farm
   date: 2021-02-01
   twitter: "@geeknik"
@@ -38,12 +78,17 @@ names:
 - name: Gary Kwong
   date: 2021-01-12
   url: https://www.ygitsoftware.com/
+- name: Nils André-Chang
+  date: 2021-01-12
+  url: https://www.nilsand.re/
 - name: Luca Moretto
   date: 2021-01-05
 - name: Muhammad R. Maulana
   date: 2020-12-21
   twitter: "@agamimaulana"
   url: https://twitter.com/@agamimaulana
+- name: Muneaki Nishimura (a.k.a. nishimunea)
+  date: 2020-12-15
 - name: Irvan Kurniawan (sourc7)
   date: 2020-12-15
   url: https://www.linkedin.com/in/sourc7/
@@ -64,6 +109,9 @@ names:
   url: https://krashconsulting.com
 - name: Gabriel Corona
   date: 2020-12-01
+- name: Nils André-Chang
+  date: 2020-12-01
+  url: https://www.nilsand.re/
 - name: Abdulrahman Alqabandi of Microsoft Browser Vulnerability Research
   date: 2020-11-19
   twitter: "@qab"
@@ -72,6 +120,10 @@ names:
   date: 2020-11-10
 - name: Bharadwaj Machiraju
   date: 2020-11-03
+- name: Pedro Oliveira
+  date: 2020-10-27
+  twitter: "@kanytu"
+  url: https://twitter.com/@kanytu
 - name: Zijie Zhao
   date: 2020-10-27
 - name: David Schütz
@@ -80,6 +132,8 @@ names:
   date: 2020-10-21
 - name: Kaizer Soze
   date: 2020-10-20
+- name: XiaoXiong(superxx) of Qihoo 360 CERT
+  date: 2020-10-13
 - name: Aleksejs Popovs
   date: 2020-10-13
 - name: Brian Carpenter of Geeknik Labs & Farm
@@ -88,9 +142,6 @@ names:
   url: https://twitter.com/@geeknik
 - name: Anonymous
   date: 2020-10-12
-- name: Nassim Bouali
-  date: 2020-10-12
-  url: https://hackerone.com/derision
 - name: Aaron Costello
   date: 2020-10-05
 - name: Krzysztof `vnd’ Katowicz-Kowalewski

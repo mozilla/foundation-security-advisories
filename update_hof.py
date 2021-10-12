@@ -13,6 +13,9 @@ from datetime import datetime
 import os
 import base64
 
+from requests.adapters import HTTPAdapter
+from requests.packages.urllib3.util.retry import Retry
+
 HEADERS = { 'Accept': 'application/json' }
 BASE_URL = 'https://bugzilla.mozilla.org/rest/'
 HMAC_KEY_ATTACHMENT_ID = 9133354 # Bug 1622495
@@ -48,22 +51,6 @@ search_url = BASE_URL + 'bug' + \
 &classification=Components
 &classification=Server%20Software
 &classification=Other
-&product=Core
-&product=External%20Software%20Affecting%20Firefox
-&product=Firefox
-&product=Firefox%20for%20Android
-&product=Firefox%20for%20iOS
-&product=Focus
-&product=DevTools
-&product=Lockwise
-&product=MailNews%20Core
-&product=NSPR
-&product=NSS
-&product=Pocket
-&product=Thunderbird
-&product=Toolkit
-&product=Calendar
-&product=WebExtensions
 """.replace("\n", "")
 
 CVE_REVIEW = """
@@ -88,6 +75,21 @@ https://bugzilla.mozilla.org/buglist.cgi?x=x
 """.replace("\n", "")
 
 credit_entries = {
+    "b1a7c3c63dd184cfac07998a22977ccc":"Harshit Mahendra",
+    "b6bf77041fb088d18af139e5eeafb4e9":"Mohammed Mido from connectps.com",
+    "9b50ae1f239de9709af5f1db53629f8c":"Ravi Kishor",
+    "3c9e02bf1983fa620099841bb91ea3e0":"Sergey Bobrov",
+    "15acbd736229d79a8ed92e690164559c":"Nils André-Chang",
+    "668988e8a957c941b5b3619cfdc005d1":"XiaoXiong(superxx) of Qihoo 360 CERT",
+    "66c52290aeab671fa01c2e062f6c2e01":"Karl Aparece",
+    "75b14a4315405e7480d0620b8eb3c11c":"Flo van der vlist",
+    "59260d270baa2ce555fcf323c46d0c03":"Codermak",
+    "f6b2efbb344d0d64af70bcae3e3fc896":"Mohammad Owais",
+    "af5f683612b2560ceeb75586a09f8525":"Arvind",
+    "7ec079736a63d226ce3b436b5f49b1d9":"Daniel Santos",
+    "18844199a107c0665b6de05b47ce0340":"Colin D. Munro",
+    "a72696a2089d2ea69143161018fa7c23":"Zhong Zhaochen",
+    "81236113f95cd9d1591343e78fe204c5":"Dongsung Kim",
     "adbee288a6f9cf15602fda47356d5175":"Hany Ragab; Enrico Barberis; Herbert Bos; Cristiano Giuffrida",
     "480d732942ba3ecdedf961ce3fa9fc64":"Ademar Nowasky Junior",
     "e8f888d34d0dea54f388def803d7b4ab":"Vladimir Dmitriev",
@@ -314,6 +316,13 @@ credit_entries = {
     "fea05bd1b815660051bf5d090eb4e522" : "Aral Yaman",
 }
 twitter_entries = {
+    "b1a7c3c63dd184cfac07998a22977ccc":"@hm_harshit",
+    "3c9e02bf1983fa620099841bb91ea3e0":"@Black2Fan",
+    "59260d270baa2ce555fcf323c46d0c03":"https://twitter.com/arshadkazmi42",
+    "f6b2efbb344d0d64af70bcae3e3fc896":"@_mohammadowais",
+    "af5f683612b2560ceeb75586a09f8525":"https://twitter.com/ar_arv1nd",
+    "7ec079736a63d226ce3b436b5f49b1d9":"@bananabr",
+    "81236113f95cd9d1591343e78fe204c5":"@kid1ng",
     "480d732942ba3ecdedf961ce3fa9fc64" : "@nowaskyjr",
     "0c7f4b38ad0b504cfc48042e14564cc8" : "@pdjstone",
     "0cdb9b89f615c444f832e56c844e9e75" : "@ally_o_malley",
@@ -364,6 +373,9 @@ twitter_entries = {
     "fe7f319c61c0b44d4cb751afda4f4aeb" : "@Gaurav_00000",
 }
 url_entries = {
+    "9b50ae1f239de9709af5f1db53629f8c":"https://bughunter.withgoogle.com/profile/3c96630c-9112-4ddb-a029-df2bb893c6c3",
+    "15acbd736229d79a8ed92e690164559c":"https://www.nilsand.re/",
+    "18844199a107c0665b6de05b47ce0340":"https://www.tattiebogle.net/",
     "d77e4bf715af2d76c9c3ae565a21d40f":"https://www.ygitsoftware.com/",
     "a63f14172a1a1763ebe352317a9c9156":"https://hackerone.com/derision",
     "77b1dc2043055d86d9e81b5035efe29f":"https://www.linkedin.com/in/sourc7/",
@@ -424,13 +436,17 @@ url_entries = {
     "f8266c7296c7f7d996e0040ad7843bf0" : "https://www.s3cur3.it/",
 }
 
-products = [
+client_products = [
     "Core",
     "External Software Affecting Firefox",
     "Firefox",
     "Firefox for Android",
     "Firefox for iOS",
+    "Mozilla VPN",
+    "Fenix",
     "Focus",
+    "Focus-iOS",
+    "Lockwise",
     "MailNews Core",
     "NSPR",
     "NSS",
@@ -441,6 +457,44 @@ products = [
     "DevTools",
     "Calendar",
 ]
+web_products = ["Cloud Services",
+    "Data Platform and Tools",
+    ]
+
+def is_client_bug(bug):
+    # We have a limited number of for-certain web products
+    # but for the most part we rely on !client
+    if bug['product'] in web_products:
+        return False
+
+    if bug['product'] == "Testing" and bug['component'] == "geckodriver":
+        return True
+
+    # A lot of Pocket bugs are web bugs, but some are client
+    if bug['product'] == "Pocket":
+        return not bug['component'] == "getpocket.com"
+
+    if bug['classification'] == "Client Software":
+        if bug['product'] == "Emerging Markets" and bug['component'] in ["Security:  Firefox Lite"]:
+            return True
+
+        if bug['product'] not in client_products:
+            # this is an edge case we should validate and improve
+            raise Exception("Classification: '{0}' Product: '{1}' Component: '{2}' is not considered a client bug, please confirm.".format(bug['classification'], bug['product'], bug['component']))
+    
+    return bug['product'] in client_products
+
+# Set up the requests retry/backoff strategy
+retry_strategy = Retry(
+    total=5,
+    status_forcelist=[429, 500, 502, 503, 504],
+    method_whitelist=["HEAD", "GET", "OPTIONS"],
+    backoff_factor=2
+)
+adapter = HTTPAdapter(max_retries=retry_strategy)
+http = requests.Session()
+http.mount("https://", adapter)
+http.mount("http://", adapter)
 
 def main():
     args = command_line()
@@ -451,12 +505,14 @@ def main():
         f.close()
 
     hmackey = get_hmac_key(args.apikey)
-    debuglog = open('debuglog.' + str(int(time.time())) + '.log', 'w')
+    debuglogfilename = 'debuglog.' + str(int(time.time())) + '.log'
+    debuglog = open(debuglogfilename, 'w')
 
     print("Okay, we're going to start. Have you assigned hof+ to the eligible bugs with bounty- and CVEs?")
     print("The link for those for you to review is:")
     print("   ", CVE_REVIEW.replace("YEAR_REPLACEME", args.year))
     print("If you forgot to do this, kill the script, do it, and start it again.")
+    print("I'm logging to", debuglogfilename)
 
     bugs = gather_bug_list(args.apikey)
     hof_entries = []
@@ -467,30 +523,30 @@ def main():
     for bug in bugs["bugs"]:
         bugid = str(bug["id"])
         debuglog.write(bugid + ",")
+        debuglog.write(bug['classification'] + ",")
+        debuglog.write(bug['product'] + ",")
+        debuglog.write(bug['component'] + ",")
 
         num_processed += 1
 
         #if num_processed % 100 == 0:
         print("Processed", num_processed, "of", len(bugs["bugs"]), "currently on", bugid)
-        if bug['product'] not in products:
+        if args.client and not is_client_bug(bug):
+            debuglog.write("wrong product: " + bug['product'] + "\n")
+            continue
+        elif args.web and is_client_bug(bug):
             debuglog.write("wrong product: " + bug['product'] + "\n")
             continue
 
 
-        data ={}
+        data ={'bugid':bugid}
 
         # ==========================================================================================
         # Look for the bug bounty attachment first
         attachment_url = BASE_URL + 'bug/' + bugid + '/attachment'
         try:
-            attachments = requests.get(attachment_url, headers=HEADERS, params={'api_key' : args.apikey}).json()['bugs'][bugid]
-        except json.decoder.JSONDecodeError as e:
-            # Try this a couple times, it'll probably work eventually.
-            try:
-                attachments = requests.get(attachment_url, headers=HEADERS, params={'api_key' : args.apikey}).json()['bugs'][bugid]
-            except json.decoder.JSONDecodeError as e:
-                attachments = requests.get(attachment_url, headers=HEADERS, params={'api_key' : args.apikey}).json()['bugs'][bugid]
-        except requests.exceptions.RequestException as e:
+            attachments = http.get(attachment_url, headers=HEADERS, params={'api_key' : args.apikey}).json()['bugs'][bugid]
+        except Exception as e:
             print ("Error in " + bugid)
             print (e)
             continue
@@ -520,7 +576,6 @@ def main():
             try:
                 attachment = foundAttachment
 
-                data = {}
                 attachment_breakout = [x.strip() for x in attachment['description'].split(',')]
                 data["email"] = attachment_breakout[0]
                 data["email_hmac"] = hmac_email(hmackey, attachment_breakout[0])
@@ -566,7 +621,7 @@ def main():
                     elif not data["name"]:
                         user_url = BASE_URL + 'user?names=' + data["email"]
                         try:
-                            user_response = requests.get(user_url, headers=HEADERS)
+                            user_response = http.get(user_url, headers=HEADERS)
                             user_response_data = user_response.json()
                         except requests.exceptions.RequestException as e:
                             print("Could not get user data for " + user_url)
@@ -641,7 +696,7 @@ def main():
             else:
                 user_url = BASE_URL + 'user?names=' + data["email"]
                 try:
-                    user_response = requests.get(user_url, headers=HEADERS)
+                    user_response = http.get(user_url, headers=HEADERS)
                     user_response_data = user_response.json()
                 except requests.exceptions.RequestException as e:
                     print("Could not get user data for " + user_url)
@@ -682,8 +737,10 @@ def main():
     oneEntryPerQuarter = set()
 
     hof_output = ""
+    hof_bugzilla_queryarg = ""
     for data in hof_entries:
         try:
+            hof_bugzilla_queryarg += data['bugid'] + ","
             thisData = data["name"] + " " + data["quarter-string"]
             if thisData in oneEntryPerQuarter:
                 continue
@@ -696,13 +753,17 @@ def main():
                 hof_output = hof_output + "  twitter: \"{}\"\n".format(data["twitter"])
             if "url" in data:
                 hof_output = hof_output + "  url: {}\n".format(data["url"])
-        except:
+        except Exception as e:
             print("Could not write hof entry for ", data["name"])
 
     final_output = file_data[:6] +'\n' + hof_output.rstrip() + file_data[6:]
 
     with open(os.path.abspath(args.output), 'w') as output_file:
         output_file.write(final_output)
+
+    print("I logged to", debuglogfilename)
+    print("Here is a bugzilla query showing all the bugs I processed for this quarter. Please note that a reporter _may_ have multiple bugs, so don't remove them from the HOF for a misplaced bug without double checking.")
+    print("https://bugzilla.mozilla.org/buglist.cgi?quicksearch={0}".format(hof_bugzilla_queryarg))
 
 def define_dates(quarter, year):
     if quarter == "doitall":
@@ -738,10 +799,12 @@ def month_to_quarter(month):
 
 def command_line():
     parser = argparse.ArgumentParser()
-    parser.add_argument("-a", "--apikey", help="Bugzila API key",)
-    parser.add_argument("-f", "--output", help="YAML file",)
-    parser.add_argument("-y", "--year", help="year",)
-    parser.add_argument("-q", "--quarter", help="quarter as digit")
+    parser.add_argument("-a", "--apikey", help="Bugzila API key", required=True)
+    parser.add_argument("-f", "--output", help="YAML file", required=True)
+    parser.add_argument("-y", "--year", help="year", required=True)
+    parser.add_argument("-q", "--quarter", help="quarter as digit", required=True)
+    parser.add_argument("-w", "--web", help="Process Web Bugs", action='store_true')
+    parser.add_argument("-c", "--client", help="Process Client Bugs", action='store_true')
     parser.add_argument("--sort-credit-entries", help="Do not update Hall of Fame, just sort the credit entries and output them", action='store_true')
     parser.add_argument("--hmac", help="hmac an email address")
     args = parser.parse_args()
@@ -771,6 +834,9 @@ def command_line():
     else:
         if not args.apikey or not args.output or not args.year or not args.quarter:
             parser.print_help()
+            sys.exit(1)
+        if not args.client and not args.web:
+            print("Either --web or --client is required.")
             sys.exit(1)
 
     return args
@@ -839,7 +905,7 @@ def add_url_to_script(hmackey, email, url):
 
 def gather_bug_list(apikey):
     try:
-        bugs = requests.get(search_url, headers=HEADERS, params={'api_key':apikey, 'include_fields': 'id, product, cf_last_resolved, creator, creation_time'}).json()
+        bugs = http.get(search_url, headers=HEADERS, params={'api_key':apikey, 'include_fields': 'id, classification, product, component, cf_last_resolved, creator, creation_time'}).json()
     except requests.exceptions.RequestException as e:
         print(e)
         sys.exit(1)
@@ -848,7 +914,7 @@ def gather_bug_list(apikey):
 def get_hmac_key(apikey):
     key = ""
     try:
-        response = requests.get("https://bugzilla.mozilla.org/rest/bug/attachment/" + str(HMAC_KEY_ATTACHMENT_ID), headers=HEADERS, params={'api_key':apikey}).json()
+        response = http.get("https://bugzilla.mozilla.org/rest/bug/attachment/" + str(HMAC_KEY_ATTACHMENT_ID), headers=HEADERS, params={'api_key':apikey}).json()
         return base64.b64decode(response['attachments'][str(HMAC_KEY_ATTACHMENT_ID)]['data'])
     except requests.exceptions.RequestException as e:
         print(e)
