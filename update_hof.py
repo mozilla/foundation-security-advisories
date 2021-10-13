@@ -75,6 +75,8 @@ https://bugzilla.mozilla.org/buglist.cgi?x=x
 """.replace("\n", "")
 
 credit_entries = {
+    "305a3f15dfabae7353bf675ca5b7a23d":"Yangkang of 360 ATA Team",
+    "15c2f9fe6f16230593ed3c11324c155e":"Maor Kleinberger",
     "028ff665214190ae419f0febbdff465f" : "James Grant",
     "047a2ade7fdc3c6d84d5dbea228fe71e" : "Julien Maladrie",
     "05c9059021985684d94c2631e62b9d12" : "Zhang Hanming from 360 Vulcan team",
@@ -320,6 +322,7 @@ credit_entries = {
     "fea05bd1b815660051bf5d090eb4e522" : "Aral Yaman",
 }
 twitter_entries = {
+    "305a3f15dfabae7353bf675ca5b7a23d":"@dnpushme",
     "0c7f4b38ad0b504cfc48042e14564cc8" : "@pdjstone",
     "0cdb9b89f615c444f832e56c844e9e75" : "@ally_o_malley",
     "0eaafbf6f9aabe86a4b040ca50d9191a" : "@5hint0",
