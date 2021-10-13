@@ -1,11 +1,34 @@
 names:
+- name: musicDespiteEverything
+  date: 2021-09-27
+- name: Codermak
+  date: 2021-09-27
+  twitter: "https://twitter.com/arshadkazmi42"
+  url: https://twitter.com/https://twitter.com/arshadkazmi42
+- name: Griffin Francis
+  date: 2021-09-20
+- name: Aaryan9898
+  date: 2021-08-02
+- name: Aryan Sinha
+  date: 2021-08-02
+  url: https://www.aryansinha.com/
+- name: Takashi
+  date: 2021-07-26
+- name: Boopathi Senthilkumar
+  date: 2021-07-26
+- name: Muhammad R. Maulana
+  date: 2021-07-26
+  twitter: "@agamimaulana"
+  url: https://twitter.com/@agamimaulana
+- name: "Leo Starcevic"
+  date: 2021-07-19
 - name: Kasper Karlsson
   date: 2021-06-21
 - name: Muhammad R. Maulana
   date: 2021-06-21
   twitter: "@agamimaulana"
   url: https://twitter.com/@agamimaulana
-- name: Leo
+- name: "Leo Starcevic"
   date: 2021-06-21
 - name: Griffin Francis
   date: 2021-06-21
@@ -43,7 +66,7 @@ names:
   date: 2021-03-22
 - name: Takashi
   date: 2021-03-15
-- name: Leo
+- name: "Leo Starcevic"
   date: 2021-03-15
 - name: Codermak
   date: 2021-03-15
@@ -83,7 +106,7 @@ names:
   date: 2020-12-21
 - name: Fouad Yahyaoui
   date: 2020-12-21
-- name: Leo
+- name: "Leo Starcevic"
   date: 2020-12-21
 - name: Ravi Kishor
   date: 2020-11-16
