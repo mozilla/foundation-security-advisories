@@ -1,0 +1,112 @@
+## mfsa2021-48.yml
+announced: November 2, 2021
+impact: high
+fixed_in:
+- Firefox 94
+title: Security Vulnerabilities fixed in Firefox 94
+advisories:
+  CVE-2021-38503:
+    title: iframe sandbox rules did not apply to XSLT stylesheets
+    impact: high
+    reporter: Armin Ebert
+    description: |
+      The iframe sandbox rules were not correctly applied to XSLT stylesheets, allowing an iframe to bypass restrictions such as executing scripts or navigating the top-level frame.
+    bugs:
+      - url: 1729517
+  CVE-2021-38504:
+    title: Use-after-free in file picker dialog
+    impact: high
+    reporter: Irvan Kurniawan
+    description: |
+      When interacting with an HTML input element's file picker dialog with <code>webkitdirectory</code> set, a use-after-free could have resulted, leading to memory corruption and a potentially exploitable crash.
+    bugs:
+      - url: 1730156
+  CVE-2021-38505:
+    title: Windows 10 Cloud Clipboard may have recorded sensitive user data
+    impact: high
+    reporter: Sergey Galich
+    description: |
+      Microsoft introduced a new feature in Windows 10 known as Cloud Clipboard which, if enabled, will record data copied to the clipboard to the cloud, and make it available on other computers in certain scenarios. Applications that wish to prevent copied data from being recorded in Cloud History must use specific clipboard formats; and Firefox before versions 94 and ESR 91.3 did not implement them. This could have caused sensitive data to be recorded to a user's Microsoft account.<br>*This bug only affects Firefox for Windows 10+ with Cloud Clipboard enabled. Other operating systems are unaffected.*
+    bugs:
+      - url: 1730194
+  CVE-2021-38506:
+    title: Firefox could be coaxed into going into fullscreen mode without notification or warning
+    impact: high
+    reporter: Irvan Kurniawan
+    description: |
+      Through a series of navigations, Firefox could have entered fullscreen mode without notification or warning to the user. This could lead to spoofing attacks on the browser UI including phishing.
+    bugs:
+      - url: 1730750
+  CVE-2021-38507:
+    title: Opportunistic Encryption in HTTP2 could be used to bypass the Same-Origin-Policy on services hosted on other ports
+    impact: high
+    reporter: Takeshi Terada
+    description: |
+      The Opportunistic Encryption feature of HTTP2 (RFC 8164) allows a connection to be transparently upgraded to TLS while retaining the visual properties of an HTTP connection, including being same-origin with unencrypted connections on port 80.  However, if a second encrypted port on the same IP address (e.g. port 8443) did not opt-in to opportunistic encryption; a network attacker could forward a connection from the browser to port 443 to port 8443, causing the browser to treat the content of port 8443 as same-origin with HTTP.  This was resolved by disabling the Opportunistic Encryption feature, which had low usage.
+    bugs:
+      - url: 1730935
+  MOZ-2021-0003:
+    title: Universal XSS in Firefox for Android via QR Code URLs
+    impact: high
+    reporter: Hafiizh
+    description: |
+      A Universal XSS vulnerability was present in Firefox for Android resulting from improper sanitization when processing a URL scanned from a QR code.<br>*This bug only affects Firefox for Android. Other operating systems are unaffected.*<br />*Note: This issue is pending a CVE assignment and will be updated when available.*
+    bugs:
+      - url: 1736886
+  CVE-2021-38508:
+    title: Permission Prompt could be overlaid, resulting in user confusion and potential spoofing
+    impact: moderate
+    reporter: Raphael
+    description: |
+      By displaying a form validity message in the correct location at the same time as a permission prompt (such as for geolocation), the validity message could have obscured the prompt, resulting in the user potentially being tricked into granting the permission.
+    bugs:
+      - url: 1366818
+  MOZ-2021-0004:
+    title: Web Extensions could access pre-redirect URL when their context menu was triggered by a user
+    impact: moderate
+    reporter: Rob Wu
+    description: |
+      When a user loaded a Web Extensions context menu, the Web Extension could access the post-redirect URL of the element clicked.  If the Web Extension lacked the WebRequest permission for the hosts involved in the redirect, this would be a same-origin-violation leaking data the Web Extension should have access to.  This was fixed to provide the pre-redirect URL. This is related to CVE-XXX but in the context of Web Extensions.<br />*Note: This issue is pending a CVE assignment and will be updated when available.*
+    bugs:
+      - url: 1659155
+  CVE-2021-38509:
+    title: Javascript alert box could have been spoofed onto an arbitrary domain
+    impact: moderate
+    reporter: Ademar Nowasky Junior
+    description: |
+      Due to an unusual sequence of attacker-controlled events, a Javascript <code>alert()</code> dialog with arbitrary (although unstyled) contents could be displayed over top an uncontrolled webpage of the attacker's choosing.
+    bugs:
+      - url: 1718571
+  CVE-2021-38510:
+    title: Download Protections were bypassed by .inetloc files on Mac OS
+    impact: moderate
+    reporter: houjingyi647
+    description: |
+      The executable file warning was not presented when downloading .inetloc files, which can run commands on a user's computer.<br>*Note: This issue only affected Mac OS operating systems. Other operating systems are unaffected.*
+    bugs:
+      - url: 1731779
+  MOZ-2021-0005:
+    title: 'Copy Image Link' context menu action could have been abused to see authentication tokens
+    impact: low
+    reporter: Ademar Nowasky Junior
+    description: |
+      The 'Copy Image Link' context menu action would copy the final image URL after redirects. By embedding an image that triggered authentication flows - in conjunction with a Content Security Policy that stopped a redirection chain in the middle - the final image URL could be one that contained an authentication token used to takeover a user account.  If a website tricked a user into copy and pasting the image link back to the page, the page would be able to steal the authentication tokens.  This was fixed by making the action return the original URL, before any redirects.<br />*Note: This issue is pending a CVE assignment and will be updated when available.*
+    bugs:
+      - url: 1719203
+  MOZ-2021-0006:
+    title: URL Parsing may incorrectly parse internationalized domains
+    impact: low
+    reporter: Taiga Shirakura
+    description: |
+      When parsing internationalized domain names, high bits of the characters in the URLs were sometimes stripped, resulting in inconsistencies that could lead to user confusion or attacks such as phishing.<br />*Note: This issue is pending a CVE assignment and will be updated when available.*
+    bugs:
+      - url: 1724233
+  MOZ-2021-0007:
+    title: Memory safety bugs fixed in Firefox 94 and Firefox ESR 91.3
+    impact: high
+    reporter: Mozilla developers
+    description: |
+      Mozilla developers and community members Christian Holler, Valentin Gosu, and Andrew McCreight reported memory safety bugs present in Firefox 93 and Firefox ESR 91.2. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.<br />*Note: This issue is pending a CVE assignment and will be updated when available.*
+    bugs:
+      - url: 1606864, 1712671, 1730048, 1735152
+        desc: Memory safety bugs fixed in Firefox 94 and Firefox ESR 91.3
