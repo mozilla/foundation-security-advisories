@@ -31,6 +31,7 @@ advisories:
       - url: 1729642
   CVE-2021-32810:
     title: Data race in crossbeam-deque
+    feed: false
     impact: moderate
     reporter: Maor Kleinberger
     description: |
