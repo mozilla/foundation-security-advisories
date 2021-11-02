@@ -86,7 +86,7 @@ advisories:
     bugs:
       - url: 1731779
   MOZ-2021-0005:
-    title: 'Copy Image Link' context menu action could have been abused to see authentication tokens
+    title: "'Copy Image Link' context menu action could have been abused to see authentication tokens"
     impact: low
     reporter: Ademar Nowasky Junior
     description: |
