@@ -48,6 +48,14 @@ advisories:
     bugs:
       - url: 1725854, 1728321
         desc: Memory safety bugs fixed in Firefox 93, Firefox ESR 78.15, and Firefox ESR 91.2
+  MOZ-2021-0008:
+    title: Use-after-free in HTTP2 Session object
+    impact: high
+    reporter: Julien Cristau
+    description: |
+      A use-after-free could have occured when an HTTP2 session object was released on a different thread, leading to memory corruption and a potentially exploitable crash.<br />*Note: This issue is pending a CVE assignment and will be updated when available.*
+    bugs:
+      - url: 1667102
   CVE-2021-38501:
     title: Memory safety bugs fixed in Firefox 93 and Firefox ESR 91.2
     impact: high
@@ -64,5 +72,5 @@ advisories:
     description: |
       Mozilla developers and community members Julien Cristau, Christian Holler reported memory safety bugs present in Firefox 92. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
     bugs:
-      - url: 1667102, 1723170, 1725356, 1727364
+      - url: 1723170, 1725356, 1727364
         desc: Memory safety bugs fixed in Firefox 93
