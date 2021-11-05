@@ -80,7 +80,7 @@ advisories:
   CVE-2021-38510:
     title: Download Protections were bypassed by .inetloc files on Mac OS
     impact: moderate
-    reporter: houjingyi647
+    reporter: Hou JingYi
     description: |
       The executable file warning was not presented when downloading .inetloc files, which can run commands on a user's computer.<br>*Note: This issue only affected Mac OS operating systems. Other operating systems are unaffected.*
     bugs:
