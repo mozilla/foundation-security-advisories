@@ -10,7 +10,7 @@ advisories:
     impact: high
     reporter: Sunwoo Kim and Youngmin Kim of SNU CompSec Lab
     description: |
-      Under certain circumstances, asynchronous functions could cause a redirect to fail but expose the redirect target location.
+      Under certain circumstances, asynchronous functions could have caused a redirect to fail but expose the redirect target location.
     bugs:
       - url: 1730120
   CVE-2021-43537:
@@ -26,7 +26,7 @@ advisories:
     impact: high
     reporter: Irvan Kurniawan (@sourc7)
     description: |
-      By misusing a race in our notification code, an attacker could forcefully hide the notification for pages that have received full screen and pointer lock access, which could be used for spoof attacks.
+      By misusing a race in our notification code, an attacker could have forcefully hidden the notification for pages that had received full screen and pointer lock access, which could have been used for spoofing attacks.
     bugs:
       - url: 1739091
   CVE-2021-43539:
@@ -34,7 +34,7 @@ advisories:
     impact: high
     reporter: Asumu Takikawa and Ioanna Dimitriou
     description: |
-      Failure to correctly record the location of live pointers across wasm instance calls resulted in a GC occurring within the call not tracing those live pointers.  This could lead to a use-after-free causing a potentially exploitable crash.
+      Failure to correctly record the location of live pointers across wasm instance calls resulted in a GC occurring within the call not tracing those live pointers. This could have led to a use-after-free causing a potentially exploitable crash.
     bugs:
       - url: 1739683
   CVE-2021-43541:
@@ -46,11 +46,11 @@ advisories:
     bugs:
       - url: 1696685
   CVE-2021-43542:
-    title: XMLHttpRequest error codes could leak existence of external protocol handler
+    title: XMLHttpRequest error codes could have leaked the existence of an external protocol handler
     impact: moderate
     reporter: smolikraphael
     description: |
-      Using  XMLHttpRequest, an attacker could identify installed applications by probing error messages for loading external protocols.
+      Using XMLHttpRequest, an attacker could have identified installed applications by probing error messages for loading external protocols.
     bugs:
       - url: 1723281
   CVE-2021-43543:
@@ -58,15 +58,15 @@ advisories:
     impact: moderate
     reporter: Armin Ebert
     description: |
-      Documents loaded with the CSP sandbox directive could escape the sandbox's script restriction by embedding additional content.
+      Documents loaded with the CSP sandbox directive could have escaped the sandbox's script restriction by embedding additional content.
     bugs:
       - url: 1738418
   CVE-2021-43545:
-    title: Denial of Service when using Location API in a loop
+    title: Denial of Service when using the Location API in a loop
     impact: low
     reporter: Paul Zühlcke
     description: |
-      Using the Location API in a loop could cause severe applications hangs and crashes.
+      Using the Location API in a loop could have caused severe application hangs and crashes.
     bugs:
       - url: 1720926
   CVE-2021-43546:
@@ -82,7 +82,7 @@ advisories:
     impact: high
     reporter: Mozilla developers and community
     description: |
-      Mozilla developers and community members Julian Hector, Randell Jesup, Gabriele Svelto, Tyson Smith, Christian Holler, Masayuki Nakano reported memory safety bugs present in Firefox 94 and Firefox ESR 91.3. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+      Mozilla developers and community members Julian Hector, Randell Jesup, Gabriele Svelto, Tyson Smith, Christian Holler, and Masayuki Nakano reported memory safety bugs present in Firefox 94 and Firefox ESR 91.3. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
     bugs:
       - url: 1393362, 1736046, 1736751, 1737009, 1739372, 1739421
         desc: Memory safety bugs fixed in Firefox 95 and Firefox ESR 91.4
