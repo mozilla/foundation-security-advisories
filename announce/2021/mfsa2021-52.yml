@@ -37,6 +37,14 @@ advisories:
       Failure to correctly record the location of live pointers across wasm instance calls resulted in a GC occurring within the call not tracing those live pointers. This could have led to a use-after-free causing a potentially exploitable crash.
     bugs:
       - url: 1739683
+  MOZ-2021-0010:
+    title: Use-after-free in fullscreen objects on MacOS
+    impact: high
+    reporter: Atila Butkovits
+    description: |
+      When transitioning in and out of fullscreen mode, a graphics object was not correctly protected; resulting in memory corruption and a potentially exploitable crash.<br>*This bug only affects Firefox on MacOS. Other operating systems are unaffected.*
+    bugs:
+      - url: 1735852
   CVE-2021-43540:
     title: WebExtensions could have installed persistent ServiceWorkers
     impact: moderate
@@ -74,7 +82,7 @@ advisories:
     impact: moderate
     reporter: Irwan
     description: |
-      When receiving a URL through a SEND intent, Firefox would have searched for the text, but subsequent usages of the address bar might have caused the URL to load unintentionally, which could lead to XSS and spoofing attacks.<br>*This bug only affected Firefox for Android.*
+      When receiving a URL through a SEND intent, Firefox would have searched for the text, but subsequent usages of the address bar might have caused the URL to load unintentionally, which could lead to XSS and spoofing attacks.<br>*This bug only affects Firefox for Android. Other operating systems are unaffected.*
     bugs:
       - url: 1739934
   CVE-2021-43545:
@@ -94,12 +102,12 @@ advisories:
     bugs:
       - url: 1737751
   MOZ-2021-0009:
-    title: Memory safety bugs fixed in Firefox 95
+    title: Memory safety bugs fixed in Firefox 95 and Firefox ESR 91.4
     impact: high
     reporter: Mozilla developers and community
     description: |
       Mozilla developers and community members Julian Hector, Randell Jesup, Gabriele Svelto, Tyson Smith, Christian Holler, and Masayuki Nakano reported memory safety bugs present in Firefox 94. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
     bugs:
-      - url: 1393362, 1735852, 1736046, 1736751, 1737009, 1739372, 1739421
+      - url: 1393362, 1736046, 1736751, 1737009, 1739372, 1739421
         desc: Memory safety bugs fixed in Firefox 95
 
