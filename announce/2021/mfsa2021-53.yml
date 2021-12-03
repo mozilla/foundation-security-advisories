@@ -1,0 +1,90 @@
+## mfsa2021-53.yml
+announced: December 7, 2021
+impact: high
+fixed_in:
+- Firefox ESR 91.4.0
+title: Security Vulnerabilities fixed in Firefox ESR 91.4.0
+description: |
+  Do you want a description?
+advisories:
+  CVE-2021-43536:
+    title: Redirect URL leakage when redirecting while executing asynchronous function
+    impact: high
+    reporter: Sunwoo Kim and Youngmin Kim of SNU CompSec Lab
+    description: |
+      Under certain circumstances, asynchronous functions could cause a redirect to fail but expose the redirect target location.
+    bugs:
+      - url: 1730120
+  CVE-2021-43537:
+    title: Heap buffer overflow when using structured clone
+    impact: high
+    reporter: bo13oy of Cyber Kunlun Lab
+    description: |
+      An incorrect type conversion of sizes from 64bit to 32bit integers allowed an attacker to corrupt memory leading to a potentially exploitable crash.
+    bugs:
+      - url: 1738237
+  CVE-2021-43538:
+    title: Missing fullscreen and pointer lock notification when requesting both
+    impact: high
+    reporter: Irvan Kurniawan (@sourc7)
+    description: |
+      By misusing a race in our notification code, an attacker could forcefully hide the notification for pages that have received full screen and pointer lock access, which could be used for spoof attacks.
+    bugs:
+      - url: 1739091
+  CVE-2021-43539:
+    title: GC rooting failure when calling wasm instance methods
+    impact: high
+    reporter: Asumu Takikawa and Ioanna Dimitriou
+    description: |
+      Failure to correctly record the location of live pointers across wasm instance calls resulted in a GC occurring within the call not tracing those live pointers.  This could lead to a use-after-free causing a potentially exploitable crash.
+    bugs:
+      - url: 1739683
+  CVE-2021-43541:
+    title: External protocol handler parameters were unescaped
+    impact: moderate
+    reporter: chriscla
+    description: |
+      When invoking protocol handlers for external protocols, a supplied parameter URL containing spaces was not properly escaped.
+    bugs:
+      - url: 1696685
+  CVE-2021-43542:
+    title: XMLHttpRequest error codes could leak existence of external protocol handler
+    impact: moderate
+    reporter: smolikraphael
+    description: |
+      Using  XMLHttpRequest, an attacker could identify installed applications by probing error messages for loading external protocols.
+    bugs:
+      - url: 1723281
+  CVE-2021-43543:
+    title: Bypass of CSP sandbox directive when embedding
+    impact: moderate
+    reporter: Armin Ebert
+    description: |
+      Documents loaded with the CSP sandbox directive could escape the sandbox's script restriction by embedding additional content.
+    bugs:
+      - url: 1738418
+  CVE-2021-43545:
+    title: Denial of Service when using Location API in a loop
+    impact: low
+    reporter: Paul Zühlcke
+    description: |
+      Using the Location API in a loop could cause severe applications hangs and crashes.
+    bugs:
+      - url: 1720926
+  CVE-2021-43546:
+    title: Cursor spoofing could overlay user interface when native cursor is zoomed
+    impact: low
+    reporter: Daniel Veditz
+    description: |
+      It was possible to recreate previous cursor spoofing attacks against users with a zoomed native cursor.
+    bugs:
+      - url: 1737751
+  MOZ-2021-0009:
+    title: Memory safety bugs fixed in Firefox 95 and Firefox ESR 91.4
+    impact: high
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers and community members Julian Hector, Randell Jesup, Gabriele Svelto, Tyson Smith, Christian Holler, Masayuki Nakano reported memory safety bugs present in Firefox 94 and Firefox ESR 91.3. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1393362, 1736046, 1736751, 1737009, 1739372, 1739421
+        desc: Memory safety bugs fixed in Firefox 95 and Firefox ESR 91.4
