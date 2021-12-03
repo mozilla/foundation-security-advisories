@@ -45,12 +45,12 @@ advisories:
       The Opportunistic Encryption feature of HTTP2 (RFC 8164) allows a connection to be transparently upgraded to TLS while retaining the visual properties of an HTTP connection, including being same-origin with unencrypted connections on port 80.  However, if a second encrypted port on the same IP address (e.g. port 8443) did not opt-in to opportunistic encryption; a network attacker could forward a connection from the browser to port 443 to port 8443, causing the browser to treat the content of port 8443 as same-origin with HTTP.  This was resolved by disabling the Opportunistic Encryption feature, which had low usage.
     bugs:
       - url: 1730935
-  MOZ-2021-0008:
+  CVE-2021-43535:
     title: Use-after-free in HTTP2 Session object
     impact: high
     reporter: Julien Cristau
     description: |
-      A use-after-free could have occured when an HTTP2 session object was released on a different thread, leading to memory corruption and a potentially exploitable crash.<br />*Note: This issue is pending a CVE assignment and will be updated when available.*
+      A use-after-free could have occured when an HTTP2 session object was released on a different thread, leading to memory corruption and a potentially exploitable crash.
     bugs:
       - url: 1667102
   CVE-2021-38508:
@@ -77,12 +77,12 @@ advisories:
       The executable file warning was not presented when downloading .inetloc files, which, due to a flaw in Mac OS, can run commands on a user's computer.<br>*Note: This issue only affected Mac OS operating systems. Other operating systems are unaffected.*
     bugs:
       - url: 1731779
-  MOZ-2021-0007:
+  CVE-2021-43534:
     title: Memory safety bugs fixed in Firefox 94 and Firefox ESR 91.3
     impact: high
     reporter: Mozilla developers
     description: |
-      Mozilla developers and community members Christian Holler, Valentin Gosu, and Andrew McCreight reported memory safety bugs present in Firefox 93 and Firefox ESR 91.2. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.<br />*Note: This issue is pending a CVE assignment and will be updated when available.*
+      Mozilla developers and community members Christian Holler, Valentin Gosu, and Andrew McCreight reported memory safety bugs present in Firefox 93 and Firefox ESR 91.2. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
     bugs:
       - url: 1606864, 1712671, 1730048, 1735152
         desc: Memory safety bugs fixed in Firefox 94 and Firefox ESR 91.3

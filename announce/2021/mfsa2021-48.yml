@@ -45,12 +45,12 @@ advisories:
       The Opportunistic Encryption feature of HTTP2 (RFC 8164) allows a connection to be transparently upgraded to TLS while retaining the visual properties of an HTTP connection, including being same-origin with unencrypted connections on port 80.  However, if a second encrypted port on the same IP address (e.g. port 8443) did not opt-in to opportunistic encryption; a network attacker could forward a connection from the browser to port 443 to port 8443, causing the browser to treat the content of port 8443 as same-origin with HTTP.  This was resolved by disabling the Opportunistic Encryption feature, which had low usage.
     bugs:
       - url: 1730935
-  MOZ-2021-0003:
+  CVE-2021-43530:
     title: Universal XSS in Firefox for Android via QR Code URLs
     impact: high
     reporter: Hafiizh
     description: |
-      A Universal XSS vulnerability was present in Firefox for Android resulting from improper sanitization when processing a URL scanned from a QR code.<br>*This bug only affects Firefox for Android. Other operating systems are unaffected.*<br />*Note: This issue is pending a CVE assignment and will be updated when available.*
+      A Universal XSS vulnerability was present in Firefox for Android resulting from improper sanitization when processing a URL scanned from a QR code.<br>*This bug only affects Firefox for Android. Other operating systems are unaffected.*
     bugs:
       - url: 1736886
   CVE-2021-38508:
@@ -61,7 +61,7 @@ advisories:
       By displaying a form validity message in the correct location at the same time as a permission prompt (such as for geolocation), the validity message could have obscured the prompt, resulting in the user potentially being tricked into granting the permission.
     bugs:
       - url: 1366818
-  MOZ-2021-0004:
+  CVE-2021-43531:
     title: Web Extensions could access pre-redirect URL when their context menu was triggered by a user
     impact: moderate
     reporter: Rob Wu
@@ -85,28 +85,28 @@ advisories:
       The executable file warning was not presented when downloading .inetloc files, which can run commands on a user's computer.<br>*Note: This issue only affected Mac OS operating systems. Other operating systems are unaffected.*
     bugs:
       - url: 1731779
-  MOZ-2021-0005:
+  CVE-2021-43532:
     title: "'Copy Image Link' context menu action could have been abused to see authentication tokens"
     impact: low
     reporter: Ademar Nowasky Junior
     description: |
-      The 'Copy Image Link' context menu action would copy the final image URL after redirects. By embedding an image that triggered authentication flows - in conjunction with a Content Security Policy that stopped a redirection chain in the middle - the final image URL could be one that contained an authentication token used to takeover a user account.  If a website tricked a user into copy and pasting the image link back to the page, the page would be able to steal the authentication tokens.  This was fixed by making the action return the original URL, before any redirects.<br />*Note: This issue is pending a CVE assignment and will be updated when available.*
+      The 'Copy Image Link' context menu action would copy the final image URL after redirects. By embedding an image that triggered authentication flows - in conjunction with a Content Security Policy that stopped a redirection chain in the middle - the final image URL could be one that contained an authentication token used to takeover a user account.  If a website tricked a user into copy and pasting the image link back to the page, the page would be able to steal the authentication tokens.  This was fixed by making the action return the original URL, before any redirects.
     bugs:
       - url: 1719203
-  MOZ-2021-0006:
+  CVE-2021-43533:
     title: URL Parsing may incorrectly parse internationalized domains
     impact: low
     reporter: Taiga Shirakura
     description: |
-      When parsing internationalized domain names, high bits of the characters in the URLs were sometimes stripped, resulting in inconsistencies that could lead to user confusion or attacks such as phishing.<br />*Note: This issue is pending a CVE assignment and will be updated when available.*
+      When parsing internationalized domain names, high bits of the characters in the URLs were sometimes stripped, resulting in inconsistencies that could lead to user confusion or attacks such as phishing.
     bugs:
       - url: 1724233
-  MOZ-2021-0007:
+  CVE-2021-43534:
     title: Memory safety bugs fixed in Firefox 94 and Firefox ESR 91.3
     impact: high
     reporter: Mozilla developers
     description: |
-      Mozilla developers and community members Christian Holler, Valentin Gosu, and Andrew McCreight reported memory safety bugs present in Firefox 93 and Firefox ESR 91.2. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.<br />*Note: This issue is pending a CVE assignment and will be updated when available.*
+      Mozilla developers and community members Christian Holler, Valentin Gosu, and Andrew McCreight reported memory safety bugs present in Firefox 93 and Firefox ESR 91.2. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
     bugs:
       - url: 1606864, 1712671, 1730048, 1735152
         desc: Memory safety bugs fixed in Firefox 94 and Firefox ESR 91.3
