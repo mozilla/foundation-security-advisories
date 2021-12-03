@@ -8,11 +8,11 @@ description: |
   *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
 advisories:
   CVE-2021-43536:
-    title: Redirect URL leakage when redirecting while executing asynchronous function
+    title: URL leakage when navigating while executing asynchronous function
     impact: high
     reporter: Sunwoo Kim and Youngmin Kim of SNU CompSec Lab
     description: |
-      Under certain circumstances, asynchronous functions could have caused a redirect to fail but expose the redirect target location.
+      Under certain circumstances, asynchronous functions could have caused a navigation to fail but expose the target URL.
     bugs:
       - url: 1730120
   CVE-2021-43537:
