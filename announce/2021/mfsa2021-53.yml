@@ -4,8 +4,6 @@ impact: high
 fixed_in:
 - Firefox ESR 91.4.0
 title: Security Vulnerabilities fixed in Firefox ESR 91.4.0
-description: |
-  Do you want a description?
 advisories:
   CVE-2021-43536:
     title: Redirect URL leakage when redirecting while executing asynchronous function
