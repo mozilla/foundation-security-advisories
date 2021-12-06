@@ -50,7 +50,7 @@ advisories:
   CVE-2021-43542:
     title: XMLHttpRequest error codes could have leaked the existence of an external protocol handler
     impact: moderate
-    reporter: smolikraphael
+    reporter: Raphael Smolik
     description: |
       Using XMLHttpRequest, an attacker could have identified installed applications by probing error messages for loading external protocols.
     bugs:
