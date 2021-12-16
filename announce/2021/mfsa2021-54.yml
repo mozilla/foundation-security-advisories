@@ -90,7 +90,7 @@ advisories:
        to further an attack with other vulnerabilities.
      bugs:
        - url: 1742579
-  MOZ-2021-0009:
+  CVE-2021-4129:
     title: Memory safety bugs fixed in Thunderbird 91.4.0
     impact: high
     reporter: Mozilla developers and community

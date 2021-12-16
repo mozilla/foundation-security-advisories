@@ -77,7 +77,7 @@ advisories:
       It was possible to recreate previous cursor spoofing attacks against users with a zoomed native cursor.
     bugs:
       - url: 1737751
-  MOZ-2021-0009:
+  CVE-2021-4129:
     title: Memory safety bugs fixed in Firefox 95 and Firefox ESR 91.4
     impact: high
     reporter: Mozilla developers and community

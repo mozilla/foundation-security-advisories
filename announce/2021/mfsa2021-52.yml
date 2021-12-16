@@ -37,7 +37,7 @@ advisories:
       Failure to correctly record the location of live pointers across wasm instance calls resulted in a GC occurring within the call not tracing those live pointers. This could have led to a use-after-free causing a potentially exploitable crash.
     bugs:
       - url: 1739683
-  MOZ-2021-0010:
+  CVE-2021-4128:
     title: Use-after-free in fullscreen objects on MacOS
     impact: high
     reporter: Atila Butkovits
@@ -101,7 +101,7 @@ advisories:
       It was possible to recreate previous cursor spoofing attacks against users with a zoomed native cursor.
     bugs:
       - url: 1737751
-  MOZ-2021-0009:
+  CVE-2021-4129:
     title: Memory safety bugs fixed in Firefox 95 and Firefox ESR 91.4
     impact: high
     reporter: Mozilla developers and community
