@@ -1,0 +1,33 @@
+## mfsa2021-55.yml
+announced: December 21, 2021
+impact: moderate
+fixed_in:
+- Thunderbird 91.4.1
+title: Security Vulnerabilities fixed in Thunderbird 91.4.1
+advisories:
+  CVE-2021-4126:
+    title: OpenPGP signature status doesn't consider additional message content
+    impact: moderate
+    reporter: Kai Engert
+    description: |
+      When receiving an OpenPGP/MIME signed email message that contains an
+      additional outer MIME message layer, for example a message footer added by a
+      mailing list gateway, Thunderbird only considered the inner signed message for
+      the signature validity. This gave the false impression that the additional contents
+      were also covered by the digital signature. Starting with Thunderbird version 91.4.1,
+      only the signature that belongs to the top level MIME part will be considered for
+      the displayed status.
+    bugs:
+      - url: 1732310
+  CVE-2021-44538:
+    title: Matrix chat library libolm bundled with Thunderbird vulnerable to a buffer overflow
+    impact: moderate
+    reporter: brevilo
+    description: |
+      Thunderbird users who use the Matrix chat protocol were vulnerable
+      to a buffer overflow in libolm, that an attacker may trigger by a crafted
+      sequence of  messages. The overflow content is partially controllable
+      by the attacker and limited to ASCII spaces and digits.
+    bugs:
+      - url: 1744056
+    feed: false
