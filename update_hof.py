@@ -75,6 +75,12 @@ https://bugzilla.mozilla.org/buglist.cgi?x=x
 """.replace("\n", "")
 
 credit_entries = {
+    "3ce577ba2fed1b2decbeb3eb4e466f8d":"Alesandro Ortiz",
+    "0c239777752cc449e91df93984e4c0c8":"Irwan",
+    "4cc72613ad5eb1dc54b6acf0be217aed":"Mattias Jacobsson",
+    "f72d4bcd18f0526f8faa4f781513c91f":"Hafiizh",
+    "9513cb577e79e3f73e3af0886ba27e70":"Hou JingYi",
+    "3ce577ba2fed1b2decbeb3eb4e466f8d":"Alesandro Ortiz",
     "e4c8c633605b27018520a5a35934c884":"Abiral Shrestha",
     "8aeb1a975c9c817eb6638851058fa5f2":"redparsec",
     "c37b0aecd957572ef3e680cd7494b864":"Felipe Caon",
@@ -326,6 +332,7 @@ credit_entries = {
     "fea05bd1b815660051bf5d090eb4e522" : "Aral Yaman",
 }
 twitter_entries = {
+    "9513cb577e79e3f73e3af0886ba27e70":"@hjy79425575",
     "e4c8c633605b27018520a5a35934c884":"@proabiral",
     "8aeb1a975c9c817eb6638851058fa5f2":"@R3dpars3c",
     "305a3f15dfabae7353bf675ca5b7a23d":"@dnpushme",
@@ -386,6 +393,7 @@ twitter_entries = {
     "fe7f319c61c0b44d4cb751afda4f4aeb" : "@Gaurav_00000",
 }
 url_entries = {
+    "f72d4bcd18f0526f8faa4f781513c91f":"https://www.linkedin.com/in/hafiizh-7aa6bb31/",
     "a480398726999a758b808aed02ef5e5e":"https://www.linkedin.com/in/yabeow/",
     "0f14322cc49704ac5551ffe5835abd69" : "https://www.wayanadweb.com",
     "1248a90a05c7e3a46b97e6aceeb557ce" : "https://skylined.nl",
