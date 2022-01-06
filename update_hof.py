@@ -75,8 +75,12 @@ https://bugzilla.mozilla.org/buglist.cgi?x=x
 """.replace("\n", "")
 
 credit_entries = {
+    "e4c8c633605b27018520a5a35934c884":"Abiral Shrestha",
+    "8aeb1a975c9c817eb6638851058fa5f2":"redparsec",
+    "c37b0aecd957572ef3e680cd7494b864":"Felipe Caon",
     "305a3f15dfabae7353bf675ca5b7a23d":"Yangkang of 360 ATA Team",
     "15c2f9fe6f16230593ed3c11324c155e":"Maor Kleinberger",
+    "a480398726999a758b808aed02ef5e5e":"Bui Dai Gia of VNG Corporation",
     "028ff665214190ae419f0febbdff465f" : "James Grant",
     "047a2ade7fdc3c6d84d5dbea228fe71e" : "Julien Maladrie",
     "05c9059021985684d94c2631e62b9d12" : "Zhang Hanming from 360 Vulcan team",
@@ -322,6 +326,8 @@ credit_entries = {
     "fea05bd1b815660051bf5d090eb4e522" : "Aral Yaman",
 }
 twitter_entries = {
+    "e4c8c633605b27018520a5a35934c884":"@proabiral",
+    "8aeb1a975c9c817eb6638851058fa5f2":"@R3dpars3c",
     "305a3f15dfabae7353bf675ca5b7a23d":"@dnpushme",
     "0c7f4b38ad0b504cfc48042e14564cc8" : "@pdjstone",
     "0cdb9b89f615c444f832e56c844e9e75" : "@ally_o_malley",
@@ -380,6 +386,7 @@ twitter_entries = {
     "fe7f319c61c0b44d4cb751afda4f4aeb" : "@Gaurav_00000",
 }
 url_entries = {
+    "a480398726999a758b808aed02ef5e5e":"https://www.linkedin.com/in/yabeow/",
     "0f14322cc49704ac5551ffe5835abd69" : "https://www.wayanadweb.com",
     "1248a90a05c7e3a46b97e6aceeb557ce" : "https://skylined.nl",
     "15acbd736229d79a8ed92e690164559c" : "https://www.nilsand.re/",
