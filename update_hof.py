@@ -75,7 +75,8 @@ https://bugzilla.mozilla.org/buglist.cgi?x=x
 """.replace("\n", "")
 
 credit_entries = {
-    "3ce577ba2fed1b2decbeb3eb4e466f8d":"Alesandro Ortiz",
+    "fdfe2689e2668dcfe620ac81a741fde8":"Harsh Banshpal",
+    "e6f0d7b286f04f05d4ac4ae498bf2a32":"Yaroslav Babin",
     "0c239777752cc449e91df93984e4c0c8":"Irwan",
     "4cc72613ad5eb1dc54b6acf0be217aed":"Mattias Jacobsson",
     "f72d4bcd18f0526f8faa4f781513c91f":"Hafiizh",
@@ -393,6 +394,8 @@ twitter_entries = {
     "fe7f319c61c0b44d4cb751afda4f4aeb" : "@Gaurav_00000",
 }
 url_entries = {
+    "e6f0d7b286f04f05d4ac4ae498bf2a32":"https://linkedin.com/in/yarbabin",
+    "fdfe2689e2668dcfe620ac81a741fde8":"https://www.linkedin.com/in/harshbanshpal/",
     "f72d4bcd18f0526f8faa4f781513c91f":"https://www.linkedin.com/in/hafiizh-7aa6bb31/",
     "a480398726999a758b808aed02ef5e5e":"https://www.linkedin.com/in/yabeow/",
     "0f14322cc49704ac5551ffe5835abd69" : "https://www.wayanadweb.com",

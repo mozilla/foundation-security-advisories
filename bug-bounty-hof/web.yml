@@ -1,4 +1,6 @@
 names:
+- name: Aniket Bhutani
+  date: 2021-12-21
 - name: Codermak
   date: 2021-12-20
   twitter: "@arshadkazmi42"
@@ -34,6 +36,7 @@ names:
   url: https://twitter.com/@R3dpars3c
 - name: Harsh Banshpal
   date: 2021-10-11
+  link: https://www.linkedin.com/in/harshbanshpal/
 - name: blackturtle
   date: 2021-10-06
 - name: Tyler Hawkins
@@ -179,6 +182,9 @@ names:
 - name: "Andi Rrahmani"
   date: 2020-10-01
   url: "https://linkedin.com/in/andirrahmani"
+- name: "Yaroslav Babin"
+  date: 2020-08-31
+  url: "https://linkedin.com/in/yarbabin"
 - name: "Yassine Benfakih"
   date: 2020-07-01
   url: "https://twitter.com/yassinek3ch"
