@@ -94,7 +94,7 @@ advisories:
   CVE-2017-5383:
     title: Location bar spoofing with unicode characters
     impact: moderate
-    reporter: Armin Razmjou
+    reporter: Armin Ebert
     description: |
       URLs containing certain unicode glyphs for alternative hyphens and quotes do not properly trigger punycode display, allowing for domain name spoofing attacks in the location bar.
     bugs:
