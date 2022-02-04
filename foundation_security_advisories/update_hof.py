@@ -292,7 +292,7 @@ credit_entries = {
     "cd0b10f0a5f56b3d04ea1a11cd009500" : "Aki Helin",
     "d1eeb84022e9e6069fb8a0b36a898aee" : "Ai Ho",
     "d4c22b801d906fd988e857e28e0d4398" : "team509",
-    "d53d5650291b09956d8d8fdc488e1d5b" : "Armin Razmjou",
+    "d53d5650291b09956d8d8fdc488e1d5b" : "Armin Ebert",
     "d6baf622b490bffd8c025e615ef460d2" : "crixer",
     "d76e336ed6fd7e9b0accbdb569c1ba12" : "Wietse Boonstra",
     "d77e4bf715af2d76c9c3ae565a21d40f" : "Gary Kwong",

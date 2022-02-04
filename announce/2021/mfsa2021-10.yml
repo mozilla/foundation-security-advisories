@@ -66,7 +66,7 @@ advisories:
   CVE-2021-23986:
     title: A malicious extension could have performed credential-less same origin policy violations
     impact: low
-    reporter: Armin Razmjou
+    reporter: Armin Ebert
     description: |
       A malicious extension with the 'search' permission could have installed a new search engine whose favicon referenced a cross-origin URL.  The response to this cross-origin request could have been read by the extension, allowing a same-origin policy bypass by the extension, which should not have cross-origin permissions.  This cross-origin request was made without cookies, so the sensitive information disclosed by the violation was limited to local-network resources or resources that perform IP-based authentication.
     bugs:
