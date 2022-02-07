@@ -109,6 +109,14 @@ advisories:
       The constructed curl command from the "Copy as curl" feature in DevTools was not properly escaped for PowerShell.  This could have lead to command injection if pasted into a Powershell prompt.<br>*This bug only affects Firefox for Windows. Other operating systems are unaffected.*
     bugs:
       - url: 1737252
+  CVE-2022-22763:
+    title: Script Execution during invalid object state
+    impact: moderate
+    reporter: Mozilla Fuzzing Team
+    description: |
+      When a worker is shutdown, it was possible to cause script to run late in the lifecycle, at a point after where it should not be possible.
+    bugs:
+      - url: 1740534
   CVE-2022-22747:
     title: Crash when handling empty pkcs7 sequence
     impact: low
@@ -149,5 +157,5 @@ advisories:
     description: |
       Mozilla developers Christian Holler and Jason Kratzer reported memory safety bugs present in Firefox 95. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
     bugs:
-      - url: 1740534, 1741210, 1742770
+      - url: 1741210, 1742770
         desc: Memory safety bugs fixed in Firefox 96
