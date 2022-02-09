@@ -50,7 +50,7 @@ advisories:
     impact: moderate
     reporter: Kirtikumar Anandrao Ramchandani, Patrick Walker & Eric Lawrence
     description: |
-      When clicking on a tel: link, USSD codes, specified after a <code>*</code> character, would be included in the phone number.  On certain phones, or on certain carriers, if the number was dialed this could perform actions on a user's account, similar to a cross-site request forgery attack.<br>*This bug only affects Firefox for Android. Other operating systems are unaffected.*
+      When clicking on a tel: link, USSD codes, specified after a <code>\*</code> character, would be included in the phone number.  On certain phones, or on certain carriers, if the number was dialed this could perform actions on a user's account, similar to a cross-site request forgery attack.<br>*This bug only affects Firefox for Android. Other operating systems are unaffected.*
     bugs:
       - url: 1728742
   CVE-2022-22759:
