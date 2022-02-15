@@ -1,0 +1,17 @@
+## mfsa2022-07.yml
+announced: February 15, 2022
+impact: high
+fixed_in:
+- Thunderbird 91.6.1
+title: Security Vulnerabilities fixed in Thunderbird 91.6.1
+advisories:
+  CVE-2022-0566:
+     title: Crafted email could trigger an out-of-bounds write
+     impact: high
+     reporter: Mozilla Fuzzing Team
+     description: |
+       It may be possible for an attacker to craft an email message that
+       causes Thunderbird to perform an out-of-bounds write of one byte when
+       processing the message.
+     bugs:
+       - url: 1753094
