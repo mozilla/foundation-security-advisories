@@ -31,6 +31,14 @@ advisories:
       <br>*This bug only affects Firefox for Windows. Other operating systems are unaffected.*
     bugs:
       - url: 1721107
+  CVE-2021-4221:
+    title: Address bar spoofing on Firefox for Android due to RTL characters
+    impact: moderate
+    reporter: Rohan Sharma
+    description: |
+      If a domain name contained a RTL character, it would cause the domain to be rendered to the right of the path. This could lead to user confusion and spoofing attacks. <br>*This bug only affects Firefox for Android. Other operating systems are unaffected.*<br>*Note*: Due to a clerical error this advisory was not included in the original announcement, and was added in Feburary 2022.
+    bugs:
+      - url: 1704422
   CVE-2021-38493:
     title: Memory safety bugs fixed in Firefox 92, Firefox ESR 78.14 and Firefox ESR 91.1
     impact: high
