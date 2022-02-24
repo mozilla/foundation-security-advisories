@@ -3,7 +3,7 @@ announced: February 23, 2022
 impact: high
 fixed_in:
 - Mozilla VPN 2.7.1
-title: Local privilege escalation vis uncontrolled OpenSSL search path
+title: Mozilla VPN local privilege escalation vis uncontrolled OpenSSL search path
 advisories:
   CVE-2022-0517:
     title: Local privilege escalation vis uncontrolled OpenSSL search path
