@@ -1,0 +1,15 @@
+## mfsa2022-08.yml
+announced: February 23, 2022
+impact: high
+fixed_in:
+- Mozilla VPN 2.7.1
+title: Local privilege escalation vis uncontrolled OpenSSL search path
+advisories:
+  CVE-2022-0517:
+    title: Local privilege escalation vis uncontrolled OpenSSL search path
+    impact: high
+    reporter: DoHyun Lee (@l33d0hyun) of DNSLab, Korea University
+    description: |
+      Mozilla VPN can load an OpenSSL configuration file from an unsecured directory. A user or attacker with limited privileges could leverage this to launch arbitrary code with SYSTEM privilege.
+    bugs:
+      - url: 1752291
