@@ -1,0 +1,47 @@
+## mfsa2022-10.yml
+announced: March 8, 2022
+impact: high
+fixed_in:
+- Firefox ESR 91.7
+title: Security Vulnerabilities fixed in Firefox ESR 91.7
+advisories:
+  CVE-2022-26383:
+    title: Browser window spoof using fullscreen mode
+    impact: high
+    reporter: Irvan Kurniawan
+    description: |
+      When resizing a popup after requesting fullscreen access, the popup would not display the fullscreen notification.
+    bugs:
+      - url: 1742421
+  CVE-2022-26384:
+    title: iframe allow-scripts sandbox bypass
+    impact: high
+    reporter: Ed McManus
+    description: |
+      If an attacker could control the contents of an iframe sandboxed with <code>allow-popups</code> but not <code>allow-scripts</code>, they were able to craft a link that, when clicked, would lead to JavaScript execution in violation of the sandbox.
+    bugs:
+      - url: 1744352
+  CVE-2022-26387:
+    title: Time-of-check time-of-use bug when verifying add-on signatures
+    impact: high
+    reporter: Armin Ebert
+    description: |
+      When installing an add-on, Firefox verified the signature before prompting the user; but while the user was confirming the prompt, the underlying add-on file could have been modified and Firefox would not have noticed.
+    bugs:
+      - url: 1752979
+  CVE-2022-26381:
+    title: Use-after-free in text reflows
+    impact: high
+    reporter: Mozilla Fuzzing Team and Hossein Lotfi of Trend Micro Zero Day Initiative
+    description: |
+      An attacker could have caused a use-after-free by forcing a text reflow in an SVG object leading to a potentially exploitable crash.
+    bugs:
+      - url: 1736243
+  CVE-2022-26386:
+    title: Temporary files downloaded to /tmp and accessible by other local users
+    impact: low
+    reporter: attila
+    description: |
+      Previously Firefox for macOS and Linux would download temporary files to a user-specific directory in <code>/tmp</code>, but this behavior was changed to download them to <code>/tmp</code> where they could be affected by other local users.  This behavior was reverted to the original, user-specific directory. <br>*This bug only affects Firefox for macOS and Linux. Other operating systems are unaffected.*
+    bugs:
+      - url: 1752396
