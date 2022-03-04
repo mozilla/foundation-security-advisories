@@ -1,0 +1,26 @@
+## mfsa2022-09.yml
+announced: March 5, 2022
+impact: high
+fixed_in:
+- Firefox 97.0.2
+- Firefox for Android 97.3.0
+- Focus 97.3.0
+- Firefox ESR 91.6.1
+title: Security Vulnerabilities fixed in Firefox 97.0.2, Firefox ESR 91.6.1, Firefox for Android 97.3.0, and Focus 97.3.0
+advisories:
+  CVE-2022-26485:
+    title: Use-after-free in XSLT parameter processing
+    impact: critical
+    reporter: Wang Gang, Liu Jialei, Du Sihang, Huang Yi & Yang Kang of 360 ATA
+    description: |
+      Removing an XSLT parameter during processing could have lead to an exploitable use-after-free. We have had reports of attacks in the wild abusing this flaw.
+    bugs:
+      - url: 1758062
+  CVE-2022-26486:
+    title: Use-after-free in WebGPU IPC Framework
+    impact: critical
+    reporter: Wang Gang, Liu Jialei, Du Sihang, Huang Yi & Yang Kang of 360 ATA
+    description: |
+      An unexpected message in the WebGPU IPC framework could lead to a use-after-free and exploitable sandbox escape.  We have had reports of attacks in the wild abusing this flaw.
+    bugs:
+      - url: 1758070
