@@ -6,6 +6,7 @@ fixed_in:
 - Firefox for Android 97.3.0
 - Focus 97.3.0
 - Firefox ESR 91.6.1
+- Thunderbird 91.6.2
 title: Security Vulnerabilities fixed in Firefox 97.0.2, Firefox ESR 91.6.1, Firefox for Android 97.3.0, and Focus 97.3.0
 advisories:
   CVE-2022-26485:
