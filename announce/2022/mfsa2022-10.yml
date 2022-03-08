@@ -1,0 +1,66 @@
+## mfsa2022-09.yml
+announced: March 8, 2022
+impact: high
+fixed_in:
+- Firefox 98
+title: Security Vulnerabilities fixed in Firefox 98
+description: |
+  Do you want a description?
+advisories:
+  CVE-2022-26383:
+    title: Browser window spoof using fullscreen mode
+    impact: high
+    reporter: Irvan Kurniawan
+    description: |
+      When resizing a popup after requesting fullscreen access, the popup would not display the fullscreen notification.
+    bugs:
+      - url: 1742421
+  CVE-2022-26384:
+    title: iframe allow-scripts sandbox bypass
+    impact: high
+    reporter: Ed McManus
+    description: |
+      If an attacker could control the contents of an iframe sandboxed with <code>allow-popups</code> but not <code>allow-scripts</code>, they were able to craft a link that, when clicked, would lead to JavaScript execution in violation of the sandbox.
+    bugs:
+      - url: 1744352
+  CVE-2022-26387:
+    title: Time-of-check time-of-use bug when verifying add-on signatures
+    impact: high
+    reporter: Armin Ebert
+    description: |
+      When installing an add-on, Firefox verified the signature before prompting the user; but while the user was confirming the prompt, the underlying add-on file could have been modified and Firefox would not have noticed.
+    bugs:
+      - url: 1752979
+  CVE-2022-26381:
+    title: Use-after-free in text reflows
+    impact: high
+    reporter: Mozilla Fuzzing Team and Hossein Lotfi of Trend Micro Zero Day Initiative
+    description: |
+      An attacker could have caused a use-after-free by forcing a text reflow in an SVG object leading to a potentially exploitable crash.
+    bugs:
+      - url: 1736243
+  CVE-2022-26382:
+    title: Autofill Text could be exfiltrated via side-channel attacks
+    impact: moderate
+    reporter: Young Min Kim
+    description: |
+      While the text displayed in Autofill tooltips cannot be directly read by JavaScript, the text was rendered using page fonts. Side-channel attacks on the text by using specially crafted fonts could have lead to this text being inferred by the webpage.
+    bugs:
+      - url: 1741888
+  CVE-2022-26385:
+    title: Use-after-free in thread shutdown
+    impact: moderate
+    reporter: bo13oy of Cyber Kunlun Lab
+    description: |
+      In unusual circumstances, an individual thread may outlive the thread's manager during shutdown.  This could have led to a use-after-free causing a potentially exploitable crash.
+    bugs:
+      - url: 1747526
+  CVE-2022-0843:
+    title: Memory safety bugs fixed in Firefox 98
+    impact: moderate
+    reporter: Mozilla developers 
+    description: |
+      Mozilla developers Kershaw Chang, Ryan VanderMeulen, and Randell Jesup reported memory safety bugs present in Firefox 97. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1746523, 1749062, 1749164, 1749214, 1749610, 1750032, 1752100, 1752405, 1753612, 1754508
+        desc: Memory safety bugs fixed in Firefox 98
