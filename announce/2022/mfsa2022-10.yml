@@ -4,8 +4,6 @@ impact: high
 fixed_in:
 - Firefox 98
 title: Security Vulnerabilities fixed in Firefox 98
-description: |
-  Do you want a description?
 advisories:
   CVE-2022-26383:
     title: Browser window spoof using fullscreen mode
