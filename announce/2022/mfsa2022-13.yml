@@ -1,0 +1,98 @@
+## mfsa2022-13.yml
+announced: April 5, 2022
+impact: high
+fixed_in:
+- Firefox 99
+title: Security Vulnerabilities fixed in Firefox 99
+advisories:
+  CVE-2022-1097:
+    title: Use-after-free in NSSToken objects
+    impact: high
+    reporter: Randell Jesup
+    description: |
+      <code>NSSToken</code> objects were referenced via direct points, and could have been accessed in an unsafe way on different threads, leading to a use-after-free and potentially exploitable crash.
+    bugs:
+      - url: 1745667
+  CVE-2022-28281:
+    title: Out of bounds write due to unexpected WebAuthN Extensions
+    impact: high
+    reporter: Axel '0vercl0k' Souchet
+    description: |
+      If a compromised content process sent an unexpected number of WebAuthN Extensions in a Register command to the parent process, an out of bounds write would have occurred leading to memory corruption and a potentially exploitable crash.
+    bugs:
+      - url: 1755621
+  CVE-2022-28282:
+    title: 'Use-after-free in DocumentL10n::TranslateDocument'
+    impact: moderate
+    reporter: Kirin
+    description: |
+      By using a link with <code>rel="localization"</code> a use-after-free could have been triggered by destroying an object during JavaScript execution and then referencing the object through a freed pointer, leading to a potentially exploitable crash.
+    bugs:
+      - url: 1751609
+  CVE-2022-28283:
+    title: Missing security checks for fetching sourceMapURL
+    impact: moderate
+    reporter: Gijs
+    description: |
+      The sourceMapURL feature in devtools was missing security checks that would have allowed a webpage to attempt to include local files or other files that should have been inaccessible.
+    bugs:
+      - url: 1754066
+  CVE-2022-28284:
+    title: Script could be executed via svg's use element
+    impact: moderate
+    reporter: Leo Balter
+    description: |
+      SVG's <code>&lt;use&gt;</code> element could have been used to load unexpected content that could have executed script in certain circumstances. While the specification seems to allow this, other browsers do not, and web developers relied on this property for script security so gecko's implementation was aligned with theirs.
+    bugs:
+      - url: 1754522
+  CVE-2022-28285:
+    title: Incorrect AliasSet used in JIT Codegen
+    impact: moderate
+    reporter: Lukas Bernhard
+    description: |
+      When generating the assembly code for <code>MLoadTypedArrayElementHole</code>, an incorrect AliasSet was used. In conjunction with another vulnerability this could have been used for an out of bounds memory read.
+    bugs:
+      - url: 1756957
+  CVE-2022-28286:
+    title: iframe contents could be rendered outside the border
+    impact: low
+    reporter: prada960808
+    description: |
+      Due to a layout change, iframe contents could have been rendered outside of its border. This could have led to user confusion or spoofing attacks.
+    bugs:
+      - url: 1735265
+  CVE-2022-28287:
+    title: Text Selection could crash Firefox
+    impact: low
+    reporter: Aryan Sinha
+    description: |
+      In unusual circumstances, selecting text could cause text selection caching to behave incorrectly, leading to a crash.
+    bugs:
+      - url: 1741515
+  CVE-2022-24713:
+    title: Denial of Service via complex regular expressions
+    impact: low
+    reporter: Addison Crump and Jan-Erik Rediger
+    feed: false
+    description: |
+      The rust regex crate did not properly prevent crafted regular expressions from taking an arbitrary amount of time during parsing. If an attacker was able to supply input to this crate, they could have caused a denial of service in the browser.
+    bugs:
+      - url: 1758509
+  CVE-2022-28289:
+    title: Memory safety bugs fixed in Firefox 99 and Firefox ESR 91.8
+    impact: high
+    reporter: Mozilla developers
+    description: |
+      Mozilla developers and community members Nika Layzell, Andrew McCreight, Gabriele Svelto, and the Mozilla Fuzzing Team reported memory safety bugs present in Firefox 98 and Firefox ESR 91.7. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1663508, 1744525, 1753508, 1757476, 1757805, 1758549, 1758776
+        desc: Memory safety bugs fixed in Firefox 99 and Firefox ESR 91.8
+  CVE-2022-28288:
+    title: Memory safety bugs fixed in Firefox 99
+    impact: moderate
+    reporter: Mozilla developers
+    description: |
+      Mozilla developers and community members Randell Jesup, Sebastian Hengst, and the Mozilla Fuzzing Team reported memory safety bugs present in Firefox 98. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1746415, 1746495, 1746500, 1747282, 1748759, 1749056, 1749786, 1751679, 1752120, 1756010, 1756017, 1757213, 1757258, 1757427
+        desc: Memory safety bugs fixed in Firefox 99
