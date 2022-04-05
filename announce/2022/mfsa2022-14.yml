@@ -67,7 +67,7 @@ advisories:
     impact: high
     reporter: Mozilla developers and community
     description: |
-      Mozilla developers and community members Nika Layzell (ni? for response), the Mozilla Fuzzing Team, Andrew McCreight, Gabriele Svelto (pto) reported memory safety bugs present in Firefox 98 and Firefox ESR 91.7. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+      Mozilla developers and community members Nika Layzell, Andrew McCreight, Gabriele Svelto, and the Mozilla Fuzzing Team reported memory safety bugs present in Firefox 98 and Firefox ESR 91.7. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
     bugs:
       - url: 1663508, 1744525, 1753508, 1757476, 1757805, 1758549, 1758776
         desc: Memory safety bugs fixed in Firefox 99 and Firefox ESR 91.8
