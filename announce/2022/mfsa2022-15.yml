@@ -1,0 +1,83 @@
+## mfsa2022-15.yml
+announced: April 5, 2022
+impact: high
+fixed_in:
+- Thunderbird 91.8
+title: Security Vulnerabilities fixed in Thunderbird 91.8
+description: |
+   *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
+advisories:
+  CVE-2022-1097:
+    title: Use-after-free in NSSToken objects
+    impact: high
+    reporter: Randell Jesup
+    description: |
+      <code>NSSToken</code> objects were referenced via direct points, and could have been accessed in an unsafe way on different threads, leading to a use-after-free and potentially exploitable crash.
+    bugs:
+      - url: 1745667
+  CVE-2022-28281:
+    title: Out of bounds write due to unexpected WebAuthN Extensions
+    impact: high
+    reporter: Axel '0vercl0k' Souchet
+    description: |
+      If a compromised content process sent an unexpected number of WebAuthN Extensions in a Register command to the parent process, an out of bounds write would have occurred leading to memory corruption and a potentially exploitable crash.
+    bugs:
+      - url: 1755621
+  CVE-2022-1197:
+     title: OpenPGP revocation information was ignored
+     impact: moderate
+     reporter: Thunderbird user Johannes König
+     description: |
+       When importing a revoked key that specified key compromise as the revocation reason, Thunderbird did not update the existing copy of the key that was not yet revoked, and the existing key was kept as non-revoked. Revocation statements that used another revocation reason, or that didn't specify a revocation reason, were unaffected.
+     bugs:
+       - url: 1754985
+  CVE-2022-1196:
+    title: Use-after-free after VR Process destruction
+    impact: moderate
+    reporter: bo13oy of Cyber Kunlun Lab
+    description: |
+      After a VR Process is destroyed, a reference to it may have been retained and used, leading to a use-after-free and potentially exploitable crash.
+    bugs:
+      - url: 1750679
+  CVE-2022-28282:
+    title: 'Use-after-free in DocumentL10n::TranslateDocument'
+    impact: moderate
+    reporter: Kirin
+    description: |
+      By using a link with <code>rel="localization"</code> a use-after-free could have been triggered by destroying an object during JavaScript execution and then referencing the object through a freed pointer, leading to a potential exploitable crash.
+    bugs:
+      - url: 1751609
+  CVE-2022-28285:
+    title: Incorrect AliasSet used in JIT Codegen
+    impact: moderate
+    reporter: Lukas Bernhard
+    description: |
+      When generating the assembly code for <code>MLoadTypedArrayElementHole</code>, an incorrect AliasSet was used. In conjunction with another vulnerability this could have been used for an out of bounds memory read.
+    bugs:
+      - url: 1756957
+  CVE-2022-28286:
+    title: iframe contents could be rendered outside the border
+    impact: low
+    reporter: prada960808
+    description: |
+      Due to a layout change, iframe contents could have been rendered outside of its border. This could have led to user confusion or spoofing attacks.
+    bugs:
+      - url: 1735265
+  CVE-2022-24713:
+    title: Denial of Service via complex regular expressions
+    impact: low
+    reporter: Addison Crump and Jan-Erik Rediger
+    feed: false
+    description: |
+      The rust regex crate did not properly prevent crafted regular expressions from taking an arbitrary amount of time during parsing. If an attacker was able to supply input to this crate, they could have caused a denial of service in the browser.
+    bugs:
+      - url: 1758509
+  CVE-2022-28289:
+    title: Memory safety bugs fixed in Thunderbird 91.8
+    impact: high
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers and community members Nika Layzell, Andrew McCreight, Gabriele Svelto, and the Mozilla Fuzzing Team reported memory safety bugs present in Thunderbird 91.7. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1663508, 1744525, 1753508, 1757476, 1757805, 1758549, 1758776
+        desc: Memory safety bugs fixed in Thunderbird 91.8
