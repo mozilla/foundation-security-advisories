@@ -75,6 +75,14 @@ https://bugzilla.mozilla.org/buglist.cgi?x=x
 """.replace("\n", "")
 
 credit_entries = {
+    "6ad1bb0dc84782bff4c77cc96954b150":"Alessio Della Libera",
+    "ccdbdf308c9f9efc0419c0acf961e3f8":"Ciaran O'Reilly Ibañez",
+    "92fcab73ced9591bffb1dbb8a4bf3ab4":"Brandon Roldan",
+    "cb595bf0c104ec202ec824f464a2893f":"zeb0x01",
+    "d1eeb84022e9e6069fb8a0b36a898aee":"Ai Ho",
+    "763dcd98e7052a2d6ccebdc6cddec7a3":"Tuan Anh Nguyen from Viettel Cyber Security",
+    "d76e336ed6fd7e9b0accbdb569c1ba12":"Wietse Boonstra",
+    "940a6b73a009cb437c868e8e3c0dc779":"Aariz Khan",
     "fdfe2689e2668dcfe620ac81a741fde8":"Harsh Banshpal",
     "e6f0d7b286f04f05d4ac4ae498bf2a32":"Yaroslav Babin",
     "0c239777752cc449e91df93984e4c0c8":"Irwan",
@@ -333,6 +341,9 @@ credit_entries = {
     "fea05bd1b815660051bf5d090eb4e522" : "Aral Yaman",
 }
 twitter_entries = {
+    "92fcab73ced9591bffb1dbb8a4bf3ab4":"https://twitter.com/tomorrowisnew",
+    "cb595bf0c104ec202ec824f464a2893f":"https://www.linkedin.com/in/mehboob-shaikh-7791a3169",
+    "d1eeb84022e9e6069fb8a0b36a898aee":"@j3ssiejjj",
     "9513cb577e79e3f73e3af0886ba27e70":"@hjy79425575",
     "e4c8c633605b27018520a5a35934c884":"@proabiral",
     "8aeb1a975c9c817eb6638851058fa5f2":"@R3dpars3c",
@@ -394,6 +405,10 @@ twitter_entries = {
     "fe7f319c61c0b44d4cb751afda4f4aeb" : "@Gaurav_00000",
 }
 url_entries = {
+    "ccdbdf308c9f9efc0419c0acf961e3f8":"https://oreilly.cat/",
+    "763dcd98e7052a2d6ccebdc6cddec7a3":"https://www.linkedin.com/in/anhnt1337/",
+    "d76e336ed6fd7e9b0accbdb569c1ba12":"https://www.linkedin.com/in/wietse-boonstra",
+    "940a6b73a009cb437c868e8e3c0dc779":"https://www.linkedin.com/in/aarizkhan",
     "e6f0d7b286f04f05d4ac4ae498bf2a32":"https://linkedin.com/in/yarbabin",
     "fdfe2689e2668dcfe620ac81a741fde8":"https://www.linkedin.com/in/harshbanshpal/",
     "f72d4bcd18f0526f8faa4f781513c91f":"https://www.linkedin.com/in/hafiizh-7aa6bb31/",
