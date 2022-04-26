@@ -1,4 +1,77 @@
 names:
+- name: Alison Huffman
+  date: 2022-03-22
+- name: Sohom Datta
+  date: 2022-03-22
+- name: Axel '0vercl0k' Souchet
+  date: 2022-03-15
+  twitter: "@0vercl0k"
+  url: https://twitter.com/@0vercl0k
+- name: Yangkang of 360 ATA Team
+  date: 2022-03-08
+  twitter: "@dnpushme"
+  url: https://twitter.com/@dnpushme
+- name: Kirin of Tencent Security Xuanwu Lab
+  date: 2022-03-01
+  twitter: "@Pwnrin"
+  url: https://twitter.com/@Pwnrin
+- name: Max Van Amerongen
+  date: 2022-03-01
+  twitter: "@maxpl0it"
+  url: https://twitter.com/@maxpl0it
+- name: Rohan Sharma
+  date: 2022-02-22
+- name: sharan
+  date: 2022-02-22
+- name: Ed McManus
+  date: 2022-02-22
+- name: bo13oy of Qihoo 360 Vulcan Team
+  date: 2022-02-22
+- name: Dohyun Lee of DNSLab Korea University
+  date: 2022-02-22
+  twitter: "@l33d0hyun"
+  url: https://twitter.com/@l33d0hyun
+- name: Aryan Sinha
+  date: 2022-02-15
+  url: https://www.aryansinha.com/
+- name: Brandon Perry
+  date: 2022-02-10
+- name: Armin Razmjou
+  date: 2022-02-08
+  url: https://rawsec.net/
+- name: Young Min Kim (CompSec Lab at Seoul National University)
+  date: 2022-02-01
+  twitter: "@ylemkimon"
+  url: https://twitter.com/@ylemkimon
+- name: Muhammad R. Maulana
+  date: 2022-02-01
+  twitter: "@agamimaulana"
+  url: https://twitter.com/@agamimaulana
+- name: Kirtikumar Anandrao Ramchandani (@Kirtikumar_A_R); Patrick Walker (@HomeSen); & Eric Lawrence (@ericlaw)
+  date: 2022-01-25
+- name: Gary Kwong
+  date: 2022-01-25
+  url: https://www.ygitsoftware.com/
+- name: Codermak
+  date: 2022-01-18
+  twitter: "@arshadkazmi42"
+  url: https://twitter.com/@arshadkazmi42
+- name: Johan Carlsson
+  date: 2022-01-18
+  url: https://www.linkedin.com/in/joaxcar
+- name: James Lee
+  date: 2022-01-11
+  twitter: "@Windowsrcer"
+  url: https://twitter.com/@Windowsrcer
+- name: Darkspirit
+  date: 2022-01-11
+- name: Alexey(lalka)
+  date: 2022-01-06
+- name: Luan Herrera
+  date: 2022-01-04
+- name: Irvan Kurniawan (sourc7)
+  date: 2022-01-04
+  url: https://www.linkedin.com/in/sourc7/
 - name: Matheus Vrech
   date: 2021-12-14
 - name: Ronald Crane
