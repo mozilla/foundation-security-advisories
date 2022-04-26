@@ -75,6 +75,16 @@ https://bugzilla.mozilla.org/buglist.cgi?x=x
 """.replace("\n", "")
 
 credit_entries = {
+    "a6802bce5af70f05dc216919c3455903":"Axel '0vercl0k' Souchet",
+    "e977ff3c4f7a2bb8af350f3f0ead44b9":"Dohyun Lee of DNSLab Korea University",
+    "e8789d130dbfd97a970e074e8a61a206":"Sohom Datta",
+    "b6b492ddfce021c3a9cfe5b12b6c87c4":"Kirin of Tencent Security Xuanwu Lab",
+    "a39d0e729280ee1e7d5c68d7d4d6c758":"Ed McManus",
+    "a96e3717d23c56d2b7f4248881bc00ee":"Young Min Kim (CompSec Lab at Seoul National University)",
+    "c6c2040182defa796af2481e95d6bae1":"Luan Herrera",
+    "4209a557d472db164e9394a5d8ed7d6b":"Johan Carlsson",
+    "efda965032fdcdee83fc1e01b4220bb8":"Kirtikumar Anandrao Ramchandani (@Kirtikumar_A_R); Patrick Walker (@HomeSen); & Eric Lawrence (@ericlaw)",
+    "4e5928d45d9922eb5a29a3e1d2e6cb43":"Alison Huffman",
     "6ad1bb0dc84782bff4c77cc96954b150":"Alessio Della Libera",
     "ccdbdf308c9f9efc0419c0acf961e3f8":"Ciaran O'Reilly Ibañez",
     "92fcab73ced9591bffb1dbb8a4bf3ab4":"Brandon Roldan",
@@ -344,6 +354,10 @@ credit_entries = {
     "f5e9112010ab9bcfe26c912858f5ef10" : "zy9ard3",
 }
 twitter_entries = {
+    "a6802bce5af70f05dc216919c3455903":"@0vercl0k",
+    "e977ff3c4f7a2bb8af350f3f0ead44b9":"@l33d0hyun",
+    "b6b492ddfce021c3a9cfe5b12b6c87c4":"@Pwnrin",
+    "a96e3717d23c56d2b7f4248881bc00ee":"@ylemkimon",
     "92fcab73ced9591bffb1dbb8a4bf3ab4":"https://twitter.com/tomorrowisnew",
     "a086abd53dbd06525c4fa74864abaf3b":"@maxpl0it",
     "cb595bf0c104ec202ec824f464a2893f":"https://www.linkedin.com/in/mehboob-shaikh-7791a3169",
@@ -411,6 +425,7 @@ twitter_entries = {
 
 }
 url_entries = {
+    "4209a557d472db164e9394a5d8ed7d6b":"https://www.linkedin.com/in/joaxcar",
     "ccdbdf308c9f9efc0419c0acf961e3f8":"https://oreilly.cat/",
     "763dcd98e7052a2d6ccebdc6cddec7a3":"https://www.linkedin.com/in/anhnt1337/",
     "d76e336ed6fd7e9b0accbdb569c1ba12":"https://www.linkedin.com/in/wietse-boonstra",
