@@ -1,0 +1,89 @@
+## mfsa2022-16.yml
+announced: May 3, 2022
+impact: high
+fixed_in:
+- Firefox 100
+title: Security Vulnerabilities fixed in Firefox 100
+advisories:
+  CVE-2022-29914:
+    title: Fullscreen notification bypass using popups
+    impact: high
+    reporter: Irvan Kurniawan
+    description: |
+      When reusing existing popups Firefox would allow them to cover the fullscreen notification UI, which could enable browser spoofing attacks.
+    bugs:
+      - url: 1746448
+  CVE-2022-29909:
+    title: Bypassing permission prompt in nested browsing contexts
+    impact: high
+    reporter: Armin Ebert
+    description: |
+      Documents in deeply-nested cross-origin browsing contexts could obtain permissions granted to the top-level origin, bypassing the existing prompt and wrongfully inheriting the top-level permissions.
+    bugs:
+      - url: 1755081
+  CVE-2022-29916:
+    title: Leaking browser history with CSS variables
+    impact: high
+    reporter: Mateusz Sionkowski
+    description: |
+      Firefox would behave slightly differently for already known resources, when loading CSS resources through resolving CSS variables. This could be used to probe the browser history.
+    bugs:
+      - url: 1760674
+  CVE-2022-29911:
+    title: iframe sandbox bypass
+    impact: high
+    reporter: Trung Pham
+    description: |
+      Firefox did not properly protect against top-level navigations for iframe sandbox with a policy relaxed through a keyword like <code>allow-top-navigation-by-user-activation</code>.
+    bugs:
+      - url: 1761981
+  CVE-2022-29912:
+    title: Reader mode bypassed SameSite cookies
+    impact: moderate
+    reporter: Matheus Vrech
+    description: |
+      Requests initiated through reader mode did not properly omit cookies with a SameSite attribute.
+    bugs:
+      - url: 1692655
+  CVE-2022-29910:
+    title: Firefox for Android forgets HTTP Strict Transport Security
+    impact: moderate
+    reporter: Mark B
+    description: |
+      When closed or sent to the background, Firefox for Android would not properly record and persist HSTS settings.<br>*Note: This issue only affected Firefox for Android. Other operating systems are unaffected.*
+    bugs:
+      - url: 1757138
+  CVE-2022-29913:
+    title: Speech Synthesis feature not properly disabled
+    impact: moderate
+    reporter: Andrew McCreight
+    description: |
+      Firefox's parent process would not properly check whether the Speech Synthesis feature is enabled, when receiving instructions from a child process.
+    bugs:
+      - url: 1764778
+  CVE-2022-29915:
+    title: Leaking cross-origin redirect through the Performance API
+    impact: low
+    reporter: Sohom Datta
+    description: |
+      The Performance API did not properly hide the fact whether a request cross-origin resource has observed redirects.
+    bugs:
+      - url: 1751678
+  CVE-2022-29917:
+    title: Memory safety bugs fixed in Firefox 100 and Firefox ESR 91.9
+    impact: high
+    reporter: Mozilla developers
+    description: |
+      Mozilla developers Gabriele Svelto, Tom Ritter and the Mozilla Fuzzing Team reported memory safety bugs present in Firefox 99 and Firefox ESR 91.8. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1684739, 1706441, 1753298, 1762614, 1762620
+        desc: Memory safety bugs fixed in Firefox 100 and Firefox ESR 91.9
+  CVE-2022-29918:
+    title: Memory safety bugs fixed in Firefox 100
+    impact: high
+    reporter: Mozilla developers
+    description: |
+      Mozilla developers Gabriele Svelto, Randell Jesup and the Mozilla Fuzzing Team reported memory safety bugs present in Firefox 99. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1744043, 1747178, 1753535, 1754017, 1755847, 1756172, 1757477, 1758223, 1760160, 1761481, 1761771
+        desc: Memory safety bugs fixed in Firefox 100
