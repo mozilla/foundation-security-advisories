@@ -53,14 +53,6 @@ advisories:
       When closed or sent to the background, Firefox for Android would not properly record and persist HSTS settings.<br>*Note: This issue only affected Firefox for Android. Other operating systems are unaffected.*
     bugs:
       - url: 1757138
-  CVE-2022-29913:
-    title: Speech Synthesis feature not properly disabled
-    impact: moderate
-    reporter: Andrew McCreight
-    description: |
-      Firefox's parent process would not properly check whether the Speech Synthesis feature is enabled, when receiving instructions from a child process.
-    bugs:
-      - url: 1764778
   CVE-2022-29915:
     title: Leaking cross-origin redirect through the Performance API
     impact: low
@@ -74,9 +66,9 @@ advisories:
     impact: high
     reporter: Mozilla developers
     description: |
-      Mozilla developers Gabriele Svelto, Tom Ritter and the Mozilla Fuzzing Team reported memory safety bugs present in Firefox 99 and Firefox ESR 91.8. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+      Mozilla developers Andrew McCreight, Gabriele Svelto, Tom Ritter and the Mozilla Fuzzing Team reported memory safety bugs present in Firefox 99 and Firefox ESR 91.8. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
     bugs:
-      - url: 1684739, 1706441, 1753298, 1762614, 1762620
+      - url: 1684739, 1706441, 1753298, 1762614, 1762620, 1764778
         desc: Memory safety bugs fixed in Firefox 100 and Firefox ESR 91.9
   CVE-2022-29918:
     title: Memory safety bugs fixed in Firefox 100
