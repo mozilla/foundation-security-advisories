@@ -1,0 +1,74 @@
+## mfsa2022-18.yml
+announced: May 3, 2022
+impact: high
+fixed_in:
+- Thunderbird 91.9
+title: Security Vulnerabilities fixed in Thunderbird 91.9
+description: |
+    *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
+advisories:
+  CVE-2022-1520:
+    title: Incorrect security status shown after viewing an attached email
+    impact: low
+    reporter: Thunderbird team
+    description: |
+     When viewing an email message A, which contains an attached message B, where B is encrypted or digitally signed or both, Thunderbird may show an incorrect encryption or signature status. After opening and viewing the attached message B, when returning to the display of message A, the message A might be shown with the security status of message B.
+    bugs:
+      - url: 1745019
+  CVE-2022-29914:
+    title: Fullscreen notification bypass using popups
+    impact: high
+    reporter: Irvan Kurniawan
+    description: |
+      When reusing existing popups Thunderbird would allow them to cover the fullscreen notification UI, which could enable browser spoofing attacks.
+    bugs:
+      - url: 1746448
+  CVE-2022-29909:
+    title: Bypassing permission prompt in nested browsing contexts
+    impact: high
+    reporter: Armin Ebert
+    description: |
+      Documents in deeply-nested cross-origin browsing contexts could obtain permissions granted to the top-level origin, bypassing the existing prompt and wrongfully inheriting the top-level permissions.
+    bugs:
+      - url: 1755081
+  CVE-2022-29916:
+    title: Leaking browser history with CSS variables
+    impact: high
+    reporter: Mateusz Sionkowski
+    description: |
+      Thunderbird would behave slightly differently for already known resources, when loading CSS resources through resolving CSS variables. This could be used to probe the browser history.
+    bugs:
+      - url: 1760674
+  CVE-2022-29911:
+    title: iframe sandbox bypass
+    impact: high
+    reporter: Trung Pham
+    description: |
+      Thunderbird did not properly protect against top-level navigations for iframe sandbox with a policy relaxed through a keyword like <code>allow-top-navigation-by-user-activation</code>.
+    bugs:
+      - url: 1761981
+  CVE-2022-29912:
+    title: Reader mode bypassed SameSite cookies
+    impact: moderate
+    reporter: Matheus Vrech
+    description: |
+      Requests initiated through reader mode did not properly omit cookies with a SameSite attribute.
+    bugs:
+      - url: 1692655
+  CVE-2022-29913:
+    title: Speech Synthesis feature not properly disabled
+    impact: moderate
+    reporter: Andrew McCreight
+    description: |
+      The parent process would not properly check whether the Speech Synthesis feature is enabled, when receiving instructions from a child process.
+    bugs:
+      - url: 1764778
+  CVE-2022-29917:
+    title: Memory safety bugs fixed in Thunderbird 91.9
+    impact: high
+    reporter: Mozilla developers
+    description: |
+      Mozilla developers Gabriele Svelto, Tom Ritter and the Mozilla Fuzzing Team reported memory safety bugs present in Thunderbird 91.8. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1684739, 1706441, 1753298, 1762614, 1762620
+        desc: Memory safety bugs fixed in Thunderbird 91.9
