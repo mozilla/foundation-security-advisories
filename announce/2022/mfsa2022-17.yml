@@ -34,7 +34,7 @@ advisories:
     impact: high
     reporter: Trung Pham
     description: |
-      Firefox did not properly protect against top-level navigations for an iframe sandbox with a policy relaxed through a keyword like <code>allow-top-navigation-by-user-activation</code>.
+      An improper implementation of the new iframe sandbox keyword <code>allow-top-navigation-by-user-activation</code> could lead to script execution without <code>allow-scripts</code> being present.
     bugs:
       - url: 1761981
   CVE-2022-29912:
