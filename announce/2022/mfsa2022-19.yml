@@ -5,7 +5,8 @@ fixed_in:
 - Firefox 100.0.2
 - Firefox for Android 100.3.0
 - Firefox ESR 91.9.1
-title: Security Vulnerabilities fixed in Firefox 100.0.2, Firefox for Android 100.3.0, Firefox ESR 91.9.1
+- Thunderbird 91.9.1
+title: Security Vulnerabilities fixed in Firefox 100.0.2, Firefox for Android 100.3.0, Firefox ESR 91.9.1, Thunderbird 91.9.1
 advisories:
   CVE-2022-1802:
     title: Prototype pollution in Top-Level Await implementation
