@@ -1,0 +1,26 @@
+## mfsa2022-19.yml
+announced: May 20, 2022
+impact: critical
+fixed_in:
+- Firefox 100.0.2
+- Firefox for Android 100.3.0
+- Firefox ESR 91.9.1
+title: Security Vulnerabilities fixed in Firefox 100.0.2, Firefox for Android 100.3.0, Firefox ESR 91.9.1
+advisories:
+  CVE-2022-1802:
+    title: Prototype pollution in Top-Level Await implementation
+    impact: critical
+    reporter: Manfred Paul via Trend Micro's Zero Day Initiative
+    description: |
+      If an attacker was able to corrupt the methods of an Array object in JavaScript via prototype pollution, they could have achieved execution of attacker-controlled JavaScript code in a privileged context.
+    bugs:
+      - url: 1770137
+  CVE-2022-1529:
+    title: Untrusted input used in JavaScript object indexing, leading to prototype pollution
+    impact: critical
+    reporter: Manfred Paul via Trend Micro's Zero Day Initiative
+    description: |
+      An attacker could have sent a message to the parent process where the contents were used to double-index into a JavaScript object, leading to prototype pollution and ultimately attacker-controlled JavaScript executing in the privileged parent process.
+    bugs:
+      - url: 1770048
+  
