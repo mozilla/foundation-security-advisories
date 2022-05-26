@@ -1,0 +1,72 @@
+## mfsa2022-21.yml
+announced: May 31, 2022
+impact: high
+fixed_in:
+- Firefox ESR 91.10
+title: Security Vulnerabilities fixed in Firefox ESR 91.10
+advisories:
+  CVE-2022-31736:
+    title: Cross-Origin resource's length leaked
+    impact: high
+    reporter: Luan Herrera
+    description: |
+      A malicious website could have learned the size of a cross-origin resource that supported Range requests.
+    bugs:
+      - url: 1735923
+  CVE-2022-31737:
+    title: Heap buffer overflow in WebGL
+    impact: high
+    reporter: Atte Kettunen
+    description: |
+      A malicious webpage could have caused an out-of-bounds write in WebGL, leading to memory corruption and a potentially exploitable crash.
+    bugs:
+      - url: 1743767
+  CVE-2022-31738:
+    title: Browser window spoof using fullscreen mode
+    impact: high
+    reporter: Irvan Kurniawan
+    description: |
+      When exiting fullscreen mode, an iframe could have confused the browser about the current state of fullscreen, resulting in potential user confusion or spoofing attacks.
+    bugs:
+      - url: 1756388
+  CVE-2022-31739:
+    title: Attacker-influenced path traversal when saving downloaded files
+    impact: high
+    reporter: Chaobin Zhang
+    description: |
+      When downloading files on Windows, the % character was not escaped, which could have lead to a download incorrectly being saved to attacker-influenced paths that used variables such as %HOMEPATH% or %APPDATA%.<br>*This bug only affects Firefox for Windows. Other operating systems are unaffected.*
+    bugs:
+      - url: 1765049
+  CVE-2022-31740:
+    title: Register allocation problem in WASM on arm64
+    impact: high
+    reporter: Gary Kwong
+    description: |
+      On arm64, WASM code could have resulted in incorrect assembly generation leading to a register allocation problem, and a potentially exploitable crash.
+    bugs:
+      - url: 1766806
+  CVE-2022-31741:
+    title: Uninitialized variable leads to invalid memory read
+    impact: high
+    reporter: Yaniv
+    description: |
+      A crafted CMS message could have been processed incorrectly, leading to an invalid memory read, and potentially further memory corruption.
+    bugs:
+      - url: 1767590
+  CVE-2022-31742:
+    title: Querying a WebAuthn token with a large number of allowCredential entries may have leaked cross-origin information
+    impact: moderate
+    reporter: Michal
+    description: |
+      An attacker could have exploited a timing attack by sending a large number of allowCredential entries and detecting the difference between invalid key handles and cross-origin key handles.  This could have led to cross-origin account linking in violation of WebAuthn goals.
+    bugs:
+      - url: 1730434
+  CVE-2022-31747:
+    title: Memory safety bugs fixed in Firefox 101 and Firefox ESR 91.10
+    impact: high
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers and community members Andrew McCreight, Nicolas B. Pierron, and the Mozilla Fuzzing Team reported memory safety bugs present in Firefox 100 and Firefox ESR 91.0. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1760765, 1765610, 1766283, 1767365, 1768559, 1768734
+        desc: Memory safety bugs fixed in Firefox 101 and Firefox ESR 91.10
