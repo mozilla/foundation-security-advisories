@@ -444,7 +444,7 @@ url_entries = {
     "4b7fd0d6665950db856bc5e22846f719" : "http://www.trapkit.de/",
     "4cb38b42bb161ce775b5e7f91d260d3f" : "https://www.linkedin.com/in/daniel-maksimovic-73537882",
     "654445704639346f526d1ef514d08fd7" : "https://acrossecurity.com/",
-    "6c5314d59c2e56564b18fe6199305fd3" : "https://www.facebook.com/Fatality04",
+    "6c5314d59c2e56564b18fe6199305fd3" : "https://hackerone.com/abdellah29",
     "740b81a60bd25700b839f63e8d937796" : "http://linkedin.com/in/karthik-kumar-reddy-3b10b4128",
     "755ae0590425c02b3c203036df1a7e1e" : "http://www.securesoftware.nl",
     "763dcd98e7052a2d6ccebdc6cddec7a3" : "https://www.linkedin.com/in/anhnt1337/",
