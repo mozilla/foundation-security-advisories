@@ -1,9 +1,11 @@
-## mfsa2022-21.yml
+## mfsa2022-22.yml
 announced: May 31, 2022
 impact: high
 fixed_in:
-- Firefox ESR 91.10
-title: Security Vulnerabilities fixed in Firefox ESR 91.10
+- Thunderbird 91.10
+title: Security Vulnerabilities fixed in Thunderbird 91.10
+description: |
+   *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
 advisories:
   CVE-2022-31736:
     title: Cross-Origin resource's length leaked
@@ -34,7 +36,7 @@ advisories:
     impact: high
     reporter: Chaobin Zhang
     description: |
-      When downloading files on Windows, the % character was not escaped, which could have lead to a download incorrectly being saved to attacker-influenced paths that used variables such as %HOMEPATH% or %APPDATA%.<br>*This bug only affects Firefox for Windows. Other operating systems are unaffected.*
+      When downloading files on Windows, the % character was not escaped, which could have lead to a download incorrectly being saved to attacker-influenced paths that used variables such as %HOMEPATH% or %APPDATA%.<br>*This bug only affects Thunderbird for Windows. Other operating systems are unaffected.*
     bugs:
       - url: 1765049
   CVE-2022-31740:
@@ -53,6 +55,14 @@ advisories:
       A crafted CMS message could have been processed incorrectly, leading to an invalid memory read, and potentially further memory corruption.
     bugs:
       - url: 1767590
+  CVE-2022-1834:
+    title: Braille space character caused incorrect sender email to be shown for a digitally signed email
+    impact: high
+    reporter: Jonathan von Niessen
+    description: |
+      When displaying the sender of an email, and the sender name contained the Braille Pattern Blank space character multiple times, Thunderbird would have displayed all the spaces. This could have been used by an attacker to send an email message with the attacker's digital signature, that was shown with an arbitrary sender email address chosen by the attacker. If the sender name started with a false email address, followed by many Braille space characters, the attacker's email address was not visible. Because Thunderbird compared the invisible sender address with the signature's email address, if the signing key or certificate was accepted by Thunderbird, the email was shown as having a valid digital signature.
+    bugs:
+      - url: 1767816
   CVE-2022-31742:
     title: Querying a WebAuthn token with a large number of allowCredential entries may have leaked cross-origin information
     impact: moderate
@@ -62,11 +72,11 @@ advisories:
     bugs:
       - url: 1730434
   CVE-2022-31747:
-    title: Memory safety bugs fixed in Firefox 101 and Firefox ESR 91.10
+    title: Memory safety bugs fixed in Thunderbird 91.10
     impact: high
     reporter: Mozilla developers and community
     description: |
-      Mozilla developers Andrew McCreight, Nicolas B. Pierron, and the Mozilla Fuzzing Team reported memory safety bugs present in Firefox 100 and Firefox ESR 91.9. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+      Mozilla developers Andrew McCreight, Nicolas B. Pierron, and the Mozilla Fuzzing Team reported memory safety bugs present in Thunderbird 91.9. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
     bugs:
       - url: 1760765, 1765610, 1766283, 1767365, 1768559, 1768734
-        desc: Memory safety bugs fixed in Firefox 101 and Firefox ESR 91.10
+        desc: Memory safety bugs fixed in Thunderbird 91.10

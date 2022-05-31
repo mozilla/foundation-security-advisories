@@ -99,7 +99,7 @@ advisories:
     impact: high
     reporter: Mozilla developers and community
     description: |
-      Mozilla developers and community members Andrew McCreight, Nicolas B. Pierron, and the Mozilla Fuzzing Team reported memory safety bugs present in Firefox 100 and Firefox ESR 91.0. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+      Mozilla developers Andrew McCreight, Nicolas B. Pierron, and the Mozilla Fuzzing Team reported memory safety bugs present in Firefox 100 and Firefox ESR 91.9. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
     bugs:
       - url: 1760765, 1765610, 1766283, 1767365, 1768559, 1768734
         desc: Memory safety bugs fixed in Firefox 101 and Firefox ESR 91.10
@@ -108,7 +108,7 @@ advisories:
     impact: high
     reporter: Mozilla developers and community
     description: |
-      Mozilla developers and community members Gabriele Svelto, Timothy Nikkel, Randell Jesup, Jon Coppeard, and the Mozilla Fuzzing Team reported memory safety bugs present in Firefox 100. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+      Mozilla developers Gabriele Svelto, Timothy Nikkel, Randell Jesup, Jon Coppeard, and the Mozilla Fuzzing Team reported memory safety bugs present in Firefox 100. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
     bugs:
       - url: 1713773, 1762201, 1762469, 1762770, 1764878, 1765226, 1765782, 1765973, 1767177, 1767181, 1768232, 1768251, 1769869
         desc: Memory safety bugs fixed in Firefox 101
