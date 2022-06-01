@@ -1,0 +1,15 @@
+## mfsa2022-23.yml
+announced: June 1, 2022
+impact: moderate
+fixed_in:
+- Firefox for iOS 101
+title: Security Vulnerabilities fixed in Firefox for iOS 101
+advisories:
+  CVE-2022-1887:
+    title: SQL injection in history tab
+    impact: moderate
+    reporter: Muneaki Nishimura
+    description: |
+      The search term could have been specified externally to trigger SQL injection.
+    bugs:
+      - url: 1767205
