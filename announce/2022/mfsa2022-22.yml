@@ -50,7 +50,7 @@ advisories:
   CVE-2022-31741:
     title: Uninitialized variable leads to invalid memory read
     impact: high
-    reporter: Yaniv
+    reporter: Cybeats PSI Team
     description: |
       A crafted CMS message could have been processed incorrectly, leading to an invalid memory read, and potentially further memory corruption.
     bugs:
