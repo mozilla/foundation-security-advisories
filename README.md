@@ -142,14 +142,14 @@ staged in git's index you can pass the `--staged` switch (this is mostly good fo
 You'll need a couple of dependency libraries. You can get them with the following command:
 
 ```shell
-$ pip install -r requirements.txt
+$ pip install ./
 ```
 
 It's best to do that within a [virtualenv](http://virtualenv.readthedocs.org/en/latest/).
 Then you can run the command:
 
 ```shell
-$ ./check_advisories.py
+$ check_advisories
 Checked 3 files. Found 0 errors.
 ```
 
