@@ -3,7 +3,8 @@ announced: June 28, 2022
 impact: high
 fixed_in:
 - Thunderbird 91.11
-title: Security Vulnerabilities fixed in Thunderbird 91.11
+- Thunderbird 102
+title: Security Vulnerabilities fixed in Thunderbird 91.11 and Thunderbird 102
 description: |
    *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.* 
    *Note*: While [Bug 1771084](https://bugzilla.mozilla.org/show_bug.cgi?id=1771084) does not represent a specific vulnerability that was fixed, we recommend anyone rebasing patches to include it. 102 branch: Patch [1](https://hg.mozilla.org/releases/mozilla-beta/rev/82e3067ad2e7) and [2](https://hg.mozilla.org/releases/mozilla-beta/rev/6e4639dc3614). 91 Branch: Patch [1](https://hg.mozilla.org/releases/mozilla-esr91/rev/72bca7a337e4) and [2](https://hg.mozilla.org/releases/mozilla-esr91/rev/befef01949f2) (Despite saying Parts 2 and 3, there is no Part 1)
@@ -81,11 +82,11 @@ advisories:
     bugs:
       - url: 1771381
   CVE-2022-34484:
-    title: Memory safety bugs fixed in Thunderbird 91.11
+    title: Memory safety bugs fixed in Thunderbird 91.11 and Thunderbird 102
     impact: high
     reporter: Mozilla developers and community
     description: |
       The Mozilla Fuzzing Team reported potential vulnerabilities present in Thunderbird 91.10. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
     bugs:
       - url: 1763634, 1772651
-        desc: Memory safety bugs fixed in Thunderbird 91.11
+        desc: Memory safety bugs fixed in Thunderbird 91.11 and Thunderbird 102
