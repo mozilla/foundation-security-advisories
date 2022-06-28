@@ -1,0 +1,164 @@
+## mfsa2022-24.yml
+announced: June 28, 2022
+impact: high
+fixed_in:
+- Firefox 102
+title: Security Vulnerabilities fixed in Firefox 102
+description: |
+  *Note*: While [Bug 1771084](https://bugzilla.mozilla.org/show_bug.cgi?id=1771084) does not represent a specific vulnerability that was fixed, we recommend anyone rebasing patches to include it. 102 branch: Patch [1](https://hg.mozilla.org/releases/mozilla-beta/rev/82e3067ad2e7) and [2](https://hg.mozilla.org/releases/mozilla-beta/rev/6e4639dc3614). 91 Branch: Patch [1](https://hg.mozilla.org/releases/mozilla-esr91/rev/72bca7a337e4) and [2](https://hg.mozilla.org/releases/mozilla-esr91/rev/befef01949f2) (Despite saying Parts 2 and 3, there is no Part 1)
+advisories:
+  CVE-2022-34479:
+    title: A popup window could be resized in a way to overlay the address bar with web content
+    impact: high
+    reporter: Irvan Kurniawan
+    description: |
+      A malicious website that could create a popup could have resized the popup to overlay the address bar with its own content, resulting in potential user confusion or spoofing attacks.  <br>*This bug only affects Firefox for Linux. Other operating systems are unaffected.*
+    bugs:
+      - url: 1745595
+  CVE-2022-34470:
+    title: Use-after-free in nsSHistory
+    impact: high
+    reporter: Armin Ebert
+    description: |
+      Navigations between XML documents may have led to a use-after-free and potentially exploitable crash.
+    bugs:
+      - url: 1765951
+  CVE-2022-34468:
+    title: 'CSP sandbox header without `allow-scripts` can be bypassed via retargeted javascript: URI'
+    impact: high
+    reporter: Armin Ebert
+    description: |
+      An iframe that was not permitted to run scripts could do so if the user clicked on a <code>javascript:</code> link.
+    bugs:
+      - url: 1768537
+  CVE-2022-34482:
+    title: Drag and drop of malicious image could have led to malicious executable and potential code execution
+    impact: moderate
+    reporter: Attila Suszter
+    description: |
+      An attacker who could have convinced a user to drag and drop an image to a filesystem could have manipulated the resulting filename to contain an executable extension, and by extension potentially tricked the user into executing malicious code.  While very similar, this is a separate issue from CVE-2022-34483.
+    bugs:
+      - url: 845880
+  CVE-2022-34483:
+    title: Drag and drop of malicious image could have led to malicious executable and potential code execution
+    impact: moderate
+    reporter: Eduardo Braun Prado
+    description: |
+      An attacker who could have convinced a user to drag and drop an image to a filesystem could have manipulated the resulting filename to contain an executable extension, and by extension potentially tricked the user into executing malicious code.  While very similar, this is a separate issue from CVE-2022-34482.
+    bugs:
+      - url: 1335845
+  CVE-2022-34476:
+    title: ASN.1 parser could have been tricked into accepting malformed ASN.1
+    impact: moderate
+    reporter: Gustavo Grieco
+    description: |
+      ASN.1 parsing of an indefinite SEQUENCE inside an indefinite GROUP could have resulted in the parser accepting malformed ASN.1.
+    bugs:
+      - url: 1387919
+  CVE-2022-34481:
+    title: Potential integer overflow in ReplaceElementsAt
+    impact: moderate
+    reporter: Ronald Crane
+    description: |
+      In the <code>nsTArray_Impl::ReplaceElementsAt()</code> function, an integer overflow could have occurred when the number of elements to replace was too large for the container.
+    bugs:
+      - url: 1497246
+      - url: 1483699
+  CVE-2022-34474:
+    title: Sandboxed iframes could redirect to external schemes
+    impact: moderate
+    reporter: Amazon Malvertising Team
+    description: |
+      Even when an iframe was sandboxed with <code>allow-top-navigation-by-user-activation</code>, if it received a redirect header to an external protocol the browser would process the redirect and prompt the user as appropriate.
+    bugs:
+      - url: 1677138
+  CVE-2022-34469:
+    title: TLS certificate errors on HSTS-protected domains could be bypassed by the user on Firefox for Android
+    impact: moderate
+    reporter: Peter Gerber
+    description: |
+      When a TLS Certificate error occurs on a domain protected by the HSTS header, the browser should not allow the user to bypass the certificate error.  On Firefox for Android, the user was presented with the option to bypass the error; this could only have been done by the user explicitly. <br>*This bug only affects Firefox for Android. Other operating systems are unaffected.*
+    bugs:
+      - url: 1721220
+  CVE-2022-34471:
+    title: Compromised server could trick a browser into an addon downgrade
+    impact: moderate
+    reporter: Rob Wu
+    description: |
+      When downloading an update for an addon, the downloaded addon update's version was not verified to match the version selected from the manifest.  If the manifest had been tampered with on the server, an attacker could trick the browser into downgrading the addon to a prior version.
+    bugs:
+      - url: 1766047
+  CVE-2022-34472:
+    title: Unavailable PAC file resulted in OCSP requests being blocked
+    impact: moderate
+    reporter: Laurent Bigonville
+    description: |
+      If there was a PAC URL set and the server that hosts the PAC was not reachable, OCSP requests would have been blocked, resulting in incorrect error pages being shown.
+    bugs:
+      - url: 1770123
+  CVE-2022-34478:
+    title: Microsoft protocols can be attacked if a user accepts a prompt
+    impact: moderate
+    reporter: Gijs
+    description: |
+      The <code>ms-msdt</code>, <code>search</code>, and <code>search-ms</code> protocols deliver content to Microsoft applications, bypassing the browser, when a user accepts a prompt. These applications have had known vulnerabilities, exploited in the wild (although we know of none exploited through Firefox), so in this release Firefox has blocked these protocols from prompting the user to open them.<br>*This bug only affects Firefox on Windows. Other operating systems are unaffected.*
+    bugs:
+      - url: 1773717
+  CVE-2022-2200:
+    title: Undesired attributes could be set as part of prototype pollution
+    impact: moderate
+    reporter: Manfred Paul via Trend Micro's Zero Day Initiative
+    description: |
+      If an object prototype was corrupted by an attacker, they would have been able to set undesired attributes on a JavaScript object, leading to privileged code execution.
+    bugs:
+      - url: 1771381
+  CVE-2022-34480:
+    title: Free of uninitialized pointer in lg_init
+    impact: low
+    reporter: Ronald Crane
+    description: |
+      Within the <code>lg_init()</code> function, if several allocations succeed but then one fails, an uninitialized pointer would have been freed despite never being allocated.
+    bugs:
+      - url: 1454072
+  CVE-2022-34477:
+    title: MediaError message property leaked information on cross-origin same-site pages
+    impact: low
+    reporter: jannis
+    description: |
+      The MediaError message property should be consistent to avoid leaking information about cross-origin resources; however for a same-site cross-origin resource, the message could have leaked information enabling XS-Leaks attacks.
+    bugs:
+      - url: 1731614
+  CVE-2022-34475:
+    title: HTML Sanitizer could have been bypassed via same-origin script via use tags
+    impact: low
+    reporter: Gareth Heyes
+    description: |
+      SVG <code>&lt;use&gt;</code> tags that referenced a same-origin document could have resulted in script execution if attacker input was sanitized via the HTML Sanitizer API. This would have required the attacker to reference a same-origin JavaScript file containing the script to be executed.
+    bugs:
+      - url: 1757210
+  CVE-2022-34473:
+    title: HTML Sanitizer could have been bypassed via use tags
+    impact: low
+    reporter: Armin Ebert
+    description: |
+      The HTML Sanitizer should have sanitized the <code>href</code> attribute of SVG <code>&lt;use&gt;</code> tags; however it incorrectly did not sanitize <code>xlink:href</code> attributes.
+    bugs:
+      - url: 1770888
+  CVE-2022-34484:
+    title: Memory safety bugs fixed in Firefox 102 and Firefox ESR 91.11
+    impact: high
+    reporter: Mozilla developers and community
+    description: |
+      The Mozilla Fuzzing Team reported potential vulnerabilities present in Firefox 101 and Firefox ESR 91.10. Some of these bugs showed evidence of JavaScript prototype or memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1763634, 1772651
+        desc: Memory safety bugs fixed in Firefox 102 and Firefox ESR 91.11
+  CVE-2022-34485:
+    title: Memory safety bugs fixed in Firefox 102
+    impact: moderate
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers Bryce Seager van Dyk and the Mozilla Fuzzing Team reported potential vulnerabilities present in Firefox 101. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1768409, 1768578
+        desc: Memory safety bugs fixed in Firefox 102
