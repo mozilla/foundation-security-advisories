@@ -1,0 +1,91 @@
+## mfsa2022-26.yml
+announced: June 28, 2022
+impact: high
+fixed_in:
+- Thunderbird 91.11
+title: Security Vulnerabilities fixed in Thunderbird 91.11
+description: |
+   *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.* 
+   *Note*: While [Bug 1771084](https://bugzilla.mozilla.org/show_bug.cgi?id=1771084) does not represent a specific vulnerability that was fixed, we recommend anyone rebasing patches to include it. 102 branch: Patch [1](https://hg.mozilla.org/releases/mozilla-beta/rev/82e3067ad2e7) and [2](https://hg.mozilla.org/releases/mozilla-beta/rev/6e4639dc3614). 91 Branch: Patch [1](https://hg.mozilla.org/releases/mozilla-esr91/rev/72bca7a337e4) and [2](https://hg.mozilla.org/releases/mozilla-esr91/rev/befef01949f2) (Despite saying Parts 2 and 3, there is no Part 1)
+advisories:
+  CVE-2022-34479:
+    title: A popup window could be resized in a way to overlay the address bar with web content
+    impact: high
+    reporter: Irvan Kurniawan
+    description: |
+      A malicious website that could create a popup could have resized the popup to overlay the address bar with its own content, resulting in potential user confusion or spoofing attacks.  <br>*This bug only affects Thunderbird for Linux. Other operating systems are unaffected.*
+    bugs:
+      - url: 1745595
+  CVE-2022-34470:
+    title: Use-after-free in nsSHistory
+    impact: high
+    reporter: Armin Ebert
+    description: |
+      Navigations between XML documents may have led to a use-after-free and potentially exploitable crash.
+    bugs:
+      - url: 1765951
+  CVE-2022-34468:
+    title: 'CSP sandbox header without `allow-scripts` can be bypassed via retargeted javascript: URI'
+    impact: high
+    reporter: Armin Ebert
+    description: |
+      An iframe that was not permitted to run scripts could do so if the user clicked on a <code>javascript:</code> link.
+    bugs:
+      - url: 1768537
+  CVE-2022-2226:
+    title: An email with a mismatching OpenPGP signature date was accepted as valid
+    impact: moderate
+    reporter: Nickolay Olshevsky
+    description: |
+      An OpenPGP digital signature includes information about the date when the signature was created. When displaying an email that contains a digital signature, the email's date will be shown. If the dates were different, then Thunderbird didn't report the email as having an invalid signature. If an attacker performed a replay attack, in which an old email with old contents are resent at a later time, it could lead the victim to believe that the statements in the email are current. Fixed versions of Thunderbird will require that the signature's date roughly matches the displayed date of the email.
+    bugs:
+      - url: 1775441
+  CVE-2022-34481:
+    title: Potential integer overflow in ReplaceElementsAt
+    impact: moderate
+    reporter: Ronald Crane
+    description: |
+      In the <code>nsTArray_Impl::ReplaceElementsAt()</code> function, an integer overflow could have occurred when the number of elements to replace was too large for the container.
+    bugs:
+      - url: 1497246
+  CVE-2022-31744:
+    title: CSP bypass enabling stylesheet injection
+    impact: moderate
+    reporter: Gertjan
+    description: |
+      An attacker could have injected CSS into stylesheets accessible via internal URIs, such as resource:, and in doing so bypass a page's Content Security Policy.
+    bugs:
+      - url: 1757604
+  CVE-2022-34472:
+    title: Unavailable PAC file resulted in OCSP requests being blocked
+    impact: moderate
+    reporter: Laurent Bigonville
+    description: |
+      If there was a PAC URL set and the server that hosts the PAC was not reachable, OCSP requests would have been blocked, resulting in incorrect error pages being shown.
+    bugs:
+      - url: 1770123
+  CVE-2022-34478:
+    title: Microsoft protocols can be attacked if a user accepts a prompt
+    impact: moderate
+    reporter: Gijs
+    description: |
+      The <code>ms-msdt</code>, <code>search</code>, and <code>search-ms</code> protocols deliver content to Microsoft applications, bypassing the browser, when a user accepts a prompt. These applications have had known vulnerabilities, exploited in the wild (although we know of none exploited through Thunderbird), so in this release Thunderbird has blocked these protocols from prompting the user to open them.<br>*This bug only affects Thunderbird on Windows. Other operating systems are unaffected.*
+    bugs:
+      - url: 1773717
+  CVE-2022-2200:
+    title: Undesired attributes could be set as part of prototype pollution
+    impact: moderate
+    reporter: Manfred Paul via Trend Micro's Zero Day Initiative
+    description: |
+      If an object prototype was corrupted by an attacker, they would have been able to set undesired attributes on a JavaScript object, leading to privileged code execution.
+    bugs:
+      - url: 1771381
+  CVE-2022-34484:
+    title: Memory safety bugs fixed in Thunderbird 91.11
+    impact: high
+    reporter: Mozilla developers and community
+    description: |
+      The Mozilla Fuzzing Team reported potential vulnerabilities present in Thunderbird 91.10. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1763634, 1772651
+        desc: Memory safety bugs fixed in Thunderbird 91.11
