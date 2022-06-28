@@ -29,7 +29,7 @@ setup(
     install_requires=[
         'PyYAML==5.4',
         'Markdown',
-        'python-dateutil==2.4.2',
+        'python-dateutil==2.8.2',
         'schema==0.7.2',
         'requests'],
     entry_points={
