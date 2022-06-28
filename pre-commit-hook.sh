@@ -1,6 +1,6 @@
 #!/bin/sh
 
-python check_advisories.py --staged
+check_advisories --staged-only
 
 if [ "$?" -ne "0" ]; then
     echo "Aborting commit.  Fix above errors or do 'git commit --no-verify'."
