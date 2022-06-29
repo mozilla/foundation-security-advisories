@@ -1,0 +1,15 @@
+## mfsa2022-27.yml
+announced: June 29, 2022
+impact: moderate
+fixed_in:
+- Firefox for iOS 102
+title: Security Vulnerabilities fixed in Firefox for iOS 102
+advisories:
+  CVE-2022-31746:
+    title: Privileged internal URL protection could be bypassed through referrer header.
+    impact: moderate
+    reporter: Muneaki Nishimura
+    description: |
+      Internal URLs are protected by a secret UUID key, which could have been leaked to web page through the Referrer header.
+    bugs:
+      - url: 1654416
