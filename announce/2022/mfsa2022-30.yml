@@ -29,3 +29,12 @@ advisories:
       When opening a Windows shortcut from the local filesystem, an attacker could supply a remote path that would lead to unexpected network requests from the operating system.<br>This bug only affects Firefox for Windows. Other operating systems are unaffected.*
     bugs:
       - url: 1773894
+  CVE-2022-2505:
+    title: Memory safety bugs fixed in Firefox 103 and 102.1
+    impact: high
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers and the Mozilla Fuzzing Team reported memory safety bugs present in Firefox 102. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1769739, 1772824
+        desc: Memory safety bugs fixed in Firefox 103

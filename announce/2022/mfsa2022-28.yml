@@ -14,7 +14,7 @@ advisories:
     bugs:
       - url: 1737722
   CVE-2022-36317:
-    title: Long URL will hang Firefox for Android
+    title: Long URL would hang Firefox for Android
     impact: moderate
     reporter: Irwan
     description: |
@@ -58,7 +58,16 @@ advisories:
     impact: high
     reporter: Mozilla developers and community
     description: |
-      Mozilla developers and community members the Mozilla Fuzzing Team reported memory safety bugs present in Firefox 102. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+      Mozilla developers and the Mozilla Fuzzing Team reported memory safety bugs present in Firefox 102. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
     bugs:
-      - url: 1759794, 1760998, 1769739, 1772824
+      - url: 1759794, 1760998
+        desc: Memory safety bugs fixed in Firefox 103
+  CVE-2022-2505:
+    title: Memory safety bugs fixed in Firefox 103 and 102.1
+    impact: high
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers and the Mozilla Fuzzing Team reported memory safety bugs present in Firefox 102. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1769739, 1772824
         desc: Memory safety bugs fixed in Firefox 103
