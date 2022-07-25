@@ -1,0 +1,23 @@
+## mfsa2022-29.yml
+announced: July 26, 2022
+impact: moderate
+fixed_in:
+- Firefox ESR 91.12
+title: Security Vulnerabilities fixed in Firefox ESR 91.12
+advisories:
+  CVE-2022-36319:
+    title: Mouse Position spoofing with CSS transforms
+    impact: moderate
+    reporter: Irvan Kurniawan
+    description: |
+      When combining CSS properties for overflow and transform, the mouse cursor could interact with different coordinates than displayed.
+    bugs:
+      - url: 1737722
+  CVE-2022-36318:
+    title: Directory indexes for bundled resources reflected URL parameters
+    impact: moderate
+    reporter: Gijs Kruitbosch
+    description: |
+      When visiting directory listings for `chrome://` URLs as source text, some parameters were reflected.
+    bugs:
+      - url: 1771774

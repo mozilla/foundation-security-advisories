@@ -1,0 +1,73 @@
+## mfsa2022-28.yml
+announced: July 26, 2022
+impact: moderate
+fixed_in:
+- Firefox 103
+title: Security Vulnerabilities fixed in Firefox 103
+advisories:
+  CVE-2022-36319:
+    title: Mouse Position spoofing with CSS transforms
+    impact: moderate
+    reporter: Irvan Kurniawan
+    description: |
+      When combining CSS properties for overflow and transform, the mouse cursor could interact with different coordinates than displayed.
+    bugs:
+      - url: 1737722
+  CVE-2022-36317:
+    title: Long URL would hang Firefox for Android
+    impact: moderate
+    reporter: Irwan
+    description: |
+      When visiting a website with an overly long URL, the user interface would start to hang. Due to session restore, this could lead to a permanent Denial of Service.<br>*This bug only affects Firefox for Android. Other operating systems are unaffected.*
+    bugs:
+      - url: 1759951
+  CVE-2022-36318:
+    title: Directory indexes for bundled resources reflected URL parameters
+    impact: moderate
+    reporter: Gijs Kruitbosch
+    description: |
+      When visiting directory listings for `chrome://` URLs as source text, some parameters were reflected.
+    bugs:
+      - url: 1771774
+  CVE-2022-36314:
+    title: Opening local <code>.lnk</code> files could cause unexpected network loads
+    impact: moderate
+    reporter: akucybersec
+    description: |
+      When opening a Windows shortcut from the local filesystem, an attacker could supply a remote path that would lead to unexpected network requests from the operating system.<br>This bug only affects Firefox for Windows. Other operating systems are unaffected.*
+    bugs:
+      - url: 1773894
+  CVE-2022-36315:
+    title: Preload Cache Bypasses Subresource Integrity
+    impact: low
+    reporter: Hiroshige Hayashizaki
+    description: |
+      When loading a script with Subresource Integrity, attackers with an injection capability could trigger the reuse of previously cached entries with incorrect, different integrity metadata.
+    bugs:
+      - url: 1762520
+  CVE-2022-36316:
+    title: Performance API leaked whether a cross-site resource is redirecting
+    impact: low
+    reporter: Jannis Rautenstrauch
+    description: |
+      When using the Performance API, an attacker was able to notice subtle differences between PerformanceEntries and thus learn whether the target URL had been subject to a redirect.
+    bugs:
+      - url: 1768583
+  CVE-2022-36320:
+    title: Memory safety bugs fixed in Firefox 103
+    impact: high
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers and the Mozilla Fuzzing Team reported memory safety bugs present in Firefox 102. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1759794, 1760998
+        desc: Memory safety bugs fixed in Firefox 103
+  CVE-2022-2505:
+    title: Memory safety bugs fixed in Firefox 103 and 102.1
+    impact: high
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers and the Mozilla Fuzzing Team reported memory safety bugs present in Firefox 102. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1769739, 1772824
+        desc: Memory safety bugs fixed in Firefox 103
