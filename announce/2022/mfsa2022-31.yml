@@ -1,0 +1,25 @@
+## mfsa2022-31.yml
+announced: July 28, 2022
+impact: moderate
+fixed_in:
+- Thunderbird 91.12
+title: Security Vulnerabilities fixed in Thunderbird 91.12
+description: |
+   *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
+advisories:
+  CVE-2022-36319:
+    title: Mouse Position spoofing with CSS transforms
+    impact: moderate
+    reporter: Irvan Kurniawan
+    description: |
+      When combining CSS properties for overflow and transform, the mouse cursor could interact with different coordinates than displayed.
+    bugs:
+      - url: 1737722
+  CVE-2022-36318:
+    title: Directory indexes for bundled resources reflected URL parameters
+    impact: moderate
+    reporter: Gijs Kruitbosch
+    description: |
+      When visiting directory listings for `chrome://` URLs as source text, some parameters were reflected.
+    bugs:
+      - url: 1771774
