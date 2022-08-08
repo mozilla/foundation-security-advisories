@@ -75,6 +75,12 @@ https://bugzilla.mozilla.org/buglist.cgi?x=x
 """.replace("\n", "")
 
 credit_entries = {
+    "1d2c94a3301ca111ff6bb161b3069a9c":"redparsec",
+    "45b6c8b674aa0d31c437d7220d6a9f39":"Khan Janny",
+    "74babab05ed106d8a937c4ff19e7dbac":"Dylan Farrar",
+    "b295cad81920d9da67e35a981b6cb146":"Ali Syarief",
+    "061748177265860816977bb65cc0147a":"Brandon Roldan",
+    "9a653dd5b8871f60bd37caaa411d427a":"Saad Alhrby",
     "028ff665214190ae419f0febbdff465f" : "James Grant",
     "047a2ade7fdc3c6d84d5dbea228fe71e" : "Julien Maladrie",
     "05c9059021985684d94c2631e62b9d12" : "Zhang Hanming from 360 Vulcan team",
@@ -353,6 +359,11 @@ credit_entries = {
     "fea05bd1b815660051bf5d090eb4e522" : "Aral Yaman",
 }
 twitter_entries = {
+    "45b6c8b674aa0d31c437d7220d6a9f39":"@reboot_ex",
+    "b295cad81920d9da67e35a981b6cb146":"@kang_ali",
+    "061748177265860816977bb65cc0147a":"@tomorrowisnew",
+    "1d2c94a3301ca111ff6bb161b3069a9c":"@r3dpars3c",
+    "9a653dd5b8871f60bd37caaa411d427a":"@lazysaad",
     "0c7f4b38ad0b504cfc48042e14564cc8" : "@pdjstone",
     "0cdb9b89f615c444f832e56c844e9e75" : "@ally_o_malley",
     "0eaafbf6f9aabe86a4b040ca50d9191a" : "@5hint0",
