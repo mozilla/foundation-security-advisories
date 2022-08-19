@@ -1,0 +1,57 @@
+## mfsa2022-33.yml
+announced: August 23, 2022
+impact: high
+fixed_in:
+- Firefox 104
+title: Security Vulnerabilities fixed in Firefox 104
+advisories:
+  CVE-2022-38472:
+    title: Address bar spoofing via XSLT error handling
+    impact: high
+    reporter: Armin Ebert
+    description: |
+      An attacker could have abused XSLT error handling to associate attacker-controlled content with another origin which was displayed in the address bar. This could have been used to fool the user into submitting data intended for the spoofed origin.
+    bugs:
+      - url: 1769155
+  CVE-2022-38473:
+    title: Cross-origin XSLT Documents would have inherited the parent's permissions
+    impact: high
+    reporter: Armin Ebert
+    description: |
+      A cross-origin iframe referencing an XSLT document would inherit the parent domain's permissions (such as microphone or camera access).
+    bugs:
+      - url: 1771685
+  CVE-2022-38474:
+    title: Recording notification not shown when microphone was recording on Android
+    impact: low
+    reporter: Agi Sferro
+    description: |
+      A website that had permission to access the microphone could record audio without the audio notification being shown. This bug does not allow the attacker to bypass the permission prompt - it only affects the notification shown once permission has been granted.<br />*This bug only affects Firefox for Android. Other operating systems are unaffected.*
+    bugs:
+      - url: 1719511
+  CVE-2022-38475:
+    title: Attacker could write a value to a zero-length array
+    impact: low
+    reporter: Christian Holler
+    description: |
+      An attacker could have written a value to the first element in a zero-length JavaScript array. Although the array was zero-length, the value was not written to an invalid memory address.
+    bugs:
+      - url: 1773266
+  CVE-2022-38477:
+    title: Memory safety bugs fixed in Firefox 104 and Firefox ESR 102.2
+    impact: high
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developer Nika Layzell and the Mozilla Fuzzing Team reported memory safety bugs present in Firefox 103 and Firefox ESR 102.1. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1760611, 1770219, 1771159, 1773363
+        desc: Memory safety bugs fixed in Firefox 104 and Firefox ESR 102.2
+  CVE-2022-38478:
+    title: Memory safety bugs fixed in Firefox 104, Firefox ESR 102.2, and Firefox ESR 91.13
+    impact: high
+    reporter: Mozilla developers and community
+    description: |
+      Members the Mozilla Fuzzing Team reported memory safety bugs present in Firefox 103, Firefox ESR 102.1, and Firefox ESR 91.12. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1770630, 1776658
+        desc: Memory safety bugs fixed in Firefox 104, Firefox ESR 102.2, and Firefox ESR 91.13
