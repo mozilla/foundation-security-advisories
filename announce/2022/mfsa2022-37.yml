@@ -1,0 +1,34 @@
+## mfsa2022-37.yml
+announced: August 23, 2022
+impact: high
+fixed_in:
+- Thunderbird 91.13
+title: Security Vulnerabilities fixed in Thunderbird 91.13
+description: |
+   *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
+advisories:
+  CVE-2022-38472:
+    title: Address bar spoofing via XSLT error handling
+    impact: high
+    reporter: Armin Ebert
+    description: |
+      An attacker could have abused XSLT error handling to associate attacker-controlled content with another origin which was displayed in the address bar. This could have been used to fool the user into submitting data intended for the spoofed origin.
+    bugs:
+      - url: 1769155
+  CVE-2022-38473:
+    title: Cross-origin XSLT Documents would have inherited the parent's permissions
+    impact: high
+    reporter: Armin Ebert
+    description: |
+      A cross-origin iframe referencing an XSLT document would inherit the parent domain's permissions (such as microphone or camera access).
+    bugs:
+      - url: 1771685
+  CVE-2022-38478:
+    title: Memory safety bugs fixed in Thunderbird 102.2, and Thunderbird 91.13
+    impact: high
+    reporter: Mozilla developers and community
+    description: |
+      Members the Mozilla Fuzzing Team reported memory safety bugs present in Thunderbird 102.1 and Thunderbird 91.12. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1770630, 1776658
+        desc: Memory safety bugs fixed in Thunderbird 102.2 and Thunderbird 91.13
