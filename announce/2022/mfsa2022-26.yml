@@ -22,7 +22,7 @@ advisories:
     impact: high
     reporter: Armin Ebert
     description: |
-      Navigations between XML documents may have led to a use-after-free and potentially exploitable crash.
+      Session history navigations may have led to a use-after-free and potentially exploitable crash.
     bugs:
       - url: 1765951
   CVE-2022-34468:
