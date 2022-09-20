@@ -1,0 +1,56 @@
+## mfsa2022-40.yml
+announced: September 20, 2022
+impact: high
+fixed_in:
+- Firefox ESR 102.3
+title: Security Vulnerabilities fixed in Firefox ESR 102.3
+advisories:
+  CVE-2022-40959:
+    title: Bypassing FeaturePolicy restrictions on transient pages
+    impact: high
+    reporter: Armin Ebert
+    description: |
+      During iframe navigation, certain pages did not have their FeaturePolicy fully initialized leading to a bypass that leaked device permissions into untrusted subdocuments.
+    bugs:
+      - url: 1782211
+  CVE-2022-40960:
+    title: Data-race when parsing non-UTF-8 URLs in threads
+    impact: high
+    reporter: Armin Ebert
+    description: |
+      Concurrent use of the URL parser with non-UTF-8 data was not thread-safe. This could lead to a use-after-free causing a potentially exploitable crash.
+    bugs:
+      - url: 1787633
+  CVE-2022-40958:
+    title: Bypassing Secure Context restriction for cookies with __Host and __Secure prefix
+    impact: moderate
+    reporter: Axel Chong (@Haxatron)
+    description: |
+      By injecting a cookie with certain special characters, an attacker on a shared subdomain which is not a secure context could set and thus overwrite cookies from a secure context, leading to session fixation and other attacks.
+    bugs:
+      - url: 1779993
+  CVE-2022-40956:
+    title: Content-Security-Policy base-uri bypass
+    impact: low
+    reporter: Satoki Tsuji
+    description: |
+      When injecting an HTML base element, some requests would ignore the CSP's base-uri settings and accept the injected element's base instead.
+    bugs:
+      - url: 1770094
+  CVE-2022-40957:
+    title: Incoherent instruction cache when building WASM on ARM64
+    impact: low
+    reporter: Gary Kwong
+    description: |
+      Inconsistent data in instruction and data cache when creating wasm code could lead to a potentially exploitable crash.<br>*This bug only affects Firefox on ARM64 platforms.*
+    bugs:
+      - url: 1777604
+  CVE-2022-40962:
+    title: Memory safety bugs fixed in Firefox 105 and Firefox ESR 102.3
+    impact: high
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers Nika Layzell, Timothy Nikkel, Jeff Muizelaar, Sebastian Hengst, Andreas Pehrson, and the Mozilla Fuzzing Team reported memory safety bugs present in Firefox 104 and Firefox ESR 102.2. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1767360, 1776655, 1777574, 1784835, 1785109, 1786502, 1789440
+        desc: Memory safety bugs fixed in Firefox 105 and Firefox ESR 102.3
