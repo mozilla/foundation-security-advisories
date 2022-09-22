@@ -7,6 +7,14 @@ title: Security Vulnerabilities fixed in Thunderbird 102.3
 description: |
    *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
 advisories:
+  CVE-2022-3266:
+      title: Out of bounds read when decoding H264
+      impact: high
+      reporter: Willy R. Vasquez at UT Austin
+      description: |
+        An out-of-bounds read can occur when decoding H264 video. This results in a potentially exploitable crash.
+      bugs:
+      - url: 1767360
   CVE-2022-40959:
     title: Bypassing FeaturePolicy restrictions on transient pages
     impact: high
@@ -60,7 +68,7 @@ advisories:
     impact: high
     reporter: Mozilla developers and community
     description: |
-      Mozilla developers Nika Layzell, Timothy Nikkel, Jeff Muizelaar, Sebastian Hengst, Andreas Pehrson, and the Mozilla Fuzzing Team reported memory safety bugs present in Thunderbird 102.2. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+      Mozilla developers Nika Layzell, Timothy Nikkel, Sebastian Hengst, Andreas Pehrson, and the Mozilla Fuzzing Team reported memory safety bugs present in Thunderbird 102.2. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
     bugs:
-      - url: 1767360, 1776655, 1777574, 1784835, 1785109, 1786502, 1789440
+      - url: 1776655, 1777574, 1784835, 1785109, 1786502, 1789440
         desc: Memory safety bugs fixed in  Thunderbird 102.3
