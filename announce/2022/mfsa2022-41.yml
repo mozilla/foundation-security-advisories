@@ -5,7 +5,7 @@ fixed_in:
 - Firefox ESR 102.3
 title: Security Vulnerabilities fixed in Firefox ESR 102.3
 advisories:
- CVE-2022-3266:
+  CVE-2022-3266:
       title: Out of bounds read when decoding H264
       impact: high
       reporter: Willy R. Vasquez at UT Austin
