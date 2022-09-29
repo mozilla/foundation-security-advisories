@@ -1,0 +1,15 @@
+## mfsa2022-43.yml
+announced: September 28, 2022
+impact: high
+fixed_in:
+- Thunderbird 102.3.1
+title: Security Vulnerabilities fixed in Thunderbird 102.3.1
+advisories:
+  MOZ-2022-0043:
+    title: Update matrix-js-sdk to v19.7.0
+    impact: high
+    reporter: Patrick Cloke
+    description: |
+      The Matrix team has created a new version of their JS SDK to address a number of security issues. These are CVE-2022-39249, CVE-2022-39250, CVE-2022-39251, and CVE-2022-39236.
+    bugs:
+      - url: 1791765
