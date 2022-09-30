@@ -5,11 +5,39 @@ fixed_in:
 - Thunderbird 102.3.1
 title: Security Vulnerabilities fixed in Thunderbird 102.3.1
 advisories:
-  MOZ-2022-0043:
-    title: Update matrix-js-sdk to v19.7.0
+  CVE-2022-39249:
+    title: Matrix SDK bundled with Thunderbird vulnerable to an impersonation attack by malicious server administrators
     impact: high
-    reporter: Patrick Cloke
+    reporter: Martin R. Albrecht and Dan Jones from the Information Security Group at Royal Holloway University London, Benjamin Dowling from Security of Advanced Systems Group, University of Sheffield and Sofía Celi from Brave Software
+    feed: false
     description: |
-      The Matrix team has created a new version of their JS SDK to address a number of security issues. These are CVE-2022-39249, CVE-2022-39250, CVE-2022-39251, and CVE-2022-39236.
+        Thunderbird users who use the Matrix chat protocol were vulnerable to an impersonation attack. A malicious server administrator could fake encrypted messages to look as if they were sent from another user on that server.
     bugs:
-      - url: 1791765
+        - url: 1791765
+  CVE-2022-39250:
+    title: Matrix SDK bundled with Thunderbird vulnerable to a device verification attack
+    impact: high
+    reporter: Martin R. Albrecht and Dan Jones from the Information Security Group at Royal Holloway University London, Benjamin Dowling from Security of Advanced Systems Group, University of Sheffield and Sofía Celi from Brave Software
+    feed: false
+    description: |
+        Thunderbird users who use the Matrix chat protocol were vulnerable to an impersonation attack. A malicious server administrator could interfere with cross-device verification to authenticate their own device.
+    bugs:
+        - url: 1791765
+  CVE-2022-39251:
+    title: Matrix SDK bundled with Thunderbird vulnerable to an impersonation attack
+    impact: high
+    reporter: Martin R. Albrecht and Dan Jones from the Information Security Group at Royal Holloway University London, Benjamin Dowling from Security of Advanced Systems Group, University of Sheffield and Sofía Celi from Brave Software
+    feed: false
+    description: |
+        Thunderbird users who use the Matrix chat protocol were vulnerable to an impersonation attack. An adversary could spoof historical messages from other users. Additionally, a malicious key backup to the user's account under certain unusual conditions in order to exfiltrate message keys.
+    bugs:
+        - url: 1791765
+  CVE-2022-39236:
+    title: Matrix SDK bundled with Thunderbird vulnerable to a data corruption issue
+    impact: moderate
+    reporter:
+    feed: false
+    description: |
+        Thunderbird users who use the Matrix chat protocol were vulnerable to a data corruption issue. An adversary could potentially cause data integrity issues by sending specially crafted messages.
+    bugs:
+        - url: 1791765
