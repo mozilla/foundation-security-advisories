@@ -1,0 +1,56 @@
+## mfsa2022-44.yml
+announced: October 18, 2022
+impact: high
+fixed_in:
+- Firefox 106
+title: Security Vulnerabilities fixed in Firefox 106
+advisories:
+  CVE-2022-42927:
+    title: Same-origin policy violation could have leaked cross-origin URLs
+    impact: high
+    reporter: James Lee
+    description: |
+      A same-origin policy violation could have allowed the theft of cross-origin URL entries, leaking the result of a redirect, via <code>performance.getEntries()</code>.
+    bugs:
+      - url: 1789128
+  CVE-2022-42928:
+    title: Memory Corruption in JS Engine
+    impact: high
+    reporter: Samuel Groß and Carl Smith of Google V8 Security
+    description: |
+      Certain types of allocations were missing annotations that, if the Garbage Collector was in a specific state, could have lead to memory corruption and a potentially exploitable crash.
+    bugs:
+      - url: 1791520
+  CVE-2022-42929:
+    title: Denial of Service via window.print
+    impact: moderate
+    reporter: Andrei Enache
+    description: |
+      If a website called <code>window.print()</code> in a particular way, it could cause a denial of service of the browser, which may persist beyond browser restart depending on the user's session restore settings.
+    bugs:
+      - url: 1789439
+  CVE-2022-42930:
+    title: Race condition in DOM Workers
+    impact: moderate
+    reporter: Armin Ebert
+    description: |
+      If two Workers were simultaneously initializing their CacheStorage, a data race could have occurred in the <code>ThirdPartyUtil</code> component.
+    bugs:
+      - url: 1789503
+  CVE-2022-42931:
+    title: Username saved to a plaintext file on disk
+    impact: low
+    reporter: Sergey Galich
+    description: |
+      Logins saved by Firefox should be managed by the Password Manager component which uses encryption to save files on-disk. Instead, the username (not password) was saved by the Form Manager to an unencrypted file on disk.
+    bugs:
+      - url: 1780571
+  CVE-2022-42932:
+    title: Memory safety bugs fixed in Firefox 106 and Firefox ESR 102.4
+    impact: moderate
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers Ashley Hale and the Mozilla Fuzzing Team reported memory safety bugs present in Firefox 105 and Firefox ESR 102.3. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1789729, 1791363, 1792041
+        desc: Memory safety bugs fixed in Firefox 106 and Firefox ESR 102.4
