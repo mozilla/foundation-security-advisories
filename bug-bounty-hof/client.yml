@@ -1,4 +1,38 @@
 names:
+- name: Axel Chong
+  date: 2022-09-20
+- name: Andrei Enache
+  date: 2022-09-20
+- name: Armin Ebert
+  date: 2022-09-20
+  url: https://rawsec.net/
+- name: Irvan Kurniawan (sourc7)
+  date: 2022-08-23
+  url: https://www.linkedin.com/in/sourc7/
+- name: Abraruddin Khan and Omair
+  date: 2022-08-23
+  url: https://krashconsulting.com
+- name: Muhammad R. Maulana
+  date: 2022-08-22
+  twitter: "@agamimaulana"
+  url: https://twitter.com/@agamimaulana
+- name: Gary Kwong
+  date: 2022-07-28
+  url: https://www.ygitsoftware.com/
+- name: Muneaki Nishimura (a.k.a. nishimunea)
+  date: 2022-07-19
+- name: Young Min Kim (CompSec Lab at Seoul National University)
+  date: 2022-07-19
+  twitter: "@ylemkimon"
+  url: https://twitter.com/@ylemkimon
+- name: akucybersec
+  date: 2022-07-12
+- name: Gustavo Grieco
+  date: 2022-07-05
+- name: Kirin of Tencent Security Xuanwu Lab
+  date: 2022-07-05
+  twitter: "@Pwnrin"
+  url: https://twitter.com/@Pwnrin
 - name: Muneaki Nishimura (a.k.a. nishimunea)
   date: 2022-06-28
 - name: Irwan
