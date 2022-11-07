@@ -1,4 +1,65 @@
 names:
+- name: Muneaki Nishimura (a.k.a. nishimunea)
+  date: 2022-06-28
+- name: Irwan
+  date: 2022-06-28
+- name: Young Min Kim (CompSec Lab at Seoul National University)
+  date: 2022-06-14
+  twitter: "@ylemkimon"
+  url: https://twitter.com/@ylemkimon
+- name: Irvan Kurniawan (sourc7)
+  date: 2022-06-14
+  url: https://www.linkedin.com/in/sourc7/
+- name: Armin Ebert
+  date: 2022-06-14
+  url: https://rawsec.net/
+- name: Jean Paul Degabriele
+  date: 2022-05-31
+- name: Atte Kettunen
+  date: 2022-05-31
+  twitter: "@attekett"
+  url: https://twitter.com/@attekett
+- name: Cybeats PSI Team
+  date: 2022-05-31
+- name: Jannis Rautenstrauch
+  date: 2022-05-24
+- name: Kirin of Tencent Security Xuanwu Lab
+  date: 2022-05-24
+  twitter: "@Pwnrin"
+  url: https://twitter.com/@Pwnrin
+- name: Gary Kwong
+  date: 2022-05-24
+  url: https://www.ygitsoftware.com/
+- name: Johan Francsics
+  date: 2022-05-24
+- name: Ronald Crane
+  date: 2022-05-11
+  url: https://www.zippenhop.com/
+- name: Luan Herrera
+  date: 2022-05-10
+- name: Linus Särud
+  date: 2022-05-10
+  url: https://zulln.se/
+- name: Nikita Moiseyev (mirror12k)
+  date: 2022-05-10
+- name: Chaobin Zhang
+  date: 2022-05-10
+  url: https://github.com/zhchbin
+- name: Gareth Heyes
+  date: 2022-05-03
+  url: https://garethheyes.co.uk/
+- name: Naly
+  date: 2022-04-12
+- name: Hafiizh
+  date: 2022-04-12
+  url: https://www.linkedin.com/in/hafiizh-7aa6bb31/
+- name: Trung Pham
+  date: 2022-04-12
+- name: Suhwan Song of SNU CompSec Lab
+  date: 2022-04-05
+- name: Mateusz Sionkowski
+  date: 2022-04-05
+  url: https://www.youtube.com/channel/UCUbCnVzyWy4087CAxvL-cbA
 - name: Alison Huffman
   date: 2022-03-22
 - name: Sohom Datta
