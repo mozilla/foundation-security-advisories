@@ -75,6 +75,7 @@ https://bugzilla.mozilla.org/buglist.cgi?x=x
 """.replace("\n", "")
 
 credit_entries = {
+    "1605f48b44fd0a67c5a76371334aaa28":"Axel Chong",
     "dc5e5b4455d895a163dcab8bc5e64a97":"Jannis Rautenstrauch",
     "7c486bb32d071d87dbead8d428bd3dfd":"Naly",
     "3fd6daa83cd0821ca8584ad0c74e34d1":"Chaobin Zhang",
