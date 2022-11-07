@@ -735,8 +735,22 @@ def main():
         # ==========================================================================================
         # If we didn't find a bounty attachment, then it's a Hall of Fame Entry
         if 'cf_last_resolved' not in bug or not bug['cf_last_resolved']:
-            # Unusual case
-            data["date_raw"] = bug['creation_time'].split("T")[0]
+            # No resolved date, so look for a flag date
+            hof_date = None
+            history_url = BASE_URL + 'bug/' + bugid + '/history'
+            try:
+                history = http.get(history_url, headers=HEADERS, params={'api_key' : args.apikey}).json()
+                for h in history['bugs'][0]['history'][::-1]:
+                    for c in h['changes']:
+                        if c['field_name'] == "flagtypes.name" and "sec-bounty-hof+" in c['added']:
+                            hof_date = h['when'].split("T")[0]
+                if not hof_date:
+                    raise Exception("Could not find a bounty+ date")
+                data["date_raw"] = hof_date.split("T")[0]
+            except Exception as e:
+                print ("Error in " + bugid)
+                print (e)
+                continue
         else:
             # Normal case
             data["date_raw"] = bug['cf_last_resolved'].split("T")[0]
@@ -791,8 +805,6 @@ def main():
             debuglog.write("Date wasn't in range\n")
             continue
 
-
-                    
     def soryByDate(val):
         return val["date"]
 

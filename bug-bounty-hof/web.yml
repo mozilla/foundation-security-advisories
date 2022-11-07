@@ -351,6 +351,11 @@ names:
 - name: "Mohammed Fayez Ahmed Albanna"
   date: 2019-10-01
   url: "https://www.linkedin.com/in/mohammedfayez"
+- name: "himanshu"
+  date: 2019-10-01
+- name: Hanno Böck
+  date: 2019-10-01
+  url: https://hboeck.de/
 - name: "Sergey Belov (Kaimi)"
   date: 2019-10-01
 - name: "Nassim Bouali"
@@ -373,6 +378,9 @@ names:
 - name: "Muhammad. R. Maulana"
   date: 2019-10-01
   url: "https://twitter.com/agamimaulana"
+- name: "Griffin Francis"
+  date: 2019-10-01
+  url: "https://twitter.com/aussinfosec"
 - name: "Abdellah Nadi"
   date: 2019-10-01
   url: "https://hackerone.com/abdellah29"
@@ -505,6 +513,9 @@ names:
   url: "https://twitter.com/NateTheRiver"
 - name: "Will Vandevanter"
   date: 2018-04-01
+- name: "Aryan Sinha"
+  date: 2018-04-01
+  url: "https://www.aryansinha.com/"
 - name: "Ak1t4"
   date: 2018-01-01
   url: "https://twitter.com/knowledge_2014"
