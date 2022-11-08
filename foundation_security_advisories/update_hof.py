@@ -111,7 +111,7 @@ credit_entries = {
     "1cc583009e744f3a2e63c6ca0ca72c10" : "Dhiraj Mishra",
     "1ced3fc2a9846c0b8a9e99db5416fc29" : "Holger Fuhrmannek",
     "1d239c1ff42a3e8e1c16c976020fd45f" : "Philipp Kewisch",
-    "1d2c94a3301ca111ff6bb161b3069a9c" : "Anonymous",
+    "1d2c94a3301ca111ff6bb161b3069a9c" : "redparsec",
     "1d6eb1c6e8a177847eca74cad00fc301" : "José María Acuña Morgado",
     "1e304bfde59dcfb0131e21e913281614" : "Luigi Gubello",
     "1e7c9dd1924cf9763c2507c94be341c2" : "Linus Särud",
