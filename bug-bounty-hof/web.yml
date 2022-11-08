@@ -25,11 +25,28 @@ names:
   url: https://twitter.com/@tomorrowisnew
 - name: endang
   date: 2022-06-27
+- name: Muhamad Visat
+  date: 2022-06-21
+  url: https://www.linkedin.com/in/mvisat
+- name: Naresh LamGade
+  date: 2022-06-14
+  twitter: "@nlamgade"
+  url: https://twitter.com/nlamgade
 - name: redparsec
   date: 2022-06-13
   twitter: "@r3dpars3c"
 - name: Dylan Farrar
   date: 2022-06-13
+- name: BountyOverflow
+  date: 2022-06-09
+  twitter: "@BountyOverflow"
+  url: https://twitter.com/BountyOverflow
+- name: Ahsan Khan
+  date: 2022-06-08
+  twitter: "@hunter0x7"
+  url: https://twitter.com/hunter0x7
+- name: Johan Francsics
+  date: 2022-06-07
 - name: nonsleepr
   date: 2022-06-07
 - name: Tuan Anh Nguyen from Viettel Cyber Security
@@ -39,6 +56,9 @@ names:
   date: 2022-06-04
 - name: Diego Bernal Adelantado
   date: 2022-05-31
+- name: Jaydeepkumar Nasit
+  date: 2022-05-31
+  url: https://www.linkedin.com/in/jaydeep-nasit/
 - name: haxatron1
   date: 2022-05-24
 - name: Bui Dai Gia of VNG Security Response Center
