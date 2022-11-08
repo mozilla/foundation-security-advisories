@@ -75,6 +75,7 @@ https://bugzilla.mozilla.org/buglist.cgi?x=x
 """.replace("\n", "")
 
 credit_entries = {
+    "20d9d642fb41b3732cf919a8eb256d2d":"Mario E. Mejia",
     "1605f48b44fd0a67c5a76371334aaa28":"Axel Chong",
     "dc5e5b4455d895a163dcab8bc5e64a97":"Jannis Rautenstrauch",
     "7c486bb32d071d87dbead8d428bd3dfd":"Naly",
@@ -369,6 +370,7 @@ credit_entries = {
     "fea05bd1b815660051bf5d090eb4e522" : "Aral Yaman",
 }
 twitter_entries = {
+    "20d9d642fb41b3732cf919a8eb256d2d":"@Moblig_",
     "45b6c8b674aa0d31c437d7220d6a9f39":"@reboot_ex",
     "b295cad81920d9da67e35a981b6cb146":"@kang_ali",
     "061748177265860816977bb65cc0147a":"@tomorrowisnew",
