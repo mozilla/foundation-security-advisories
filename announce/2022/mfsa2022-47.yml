@@ -1,0 +1,160 @@
+## mfsa2022-47.yml
+announced: November 15, 2022
+impact: high
+fixed_in:
+- Firefox 107
+title: Security Vulnerabilities fixed in Firefox 107
+advisories:
+  CVE-2022-45403:
+    title: Service Workers might have learned size of cross-origin media files
+    impact: high
+    reporter: Anne van Kesteren and Karl Tomlinson
+    description: |
+      Service Workers should not be able to infer information about opaque cross-origin responses; but timing information for cross-origin media combined with Range requests might have allowed them to determine the presence or length of a media file.
+    bugs:
+      - url: 1762078
+  CVE-2022-45404:
+    title: Fullscreen notification bypass
+    impact: high
+    reporter: Irvan Kurniawan
+    description: |
+      Through a series of popup and <code>window.print()</code> calls, an attacker can cause a window to go fullscreen without the user seeing the notification prompt, resulting in potential user confusion or spoofing attacks.
+    bugs:
+      - url: 1790815
+  CVE-2022-45405:
+    title: Use-after-free in InputStream implementation
+    impact: high
+    reporter: Atte Kettunen
+    description: |
+      Freeing arbitrary <code>nsIInputStream</code>'s on a different thread than creation could have led to a use-after-free and potentially exploitable crash.
+    bugs:
+      - url: 1791314
+  CVE-2022-45406:
+    title: Use-after-free of a JavaScript Realm
+    impact: high
+    reporter: Samuel Groß
+    description: |
+      If an out-of-memory condition occurred when creating a JavaScript global, a JavaScript realm may be deleted while references to it lived on in a BaseShape. This could lead to a use-after-free causing a potentially exploitable crash.
+    bugs:
+      - url: 1791975
+  CVE-2022-45407:
+    title: Loading fonts on workers was not thread-safe
+    impact: high
+    reporter: Armin Ebert
+    description: |
+      If an attacker loaded a font using <code>FontFace()</code> on a background worker, a use-after-free could have occurred, leading to a potentially exploitable crash.
+    bugs:
+      - url: 1793314
+  CVE-2022-45408:
+    title: Fullscreen notification bypass via windowName
+    impact: high
+    reporter: Irvan Kurniawan
+    description: |
+      Through a series of popups that reuse windowName, an attacker can cause a window to go fullscreen without the user seeing the notification prompt, resulting in potential user confusion or spoofing attacks.
+    bugs:
+      - url: 1793829
+  CVE-2022-45409:
+    title: Use-after-free in Garbage Collection
+    impact: high
+    reporter: Gary Kwong
+    description: |
+      The garbage collector could have been aborted in several states and zones and <code>GCRuntime::finishCollection</code> may not have been called, leading to a use-after-free and potentially exploitable crash
+    bugs:
+      - url: 1796901
+  CVE-2022-45410:
+    title: ServiceWorker-intercepted requests bypassed SameSite cookie policy
+    impact: moderate
+    reporter: Dongsung Kim
+    description: |
+      When a ServiceWorker intercepted a request with <code>FetchEvent</code>, the origin of the request was lost after the ServiceWorker took ownership of it.  This had the effect of negating SameSite cookie protections.  This was addressed in the spec and then in browsers.
+    bugs:
+      - url: 1658869
+  CVE-2022-45411:
+    title: Cross-Site Tracing was possible via non-standard override headers
+    impact: moderate
+    reporter: scarlet
+    description: |
+      Cross-Site Tracing occurs when a server will echo a request back via the Trace method, allowing an XSS attack to access to authorization headers and cookies inaccessible to JavaScript (such as cookies protected by HTTPOnly).  To mitigate this attack, browsers placed limits on <code>fetch()</code> and XMLHttpRequest; however some webservers have implemented non-standard headers such as <code>X-Http-Method-Override</code> that override the HTTP method, and made this attack possible again.  Firefox has applied the same mitigations to the use of this and similar headers.
+    bugs:
+      - url: 1790311
+  CVE-2022-45412:
+    title: Symlinks may resolve to partially uninitialized buffers
+    impact: moderate
+    reporter: Armin Ebert
+    description: |
+      When resolving a symlink such as <code>file:///proc/self/fd/1</code>, an error message may be produced where the symlink was resolved to a string containing unitialized memory in the buffer. <br>*This bug only affects Firefox on Unix-based operated systems (Android, Linux, MacOS). Windows is unaffected.*
+    bugs:
+      - url: 1791029
+  CVE-2022-45413:
+    title: SameSite=Strict cookies could have been sent cross-site via intent URLs
+    impact: moderate
+    reporter: Axel Chong
+    description: |
+      Using the <code>S.browser_fallback_url parameter</code> parameter, an attacker could redirect a user to a URL and cause SameSite=Strict cookies to be sent.<br>*This issue only affects Firefox for Android. Other operating systems are not affected.*
+    bugs:
+      - url: 1791201
+  CVE-2022-40674:
+    title: Use-after-free vulnerability in expat
+    impact: moderate
+    reporter: Rhodri James
+    description: |
+      A flaw in XML parsing could have led to a use-after-free causing a potentially exploitable crash.<br>*In official releases of Firefox this vulnerability is mitigated by wasm sandboxing; versions managed by Linux distributions may have other settings.*
+    bugs:
+      - url: 1791598
+  CVE-2022-45415:
+    title: Downloaded file may have been saved with malicious extension
+    impact: moderate
+    reporter: Jefferson Scher and Jayateertha Guruprasad
+    description: |
+      When downloading an HTML file, if the title of the page was formatted as a filename with a malicious extension, Firefox may have saved the file with that extension, leading to possible system compromise if the downloaded file was later ran.
+    bugs:
+      - url: 1793551
+  CVE-2022-45416:
+    title: Keystroke Side-Channel Leakage
+    impact: moderate
+    reporter: Erik Kraft, Martin Schwarzl, and Andrew McCreight
+    description: |
+      Keyboard events reference strings like "KeyA" that were at fixed, known, and widely-spread addresses. Cache-based timing attacks such as Prime+Probe could have possibly figured out which keys were being pressed.
+    bugs:
+      - url: 1793676
+  CVE-2022-45417:
+    title: Service Workers in Private Browsing Mode may have been written to disk
+    impact: moderate
+    reporter: Kagami
+    description: |
+      Service Workers did not detect Private Browsing Mode correctly in all cases, which could have led to Service Workers being written to disk for websites visited in Private Browsing Mode.  This would not have persisted them in a state where they would run again, but it would have leaked Private Browsing Mode details to disk.
+    bugs:
+      - url: 1794508
+  CVE-2022-45418:
+    title: Custom mouse cursor could have been drawn over browser UI
+    impact: moderate
+    reporter: Hafiizh
+    description: |
+      If a custom mouse cursor is specified in CSS, under certain circumstances the cursor could have been drawn over the browser UI, resulting in potential user confusion or spoofing attacks.
+    bugs:
+      - url: 1795815
+  CVE-2022-45419:
+    title: Deleting a security exception did not take effect immediately
+    impact: low
+    reporter: Ronald Crane
+    description: |
+      If the user added a security exception for an invalid TLS certificate, opened an ongoing TLS connection with a server that used that certificate, and then deleted the exception, Firefox would have kept the connection alive, making it seem like the certificate was still trusted.
+    bugs:
+      - url: 1716082
+  CVE-2022-45420:
+    title: Iframe contents could be rendered outside the iframe
+    impact: low
+    reporter: Suhwan Song of SNU CompSec Lab
+    description: |
+      Using tables inside of an iframe, an attacker could have caused iframe contents to be rendered outside the boundaries of the iframe, resulting in potential user confusion or spoofing attacks.
+    bugs:
+      - url: 1792643
+  CVE-2022-45421:
+    title: Memory safety bugs fixed in Firefox 107 and Firefox ESR 102.5
+    impact: high
+    reporter: Mozilla developers
+    description: |
+      Mozilla developers Andrew McCreight and Gabriele Svelto reported memory safety bugs present in Firefox 106 and Firefox ESR 102.4. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1767920, 1789808, 1794061
+        desc: Memory safety bugs fixed in Firefox 107 and Firefox ESR 102.5
