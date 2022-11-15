@@ -75,6 +75,19 @@ https://bugzilla.mozilla.org/buglist.cgi?x=x
 """.replace("\n", "")
 
 credit_entries = {
+    "dc5e5b4455d895a163dcab8bc5e64a97":"Jannis Rautenstrauch",
+    "7c486bb32d071d87dbead8d428bd3dfd":"Naly",
+    "3fd6daa83cd0821ca8584ad0c74e34d1":"Chaobin Zhang",
+    "8425ef2a3a2007409b50dea485ca0422":"Cybeats PSI Team",
+    "b59e0dfdafc46b678d198dcd4e031f9d":"Mateusz Sionkowski",
+    "0a01a5e6c30ea6e71f5ce82750529c8c":"Gareth Heyes",
+    "57cdfb795bf462560baef0c7da02d658":"Suhwan Song of SNU CompSec Lab",
+    "1d2c94a3301ca111ff6bb161b3069a9c":"redparsec",
+    "45b6c8b674aa0d31c437d7220d6a9f39":"Khan Janny",
+    "74babab05ed106d8a937c4ff19e7dbac":"Dylan Farrar",
+    "b295cad81920d9da67e35a981b6cb146":"Ali Syarief",
+    "061748177265860816977bb65cc0147a":"Brandon Roldan",
+    "9a653dd5b8871f60bd37caaa411d427a":"Saad Alhrby",
     "028ff665214190ae419f0febbdff465f" : "James Grant",
     "047a2ade7fdc3c6d84d5dbea228fe71e" : "Julien Maladrie",
     "05c9059021985684d94c2631e62b9d12" : "Zhang Hanming from 360 Vulcan team",
@@ -353,6 +366,11 @@ credit_entries = {
     "fea05bd1b815660051bf5d090eb4e522" : "Aral Yaman",
 }
 twitter_entries = {
+    "45b6c8b674aa0d31c437d7220d6a9f39":"@reboot_ex",
+    "b295cad81920d9da67e35a981b6cb146":"@kang_ali",
+    "061748177265860816977bb65cc0147a":"@tomorrowisnew",
+    "1d2c94a3301ca111ff6bb161b3069a9c":"@r3dpars3c",
+    "9a653dd5b8871f60bd37caaa411d427a":"@lazysaad",
     "0c7f4b38ad0b504cfc48042e14564cc8" : "@pdjstone",
     "0cdb9b89f615c444f832e56c844e9e75" : "@ally_o_malley",
     "0eaafbf6f9aabe86a4b040ca50d9191a" : "@5hint0",
@@ -423,6 +441,10 @@ twitter_entries = {
     "fe7f319c61c0b44d4cb751afda4f4aeb" : "@Gaurav_00000",
 }
 url_entries = {
+    "3fd6daa83cd0821ca8584ad0c74e34d1":"https://github.com/zhchbin",
+    "b59e0dfdafc46b678d198dcd4e031f9d":"https://www.youtube.com/channel/UCUbCnVzyWy4087CAxvL-cbA",
+    "0a01a5e6c30ea6e71f5ce82750529c8c":"https://garethheyes.co.uk/",
+    "1e7c9dd1924cf9763c2507c94be341c2":"https://zulln.se/",
     "0f14322cc49704ac5551ffe5835abd69" : "https://www.wayanadweb.com",
     "1248a90a05c7e3a46b97e6aceeb557ce" : "https://skylined.nl",
     "15acbd736229d79a8ed92e690164559c" : "https://www.nilsand.re/",
