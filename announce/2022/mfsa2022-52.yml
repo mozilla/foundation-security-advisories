@@ -1,0 +1,64 @@
+## mfsa2022-52.yml
+announced: December 13, 2022
+impact: high
+fixed_in:
+- Firefox ESR 102.6
+title: Security Vulnerabilities fixed in Firefox ESR 102.6
+advisories:
+  CVE-2022-46880:
+    title: Use-after-free in WebGL
+    impact: high
+    reporter: Atte Kettunen
+    description: |
+      A missing check related to tex units could have led to a use-after-free and potentially exploitable crash.
+    bugs:
+      - url: 1749292
+  CVE-2022-46872:
+    title: Arbitrary file read from a compromised content process
+    impact: high
+    reporter: Nika Layzell
+    description: |
+      An attacker who compromised a content process could have partially escaped the sandbox to read arbitrary files via clipboard-related IPC messages.<br>*This bug only affects Firefox for Linux. Other operating systems are unaffected.*
+    bugs:
+      - url: 1799156
+  CVE-2022-46881:
+    title: Memory corruption in WebGL
+    impact: high
+    reporter: Karl and an Anonymous ASAN Nightly User
+    description: |
+      An optimization in WebGL was incorrect in some cases, and could have led to memory corruption and a potentially exploitable crash.
+    bugs:
+      - url: 1770930
+  CVE-2022-46874:
+    title: Drag and Dropped Filenames could have been truncated to malicious extensions
+    impact: moderate
+    reporter: Matthias Zoellner
+    description: |
+      A file with a long filename could have had its filename truncated to remove the valid extension, leaving a malicious extension in its place. This could potentially led to user confusion and the execution of malicious code.
+    bugs:
+      - url: 1746139
+  CVE-2022-46875:
+    title: Download Protections were bypassed by .atloc and .ftploc files on Mac OS
+    impact: moderate
+    reporter: Dohyun Lee
+    description: |
+      The executable file warning was not presented when downloading .atloc and .ftploc files, which can run commands on a user's computer. <br>*Note: This issue only affected Mac OS operating systems. Other operating systems are unaffected.*
+    bugs:
+      - url: 1786188
+  CVE-2022-46882:
+    title: Use-after-free in WebGL
+    impact: moderate
+    reporter: Irvan Kurniawan
+    description: |
+      A use-after-free in WebGL extensions could have led to a potentially exploitable crash.
+    bugs:
+      - url: 1789371
+  CVE-2022-46878:
+    title: Memory safety bugs fixed in Firefox 108 and Firefox ESR 102.6
+    impact: high
+    reporter: Mozilla developers
+    description: |
+      Mozilla developers Randell Jesup, Valentin Gosu, Olli Pettay, and the Mozilla Fuzzing Team reported memory safety bugs present in Firefox 107 and Firefox ESR 102.5. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1782219, 1797370, 1797685, 1801102, 1801315, 1802395
+        desc: Memory safety bugs fixed in Firefox 108 and Firefox ESR 102.6

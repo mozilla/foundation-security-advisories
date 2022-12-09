@@ -4,6 +4,8 @@ impact: high
 fixed_in:
 - Firefox 107
 title: Security Vulnerabilities fixed in Firefox 107
+description: |
+  This advisory was updated December 13, 2022 to add CVE-2022-46882 and CVE-2022-46883. Both fixes were included in the original release of Firefox 107, but did not appear in the advisory published at that time.
 advisories:
   CVE-2022-45403:
     title: Service Workers might have learned size of cross-origin media files
@@ -133,6 +135,14 @@ advisories:
       If a custom mouse cursor is specified in CSS, under certain circumstances the cursor could have been drawn over the browser UI, resulting in potential user confusion or spoofing attacks.
     bugs:
       - url: 1795815
+  CVE-2022-46882:
+    title: Use-after-free in WebGL
+    impact: moderate
+    reporter: Irvan Kurniawan
+    description: |
+      A use-after-free in WebGL extensions could have led to a potentially exploitable crash.<br />*Note*: This advisory was added on December 13th, 2022 after we better understood the impact of the issue. The fix was included in the original release of Firefox 107.
+    bugs:
+      - url: 1789371
   CVE-2022-45419:
     title: Deleting a security exception did not take effect immediately
     impact: low
@@ -158,3 +168,12 @@ advisories:
     bugs:
       - url: 1767920, 1789808, 1794061
         desc: Memory safety bugs fixed in Firefox 107 and Firefox ESR 102.5
+  CVE-2022-46883:
+    title: Memory safety bugs fixed in Firefox 107
+    impact: high
+    reporter: Mozilla developers
+    description: |
+      Mozilla developers Gabriele Svelto, Yulia Startsev, Andrew McCreight and the Mozilla Fuzzing Team reported memory safety bugs present in Firefox 106. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.<br />*Note*: This advisory was added on December 13th, 2022 after discovering it was inadvertently left out of the original advisory. The fix was included in the original release of Firefox 107.
+    bugs:
+      - url: 1584674, 1791152, 1792241, 1792984, 1793127, 1794645
+        desc: Memory safety bugs fixed in Firefox 107

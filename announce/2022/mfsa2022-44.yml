@@ -4,6 +4,8 @@ impact: high
 fixed_in:
 - Firefox 106
 title: Security Vulnerabilities fixed in Firefox 106
+description: |
+  This advisory was updated December 13, 2022 to add CVE-2022-46881 and CVE-2022-46885. Both fixes were included in the original release of Firefox 106, but did not appear in the advisory published at that time.
 advisories:
   CVE-2022-42927:
     title: Same-origin policy violation could have leaked cross-origin URLs
@@ -21,6 +23,14 @@ advisories:
       Certain types of allocations were missing annotations that, if the Garbage Collector was in a specific state, could have lead to memory corruption and a potentially exploitable crash.
     bugs:
       - url: 1791520
+  CVE-2022-46881:
+    title: Memory corruption in WebGL
+    impact: high
+    reporter: Karl and an Anonymous ASAN Nightly User
+    description: |
+      An optimization in WebGL was incorrect in some cases, and could have led to memory corruption and a potentially exploitable crash.<br />*Note*: This advisory was added on December 13th, 2022 after we better understood the impact of the issue. The fix was included in the original release of Firefox 106.
+    bugs:
+      - url: 1770930
   CVE-2022-42929:
     title: Denial of Service via window.print
     impact: moderate
@@ -29,6 +39,14 @@ advisories:
       If a website called <code>window.print()</code> in a particular way, it could cause a denial of service of the browser, which may persist beyond browser restart depending on the user's session restore settings.
     bugs:
       - url: 1789439
+  CVE-2022-42930:
+    title: Potential use-after-free in SVG Images
+    impact: moderate
+    reporter: Timothy Nikkel
+    description: |
+      A potential use-after-free vulnerability existed in SVG Images if the Refresh Driver was destroyed at an inopportune time.  This could have lead to memory corruption or a potentially exploitable crash.<br />*Note*: This advisory was added on December 13th, 2022 after discovering it was inadvertently left out of the original advisory. The fix was included in the original release of Firefox 106.
+    bugs:
+      - url: 1786818
   CVE-2022-42930:
     title: Race condition in DOM Workers
     impact: moderate
@@ -54,3 +72,12 @@ advisories:
     bugs:
       - url: 1789729, 1791363, 1792041
         desc: Memory safety bugs fixed in Firefox 106 and Firefox ESR 102.4
+  CVE-2022-46885:
+    title: Memory safety bugs fixed in Firefox 106
+    impact: moderate
+    reporter: Mozilla developers
+    description: |
+      Mozilla developers Timothy Nikkel, Ashley Hale, and the Mozilla Fuzzing Team reported memory safety bugs present in Firefox 105. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1786818, 1789729, 1791363, 1792041
+        desc: Memory safety bugs fixed in Firefox 106

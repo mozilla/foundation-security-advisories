@@ -1,0 +1,73 @@
+## mfsa2022-51.yml
+announced: December 13, 2022
+impact: high
+fixed_in:
+- Firefox 108
+title: Security Vulnerabilities fixed in Firefox 108
+advisories:
+  CVE-2022-46871:
+    title: libusrsctp library out of date
+    impact: high
+    reporter: Mozilla Developers
+    description: |
+      An out of date library (libusrsctp) contained vulnerabilities that could potentially be exploited.
+    bugs:
+      - url: 1795697
+  CVE-2022-46872:
+    title: Arbitrary file read from a compromised content process
+    impact: high
+    reporter: Nika Layzell
+    description: |
+      An attacker who compromised a content process could have partially escaped the sandbox to read arbitrary files via clipboard-related IPC messages.<br>*This bug only affects Firefox for Linux. Other operating systems are unaffected.*
+    bugs:
+      - url: 1799156
+  CVE-2022-46873:
+    title: Firefox did not implement the CSP directive unsafe-hashes
+    impact: moderate
+    reporter: Pete Freitag
+    description: |
+      Because Firefox did not implement the <code>unsafe-hashes</code> CSP directive, an attacker who was able to inject markup into a page otherwise protected by a Content Security Policy may have been able to inject executable script.  This would be severely constrained by the specified Content Security Policy of the document.
+    bugs:
+      - url: 1644790
+  CVE-2022-46874:
+    title: Drag and Dropped Filenames could have been truncated to malicious extensions
+    impact: moderate
+    reporter: Matthias Zoellner
+    description: |
+      A file with a long filename could have had its filename truncated to remove the valid extension, leaving a malicious extension in its place. This could have potentially led to user confusion and the execution of malicious code.
+    bugs:
+      - url: 1746139
+  CVE-2022-46875:
+    title: Download Protections were bypassed by .atloc and .ftploc files on Mac OS
+    impact: moderate
+    reporter: Dohyun Lee
+    description: |
+      The executable file warning was not presented when downloading .atloc and .ftploc files, which can run commands on a user's computer. <br>*Note: This issue only affected Mac OS operating systems. Other operating systems are unaffected.*
+    bugs:
+      - url: 1786188
+  CVE-2022-46877:
+    title: Fullscreen notification bypass
+    impact: low
+    reporter: Hafiizh
+    description: |
+      By confusing the browser, the fullscreen notification could have been delayed or suppressed, resulting in potential user confusion or spoofing attacks.
+    bugs:
+      - url: 1795139
+  CVE-2022-46878:
+    title: Memory safety bugs fixed in Firefox 108 and Firefox ESR 102.6
+    impact: high
+    reporter: Mozilla developers
+    description: |
+      Mozilla developers Randell Jesup, Valentin Gosu, Olli Pettay, and the Mozilla Fuzzing Team reported memory safety bugs present in Firefox 107 and Firefox ESR 102.5. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1782219, 1797370, 1797685, 1801102, 1801315, 1802395
+        desc: Memory safety bugs fixed in Firefox 108 and Firefox ESR 102.6
+  CVE-2022-46879:
+    title: Memory safety bugs fixed in Firefox 108
+    impact: high
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers and community members Lukas Bernhard, Gabriele Svelto, Randell Jesup, and the Mozilla Fuzzing Team reported memory safety bugs present in Firefox 107. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1736224, 1793407, 1794249, 1795845, 1797682, 1797720, 1798494, 1799479
+        desc: Memory safety bugs fixed in Firefox 108

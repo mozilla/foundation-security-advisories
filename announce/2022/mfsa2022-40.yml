@@ -4,6 +4,8 @@ impact: high
 fixed_in:
 - Firefox 105
 title: Security Vulnerabilities fixed in Firefox 105
+description: |
+  This advisory was updated December 13, 2022 to add CVE-2022-46880. This fix was included in the original release of Firefox 105, but did not appear in the advisory published at that time.
 advisories:
   CVE-2022-3266:
       title: Out of bounds read when decoding H264
@@ -29,6 +31,14 @@ advisories:
       Concurrent use of the URL parser with non-UTF-8 data was not thread-safe. This could lead to a use-after-free causing a potentially exploitable crash.
     bugs:
       - url: 1787633
+  CVE-2022-46880:
+    title: Use-after-free in WebGL
+    impact: high
+    reporter: Atte Kettunen
+    description: |
+      A missing check related to tex units could have led to a use-after-free and potentially exploitable crash.<br />*Note*: This advisory was added on December 13th, 2022 after we better understood the impact of the issue. The fix was included in the original release of Firefox 105.
+    bugs:
+      - url: 1749292
   CVE-2022-40958:
     title: Bypassing Secure Context restriction for cookies with __Host and __Secure prefix
     impact: moderate
