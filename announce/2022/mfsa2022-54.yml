@@ -1,0 +1,17 @@
+## mfsa2022-53.yml
+announced: December 20, 2022
+impact: high
+fixed_in:
+- Thunderbird 102.6.1
+title: Security Vulnerabilities fixed in Thunderbird 102.6.1
+description: |
+  *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
+advisories:
+  CVE-2022-46874:
+    title: Drag and Dropped Filenames could have been truncated to malicious extensions
+    impact: moderate
+    reporter: Matthias Zoellner
+    description: |
+      A file with a long filename could have had its filename truncated to remove the valid extension, leaving a malicious extension in its place. This could potentially led to user confusion and the execution of malicious code.<br/>*Note*: This issue was originally included in the advisories for Thunderbird 102.6, but a patch (specific to Thunderbird) was omitted, resulting in it actually being fixed in Thunderbird 102.6.1
+    bugs:
+      - url: 1746139

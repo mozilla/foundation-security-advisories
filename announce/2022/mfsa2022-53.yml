@@ -1,11 +1,11 @@
-## mfsa2022-52.yml
+## mfsa2022-53.yml
 announced: December 13, 2022
 impact: high
 fixed_in:
 - Thunderbird 102.6
 title: Security Vulnerabilities fixed in Thunderbird 102.6
 description: |
-  *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
+  *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*<br /><br/>*Note*: CVE-2022-46874 was originally included in these advisories for Thunderbird 102.6, but a patch (specific to Thunderbird) was omitted, resulting in it actually being fixed in Thunderbird 102.6.1
 advisories:
   CVE-2022-46880:
     title: Use-after-free in WebGL
@@ -31,14 +31,6 @@ advisories:
       An optimization in WebGL was incorrect in some cases, and could have led to memory corruption and a potentially exploitable crash.
     bugs:
       - url: 1770930
-  CVE-2022-46874:
-    title: Drag and Dropped Filenames could have been truncated to malicious extensions
-    impact: moderate
-    reporter: Matthias Zoellner
-    description: |
-      A file with a long filename could have had its filename truncated to remove the valid extension, leaving a malicious extension in its place. This could potentially led to user confusion and the execution of malicious code.
-    bugs:
-      - url: 1746139
   CVE-2022-46875:
     title: Download Protections were bypassed by .atloc and .ftploc files on Mac OS
     impact: moderate
