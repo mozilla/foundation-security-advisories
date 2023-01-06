@@ -376,6 +376,7 @@ credit_entries = {
     "fdfe2689e2668dcfe620ac81a741fde8" : "Harsh Banshpal",
     "fe7f319c61c0b44d4cb751afda4f4aeb" : "Gaurav Popalghat",
     "fea05bd1b815660051bf5d090eb4e522" : "Aral Yaman",
+    "2e1575d6141ca69287e4f55ef6fec159" : "Jake Nicholson",
 }
 twitter_entries = {
     "0078828862f4973eece40d1be8510a0b":"JayateerthaG",
@@ -428,7 +429,6 @@ twitter_entries = {
     "af5f683612b2560ceeb75586a09f8525" : "@ar_arv1nd",
     "b1a7c3c63dd184cfac07998a22977ccc" : "@hm_harshit",
     "b1bce803655916f8687d2da2787a17c6" : "@clavoillotte",
-    "b295cad81920d9da67e35a981b6cb146" : "@kang_ali",
     "b5e1a616809a7f78f4b1709fa2cae1ac" : "@stevenmcrane ",
     "b6b492ddfce021c3a9cfe5b12b6c87c4" : "@Pwnrin",
     "cb595bf0c104ec202ec824f464a2893f" : "https://www.linkedin.com/in/mehboob-shaikh-7791a3169",
@@ -455,6 +455,8 @@ twitter_entries = {
     "fe7f319c61c0b44d4cb751afda4f4aeb" : "@Gaurav_00000",
 }
 url_entries = {
+    "2e1575d6141ca69287e4f55ef6fec159" : "https://www.linkedin.com/in/dimedaughter/",
+    "b295cad81920d9da67e35a981b6cb146" : "https://www.linkedin.com/in/mohammad-ali-syarief/",
     "918c93c03389817a230ce0b462634fde":"https://www.linkedin.com/in/manojkumar-j-7ba35b202/",
     "0d2e405bda8a025f471b28904acaa766":"https://grayduck.mn",
     "8222a267aa38fb97e9e1535d05383445":"https://danielv.com.br/",
