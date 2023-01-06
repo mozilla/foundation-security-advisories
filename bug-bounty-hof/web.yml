@@ -1,6 +1,7 @@
 names:
-- name: jake
+- name: Jake Nicholson
   date: 2022-12-19
+  url: https://www.linkedin.com/in/dimedaughter/
 - name: redparsec
   date: 2022-11-28
   twitter: "@r3dpars3c"
@@ -100,8 +101,7 @@ names:
   date: 2022-05-16
 - name: Ali Syarief
   date: 2022-05-11
-  twitter: "@kang_ali"
-  url: https://twitter.com/@kang_ali
+  url: https://www.linkedin.com/in/mohammad-ali-syarief/
 - name: Brian Carpenter of Geeknik Labs & Farm
   date: 2022-05-10
   twitter: "@geeknik"
