@@ -1,4 +1,36 @@
 names:
+- name: jake
+  date: 2022-12-19
+- name: redparsec
+  date: 2022-11-28
+  twitter: "@r3dpars3c"
+  url: https://twitter.com/@r3dpars3c
+- name: Leonardo Junior
+  date: 2022-11-25
+- name: Jаmes Kettle
+  date: 2022-11-14
+- name: Chester van den Bogaard
+  date: 2022-11-07
+  url: https://www.linkedin.com/in/chester-van-den-bogaard/
+- name: Aariz Khan
+  date: 2022-11-07
+  url: https://www.linkedin.com/in/aarizkhan
+- name: Fredrik Nordberg Almroth
+  date: 2022-11-07
+- name: Vladyslav Kotko
+  date: 2022-11-02
+- name: 40826d
+  date: 2022-10-31
+- name: daniel_v
+  date: 2022-10-31
+  url: https://danielv.com.br/
+- name: Griffin Francis
+  date: 2022-10-31
+- name: Muhammad Zaid Ghifari
+  date: 2022-10-24
+- name: Manojkumar J
+  date: 2022-10-05
+  url: https://www.linkedin.com/in/manojkumar-j-7ba35b202/
 - name: David Klein
   date: 2022-09-21
 - name: Meet Narkhede

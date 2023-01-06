@@ -1,4 +1,51 @@
 names:
+- name: Luan Herrera
+  date: 2022-12-13
+- name: Mohamed Sabt
+  date: 2022-12-13
+- name: Vadim
+  date: 2022-12-13
+- name: Axel Chong
+  date: 2022-11-22
+- name: Irvan Kurniawan (sourc7)
+  date: 2022-11-15
+  url: https://www.linkedin.com/in/sourc7/
+- name: Atte Kettunen
+  date: 2022-11-08
+  twitter: "@attekett"
+  url: https://twitter.com/@attekett
+- name: April King
+  date: 2022-11-08
+  url: https://grayduck.mn
+- name: Matthias Zoellner
+  date: 2022-11-05
+- name: Sam Ezeh
+  date: 2022-11-01
+- name: Tim Coen
+  date: 2022-11-01
+- name: Hafiizh
+  date: 2022-10-26
+  url: https://www.linkedin.com/in/hafiizh-7aa6bb31/
+- name: scarlet
+  date: 2022-10-26
+- name: Armin Ebert
+  date: 2022-10-26
+  url: https://rawsec.net/
+- name: Jayateertha Guruprasad
+  date: 2022-10-26
+  twitter: "JayateerthaG"
+  url: https://twitter.com/JayateerthaG
+- name: James Lee
+  date: 2022-10-11
+  twitter: "@Windowsrcer"
+  url: https://twitter.com/@Windowsrcer
+- name: Suhwan Song of SNU CompSec Lab
+  date: 2022-10-11
+- name: Willy R. Vasquez (wrv)
+  date: 2022-10-07
+- name: Ronald Crane
+  date: 2022-10-06
+  url: https://www.zippenhop.com/
 - name: Axel Chong
   date: 2022-09-20
 - name: Andrei Enache

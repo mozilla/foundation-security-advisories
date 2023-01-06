@@ -75,6 +75,16 @@ https://bugzilla.mozilla.org/buglist.cgi?x=x
 """.replace("\n", "")
 
 credit_entries = {
+    "52eef32d4db6d18d2ef539868933b1ef":"Tim Coen",
+    "0078828862f4973eece40d1be8510a0b":"Jayateertha Guruprasad",
+    "918c93c03389817a230ce0b462634fde":"Manojkumar J",
+    "0d2e405bda8a025f471b28904acaa766":"April King",
+    "8c69a76d853e3002e457c95aab599317":"scarlet",
+    "042ce73faaaaf8862e36f31eedee3fb3":"Willy R. Vasquez (wrv)",
+    "69e181768b9fc29f3ab0e7c668ce89ad":"Sam Ezeh",
+    "8222a267aa38fb97e9e1535d05383445":"daniel_v",
+    "f4ff034629bf0d9943a31a5437c3c1fe":"Chester van den Bogaard",
+    "875bd7d8b1b73f362dfaaf486bcae23e":"40826d",
     "028ff665214190ae419f0febbdff465f" : "James Grant",
     "047a2ade7fdc3c6d84d5dbea228fe71e" : "Julien Maladrie",
     "05c9059021985684d94c2631e62b9d12" : "Zhang Hanming from 360 Vulcan team",
@@ -368,6 +378,7 @@ credit_entries = {
     "fea05bd1b815660051bf5d090eb4e522" : "Aral Yaman",
 }
 twitter_entries = {
+    "0078828862f4973eece40d1be8510a0b":"JayateerthaG",
     "061748177265860816977bb65cc0147a" : "@tomorrowisnew",
     "0c7f4b38ad0b504cfc48042e14564cc8" : "@pdjstone",
     "0cdb9b89f615c444f832e56c844e9e75" : "@ally_o_malley",
@@ -444,6 +455,10 @@ twitter_entries = {
     "fe7f319c61c0b44d4cb751afda4f4aeb" : "@Gaurav_00000",
 }
 url_entries = {
+    "918c93c03389817a230ce0b462634fde":"https://www.linkedin.com/in/manojkumar-j-7ba35b202/",
+    "0d2e405bda8a025f471b28904acaa766":"https://grayduck.mn",
+    "8222a267aa38fb97e9e1535d05383445":"https://danielv.com.br/",
+    "f4ff034629bf0d9943a31a5437c3c1fe":"https://www.linkedin.com/in/chester-van-den-bogaard/",
     "0a01a5e6c30ea6e71f5ce82750529c8c" : "https://garethheyes.co.uk/",
     "0f14322cc49704ac5551ffe5835abd69" : "https://www.wayanadweb.com",
     "1248a90a05c7e3a46b97e6aceeb557ce" : "https://skylined.nl",
@@ -571,6 +586,9 @@ def is_client_bug(bug):
             # this is an edge case we should validate and improve
             raise Exception("Classification: '{0}' Product: '{1}' Component: '{2}' is not considered a client bug, please confirm.".format(bug['classification'], bug['product'], bug['component']))
     
+    if bug['product'] == 'Firefox' and bug['component'] in ["Firefox Monitor"]:
+        return False
+
     return bug['product'] in client_products
 
 # Set up the requests retry/backoff strategy
