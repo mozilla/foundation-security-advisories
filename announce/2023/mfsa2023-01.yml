@@ -1,0 +1,89 @@
+## mfsa2023-01.yml
+announced: January 17th, 2023
+impact: high
+fixed_in:
+- Firefox 109
+title: Security Vulnerabilities fixed in Firefox 109
+advisories:
+  CVE-2023-23597:
+    title: Logic bug in process allocation allowed to read arbitrary files
+    impact: high
+    reporter: Niklas Baumstark
+    description: |
+      A compromised web child process could disable web security opening restrictions, leading to a new child process being spawned within the <code>file://</code> context. Given a reliable exploit primitive, this new process could be exploited again leading to arbitrary file read.
+    bugs:
+      - url: 1538028
+  CVE-2023-23598:
+    title: Arbitrary file read from GTK drag and drop on Linux
+    impact: high
+    reporter: Tom Schuster
+    description: |
+      Due to the Firefox GTK wrapper code's use of text/plain for drag data and GTK treating all text/plain MIMEs containing file URLs as being dragged a website could arbitrarily read a file via a call to <code>DataTransfer.setData</code>.
+    bugs:
+      - url: 1800425
+  CVE-2023-23599:
+    title: Malicious command could be hidden in devtools output on Windows
+    impact: moderate
+    reporter: Vadim
+    description: |
+      When copying a network request from the developer tools panel as a curl command the output was not being properly sanitized and could allow arbitrary commands to be hidden within.
+    bugs:
+      - url: 1777800
+  CVE-2023-23600:
+    title: Notification permissions persisted between Normal and Private Browsing on Android
+    impact: moderate
+    reporter: Kazuki Nomoto of Waseda University
+    description: |
+      Per origin notification permissions were being stored in a way that didn't take into account what browsing context the permission was granted in. This lead to the possibility of notifications to be displayed during different browsing sessions.<br>*This bug only affects Firefox for Android. Other operating systems are unaffected.*
+    bugs:
+      - url: 1787034
+  CVE-2023-23601:
+    title: URL being dragged from cross-origin iframe into same tab triggers navigation
+    impact: moderate
+    reporter: Luan Herrera
+    description: |
+      Navigations were being allowed when dragging a URL from a cross-origin iframe into the same tab which could lead to website spoofing attacks
+    bugs:
+      - url: 1794268
+  CVE-2023-23602:
+    title: Content Security Policy wasn't being correctly applied to WebSockets in WebWorkers
+    impact: moderate
+    reporter: Dave Vandyke
+    description: |
+      A mishandled security check when creating a WebSocket in a WebWorker caused the Content Security Policy connect-src header to be ignored. This could lead to connections to restricted origins from inside WebWorkers.
+    bugs:
+      - url: 1800890
+  CVE-2023-23603:
+    title: Calls to <code>console.log</code> allowed bypasing Content Security Policy via format directive
+    impact: low
+    reporter: Dan Veditz
+    description: |
+      Regular expressions used to filter out forbidden properties and values from style directives in calls to <code>console.log</code> weren't accounting for external URLs. Data could then be potentially exfiltrated from the browser.
+    bugs:
+      - url: 1800832
+  CVE-2023-23604:
+    title: Creation of duplicate <code>SystemPrincipal</code> from less secure contexts
+    impact: low
+    reporter: Nika Layzell
+    description: |
+      A duplicate <code>SystemPrincipal</code> object could be created when parsing a non-system html document via <code>DOMParser::ParseFromSafeString</code>. This could have lead to bypassing web security checks.
+    bugs:
+      - url: 1802346
+  CVE-2023-23605:
+    title: Memory safety bugs fixed in Firefox 109 and Firefox ESR 102.7
+    impact: high
+    reporter: Mozilla developers
+    description: |
+      Mozilla developers and the Mozilla Fuzzing Team reported memory safety bugs present in Firefox 108 and Firefox ESR 102.6. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1764921, 1802690, 1806974
+        desc: Memory safety bugs fixed in Firefox 109 and Firefox ESR 102.7
+  CVE-2023-23606:
+    title: Memory safety bugs fixed in Firefox 109
+    impact: high
+    reporter: Mozilla developers
+    description: |
+      Mozilla developers and the Mozilla Fuzzing Team reported memory safety bugs present in Firefox 108. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1764974, 1798591, 1799201, 1800446, 1801248, 1802100, 1803393, 1804626, 1804971, 1807004
+        desc: Memory safety bugs fixed in Firefox 109
