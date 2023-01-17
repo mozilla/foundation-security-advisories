@@ -5,8 +5,16 @@ fixed_in:
 - Thunderbird 91.3
 title: Security Vulnerabilities fixed in Thunderbird 91.3
 description: |
-  *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
+  *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*<br />This advisory was updated January 17, 2023 to add CVE-2021-43529. This fix was included in the original release of Thunderbird 91.3, but did not appear in the advisory published at that time.
 advisories:
+  CVE-2021-43529:
+     title:  Memory corruption when processing S/MIME messages
+     impact: critical
+     reporter: Tavis Ormandy
+     description: |
+       Thunderbird versions prior to 91.3.0 are vulnerable to the heap overflow described in CVE-2021-43527 when processing S/MIME messages. Thunderbird versions 91.3.0 and later will not call the vulnerable code when processing S/MIME messages that contain certificates with DER-encoded DSA or RSA-PSS signatures.<br>Note: This advisory was added on January 17, 2023 after discovering it was inadvertently left out of the original advisory. The fix was included in the original release of Thunderbird 91.3.
+     bugs:
+       - url: 1738501
   CVE-2021-38503:
     title: iframe sandbox rules did not apply to XSLT stylesheets
     impact: high
