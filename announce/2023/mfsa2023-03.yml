@@ -1,0 +1,74 @@
+## mfsa2023-03.yml
+announced: January 18th, 2023
+impact: high
+fixed_in:
+- Thunderbird 102.7
+title: Security Vulnerabilities fixed in Thunderbird 102.7
+description: |
+  *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
+advisories:
+  CVE-2022-46871:
+    title: libusrsctp library out of date
+    impact: high
+    reporter: Mozilla Developers
+    description: |
+      An out of date library (libusrsctp) contained vulnerabilities that could potentially be exploited.
+    bugs:
+      - url: 1795697
+  CVE-2023-23598:
+    title: Arbitrary file read from GTK drag and drop on Linux
+    impact: high
+    reporter: Tom Schuster
+    description: |
+      Due to the Thunderbird GTK wrapper code's use of text/plain for drag data and GTK treating all text/plain MIMEs containing file URLs as being dragged a website could arbitrarily read a file via a call to <code>DataTransfer.setData</code>.
+    bugs:
+      - url: 1800425
+  CVE-2023-23599:
+    title: Malicious command could be hidden in devtools output on Windows
+    impact: moderate
+    reporter: Vadim
+    description: |
+      When copying a network request from the developer tools panel as a curl command the output was not being properly sanitized and could allow arbitrary commands to be hidden within.
+    bugs:
+      - url: 1777800
+  CVE-2023-23601:
+    title: URL being dragged from cross-origin iframe into same tab triggers navigation
+    impact: moderate
+    reporter: Luan Herrera
+    description: |
+      Navigations were being allowed when dragging a URL from a cross-origin iframe into the same tab which could lead to website spoofing attacks
+    bugs:
+      - url: 1794268
+  CVE-2023-23602:
+    title: Content Security Policy wasn't being correctly applied to WebSockets in WebWorkers
+    impact: moderate
+    reporter: Dave Vandyke
+    description: |
+      A mishandled security check when creating a WebSocket in a WebWorker caused the Content Security Policy connect-src header to be ignored. This could lead to connections to restricted origins from inside WebWorkers.
+    bugs:
+      - url: 1800890
+  CVE-2022-46877:
+    title: Fullscreen notification bypass
+    impact: low
+    reporter: Hafiizh
+    description: |
+      By confusing the browser, the fullscreen notification could have been delayed or suppressed, resulting in potential user confusion or spoofing attacks.
+    bugs:
+      - url: 1795139
+  CVE-2023-23603:
+    title: Calls to <code>console.log</code> allowed bypasing Content Security Policy via format directive
+    impact: low
+    reporter: Dan Veditz
+    description: |
+      Regular expressions used to filter out forbidden properties and values from style directives in calls to <code>console.log</code> weren't accounting for external URLs. Data could then be potentially exfiltrated from the browser.
+    bugs:
+      - url: 1800832
+  CVE-2023-23605:
+    title: Memory safety bugs fixed in Thunderbird 102.7
+    impact: high
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers and the Mozilla Fuzzing Team reported memory safety bugs present in Thunderbird 102.6. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1764921, 1802690, 1806974
+        desc: Memory safety bugs fixed in Thunderbird 102.7
