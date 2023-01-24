@@ -54,7 +54,7 @@ advisories:
     bugs:
       - url: 1800890
   CVE-2023-23603:
-    title: Calls to <code>console.log</code> allowed bypasing Content Security Policy via format directive
+    title: Calls to console.log allowed bypasing Content Security Policy via format directive
     impact: low
     reporter: Dan Veditz
     description: |
@@ -62,7 +62,7 @@ advisories:
     bugs:
       - url: 1800832
   CVE-2023-23604:
-    title: Creation of duplicate <code>SystemPrincipal</code> from less secure contexts
+    title: Creation of duplicate SystemPrincipal from less secure contexts
     impact: low
     reporter: Nika Layzell
     description: |

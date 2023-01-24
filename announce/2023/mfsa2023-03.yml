@@ -56,7 +56,7 @@ advisories:
     bugs:
       - url: 1795139
   CVE-2023-23603:
-    title: Calls to <code>console.log</code> allowed bypasing Content Security Policy via format directive
+    title: Calls to console.log allowed bypasing Content Security Policy via format directive
     impact: low
     reporter: Dan Veditz
     description: |
