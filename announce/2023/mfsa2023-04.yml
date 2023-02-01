@@ -1,0 +1,15 @@
+## mfsa2023-03.yml
+announced: January 23th, 2023
+impact: high
+fixed_in:
+- Thunderbird 102.7.1
+title: Security Vulnerabilities fixed in Thunderbird 102.7.1
+advisories:
+  CVE-2023-0430:
+    title: Revocation status of S/Mime signature certificates was not checked
+    impact: high
+    reporter: Paul Menzel
+    description: |
+      Certificate OCSP revocation status was not checked when verifying S/Mime signatures. Mail signed with a revoked certificate would be displayed as having a valid signature. Thunderbird versions from 68 to 102.7.0 were affected by this bug.
+    bugs:
+      - url: 1769000
