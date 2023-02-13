@@ -1,0 +1,124 @@
+## mfsa2023-06.yml
+announced: February 14, 2023
+impact: high
+fixed_in:
+- Firefox ESR 102.8
+title: Security Vulnerabilities fixed in Firefox ESR 102.8
+advisories:
+  CVE-2023-25728:
+    title: Content security policy leak in violation reports using iframes
+    impact: high
+    reporter: Johan Carlsson
+    description: |
+      The <code>Content-Security-Policy-Report-Only</code> header could allow an attacker to leak a child iframe's unredacted URI when interaction with that iframe triggers a redirect.
+    bugs:
+      - url: 1790345
+  CVE-2023-25730:
+    title: Screen hijack via browser fullscreen mode
+    impact: high
+    reporter: Irvan Kurniawan
+    description: |
+      A background script invoking <code>requestFullscreen</code> and then blocking the main thread could force the browser into fullscreen mode indefinitely, resulting in potential user confusion or spoofing attacks.
+    bugs:
+      - url: 1794622
+  CVE-2023-25743:
+    title: Fullscreen notification not shown in Firefox Focus
+    impact: high
+    reporter: Hafiizh
+    description: |
+      A lack of in app notification for entering fullscreen mode could have lead to a malicious website spoofing browser chrome.<br>*This bug only affects Firefox Focus. Other versions of Firefox are unaffected.*
+    bugs:
+      - url: 1800203
+  CVE-2023-0767:
+    title: Arbitrary memory write via PKCS 12 in NSS
+    impact: high
+    reporter: Christian Holler
+    description: |
+      An attacker could construct a PKCS 12 cert bundle in such a way that could allow for arbitrary memory writes via PKCS 12 Safe Bag attributes being mishandled.
+    bugs:
+      - url: 1804640
+  CVE-2023-25735:
+    title: Potential use-after-free from compartment mismatch in SpiderMonkey
+    impact: high
+    reporter: Samuel Groß
+    description: |
+      Cross-compartment wrappers wrapping a scripted proxy could have caused objects from other compartments to be stored in the main compartment resulting in a use-after-free after unwrapping the proxy.
+    bugs:
+      - url: 1810711
+  CVE-2023-25737:
+    title: 'Invalid downcast in SVGUtils::SetupStrokeGeometry'
+    impact: high
+    reporter: Lukas Bernhard
+    description: |
+      An invalid downcast from <code>nsTextNode</code> to <code>SVGElement</code> could have lead to undefined behavior.
+    bugs:
+      - url: 1811464
+  CVE-2023-25738:
+    title: Printing on Windows could potentially crash Firefox with some device drivers
+    impact: high
+    reporter: Mark
+    description: |
+      Members of the <code>DEVMODEW</code> struct set by the printer device driver weren't being validated and could have resulted in invalid values which in turn would cause the browser to attempt out of bounds access to related variables.<br>*This bug only affects Firefox on Windows. Other operating systems are unaffected.*
+    bugs:
+      - url: 1811852
+  CVE-2023-25739:
+    title: 'Use-after-free in mozilla::dom::ScriptLoadContext::~ScriptLoadContext'
+    impact: high
+    reporter: Holger Fuhrmannek
+    description: |
+      Module load requests that failed were not being checked as to whether or not they were cancelled causing a use-after-free in <code>ScriptLoadContext</code>.
+    bugs:
+      - url: 1811939
+  CVE-2023-25729:
+    title: Extensions could have opened external schemes without user knowledge
+    impact: moderate
+    reporter: Vitor Torres
+    description: |
+      Permission prompts for opening external schemes were only shown for <code>ContentPrincipals</code> resulting in extensions being able to open them without user interaction via <code>ExpandedPrincipals</code>. This could lead to further malicious actions such as downloading files or interacting with software already installed on the system.
+    bugs:
+      - url: 1792138
+  CVE-2023-25732:
+    title: Out of bounds memory write from EncodeInputStream
+    impact: moderate
+    reporter: Ronald Crane
+    description: |
+      When encoding data from an <code>inputStream</code> in <code>xpcom</code> the size of the input being encoded was not correctly calculated potentially leading to an out of bounds memory write.
+    bugs:
+      - url: 1804564
+  CVE-2023-25734:
+    title: Opening local .url files could cause unexpected network loads
+    impact: moderate
+    reporter: Ameen Basha M K and Shaheen Fazim
+    description: |
+      After downloading a Windows <code>.url</code> shortcut from the local filesystem, an attacker could supply a remote path that would lead to unexpected network requests from the operating system.  This also had the potential to leak NTLM credentials to the resource.<br>*This bug only affects Firefox on Windows. Other operating systems are unaffected.*
+    bugs:
+      - url: 1809923
+      - url: 1784451
+      - url: 1810143
+      - url: 1812338
+  CVE-2023-25742:
+    title: Web Crypto ImportKey crashes tab
+    impact: low
+    reporter: Goras Francesco
+    description: |
+      When importing a SPKI RSA public key as ECDSA P-256, the key would be handled incorrectly causing the tab to crash.
+    bugs:
+      - url: 1813424
+  CVE-2023-25744:
+    title: Memory safety bugs fixed in Firefox 110 and Firefox ESR 102.8
+    impact: high
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers Kershaw Chang and the Mozilla Fuzzing Team reported memory safety bugs present in Firefox 109 and Firefox ESR 102.7. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1789449, 1803628, 1810536
+        desc: Memory safety bugs fixed in Firefox 110 and Firefox ESR 102.8
+  CVE-2023-25746:
+    title: Memory safety bugs fixed in Firefox ESR 102.8
+    impact: high
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers Philipp and Gabriele Svelto reported memory safety bugs present in Firefox ESR 102.7. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1544127, 1762368
+        desc: Memory safety bugs fixed in Firefox ESR 102.8
