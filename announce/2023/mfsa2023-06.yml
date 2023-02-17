@@ -21,14 +21,6 @@ advisories:
       A background script invoking <code>requestFullscreen</code> and then blocking the main thread could force the browser into fullscreen mode indefinitely, resulting in potential user confusion or spoofing attacks.
     bugs:
       - url: 1794622
-  CVE-2023-25743:
-    title: Fullscreen notification not shown in Firefox Focus
-    impact: high
-    reporter: Hafiizh
-    description: |
-      A lack of in app notification for entering fullscreen mode could have lead to a malicious website spoofing browser chrome.<br>*This bug only affects Firefox Focus. Other versions of Firefox are unaffected.*
-    bugs:
-      - url: 1800203
   CVE-2023-0767:
     title: Arbitrary memory write via PKCS 12 in NSS
     impact: high
