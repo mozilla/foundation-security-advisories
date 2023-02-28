@@ -1,0 +1,15 @@
+## mfsa2023-08.yml
+announced: February 28, 2023
+impact: high
+fixed_in:
+- Firefox for Android 110.1.0
+title: Security Vulnerabilities fixed in Firefox for Android 110.1.0
+advisories:
+  CVE-2023-25747:
+    title: Potential use-after-free in libaudio when used on Android API <= 30
+    impact: high
+    reporter: Chris Peterson
+    description: |
+      A potential use-after-free in libaudio was fixed by disabling the AAudio backend when running on Android API below version 30.<br>*This bug only affects Firefox for Android. Other versions of Firefox are unaffected.*
+    bugs:
+      - url: 1815801
