@@ -1,0 +1,113 @@
+## mfsa2023-09.yml
+announced: March 14, 2023
+impact: high
+fixed_in:
+- Firefox 111
+title: Security Vulnerabilities fixed in Firefox 111
+advisories:
+  CVE-2023-28159:
+    title: Fullscreen Notification could have been hidden by download popups on Android
+    impact: high
+    reporter: Axel Chong (@Haxatron)
+    description: |
+      The fullscreen notification could have been hidden on Firefox for Android by using download popups, resulting in potential user confusion or spoofing attacks. <br>*This bug only affects Firefox for Android. Other operating systems are unaffected.*
+    bugs:
+      - url: 1783561
+  CVE-2023-25748:
+    title: Fullscreen Notification could have been hidden by window prompts on Android
+    impact: high
+    reporter: Hafiizh
+    description: |
+      By displaying a prompt with a long description, the fullscreen notification could have been hidden, resulting in potential user confusion or spoofing attacks. <br>*This bug only affects Firefox for Android. Other operating systems are unaffected.*
+    bugs:
+      - url: 1798798
+  CVE-2023-25749:
+    title: Firefox for Android may have opened third-party apps without a prompt
+    impact: high
+    reporter: Kirtikumar Anandrao Ramchandani
+    description: |
+      Android applications with unpatched vulnerabilities can be launched from a browser using Intents, exposing users to these vulnerabilities. Firefox will now confirm with users that they want to launch an external application before doing so. <br>*This bug only affects Firefox for Android. Other versions of Firefox are unaffected.*
+    bugs:
+      - url: 1810705
+  CVE-2023-25750:
+    title: Potential ServiceWorker cache leak during private browsing mode
+    impact: high
+    reporter: Kagami Rosylight
+    description: |
+      Under certain circumstances, a ServiceWorker's offline cache may have leaked to the file system when using private browsing mode.
+    bugs:
+      - url: 1814733
+  CVE-2023-25751:
+    title: Incorrect code generation during JIT compilation
+    impact: high
+    reporter: Lukas Bernhard
+    description: |
+      Sometimes, when invalidating JIT code while following an iterator, the newly generated code could be overwritten incorrectly. This could lead to a potentially exploitable crash.
+    bugs:
+      - url: 1814899
+  CVE-2023-28160:
+    title: Redirect to Web Extension files may have leaked local path
+    impact: moderate
+    reporter: Rob Wu
+    description: |
+      When following a redirect to a publicly accessible web extension file, the URL may have been translated to the actual local path, leaking potentially sensitive information.
+    bugs:
+      - url: 1802385
+  CVE-2023-28164:
+    title: URL being dragged from a removed cross-origin iframe into the same tab triggered navigation
+    impact: moderate
+    reporter: Luan Herrera
+    description: |
+      Dragging a URL from a cross-origin iframe that was removed during the drag could have lead to user confusion and website spoofing attacks.
+    bugs:
+      - url: 1809122
+  CVE-2023-28161:
+    title: One-time permissions granted to a local file were extended to other local files loaded in the same tab
+    impact: moderate
+    reporter: Khiem Tran
+    description: |
+      If temporary "one-time" permissions, such as the ability to use the Camera, were granted to a document loaded using a file: URL, that permission persisted in that tab for all other documents loaded from a file: URL. This is potentially dangerous if the local files came from different sources, such as in a download directory.
+    bugs:
+      - url: 1811181
+  CVE-2023-28162:
+    title: Invalid downcast in Worklets
+    impact: moderate
+    reporter: Lukas Bernhard
+    description: |
+      While implementing on AudioWorklets, some code may have casted one type to another, invalid, dynamic type. This could have lead to a potentially exploitable crash.
+    bugs:
+      - url: 1811327
+  CVE-2023-25752:
+    title: Potential out-of-bounds when accessing throttled streams
+    impact: moderate
+    reporter: Ronald Crane
+    description: |
+      When accessing throttled streams, the count of available bytes needed to be checked in the calling function to be within bounds. This may have lead future code to be incorrect and vulnerable.
+    bugs:
+      - url: 1811627
+  CVE-2023-28163:
+    title: Windows Save As dialog resolved environment variables
+    impact: moderate
+    reporter: Shaheen Fazim
+    description: |
+      When downloading files through the Save As dialog on Windows with suggested filenames containing environment variable names, Windows would have resolved those in the context of the current user. <br>*This bug only affects Firefox on Windows. Other versions of Firefox are unaffected.*
+    bugs:
+      - url: 1817768
+  CVE-2023-28176:
+    title: Memory safety bugs fixed in Firefox 111 and Firefox ESR 102.9
+    impact: high
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers Timothy Nikkel, Andrew McCreight, and the Mozilla Fuzzing Team reported memory safety bugs present in Firefox 110 and Firefox ESR 102.8. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1808352, 1811637, 1815904, 1817442, 1818674
+        desc: Memory safety bugs fixed in Firefox 111 and Firefox ESR 102.9
+  CVE-2023-28177:
+    title: Memory safety bugs fixed in Firefox 111
+    impact: high
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers and community members Calixte Denizet, Gabriele Svelto, Andrew McCreight, and the Mozilla Fuzzing Team reported memory safety bugs present in Firefox 110. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1803109, 1808832, 1809542, 1817336
+        desc: Memory safety bugs fixed in Firefox 111
