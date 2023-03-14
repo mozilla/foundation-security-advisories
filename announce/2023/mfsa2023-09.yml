@@ -58,7 +58,7 @@ advisories:
     impact: moderate
     reporter: Luan Herrera
     description: |
-      Dragging a URL from a cross-origin iframe that was removed during the drag could have lead to user confusion and website spoofing attacks.
+      Dragging a URL from a cross-origin iframe that was removed during the drag could have led to user confusion and website spoofing attacks.
     bugs:
       - url: 1809122
   CVE-2023-28161:
@@ -74,7 +74,7 @@ advisories:
     impact: moderate
     reporter: Lukas Bernhard
     description: |
-      While implementing on AudioWorklets, some code may have casted one type to another, invalid, dynamic type. This could have lead to a potentially exploitable crash.
+      While implementing AudioWorklets, some code may have casted one type to another, invalid, dynamic type. This could have led to a potentially exploitable crash.
     bugs:
       - url: 1811327
   CVE-2023-25752:
