@@ -1,0 +1,58 @@
+## mfsa2023-10.yml
+announced: March 14, 2023
+impact: high
+fixed_in:
+- Firefox ESR 102.9
+title: Security Vulnerabilities fixed in Thunderbird 102.9
+description: |
+  *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
+advisories:
+  CVE-2023-25751:
+    title: Incorrect code generation during JIT compilation
+    impact: high
+    reporter: Lukas Bernhard
+    description: |
+      Sometimes, when invalidating JIT code while following an iterator, the newly generated code could be overwritten incorrectly. This could lead to a potentially exploitable crash.
+    bugs:
+      - url: 1814899
+  CVE-2023-28164:
+    title: URL being dragged from a removed cross-origin iframe into the same tab triggered navigation
+    impact: moderate
+    reporter: Luan Herrera
+    description: |
+      Dragging a URL from a cross-origin iframe that was removed during the drag could have led to user confusion and website spoofing attacks.
+    bugs:
+      - url: 1809122
+  CVE-2023-28162:
+    title: Invalid downcast in Worklets
+    impact: moderate
+    reporter: Lukas Bernhard
+    description: |
+      While implementing AudioWorklets, some code may have casted one type to another, invalid, dynamic type. This could have led to a potentially exploitable crash.
+    bugs:
+      - url: 1811327
+  CVE-2023-25752:
+    title: Potential out-of-bounds when accessing throttled streams
+    impact: moderate
+    reporter: Ronald Crane
+    description: |
+      When accessing throttled streams, the count of available bytes needed to be checked in the calling function to be within bounds. This may have lead future code to be incorrect and vulnerable.
+    bugs:
+      - url: 1811627
+  CVE-2023-28163:
+    title: Windows Save As dialog resolved environment variables
+    impact: moderate
+    reporter: Shaheen Fazim
+    description: |
+      When downloading files through the Save As dialog on Windows with suggested filenames containing environment variable names, Windows would have resolved those in the context of the current user. <br>*This bug only affects Thunderbird on Windows. Other versions of Thunderbird are unaffected.*
+    bugs:
+      - url: 1817768
+  CVE-2023-28176:
+    title: Memory safety bugs fixed in Thunderbird 102.9
+    impact: high
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers Timothy Nikkel, Andrew McCreight, and the Mozilla Fuzzing Team reported memory safety bugs present in Thunderbird 102.8. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1808352, 1811637, 1815904, 1817442, 1818674
+        desc: Memory safety bugs fixed in Thunderbird 102.9
