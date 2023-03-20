@@ -4,7 +4,7 @@ impact: critical
 fixed_in:
 - Firefox 70
 title: Security vulnerabilities fixed in - Firefox 70
-description: <strong>Note:</strong> We have updated this advisory on June 26, 2020 to include CVE-2020-12412, which was fixed in Firefox 70 but not recognized or acknowledged immediately.
+description: <strong>Note:</strong> We have updated this advisory on June 26, 2020 to include CVE-2020-12412 and on March 20, 2023 to include CVE-2019-25136, which were fixed in Firefox 70 but not recognized or acknowledged immediately.
 advisories:
   CVE-2018-6156:
     title: Heap buffer overflow in FEC processing in WebRTC
@@ -32,6 +32,14 @@ advisories:
       When storing a value in IndexedDB, the value's prototype chain is followed and it was possible to retain a reference to a locale, delete it, and subsequently reference it. This resulted in a use-after-free and a potentially exploitable crash.
     bugs:
       - url: 1577107
+  CVE-2019-25136:
+    title: Invalid styles allowed from content processes
+    impact: high
+    reporter: Emilio Cobos Álvarez
+    description: |
+      A compromised child process could have injected XBL Bindings into privileged CSS rules, resulting in arbitrary code execution and a sandbox escape.
+    bugs:
+      - url: 1530709
   CVE-2020-12412:
     title: Address bar spoof using history navigation and blocked ports
     impact: moderate
