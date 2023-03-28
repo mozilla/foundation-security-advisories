@@ -1,0 +1,16 @@
+## mfsa2023-12.yml
+announced: March 28, 2023
+impact: high
+fixed_in:
+- Thunderbird 102.9.1
+title: Security Vulnerabilities fixed in Thunderbird 102.9.1
+advisories:
+  CVE-2023-28427:
+    title: Matrix SDK bundled with Thunderbird vulnerable to denial-of-service attack
+    impact: high
+    feed: false
+    reporter: To Be Announced
+    description: |
+        Thunderbird users who use the Matrix chat protocol were vulnerable to a denial-of-service attack.
+    bugs:
+        - url: 1822595
