@@ -9,7 +9,7 @@ advisories:
     title: Matrix SDK bundled with Thunderbird vulnerable to denial-of-service attack
     impact: high
     feed: false
-    reporter: To Be Announced
+    reporter: Matrix Security Team
     description: |
         Thunderbird users who use the Matrix chat protocol were vulnerable to a denial-of-service attack.
     bugs:
