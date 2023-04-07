@@ -1,0 +1,198 @@
+## mfsa2023-13.yml
+announced: April 11, 2023
+impact: high
+fixed_in:
+- Firefox 112
+- Firefox for Android 112
+- Focus for Android 112
+title: Security Vulnerabilities fixed in Firefox 112, Firefox for Android 112, Focus for Android 112
+advisories:
+  CVE-2023-29531:
+    title: Out-of-bound memory access in WebGL on macOS
+    impact: high
+    reporter: DoHyun Lee
+    description: |
+      An attacker could have caused an out of bounds memory access using WebGL APIs, leading to memory corruption and a potentially exploitable crash.<br>*This bug only affects Firefox for macOS. Other operating systems are unaffected.*
+    bugs:
+      - url: 1794292
+  CVE-2023-29532:
+    title: Mozilla Maintenance Service Write-lock bypass
+    impact: high
+    reporter: Holger Fuhrmannek
+    description: |
+      A local attacker can trick the Mozilla Maintenance Service into applying an unsigned update file by pointing the service at an update file on a malicious SMB server. The update file can be replaced after the signature check, before the use, because the write-lock requested by the service does not work on a SMB server.<br>*Note: This attack requires local system access and only affects Windows. Other operating systems are not affected.*
+    bugs:
+      - url: 1806394
+  CVE-2023-29533:
+    title: Fullscreen notification obscured
+    impact: high
+    reporter: Irvan Kurniawan
+    description: |
+      A website could have obscured the fullscreen notification by using a combination of <code>window.open</code>, fullscreen requests, <code>window.name</code> assignments, and <code>setInterval</code> calls. This could have led to user confusion and possible spoofing attacks.
+    bugs:
+      - url: 1814597
+      - url: 1798219
+  CVE-2023-29534:
+    title: Fullscreen notification could have been obscured on Firefox for Android
+    impact: high
+    reporter: Shaheen Fazim and Hafiizh
+    description: |
+      Different techniques existed to obscure the fullscreen notification in Firefox and Focus for Android.  These could have led to potential user confusion and spoofing attacks.<br>*This bug only affects Firefox and Focus for Android. Other versions of Firefox are unaffected.*
+    bugs:
+      - url: 1816059
+      - url: 1816007
+      - url: 1821155
+      - url: 1821576
+      - url: 1821906
+      - url: 1822298
+      - url: 1822305
+  MFSA-TMP-2023-0001:
+    title: Double-free in libwebp
+    impact: high
+    reporter: Irvan Kurniawan
+    feed: false
+    description: |
+      A double-free in libwebp could have led to memory corruption and a potentially exploitable crash.
+    bugs:
+      - url: 1819244
+  CVE-2023-29535:
+    title: Potential Memory Corruption following Garbage Collector compaction
+    impact: high
+    reporter: Lukas Bernhard
+    description: |
+      Following a Garbage Collector compaction, weak maps may have been accessed before they were correctly traced. This resulted in memory corruption and a potentially exploitable crash.
+    bugs:
+      - url: 1820543
+  CVE-2023-29536:
+    title: Invalid free from JavaScript code
+    impact: high
+    reporter: zx from qriousec
+    description: |
+      An attacker could cause the memory manager to incorrectly free a pointer that addresses attacker-controlled memory, resulting in an assertion, memory corruption, or a potentially exploitable crash.
+    bugs:
+      - url: 1821959
+  CVE-2023-29537:
+    title: Data Races in font initialization code
+    impact: high
+    reporter: Looben Yang
+    description: |
+      Multiple race conditions in the font initialization could have led to memory corruption and execution of attacker-controlled code.
+    bugs:
+      - url: 1823365
+      - url: 1824200
+      - url: 1825569
+  CVE-2023-29538:
+    title: Directory information could have been leaked to WebExtensions
+    impact: moderate
+    reporter: Alexis aka zoracon
+    description: |
+      Under specific circumstances a WebExtension may have received a <code>jar:file:///</code> URI instead of a <code>moz-extension:///</code> URI during a load request. This leaked directory paths on the user's machine.
+    bugs:
+      - url: 1685403
+  CVE-2023-29539:
+    title: Content-Disposition filename truncation leads to Reflected File Download
+    impact: moderate
+    reporter: Trung Pham
+    description: |
+      When handling the filename directive in the Content-Disposition header, the filename would be truncated if the filename contained a NULL character. This could have led to reflected file download attacks potentially tricking users to install malware.
+    bugs:
+      - url: 1784348
+  CVE-2023-29540:
+    title: Iframe sandbox bypass using redirects and sourceMappingUrls
+    impact: moderate
+    reporter: Axel Chong (@Haxatron)
+    description: |
+      Using a redirect embedded into <code>sourceMappingUrls</code> could allow for navigation to external protocol links in sandboxed iframes without <code>allow-top-navigation-to-custom-protocols</code>.
+    bugs:
+      - url: 1790542
+  CVE-2023-29541:
+    title: Files with malicious extensions could have been downloaded unsafely on Linux
+    impact: moderate
+    reporter: Ameen Basha M K
+    description: |
+      Firefox did not properly handle downloads of files ending in <code>.desktop</code>, which can be interpreted to run attacker-controlled commands. <br>*This bug only affects Firefox for Linux on certain Distributions. Other operating systems are unaffected, and Mozilla is unable to enumerate all affected Linux Distributions.*
+    bugs:
+      - url: 1810191
+  CVE-2023-29542:
+    title: Bypass of file download extension restrictions
+    impact: moderate
+    reporter: Shaheen Fazim and Ameen Basha M K
+    description: |
+      A newline in a filename could have been used to bypass the file extension security mechanisms that replace malicious file extensions such as .lnk  with .download. This could have led to accidental execution of malicious code.<br>*This bug only affects Firefox on Windows. Other versions of Firefox are unaffected.*
+    bugs:
+      - url: 1815062
+      - url: 1810793
+  CVE-2023-29543:
+    title: Use-after-free in debugging APIs
+    impact: moderate
+    reporter: Lukas Bernhard
+    description: |
+      An attacker could have caused memory corruption and a potentially exploitable use-after-free of a pointer in a global object's debugger vector.
+    bugs:
+      - url: 1816158
+  CVE-2023-29544:
+    title: Memory Corruption in garbage collector
+    impact: moderate
+    reporter: Lukas Bernhard
+    description: |
+      If multiple instances of resource exhaustion occurred at the incorrect time, the garbage collector could have caused memory corruption and a potentially exploitable crash.
+    bugs:
+      - url: 1818781
+  CVE-2023-29545:
+    title: Windows Save As dialog resolved environment variables
+    impact: moderate
+    reporter: Axel Chong (@Haxatron)
+    description: |
+      Similar to CVE-2023-28163, this time when choosing 'Save Link As', suggested filenames containing environment variable names would have resolved those in the context of the current user. <br>*This bug only affects Firefox on Windows. Other versions of Firefox are unaffected.*
+    bugs:
+      - url: 1823077
+  CVE-2023-29546:
+    title: Screen recording in Private Browsing included address bar on Android
+    impact: low
+    reporter: Irwan
+    description: |
+      When recording the screen while in Private Browsing on Firefox for Android the address bar and keyboard were not hidden, potentially leaking sensitive information. <br>*This bug only affects Firefox for Android. Other operating systems are unaffected.*
+    bugs:
+      - url: 1780842
+  CVE-2023-29547:
+    title: Secure document cookie could be spoofed with insecure cookie
+    impact: low
+    reporter: Marco Squarcina
+    description: |
+      When a secure cookie existed in the Firefox cookie jar an insecure cookie for the same domain could have been created, when it should have silently failed.  This could have led to a desynchronization in expected results when reading from the secure cookie.
+    bugs:
+      - url: 1783536
+  CVE-2023-29548:
+    title: Incorrect optimization result on ARM64
+    impact: low
+    reporter: JunYoung Park
+    description: |
+      A wrong lowering instruction in the ARM64 Ion compiler resulted in a wrong optimization result.
+    bugs:
+      - url: 1822754
+  CVE-2023-29549:
+    title: Javascript's bind function may have failed
+    impact: low
+    reporter: Lukas Bernhard
+    description: |
+      Under certain circumstances, a call to the <code>bind</code> function may have resulted in the incorrect realm.  This may have created a vulnerability relating to JavaScript-implemented sandboxes such as SES.
+    bugs:
+      - url: 1823042
+  CVE-2023-29550:
+    title: Memory safety bugs fixed in Firefox 112 and Firefox ESR 102.10
+    impact: high
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers Randell Jesup, Andrew Osmond, Sebastian Hengst, Andrew McCreight, and the Mozilla Fuzzing Team reported memory safety bugs present in Firefox 111 and Firefox ESR 102.9. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1720594, 1812498, 1814217, 1818357, 1751945, 1818762, 1819493, 1820389, 1820602, 1821448, 1822413, 1824828
+        desc: Memory safety bugs fixed in Firefox 112 and Firefox ESR 102.10
+  CVE-2023-29551:
+    title: Memory safety bugs fixed in Firefox 112
+    impact: high
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers Randell Jesup, Andrew McCreight, Gabriele Svelto, and the Mozilla Fuzzing Team reported memory safety bugs present in Firefox 111. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1763625, 1814314, 1815798, 1815890, 1819239, 1819465, 1819486, 1819492, 1819957, 1820514, 1820776, 1821838, 1822175, 1823547
+        desc: Memory safety bugs fixed in Firefox 112
