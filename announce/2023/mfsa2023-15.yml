@@ -1,0 +1,131 @@
+## mfsa2023-15.yml
+announced: April 11, 2023
+impact: high
+fixed_in:
+- Thunderbird 102.10
+title: Security Vulnerabilities fixed in Thunderbird 102.10
+advisories:
+  CVE-2023-29531:
+    title: Out-of-bound memory access in WebGL on macOS
+    impact: high
+    reporter: DoHyun Lee
+    description: |
+      An attacker could have caused an out of bounds memory access using WebGL APIs, leading to memory corruption and a potentially exploitable crash.<br>*This bug only affects Thunderbird for macOS. Other operating systems are unaffected.*
+    bugs:
+      - url: 1794292
+  CVE-2023-29532:
+    title: Mozilla Maintenance Service Write-lock bypass
+    impact: high
+    reporter: Holger Fuhrmannek
+    description: |
+      A local attacker can trick the Mozilla Maintenance Service into applying an unsigned update file by pointing the service at an update file on a malicious SMB server. The update file can be replaced after the signature check, before the use, because the write-lock requested by the service does not work on a SMB server.<br>*Note: This attack requires local system access and only affects Windows. Other operating systems are not affected.*
+    bugs:
+      - url: 1806394
+  CVE-2023-29533:
+    title: Fullscreen notification obscured
+    impact: high
+    reporter: Irvan Kurniawan
+    description: |
+      A website could have obscured the fullscreen notification by using a combination of <code>window.open</code>, fullscreen requests, <code>window.name</code> assignments, and <code>setInterval</code> calls. This could have led to user confusion and possible spoofing attacks.
+    bugs:
+      - url: 1814597
+      - url: 1798219
+  MFSA-TMP-2023-0001:
+    title: Double-free in libwebp
+    impact: high
+    reporter: Irvan Kurniawan
+    feed: false
+    description: |
+      A double-free in libwebp could have led to memory corruption and a potentially exploitable crash.
+    bugs:
+      - url: 1819244
+  CVE-2023-29535:
+    title: Potential Memory Corruption following Garbage Collector compaction
+    impact: high
+    reporter: Lukas Bernhard
+    description: |
+      Following a Garbage Collector compaction, weak maps may have been accessed before they were correctly traced. This resulted in memory corruption and a potentially exploitable crash.
+    bugs:
+      - url: 1820543
+  CVE-2023-29536:
+    title: Invalid free from JavaScript code
+    impact: high
+    reporter: zx from qriousec
+    description: |
+      An attacker could cause the memory manager to incorrectly free a pointer that addresses attacker-controlled memory, resulting in an assertion, memory corruption, or a potentially exploitable crash.
+    bugs:
+      - url: 1821959
+  CVE-2023-0547:
+    title: Revocation status of S/Mime recipient certificates was not checked
+    impact: high
+    reporter: Paul Menzel
+    description: |
+      OCSP revocation status of recipient certificates was not checked when sending S/Mime encrypted email, and revoked certificates would be accepted. Thunderbird versions from 68 to 102.9.1 were affected by this bug.
+    bugs:
+      - url: 1811298
+  CVE-2023-29479:
+    title: Hang when processing certain OpenPGP messages
+    impact: moderate
+    reporter: Ribose RNP Team
+    description: |
+      Certain malformed OpenPGP messages could trigger incorrect parsing of PKESK/SKESK packets due to a bug in the Ribose RNP library used by Thunderbird up to version 102.9.1, which would cause the Thunderbird user interface to hang. The issue was discovered using Google's oss-fuzz.
+    bugs:
+      - url: 1824978
+  CVE-2023-29539:
+    title: Content-Disposition filename truncation leads to Reflected File Download
+    impact: moderate
+    reporter: Trung Pham
+    description: |
+      When handling the filename directive in the Content-Disposition header, the filename would be truncated if the filename contained a NULL character. This could have led to reflected file download attacks potentially tricking users to install malware.
+    bugs:
+      - url: 1784348
+  CVE-2023-29541:
+    title: Files with malicious extensions could have been downloaded unsafely on Linux
+    impact: moderate
+    reporter: Ameen Basha M K
+    description: |
+      Thunderbird did not properly handle downloads of files ending in <code>.desktop</code>, which can be interpreted to run attacker-controlled commands. <br>*This bug only affects Thunderbird for Linux on certain Distributions. Other operating systems are unaffected, and Mozilla is unable to enumerate all affected Linux Distributions.*
+    bugs:
+      - url: 1810191
+  CVE-2023-29542:
+    title: Bypass of file download extension restrictions
+    impact: moderate
+    reporter: Shaheen Fazim and Ameen Basha M K
+    description: |
+      A newline in a filename could have been used to bypass the file extension security mechanisms that replace malicious file extensions such as .lnk  with .download. This could have led to accidental execution of malicious code.<br>*This bug only affects Thunderbird on Windows. Other versions of Thunderbird are unaffected.*
+    bugs:
+      - url: 1815062
+      - url: 1810793
+  CVE-2023-29545:
+    title: Windows Save As dialog resolved environment variables
+    impact: moderate
+    reporter: Axel Chong (@Haxatron)
+    description: |
+      Similar to CVE-2023-28163, this time when choosing 'Save Link As', suggested filenames containing environment variable names would have resolved those in the context of the current user. <br>*This bug only affects Thunderbird on Windows. Other versions of Thunderbird are unaffected.*
+    bugs:
+      - url: 1823077
+  CVE-2023-1945:
+    title: Memory Corruption in Safe Browsing Code
+    impact: moderate
+    reporter: Gabriele Svelto
+    description: |
+      Unexpected data returned from the Safe Browsing API could have led to memory corruption and a potentially exploitable crash.
+    bugs:
+      - url: 1777588
+  CVE-2023-29548:
+    title: Incorrect optimization result on ARM64
+    impact: low
+    reporter: JunYoung Park
+    description: |
+      A wrong lowering instruction in the ARM64 Ion compiler resulted in a wrong optimization result.
+    bugs:
+      - url: 1822754
+  CVE-2023-29550:
+    title: Memory safety bugs fixed in Thunderbird 102.10
+    impact: high
+    reporter: Mozilla developers and community
+    description: |
+      Mozilla developers Andrew Osmond, Sebastian Hengst, Andrew McCreight, and the Mozilla Fuzzing Team reported memory safety bugs present in Thunderbird 102.9. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1720594, 1751945, 1812498, 1814217, 1818357, 1818762, 1819493, 1820389, 1820602, 1821448, 1822413, 1824828
+        desc: Memory safety bugs fixed in Thunderbird 102.10
