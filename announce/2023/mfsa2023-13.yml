@@ -46,7 +46,7 @@ advisories:
       - url: 1821906
       - url: 1822298
       - url: 1822305
-  MFSA-TMP-2023-0001:
+  CVE-2023-1999:
     title: Double-free in libwebp
     impact: high
     reporter: Irvan Kurniawan
