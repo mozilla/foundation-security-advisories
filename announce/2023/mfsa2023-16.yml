@@ -91,7 +91,7 @@ advisories:
   CVE-2023-32214:
     title: Potential DoS via exposed protocol handlers
     impact: low
-    reporter: Gijs Kruitbosch
+    reporter: Edward Prior
     description: |
       Protocol handlers <code>ms-cxh</code> and <code>ms-cxh-full</code> could have been leveraged to trigger a denial of service.<br>*Note: This attack only affects Windows. Other operating systems are not affected.*
     bugs:
