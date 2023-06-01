@@ -1,1 +1,4 @@
 debuglog.*
+*.egg-info
+/build
+__pycache__

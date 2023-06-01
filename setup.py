@@ -31,11 +31,14 @@ setup(
         'Markdown',
         'python-dateutil==2.8.2',
         'schema==0.7.2',
+        'cvelib==1.2.1',
         'requests'],
     entry_points={
         "console_scripts": [
             "update_hof = foundation_security_advisories.update_hof:main",
-            "check_advisories = foundation_security_advisories.check_advisories:main"
+            "check_advisories = foundation_security_advisories.check_advisories:main",
+            "publish_cve_advisories = foundation_security_advisories.publish_cve_advisories:main",
+            "reject_reserved_cve_ids = foundation_security_advisories.reject_reserved_cve_ids:main",
         ]
     }
 )
