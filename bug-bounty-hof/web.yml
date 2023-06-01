@@ -1,4 +1,7 @@
 names:
+- name: Chris Langton
+  date: 2022-03-14
+  url: https://www.trivialsec.com/
 - name: Stéphane Jin
   date: 2023-03-30
 - name: Sudhanshu Rajbhar
@@ -12,7 +15,7 @@ names:
   date: 2023-03-29
 - name: Sushant Dhopat
   date: 2023-03-28
-  twitter: "sushantdhopat"
+  twitter: "@sushantdhopat"
   url: https://twitter.com/sushantdhopat
 - name: Kauenavarro
   date: 2023-03-28
@@ -22,7 +25,7 @@ names:
   url: https://www.linkedin.com/in/amir-safa-59664299
 - name: Guillermo Gregorio
   date: 2023-03-28
-  twitter: "bsysop"
+  twitter: "@bsysop"
   url: https://twitter.com/bsysop
 - name: PentestPeople
   date: 2023-03-27
@@ -56,11 +59,11 @@ names:
 - name: redparsec
   date: 2023-01-30
   twitter: "@r3dpars3c"
-  url: https://twitter.com/@r3dpars3c
+  url: https://twitter.com/r3dpars3c
 - name: Codermak
   date: 2023-01-09
   twitter: "@arshadkazmi42"
-  url: https://twitter.com/@arshadkazmi42
+  url: https://twitter.com/arshadkazmi42
 - name: Joern Schneeweisz
   date: 2023-01-09
 - name: Jake Nicholson
@@ -69,7 +72,7 @@ names:
 - name: redparsec
   date: 2022-11-28
   twitter: "@r3dpars3c"
-  url: https://twitter.com/@r3dpars3c
+  url: https://twitter.com/r3dpars3c
 - name: Leonardo Marinho de Melo Junior
   date: 2022-11-25
   url: https://github.com/Leommjr
@@ -122,7 +125,7 @@ names:
 - name: Brandon Roldan
   date: 2022-07-11
   twitter: "@tomorrowisnew"
-  url: https://twitter.com/@tomorrowisnew
+  url: https://twitter.com/tomorrowisnew
 - name: endang
   date: 2022-06-27
 - name: Muhamad Visat
@@ -135,6 +138,7 @@ names:
 - name: redparsec
   date: 2022-06-13
   twitter: "@r3dpars3c"
+  url: https://twitter.com/r3dpars3c
 - name: Dylan Farrar
   date: 2022-06-13
 - name: BountyOverflow
@@ -172,7 +176,7 @@ names:
 - name: Brian Carpenter of Geeknik Labs & Farm
   date: 2022-05-10
   twitter: "@geeknik"
-  url: https://twitter.com/@geeknik
+  url: https://twitter.com/geeknik
 - name: Orion Joshi
   date: 2022-05-05
   url: https://www.linkedin.com/in/orionjoshi/
@@ -181,7 +185,7 @@ names:
 - name: Khan Janny
   date: 2022-04-25
   twitter: "@reboot_ex"
-  url: https://twitter.com/@reboot_ex
+  url: https://twitter.com/reboot_ex
 - name: Irwan
   date: 2022-04-21
 - name: Brandon Roldan
