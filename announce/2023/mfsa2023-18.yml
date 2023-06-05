@@ -10,14 +10,15 @@ advisories:
     impact: high
     reporter: Irvan Kurniawan
     description: |
-      The error page for sites with invalid TLS certificates was missing the activation-delay 
-Firefox uses to protect prompts and permission dialogs from attacks that exploit 
-human response time delays. If a malicious page elicited user clicks in precise 
-locations immediately before navigating to a site with a certificate error and 
-made the renderer extremely busy at the same time, it could create a gap 
-between when the error page was loaded and when the display actually 
-refreshed. With the right timing the elicited clicks could land in that gap and 
-activate the button that overrides the certificate error for that site.
+      The error page for sites with invalid TLS certificates was missing the
+      activation-delay Firefox uses to protect prompts and permission dialogs
+      from attacks that exploit human response time delays. If a malicious
+      page elicited user clicks in precise locations immediately before
+      navigating to a site with a certificate error and made the renderer
+      extremely busy at the same time, it could create a gap between when
+      the error page was loaded and when the display actually refreshed.
+      With the right timing the elicited clicks could land in that gap and 
+      activate the button that overrides the certificate error for that site.
     bugs:
       - url: 1695986
   CVE-2023-34415:
@@ -25,11 +26,12 @@ activate the button that overrides the certificate error for that site.
     impact: moderate
     reporter: Jun Kokatsu
     description: |
-      When choosing a site-isolated process for a document loaded from a data: URL
-that was the result of a redirect, Firefox would load that document in the same 
-process as the site that issued the redirect. This bypassed the site-isolation 
-protections against Spectre-like attacks on sites that host an "open redirect". 
-Firefox no longer follows HTTP redirects to data: URLs.
+      When choosing a site-isolated process for a document loaded from a
+      data: URL that was the result of a redirect, Firefox would load that
+      document in the same process as the site that issued the redirect. This
+      bypassed the site-isolation protections against Spectre-like attacks
+      on sites that host an "open redirect". Firefox no longer follows HTTP
+      redirects to data: URLs.
     bugs:
       - url: 1811999
   CVE-2023-34416:
@@ -38,10 +40,10 @@ Firefox no longer follows HTTP redirects to data: URLs.
     reporter: Mozilla developers and community
     description: |
       Mozilla developers and community members Gabriele Svelto, Andrew McCreight,
-the Mozilla Fuzzing Team, Sean Feng, and Sebastian Hengst reported memory safety
-bugs present in Firefox 113 and Firefox ESR 102.11. Some of these bugs showed 
-evidence of memory corruption and we presume that with enough effort some of 
-these could have been exploited to run arbitrary code.
+      the Mozilla Fuzzing Team, Sean Feng, and Sebastian Hengst reported memory
+      safety bugs present in Firefox 113 and Firefox ESR 102.11. Some of these
+      bugs showed evidence of memory corruption and we presume that with enough
+      effort some of these could have been exploited to run arbitrary code.
     bugs:
       - url: 1752703, 1818394, 1826875, 1827340, 1827655, 1828065, 1830190, 1830206, 1830795, 1833339
         desc: Memory safety bugs fixed in Firefox 114 and Firefox ESR 102.12
@@ -51,9 +53,10 @@ these could have been exploited to run arbitrary code.
     reporter: Mozilla developers and community
     description: |
       Mozilla developers and community members Andrew McCreight, Randell Jesup,
-and Tyson Smith reported memory safety bugs present in Firefox 113. Some of
-these bugs showed evidence of memory corruption and we presume that with enough
-effort some of these could have been exploited to run arbitrary code.
+      and the Mozilla Fuzzing Team reported memory safety bugs present in
+      Firefox 113. Some of these bugs showed evidence of memory corruption
+      and we presume that with enough effort some of these could have been
+      exploited to run arbitrary code.
     bugs:
       - url: 1746447, 1820903, 1832832
         desc: Memory safety bugs fixed in Firefox 114
