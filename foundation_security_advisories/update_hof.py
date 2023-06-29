@@ -75,6 +75,11 @@ https://bugzilla.mozilla.org/buglist.cgi?x=x
 """.replace("\n", "")
 
 credit_entries = {
+    "a021b107a1bbc624d7cd8435abf7a84f":"Chris Langton",
+    "77c1bae6fa26a21ec93ff406fad19cc9":"Valeriy Shevchenko",
+    "0c6e6a0325f2fb50800d56e4067100ce":"Joern Schneeweisz",
+    "c7bf60509470e779de213f6fc17acb23":"Jimmy Bruneel",
+    "544c25e9541e359d8daa1a88487b8541": "Michal Biesiada",
     "52eef32d4db6d18d2ef539868933b1ef":"Tim Coen",
     "0078828862f4973eece40d1be8510a0b":"Jayateertha Guruprasad",
     "918c93c03389817a230ce0b462634fde":"Manojkumar J",
@@ -455,6 +460,10 @@ twitter_entries = {
     "fe7f319c61c0b44d4cb751afda4f4aeb" : "@Gaurav_00000",
 }
 url_entries = {
+    "a021b107a1bbc624d7cd8435abf7a84f":"https://www.trivialsec.com/",
+    "77c1bae6fa26a21ec93ff406fad19cc9":"https://www.linkedin.com/in/valeriyshevchenko/",
+    "c7bf60509470e779de213f6fc17acb23":"https://www.linkedin.com/in/jimmy-bruneel-26a185108/",
+    "544c25e9541e359d8daa1a88487b8541": "https://github.com/mbiesiad",
     "2e1575d6141ca69287e4f55ef6fec159" : "https://www.linkedin.com/in/dimedaughter/",
     "b295cad81920d9da67e35a981b6cb146" : "https://www.linkedin.com/in/mohammad-ali-syarief/",
     "918c93c03389817a230ce0b462634fde":"https://www.linkedin.com/in/manojkumar-j-7ba35b202/",
