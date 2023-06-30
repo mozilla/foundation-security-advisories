@@ -26,11 +26,11 @@ advisories:
     impact: moderate
     reporter: Shaheen Fazim
     description: |
-      A website could have obscured the fullscreen notification by using the mailto protocol handler. This could have led to user confusion and possible spoofing attacks.
+      A website could have obscured the fullscreen notification by using a URL with a scheme handled by an external program, such as a mailto URL. This could have led to user confusion and possible spoofing attacks.
     bugs:
       - url: 1816287
   CVE-2023-37208:
-    title: Lack of warning when executing Diagcab files
+    title: Lack of warning when opening Diagcab files
     impact: moderate
     reporter: Puf
     description: |
@@ -42,7 +42,7 @@ advisories:
     impact: high
     reporter: Andrew McCreight, Matthew Gaudet, Tom Ritter, and the Mozilla Fuzzing Team, 
     description: |
-      Memory safety bugs present in Firefox 114, Firefox ESR 102.03, and Thunderbird 102.03. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+      Memory safety bugs present in Firefox 114, Firefox ESR 102.12, and Thunderbird 102.12. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
     bugs:
       - url: 1832306, 1834862, 1835886, 1836550, 1837450
         desc: Memory safety bugs fixed in Firefox 115, Firefox ESR 102.13, and Thunderbird 102.13
