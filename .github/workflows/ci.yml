@@ -1,4 +1,4 @@
-name: MFSA
+name: Check Advisories
 
 on:
   # Triggers the workflow on push events only for the default branch
@@ -8,7 +8,7 @@ on:
       - master
 
 jobs:
-  check:
+  fetch:
     name: Check Advisories
     runs-on: ubuntu-latest
     steps:
@@ -17,37 +17,8 @@ jobs:
       - name: Set up Python 3
         uses: actions/setup-python@v3
         with:
-          python-version: "3.10"
+          python-version: '3.9'
       - name: Install Python dependencies
         run: pip install ./
       - name: Run Advisories Checks
         run: check_advisories --all
-  publish:
-    name: Publish CVE Advisories
-    needs: check
-    if: false && github.ref == 'refs/heads/master' && github.repository == 'maltejur/foundation-security-advisories'
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
-      - name: Clone repository
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0 # Fetch all commits, needded for timestamps
-      - name: Set up git
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-      - name: Set up Python 3
-        uses: actions/setup-python@v3
-        with:
-          python-version: "3.11"
-      - name: Install Python dependencies
-        run: pip install ./
-      - name: Publish Advisories
-        run: publish_cve_advisories
-        env:
-          CVE_API_KEY: ${{ secrets.CVE_API_KEY }}
-          CVE_ENV: ${{ vars.CVE_ENV }}
-          CVE_ORG: ${{ vars.CVE_ORG }}
-          CVE_USER: ${{ vars.CVE_USER }}

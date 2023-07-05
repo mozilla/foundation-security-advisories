@@ -2,5 +2,4 @@ PyYAML==5.4
 Markdown==3.3.7
 python-dateutil==2.4.2
 schema==0.7.2
-cvelib==1.2.1
 requests

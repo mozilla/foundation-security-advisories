@@ -11,22 +11,27 @@ git pre-commit hook.
 from __future__ import unicode_literals, print_function
 
 import argparse
+import codecs
+import fnmatch
+import os
 import re
 import sys
 from datetime import date
+from glob import glob
+from subprocess import check_output
 
+import yaml
 from dateutil.parser import parse as parsedate
+from markdown import markdown
 from schema import Schema, Regex, Optional, Or, SchemaError
 
-from foundation_security_advisories.common import (
-    HOF_FILENAME_RE,
-    parse_md_file,
-    parse_yml_file,
-    get_all_files,
-    get_modified_files
-)
 
-CVE_RE = re.compile('^(CVE|MFSA-TMP|MFSA-RESERVE)-20[0-9]{2}-[0-9]{4,9}$')
+GIT = os.getenv('GIT_BIN', 'git')
+ADVISORIES_DIR = 'announce'
+HOF_DIR = 'bug-bounty-hof'
+CVE_RE = re.compile('^(CVE|MFSA-TMP)-20[0-9]{2}-[0-9]{4,9}$')
+MFSA_FILENAME_RE = re.compile('mfsa(\d{4}-\d{2,3})\.(md|yml)$')
+HOF_FILENAME_RE = re.compile('bug-bounty-hof/\w+\.yml$')
 md_schema = Schema({
     'mfsa_id': str,
     'fixed_in': [str],
@@ -57,6 +62,58 @@ yaml_schema = Schema({
     Optional('description'): str,
     Optional('feed'): bool,
 })
+
+
+def mfsa_id_from_filename(filename):
+    match = MFSA_FILENAME_RE.search(filename)
+    if match:
+        return match.group(1)
+
+    return None
+
+
+def git_diff(staged):
+    """
+    Return the modified files in the repo.
+    :param staged: boolean return only those changes staged in git
+    :return: list modified file names.
+    """
+    command = [GIT, 'diff', '--name-only']
+    if staged:
+        command.append('--cached')
+
+    git_out = check_output(command, universal_newlines=True).split()
+    return [fn for fn in git_out if
+            MFSA_FILENAME_RE.search(fn) or HOF_FILENAME_RE.search(fn)]
+
+
+def get_modified_files(staged_only):
+    """
+    Return the modified file names in the repo.
+    :param staged_only: boolean include all changes or only staged.
+    :return: list modified file names.
+    """
+    staged_files = git_diff(staged=True)
+    if staged_only:
+        return staged_files
+
+    modified_files = set(staged_files)
+    modified_files.update(git_diff(staged=False))
+    return list(modified_files)
+
+
+def get_all_files():
+    """
+    Return all advisory file names in the repo.
+
+    :return: generator of file names.
+    """
+    for root, dirnames, filenames in os.walk(ADVISORIES_DIR):
+        for filename in fnmatch.filter(filenames, 'mfsa*.*'):
+            yield os.path.join(root, filename)
+
+    for filename in glob('{}/*.yml'.format(HOF_DIR)):
+        yield filename
 
 
 def check_hof_data(data):
@@ -121,6 +178,61 @@ def check_file(file_name):
         return str(e)
 
     return None
+
+
+def parse_md_front_matter(lines):
+    """Return the YAML and MD sections.
+
+    :param: lines iterator
+    :return: str YAML, str Markdown
+    """
+    # fm_count: 0: init, 1: in YAML, 2: in Markdown
+    fm_count = 0
+    yaml_lines = []
+    md_lines = []
+    for line in lines:
+        # first line we care about is FM start
+        if fm_count < 2 and line.strip() == '---':
+            fm_count += 1
+            continue
+
+        if fm_count == 1:
+            yaml_lines.append(line)
+
+        if fm_count == 2:
+            md_lines.append(line)
+
+    if fm_count < 2:
+        raise ValueError('Front Matter not found.')
+
+    return ''.join(yaml_lines), ''.join(md_lines)
+
+
+def parse_yml_file(file_name):
+    """Return the YAML data for file_name."""
+    with codecs.open(file_name, encoding='utf8') as fh:
+        data = yaml.safe_load(fh)
+
+    if 'mfsa_id' not in data:
+        mfsa_id = mfsa_id_from_filename(file_name)
+        if mfsa_id:
+            data['mfsa_id'] = mfsa_id
+    return data
+
+
+def parse_md_file(file_name):
+    """Return the YAML and MD sections for file_name."""
+    with codecs.open(file_name, encoding='utf8') as fh:
+        yamltext, mdtext = parse_md_front_matter(fh)
+
+    data = yaml.safe_load(yamltext)
+    if 'mfsa_id' not in data:
+        mfsa_id = mfsa_id_from_filename(file_name)
+        if mfsa_id:
+            data['mfsa_id'] = mfsa_id
+    # run it through parser in case of exception
+    markdown(mdtext)
+    return data
 
 
 def main():
