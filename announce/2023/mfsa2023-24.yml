@@ -34,7 +34,7 @@ advisories:
   CVE-2023-37208:
     title: Lack of warning when opening Diagcab files
     impact: moderate
-    reporter: Puf
+    reporter: P Umar Farooq
     description: |
       When opening Diagcab files, Firefox did not warn the user that these files may contain malicious code.
     bugs:
