@@ -1,0 +1,16 @@
+## mfsa2023-26.yml
+announced: July 11, 2023
+impact: high
+fixed_in:
+- Firefox 115.0.2
+- Firefox ESR 115.0.2
+title: Security Vulnerabilities fixed in Firefox 115.0.2 and Firefox ESR 115.0.2
+advisories:
+  CVE-2023-3600:
+    title: Use-after-free in workers
+    impact: moderate
+    reporter: Andrew McCreight
+    description: |
+      During the worker lifecycle, a use-after-free condition could have occured, which could have led to a potentially exploitable crash.
+    bugs:
+      - url: 1839703
