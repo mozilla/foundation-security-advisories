@@ -1,0 +1,23 @@
+## mfsa2023-25.yml
+announced: July 4, 2023
+impact: moderate
+fixed_in:
+- Firefox for iOS 115
+title: Security Vulnerabilities fixed in Firefox for iOS 115
+advisories:
+  CVE-2023-37455:
+    title: Media permission request prompt showing from background tab
+    impact: moderate
+    reporter: Kazuki Nomoto
+    description: |
+      The permission request prompt from the site in the background tab was overlaid on top of the site in the foreground tab.
+    bugs:
+      - url: 1786934
+  CVE-2023-37456:
+    title: Browser crashed when session restore was called with an empty body
+    impact: low
+    reporter: Artem Chaykin
+    description: |
+      The session restore helper crashed whenever there was no parameter sent to the message handler.
+    bugs:
+      - url: 1795496
