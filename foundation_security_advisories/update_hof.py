@@ -75,6 +75,9 @@ https://bugzilla.mozilla.org/buglist.cgi?x=x
 """.replace("\n", "")
 
 credit_entries = {
+    "d5716b05696f59f850b9dad8ed0b0d43":"Mohd Ali - Student of Muffakhamjah College Of Engineering",
+    "733f005d44b2f8386d9db80cb301842c":"AnupamAS01",
+    "28bae65040e11cd63f9dd135eac744ab":"Yahia benkaddour",
     "a021b107a1bbc624d7cd8435abf7a84f":"Chris Langton",
     "77c1bae6fa26a21ec93ff406fad19cc9":"Valeriy Shevchenko",
     "0c6e6a0325f2fb50800d56e4067100ce":"Joern Schneeweisz",
@@ -384,6 +387,7 @@ credit_entries = {
     "2e1575d6141ca69287e4f55ef6fec159" : "Jake Nicholson",
 }
 twitter_entries = {
+    "d5716b05696f59f850b9dad8ed0b0d43":"@revengerali",
     "0078828862f4973eece40d1be8510a0b":"JayateerthaG",
     "061748177265860816977bb65cc0147a" : "@tomorrowisnew",
     "0c7f4b38ad0b504cfc48042e14564cc8" : "@pdjstone",
