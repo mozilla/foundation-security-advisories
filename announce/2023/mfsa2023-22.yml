@@ -32,7 +32,7 @@ advisories:
   CVE-2023-37203:
     title: Drag and Drop API may provide access to local system files
     impact: moderate
-    reporter: Paul Nickerson
+    reporter: Paul Nickerson and Ameen Basha M K
     description: |
       Insufficient validation in the Drag and Drop API in conjunction with social engineering, may have allowed an attacker to trick end-users into creating a shortcut to local system files.  This could have been leveraged to execute arbitrary code.
     bugs:
