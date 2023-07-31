@@ -5,7 +5,7 @@ fixed_in:
 - Firefox ESR 102.14
 title: Security Vulnerabilities fixed in Firefox ESR 102.14
 advisories:
-  CVE-FIXME-YYY:
+  MFSA-RESERVE-2023-0001:
     title: Offscreen Canvas could have bypassed cross-origin restrictions
     impact: high
     reporter: Max Vlasov
@@ -13,7 +13,7 @@ advisories:
       Offscreen Canvas did not properly track cross-origin tainting, which could have been used to access image data from another site in violation of same-origin policy.
     bugs:
       - url: 1833876
-  CVE-FIXME-YYY:
+  MFSA-RESERVE-2023-0002:
     title: Incorrect value used during WASM compilation
     impact: high
     reporter: Alexander Guryanov
@@ -21,7 +21,7 @@ advisories:
       In some circumstances, a stale value could have been used for a global variable in WASM JIT analysis. This resulted in incorrect compilation and a potentially exploitable crash in the content process.
     bugs:
       - url: 1837686
-  CVE-FIXME-YYY:
+  MFSA-RESERVE-2023-0003:
     title: Potential permissions request bypass via clickjacking
     impact: high
     reporter: Axel Chong (@Haxatron)
@@ -29,7 +29,7 @@ advisories:
       A bug in popup notifications delay calculation could have made it possible for an attacker to trick a user into granting permissions.
     bugs:
       - url: 1839073
-  CVE-FIXME-YYY:
+  MFSA-RESERVE-2023-0004:
     title: Crash in DOMParser due to out-of-memory conditions
     impact: high
     reporter: Irvan Kurniawan
@@ -37,7 +37,7 @@ advisories:
       An out-of-bounds read could have led to an exploitable crash when parsing HTML with DOMParser in low memory situations.
     bugs:
       - url: 1841368
-  CVE-FIXME-YYY:
+  MFSA-RESERVE-2023-0005:
     title: Fix potential race conditions when releasing platform objects
     impact: high
     reporter: Nika Layzell
@@ -45,7 +45,7 @@ advisories:
       Race conditions in reference counting code were found through code inspection. These could have resulted in potentially exploitable use-after-free vulnerabilities.
     bugs:
       - url: 1842658
-  CVE-FIXME-YYY:
+  MFSA-RESERVE-2023-0006:
     title: Stack buffer overflow in StorageManager
     impact: high
     reporter: Mark Brand
@@ -53,7 +53,7 @@ advisories:
       In some cases, an untrusted input stream was copied to a stack buffer without checking its size. This resulted in a potentially exploitable crash which could have led to a sandbox escape.
     bugs:
       - url: 1843038
-  CVE-FIXME-YYY:
+  MFSA-RESERVE-2023-0010:
     title: Lack of warning when opening appref-ms files
     impact: moderate
     reporter: P Umar Farooq
@@ -61,7 +61,7 @@ advisories:
       When opening appref-ms files, Firefox did not warn the user that these files may contain malicious code. <br>*This bug only affects Firefox on Windows. Other operating systems are unaffected.*
     bugs:
       - url: 1840777
-  CVE-FIXME-YYY:
+  MFSA-RESERVE-2023-0011:
     title: Cookie jar overflow caused unexpected cookie jar state
     impact: low
     reporter: Marco Squarcina
@@ -69,7 +69,7 @@ advisories:
       When the number of cookies per domain was exceeded in <code>document.cookie</code>, the actual cookie jar sent to the host was no longer consistent with expected cookie jar state. This could have caused requests to be sent with some cookies missing.
     bugs:
       - url: 1782561
-  CVE-XXX-rollup:
+  MFSA-RESERVE-2023-0012:
     title: Memory safety bugs fixed in Firefox 116, Firefox ESR 115.1, Firefox ESR 102.14, Thunderbird 115.1, and Thunderbird 102.14
     impact: high
     reporter: Dianna Smith, Ryan VanderMeulen, Timothy Nikkel, and the Mozilla Fuzzing Team
