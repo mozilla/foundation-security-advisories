@@ -2,7 +2,7 @@
 announced: October 18, 2022
 impact: high
 fixed_in:
-- Firefox 106
+  - Firefox 106
 title: Security Vulnerabilities fixed in Firefox 106
 description: |
   This advisory was updated December 13, 2022 to add CVE-2022-46881 and CVE-2022-46885. Both fixes were included in the original release of Firefox 106, but did not appear in the advisory published at that time.
@@ -39,7 +39,7 @@ advisories:
       If a website called <code>window.print()</code> in a particular way, it could cause a denial of service of the browser, which may persist beyond browser restart depending on the user's session restore settings.
     bugs:
       - url: 1789439
-  CVE-2022-42930:
+  CVE-2022-46884:
     title: Potential use-after-free in SVG Images
     impact: moderate
     reporter: Timothy Nikkel
