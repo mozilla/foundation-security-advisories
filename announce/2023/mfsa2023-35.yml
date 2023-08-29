@@ -1,0 +1,56 @@
+## mfsa2023-35.yml
+announced: August 29, 2023
+impact: high
+fixed_in:
+- Firefox ESR 102.15
+title: Security Vulnerabilities fixed in Firefox ESR 102.15
+advisories:
+  CVE-2023-4573:
+    title: Memory corruption in IPC CanvasTranslator
+    impact: high
+    reporter: sonakkbi
+    description: |
+      When receiving rendering data over IPC <code>mStream</code> could have been destroyed when initialized, which could have led to a use-after-free causing a potentially exploitable crash.
+    bugs:
+      - url: 1846687
+  CVE-2023-4574:
+    title: Memory corruption in IPC ColorPickerShownCallback
+    impact: high
+    reporter: sonakkbi
+    description: |
+      When creating a callback over IPC for showing the Color Picker window, multiple of the same callbacks could have been created at a time and eventually all simultaneously destroyed as soon as one of the callbacks finished. This could have led to a use-after-free causing a potentially exploitable crash.
+    bugs:
+      - url: 1846688
+  CVE-2023-4575:
+    title: Memory corruption in IPC FilePickerShownCallback
+    impact: high
+    reporter: sonakkbi
+    description: |
+      When creating a callback over IPC for showing the File Picker window, multiple of the same callbacks could have been created at a time and eventually all simultaneously destroyed as soon as one of the callbacks finished. This could have led to a use-after-free causing a potentially exploitable crash.
+    bugs:
+      - url: 1846689
+  CVE-2023-4576:
+    title: Integer Overflow in RecordedSourceSurfaceCreation
+    impact: high
+    reporter: fffvr
+    description: |
+      On Windows, an integer overflow could occur in <code>RecordedSourceSurfaceCreation</code> which resulted in a heap buffer overflow potentially leaking sensitive data that could have led to a sandbox escape.<br>*This bug only affects Firefox on Windows. Other operating systems are unaffected.*
+    bugs:
+      - url: 1846694
+  CVE-2023-4581:
+    title: XLL file extensions were downloadable without warnings
+    impact: moderate
+    reporter: Umar Farooq (@Puf)
+    description: |
+      Excel <code>.xll</code> add-in files did not have a blocklist entry in Firefox's executable blocklist which allowed them to be downloaded without any warning of their potential harm.
+    bugs:
+      - url: 1843758
+  CVE-2023-4584:
+    title: Memory safety bugs fixed in Firefox 117, Firefox ESR 102.15, Firefox ESR 115.2, Thunderbird 102.15, and Thunderbird 115.2
+    impact: high
+    reporter: Randell Jesup, Andrew McCreight, the Mozilla Fuzzing Team
+    description: |
+      Memory safety bugs present in Firefox 116, Firefox ESR 102.14, Firefox ESR 115.1, Thunderbird 102.14, and Thunderbird 115.1. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1843968, 1845205, 1846080, 1846526, 1847529
+        desc: Memory safety bugs fixed in Firefox 117, Firefox ESR 102.15, Firefox ESR 115.2, Thunderbird 102.15, and Thunderbird 115.2
