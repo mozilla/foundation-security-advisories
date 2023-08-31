@@ -1,0 +1,123 @@
+## mfsa2023-38.yml
+announced: August 29, 2023
+impact: high
+fixed_in:
+- Thunderbird 115.2
+title: Security Vulnerabilities fixed in Thunderbird 115.2
+description: |
+  *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
+advisories:
+  CVE-2023-4573:
+    title: Memory corruption in IPC CanvasTranslator
+    impact: high
+    reporter: sonakkbi
+    description: |
+      When receiving rendering data over IPC <code>mStream</code> could have been destroyed when initialized, which could have led to a use-after-free causing a potentially exploitable crash.
+    bugs:
+      - url: 1846687
+  CVE-2023-4574:
+    title: Memory corruption in IPC ColorPickerShownCallback
+    impact: high
+    reporter: sonakkbi
+    description: |
+      When creating a callback over IPC for showing the Color Picker window, multiple of the same callbacks could have been created at a time and eventually all simultaneously destroyed as soon as one of the callbacks finished. This could have led to a use-after-free causing a potentially exploitable crash.
+    bugs:
+      - url: 1846688
+  CVE-2023-4575:
+    title: Memory corruption in IPC FilePickerShownCallback
+    impact: high
+    reporter: sonakkbi
+    description: |
+      When creating a callback over IPC for showing the File Picker window, multiple of the same callbacks could have been created at a time and eventually all simultaneously destroyed as soon as one of the callbacks finished. This could have led to a use-after-free causing a potentially exploitable crash.
+    bugs:
+      - url: 1846689
+  CVE-2023-4576:
+    title: Integer Overflow in RecordedSourceSurfaceCreation
+    impact: high
+    reporter: fffvr
+    description: |
+      On Windows, an integer overflow could occur in <code>RecordedSourceSurfaceCreation</code> which resulted in a heap buffer overflow potentially leaking sensitive data that could have led to a sandbox escape.<br>*This bug only affects Firefox on Windows. Other operating systems are unaffected.*
+    bugs:
+      - url: 1846694
+  CVE-2023-4577:
+    title: Memory corruption in JIT UpdateRegExpStatics
+    impact: high
+    reporter: Lukas Bernhard
+    description: |
+      When <code>UpdateRegExpStatics</code> attempted to access <code>initialStringHeap</code> it could already have been garbage collected prior to entering the function, which could potentially have led to an exploitable crash.
+    bugs:
+      - url: 1847397
+  CVE-2023-4051:
+    title: Full screen notification obscured by file open dialog
+    impact: moderate
+    reporter: Hafiizh
+    description: |
+      A website could have obscured the full screen notification by using the file open dialog. This could have led to user confusion and possible spoofing attacks.
+    bugs:
+      - url: 1821884
+  CVE-2023-4578:
+    title: Error reporting methods in SpiderMonkey could have triggered an Out of Memory Exception
+    impact: moderate
+    reporter: Irvan Kurniawan (@sourc7)
+    description: |
+      When calling <code>JS::CheckRegExpSyntax</code> a Syntax Error could have been set which would end in calling <code>convertToRuntimeErrorAndClear</code>. A path in the function could attempt to allocate memory when none is available which would have caused a newly created Out of Memory exception to be mishandled as a Syntax Error.
+    bugs:
+      - url: 1839007
+  CVE-2023-4053:
+    title: Full screen notification obscured by external program
+    impact: moderate
+    reporter: Umar Farooq
+    description: |
+      A website could have obscured the full screen notification by using a URL with a scheme handled by an external program, such as a mailto URL. This could have led to user confusion and possible spoofing attacks.
+    bugs:
+      - url: 1839079
+  CVE-2023-4580:
+    title: Push notifications saved to disk unencrypted
+    impact: moderate
+    reporter: Harveer Singh
+    description: |
+      Push notifications stored on disk in private browsing mode were not being encrypted potentially allowing the leak of sensitive information.
+    bugs:
+      - url: 1843046
+  CVE-2023-4581:
+    title: XLL file extensions were downloadable without warnings
+    impact: moderate
+    reporter: Umar Farooq (@Puf)
+    description: |
+      Excel <code>.xll</code> add-in files did not have a blocklist entry in Firefox's executable blocklist which allowed them to be downloaded without any warning of their potential harm.
+    bugs:
+      - url: 1843758
+  CVE-2023-4582:
+    title: Buffer Overflow in WebGL glGetProgramiv
+    impact: low
+    reporter: Dohyun Lee (@l33d0hyun) of SSD-Disclosure Labs & DNSLab, Korea Univ.
+    description: |
+      Due to large allocation checks in Angle for glsl shaders being too lenient a buffer overflow could have occured when allocating too much private shader memory on mac OS. <br>*This bug only affects Firefox on macOS. Other operating systems are unaffected.*
+    bugs:
+      - url: 1773874
+  CVE-2023-4583:
+    title: Browsing Context potentially not cleared when closing Private Window
+    impact: low
+    reporter: Thejaka Maldeniya
+    description: |
+      When checking if the Browsing Context had been discarded in <code>HttpBaseChannel</code>, if the load group was not available then it was assumed to have already been discarded which was not always the case for private channels after the private session had ended.
+    bugs:
+      - url: 1842030
+  CVE-2023-4584:
+    title: Memory safety bugs fixed in Firefox 117, Firefox ESR 102.15, Firefox ESR 115.2, Thunderbird 102.15, and Thunderbird 115.2
+    impact: high
+    reporter: Randell Jesup, Andrew McCreight, the Mozilla Fuzzing Team
+    description: |
+      Memory safety bugs present in Firefox 116, Firefox ESR 102.14, Firefox ESR 115.1, Thunderbird 102.14, and Thunderbird 115.1. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1843968, 1845205, 1846080, 1846526, 1847529
+        desc: Memory safety bugs fixed in Firefox 117, Firefox ESR 102.15, Firefox ESR 115.2, Thunderbird 102.15, and Thunderbird 115.2
+  CVE-2023-4585:
+    title: Memory safety bugs fixed in Firefox 117, Firefox ESR 115.2, and Thunderbird 115.2
+    impact: high
+    reporter: Donal Meehan, Sebastian Hengst, and the Mozilla Fuzzing Team
+    description: |
+      Memory safety bugs present in Firefox 116, Firefox ESR 115.1, and Thunderbird 115.1. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1751583, 1833504, 1841082, 1847904, 1848999
+        desc: Memory safety bugs fixed in Firefox 117, Firefox ESR 115.2, and Thunderbird 115.2
