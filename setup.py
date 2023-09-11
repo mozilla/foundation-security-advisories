@@ -27,15 +27,18 @@ setup(
     ],
     packages=find_packages(exclude=['contrib', 'docs', 'tests']),
     install_requires=[
-        'PyYAML==5.4',
+        'PyYAML==6.0.1',
         'Markdown',
         'python-dateutil==2.8.2',
         'schema==0.7.2',
+        'cvelib==1.2.1',
         'requests'],
     entry_points={
         "console_scripts": [
             "update_hof = foundation_security_advisories.update_hof:main",
-            "check_advisories = foundation_security_advisories.check_advisories:main"
+            "check_advisories = foundation_security_advisories.check_advisories:main",
+            "publish_cve_advisories = foundation_security_advisories.publish_cve_advisories:main",
+            "assign_cve_ids = foundation_security_advisories.assign_cve_ids:main",
         ]
     }
 )
