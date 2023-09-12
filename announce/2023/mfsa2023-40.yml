@@ -1,0 +1,18 @@
+## mfsa2023-40.yml
+announced: September 12, 2023
+impact: critical
+fixed_in:
+  - Firefox 117.0.1, Firefox ESR 115.2.1, Firefox ESR 102.15.1, Thunderbird 102.15.1, and Thunderbird 115.2.2
+
+title: Security Vulnerability fixed in Firefox 117.0.1, Firefox ESR 115.2.1, Firefox ESR 102.15.1, Thunderbird 102.15.1, and Thunderbird 115.2.2
+advisories:
+  CVE-2023-4863:
+    feed: false
+    title: Heap buffer overflow in libwebp
+    impact: critical
+    reporter: Apple Security Engineering and Architecture (SEAR) and The Citizen Lab at The University of Toronto's Munk School
+    description: |
+      Opening a malicious WebP image could lead to a heap buffer overflow in the content process. We are aware of this issue being exploited in other products in the wild.
+    bugs:
+      - url: https://bugzilla.mozilla.org/show_bug.cgi?id=1852649
+      - url: https://bugs.chromium.org/p/chromium/issues/detail?id=1479274
