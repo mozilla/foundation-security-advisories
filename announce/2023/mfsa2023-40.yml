@@ -2,7 +2,11 @@
 announced: September 12, 2023
 impact: critical
 fixed_in:
-  - Firefox 117.0.1, Firefox ESR 115.2.1, Firefox ESR 102.15.1, Thunderbird 102.15.1, and Thunderbird 115.2.2
+  - Firefox 117.0.1
+  - Firefox ESR 115.2.1
+  - Firefox ESR 102.15.1
+  - Thunderbird 102.15.1
+  - Thunderbird 115.2.2
 
 title: Security Vulnerability fixed in Firefox 117.0.1, Firefox ESR 115.2.1, Firefox ESR 102.15.1, Thunderbird 102.15.1, and Thunderbird 115.2.2
 advisories:
