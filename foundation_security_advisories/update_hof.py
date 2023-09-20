@@ -75,6 +75,7 @@ https://bugzilla.mozilla.org/buglist.cgi?x=x
 """.replace("\n", "")
 
 credit_entries = {
+    "d95fb2b54e0b81565e15e10734bcfa94": "Orion Joshi",
     "d5716b05696f59f850b9dad8ed0b0d43":"Mohd Ali - Student of Muffakhamjah College Of Engineering",
     "733f005d44b2f8386d9db80cb301842c":"AnupamAS01",
     "28bae65040e11cd63f9dd135eac744ab":"Yahia benkaddour",
@@ -464,6 +465,7 @@ twitter_entries = {
     "fe7f319c61c0b44d4cb751afda4f4aeb" : "@Gaurav_00000",
 }
 url_entries = {
+    "d95fb2b54e0b81565e15e10734bcfa94": "https://www.linkedin.com/in/orionjoshi/",
     "a021b107a1bbc624d7cd8435abf7a84f":"https://www.trivialsec.com/",
     "77c1bae6fa26a21ec93ff406fad19cc9":"https://www.linkedin.com/in/valeriyshevchenko/",
     "c7bf60509470e779de213f6fc17acb23":"https://www.linkedin.com/in/jimmy-bruneel-26a185108/",
