@@ -2,10 +2,10 @@
 announced: September 26, 2023
 impact: high
 fixed_in:
-- Firefox 118
+  - Firefox 118
 title: Security Vulnerabilities fixed in Firefox 118
 advisories:
-  CVE-FIXME-YYY:
+  MFSA-RESERVE-2023-0001:
     title: Out-of-bounds write in FilterNodeD2D1
     impact: high
     reporter: sonakkbi
@@ -13,7 +13,7 @@ advisories:
       A compromised content process could have provided malicious data to <code>FilterNodeD2D1</code> resulting in an out-of-bounds write, leading to a potentially exploitable crash in a privileged process.
     bugs:
       - url: 1846683
-  CVE-FIXME-YYY:
+  MFSA-RESERVE-2023-0002:
     title: Out-of-bounds write in PathOps
     impact: high
     reporter: sonakkbi
@@ -21,7 +21,7 @@ advisories:
       A compromised content process could have provided malicious data in a <code>PathRecording</code> resulting in an out-of-bounds write, leading to a potentially exploitable crash in a privileged process.
     bugs:
       - url: 1846685
-  CVE-FIXME-YYY:
+  MFSA-RESERVE-2023-0003:
     title: Memory leak from a privileged process
     impact: high
     reporter: sonakkbi
@@ -29,7 +29,7 @@ advisories:
       In canvas rendering, a compromised content process could have caused a surface to change unexpectedly, leading to a memory leak of a privileged process. This memory leak could be used to effect a sandbox escape if the correct data was leaked.
     bugs:
       - url: 1846686
-  CVE-FIXME-YYY:
+  MFSA-RESERVE-2023-0004:
     title: Use-after-free in Ion Compiler
     impact: high
     reporter: Lukas Bernhard
@@ -37,7 +37,7 @@ advisories:
       During Ion compilation, a Garbage Collection could have resulted in a use-after-free condition, allowing an attacker to write two NUL bytes, and cause a potentially exploitable crash.
     bugs:
       - url: 1851599
-  CVE-FIXME-YYY:
+  MFSA-RESERVE-2023-0005:
     title: Memory Corruption in Ion Hints
     impact: high
     reporter: Mozilla Fuzzing Team
@@ -45,7 +45,7 @@ advisories:
       A hashtable  in the Ion Engine could have been mutated while there was a live interior reference, leading to a potential use-after-free and exploitable crash.
     bugs:
       - url: 1852218
-  CVE-FIXME-YYY:
+  MFSA-RESERVE-2023-0006:
     title: Out-of-bounds write in HTTP Alternate Services
     impact: moderate
     reporter: Ronald Crane
@@ -53,7 +53,7 @@ advisories:
       In a non-standard configuration of Firefox, an integer overflow could have occurred based on network traffic (possibly under influence of a local unprivileged webpage), leading to an out-of-bounds write to privileged process memory. <br>*This bug only affects Firefox if a non-standard preference allowing non-HTTPS Alternate Services (<code>network.http.altsvc.oe</code>) is enabled.*
     bugs:
       - url: 1823172
-  CVE-FIXME-YYY:
+  MFSA-RESERVE-2023-0007:
     title: Double-free in process spawning on Windows
     impact: moderate
     reporter: Ronald Crane
@@ -61,7 +61,7 @@ advisories:
       If Windows failed to duplicate a handle during process creation, the sandbox code may have inadvertently freed a pointer twice, resulting in a use-after-free and a potentially exploitable crash.<br>*This bug only affects Firefox on Windows when run in non-standard configurations (such as using <code>runas</code>). Other operating systems are unaffected.*
     bugs:
       - url: 1848454
-  CVE-FIXME-YYY:
+  MFSA-RESERVE-2023-0008:
     title: Use-after-free of ImageBitmap during process shutdown
     impact: low
     reporter: Yangkang of 360 ATA Team
@@ -69,7 +69,7 @@ advisories:
       During process shutdown, it was possible that an <code>ImageBitmap</code> was created that would later be used after being freed from a different codepath, leading to a potentially exploitable crash.
     bugs:
       - url: 1849704
-  CVE-XXX-rollup:
+  MFSA-RESERVE-2023-0009:
     title: Memory safety bugs fixed in Firefox 118, Firefox ESR 115.3, and Thunderbird 115.3
     impact: high
     reporter: Chris Peterson, Andrew McCreight, André Bargull, Nika Layzell and the Mozilla Fuzzing Team
