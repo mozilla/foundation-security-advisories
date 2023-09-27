@@ -12,7 +12,7 @@ advisories:
     impact: high
     reporter: sonakkbi
     description: |
-      A compromised content process could have provided malicious data to <code>FilterNodeD2D1</code> resulting in an out-of-bounds write, leading to a potentially exploitable crash in a privileged process.
+      A compromised content process could have provided malicious data to <code>FilterNodeD2D1</code> resulting in an out-of-bounds write, leading to a potentially exploitable crash in a privileged process.<br>*This bug only affects Firefox on Windows. Other operating systems are unaffected.*
     bugs:
       - url: 1846683
   CVE-2023-5169:
