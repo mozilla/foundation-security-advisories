@@ -1,0 +1,19 @@
+## mfsa2023-44.yml
+announced: September 28, 2023
+impact: critical
+fixed_in:
+  - Firefox 118.0.1
+  - Firefox ESR 115.3.1
+title: Security Vulnerability fixed in Firefox 118.0.1 and Firefox ESR 115.3.1
+advisories:
+  CVE-2023-5217:
+    feed: false
+    title: Heap buffer overflow in libvpx
+    impact: critical
+    reporter: Clément Lecigne of Google's Threat Analysis Group
+    description: |
+      Specific handling of an attacker-controlled VP8 media stream could lead to a heap buffer overflow in the content process. We are aware of this issue being exploited in other products in the wild.
+    bugs:
+      - url: https://www.cve.org/CVERecord?id=CVE-2023-5217
+      - url: https://bugzilla.mozilla.org/show_bug.cgi?id=1855550
+      - url: https://bugs.chromium.org/p/chromium/issues/detail?id=1486441
