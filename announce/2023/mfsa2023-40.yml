@@ -10,7 +10,7 @@ fixed_in:
 
 title: Security Vulnerability fixed in Firefox 117.0.1, Firefox ESR 115.2.1, Firefox ESR 102.15.1, Thunderbird 102.15.1, and Thunderbird 115.2.2
 advisories:
-  CVE-2023-5129:
+  CVE-2023-4863:
     feed: false
     title: Heap buffer overflow in libwebp
     impact: critical
@@ -18,7 +18,6 @@ advisories:
     description: |
       Opening a malicious WebP image could lead to a heap buffer overflow in the content process. We are aware of this issue being exploited in other products in the wild. <br>*Note: This advisory was previously also tracked as CVE-2023-4863.*
     bugs:
-      - url: https://www.cve.org/CVERecord?id=CVE-2023-5129
       - url: https://www.cve.org/CVERecord?id=CVE-2023-4863
       - url: https://bugzilla.mozilla.org/show_bug.cgi?id=1852649
       - url: https://bugs.chromium.org/p/chromium/issues/detail?id=1479274
