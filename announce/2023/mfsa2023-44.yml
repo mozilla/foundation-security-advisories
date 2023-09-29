@@ -6,7 +6,8 @@ fixed_in:
   - Firefox ESR 115.3.1
   - Firefox for Android 118.1.0
   - Firefox Focus for Android 118.1.0
-title: Security Vulnerability fixed in Firefox 118.0.1, Firefox ESR 115.3.1, Firefox for Android 118.1.0, and Firefox Focus for Android 118.1.0.
+  - Thunderbird 115.3.1
+title: Security Vulnerability fixed in Firefox 118.0.1, Firefox ESR 115.3.1, Firefox for Android 118.1.0, Firefox Focus for Android 118.1.0, and Thunderbird 115.3.1.
 advisories:
   CVE-2023-5217:
     feed: false
