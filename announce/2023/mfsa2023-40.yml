@@ -16,7 +16,7 @@ advisories:
     impact: critical
     reporter: Apple Security Engineering and Architecture (SEAR) and The Citizen Lab at The University of Toronto's Munk School
     description: |
-      Opening a malicious WebP image could lead to a heap buffer overflow in the content process. We are aware of this issue being exploited in other products in the wild. <br>*Note: This advisory was previously also tracked as CVE-2023-4863.*
+      Opening a malicious WebP image could lead to a heap buffer overflow in the content process. We are aware of this issue being exploited in other products in the wild. <br>*Note: This advisory was previously also tracked as CVE-2023-5129.*
     bugs:
       - url: https://www.cve.org/CVERecord?id=CVE-2023-4863
       - url: https://bugzilla.mozilla.org/show_bug.cgi?id=1852649
