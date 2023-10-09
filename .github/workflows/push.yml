@@ -24,8 +24,9 @@ jobs:
   publish:
     name: Publish CVE Advisories
     needs: check
-    if: false && github.ref == 'refs/heads/master' && github.repository == 'mozilla/foundation-security-advisories'
+    if: github.ref == 'refs/heads/master' && github.repository == 'mozilla/foundation-security-advisories'
     runs-on: ubuntu-latest
+    environment: prod
     permissions:
       contents: write
     steps:
