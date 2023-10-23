@@ -1,0 +1,97 @@
+## mfsa2023-45.yml
+announced: October 24, 2023
+impact: high
+fixed_in:
+- Firefox 119
+title: Security Vulnerabilities fixed in Firefox 119
+advisories:
+  MFSA-RESERVE-2023-1830820:
+    title: Queued up rendering could have allowed websites to clickjack
+    impact: high
+    reporter: Kelsey Gilbert
+    description: |
+      It was possible for certain browser prompts and dialogs to be activated or dismissed unintentionally by the user due to an insufficient activation-delay.
+    bugs:
+      - url: 1830820
+  MFSA-RESERVE-2023-1738426:
+    title: Cross-Origin size and header leakage
+    impact: moderate
+    reporter: annevk
+    description: |
+      Using iterative requests an attacker was able to learn the size of an opaque response, as well as the contents of a server-supplied Vary header.
+    bugs:
+      - url: 1738426
+  MFSA-RESERVE-2023-1802057:
+    title: Invalid cookie characters could have led to unexpected errors
+    impact: moderate
+    reporter: Daniel Veditz
+    description: |
+      An attacker with temporary script access to a site could have set a cookie containing invalid characters using <code>document.cookie</code> that could have led to unknown errors.
+    bugs:
+      - url: 1802057
+  MFSA-RESERVE-2023-1836705:
+    title: Large WebGL draw could have led to a crash
+    impact: moderate
+    reporter: pwn2car
+    description: |
+      Drivers are not always robust to extremely large draw calls and in some cases this scenario could have led to a crash.
+    bugs:
+      - url: 1836705
+  MFSA-RESERVE-2023-1845739:
+    title: WebExtensions could open arbitrary URLs
+    impact: moderate
+    reporter: Shaheen Fazim
+    description: |
+      A malicious installed WebExtension could open arbitrary URLs, which under the right circumstance could be leveraged to collect sensitive user data.
+    bugs:
+      - url: 1845739
+  MFSA-RESERVE-2023-1846205:
+    title: Full screen notification obscured by file open dialog on macOS
+    impact: moderate
+    reporter: Edgar Chen and Hafiizh
+    description: |
+      A website could have obscured the full screen notification by using the file open dialog. This could have led to user confusion and possible spoofing attacks. <br>*Note: This issue only affected macOS operating systems. Other operating systems are unaffected.*
+    bugs:
+      - url: 1846205
+  MFSA-RESERVE-2023-1847180:
+    title: Download Protections were bypassed by .msix, .msixbundle, .appx, and .appxbundle files on Windows
+    impact: moderate
+    reporter: Marco Bonardo
+    description: |
+      The executable file warning was not presented when downloading .msix, .msixbundle, .appx, and .appxbundle files, which can run commands on a user's computer.  <br>*Note: This issue only affected Windows operating systems. Other operating systems are unaffected.*
+    bugs:
+      - url: 1847180
+  MFSA-RESERVE-2023-1852729:
+    title: Improper object tracking during GC in the JavaScript engine could have led to a crash.
+    impact: moderate
+    reporter: anbu
+    description: |
+      During garbage collection extra operations were performed on a object that should not be. This could have led to a potentially exploitable crash.
+    bugs:
+      - url: 1852729
+  MFSA-RESERVE-2023-1823720:
+    title: Fullscreen notification dialog could have been obscured by WebAuthn prompts
+    impact: low
+    reporter: Shaheen Fazim
+    description: |
+      A malicious web site can enter fullscreen mode while simultaneously triggering a WebAuthn prompt. This could have obscured the fullscreen notification and could have been leveraged in a spoofing attack.
+    bugs:
+      - url: 1823720
+  MFSA-RESERVE-2023-1191:
+    title: Memory safety bugs fixed in Firefox 119, Firefox ESR 115.4, and Thunderbird 115.4
+    impact: high
+    reporter: Jed Davis, Andrew McCreight, Randell Jesup, and the Mozilla Fuzzing Team
+    description: |
+      Memory safety bugs present in Firefox 118, Firefox ESR 115.3, and Thunderbird 115.3. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1836607, 1840918, 1848694, 1848833, 1850191, 1850259, 1852596, 1853201, 1854002, 1855306, 1855640, 1856695
+        desc: Memory safety bugs fixed in Firefox 119, Firefox ESR 115.4, and Thunderbird 115.4
+  MFSA-RESERVE-2023-1192:
+    title: Memory safety bugs fixed in Firefox 119
+    impact: high
+    reporter: Steve Fink, Stefan Arentz, and the Mozilla Fuzzing Team
+    description: |
+      Memory safety bugs present in Firefox 118. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1690111, 1721904, 1851803, 1854068
+        desc: Memory safety bugs fixed in Firefox 119
