@@ -78,14 +78,14 @@ advisories:
     bugs:
       - url: 1823720
   CVE-2023-5730:
-    title: Memory safety bugs fixed in Firefox 119, Firefox ESR 115.4, and Thunderbird 115.4
+    title: Memory safety bugs fixed in Firefox 119, Firefox ESR 115.4, and Thunderbird 115.4.1
     impact: high
     reporter: Jed Davis, Andrew McCreight, Randell Jesup, and the Mozilla Fuzzing Team
     description: |
       Memory safety bugs present in Firefox 118, Firefox ESR 115.3, and Thunderbird 115.3. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
     bugs:
       - url: 1836607, 1840918, 1848694, 1848833, 1850191, 1850259, 1852596, 1853201, 1854002, 1855306, 1855640, 1856695
-        desc: Memory safety bugs fixed in Firefox 119, Firefox ESR 115.4, and Thunderbird 115.4
+        desc: Memory safety bugs fixed in Firefox 119, Firefox ESR 115.4, and Thunderbird 115.4.1
   CVE-2023-5731:
     title: Memory safety bugs fixed in Firefox 119
     impact: high
