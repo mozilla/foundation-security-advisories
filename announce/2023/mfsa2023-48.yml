@@ -1,0 +1,15 @@
+## mfsa2023-48.yml
+announced: October 24, 2023
+impact: high
+fixed_in:
+- Firefox for iOS 119
+title: Security Vulnerabilities fixed in Firefox for iOS 119
+advisories:
+  CVE-2023-5758:
+    title: Cross-Site Scripting (XSS) in reader mode
+    impact: high
+    reporter: Irwan
+    description: |
+      When opening a page in reader mode, the redirect URL could have caused attacker-controlled script to execute in a reflected Cross-Site Scripting (XSS) attack.
+    bugs:
+      - url: 1850019
