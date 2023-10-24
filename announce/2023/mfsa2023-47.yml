@@ -1,0 +1,74 @@
+## mfsa2023-47.yml
+announced: October 24, 2023
+impact: high
+fixed_in:
+- Thunderbird 115.4
+title: Security Vulnerabilities fixed in Thunderbird 115.4
+description: |
+  *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
+advisories:
+  CVE-2023-5721:
+    title: Queued up rendering could have allowed websites to clickjack
+    impact: high
+    reporter: Kelsey Gilbert
+    description: |
+      It was possible for certain browser prompts and dialogs to be activated or dismissed unintentionally by the user due to an insufficient activation-delay.
+    bugs:
+      - url: 1830820
+  CVE-2023-5732:
+    title: Address bar spoofing via bidirectional characters
+    impact: moderate
+    reporter: Armin Ebert
+    description: |
+      An attacker could have created a malicious link using bidirectional characters to spoof the location in the address bar when visited.
+    bugs:
+      - url: 1690979
+  CVE-2023-5724:
+    title: Large WebGL draw could have led to a crash
+    impact: moderate
+    reporter: pwn2car
+    description: |
+      Drivers are not always robust to extremely large draw calls and in some cases this scenario could have led to a crash.
+    bugs:
+      - url: 1836705
+  CVE-2023-5725:
+    title: WebExtensions could open arbitrary URLs
+    impact: moderate
+    reporter: Shaheen Fazim
+    description: |
+      A malicious installed WebExtension could open arbitrary URLs, which under the right circumstance could be leveraged to collect sensitive user data.
+    bugs:
+      - url: 1845739
+  CVE-2023-5726:
+    title: Full screen notification obscured by file open dialog on macOS
+    impact: moderate
+    reporter: Edgar Chen and Hafiizh
+    description: |
+      A website could have obscured the full screen notification by using the file open dialog. This could have led to user confusion and possible spoofing attacks. <br>*Note: This issue only affected macOS operating systems. Other operating systems are unaffected.*
+    bugs:
+      - url: 1846205
+  CVE-2023-5727:
+    title: Download Protections were bypassed by .msix, .msixbundle, .appx, and .appxbundle files on Windows
+    impact: moderate
+    reporter: Marco Bonardo
+    description: |
+      The executable file warning was not presented when downloading .msix, .msixbundle, .appx, and .appxbundle files, which can run commands on a user's computer.  <br>*Note: This issue only affected Windows operating systems. Other operating systems are unaffected.*
+    bugs:
+      - url: 1847180
+  CVE-2023-5728:
+    title: Improper object tracking during GC in the JavaScript engine could have led to a crash.
+    impact: moderate
+    reporter: anbu
+    description: |
+      During garbage collection extra operations were performed on a object that should not be. This could have led to a potentially exploitable crash.
+    bugs:
+      - url: 1852729
+  CVE-2023-5730:
+    title: Memory safety bugs fixed in Firefox 119, Firefox ESR 115.4, and Thunderbird 115.4
+    impact: high
+    reporter: Randell Jesup, Andrew McCreight, Jed Davis, and the Mozilla Fuzzing Team
+    description: |
+      Memory safety bugs present in Firefox 118, Firefox ESR 115.3, and Thunderbird 115.3. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1836607, 1840918, 1848694, 1848833, 1850191, 1850259, 1852596, 1853201, 1854002, 1855306, 1855640, 1856695
+        desc: Memory safety bugs fixed in Firefox 119, Firefox ESR 115.4, and Thunderbird 115.4
