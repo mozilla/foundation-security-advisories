@@ -23,6 +23,7 @@ advisories:
       An attacker could have created a malicious link using bidirectional characters to spoof the location in the address bar when visited.
     bugs:
       - url: 1690979
+      - url: 1836962
   CVE-2023-5724:
     title: Large WebGL draw could have led to a crash
     impact: moderate

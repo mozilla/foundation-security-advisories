@@ -4,6 +4,8 @@ impact: high
 fixed_in:
 - Firefox 117
 title: Security Vulnerabilities fixed in Firefox 117
+description: |
+  This advisory was updated October 24, 2023 to add CVE-2023-5732 which was included in the original release of Firefox 117, but did not appear in the advisory published at that time.
 advisories:
   CVE-2023-4573:
     title: Memory corruption in IPC CanvasTranslator
@@ -45,6 +47,15 @@ advisories:
       When <code>UpdateRegExpStatics</code> attempted to access <code>initialStringHeap</code> it could already have been garbage collected prior to entering the function, which could potentially have led to an exploitable crash.
     bugs:
       - url: 1847397
+  CVE-2023-5732:
+    title: Address bar spoofing via bidirectional characters
+    impact: moderate
+    reporter: Armin Ebert
+    description: |
+      An attacker could have created a malicious link using bidirectional characters to spoof the location in the address bar when visited.
+    bugs:
+      - url: 1690979
+      - url: 1836962
   CVE-2023-4578:
     title: Error reporting methods in SpiderMonkey could have triggered an Out of Memory Exception
     impact: moderate
