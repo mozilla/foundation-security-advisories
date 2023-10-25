@@ -24,6 +24,7 @@ def main():
             print_cve_step(cve_id)
             if not replace_cve_id(cve_advisory):
                 continue
+            try_set_bugzilla_alias(cve_id.split("-")[-1], cve_advisory.id)
             cve_id = cve_advisory.id
             owned_cve_ids.append(cve_id)
 
