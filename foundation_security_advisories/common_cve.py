@@ -11,6 +11,7 @@ from datetime import datetime, timezone
 from json import dumps
 import difflib
 from bisect import insort
+import requests
 
 from cvelib.cve_api import CveApi
 from requests import HTTPError
@@ -30,6 +31,8 @@ cve_api = CveApi(
 )
 
 announced_cve_steps: list[str] = []
+
+
 def print_cve_step(cve_id: str):
     if cve_id not in announced_cve_steps:
         print(f"\n-> {cve_id}")
@@ -341,3 +344,42 @@ def get_local_cve_advisories():
                         key=lambda x: x.mfsa_id,
                     )
     return local_advisories
+
+
+def try_set_bugzilla_alias(bug: str, cve_id: int):
+    """
+    Try to set the alias of the given bugzilla bug to the given CVE-ID.
+    The bug number is supposed to come from the temporary MSFA-RESERVE-{year}-{id}
+    IDs, where {id} potentially is a bugzilla bug number. All {id}s smaller than 100000
+    will be ignored. Will return without error if anything fails.
+    """
+    try:
+        # Check if we have a bugzilla API key available
+        BUGZILLA_API_KEY = os.getenv("BUGZILLA_API_KEY")
+        if not BUGZILLA_API_KEY:
+            print(
+                f"Skipping alias assignment for {cve_id} (bug {bug}) as no BUGZILLA_API_KEY was provided"
+            )
+            return
+        # Make sure this is actually a number
+        bug_number = int(str)
+        # Skip smaller numbers as there is a high chance these aren't any actual bugzilla bug numbers
+        if bug_number < 100000:
+            print(
+                f"Skipping alias assignment for {cve_id} as '{bug_number}' does not seem to be a bug number"
+            )
+            return
+        if not prompt_yes_no(
+            f"Should '{cve_id}' be set as an alias for bug {bug_number} on bugzilla?"
+        ):
+            print(f"Skipping alias assignment for {cve_id} (bug {bug})")
+            return
+        # Try to update the alias for the given bug number. If this fails our try block will catch it.
+        requests.put(
+            f"https://bugzilla.mozilla.org/rest/bug/{bug_number}",
+            data={"alias": cve_id},
+            headers={"X-BUGZILLA-API-KEY": BUGZILLA_API_KEY},
+        )
+        print(f"Assigned alias {cve_id} to bug {bug}")
+    except:
+        print(f"Failed to assign alias {cve_id} to bug {bug}")
