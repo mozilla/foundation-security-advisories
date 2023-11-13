@@ -167,3 +167,13 @@ $ cd .git/hooks && ln -s ../../pre-commit-hook.sh pre-commit
 
 After this if you attempt to commit a change to a file that has a problem being parsed, you'll be
 informed which file has a problem and the commit will be aborted.
+
+## Assignment and Release Process
+
+Advisories are written and assigned as per the process described in the
+[Security/Firefox/Security Bug Life Cycle/Security Advisories](https://wiki.mozilla.org/Security/Firefox/Security_Bug_Life_Cycle/Security_Advisories)
+wiki page. Once advisories have a CVE id, and are pushed to the master branch of this repository
+([mozilla/foundation-security-advisories](https://github.com/mozilla/foundation-security-advisories)), they will
+automatically be published to CVE Services by GitHub Actions running the
+[publish_cve_advisories](foundation_security_advisories/publish_cve_advisories.py) script. This will also update already
+published advisories, for example in cases of a typo.
