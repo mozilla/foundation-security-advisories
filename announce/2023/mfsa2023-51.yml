@@ -1,0 +1,23 @@
+## mfsa2023-51.yml
+announced: November 21, 2023
+impact: high
+fixed_in:
+- Firefox for iOS 120
+title: Security Vulnerabilities fixed in Firefox for iOS 120
+advisories:
+  CVE-2023-49060:
+    title: Privilege escalation through <a [referrerpolicy]> in ReaderMode
+    impact: high
+    reporter: Muneaki Nishimura
+    description: |
+      An attacker could have accessed internal pages or data by ex-filtrating a security key from ReaderMode via the <code>referrerpolicy</code> attribute.
+    bugs:
+      - url: 1861405
+  CVE-2023-49061:
+    title: HTML injection in %READER-BYLINE% of ReaderMode
+    impact: moderate
+    reporter: Muneaki Nishimura
+    description: |
+      An attacker could have performed HTML template injection via Reader Mode and exfiltrated user information.
+    bugs:
+      - url: 1861420
