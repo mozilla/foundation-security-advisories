@@ -2,7 +2,7 @@
 announced: November 21, 2023
 impact: high
 fixed_in:
-- Firefox 115.5
+- Firefox ESR 115.5
 title: Security Vulnerabilities fixed in Firefox ESR 115.5
 advisories:
   CVE-2023-6204:
