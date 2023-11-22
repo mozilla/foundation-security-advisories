@@ -81,14 +81,14 @@ advisories:
     bugs:
       - url: 1850200
   CVE-2023-6212:
-    title: Memory safety bugs fixed in Firefox 120, Firefox ESR 115.5, and Thunderbird 115.5
+    title: Memory safety bugs fixed in Firefox 120, Firefox ESR 115.5.0, and Thunderbird 115.5
     impact: high
     reporter: Mozilla Developers
     description: |
       Memory safety bugs present in Firefox 119, Firefox ESR 115.4, and Thunderbird 115.4. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
     bugs:
       - url: 1658432, 1820983, 1829252, 1856072, 1856091, 1859030, 1860943, 1862782
-        desc: Memory safety bugs fixed in Firefox 120, Firefox ESR 115.5, and Thunderbird 115.5
+        desc: Memory safety bugs fixed in Firefox 120, Firefox ESR 115.5.0, and Thunderbird 115.5
   CVE-2023-6213:
     title: Memory safety bugs fixed in Firefox 120
     impact: high
