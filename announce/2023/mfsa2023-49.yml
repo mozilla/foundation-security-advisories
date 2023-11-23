@@ -62,7 +62,7 @@ advisories:
   CVE-2023-6210:
     title: 'Mixed-content resources not blocked in a javascript: pop-up'
     impact: low
-    reporter: 0xgodson
+    reporter: Godson Bastin
     description: |
       When an https: web page created a pop-up from a "javascript:" URL,
       that pop-up was incorrectly allowed to load blockable content such
