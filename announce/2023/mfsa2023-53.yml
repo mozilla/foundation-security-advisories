@@ -1,0 +1,19 @@
+## mfsa2023-53.yml
+announced: December 12, 2023
+impact: moderate
+fixed_in:
+- NSS 3.61
+title: Timing side-channel in PKCS#1 v1.5 decryption depadding code
+description: <i>Although this issue was embargoed until 2023, it was fixed in NSS 3.61 as released on January 22, 2021</i>
+advisories:
+  CVE-2023-4421:
+    title: Timing side-channel in PKCS#1 v1.5 decryption depadding code
+    impact: moderate
+    reporter: Hubert Kario
+    description: |
+      The NSS code used for checking PKCS#1 v1.5 was leaking information useful in mounting Bleichenbacher-like attacks.
+      Both the overall correctness of the padding as well as the length of the encrypted message was leaking through timing side-channel.
+      By sending large number of attacker-selected ciphertexts, the attacker would be able to decrypt a previously intercepted PKCS#1 v1.5 ciphertext (for example, to decrypt a TLS session that used RSA key exchange), or forge a signature using the victim's key.
+      The issue was fixed by implementing the implicit rejection algorithm, in which the NSS returns a deterministic random message in case invalid padding is detected, as proposed in the Marvin Attack paper. 
+    bugs:
+      - url: 1651411
