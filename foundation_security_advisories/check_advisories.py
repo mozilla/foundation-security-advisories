@@ -26,7 +26,7 @@ from foundation_security_advisories.common import (
     get_modified_files
 )
 
-CVE_RE = re.compile('^(CVE|MFSA-TMP|MFSA-RESERVE)-20[0-9]{2}-[0-9]{4,9}$')
+CVE_RE = re.compile('^(CVE|MFSA-TMP|MFSA-RESERVE)-20[0-9]{2}-[0-9]{1,9}$')
 md_schema = Schema({
     'mfsa_id': str,
     'fixed_in': [str],
