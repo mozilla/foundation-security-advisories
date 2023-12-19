@@ -4,8 +4,6 @@ impact: high
 fixed_in:
   - Thunderbird 115.6
 title: Security Vulnerabilities fixed in Thunderbird 115.6
-description: |
-  *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
 advisories:
   CVE-2023-50762:
     title: Truncated signed text was shown with a valid OpenPGP signature
@@ -24,7 +22,7 @@ advisories:
     bugs:
       - url: 1865647
   CVE-2023-6856:
-    title: Heap-buffer-overflow affecting WebGL <code>DrawElementsInstanced</code> method with Mesa VM driver
+    title: Heap-buffer-overflow affecting WebGL DrawElementsInstanced method with Mesa VM driver
     impact: high
     reporter: DoHyun Lee
     description: |
@@ -40,7 +38,7 @@ advisories:
     bugs:
       - url: 1796023
   CVE-2023-6858:
-    title: Heap buffer overflow in <code>nsTextFragment</code>
+    title: Heap buffer overflow in nsTextFragment
     impact: moderate
     reporter: Irvan Kurniawan
     description: |
@@ -56,7 +54,7 @@ advisories:
     bugs:
       - url: 1840144
   CVE-2023-6860:
-    title: Potential sandbox escape due to <code>VideoBridge</code> lack of texture validation
+    title: Potential sandbox escape due to VideoBridge lack of texture validation
     impact: moderate
     reporter: Andrew Osmond
     description: |
@@ -64,15 +62,15 @@ advisories:
     bugs:
       - url: 1854669
   CVE-2023-6861:
-    title: 'Heap buffer overflow affected <code>nsWindow::PickerOpen(void)</code> in headless mode'
+    title: 'Heap buffer overflow affected nsWindow::PickerOpen(void) in headless mode'
     impact: moderate
     reporter: Yangkang of 360 ATA Team
     description: |
-      The <code>nsWindow::PickerOpen(void)<code> method was susceptible to a heap buffer overflow when running in headless mode.
+      The <code>nsWindow::PickerOpen(void)</code> method was susceptible to a heap buffer overflow when running in headless mode.
     bugs:
       - url: 1864118
   CVE-2023-6862:
-    title: Use-after-free in <code>nsDNSService</code>
+    title: Use-after-free in nsDNSService
     impact: moderate
     reporter: Randell Jesup
     description: |
@@ -80,7 +78,7 @@ advisories:
     bugs:
       - url: 1868042
   CVE-2023-6863:
-    title: Undefined behavior in <code>ShutdownObserver()</code>
+    title: Undefined behavior in ShutdownObserver()
     impact: low
     reporter: Ronald Crane
     description: |
