@@ -1,0 +1,153 @@
+## mfsa2023-56.yml
+announced: December 19, 2023
+impact: high
+fixed_in:
+- Firefox 121
+title: Security Vulnerabilities fixed in Firefox 121
+advisories:
+  CVE-2023-6856:
+    title: Heap-buffer-overflow affecting WebGL <code>DrawElementsInstanced</code> method with Mesa VM driver
+    impact: high
+    reporter: DoHyun Lee
+    description: |
+      The WebGL <code>DrawElementsInstanced</code> method was susceptible to a heap buffer overflow when used on systems with the Mesa VM driver. This issue could allow an attacker to perform remote code execution and sandbox escape.
+    bugs:
+      - url: 1843782
+  CVE-2023-6135:
+    title: NSS susceptible to "Minerva" attack
+    impact: high
+    reporter: George Pantela (Red Hat) and Hubert Kario (Red Hat)
+    description: |
+      Multiple NSS NIST curves were susceptible to a side-channel attack known as "Minerva". This attack could potentially allow an attacker to recover the private key.
+    bugs:
+      - url: 1853908
+  CVE-2023-6865:
+    title: Potential exposure of uninitialized data in <code>EncryptingOutputStream</code>
+    impact: high
+    reporter: Jan Varga
+    description: |
+      <code>EncryptingOutputStream</code> was susceptible to exposing uninitialized data. This issue could only be abused in order to write data to a local disk which may have implications for private browsing mode.
+    bugs:
+      - url: 1864123
+  CVE-2023-6857:
+    title: Symlinks may resolve to smaller than expected buffers
+    impact: moderate
+    reporter: Jed Davis
+    description: |
+      When resolving a symlink, a race may occur where the buffer passed to <code>readlink</code> may actually be smaller than necessary. <br>*This bug only affects Firefox on Unix-based operating systems (Android, Linux, MacOS). Windows is unaffected.*
+    bugs:
+      - url: 1796023
+  CVE-2023-6858:
+    title: Heap buffer overflow in <code>nsTextFragment</code>
+    impact: moderate
+    reporter: Irvan Kurniawan
+    description: |
+      Firefox was susceptible to a heap buffer overflow in <code>nsTextFragment</code> due to insufficient OOM handling.
+    bugs:
+      - url: 1826791
+  CVE-2023-6859:
+    title: Use-after-free in PR_GetIdentitiesLayer
+    impact: moderate
+    reporter: Irvan Kurniawan
+    description: |
+      A use-after-free condition affected TLS socket creation when under memory pressure.
+    bugs:
+      - url: 1840144
+  CVE-2023-6866:
+    title: TypedArrays lack sufficient exception handling
+    impact: moderate
+    reporter: Tom Schuster
+    description: |
+      TypedArrays can be fallible and lacked proper exception handling. This could lead to abuse in other APIs which expect TypedArrays to always succeed.
+    bugs:
+      - url: 1849037
+  CVE-2023-6860:
+    title: Potential sandbox escape due to <code>VideoBridge</code> lack of texture validation
+    impact: moderate
+    reporter: Andrew Osmond
+    description: |
+      The <code>VideoBridge</code> allowed any content process to use textures produced by remote decoders. This could be abused to escape the sandbox.
+    bugs:
+      - url: 1854669
+  CVE-2023-6867:
+    title: Clickjacking permission prompts using the popup transition
+    impact: moderate
+    reporter: Hafiizh
+    description: |
+      The timing of a button click causing a popup to disappear was approximately the same length as the anti-clickjacking delay on permission prompts. It was possible to use this fact to surprise users by luring them to click where the permission grant button would be about to appear.
+    bugs:
+      - url: 1863863
+  CVE-2023-6861:
+    title: 'Heap buffer overflow affected <code>nsWindow::PickerOpen(void)</code> in headless mode'
+    impact: moderate
+    reporter: Yangkang of 360 ATA Team
+    description: |
+      The <code>nsWindow::PickerOpen(void)<code> method was susceptible to a heap buffer overflow when running in headless mode.
+    bugs:
+      - url: 1864118
+  CVE-2023-6868:
+    title: WebPush requests on Firefox for Android did not require VAPID key
+    impact: moderate
+    reporter: John-Mark Gurney
+    description: |
+      In some instances, the user-agent would allow push requests which lacked a valid VAPID even though the push manager subscription defined one. This could allow empty messages to be sent from unauthorized parties.<br>*This bug only affects Firefox on Android.*
+    bugs:
+      - url: 1865488
+  CVE-2023-6869:
+    title: Content can paint outside of sandboxed iframe
+    impact: low
+    reporter: Oriol Brufau
+    description: |
+      A <code><dialog></code> element could have been manipulated to paint content outside of a sandboxed iframe. This could allow untrusted content to display under the guise of trusted content.
+    bugs:
+      - url: 1799036
+  CVE-2023-6870:
+    title: Android Toast notifications may obscure fullscreen event notifications
+    impact: low
+    reporter: Hafiizh
+    description: |
+      Applications which spawn a Toast notification in a background thread may have obscured fullscreen notifications displayed by Firefox. <br>*This issue only affects Android versions of Firefox and Firefox Focus.*
+    bugs:
+      - url: 1823316
+  CVE-2023-6871:
+    title: Lack of protocol handler warning in some instances
+    impact: low
+    reporter: Roy Gunsen
+    description: |
+      Under certain conditions, Firefox did not display a warning when a user attempted to navigate to a new protocol handler.
+    bugs:
+      - url: 1828334
+  CVE-2023-6872:
+    title: Browsing history leaked to syslogs via GNOME
+    impact: low
+    reporter: honorton via Tor Browser
+    description: |
+      Browser tab titles were being leaked by GNOME to system logs. This could potentially expose the browsing habits of users running in a private tab.
+    bugs:
+      - url: 1849186
+  CVE-2023-6863:
+    title: Undefined behavior in <code>ShutdownObserver()</code>
+    impact: low
+    reporter: Ronald Crane
+    description: |
+      The <code>ShutdownObserver()</code> was susceptible to potentially undefined behavior due to its reliance on a dynamic type that lacked a virtual destructor.
+    bugs:
+      - url: 1868901
+  CVE-2023-6864:
+    title: Memory safety bugs fixed in Firefox 121, Firefox ESR 115.6, and Thunderbird 115.6
+    impact: high
+    reporter: Andrew McCreight, the Mozilla Fuzzing Team, Randell Jesup, Valentin Gosu (he/him), Karl Tomlinson
+    description: |
+      Memory safety bugs present in Firefox 120, Firefox ESR 115.5, and Thunderbird 115.5. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1736385, 1810805, 1846328, 1856090, 1858033, 1858509, 1862777, 1864015
+        desc: Memory safety bugs fixed in Firefox 121, Firefox ESR 115.6, and Thunderbird 115.6
+  CVE-2023-6873:
+    title: Memory safety bugs fixed in Firefox 121
+    impact: high
+    reporter: Andrew McCreight, Yury Delendik
+    description: |
+      Memory safety bugs present in Firefox 120. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1855327, 1862089, 1862723
+        desc: Memory safety bugs fixed in Firefox 121
