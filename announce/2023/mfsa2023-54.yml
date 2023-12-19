@@ -6,19 +6,19 @@ fixed_in:
 title: Security Vulnerabilities fixed in Firefox ESR 115.6
 advisories:
   CVE-2023-6856:
-    title: Heap-buffer-overflow affecting WebGL <code>DrawElementsInstanced</code> method with Mesa VM driver
+    title: Heap-buffer-overflow affecting WebGL DrawElementsInstanced method with Mesa VM driver
     impact: high
     reporter: DoHyun Lee
     description: |
-      The WebGL <code>DrawElementsInstanced</code> method was susceptible to a heap buffer overflow when used on systems with the Mesa VM driver.  This issue could allow an attacker to perform remote code execution and sandbox escape.
+      The WebGL `DrawElementsInstanced` method was susceptible to a heap buffer overflow when used on systems with the Mesa VM driver.  This issue could allow an attacker to perform remote code execution and sandbox escape.
     bugs:
       - url: 1843782
   CVE-2023-6865:
-    title: Potential exposure of uninitialized data in <code>EncryptingOutputStream</code>
+    title: Potential exposure of uninitialized data in EncryptingOutputStream
     impact: high
     reporter: Jan Varga
     description: |
-      <code>EncryptingOutputStream</code> was susceptible to exposing uninitialized data.  This issue could only be abused in order to write data to a local disk which may have implications for private browsing mode.
+      `EncryptingOutputStream` was susceptible to exposing uninitialized data.  This issue could only be abused in order to write data to a local disk which may have implications for private browsing mode.
     bugs:
       - url: 1864123
   CVE-2023-6857:
@@ -26,15 +26,15 @@ advisories:
     impact: moderate
     reporter: Jed Davis
     description: |
-      When resolving a symlink, a race may occur where the buffer passed to <code>readlink</code> may actually be smaller than necessary. <br>*This bug only affects Firefox on Unix-based operating systems (Android, Linux, MacOS). Windows is unaffected.*
+      When resolving a symlink, a race may occur where the buffer passed to `readlink` may actually be smaller than necessary. <br>*This bug only affects Firefox on Unix-based operating systems (Android, Linux, MacOS). Windows is unaffected.*
     bugs:
       - url: 1796023
   CVE-2023-6858:
-    title: Heap buffer overflow in <code>nsTextFragment</code>
+    title: Heap buffer overflow in nsTextFragment
     impact: moderate
     reporter: Irvan Kurniawan
     description: |
-      Firefox was susceptible to a heap buffer overflow in <code>nsTextFragment</code> due to insufficient OOM handling.
+      Firefox was susceptible to a heap buffer overflow in `nsTextFragment` due to insufficient OOM handling.
     bugs:
       - url: 1826791
   CVE-2023-6859:
@@ -46,11 +46,11 @@ advisories:
     bugs:
       - url: 1840144
   CVE-2023-6860:
-    title: Potential sandbox escape due to <code>VideoBridge</code> lack of texture validation
+    title: Potential sandbox escape due to VideoBridge lack of texture validation
     impact: moderate
     reporter: Andrew Osmond
     description: |
-      The <code>VideoBridge</code> allowed any content process to use textures produced by remote decoders.  This could be abused to escape the sandbox.
+      The `VideoBridge` allowed any content process to use textures produced by remote decoders.  This could be abused to escape the sandbox.
     bugs:
       - url: 1854669
   CVE-2023-6867:
@@ -62,27 +62,27 @@ advisories:
     bugs:
       - url: 1863863
   CVE-2023-6861:
-    title: 'Heap buffer overflow affected <code>nsWindow::PickerOpen(void)</code> in headless mode'
+    title: Heap buffer overflow affected nsWindow::PickerOpen(void) in headless mode
     impact: moderate
     reporter: Yangkang of 360 ATA Team
     description: |
-      The <code>nsWindow::PickerOpen(void)<code> method was susceptible to a heap buffer overflow when running in headless mode.
+      The `nsWindow::PickerOpen(void)` method was susceptible to a heap buffer overflow when running in headless mode.
     bugs:
       - url: 1864118
   CVE-2023-6862:
-    title: Use-after-free in <code>nsDNSService</code>
+    title: Use-after-free in nsDNSService
     impact: moderate
     reporter: Randell Jesup
     description: |
-      A use-after-free was identified in the <code>nsDNSService::Init</code>.  This issue appears to manifest rarely during start-up.
+      A use-after-free was identified in the `nsDNSService::Init`.  This issue appears to manifest rarely during start-up.
     bugs:
       - url: 1868042
   CVE-2023-6863:
-    title: Undefined behavior in <code>ShutdownObserver()</code>
+    title: Undefined behavior in ShutdownObserver()
     impact: low
     reporter: Ronald Crane
     description: |
-      The <code>ShutdownObserver()</code> was susceptible to potentially undefined behavior due to its reliance on a dynamic type that lacked a virtual destructor.
+      The `ShutdownObserver()` was susceptible to potentially undefined behavior due to its reliance on a dynamic type that lacked a virtual destructor.
     bugs:
       - url: 1868901
   CVE-2023-6864:
