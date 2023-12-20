@@ -235,7 +235,7 @@ advisories:
     bugs:
       - url: 1340127
   CVE-2017-5450:
-    title:  "Addressbar spoofing using javascript: URI on Firefox for Android"
+    title: "Addressbar spoofing using javascript: URI on Firefox for Android"
     impact: moderate
     reporter: Haosheng Wang
     description: |

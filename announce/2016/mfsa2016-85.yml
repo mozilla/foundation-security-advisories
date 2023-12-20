@@ -6,7 +6,7 @@ fixed_in:
 title: Security vulnerabilities fixed in Firefox 49
 advisories:
   CVE-2016-2827:
-    title: Out-of-bounds read in mozilla::net::IsValidReferrerPolicy
+    title: "Out-of-bounds read in mozilla::net::IsValidReferrerPolicy"
     impact: low
     reporter: Atte Kettunen
     description: |
@@ -15,7 +15,7 @@ advisories:
       - url: 1289085
         desc: Bug 1289085
   CVE-2016-5270:
-    title: Heap-buffer-overflow in nsCaseTransformTextRunFactory::TransformString
+    title: "Heap-buffer-overflow in nsCaseTransformTextRunFactory::TransformString"
     impact: high
     reporter: Atte Kettunen
     description: An out-of-bounds write of a boolean value during text conversion with some unicode characters
@@ -23,7 +23,7 @@ advisories:
       - url: 1291016
         desc: Bug 1291016
   CVE-2016-5271:
-    title: Out-of-bounds read in PropertyProvider::GetSpacingInternal
+    title: "Out-of-bounds read in PropertyProvider::GetSpacingInternal"
     impact: low
     reporter: Abhishek Arya
     description: |
@@ -41,7 +41,7 @@ advisories:
       - url: 129793
         desc: Bug 129793
   CVE-2016-5273:
-    title: crash in mozilla::a11y::HyperTextAccessible::GetChildOffset
+    title: "crash in mozilla::a11y::HyperTextAccessible::GetChildOffset"
     impact: high
     reporter: Nils
     description: A potentially exploitable crash in accessibility.
@@ -49,7 +49,7 @@ advisories:
       - url: 1280387
         desc: Bug 1280387
   CVE-2016-5276:
-    title: Heap-use-after-free in mozilla::a11y::DocAccessible::ProcessInvalidationList
+    title: "Heap-use-after-free in mozilla::a11y::DocAccessible::ProcessInvalidationList"
     impact: high
     reporter: Nils
     description: |
@@ -58,7 +58,7 @@ advisories:
       - url: 1287721
         desc: Bug 1287721
   CVE-2016-5274:
-    title: use-after-free in nsFrameManager::CaptureFrameState
+    title: "use-after-free in nsFrameManager::CaptureFrameState"
     impact: high
     reporter: Nils
     description: A use-after-free issue in web animations during restyling.
@@ -66,7 +66,7 @@ advisories:
       - url: 1282076
         desc: Bug 1282076
   CVE-2016-5277:
-    title: Heap-use-after-free in nsRefreshDriver::Tick
+    title: "Heap-use-after-free in nsRefreshDriver::Tick"
     impact: high
     reporter: Nils
     description: A use-after-free vulnerability with web animations when destroying a timeline.
@@ -74,7 +74,7 @@ advisories:
       - url: 1291665
         desc: Bug 1291665
   CVE-2016-5275:
-    title: Buffer overflow in mozilla::gfx::FilterSupport::ComputeSourceNeededRegions 
+    title: "Buffer overflow in mozilla::gfx::FilterSupport::ComputeSourceNeededRegions "
     impact: critical
     reporter: Nils
     description: A buffer overflow when working with empty filters during canvas rendering.
@@ -82,7 +82,7 @@ advisories:
       - url: 1287316
         desc: Bug 1287316
   CVE-2016-5278:
-    title: Heap-buffer-overflow in nsBMPEncoder::AddImageFrame
+    title: "Heap-buffer-overflow in nsBMPEncoder::AddImageFrame"
     impact: critical
     reporter: Nils
     description: A potentially exploitable crash caused by a buffer overflow while encoding image frames to images.
@@ -98,7 +98,7 @@ advisories:
       - url: 1249522
         desc: Bug 1249522
   CVE-2016-5280:
-    title: Use-after-free in mozilla::nsTextNodeDirectionalityMap::RemoveElementFromMap
+    title: "Use-after-free in mozilla::nsTextNodeDirectionalityMap::RemoveElementFromMap"
     impact: high
     reporter: Mei Wang
     description: Use-after-free vulnerability when changing text direction.

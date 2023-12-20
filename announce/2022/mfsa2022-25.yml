@@ -24,7 +24,7 @@ advisories:
     bugs:
       - url: 1765951
   CVE-2022-34468:
-    title: 'CSP sandbox header without `allow-scripts` can be bypassed via retargeted javascript: URI'
+    title: 'CSP sandbox header without "allow-scripts" can be bypassed via retargeted javascript: URI'
     impact: high
     reporter: Armin Ebert
     description: |

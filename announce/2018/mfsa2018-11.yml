@@ -175,7 +175,7 @@ advisories:
     bugs:
       - url: 1451452
   CVE-2018-5180:
-    title: heap-use-after-free in mozilla::WebGLContext::DrawElementsInstanced
+    title: "heap-use-after-free in mozilla::WebGLContext::DrawElementsInstanced"
     impact: low
     reporter: Nils
     description: |

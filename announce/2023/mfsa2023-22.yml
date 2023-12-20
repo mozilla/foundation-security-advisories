@@ -78,7 +78,7 @@ advisories:
     bugs:
       - url: 1837675
   CVE-2023-37209:
-    title: Use-after-free in `NotifyOnHistoryReload`
+    title: Use-after-free in "NotifyOnHistoryReload"
     impact: moderate
     reporter: Simon Descarpentries
     description: |

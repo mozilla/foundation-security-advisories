@@ -22,7 +22,7 @@ advisories:
     bugs:
       - url: 1771774
   CVE-2022-36314:
-    title: Opening local <code>.lnk</code> files could cause unexpected network loads
+    title: Opening local ".lnk" files could cause unexpected network loads
     impact: moderate
     reporter: akucybersec
     description: |

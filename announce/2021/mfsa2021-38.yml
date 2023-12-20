@@ -23,7 +23,7 @@ advisories:
     bugs:
       - url: 1551886
   CVE-2021-38492:
-    title: 'Navigating to `mk:` URL scheme could load Internet Explorer'
+    title: 'Navigating to "mk:" URL scheme could load Internet Explorer'
     impact: moderate
     reporter: James Lee
     description: |

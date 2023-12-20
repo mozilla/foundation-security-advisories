@@ -73,7 +73,7 @@ advisories:
       - url: 1299686
         desc: 
   CVE-2016-9067:
-    title: heap-use-after-free in nsINode::ReplaceOrInsertBefore
+    title: "heap-use-after-free in nsINode::ReplaceOrInsertBefore"
     impact: high
     reporter: Nils
     description: Two use-after-free errors during DOM operations resulting in potentially exploitable crashes.

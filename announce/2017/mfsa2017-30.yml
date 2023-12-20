@@ -14,7 +14,7 @@ advisories:
     bugs:
       - url: 1402372
   CVE-2017-7846:
-    title: JavaScript Execution via RSS in mailbox:// origin
+    title: "JavaScript Execution via RSS in mailbox:// origin"
     impact: high
     reporter: cure53
     description: |

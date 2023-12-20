@@ -70,7 +70,7 @@ advisories:
     bugs:
       - url: 1683536
   CVE-2021-23975:
-    title: about:memory Measure function caused an incorrect pointer operation
+    title: "about:memory Measure function caused an incorrect pointer operation"
     impact: low
     reporter: Brian Carpenter of Geeknik Labs & Farm
     description: |
