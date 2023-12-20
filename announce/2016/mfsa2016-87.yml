@@ -6,7 +6,7 @@ fixed_in:
 title: Security vulnerabilities fixed in Firefox 49.0.2
 advisories:
   CVE-2016-5287:
-    title: Crash in nsTArray_base&lt;T&gt;::SwapArrayElements
+    title: "Crash in nsTArray_base&lt;T&gt;::SwapArrayElements"
     impact: high
     reporter: Philipp
     description: A potentially exploitable use-after-free crash during actor destruction with service workers. This issue does not affect releases earlier than Firefox 49.

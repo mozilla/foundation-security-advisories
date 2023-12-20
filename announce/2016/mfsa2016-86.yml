@@ -6,7 +6,7 @@ fixed_in:
 title: Security vulnerabilities fixed in Firefox ESR 45.4
 advisories:
   CVE-2016-5270:
-    title: Heap-buffer-overflow in nsCaseTransformTextRunFactory::TransformString
+    title: "Heap-buffer-overflow in nsCaseTransformTextRunFactory::TransformString"
     impact: high
     reporter: Atte Kettunen
     description: An out-of-bounds write of a boolean value during text conversion with some unicode characters
@@ -23,7 +23,7 @@ advisories:
       - url: 129793
         desc: Bug 129793
   CVE-2016-5276:
-    title: Heap-use-after-free in mozilla::a11y::DocAccessible::ProcessInvalidationList
+    title: "Heap-use-after-free in mozilla::a11y::DocAccessible::ProcessInvalidationList"
     impact: high
     reporter: Nils
     description: |
@@ -32,7 +32,7 @@ advisories:
       - url: 1287721
         desc: Bug 1287721
   CVE-2016-5274:
-    title: use-after-free in nsFrameManager::CaptureFrameState
+    title: "use-after-free in nsFrameManager::CaptureFrameState"
     impact: high
     reporter: Nils
     description: A use-after-free issue in web animations during restyling.
@@ -40,7 +40,7 @@ advisories:
       - url: 1282076
         desc: Bug 1282076
   CVE-2016-5277:
-    title: Heap-use-after-free in nsRefreshDriver::Tick
+    title: "Heap-use-after-free in nsRefreshDriver::Tick"
     impact: high
     reporter: Nils
     description: A use-after-free vulnerability with web animations when destroying a timeline.
@@ -48,7 +48,7 @@ advisories:
       - url: 1291665
         desc: Bug 1291665
   CVE-2016-5278:
-    title: Heap-buffer-overflow in nsBMPEncoder::AddImageFrame
+    title: "Heap-buffer-overflow in nsBMPEncoder::AddImageFrame"
     impact: critical
     reporter: Nils
     description: A potentially exploitable crash caused by a buffer overflow while encoding image frames to images.
@@ -56,7 +56,7 @@ advisories:
       - url: 1294677
         desc: Bug 1294677
   CVE-2016-5280:
-    title: Use-after-free in mozilla::nsTextNodeDirectionalityMap::RemoveElementFromMap
+    title: "Use-after-free in mozilla::nsTextNodeDirectionalityMap::RemoveElementFromMap"
     impact: high
     reporter: Mei Wang
     description: Use-after-free vulnerability when changing text direction.

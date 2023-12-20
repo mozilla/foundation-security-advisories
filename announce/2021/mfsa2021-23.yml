@@ -24,11 +24,11 @@ advisories:
     bugs:
       - url: 1675965
   CVE-2021-29961:
-    title: Firefox UI spoof using `<select>` elements and CSS scaling
+    title: Firefox UI spoof using "<select>" elements and CSS scaling
     impact: moderate
     reporter: Irvan Kurniawan
     description: |
-      When styling and rendering an oversized `<select>` element, Firefox did not apply correct clipping which allowed an attacker to paint over the user interface.
+      When styling and rendering an oversized `&lt;select>` element, Firefox did not apply correct clipping which allowed an attacker to paint over the user interface.
     bugs:
       - url: 1700235
   CVE-2021-29963:
@@ -41,7 +41,7 @@ advisories:
     bugs:
       - url: 1705068
   CVE-2021-29964:
-    title: Out of bounds-read when parsing a `WM_COPYDATA` message
+    title: Out of bounds-read when parsing a "WM_COPYDATA" message
     impact: moderate
     reporter: Ronald Crane
     description: |

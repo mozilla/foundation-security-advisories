@@ -78,7 +78,7 @@ advisories:
     bugs:
       - url: 1677940
   CVE-2021-23962:
-    title: 'Use-after-poison in <code>nsTreeBodyFrame::RowCountChanged</code>'
+    title: 'Use-after-poison in "nsTreeBodyFrame::RowCountChanged"'
     impact: low
     reporter: Chiaki ISHIKAWA
     description: |

@@ -6,7 +6,7 @@ fixed_in:
 title: Security Vulnerabilities fixed in Thunderbird 78.11
 advisories:
   CVE-2021-29964:
-    title: Out of bounds-read when parsing a `WM_COPYDATA` message
+    title: Out of bounds-read when parsing a "WM_COPYDATA" message
     impact: moderate
     reporter: Ronald Crane
     description: |

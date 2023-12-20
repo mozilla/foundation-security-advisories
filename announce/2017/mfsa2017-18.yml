@@ -182,7 +182,7 @@ advisories:
     bugs:
       - url: 1360842
   CVE-2017-7788:
-    title: Sandboxed about:srcdoc iframes do not inherit CSP directives
+    title: "Sandboxed about:srcdoc iframes do not inherit CSP directives"
     impact: low
     reporter: Muneaki Nishimura
     description: |
