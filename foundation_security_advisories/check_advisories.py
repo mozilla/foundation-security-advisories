@@ -27,6 +27,8 @@ from foundation_security_advisories.common import (
 )
 
 CVE_RE = re.compile('^(CVE|MFSA-TMP|MFSA-RESERVE)-20[0-9]{2}-[0-9]{1,9}$')
+UNWANTED_HTML_TAG_RE = re.compile('.*(<(?!\/?(code|em|it|b|a[^>]*|ul|ol|li|br|br\/|br \/)>).*>).*')
+INVALID_COLON_TITLE_LINE = re.compile('^ *title: [^\'"].*:.*[^\'"]$')
 md_schema = Schema({
     'mfsa_id': str,
     'fixed_in': [str],
@@ -121,6 +123,23 @@ def check_file(file_name):
         schema.validate(data)
     except SchemaError as e:
         return str(e)
+
+    if "advisories" in data:
+        for _, advisory in data["advisories"].items():
+            if advisory["title"] != None:
+                if "`" in advisory["title"]:
+                    return "Advisory title should not contain any backticks"
+                if "<code>" in advisory["title"]:
+                    return f"Advisory title should not contain any <code> tags"
+            match = UNWANTED_HTML_TAG_RE.match(advisory["description"])
+            if match:
+                return f"Advisory description should only contain basic html tags used for formatting, found {match.groups()[0]}. Consider escaping < with &lt;"
+
+    if file_name.endswith('.yml'):
+        with open(file_name, "r") as f:
+            for i, line in enumerate(f):
+                if INVALID_COLON_TITLE_LINE.match(line):
+                    return f"If title contains a colon, it should be surrounded by quotes (line {i+1})"
 
     return None
 
