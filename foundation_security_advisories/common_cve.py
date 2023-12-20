@@ -162,9 +162,10 @@ def try_update_published_cve(local_cve: CVEAdvisory, local_date: int, remote_dat
     if local_cve.year < 2023:
         if not prompt_yes_no(
             f"\nThis CVE lies before the cutoff year 2023. Should the content still be updated for {local_cve.id}?",
-            default=True,  # CHANGEME
+            default=False,
         ):
             print(f"Skipping {local_cve.id} because it lies before the cutoff year")
+            touch_cve_id(local_cve.id)
             return False
     else:
         if not prompt_yes_no(f"\nShould this content be updated for {local_cve.id}?"):
