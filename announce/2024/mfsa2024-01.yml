@@ -5,7 +5,7 @@ fixed_in:
 - Firefox 122
 title: Security Vulnerabilities fixed in Firefox 122
 advisories:
-  MFSA-RESERVE-2024-1864587:
+  CVE-2024-0741:
     title: Out of bounds write in ANGLE
     impact: high
     reporter: Renan Rios
@@ -13,7 +13,7 @@ advisories:
       An out of bounds write in ANGLE could have allowed an attacker to corrupt memory leading to a potentially exploitable crash.
     bugs:
       - url: 1864587
-  MFSA-RESERVE-2024-1867152:
+  CVE-2024-0742:
     title: Failure to update user input timestamp
     impact: high
     reporter: Andrew McCreight
@@ -21,7 +21,7 @@ advisories:
       It was possible for certain browser prompts and dialogs to be activated or dismissed unintentionally by the user due to an incorrect timestamp used to prevent input after page load.
     bugs:
       - url: 1867152
-  MFSA-RESERVE-2024-1867408:
+  CVE-2024-0743:
     title: Crash in NSS TLS method
     impact: high
     reporter: John Schanck
@@ -29,7 +29,7 @@ advisories:
       An unchecked return value in TLS handshake code could have caused a potentially exploitable crash.
     bugs:
       - url: 1867408
-  MFSA-RESERVE-2024-1871089:
+  CVE-2024-0744:
     title: Wild pointer dereference in JavaScript
     impact: high
     reporter: Lukas Bernhard
@@ -37,7 +37,7 @@ advisories:
       In some circumstances, JIT compiled code could have dereferenced a wild pointer value. This could have lead to an exploitable crash.
     bugs:
       - url: 1871089
-  MFSA-RESERVE-2024-1871838:
+  CVE-2024-0745:
     title: Stack buffer overflow in WebAudio
     impact: high
     reporter: m.cooolie
@@ -45,7 +45,7 @@ advisories:
       The WebAudio <code>OscillatorNode</code> object was susceptible to a stack buffer overflow. This could have led to a potentially exploitable crash.
     bugs:
       - url: 1871838
-  MFSA-RESERVE-2024-1660223:
+  CVE-2024-0746:
     title: Crash when listing printers on Linux
     impact: moderate
     reporter: Cornel Ionce
@@ -53,7 +53,7 @@ advisories:
       A Linux user opening the print preview dialog could have caused the browser to crash.
     bugs:
       - url: 1660223
-  MFSA-RESERVE-2024-1764343:
+  CVE-2024-0747:
     title: Bypass of Content Security Policy when directive unsafe-inline was set
     impact: moderate
     reporter: Seongil Wi
@@ -61,7 +61,7 @@ advisories:
       When a parent page loaded a child in an iframe with <code>unsafe-inline</code>, the parent Content Security Policy could have overridden the child Content Security Policy.
     bugs:
       - url: 1764343
-  MFSA-RESERVE-2024-1783504:
+  CVE-2024-0748:
     title: Compromised content process could modify document URI
     impact: moderate
     reporter: Young Min Kim
@@ -69,7 +69,7 @@ advisories:
       A compromised content process could have updated the document URI. This could have allowed an attacker to set an arbitrary URI in the address bar or history.
     bugs:
       - url: 1783504
-  MFSA-RESERVE-2024-1813463:
+  CVE-2024-0749:
     title: Phishing site popup could show local origin in address bar
     impact: moderate
     reporter: Kestrel
@@ -77,7 +77,7 @@ advisories:
       A phishing site could have repurposed an <code>about:</code> dialog to show phishing content with an incorrect origin in the address bar.
     bugs:
       - url: 1813463
-  MFSA-RESERVE-2024-1863083:
+  CVE-2024-0750:
     title: Potential permissions request bypass via clickjacking
     impact: moderate
     reporter: Hafiizh
@@ -85,7 +85,7 @@ advisories:
       A bug in popup notifications delay calculation could have made it possible for an attacker to trick a user into granting permissions.
     bugs:
       - url: 1863083
-  MFSA-RESERVE-2024-1865689:
+  CVE-2024-0751:
     title: Privilege escalation through devtools
     impact: moderate
     reporter: Rob Wu
@@ -93,7 +93,7 @@ advisories:
       A malicious devtools extension could have been used to escalate privileges.
     bugs:
       - url: 1865689
-  MFSA-RESERVE-2024-1866840:
+  CVE-2024-0752:
     title: Use-after-free could occur when applying update on macOS
     impact: moderate
     reporter: Nika Layzell
@@ -101,7 +101,7 @@ advisories:
       A use-after-free crash could have occurred on macOS if a Firefox update were being applied on a very busy system. This could have resulted in an exploitable crash.
     bugs:
       - url: 1866840
-  MFSA-RESERVE-2024-1870262:
+  CVE-2024-0753:
     title: HSTS policy on subdomain could bypass policy of upper domain
     impact: moderate
     reporter: Hanno Böck
@@ -109,7 +109,7 @@ advisories:
       In specific HSTS configurations an attacker could have bypassed HSTS on a subdomain.
     bugs:
       - url: 1870262
-  MFSA-RESERVE-2024-1871605:
+  CVE-2024-0754:
     title: Crash when using some WASM files in devtools
     impact: moderate
     reporter: Christian Holler
@@ -117,7 +117,7 @@ advisories:
       Some WASM source files could have caused a crash when loaded in devtools.
     bugs:
       - url: 1871605
-  CVE-XXX-rollup:
+  CVE-2024-0755:
     title: Memory safety bugs fixed in Firefox 122, Firefox ESR 115.7, and Thunderbird 115.7
     impact: moderate
     reporter: Daniel Holbert, Andrew Osmond, and the Mozilla Fuzzing Team
