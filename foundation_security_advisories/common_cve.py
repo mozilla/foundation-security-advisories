@@ -361,7 +361,7 @@ def try_set_bugzilla_alias(bug: str, cve_id: int):
             )
             return
         # Make sure this is actually a number
-        bug_number = int(str)
+        bug_number = int(bug)
         # Skip smaller numbers as there is a high chance these aren't any actual bugzilla bug numbers
         if bug_number < 100000:
             print(
@@ -380,5 +380,5 @@ def try_set_bugzilla_alias(bug: str, cve_id: int):
             headers={"X-BUGZILLA-API-KEY": BUGZILLA_API_KEY},
         )
         print(f"Assigned alias {cve_id} to bug {bug}")
-    except:
-        print(f"Failed to assign alias {cve_id} to bug {bug}")
+    except Exception as e:
+        print(f"Failed to assign alias {cve_id} to bug {bug} - {e}")
