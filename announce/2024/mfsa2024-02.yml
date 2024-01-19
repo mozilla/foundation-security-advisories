@@ -1,0 +1,80 @@
+## mfsa2024-02.yml
+announced: January 23rd, 2024
+impact: high
+fixed_in:
+- Firefox ESR 115.7
+title: Security Vulnerabilities fixed in Firefox ESR 115.7
+advisories:
+  MFSA-RESERVE-2024-1864587:
+    title: Out of bounds write in ANGLE
+    impact: high
+    reporter: Renan Rios
+    description: |
+      An out of bounds write in ANGLE could have allowed an attacker to corrupt memory leading to a potentially exploitable crash.
+    bugs:
+      - url: 1864587
+  MFSA-RESERVE-2024-1867152:
+    title: Failure to update user input timestamp
+    impact: high
+    reporter: Andrew McCreight
+    description: |
+      It was possible for certain browser prompts and dialogs to be activated or dismissed unintentionally by the user due to an incorrect timestamp used to prevent input after page load.
+    bugs:
+      - url: 1867152
+  MFSA-RESERVE-2024-1660223:
+    title: Crash when listing printers on Linux
+    impact: moderate
+    reporter: Cornel Ionce
+    description: |
+      A Linux user opening the print preview dialog could have caused the browser to crash.
+    bugs:
+      - url: 1660223
+  MFSA-RESERVE-2024-1764343:
+    title: Bypass of Content Security Policy when directive unsafe-inline was set
+    impact: moderate
+    reporter: Seongil Wi
+    description: |
+      When a parent page loaded a child in an iframe with <code>unsafe-inline</code>, the parent Content Security Policy could have overridden the child Content Security Policy.
+    bugs:
+      - url: 1764343
+  MFSA-RESERVE-2024-1813463:
+    title: Phishing site popup could show local origin in address bar
+    impact: moderate
+    reporter: Kestrel
+    description: |
+      A phishing site could have repurposed an <code>about:</code> dialog to show phishing content with an incorrect origin in the address bar.
+    bugs:
+      - url: 1813463
+  MFSA-RESERVE-2024-1863083:
+    title: Potential permissions request bypass via clickjacking
+    impact: moderate
+    reporter: Hafiizh
+    description: |
+      A bug in popup notifications delay calculation could have made it possible for an attacker to trick a user into granting permissions.
+    bugs:
+      - url: 1863083
+  MFSA-RESERVE-2024-1865689:
+    title: Privilege escalation through devtools
+    impact: moderate
+    reporter: Rob Wu
+    description: |
+      A malicious devtools extension could have been used to escalate privileges.
+    bugs:
+      - url: 1865689
+  MFSA-RESERVE-2024-1870262:
+    title: HSTS policy on subdomain could bypass policy of upper domain
+    impact: moderate
+    reporter: Hanno Böck
+    description: |
+      In specific HSTS configurations an attacker could have bypassed HSTS on a subdomain.
+    bugs:
+      - url: 1870262
+  CVE-XXX-rollup:
+    title: Memory safety bugs fixed in Firefox 122, Firefox ESR 115.7, and Thunderbird 115.7
+    impact: moderate
+    reporter: Daniel Holbert, Andrew Osmond, and the Mozilla Fuzzing Team
+    description: |
+      Memory safety bugs present in Firefox 121, Firefox ESR 115.6, and Thunderbird 115.6. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1868456, 1871445, 1873701
+        desc: Memory safety bugs fixed in Firefox 122, Firefox ESR 115.7, and Thunderbird 115.7
