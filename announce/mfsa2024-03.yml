@@ -1,0 +1,23 @@
+## mfsa2024-03.yml
+announced: January 22, 2023
+impact: critical
+fixed_in:
+- Focus for iOS 122
+title: Security Vulnerabilities fixed in Focus for iOS 122
+advisories:
+  CVE-2024-0605:
+    title: JavaScript URI running on top origin sites
+    impact: critical
+    reporter: James Lee
+    description: |
+      Using a javascript: URI with a setTimeout race condition, an attacker can execute unauthorized scripts on top origin sites in urlbar. This bypasses security measures, potentially leading to arbitrary code execution or unauthorized actions within the user's loaded webpage.
+    bugs:
+      - url: 1855575
+  CVE-2024-0606:
+    title: UXSS attack with window.open()
+    impact: high
+    reporter: James Lee
+    description: |
+      An attacker could execute unauthorized script on a legitimate site through UXSS using window.open() by opening a javascript URI leading to unauthorized actions within the user's loaded webpage.
+    bugs:
+      - url: 1855030
