@@ -88,7 +88,7 @@ advisories:
   CVE-2023-6864:
     title: Memory safety bugs fixed in Firefox 121, Firefox ESR 115.6, and Thunderbird 115.6
     impact: high
-    reporter: Andrew McCreight, the Mozilla Fuzzing Team, Karl Tomlinson, Valentin Gosu, Randell Jesup, Yury Delendik
+    reporter: Andrew McCreight, Karl Tomlinson, Valentin Gosu, Randell Jesup, Yury Delendik, and the Mozilla Fuzzing Team
     description: |
       Memory safety bugs present in Firefox 120, Firefox ESR 115.5, and Thunderbird 115.5. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
     bugs:

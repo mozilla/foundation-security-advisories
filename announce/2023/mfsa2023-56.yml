@@ -112,7 +112,7 @@ advisories:
   CVE-2023-6871:
     title: Lack of protocol handler warning in some instances
     impact: low
-    reporter: Roy Gunsen
+    reporter:  Edward "JankhJankh" Prior
     description: |
       Under certain conditions, Firefox did not display a warning when a user attempted to navigate to a new protocol handler.
     bugs:
@@ -136,7 +136,7 @@ advisories:
   CVE-2023-6864:
     title: Memory safety bugs fixed in Firefox 121, Firefox ESR 115.6, and Thunderbird 115.6
     impact: high
-    reporter: Andrew McCreight, the Mozilla Fuzzing Team, Randell Jesup, Valentin Gosu (he/him), Karl Tomlinson
+    reporter: Andrew McCreight, Randell Jesup, Valentin Gosu, Karl Tomlinson, and the Mozilla Fuzzing Team,
     description: |
       Memory safety bugs present in Firefox 120, Firefox ESR 115.5, and Thunderbird 115.5. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
     bugs:

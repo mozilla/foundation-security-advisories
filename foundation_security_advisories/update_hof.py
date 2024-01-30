@@ -75,6 +75,7 @@ https://bugzilla.mozilla.org/buglist.cgi?x=x
 """.replace("\n", "")
 
 credit_entries = {
+    "1c5aa3f06dd0263874f6c4f36acaf9aa":"Edward 'JankhJankh' Prior",
     "d95fb2b54e0b81565e15e10734bcfa94": "Orion Joshi",
     "d5716b05696f59f850b9dad8ed0b0d43":"Mohd Ali - Student of Muffakhamjah College Of Engineering",
     "733f005d44b2f8386d9db80cb301842c":"AnupamAS01",
