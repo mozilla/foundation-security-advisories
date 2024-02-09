@@ -4,6 +4,8 @@ impact: high
 fixed_in:
 - Firefox ESR 115.7
 title: Security Vulnerabilities fixed in Firefox ESR 115.7
+description: |
+  <em>Updated February 8, 2024 to remove CVE-2024-0749 which was inadvertently included in the original advisory.</em>
 advisories:
   CVE-2024-0741:
     title: Out of bounds write in ANGLE
@@ -37,14 +39,6 @@ advisories:
       When a parent page loaded a child in an iframe with <code>unsafe-inline</code>, the parent Content Security Policy could have overridden the child Content Security Policy.
     bugs:
       - url: 1764343
-  CVE-2024-0749:
-    title: Phishing site popup could show local origin in address bar
-    impact: moderate
-    reporter: Kestrel
-    description: |
-      A phishing site could have repurposed an <code>about:</code> dialog to show phishing content with an incorrect origin in the address bar.
-    bugs:
-      - url: 1813463
   CVE-2024-0750:
     title: Potential permissions request bypass via clickjacking
     impact: moderate

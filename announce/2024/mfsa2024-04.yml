@@ -4,6 +4,8 @@ impact: high
 fixed_in:
 - Thunderbird 115.7
 title: Security Vulnerabilities fixed in Thunderbird 115.7
+description: |
+  *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
 advisories:
   CVE-2024-0741:
     title: Out of bounds write in ANGLE
