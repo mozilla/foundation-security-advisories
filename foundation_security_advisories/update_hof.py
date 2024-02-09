@@ -75,6 +75,7 @@ https://bugzilla.mozilla.org/buglist.cgi?x=x
 """.replace("\n", "")
 
 credit_entries = {
+    "9f059eb3b4eba569bba477ee0bc95350":"Lohith Gowda M",
     "1c5aa3f06dd0263874f6c4f36acaf9aa":"Edward 'JankhJankh' Prior",
     "d95fb2b54e0b81565e15e10734bcfa94": "Orion Joshi",
     "d5716b05696f59f850b9dad8ed0b0d43":"Mohd Ali - Student of Muffakhamjah College Of Engineering",
@@ -466,6 +467,7 @@ twitter_entries = {
     "fe7f319c61c0b44d4cb751afda4f4aeb" : "@Gaurav_00000",
 }
 url_entries = {
+    "9f059eb3b4eba569bba477ee0bc95350":"https://hackerone.com/lohigowda",
     "d95fb2b54e0b81565e15e10734bcfa94": "https://www.linkedin.com/in/orionjoshi/",
     "a021b107a1bbc624d7cd8435abf7a84f":"https://www.trivialsec.com/",
     "77c1bae6fa26a21ec93ff406fad19cc9":"https://www.linkedin.com/in/valeriyshevchenko/",
