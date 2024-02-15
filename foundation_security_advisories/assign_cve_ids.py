@@ -34,7 +34,7 @@ def main():
                 cve_advisory.newest_instance.references[0][0].startswith("https://bugzilla.mozilla.org/show_bug.cgi?id="):
                 bug_id = cve_advisory.newest_instance.references[0][0].replace("https://bugzilla.mozilla.org/show_bug.cgi?id=", "")
                 try_set_bugzilla_alias(bug_id, cve_advisory.id)
-            elif cve_advisory.newest_instance.title.startswith("Memory safety bugs fixed")
+            elif cve_advisory.newest_instance.title.startswith("Memory safety bugs fixed"):
                 pass # Roll-up
             else:
                 print(f"{cve_advisory.newest_instance.parent.id} didn't have an expected reference format so you have to set it manually.")
