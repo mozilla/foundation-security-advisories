@@ -1,0 +1,23 @@
+## mfsa2024-09.yml
+announced: February 19, 2023
+impact: high
+fixed_in:
+- Focus for iOS 123
+title: Security Vulnerabilities fixed in Focus for iOS 123
+advisories:
+  CVE-2024-1563:
+    title: UXSS exploit using a timeout after externally opening the application from a custom Focus scheme
+    impact: high
+    reporter: James Lee
+    description: |
+      An attacker could have executed unauthorized scripts on top origin sites using a JavaScript URI when opening an external URL with a custom Firefox scheme and a timeout race condition.
+    bugs:
+      - url: 1863831
+  CVE-2024-26284:
+    title: UXSS exploit via 302 Redirect
+    impact: high
+    reporter: James Lee
+    description: |
+      Utilizing a 302 redirect, an attacker could have conducted a Universal Cross-Site Scripting (UXSS) on a victim website, if the victim had a link to the attacker's website.
+    bugs:
+      - url: 1860075
