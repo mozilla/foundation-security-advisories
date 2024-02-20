@@ -74,7 +74,7 @@ advisories:
     impact: low
     reporter: Ronald Crane
     description: |
-      The incorrect object was checked for NULL in the built-in profiler, potentially leading to invalid memory access and undefined behavior. <i>Note:</i> This issue only affects the application when the profiler is running.
+      The incorrect object was checked for NULL in the built-in profiler, potentially leading to invalid memory access and undefined behavior. *Note:* This issue only affects the application when the profiler is running.
     bugs:
       - url: 1870414
   CVE-2024-1552:
@@ -82,7 +82,7 @@ advisories:
     impact: low
     reporter: Gary Kwong
     description: |
-      Incorrect code generation could have led to unexpected numeric conversions and potential undefined behavior.<i>Note:</i> This issue only affects 32-bit ARM devices.
+      Incorrect code generation could have led to unexpected numeric conversions and potential undefined behavior. *Note:* This issue only affects 32-bit ARM devices.
     bugs:
       - url: 1874502
   CVE-2024-1553:
