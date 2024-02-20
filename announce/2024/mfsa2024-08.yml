@@ -1,0 +1,31 @@
+## mfsa2024-08.yml
+announced: February 19, 2024
+impact: moderate
+fixed_in:
+- Firefox for iOS 123
+title: Security Vulnerabilities fixed in Firefox for iOS 123
+advisories:
+  CVE-2024-26283:
+    title: Address bar spoofing using Firefox custom open URL scheme
+    impact: moderate
+    reporter: Muneaki Nishimura
+    description: |
+      An attacker could have executed unauthorized scripts on top origin sites using a JavaScript URI when opening an external URL with a custom Firefox scheme.
+    bugs:
+      - url: 1850158
+  CVE-2024-26282:
+    title: UXSS through a canonical element
+    impact: moderate
+    reporter: Muneaki Nishimura
+    description: |
+      Using an AMP url with a canonical element, an attacker could have executed JavaScript from an opened bookmarked page.
+    bugs:
+      - url: 1863788
+  CVE-2024-26281:
+    title: QR code scanner allowed executing a JavaScript URI
+    impact: moderate
+    reporter: James Lee
+    description: |
+      Upon scanning a JavaScript URI with the QR code scanner, an attacker could have executed unauthorized scripts on the current top origin sites in the URL bar.
+    bugs:
+      - url: 1868005
