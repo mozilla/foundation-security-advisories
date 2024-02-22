@@ -4,6 +4,8 @@ impact: high
 fixed_in:
 - Focus for iOS 122
 title: Security Vulnerabilities fixed in Focus for iOS 122
+description: |
+  <em>Note:</em> CVE-2024-1563 was fixed in Focus for iOS 122, released on January 22, 2024; but was not announced until February 19, 2023
 advisories:
   CVE-2024-1563:
     title: UXSS exploit using a timeout after externally opening the application from a custom Focus scheme
