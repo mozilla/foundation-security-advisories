@@ -115,9 +115,11 @@ def check_file(file_name):
 
     if 'announced' in data:
         try:
-            parsedate(data['announced']).date()
+            date = parsedate(data['announced']).date()
         except Exception:
             return 'Failed to parse "{}" as a date'.format(data['announced'])
+        if not data['mfsa_id'].startswith(str(date.year)):
+            return 'Year mismatch between mfsa id ({}) and "announced" field ({})'.format(data['mfsa_id'], data['announced'])
 
     try:
         schema.validate(data)
