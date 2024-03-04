@@ -1,0 +1,15 @@
+## mfsa2024-11.yml
+announced: March 4, 2024
+impact: high
+fixed_in:
+- Thunderbird 115.8.1
+title: Security Vulnerabilities fixed in Thunderbird 115.8.1
+advisories:
+  CVE-2024-1936:
+    title: Leaking of encrypted email subjects to other conversations
+    impact: high
+    reporter: Several community reporters
+    description: |
+      The encrypted subject of an email message could be incorrectly and permanently assigned to an arbitrary other email message in Thunderbird's local cache. Consequently, when replying to the contaminated email message, the user might accidentally leak the confidential subject to a third party. While this update fixes the bug and avoids future message contamination, it does not automatically repair existing contaminations. Users are advised to use the repair folder functionality, which is available from the context menu of email folders, which will erase incorrect subject assignments.
+    bugs:
+      - url: 1860977
