@@ -1,11 +1,9 @@
-## mfsa2024-FIXME.yml
-announced: FIXME <Month> <Day of Month>, <Year>
+## mfsa2024-13.yml
+announced: March 19, 2024
 impact: high
 fixed_in:
 - Firefox ESR 115.9
 title: Security Vulnerabilities fixed in Firefox ESR 115.9
-description: |
-  Do you want a description?
 advisories:
   CVE-2024-0743:
     title: Crash in NSS TLS method
@@ -20,7 +18,7 @@ advisories:
     impact: high
     reporter: Miloš
     description: |
-      An attacker could leverage the Windows Error Reporter to run arbitrary code on the system escaping the sandbox. Note: This issue only affected Windows operating systems. Other operating systems are unaffected.
+      An attacker could have leveraged the Windows Error Reporter to run arbitrary code on the system escaping the sandbox. *Note:* This issue only affected Windows operating systems. Other operating systems are unaffected.
     bugs:
       - url: 1872920
   CVE-2024-2607:
@@ -28,15 +26,15 @@ advisories:
     impact: high
     reporter: Gary Kwong
     description: |
-      Return registers were overwritten which could allow an attacker to execute arbitrary code.<br>*Note: This issue only affected Armv7-A systems. Other operating systems are unaffected.*
+      Return registers were overwritten which could have allowed an attacker to execute arbitrary code. *Note:* This issue only affected Armv7-A systems. Other operating systems are unaffected.
     bugs:
       - url: 1879939
   CVE-2024-2608:
-    title: Integer overflow could lead to out of bounds write
+    title: Integer overflow could have led to out of bounds write
     impact: high
     reporter: Ronald Crane
     description: |
-      AppendEncodedAttributeValue(), ExtraSpaceNeededForAttrEncoding() and AppendEncodedCharacters() could experience integer overflows, causing underallocation of an output buffer leading to an out of bounds write.
+      <code>AppendEncodedAttributeValue(), ExtraSpaceNeededForAttrEncoding()</code> and <code>AppendEncodedCharacters()</code> could have experienced integer overflows, causing underallocation of an output buffer leading to an out of bounds write.
     bugs:
       - url: 1880692
   CVE-2024-2616:
@@ -56,33 +54,33 @@ advisories:
     bugs:
       - url: 1780432
   CVE-2024-2610:
-    title: Improper handling of html and body tags enables CSP nonce leakage
+    title: Improper handling of html and body tags enabled CSP nonce leakage
     impact: moderate
     reporter: Georg Felber and Marco Squarcina (TU Wien)
     description: |
-      Using a markup injection an attacker could steal nonce values. This can be used to bypass strict content security policies.
+      Using a markup injection an attacker could have stolen nonce values. This could have been used to bypass strict content security policies.
     bugs:
       - url: 1871112
   CVE-2024-2611:
-    title: Clickjacking vulnerability could lead to user accidentally granting permissions
+    title: Clickjacking vulnerability could have led to a user accidentally granting permissions
     impact: moderate
     reporter: Hafiizh
     description: |
-      A missing delay on when pointer lock is used could allow a malicious page to trick a user into granting permissions.
+      A missing delay on when pointer lock was used could have allowed a malicious page to trick a user into granting permissions.
     bugs:
       - url: 1876675
   CVE-2024-2612:
-    title: Self referencing object could potentially lead to a use-after-free
+    title: Self referencing object could have potentially led to a use-after-free
     impact: moderate
     reporter: Ronald Crane
     description: |
-      If an attacker could find a way to trigger this code path it could trigger a crash or potentially be leveraged to achieve code execution.
+      If an attacker could find a way to trigger a particular code path in <code>SafeRefPtr</code>, it could have triggered a crash or potentially be leveraged to achieve code execution.
     bugs:
       - url: 1879444
   CVE-2024-2614:
     title: Memory safety bugs fixed in Firefox 124, Firefox ESR 115.9, and Thunderbird 115.9
     impact: high
-    reporter: the Mozilla Fuzzing Team, Noah Lokocz, Kevin Brosnan, Ryan VanderMeulen
+    reporter: Noah Lokocz, Kevin Brosnan, Ryan VanderMeulen and the Mozilla Fuzzing Team
     description: |
       Memory safety bugs present in Firefox 123, Firefox ESR 115.8, and Thunderbird 115.8. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
     bugs:

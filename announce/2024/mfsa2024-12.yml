@@ -1,18 +1,16 @@
-## mfsa2024-FIXME.yml
-announced: FIXME <Month> <Day of Month>, <Year>
+## mfsa2024-12.yml
+announced: March 19, 2024
 impact: high
 fixed_in:
 - Firefox 124
 title: Security Vulnerabilities fixed in Firefox 124
-description: |
-  Do you want a description?
 advisories:
   CVE-2024-2605:
     title: Windows Error Reporter could be used as a Sandbox escape vector
     impact: high
     reporter: Miloš
     description: |
-      An attacker could leverage the Windows Error Reporter to run arbitrary code on the system escaping the sandbox. Note: This issue only affected Windows operating systems. Other operating systems are unaffected.
+      An attacker could have leveraged the Windows Error Reporter to run arbitrary code on the system escaping the sandbox. *Note:* This issue only affected Windows operating systems. Other operating systems are unaffected.
     bugs:
       - url: 1872920
   CVE-2024-2606:
@@ -20,7 +18,7 @@ advisories:
     impact: high
     reporter: P1umer
     description: |
-      Passing invalid data could, for example, lead to invalid wasm values being created, such as arbitrary integers turning into pointer values.
+      Passing invalid data could have led to invalid wasm values being created, such as arbitrary integers turning into pointer values.
     bugs:
       - url: 1879237
   CVE-2024-2607:
@@ -28,15 +26,15 @@ advisories:
     impact: high
     reporter: Gary Kwong
     description: |
-      Return registers were overwritten which could allow an attacker to execute arbitrary code.<br>*Note: This issue only affected Armv7-A systems. Other operating systems are unaffected.*
+      Return registers were overwritten which could have allowed an attacker to execute arbitrary code. *Note:* This issue only affected Armv7-A systems. Other operating systems are unaffected.
     bugs:
       - url: 1879939
   CVE-2024-2608:
-    title: Integer overflow could lead to out of bounds write
+    title: Integer overflow could have led to out of bounds write
     impact: high
     reporter: Ronald Crane
     description: |
-      AppendEncodedAttributeValue(), ExtraSpaceNeededForAttrEncoding() and AppendEncodedCharacters() could experience integer overflows, causing underallocation of an output buffer leading to an out of bounds write.
+      <code>AppendEncodedAttributeValue(), ExtraSpaceNeededForAttrEncoding()</code> and <code>AppendEncodedCharacters()</code> could have experienced integer overflows, causing underallocation of an output buffer leading to an out of bounds write.
     bugs:
       - url: 1880692
   CVE-2023-5388:
@@ -52,45 +50,45 @@ advisories:
     impact: moderate
     reporter: Shaheen Fazim
     description: |
-      The permission prompt input delay could expire while the window is not in focus. This makes it vulnerable to clickjacking by malicious websites.
+      The permission prompt input delay could have expired while the window is not in focus, which made the prompt vulnerable to clickjacking by malicious websites.
     bugs:
       - url: 1866100
   CVE-2024-2610:
-    title: Improper handling of html and body tags enables CSP nonce leakage
+    title: Improper handling of html and body tags enabled CSP nonce leakage
     impact: moderate
     reporter: Georg Felber and Marco Squarcina (TU Wien)
     description: |
-      Using a markup injection an attacker could steal nonce values. This can be used to bypass strict content security policies.
+      Using a markup injection an attacker could have stolen nonce values. This could have been used to bypass strict content security policies.
     bugs:
       - url: 1871112
   CVE-2024-2611:
-    title: Clickjacking vulnerability could lead to user accidentally granting permissions
+    title: Clickjacking vulnerability could have led to a user accidentally granting permissions
     impact: moderate
     reporter: Hafiizh
     description: |
-      A missing delay on when pointer lock is used could allow a malicious page to trick a user into granting permissions.
+      A missing delay on when pointer lock was used could have allowed a malicious page to trick a user into granting permissions.
     bugs:
       - url: 1876675
   CVE-2024-2612:
-    title: Self referencing object could potentially lead to a use-after-free
+    title: Self referencing object could have potentially led to a use-after-free
     impact: moderate
     reporter: Ronald Crane
     description: |
-      If an attacker could find a way to trigger this code path it could trigger a crash or potentially be leveraged to achieve code execution.
+      If an attacker could find a way to trigger a particular code path in <code>SafeRefPtr</code>, it could have triggered a crash or potentially be leveraged to achieve code execution.
     bugs:
       - url: 1879444
   CVE-2024-2613:
-    title: Improper handling of QUIC ACK frame data can lead to OOM
+    title: Improper handling of QUIC ACK frame data could have led to OOM
     impact: low
     reporter: Max Inden
     description: |
-      Data was not properly sanitized when decoding a QUIC ACK frame, this could lead to unrestricted memory consumption and a crash.
+      Data was not properly sanitized when decoding a QUIC ACK frame; this could have led to unrestricted memory consumption and a crash.
     bugs:
       - url: 1875701
   CVE-2024-2614:
     title: Memory safety bugs fixed in Firefox 124, Firefox ESR 115.9, and Thunderbird 115.9
     impact: high
-    reporter: Ryan VanderMeulen, Noah Lokocz, Kevin Brosnan, the Mozilla Fuzzing Team
+    reporter: Noah Lokocz, Kevin Brosnan, Ryan VanderMeulen and the Mozilla Fuzzing Team
     description: |
       Memory safety bugs present in Firefox 123, Firefox ESR 115.8, and Thunderbird 115.8. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
     bugs:
@@ -99,7 +97,7 @@ advisories:
   CVE-2024-2615:
     title: Memory safety bugs fixed in Firefox 124
     impact: critical
-    reporter: Paul Bone, the Mozilla Fuzzing Team
+    reporter: Paul Bone and the Mozilla Fuzzing Team
     description: |
       Memory safety bugs present in Firefox 123. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
     bugs:
