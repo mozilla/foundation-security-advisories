@@ -15,7 +15,7 @@ advisories:
       An unchecked return value in TLS handshake code could have caused a potentially exploitable crash.
     bugs:
       - url: 1867408
-  MFSA-RESERVE-2024-1872920:
+  CVE-2024-2605:
     title: Windows Error Reporter could be used as a Sandbox escape vector
     impact: high
     reporter: Miloš
@@ -23,16 +23,15 @@ advisories:
       An attacker could leverage the Windows Error Reporter to run arbitrary code on the system escaping the sandbox. Note: This issue only affected Windows operating systems. Other operating systems are unaffected.
     bugs:
       - url: 1872920
-  MFSA-RESERVE-2024-1879939:
+  CVE-2024-2607:
     title: JIT code failed to save return registers on Armv7-A
     impact: high
     reporter: Gary Kwong
     description: |
-      Return registers were overwritten which could allow an attacker to execute arbitrary code.
-Note: This issue only affected Armv7-A systems. Other operating systems are unaffected.
+      Return registers were overwritten which could allow an attacker to execute arbitrary code.<br>*Note: This issue only affected Armv7-A systems. Other operating systems are unaffected.*
     bugs:
       - url: 1879939
-  MFSA-RESERVE-2024-1880692:
+  CVE-2024-2608:
     title: Integer overflow could lead to out of bounds write
     impact: high
     reporter: Ronald Crane
@@ -40,7 +39,7 @@ Note: This issue only affected Armv7-A systems. Other operating systems are unaf
       AppendEncodedAttributeValue(), ExtraSpaceNeededForAttrEncoding() and AppendEncodedCharacters() could experience integer overflows, causing underallocation of an output buffer leading to an out of bounds write.
     bugs:
       - url: 1880692
-  MFSA-RESERVE-2024-1846197:
+  CVE-2024-2616:
     title: Improve handling of out-of-memory conditions in ICU
     impact: high
     reporter: Ryan VanderMeulen and Dan Minor
@@ -56,7 +55,7 @@ Note: This issue only affected Armv7-A systems. Other operating systems are unaf
       NSS was susceptible to a timing side-channel attack when performing RSA decryption. This attack could potentially allow an attacker to recover the private data.
     bugs:
       - url: 1780432
-  MFSA-RESERVE-2024-1871112:
+  CVE-2024-2610:
     title: Improper handling of html and body tags enables CSP nonce leakage
     impact: moderate
     reporter: Georg Felber and Marco Squarcina (TU Wien)
@@ -64,7 +63,7 @@ Note: This issue only affected Armv7-A systems. Other operating systems are unaf
       Using a markup injection an attacker could steal nonce values. This can be used to bypass strict content security policies.
     bugs:
       - url: 1871112
-  MFSA-RESERVE-2024-1876675:
+  CVE-2024-2611:
     title: Clickjacking vulnerability could lead to user accidentally granting permissions
     impact: moderate
     reporter: Hafiizh
@@ -72,7 +71,7 @@ Note: This issue only affected Armv7-A systems. Other operating systems are unaf
       A missing delay on when pointer lock is used could allow a malicious page to trick a user into granting permissions.
     bugs:
       - url: 1876675
-  MFSA-RESERVE-2024-1879444:
+  CVE-2024-2612:
     title: Self referencing object could potentially lead to a use-after-free
     impact: moderate
     reporter: Ronald Crane
@@ -80,10 +79,10 @@ Note: This issue only affected Armv7-A systems. Other operating systems are unaf
       If an attacker could find a way to trigger this code path it could trigger a crash or potentially be leveraged to achieve code execution.
     bugs:
       - url: 1879444
-  MFSA-RESERVE-2024-2:
+  CVE-2024-2614:
     title: Memory safety bugs fixed in Firefox 124, Firefox ESR 115.9, and Thunderbird 115.9
     impact: high
-    reporter: the Mozilla Fuzzing Team, Noah Lokocz, Kevin Brosnan [Ex-Mozilla], Ryan VanderMeulen
+    reporter: the Mozilla Fuzzing Team, Noah Lokocz, Kevin Brosnan, Ryan VanderMeulen
     description: |
       Memory safety bugs present in Firefox 123, Firefox ESR 115.8, and Thunderbird 115.8. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
     bugs:
