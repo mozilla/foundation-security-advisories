@@ -18,7 +18,7 @@ advisories:
   CVE-2024-2605:
     title: Windows Error Reporter could be used as a Sandbox escape vector
     impact: high
-    reporter: Miloš
+    reporter: goodbyeselene
     description: |
       An attacker could have leveraged the Windows Error Reporter to run arbitrary code on the system escaping the sandbox. *Note:* This issue only affected Windows operating systems. Other operating systems are unaffected.
     bugs:
