@@ -101,5 +101,5 @@ advisories:
     description: |
       Memory safety bugs present in Firefox 123. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
     bugs:
-      - url: 1881074, 1882438
+      - url: 1881074, 1882438, 1881650
         desc: Memory safety bugs fixed in Firefox 124
