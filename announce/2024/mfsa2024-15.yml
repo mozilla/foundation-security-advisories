@@ -18,6 +18,6 @@ advisories:
     impact: critical
     reporter: Manfred Paul via Trend Micro's Zero Day Initiative
     description: |
-      An attacker was able to inject an event handler into a privileged object that would allow arbitrary JavaScript execution in the parent process.
+      An attacker was able to inject an event handler into a privileged object that would allow arbitrary JavaScript execution in the parent process. <em>Note:</em> This vulnerability affects Desktop Firefox only, it does not affect mobile versions of Firefox.
     bugs:
       - url: 1886852
