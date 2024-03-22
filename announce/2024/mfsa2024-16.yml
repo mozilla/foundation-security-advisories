@@ -1,13 +1,13 @@
 ## mfsa2024-16.yml
 announced: March 22, 2024
-impact: high
+impact: critical
 fixed_in:
 - Firefox ESR 115.9.1
 title: Security Vulnerabilities fixed in Firefox ESR 115.9.1
 advisories:
   CVE-2024-29944:
     title: Privileged JavaScript Execution via Event Handlers
-    impact: high
+    impact: critical
     reporter: Manfred Paul via Trend Micro's Zero Day Initiative
     description: |
       An attacker was able to inject an event handler into a privileged object that would allow arbitrary JavaScript execution in the parent process.
