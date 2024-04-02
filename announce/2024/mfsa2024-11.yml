@@ -17,7 +17,7 @@ advisories:
     title: Firefox on iOS would show pages with mixed content secure
     impact: low
     reporter: Chaykin Artem
-    description: Firefox could potentially show pages with a secure icon even if content had mixed security status
+    description: If an insecure element was added to a page after a delay, Firefox would not replace the secure icon with a mixed content security status
 
     bugs:
       - url: 1875925
