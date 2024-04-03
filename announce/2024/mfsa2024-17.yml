@@ -1,0 +1,23 @@
+## mfsa2024-17.yml
+announced: April 2, 2024
+impact: moderate
+fixed_in:
+- Firefox for iOS 124
+title: Security Vulnerabilities fixed in Firefox for iOS 124
+advisories:
+  CVE-2024-31393:
+    title: Javascript URLs would load when dragged to address bar
+    impact: moderate
+    reporter: Muneaki Nishimura
+    description: Dragging Javascript URLs to the address bar could cause them to be loaded, bypassing restrictions and security protections
+
+    bugs:
+      - url: 1879739
+  CVE-2024-31392:
+    title: Firefox on iOS would show pages with mixed content secure
+    impact: low
+    reporter: Chaykin Artem
+    description: If an insecure element was added to a page after a delay, Firefox would not replace the secure icon with a mixed content security status
+
+    bugs:
+      - url: 1875925
