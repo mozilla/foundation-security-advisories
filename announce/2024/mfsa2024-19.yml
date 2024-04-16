@@ -1,0 +1,82 @@
+## mfsa2024-19.yml
+announced: April 16, 2024
+impact: high
+fixed_in:
+- Firefox ESR 115.10
+title: Security Vulnerabilities fixed in Firefox ESR 115.10
+advisories:
+  CVE-2024-3852:
+    title: GetBoundName in the JIT returned the wrong object
+    impact: high
+    reporter: Logan Stratton
+    description: |
+      GetBoundName could return the wrong version of an object when JIT optimizations were applied.
+    bugs:
+      - url: 1883542
+  CVE-2024-3854:
+    title: Out-of-bounds-read after mis-optimized switch statement
+    impact: high
+    reporter: Lukas Bernhard
+    description: |
+      In some code patterns the JIT incorrectly optimized switch statements and generated code with out-of-bounds-reads.
+    bugs:
+      - url: 1884552
+  CVE-2024-3857:
+    title: Incorrect JITting of arguments led to use-after-free during garbage collection
+    impact: high
+    reporter: Lukas Bernhard
+    description: |
+      The JIT created incorrect code for arguments in certain cases. This led to potential use-after-free crashes during garbage collection.
+    bugs:
+      - url: 1886683
+  CVE-2024-2609:
+    title: Permission prompt input delay could expire when not in focus
+    impact: moderate
+    reporter: Shaheen Fazim
+    description: |
+      The permission prompt input delay could expire while the window is not in focus. This makes it vulnerable to clickjacking by malicious websites.
+    bugs:
+      - url: 1866100
+  CVE-2024-3859:
+    title: Integer-overflow led to out-of-bounds-read in the OpenType sanitizer
+    impact: moderate
+    reporter: Ronald Crane
+    description: |
+      On 32-bit versions there were integer-overflows that led to an out-of-bounds-read that potentially could be triggered by a malformed OpenType font.
+    bugs:
+      - url: 1874489
+  CVE-2024-3861:
+    title: Potential use-after-free due to AlignedBuffer self-move
+    impact: moderate
+    reporter: Ronald Crane
+    description: |
+      If an AlignedBuffer were assigned to itself, the subsequent self-move could result in an incorrect reference count and later use-after-free.
+    bugs:
+      - url: 1883158
+  CVE-2024-3863:
+    title: Download Protections were bypassed by .xrm-ms files on Windows
+    impact: moderate
+    reporter: Eduardo Braun Prado working with Trend Micro Zero Day Initiative
+    description: |
+      The executable file warning was not presented when downloading .xrm-ms files.  <br>*Note: This issue only affected Windows operating systems. Other operating systems are unaffected.*
+    bugs:
+      - url: 1885855
+  CVE-2024-3302:
+    title: Denial of Service using HTTP/2 CONTINUATION frames
+    impact: low
+    reporter: Bartek Nowotarski via CERT
+    description: |
+      There was no limit to the number of HTTP/2 CONTINUATION frames that would be processed. A server could abuse this to create an Out of Memory condition in the browser.
+    bugs:
+      - url: 1881183
+      - url: https://kb.cert.org/vuls/id/421644
+        desc: VU#421644 - HTTP/2 CONTINUATION frames can be utilized for DoS attacks
+  CVE-2024-3864:
+    title: Memory safety bug fixed in Firefox 125, Firefox ESR 115.10, and Thunderbird 115.10
+    impact: high
+    reporter: Paul Bone
+    description: |
+      Memory safety bug present in Firefox 124, Firefox ESR 115.9, and Thunderbird 115.9. This bug showed evidence of memory corruption and we presume that with enough effort this could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1888333
+        desc: Memory safety bug fixed in Firefox 125, Firefox ESR 115.10, and Thunderbird 115.10
