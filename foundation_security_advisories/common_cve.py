@@ -116,11 +116,17 @@ def try_update_published_cve(local_cve: CVEAdvisory, local_date: int, remote_dat
     if "x_legacyV4Record" in remote_cve_json_container:
         remote_cve_json_container.pop("x_legacyV4Record")
     local_cve_json = local_cve.to_json_5_0()
+    local_reference_urls = [
+        local_reference[0]
+        for local_instance in local_cve.instances
+        for local_reference in local_instance.references
+    ]
     # If there are references which we did not add automatically, we probably don't
     # want to remove them, so we move them to our to-be-published object.
     remote_extra_references = list(
         filter(
-            lambda reference: all(
+            lambda reference: not reference["url"] in local_reference_urls
+            and all(
                 not reference["url"].startswith(prefix)
                 for prefix in [
                     "https://bugzilla.mozilla.org",
