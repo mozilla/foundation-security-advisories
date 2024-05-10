@@ -13,7 +13,7 @@ advisories:
       A type check was missing when handling fonts in PDF.js, which would allow arbitrary JavaScript execution in the PDF.js context.
     bugs:
       - url: 1893645
-  MFSA-RESERVE-2024-1878577:
+  CVE-2024-4767:
     title: IndexDB files retained in private browsing mode
     impact: moderate
     reporter: Kim Do Hun via Tor Browser
@@ -21,7 +21,7 @@ advisories:
       If the <code>browser.privatebrowsing.autostart</code> preference is enabled, IndexDB files were not properly deleted when the window was closed. This preference is disabled by default in Firefox.
     bugs:
       - url: 1878577
-  MFSA-RESERVE-2024-1886082:
+  CVE-2024-4768:
     title: Potential permissions request bypass via clickjacking
     impact: moderate
     reporter: Hafiizh
@@ -29,7 +29,7 @@ advisories:
       A bug in popup notifications' interaction with WebAuthn made it easier for an attacker to trick a user into granting permissions.
     bugs:
       - url: 1886082
-  MFSA-RESERVE-2024-1886108:
+  CVE-2024-4769:
     title: Cross-Origin responses could be distinguished between script and non-script content-types
     impact: moderate
     reporter: Shaheen Fazim
@@ -37,7 +37,7 @@ advisories:
       When importing resources using Web Workers, error messages would distinguish the difference between <code>application/javascript</code> responses and non-script responses.  This could have been abused to learn information cross-origin.
     bugs:
       - url: 1886108
-  MFSA-RESERVE-2024-1893270:
+  CVE-2024-4770:
     title: Use-after-free could occur when printing to PDF
     impact: moderate
     reporter: Irvan Kurniawan
@@ -45,7 +45,7 @@ advisories:
       When saving a page to PDF, certain font styles could have led to a potential use-after-free crash.
     bugs:
       - url: 1893270
-  MFSA-RESERVE-2024-2:
+  CVE-2024-4777:
     title: Memory safety bugs fixed in Firefox 126, Firefox ESR 115.11, and Thunderbird 115.11
     impact: moderate
     reporter: Daniel Holbert and the Mozilla Fuzzing Team

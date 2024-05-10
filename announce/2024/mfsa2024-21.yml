@@ -5,7 +5,7 @@ fixed_in:
 - Firefox 126
 title: Security Vulnerabilities fixed in Firefox 126
 advisories:
-  MFSA-RESERVE-2024-1879093:
+  CVE-2024-4764:
     title: Use-after-free when audio input connected with multiple consumers
     impact: high
     reporter: Jan-Ivar Bruaroey
@@ -21,7 +21,7 @@ advisories:
       A type check was missing when handling fonts in PDF.js, which would allow arbitrary JavaScript execution in the PDF.js context.
     bugs:
       - url: 1893645
-  MFSA-RESERVE-2024-1871109:
+  CVE-2024-4765:
     title: Web application manifests could have been overwritten via hash collision
     impact: moderate
     reporter: Dana Keeler
@@ -29,7 +29,7 @@ advisories:
       Web application manifests were stored by using an insecure MD5 hash which allowed for a hash collision to overwrite another applications manifest. This could have been exploited to run arbitrary code in another applications context. <br>*This issue only affects Firefox for Android. Other versions of Firefox are unaffected.*
     bugs:
       - url: 1871109
-  MFSA-RESERVE-2024-1871214:
+  CVE-2024-4766:
     title: Fullscreen notification could have been obscured on Firefox for Android
     impact: moderate
     reporter: Hafiizh
@@ -38,7 +38,7 @@ advisories:
     bugs:
       - url: 1871214
       - url: 1871217
-  MFSA-RESERVE-2024-1878577:
+  CVE-2024-4767:
     title: IndexDB files retained in private browsing mode
     impact: moderate
     reporter: Kim Do Hun via Tor Browser
@@ -46,7 +46,7 @@ advisories:
       If the <code>browser.privatebrowsing.autostart</code> preference is enabled, IndexDB files were not properly deleted when the window was closed. This preference is disabled by default in Firefox.
     bugs:
       - url: 1878577
-  MFSA-RESERVE-2024-1886082:
+  CVE-2024-4768:
     title: Potential permissions request bypass via clickjacking
     impact: moderate
     reporter: Hafiizh
@@ -54,7 +54,7 @@ advisories:
       A bug in popup notifications' interaction with WebAuthn made it easier for an attacker to trick a user into granting permissions.
     bugs:
       - url: 1886082
-  MFSA-RESERVE-2024-1886108:
+  CVE-2024-4769:
     title: Cross-Origin responses could be distinguished between script and non-script content-types
     impact: moderate
     reporter: Shaheen Fazim
@@ -62,7 +62,7 @@ advisories:
       When importing resources using Web Workers, error messages would distinguish the difference between <code>application/javascript</code> responses and non-script responses.  This could have been abused to learn information cross-origin.
     bugs:
       - url: 1886108
-  MFSA-RESERVE-2024-1893270:
+  CVE-2024-4770:
     title: Use-after-free could occur when printing to PDF
     impact: moderate
     reporter: Irvan Kurniawan
@@ -70,7 +70,7 @@ advisories:
       When saving a page to PDF, certain font styles could have led to a potential use-after-free crash.
     bugs:
       - url: 1893270
-  MFSA-RESERVE-2024-1893891:
+  CVE-2024-4771:
     title: Failed allocation could lead to use-after-free
     impact: moderate
     reporter: Irvan Kurniawan
@@ -78,7 +78,7 @@ advisories:
       A memory allocation check was missing which would lead to a use-after-free if the allocation failed. This could have triggered a crash or potentially be leveraged to achieve code execution.
     bugs:
       - url: 1893891
-  MFSA-RESERVE-2024-1870579:
+  CVE-2024-4772:
     title: Use of insecure rand() function to generate nonce
     impact: low
     reporter: Hanno Böck
@@ -86,7 +86,7 @@ advisories:
       An HTTP digest authentication nonce value was generated using <code>rand()</code> which could lead to predictable values.
     bugs:
       - url: 1870579
-  MFSA-RESERVE-2024-1875248:
+  CVE-2024-4773:
     title: URL bar could be cleared after network error
     impact: low
     reporter: Islam
@@ -94,7 +94,7 @@ advisories:
       When a network error occurred during page load, the prior content could have remained in view with a blank URL bar. This could have been used to obfuscate a spoofed web site.
     bugs:
       - url: 1875248
-  MFSA-RESERVE-2024-1886598:
+  CVE-2024-4774:
     title: Undefined behavior in ShmemCharMapHashEntry()
     impact: low
     reporter: Ronald Crane
@@ -102,7 +102,7 @@ advisories:
       The <code>ShmemCharMapHashEntry()</code> code was susceptible to potentially undefined behavior by bypassing the move semantics for one of its data members.
     bugs:
       - url: 1886598
-  MFSA-RESERVE-2024-1887332:
+  CVE-2024-4775:
     title: Invalid memory access in the built-in profiler
     impact: low
     reporter: Lukas Bernhard
@@ -110,7 +110,7 @@ advisories:
       An iterator stop condition was missing when handling WASM code in the built-in profiler, potentially leading to invalid memory access and undefined behavior. <i>Note:</i> This issue only affects the application when the profiler is running.
     bugs:
       - url: 1887332
-  MFSA-RESERVE-2024-1887343:
+  CVE-2024-4776:
     title: Window may remain disabled after file dialog is shown in full-screen
     impact: low
     reporter: Raphael
@@ -118,7 +118,7 @@ advisories:
       A file dialog shown while in full-screen mode could have resulted in the window remaining disabled.
     bugs:
       - url: 1887343
-  MFSA-RESERVE-2024-2:
+  CVE-2024-4777:
     title: Memory safety bugs fixed in Firefox 126, Firefox ESR 115.11, and Thunderbird 115.11
     impact: moderate
     reporter: Daniel Holbert and the Mozilla Fuzzing Team
@@ -127,7 +127,7 @@ advisories:
     bugs:
       - url: 1878199, 1893340
         desc: Memory safety bugs fixed in Firefox 126, Firefox ESR 115.11, and Thunderbird 115.11
-  MFSA-RESERVE-2024-4:
+  CVE-2024-4778:
     title: Memory safety bugs fixed in Firefox 126
     impact: moderate
     reporter: Mozilla Fuzzing Team
