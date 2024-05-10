@@ -1,0 +1,56 @@
+## mfsa2024-22.yml
+announced: May 14, 2024
+impact: high
+fixed_in:
+- Firefox ESR 115.11
+title: Security Vulnerabilities fixed in Firefox ESR 115.11
+advisories:
+  CVE-2024-4367:
+    title: Arbitrary JavaScript execution in PDF.js
+    impact: high
+    reporter: Thomas Rinsma of Codean Labs
+    description: |
+      A type check was missing when handling fonts in PDF.js, which would allow arbitrary JavaScript execution in the PDF.js context.
+    bugs:
+      - url: 1893645
+  MFSA-RESERVE-2024-1878577:
+    title: IndexDB files retained in private browsing mode
+    impact: moderate
+    reporter: Kim Do Hun via Tor Browser
+    description: |
+      If the <code>browser.privatebrowsing.autostart</code> preference is enabled, IndexDB files were not properly deleted when the window was closed. This preference is disabled by default in Firefox.
+    bugs:
+      - url: 1878577
+  MFSA-RESERVE-2024-1886082:
+    title: Potential permissions request bypass via clickjacking
+    impact: moderate
+    reporter: Hafiizh
+    description: |
+      A bug in popup notifications' interaction with WebAuthn made it easier for an attacker to trick a user into granting permissions.
+    bugs:
+      - url: 1886082
+  MFSA-RESERVE-2024-1886108:
+    title: Cross-Origin responses could be distinguished between script and non-script content-types
+    impact: moderate
+    reporter: Shaheen Fazim
+    description: |
+      When importing resources using Web Workers, error messages would distinguish the difference between <code>application/javascript</code> responses and non-script responses.  This could have been abused to learn information cross-origin.
+    bugs:
+      - url: 1886108
+  MFSA-RESERVE-2024-1893270:
+    title: Use-after-free could occur when printing to PDF
+    impact: moderate
+    reporter: Irvan Kurniawan
+    description: |
+      When saving a page to PDF, certain font styles could have led to a potential use-after-free crash.
+    bugs:
+      - url: 1893270
+  MFSA-RESERVE-2024-2:
+    title: Memory safety bugs fixed in Firefox 126, Firefox ESR 115.11, and Thunderbird 115.11
+    impact: moderate
+    reporter: Daniel Holbert and the Mozilla Fuzzing Team
+    description: |
+      Memory safety bugs present in Firefox 125, Firefox ESR 115.10, and Thunderbird 115.10. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1878199, 1893340
+        desc: Memory safety bugs fixed in Firefox 126, Firefox ESR 115.11, and Thunderbird 115.11
