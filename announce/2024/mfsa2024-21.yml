@@ -26,7 +26,7 @@ advisories:
     impact: moderate
     reporter: Dana Keeler
     description: |
-      Web application manifests were stored by using an insecure MD5 hash which allowed for a hash collision to overwrite another applications manifest. This could have been exploited to run arbitrary code in another applications context. <br>*This issue only affects Firefox for Android. Other versions of Firefox are unaffected.*
+      Web application manifests were stored by using an insecure MD5 hash which allowed for a hash collision to overwrite another application's manifest. This could have been exploited to run arbitrary code in another application's context. <br>*This issue only affects Firefox for Android. Other versions of Firefox are unaffected.*
     bugs:
       - url: 1871109
   CVE-2024-4766:
@@ -39,11 +39,11 @@ advisories:
       - url: 1871214
       - url: 1871217
   CVE-2024-4767:
-    title: IndexDB files retained in private browsing mode
+    title: IndexedDB files retained in private browsing mode
     impact: moderate
     reporter: Kim Do Hun via Tor Browser
     description: |
-      If the <code>browser.privatebrowsing.autostart</code> preference is enabled, IndexDB files were not properly deleted when the window was closed. This preference is disabled by default in Firefox.
+      If the <code>browser.privatebrowsing.autostart</code> preference is enabled, IndexedDB files were not properly deleted when the window was closed. This preference is disabled by default in Firefox.
     bugs:
       - url: 1878577
   CVE-2024-4768:
@@ -55,7 +55,7 @@ advisories:
     bugs:
       - url: 1886082
   CVE-2024-4769:
-    title: Cross-Origin responses could be distinguished between script and non-script content-types
+    title: Cross-origin responses could be distinguished between script and non-script content-types
     impact: moderate
     reporter: Shaheen Fazim
     description: |

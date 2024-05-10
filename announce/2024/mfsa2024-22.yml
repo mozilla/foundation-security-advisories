@@ -14,11 +14,11 @@ advisories:
     bugs:
       - url: 1893645
   CVE-2024-4767:
-    title: IndexDB files retained in private browsing mode
+    title: IndexedDB files retained in private browsing mode
     impact: moderate
     reporter: Kim Do Hun via Tor Browser
     description: |
-      If the <code>browser.privatebrowsing.autostart</code> preference is enabled, IndexDB files were not properly deleted when the window was closed. This preference is disabled by default in Firefox.
+      If the <code>browser.privatebrowsing.autostart</code> preference is enabled, IndexedDB files were not properly deleted when the window was closed. This preference is disabled by default in Firefox.
     bugs:
       - url: 1878577
   CVE-2024-4768:
@@ -30,7 +30,7 @@ advisories:
     bugs:
       - url: 1886082
   CVE-2024-4769:
-    title: Cross-Origin responses could be distinguished between script and non-script content-types
+    title: Cross-origin responses could be distinguished between script and non-script content-types
     impact: moderate
     reporter: Shaheen Fazim
     description: |
