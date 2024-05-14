@@ -107,7 +107,7 @@ advisories:
     impact: low
     reporter: Lukas Bernhard
     description: |
-      An iterator stop condition was missing when handling WASM code in the built-in profiler, potentially leading to invalid memory access and undefined behavior. <i>Note:</i> This issue only affects the application when the profiler is running.
+      An iterator stop condition was missing when handling WASM code in the built-in profiler, potentially leading to invalid memory access and undefined behavior. *Note:* This issue only affects the application when the profiler is running.
     bugs:
       - url: 1887332
   CVE-2024-4776:
