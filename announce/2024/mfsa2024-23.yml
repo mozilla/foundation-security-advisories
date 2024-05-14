@@ -1,0 +1,58 @@
+## mfsa2024-23.yml
+announced: May 15, 2024
+impact: high
+fixed_in:
+- Thunderbird 115.11
+title: Security Vulnerabilities fixed in Thunderbird 115.11
+description: |
+  *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
+advisories:
+  CVE-2024-4367:
+    title: Arbitrary JavaScript execution in PDF.js
+    impact: high
+    reporter: Thomas Rinsma of Codean Labs
+    description: |
+      A type check was missing when handling fonts in PDF.js, which would allow arbitrary JavaScript execution in the PDF.js context.
+    bugs:
+      - url: 1893645
+  CVE-2024-4767:
+    title: IndexedDB files retained in private browsing mode
+    impact: moderate
+    reporter: Kim Do Hun via Tor Browser
+    description: |
+      If the <code>browser.privatebrowsing.autostart</code> preference is enabled, IndexedDB files were not properly deleted when the window was closed. This preference is disabled by default in Thunderbird.
+    bugs:
+      - url: 1878577
+  CVE-2024-4768:
+    title: Potential permissions request bypass via clickjacking
+    impact: moderate
+    reporter: Hafiizh
+    description: |
+      A bug in popup notifications' interaction with WebAuthn made it easier for an attacker to trick a user into granting permissions.
+    bugs:
+      - url: 1886082
+  CVE-2024-4769:
+    title: Cross-origin responses could be distinguished between script and non-script content-types
+    impact: moderate
+    reporter: Shaheen Fazim
+    description: |
+      When importing resources using Web Workers, error messages would distinguish the difference between <code>application/javascript</code> responses and non-script responses.  This could have been abused to learn information cross-origin.
+    bugs:
+      - url: 1886108
+  CVE-2024-4770:
+    title: Use-after-free could occur when printing to PDF
+    impact: moderate
+    reporter: Irvan Kurniawan
+    description: |
+      When saving a page to PDF, certain font styles could have led to a potential use-after-free crash.
+    bugs:
+      - url: 1893270
+  CVE-2024-4777:
+    title: Memory safety bugs fixed in Firefox 126, Firefox ESR 115.11, and Thunderbird 115.11
+    impact: moderate
+    reporter: Daniel Holbert and the Mozilla Fuzzing Team
+    description: |
+      Memory safety bugs present in Firefox 125, Firefox ESR 115.10, and Thunderbird 115.10. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1878199, 1893340
+        desc: Memory safety bugs fixed in Firefox 126, Firefox ESR 115.11, and Thunderbird 115.11
