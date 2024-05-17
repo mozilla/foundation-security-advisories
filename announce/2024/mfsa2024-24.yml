@@ -1,0 +1,14 @@
+## mfsa2024-24.yml
+announced: May 16, 2024
+impact: high
+fixed_in:
+- Focus for iOS 126
+title: Security Vulnerabilities fixed in Focus for iOS 126
+advisories:
+  CVE-2024-5022:
+    title: URLs with file scheme could have been used to spoof addresses in the location bar
+    impact: high
+    reporter: James Lee
+    description: The file scheme of URLs would be hidden, resulting in potential spoofing of a website's address in the location bar
+    bugs:
+      - url: 1874560
