@@ -1,0 +1,130 @@
+## mfsa2024-25.yml
+announced: June 11, 2024
+impact: high
+fixed_in:
+- Firefox 127
+title: Security Vulnerabilities fixed in Firefox 127
+advisories:
+  MFSA-RESERVE-2024-1889066:
+    title: An incorrect principal could have been used when opening new tabs
+    impact: high
+    reporter: jackyzy823
+    description: |
+      If a specific sequence of actions is performed when opening a new tab, the triggering principal associated with the new tab may have been incorrect. The triggering principal is used to calculate many values, including the <code>Referer</code> and <code>Sec-*</code> headers, meaning there is the potential for incorrect security checks within the browser in addition to incorrect or misleading information sent to remote websites.<br>*This bug only affects Firefox for Android. Other versions of Firefox are unaffected.*
+    bugs:
+      - url: 1889066
+  MFSA-RESERVE-2024-1895086:
+    title: Use-after-free in JavaScript object transplant
+    impact: high
+    reporter: Lukas Bernhard
+    description: |
+      If a garbage collection was triggered at the right time, a use-after-free could have occurred during object transplant.
+    bugs:
+      - url: 1895086
+  MFSA-RESERVE-2024-1389707:
+    title: User confusion and possible phishing vector via Firefox Screenshots
+    impact: moderate
+    reporter: Fabian Fäßler
+    description: |
+      In addition to detecting when a user was taking a screenshot (XXX), a website was able to overlay the 'My Shots' button that appeared, and direct the user to a replica Firefox Screenshots page that could be used for phishing.
+    bugs:
+      - url: 1389707
+  MFSA-RESERVE-2024-1883693:
+    title: External protocol handlers leaked by timing attack
+    impact: moderate
+    reporter: Satoki Tsuji
+    description: |
+      By monitoring the time certain operations take, an attacker could have guessed which external protocol handlers were functional on a user's system.
+    bugs:
+      - url: 1883693
+  MFSA-RESERVE-2024-1888695:
+    title: Sandboxed iframes were able to bypass sandbox restrictions to open a new window
+    impact: moderate
+    reporter: Luan Herrera
+    description: |
+      By tricking the browser with a <code>X-Frame-Options</code> header, a sandboxed iframe could have presented a button that, if clicked by a user, would bypass restrictions to open a new window.
+    bugs:
+      - url: 1888695
+  MFSA-RESERVE-2024-1891234:
+    title: Bypass of file name restrictions during saving
+    impact: moderate
+    reporter: Raphael Shaniyazov and Axel Chong (@Haxatron)
+    description: |
+      On Windows, when using the 'Save As' functionality, an attacker could have tricked the browser into saving the file with a disallowed extension such as <code>.url</code> by including an invalid character in the extension. *Note:* This issue only affected Windows operating systems. Other operating systems are unaffected.
+    bugs:
+      - url: 1891234
+      - url: 1837514
+  MFSA-RESERVE-2024-1891319:
+    title: Cross-Origin Image leak via Offscreen Canvas
+    impact: moderate
+    reporter: Kirtikumar Anandrao Ramchandani
+    description: |
+      Offscreen Canvas did not properly track cross-origin tainting, which could be used to access image data from another site in violation of same-origin policy.
+    bugs:
+      - url: 1891319
+  MFSA-RESERVE-2024-1895055:
+    title: Use-after-free in JavaScript Strings
+    impact: moderate
+    reporter: Lukas Bernhard
+    description: |
+      An attacker could have caused a use-after-free in the JavaScript engine to read memory in the JavaScript string section of the heap.
+    bugs:
+      - url: 1895055
+  MFSA-RESERVE-2024-1895579:
+    title: Memory Corruption using allocation using out-of-memory conditions
+    impact: moderate
+    reporter: Irvan Kurniawan
+    description: |
+      If an out-of-memory condition occurs at a specific point using allocations in the probabilistic heap checker, an assertion could have been triggered, and in rarer situations, memory corruption could have occurred.
+    bugs:
+      - url: 1895579
+  MFSA-RESERVE-2024-1896555:
+    title: Memory Corruption in Text Fragments
+    impact: moderate
+    reporter: Irvan Kurniawan
+    description: |
+      By manipulating the text in an <code>&lt;input&gt;</code> tag, an attacker could have caused corrupt memory leading to a potentially exploitable crash.
+    bugs:
+      - url: 1896555
+  MFSA-RESERVE-2024-1414937:
+    title: Website was able to detect when Firefox was taking a screenshot of them
+    impact: low
+    reporter: Wil Clouser
+    description: |
+      A website was able to detect when a user took a screenshot of a page using the built-in Screenshot functionality in Firefox.
+    bugs:
+      - url: 1414937
+  MFSA-RESERVE-2024-1828259:
+    title: Data-list could have overlaid address bar
+    impact: low
+    reporter: Hafiizh
+    description: |
+      By manipulating the fullscreen feature while opening a data-list, an attacker could have overlaid a text box over the address bar. This could have led to user confusion and possible spoofing attacks.
+    bugs:
+      - url: 1828259
+  MFSA-RESERVE-2024-1891349:
+    title: Cookie prefixes not treated as case-sensitive
+    impact: low
+    reporter: Konstantin Preißer
+    description: |
+      In violation of spec, cookie prefixes such as <code>__Secure</code> were being ignored if they were not correctly capitalized - by spec they should be checked with a case-insensitive comparison. This could have resulted in the browser not correctly honoring the behaviors specified by the prefix.
+    bugs:
+      - url: 1891349
+  MFSA-RESERVE-2024-2:
+    title: Memory safety bugs fixed in Firefox 127, Firefox ESR 115.12, and Thunderbird 115.12
+    impact: high
+    reporter: The Mozilla Fuzzing Team
+    description: |
+      Memory safety bugs present in Firefox 126, Firefox ESR 115.11, and Thunderbird 115.11. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1862809, 1889355, 1893388, 1895123
+        desc: Memory safety bugs fixed in Firefox 127, Firefox ESR 115.12, and Thunderbird 115.12
+  MFSA-RESERVE-2024-4:
+    title: Memory safety bugs fixed in Firefox 127
+    impact: high
+    reporter: Randell Jesup and the Mozilla Fuzzing Team
+    description: |
+      Memory safety bugs present in Firefox 126. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1890909, 1891422, 1893915, 1894047, 1896024
+        desc: Memory safety bugs fixed in Firefox 127

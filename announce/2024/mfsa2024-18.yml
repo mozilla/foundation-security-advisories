@@ -4,6 +4,8 @@ impact: high
 fixed_in:
 - Firefox 125
 title: Security Vulnerabilities fixed in Firefox 125
+description: |
+  This advisory was updated June 11, 2024 to add XXX which was included in the original release of Firefox 125, but did not appear in the advisory published at that time.
 advisories:
   CVE-2024-3852:
     title: GetBoundName in the JIT returned the wrong object
@@ -13,6 +15,14 @@ advisories:
       GetBoundName could return the wrong version of an object when JIT optimizations were applied.
     bugs:
       - url: 1883542
+  MFSA-RESERVE-2024-1193389:
+    title: Use-after-free in networking
+    impact: high
+    reporter: Kershaw Chang
+    description: |
+      Memory corruption in the networking stack could have led to a potentially exploitable crash.
+    bugs:
+      - url: 1193389
   CVE-2024-3853:
     title: Use-after-free if garbage collection runs during realm initialization
     impact: high

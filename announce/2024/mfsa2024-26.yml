@@ -1,0 +1,72 @@
+## mfsa2024-26.yml
+announced: June 11, 2024
+impact: high
+fixed_in:
+- Firefox ESR 115.12
+title: Security Vulnerabilities fixed in Firefox ESR 115.12
+advisories:
+  MFSA-RESERVE-2024-1193389:
+    title: Use-after-free in networking
+    impact: high
+    reporter: Kershaw Chang
+    description: |
+      Memory corruption in the networking stack could have led to a potentially exploitable crash.
+    bugs:
+      - url: 1193389
+  MFSA-RESERVE-2024-1895086:
+    title: Use-after-free in JavaScript object transplant
+    impact: high
+    reporter: Lukas Bernhard
+    description: |
+      If a garbage collection was triggered at the right time, a use-after-free could have occurred during object transplant.
+    bugs:
+      - url: 1895086
+  MFSA-RESERVE-2024-1883693:
+    title: External protocol handlers leaked by timing attack
+    impact: moderate
+    reporter: Satoki Tsuji
+    description: |
+      By monitoring the time certain operations take, an attacker could have guessed which external protocol handlers were functional on a user's system.
+    bugs:
+      - url: 1883693
+  MFSA-RESERVE-2024-1888695:
+    title: Sandboxed iframes were able to bypass sandbox restrictions to open a new window
+    impact: moderate
+    reporter: Luan Herrera
+    description: |
+      By tricking the browser with a <code>X-Frame-Options</code> header, a sandboxed iframe could have presented a button that, if clicked by a user, would bypass restrictions to open a new window.
+    bugs:
+      - url: 1888695
+  MFSA-RESERVE-2024-1891234:
+    title: Bypass of file name restrictions during saving
+    impact: moderate
+    reporter: Raphael Shaniyazov
+    description: |
+      On Windows 10, when using the 'Save As' functionality, an attacker could have tricked the browser into saving the file with a disallowed extension such as <code>.url</code> by including an invalid character in the extension. *Note:* This issue only affected Windows operating systems. Other operating systems are unaffected.
+    bugs:
+      - url: 1891234
+  MFSA-RESERVE-2024-1891319:
+    title: Cross-Origin Image leak via Offscreen Canvas
+    impact: moderate
+    reporter: Kirtikumar Anandrao Ramchandani
+    description: |
+      Offscreen Canvas did not properly track cross-origin tainting, which could be used to access image data from another site in violation of same-origin policy.
+    bugs:
+      - url: 1891319
+  MFSA-RESERVE-2024-1896555:
+    title: Memory Corruption in Text Fragments
+    impact: moderate
+    reporter: Irvan Kurniawan
+    description: |
+      By manipulating the text in an <code>&lt;input&gt;</code> tag, an attacker could have caused corrupt memory leading to a potentially exploitable crash.
+    bugs:
+      - url: 1896555
+  MFSA-RESERVE-2024-2:
+    title: Memory safety bugs fixed in Firefox 127, Firefox ESR 115.12, and Thunderbird 115.12
+    impact: high
+    reporter: The Mozilla Fuzzing Team
+    description: |
+      Memory safety bugs present in Firefox 126, Firefox ESR 115.11, and Thunderbird 115.11. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1862809, 1889355, 1893388, 1895123
+        desc: Memory safety bugs fixed in Firefox 127, Firefox ESR 115.12, and Thunderbird 115.12
