@@ -15,7 +15,7 @@ advisories:
       GetBoundName could return the wrong version of an object when JIT optimizations were applied.
     bugs:
       - url: 1883542
-  MFSA-RESERVE-2024-1193389:
+  CVE-2024-5702:
     title: Use-after-free in networking
     impact: high
     reporter: Kershaw Chang
