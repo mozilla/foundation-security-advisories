@@ -1,4 +1,48 @@
 names:
+- name: Lukas Bernhard
+  date: 2023-09-19
+- name: Dohyun Lee of DNSLab Korea University
+  date: 2023-09-12
+  twitter: "@l33d0hyun"
+  url: https://twitter.com/@l33d0hyun
+- name: pwn2car
+  date: 2023-09-12
+- name: Yangkang of 360 ATA Team
+  date: 2023-09-12
+  twitter: "@dnpushme"
+  url: https://twitter.com/@dnpushme
+- name: salah eddine louffidi
+  date: 2023-09-06
+- name: sonakkbi
+  date: 2023-09-05
+- name: Shaheen Fazim
+  date: 2023-09-05
+  twitter: "@shaheenfazim"
+  url: https://twitter.com/@shaheenfazim
+- name: Ronald Crane
+  date: 2023-08-29
+  url: https://www.zippenhop.com/
+- name: fffvr
+  date: 2023-08-15
+- name: Axel Chong
+  date: 2023-08-08
+- name: P Umar Farooq
+  date: 2023-08-01
+- name: Yu Chendong
+  date: 2023-08-01
+- name: Irvan Kurniawan (sourc7)
+  date: 2023-07-25
+  url: https://www.linkedin.com/in/sourc7/
+- name: Looben Yang
+  date: 2023-07-25
+- name: Muneaki Nishimura (a.k.a. nishimunea)
+  date: 2023-07-25
+- name: Kazuki Nomoto
+  date: 2023-07-18
+  url: https://nomokazu.com/
+- name: Lohith Gowda M
+  date: 2023-07-18
+  url: https://hackerone.com/lohigowda
 - name: zx from qriousec
   date: 2023-06-27
 - name: Meta-Press.es Dev Team
