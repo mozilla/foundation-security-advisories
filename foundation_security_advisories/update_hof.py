@@ -75,6 +75,9 @@ https://bugzilla.mozilla.org/buglist.cgi?x=x
 """.replace("\n", "")
 
 credit_entries = {
+    "f659e7a2e5f950fe2acbbcf5afc08629":"P Umar Farooq",
+    "d2c85150e90ea3483a1864e20d44205e":"Meta-Press.es Dev Team",
+    "6c7ad302d6440e0ef7085e5e7c0262c4":"zx from qriousec",
     "d3c5747f3d72aedb8c7d9ba30163f27a":"Jiyeon Lee",
     "fefefe38f8c62015edb2b2e295eeaef6":"Khiem Tran",
     "ad935713e8a3860ffac9edcd32707fd1":"Shaheen Fazim",
