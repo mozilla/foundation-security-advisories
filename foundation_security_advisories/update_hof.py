@@ -75,6 +75,11 @@ https://bugzilla.mozilla.org/buglist.cgi?x=x
 """.replace("\n", "")
 
 credit_entries = {
+    "b9a6307c3a098387557dab8537c59a70":"Kazuki Nomoto",
+    "b9a6307c3a098387557dab8537c59a70":"Kazuki Nomoto",
+    "b413517899d16075631dc85a69fb0da6":"sonakkbi",
+    "b413517899d16075631dc85a69fb0da6":"sonakkbi",
+    "b413517899d16075631dc85a69fb0da6":"sonakkbi",
     "f659e7a2e5f950fe2acbbcf5afc08629":"P Umar Farooq",
     "d2c85150e90ea3483a1864e20d44205e":"Meta-Press.es Dev Team",
     "6c7ad302d6440e0ef7085e5e7c0262c4":"zx from qriousec",
@@ -477,6 +482,8 @@ twitter_entries = {
     "fe7f319c61c0b44d4cb751afda4f4aeb" : "@Gaurav_00000",
 }
 url_entries = {
+    "b9a6307c3a098387557dab8537c59a70":"https://nomokazu.com/",
+    "b9a6307c3a098387557dab8537c59a70":"https://nomokazu.com/",
     "9f059eb3b4eba569bba477ee0bc95350":"https://hackerone.com/lohigowda",
     "d95fb2b54e0b81565e15e10734bcfa94": "https://www.linkedin.com/in/orionjoshi/",
     "a021b107a1bbc624d7cd8435abf7a84f":"https://www.trivialsec.com/",
