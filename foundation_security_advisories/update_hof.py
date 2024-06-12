@@ -615,7 +615,7 @@ def is_client_bug(bug):
 retry_strategy = Retry(
     total=5,
     status_forcelist=[429, 500, 502, 503, 504],
-    method_whitelist=["HEAD", "GET", "OPTIONS"],
+    allowed_methods=["HEAD", "GET", "OPTIONS"],
     backoff_factor=2
 )
 adapter = HTTPAdapter(max_retries=retry_strategy)
@@ -1008,38 +1008,38 @@ def hmac_email(hmackey, email):
 
 def add_credit_to_script(hmackey, email, credit):
     string_to_add = '"' + hmac_email(hmackey, email) + '":"' + credit + '",'
-    with open(os.path.basename(__file__), 'r', encoding="utf-8") as in_script:
+    with open(__file__, 'r', encoding="utf-8") as in_script:
         script_data = in_script.read()
 
     index = script_data.find('credit_entries = {') + 18
 
     final_output = script_data[:index] +'\n' + "    " + string_to_add + script_data[index:]
 
-    with open(os.path.basename(__file__), 'w', encoding="utf-8") as out_script:
+    with open(__file__, 'w', encoding="utf-8") as out_script:
         out_script.write(final_output)
 
 def add_twitter_to_script(hmackey, email, twitter):
     string_to_add = '"' + hmac_email(hmackey, email) + '":"' + twitter + '",'
-    with open(os.path.basename(__file__), 'r', encoding="utf-8") as in_script:
+    with open(__file__, 'r', encoding="utf-8") as in_script:
         script_data = in_script.read()
 
     index = script_data.find('twitter_entries = {') + 19
 
     final_output = script_data[:index] +'\n' + "    " + string_to_add + script_data[index:]
 
-    with open(os.path.basename(__file__), 'w', encoding="utf-8") as out_script:
+    with open(__file__, 'w', encoding="utf-8") as out_script:
         out_script.write(final_output)
 
 def add_url_to_script(hmackey, email, url):
     string_to_add = '"' + hmac_email(hmackey, email) + '":"' + url + '",'
-    with open(os.path.basename(__file__), 'r', encoding="utf-8") as in_script:
+    with open(__file__, 'r', encoding="utf-8") as in_script:
         script_data = in_script.read()
 
     index = script_data.find('url_entries = {') + 15
 
     final_output = script_data[:index] +'\n' + "    " + string_to_add + script_data[index:]
 
-    with open(os.path.basename(__file__), 'w', encoding="utf-8") as out_script:
+    with open(__file__, 'w', encoding="utf-8") as out_script:
         out_script.write(final_output)
 
 def gather_bug_list(apikey):
