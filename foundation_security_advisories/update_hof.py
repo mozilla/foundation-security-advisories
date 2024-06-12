@@ -75,6 +75,10 @@ https://bugzilla.mozilla.org/buglist.cgi?x=x
 """.replace("\n", "")
 
 credit_entries = {
+    "d3c5747f3d72aedb8c7d9ba30163f27a":"Jiyeon Lee",
+    "fefefe38f8c62015edb2b2e295eeaef6":"Khiem Tran",
+    "ad935713e8a3860ffac9edcd32707fd1":"Shaheen Fazim",
+    "d3010c7ab380ac4f0796a875d10b9266":"Ameen Basha M K",
     "9f059eb3b4eba569bba477ee0bc95350":"Lohith Gowda M",
     "1c5aa3f06dd0263874f6c4f36acaf9aa":"Edward 'JankhJankh' Prior",
     "d95fb2b54e0b81565e15e10734bcfa94": "Orion Joshi",
@@ -390,6 +394,9 @@ credit_entries = {
     "2e1575d6141ca69287e4f55ef6fec159" : "Jake Nicholson",
 }
 twitter_entries = {
+    "fefefe38f8c62015edb2b2e295eeaef6":"@duckhiem",
+    "ad935713e8a3860ffac9edcd32707fd1":"@shaheenfazim",
+    "d3010c7ab380ac4f0796a875d10b9266":"@ameenbasha111",
     "d5716b05696f59f850b9dad8ed0b0d43":"@revengerali",
     "0078828862f4973eece40d1be8510a0b":"JayateerthaG",
     "061748177265860816977bb65cc0147a" : "@tomorrowisnew",
