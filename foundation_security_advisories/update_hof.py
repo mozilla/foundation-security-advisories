@@ -75,6 +75,11 @@ https://bugzilla.mozilla.org/buglist.cgi?x=x
 """.replace("\n", "")
 
 credit_entries = {
+    "2badcfbf0635b789d02eb03086ccc1bd":"Shanbo Chen (Reshahar) of NSFOCUS Tianji Lab.",
+    "f5d43940f8686622940287507ddeb1b9":"JSec of Hayyim Security",
+    "b9d7ff0b05dda6647339884dddcbd462":"Zeyu Zhang",
+    "19cf699e96dadbbf1b8789b9f60b8474":"kaed.e",
+    "b35db3b4e14eb5d6b9719ce45ea3e45a":"Yaswant (Az3z3l)",
     "b9a6307c3a098387557dab8537c59a70":"Kazuki Nomoto",
     "b9a6307c3a098387557dab8537c59a70":"Kazuki Nomoto",
     "b413517899d16075631dc85a69fb0da6":"sonakkbi",
@@ -402,6 +407,7 @@ credit_entries = {
     "2e1575d6141ca69287e4f55ef6fec159" : "Jake Nicholson",
 }
 twitter_entries = {
+    "b35db3b4e14eb5d6b9719ce45ea3e45a":"https://twitter.com/Az3z3l",
     "fefefe38f8c62015edb2b2e295eeaef6":"@duckhiem",
     "ad935713e8a3860ffac9edcd32707fd1":"@shaheenfazim",
     "d3010c7ab380ac4f0796a875d10b9266":"@ameenbasha111",
