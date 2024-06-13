@@ -1,0 +1,23 @@
+## mfsa2024-27.yml
+announced: June 13, 2024
+impact: high
+fixed_in:
+- Firefox for iOS 127
+title: Security Vulnerabilities fixed in Firefox for iOS 127
+advisories:
+  CVE-2024-38313:
+    title: Location URL bar could be visually spoofed with a fake toolbar
+    impact: high
+    reporter: Muneaki Nishimura
+    description: |
+      In certain scenarios a malicious website could attempt to display a fake location URL bar which could mislead users as to the actual website address
+    bugs:
+      - url: 1878489
+  CVE-2024-38312:
+    title: Private tabs could result in residual data related to browsing history in app bundle
+    impact: moderate
+    reporter: Adam Berry
+    description: |
+      When browsing private tabs, some data related to location history or webpage thumbnails could be persisted incorrectly within the sandboxed app bundle after app termination
+    bugs:
+      - url: 1878578
