@@ -5,7 +5,7 @@ fixed_in:
 - Firefox 128
 title: Security Vulnerabilities fixed in Firefox 128
 advisories:
-  MFSA-RESERVE-2024-1836786:
+  CVE-2024-6605:
     title: Firefox Android missed activation delay to prevent tapjacking
     impact: high
     reporter: Shaheen Fazim
@@ -13,7 +13,7 @@ advisories:
       Firefox Android allowed immediate interaction with permission prompts. This could be used for tapjacking.
     bugs:
       - url: 1836786
-  MFSA-RESERVE-2024-1902305:
+  CVE-2024-6606:
     title: Out-of-bounds read in clipboard component
     impact: high
     reporter: dalmurino
@@ -21,7 +21,7 @@ advisories:
       Clipboard code failed to check the index on an array access. This could have lead to an out-of-bounds read.
     bugs:
       - url: 1902305
-  MFSA-RESERVE-2024-1694513:
+  CVE-2024-6607:
     title: Leaving pointerlock by pressing the escape key could be prevented
     impact: moderate
     reporter: Irvan Kurniawan
@@ -32,7 +32,7 @@ advisories:
       permission prompts. This could be used to confuse a user into giving a site unintended permissions.
     bugs:
       - url: 1694513
-  MFSA-RESERVE-2024-1743329:
+  CVE-2024-6608:
     title: Cursor could be moved out of the viewport using pointerlock.
     impact: moderate
     reporter: Irvan Kurniawan
@@ -40,7 +40,7 @@ advisories:
       It was possible to move the cursor using pointerlock from an iframe. This allowed moving the cursor outside of the viewport and the Firefox window.
     bugs:
       - url: 1743329
-  MFSA-RESERVE-2024-1839258:
+  CVE-2024-6609:
     title: Memory corruption in NSS
     impact: moderate
     reporter: Irvan Kurniawan
@@ -48,7 +48,7 @@ advisories:
       When almost out-of-memory an elliptic curve key which was never allocated could have been freed again.
     bugs:
       - url: 1839258
-  MFSA-RESERVE-2024-1883396:
+  CVE-2024-6610:
     title: Form validation popups could block exiting full-screen mode
     impact: moderate
     reporter: Raphael
@@ -56,7 +56,7 @@ advisories:
       Form validation popups could capture escape key presses. Therefore, spamming form validation messages could be used to prevent users from exiting full-screen mode.
     bugs:
       - url: 1883396
-  MFSA-RESERVE-2024-1888340:
+  CVE-2024-6600:
     title: Memory corruption in WebGL API
     impact: moderate
     reporter: pwn2car
@@ -64,7 +64,7 @@ advisories:
       Due to large allocation checks in Angle for GLSL shaders being too lenient an out-of-bounds access could occur when allocating more than 8192 ints in private shader memory on mac OS.
     bugs:
       - url: 1888340
-  MFSA-RESERVE-2024-1890748:
+  CVE-2024-6601:
     title: Race condition in permission assignment
     impact: moderate
     reporter: Andreas Farre
@@ -72,7 +72,7 @@ advisories:
       A race condition could lead to a cross-origin container obtaining permissions of the top-level origin.
     bugs:
       - url: 1890748
-  MFSA-RESERVE-2024-1895032:
+  CVE-2024-6602:
     title: Memory corruption in NSS
     impact: moderate
     reporter: Ronald Crane
@@ -80,7 +80,7 @@ advisories:
       A mismatch between allocator and deallocator could have lead to memory corruption.
     bugs:
       - url: 1895032
-  MFSA-RESERVE-2024-1895081:
+  CVE-2024-6603:
     title: Memory corruption in thread creation
     impact: moderate
     reporter: Irvan Kurniawan
@@ -88,7 +88,7 @@ advisories:
       In an out-of-memory scenario an allocation could fail but free would have been called on the pointer afterwards leading to memory corruption.
     bugs:
       - url: 1895081
-  MFSA-RESERVE-2024-1844827:
+  CVE-2024-6611:
     title: Incorrect handling of SameSite cookies
     impact: low
     reporter: Pedro Bernardo
@@ -96,7 +96,7 @@ advisories:
       A nested iframe, triggering a cross-site navigation, could send SameSite=Strict or Lax cookies.
     bugs:
       - url: 1844827
-  MFSA-RESERVE-2024-1880374:
+  CVE-2024-6612:
     title: CSP violation leakage when using devtools
     impact: low
     reporter: Aidan Stephenson & Yannik Marchand
@@ -104,7 +104,7 @@ advisories:
       CSP violations generated links in the console tab of the developer tools, pointing to the violating resource. This caused a DNS prefetch which leaked that a CSP violation happened.
     bugs:
       - url: 1880374
-  MFSA-RESERVE-2024-1900523:
+  CVE-2024-6613:
     title: Incorrect listing of stack frames
     impact: low
     reporter: Nils Bars
@@ -112,7 +112,7 @@ advisories:
       The frame iterator could get stuck in a loop when encountering certain wasm frames leading to incorrect stack traces.
     bugs:
       - url: 1900523
-  MFSA-RESERVE-2024-1902983:
+  CVE-2024-6614:
     title: Incorrect listing of stack frames
     impact: low
     reporter: Nils Bars
@@ -120,7 +120,7 @@ advisories:
       The frame iterator could get stuck in a loop when encountering certain wasm frames leading to incorrect stack traces.
     bugs:
       - url: 1902983
-  MFSA-RESERVE-2024-2:
+  CVE-2024-6604:
     title: Memory safety bugs fixed in Firefox 128, Firefox ESR 115.13, and Thunderbird 115.13
     impact: high
     reporter: Randell Jesup
@@ -129,7 +129,7 @@ advisories:
     bugs:
       - url: 1748105, 1837550, 1884266
         desc: Memory safety bugs fixed in Firefox 128, Firefox ESR 115.13, and Thunderbird 115.13
-  MFSA-RESERVE-2024-4:
+  CVE-2024-6615:
     title: Memory safety bugs fixed in Firefox 128
     impact: high
     reporter: the Mozilla Fuzzing Team

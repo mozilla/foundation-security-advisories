@@ -5,7 +5,7 @@ fixed_in:
 - Firefox ESR 115.13
 title: Security Vulnerabilities fixed in Firefox ESR 115.13
 advisories:
-  MFSA-RESERVE-2024-1888340:
+  CVE-2024-6600:
     title: Memory corruption in WebGL API
     impact: moderate
     reporter: pwn2car
@@ -13,7 +13,7 @@ advisories:
       Due to large allocation checks in Angle for GLSL shaders being too lenient an out-of-bounds access could occur when allocating more than 8192 ints in private shader memory on mac OS.
     bugs:
       - url: 1888340
-  MFSA-RESERVE-2024-1890748:
+  CVE-2024-6601:
     title: Race condition in permission assignment
     impact: moderate
     reporter: Andreas Farre
@@ -21,7 +21,7 @@ advisories:
       A race condition could lead to a cross-origin container obtaining permissions of the top-level origin.
     bugs:
       - url: 1890748
-  MFSA-RESERVE-2024-1895032:
+  CVE-2024-6602:
     title: Memory corruption in NSS
     impact: moderate
     reporter: Ronald Crane
@@ -29,7 +29,7 @@ advisories:
       A mismatch between allocator and deallocator could have lead to memory corruption.
     bugs:
       - url: 1895032
-  MFSA-RESERVE-2024-1895081:
+  CVE-2024-6603:
     title: Memory corruption in thread creation
     impact: moderate
     reporter: Irvan Kurniawan
@@ -37,7 +37,7 @@ advisories:
       In an out-of-memory scenario an allocation could fail but free would have been called on the pointer afterwards leading to memory corruption.
     bugs:
       - url: 1895081
-  MFSA-RESERVE-2024-2:
+  CVE-2024-6604:
     title: Memory safety bugs fixed in Firefox 128, Firefox ESR 115.13, and Thunderbird 115.13
     impact: high
     reporter: Randell Jesup
