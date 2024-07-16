@@ -1,18 +1,12 @@
-## mfsa2024-29.yml
-announced: July 9th, 2024
+## mfsa2024-32.yml
+announced: July 11th, 2024
 impact: high
 fixed_in:
-- Firefox 128
-title: Security Vulnerabilities fixed in Firefox 128
+- Thunderbird 128
+title: Security Vulnerabilities fixed in Thunderbird 128
+description: |
+  *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potential risks in browser or browser-like contexts.*
 advisories:
-  CVE-2024-6605:
-    title: Firefox Android missed activation delay to prevent tapjacking
-    impact: high
-    reporter: Shaheen Fazim
-    description: |
-      Firefox Android allowed immediate interaction with permission prompts. This could be used for tapjacking.
-    bugs:
-      - url: 1836786
   CVE-2024-6606:
     title: Out-of-bounds read in clipboard component
     impact: high
@@ -26,8 +20,7 @@ advisories:
     impact: moderate
     reporter: Irvan Kurniawan
     description: |
-      It was possible to prevent a user from exiting pointerlock when pressing
-      escape
+      It was possible to prevent a user from exiting pointerlock when pressing escape
       and to overlay customValidity notifications from a <code>&lt;select&gt;</code> element over certain
       permission prompts. This could be used to confuse a user into giving a site unintended permissions.
     bugs:
@@ -37,7 +30,7 @@ advisories:
     impact: moderate
     reporter: Irvan Kurniawan
     description: |
-      It was possible to move the cursor using pointerlock from an iframe. This allowed moving the cursor outside of the viewport and the Firefox window.
+      It was possible to move the cursor using pointerlock from an iframe. This allowed moving the cursor outside of the viewport and the application window.
     bugs:
       - url: 1743329
   CVE-2024-6609:
@@ -123,9 +116,9 @@ advisories:
   CVE-2024-6604:
     title: Memory safety bugs fixed in Firefox 128, Firefox ESR 115.13, Thunderbird 128, and Thunderbird 115.13
     impact: high
-    reporter: Randell Jesup
+    reporter: Mozilla developers
     description: |
-      Memory safety bugs present in Firefox 127, Firefox ESR 115.12, and Thunderbird 115.12. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+      Memory safety bugs present in Firefox 127, Firefox ESR 115.12, Thunderbird 127, and Thunderbird 115.12. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
     bugs:
       - url: 1748105, 1837550, 1884266
         desc: Memory safety bugs fixed in Firefox 128, Firefox ESR 115.13, Thunderbird 128, and Thunderbird 115.13

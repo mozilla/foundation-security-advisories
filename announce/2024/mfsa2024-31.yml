@@ -1,9 +1,11 @@
-## mfsa2024-30.yml
-announced: July 9th, 2024
+## mfsa2024-31.yml
+announced: July 15th, 2024
 impact: moderate
 fixed_in:
-- Firefox ESR 115.13
-title: Security Vulnerabilities fixed in Firefox ESR 115.13
+- Thunderbird 115.13
+title: Security Vulnerabilities fixed in Thunderbird 115.13
+description: |
+  *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potential risks in browser or browser-like contexts.*
 advisories:
   CVE-2024-6600:
     title: Memory corruption in WebGL API
@@ -40,7 +42,7 @@ advisories:
   CVE-2024-6604:
     title: Memory safety bugs fixed in Firefox 128, Firefox ESR 115.13, Thunderbird 128, and Thunderbird 115.13
     impact: high
-    reporter: Randell Jesup
+    reporter: Mozilla developers
     description: |
       Memory safety bugs present in Firefox 127, Firefox ESR 115.12, and Thunderbird 115.12. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
     bugs:
