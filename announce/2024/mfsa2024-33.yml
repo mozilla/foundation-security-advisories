@@ -1,0 +1,119 @@
+## mfsa2024-33.yml
+announced: August 6, 2024
+impact: high
+fixed_in:
+- Firefox 129
+title: Security Vulnerabilities fixed in Firefox 129
+advisories:
+  CVE-2024-7518:
+    title: Fullscreen notification dialog can be obscured by document content
+    impact: high
+    reporter: Shaheen Fazim
+    description: |
+      Select options could obscure the fullscreen notification dialog. This could be used by a malicious site to perform a spoofing attack.
+    bugs:
+      - url: 1875354
+  CVE-2024-7519:
+    title: Out of bounds memory access in graphics shared memory handling
+    impact: high
+    reporter: dalmurino
+    description: |
+      Insufficient checks when processing graphics shared memory could have led to memory corruption. This could be leveraged by an attacker to perform a sandbox escape.
+    bugs:
+      - url: 1902307
+  CVE-2024-7520:
+    title: Type confusion in WebAssembly
+    impact: high
+    reporter: Nan Wang
+    description: |
+      A type confusion bug in WebAssembly could be leveraged by an attacker to potentially achieve code execution.
+    bugs:
+      - url: 1903041
+  CVE-2024-7521:
+    title: Incomplete WebAssembly exception handing
+    impact: high
+    reporter: Nils Bars
+    description: |
+      Incomplete WebAssembly exception handing could have led to a use-after-free.
+    bugs:
+      - url: 1904644
+  CVE-2024-7522:
+    title: Out of bounds read in editor component
+    impact: high
+    reporter: Irvan Kurniawan
+    description: |
+      Editor code failed to check an attribute value. This could have led to an out-of-bounds read.
+    bugs:
+      - url: 1906727
+  CVE-2024-7523:
+    title: Document content could partially obscure security prompts
+    impact: high
+    reporter: Shaheen Fazim
+    description: |
+      A select option could partially obscure security prompts. This could be used by a malicious site to trick a user into granting permissions. <br>*This issue only affects Android versions of Firefox.*
+    bugs:
+      - url: 1908344
+  CVE-2024-7524:
+    title: CSP strict-dynamic bypass using web-compatibility shims
+    impact: high
+    reporter: Masato Kinugawa
+    description: |
+      Firefox adds web-compatibility shims in place of some tracking scripts blocked by Enhanced Tracking Protection.  On a site protected by Content Security Policy in "strict-dynamic" mode, an attacker able to inject an HTML element could have used a DOM Clobbering attack on some of the shims and achieved XSS, bypassing the CSP strict-dynamic protection.
+    bugs:
+      - url: 1909241
+  CVE-2024-7525:
+    title: Missing permission check when creating a StreamFilter
+    impact: high
+    reporter: Rob Wu
+    description: |
+      It was possible for a web extension with minimal permissions to create a <code>StreamFilter</code> which could be used to read and modify the response body of requests on any site.
+    bugs:
+      - url: 1909298
+  CVE-2024-7526:
+    title: Uninitialized memory used by WebGL
+    impact: high
+    reporter: s48gs.w
+    description: |
+      ANGLE failed to initialize parameters which lead to reading from uninitialized memory. This could be leveraged to leak sensitive data from memory.
+    bugs:
+      - url: 1910306
+  CVE-2024-7527:
+    title: Use-after-free in JavaScript garbage collection
+    impact: high
+    reporter: Norisz Fay
+    description: |
+      Unexpected marking work at the start of sweeping could have led to a use-after-free.
+    bugs:
+      - url: 1871303
+  CVE-2024-7528:
+    title: Use-after-free in IndexedDB
+    impact: high
+    reporter: Jason Kratzer
+    description: |
+      Incorrect garbage collection interaction in IndexedDB could have led to a use-after-free.
+    bugs:
+      - url: 1895951
+  CVE-2024-7529:
+    title: Document content could partially obscure security prompts
+    impact: moderate
+    reporter: Hafiizh
+    description: |
+      The date picker could partially obscure security prompts. This could be used by a malicious site to trick a user into granting permissions.
+    bugs:
+      - url: 1903187
+  CVE-2024-7530:
+    title: Use-after-free in JavaScript code coverage collection
+    impact: moderate
+    reporter: Christian Holler
+    description: |
+      Incorrect garbage collection interaction could have led to a use-after-free.
+    bugs:
+      - url: 1904011
+  CVE-2024-7531:
+    title: PK11_Encrypt using CKM_CHACHA20 can reveal plaintext on Intel Sandy Bridge machines
+    impact: low
+    reporter: Lars Eggert
+    description: |
+      Calling <code>PK11_Encrypt()</code> in NSS using CKM_CHACHA20 and the same buffer for input and output can result in plaintext on an Intel Sandy Bridge processor. In Firefox this only affects the QUIC header protection feature when the connection is using the ChaCha20-Poly1305 cipher suite. The most likely outcome is connection failure, but if the connection persists despite the high packet loss it could be possible for a network observer to identify packets as coming from the same source despite a network path change.
+    bugs:
+      - url: 1905691
