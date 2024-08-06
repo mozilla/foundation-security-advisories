@@ -1,0 +1,39 @@
+## mfsa2024-36.yml
+announced: August 5th, 2024
+impact: moderate
+fixed_in:
+- Firefox for iOS 129
+title: Security Vulnerabilities fixed in Firefox for iOS 129
+advisories:
+  CVE-2024-43112:
+    title: iOS Firefox Download UXSS
+    impact: moderate
+    reporter: James Lee
+    description: |
+      Long pressing on a download link could potentially provide a means for cross-site scripting
+    bugs:
+      - url: 1874910
+  CVE-2024-43113:
+    title: The Context Menu for iOS Firefox can over ride on any origin allowing UXSS everywhere with bug id 1874910
+    impact: moderate
+    reporter: James Lee
+    description: |
+      The contextual menu for links could provide an opportunity for cross-site scripting attacks
+    bugs:
+      - url: 1874964
+  CVE-2024-0953:
+    title: QR Code Scanner does not prompt before navigating user
+    impact: low
+    reporter: Lohith Gowda M
+    description: |
+      When a user scans a QR Code with the QR Code Scanner feature, the user is not prompted before being navigated to the page specified in the code.  This may surprise the user and potentially direct them to unwanted content.
+    bugs:
+      - url: 1837916
+  CVE-2024-43111:
+    title: iOS Firefox allows to run javascript with download
+    impact: low
+    reporter: James Lee
+    description: |
+      Long pressing on a download link could potentially allow Javascript commands to be executed within the browser
+    bugs:
+      - url: 1874907
