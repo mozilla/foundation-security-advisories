@@ -1,0 +1,65 @@
+## mfsa2024-38.yml
+announced: August 6, 2024
+impact: high
+fixed_in:
+- Thunderbird 115.14
+title: Security Vulnerabilities fixed in Thunderbird 115.14
+description: |
+  *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potential risks in browser or browser-like contexts.*
+advisories:
+  CVE-2024-7519:
+    title: Out of bounds memory access in graphics shared memory handling
+    impact: high
+    reporter: dalmurino
+    description: |
+      Insufficient checks when processing graphics shared memory could have led to memory corruption. This could be leveraged by an attacker to perform a sandbox escape.
+    bugs:
+      - url: 1902307
+  CVE-2024-7521:
+    title: Incomplete WebAssembly exception handing
+    impact: high
+    reporter: Nils Bars
+    description: |
+      Incomplete WebAssembly exception handing could have led to a use-after-free.
+    bugs:
+      - url: 1904644
+  CVE-2024-7522:
+    title: Out of bounds read in editor component
+    impact: high
+    reporter: Irvan Kurniawan
+    description: |
+      Editor code failed to check an attribute value. This could have led to an out-of-bounds read.
+    bugs:
+      - url: 1906727
+  CVE-2024-7525:
+    title: Missing permission check when creating a StreamFilter
+    impact: high
+    reporter: Rob Wu
+    description: |
+      It was possible for a web extension with minimal permissions to create a <code>StreamFilter</code> which could be used to read and modify the response body of requests on any site.
+    bugs:
+      - url: 1909298
+  CVE-2024-7526:
+    title: Uninitialized memory used by WebGL
+    impact: high
+    reporter: s48gs.w
+    description: |
+      ANGLE failed to initialize parameters which led to reading from uninitialized memory. This could be leveraged to leak sensitive data from memory.
+    bugs:
+      - url: 1910306
+  CVE-2024-7527:
+    title: Use-after-free in JavaScript garbage collection
+    impact: high
+    reporter: Norisz Fay
+    description: |
+      Unexpected marking work at the start of sweeping could have led to a use-after-free.
+    bugs:
+      - url: 1871303
+  CVE-2024-7529:
+    title: Document content could partially obscure security prompts
+    impact: moderate
+    reporter: Hafiizh
+    description: |
+      The date picker could partially obscure security prompts. This could be used by a malicious site to trick a user into granting permissions.
+    bugs:
+      - url: 1903187
