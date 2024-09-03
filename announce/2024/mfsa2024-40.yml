@@ -5,7 +5,7 @@ fixed_in:
 - Firefox ESR 128.2
 title: Security Vulnerabilities fixed in Firefox ESR 128.2
 advisories:
-  MFSA-RESERVE-2024-1911909:
+  CVE-2024-8385:
     title: WASM type confusion involving ArrayTypes
     impact: high
     reporter: Seunghyun Lee
@@ -13,7 +13,7 @@ advisories:
       A difference in the handling of StructFields and ArrayTypes in WASM could be used to trigger an exploitable type confusion vulnerability.
     bugs:
       - url: 1911909
-  MFSA-RESERVE-2024-1912715:
+  CVE-2024-8381:
     title: Type confusion when looking up a property name in a &quot;with&quot; block
     impact: high
     reporter: Nils Bars
@@ -21,7 +21,7 @@ advisories:
       A potentially exploitable type confusion could be triggered when looking up a property name on an object being used as the <code>with</code> environment.
     bugs:
       - url: 1912715
-  MFSA-RESERVE-2024-1906744:
+  CVE-2024-8382:
     title: Internal event interfaces were exposed to web content when browser EventHandler listener callbacks ran
     impact: moderate
     reporter: Gregory Pappas
@@ -29,7 +29,7 @@ advisories:
       Internal browser event interfaces were exposed to web content when privileged EventHandler listener callbacks ran for those events. Web content that tried to use those interfaces would not be able to use them with elevated privileges, but their presence would indicate certain browser features had been used, such as when a user opened the Dev Tools console.
     bugs:
       - url: 1906744
-  MFSA-RESERVE-2024-1908496:
+  CVE-2024-8383:
     title: 'Firefox did not ask before openings news: links in an external application'
     impact: moderate
     reporter: D7
@@ -37,7 +37,7 @@ advisories:
       Firefox normally asks for confirmation before asking the operating system to find an application to handle a scheme that the browser does not support. It did not ask before doing so for the Usenet-related schemes news: and snews:. Since most operating systems don't have a trusted newsreader installed by default, an unscrupulous program that the user downloaded could register itself as a handler. The website that served the application download could then launch that application at will
     bugs:
       - url: 1908496
-  MFSA-RESERVE-2024-1911288:
+  CVE-2024-8384:
     title: Garbage collection could mis-color cross-compartment objects in OOM conditions
     impact: moderate
     reporter: the Mozilla Fuzzing Team
@@ -45,7 +45,7 @@ advisories:
       The JavaScript garbage collector could mis-color cross-compartment objects if OOM conditions were detected at the right point between two passes. This could have led to memory corruption.
     bugs:
       - url: 1911288
-  MFSA-RESERVE-2024-1909529:
+  CVE-2024-8386:
     title: SelectElements could be shown over another site if popups are allowed
     impact: low
     reporter: Shaheen Fazim, Hafiish
@@ -55,7 +55,7 @@ advisories:
       - url: 1909529
       - url: 1907032
       - url: 1909163
-  MFSA-RESERVE-2024-3:
+  CVE-2024-8387:
     title: Memory safety bugs fixed in Firefox 130, Firefox ESR 128.2, and Thunderbird 128.2
     impact: high
     reporter: the Mozilla Fuzzing Team, Yury Delendik
