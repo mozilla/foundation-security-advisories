@@ -48,7 +48,7 @@ advisories:
   CVE-2024-8386:
     title: SelectElements could be shown over another site if popups are allowed
     impact: low
-    reporter: Shaheen Fazim, Hafiish
+    reporter: Shaheen Fazim, Hafiizh
     description: |
       If a site had been granted the permission to open popup windows, it could cause Select elements to appear on top of another site to perform a spoofing attack.
     bugs:
