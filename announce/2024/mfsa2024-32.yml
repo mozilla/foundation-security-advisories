@@ -5,8 +5,17 @@ fixed_in:
 - Thunderbird 128
 title: Security Vulnerabilities fixed in Thunderbird 128
 description: |
-  *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potential risks in browser or browser-like contexts.*
+  *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potential risks in browser or browser-like contexts.*<br /><br /><em>Updated Sept 6, 2024 to add CVE-2024-7652 which was embargoed in the original advisory due affecting multiple organizations.</em>
 advisories:
+  CVE-2024-7652:
+    title: Type Confusion in Async Generators in Javascript Engine
+    impact: high
+    reporter: Nils Bar
+    description: |
+      An error in the ECMA-262 specification relating to Async Generators could have resulted in a type confusion, potentially leading to memory corruption and an exploitable crash.
+    bugs:
+      - url: 1901411
+      - url: https://github.com/tc39/ecma262/security/advisories/GHSA-g38c-wh3c-5h9r
   CVE-2024-6606:
     title: Out-of-bounds read in clipboard component
     impact: high

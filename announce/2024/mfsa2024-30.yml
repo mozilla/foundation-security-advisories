@@ -1,10 +1,21 @@
 ## mfsa2024-30.yml
 announced: July 9th, 2024
-impact: moderate
+impact: high
 fixed_in:
 - Firefox ESR 115.13
 title: Security Vulnerabilities fixed in Firefox ESR 115.13
+description: |
+  <em>Updated Sept 6, 2024 to add CVE-2024-7652 which was embargoed in the original advisory due affecting multiple organizations.</em>
 advisories:
+  CVE-2024-7652:
+    title: Type Confusion in Async Generators in Javascript Engine
+    impact: high
+    reporter: Nils Bar
+    description: |
+      An error in the ECMA-262 specification relating to Async Generators could have resulted in a type confusion, potentially leading to memory corruption and an exploitable crash.
+    bugs:
+      - url: 1901411
+      - url: https://github.com/tc39/ecma262/security/advisories/GHSA-g38c-wh3c-5h9r
   CVE-2024-6600:
     title: Memory corruption in WebGL API
     impact: moderate
