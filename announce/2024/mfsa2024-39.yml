@@ -14,7 +14,7 @@ advisories:
     bugs:
       - url: 1911909
   CVE-2024-8381:
-    title: Type confusion when looking up a property name in a &quot;with&quot; block
+    title: 'Type confusion when looking up a property name in a "with" block'
     impact: high
     reporter: Nils Bars
     description: |
