@@ -1,0 +1,85 @@
+## mfsa2024-39.yml
+announced: September 3, 2024
+impact: high
+fixed_in:
+- Firefox 130
+title: Security Vulnerabilities fixed in Firefox 130
+advisories:
+  CVE-2024-8385:
+    title: WASM type confusion involving ArrayTypes
+    impact: high
+    reporter: Seunghyun Lee
+    description: |
+      A difference in the handling of StructFields and ArrayTypes in WASM could be used to trigger an exploitable type confusion vulnerability.
+    bugs:
+      - url: 1911909
+  CVE-2024-8381:
+    title: Type confusion when looking up a property name in a &quot;with&quot; block
+    impact: high
+    reporter: Nils Bars
+    description: |
+      A potentially exploitable type confusion could be triggered when looking up a property name on an object being used as the <code>with</code> environment.
+    bugs:
+      - url: 1912715
+  CVE-2024-8388:
+    title: Fullscreen notice on Android could be hidden under various panels and OS prompts
+    impact: moderate
+    reporter: Shaheen Fazim, Raphael Saniyazov, Rifa&apos;i Rejal Maynando, James Lee, P Umar Farooq, Hafiizh
+    description: |
+      Multiple prompts and panels from both Firefox and the Android OS could be used to obscure the notification announcing the transition to fullscreen mode after the fix for CVE-2023-6870 in Firefox 121. This could lead to spoofing the browser UI if the sudden appearance of the prompt distracted the user from noticing the visual transition happening behind the prompt. These notifications now use the Android Toast feature. <br>*This bug only affects Firefox on Android. Other operating systems are unaffected.*
+    bugs:
+      - url: 1902996
+      - url: https://bugzilla.mozilla.org/buglist.cgi?bug_id=1839074%2C1865413%2C1868970%2C1873367%2C1877820%2C1884642%2C1886469%2C1894326%2C1894891%2C1897648 
+        desc: Bugs describing ways to abuse specific prompts
+  CVE-2024-8382:
+    title: Internal event interfaces were exposed to web content when browser EventHandler listener callbacks ran
+    impact: moderate
+    reporter: Gregory Pappas
+    description: |
+      Internal browser event interfaces were exposed to web content when privileged EventHandler listener callbacks ran for those events. Web content that tried to use those interfaces would not be able to use them with elevated privileges, but their presence would indicate certain browser features had been used, such as when a user opened the Dev Tools console.
+    bugs:
+      - url: 1906744
+  CVE-2024-8383:
+    title: 'Firefox did not ask before openings news: links in an external application'
+    impact: moderate
+    reporter: D7
+    description: |
+      Firefox normally asks for confirmation before asking the operating system to find an application to handle a scheme that the browser does not support. It did not ask before doing so for the Usenet-related schemes news: and snews:. Since most operating systems don't have a trusted newsreader installed by default, an unscrupulous program that the user downloaded could register itself as a handler. The website that served the application download could then launch that application at will.
+    bugs:
+      - url: 1908496
+  CVE-2024-8384:
+    title: Garbage collection could mis-color cross-compartment objects in OOM conditions
+    impact: moderate
+    reporter: the Mozilla Fuzzing Team
+    description: |
+      The JavaScript garbage collector could mis-color cross-compartment objects if OOM conditions were detected at the right point between two passes. This could have led to memory corruption.
+    bugs:
+      - url: 1911288
+  CVE-2024-8386:
+    title: SelectElements could be shown over another site if popups are allowed
+    impact: low
+    reporter: Shaheen Fazim, Hafiizh
+    description: |
+      If a site had been granted the permission to open popup windows, it could cause Select elements to appear on top of another site to perform a spoofing attack.
+    bugs:
+      - url: 1909529
+      - url: 1907032
+      - url: 1909163
+  CVE-2024-8387:
+    title: Memory safety bugs fixed in Firefox 130, Firefox ESR 128.2, and Thunderbird 128.2
+    impact: high
+    reporter: Yury Delendik, the Mozilla Fuzzing Team
+    description: |
+      Memory safety bugs present in Firefox 129, Firefox ESR 128.1, and Thunderbird 128.1. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1857607, 1911858, 1914009
+        desc: Memory safety bugs fixed in Firefox 130, Firefox ESR 128.2, and Thunderbird 128.2
+  CVE-2024-8389:
+    title: Memory safety bugs fixed in Firefox 130
+    impact: high
+    reporter: the Mozilla Fuzzing Team, Andrew McCreight
+    description: |
+      Memory safety bugs present in Firefox 129. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1907230, 1909367
+        desc: Memory safety bugs fixed in Firefox 130

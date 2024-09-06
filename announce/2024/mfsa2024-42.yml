@@ -1,0 +1,14 @@
+## mfsa2024-42.yml
+announced: Sep 3, 2024
+impact: high
+fixed_in:
+- Focus for iOS 130
+title: Security Vulnerabilities fixed in Focus for iOS 130
+advisories:
+  CVE-2024-8399:
+    title: iOS Firefox Focus javascript URI address bar spoofing
+    impact: high
+    reporter: James Lee
+    description: Websites could utilize Javascript links to spoof URL addresses in the Focus navigation bar
+    bugs:
+      - url: 1863838
