@@ -7,6 +7,14 @@ title: Security Vulnerabilities fixed in Thunderbird 128.2
 description: |
   *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potential risks in browser or browser-like contexts.*
 advisories:
+  CVE-2024-8394:
+    title: Crash when aborting verification of OTR chat
+    impact: high
+    reporter: Thunderbird Team
+    description: |
+       When aborting the verification of an OTR chat session, an attacker could have caused a use-after-free bug leading to a potentially exploitable crash.
+    bugs:
+      - url: 1895737
   CVE-2024-8385:
     title: WASM type confusion involving ArrayTypes
     impact: high
