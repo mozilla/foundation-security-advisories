@@ -10,7 +10,7 @@ advisories:
   CVE-2024-7652:
     title: Type Confusion in Async Generators in Javascript Engine
     impact: high
-    reporter: Nils Bar
+    reporter: Nils Bars
     description: |
       An error in the ECMA-262 specification relating to Async Generators could have resulted in a type confusion, potentially leading to memory corruption and an exploitable crash.
     bugs:
