@@ -75,6 +75,12 @@ https://bugzilla.mozilla.org/buglist.cgi?x=x
 """.replace("\n", "")
 
 credit_entries = {
+    "e0a74b5439f07d3b31735873861f5f45":"Dalmurino",
+    "96c531dfd57734b6e7545668dc632153":"jackyzy823",
+    "97ff7dcf51f14fadf8adc2de15c80239":"Jędrzej Krysztofiak",
+    "868d31abeba00933f46ddaf75acbb47e":"Adam Berry",
+    "4bbef8fdf0aaedd24685c156c3156978":"Bahaa Naamneh",
+    "3a3a83f666d751521815bc3bf0abb993":"Paul Ducos-Saksela",
     "bb7b2f03afba96797f2a0583a1e9b2c5":"goodbyeselene",
     "09374a6ae9f8606ab65de70c9cd6d455":"Gregory Pappas",
     "fb99b1caf1b9d2533e9c960aca901dd9":"Narendra Bhati from Suma Soft Pvt. Ltd",
@@ -610,6 +616,7 @@ client_products = [
     "Thunderbird",
     "Toolkit",
     "WebExtensions",
+    "Web Compatibility",
     "DevTools",
     "Calendar",
 ]
@@ -636,7 +643,7 @@ def is_client_bug(bug):
 
         if bug['product'] not in client_products:
             # this is an edge case we should validate and improve
-            raise Exception("Classification: '{0}' Product: '{1}' Component: '{2}' is not considered a client bug, please confirm.".format(bug['classification'], bug['product'], bug['component']))
+            raise Exception("Bug: {3} Classification: '{0}' Product: '{1}' Component: '{2}' is not considered a client bug, please confirm.".format(bug['classification'], bug['product'], bug['component'], bug["id"]))
     
     if bug['product'] == 'Firefox' and bug['component'] in ["Firefox Monitor"]:
         return False
