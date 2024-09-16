@@ -1,9 +1,11 @@
-## mfsa2024-41.yml
+## mfsa2024-44.yml
 announced: September 3, 2024
 impact: high
 fixed_in:
-- Firefox ESR 115.15
-title: Security Vulnerabilities fixed in Firefox ESR 115.15
+- Thunderbird 115.15
+title: Security Vulnerabilities fixed in Thunderbird 115.15
+description: |
+  *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potential risks in browser or browser-like contexts.*
 advisories:
   CVE-2024-8381:
     title: 'Type confusion when looking up a property name in a "with" block'
@@ -21,14 +23,6 @@ advisories:
       Internal browser event interfaces were exposed to web content when privileged EventHandler listener callbacks ran for those events. Web content that tried to use those interfaces would not be able to use them with elevated privileges, but their presence would indicate certain browser features had been used, such as when a user opened the Dev Tools console.
     bugs:
       - url: 1906744
-  CVE-2024-8383:
-    title: 'Firefox did not ask before openings news: links in an external application'
-    impact: moderate
-    reporter: D7
-    description: |
-      Firefox normally asks for confirmation before asking the operating system to find an application to handle a scheme that the browser does not support. It did not ask before doing so for the Usenet-related schemes news: and snews:. Since most operating systems don't have a trusted newsreader installed by default, an unscrupulous program that the user downloaded could register itself as a handler. The website that served the application download could then launch that application at will.
-    bugs:
-      - url: 1908496
   CVE-2024-8384:
     title: Garbage collection could mis-color cross-compartment objects in OOM conditions
     impact: moderate

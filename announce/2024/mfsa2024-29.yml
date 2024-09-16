@@ -4,7 +4,18 @@ impact: high
 fixed_in:
 - Firefox 128
 title: Security Vulnerabilities fixed in Firefox 128
+description: |
+  <em>Updated Sept 6, 2024 to add CVE-2024-7652 which was embargoed in the original advisory due affecting multiple organizations.</em>
 advisories:
+  CVE-2024-7652:
+    title: Type Confusion in Async Generators in Javascript Engine
+    impact: high
+    reporter: Nils Bars
+    description: |
+      An error in the ECMA-262 specification relating to Async Generators could have resulted in a type confusion, potentially leading to memory corruption and an exploitable crash.
+    bugs:
+      - url: 1901411
+      - url: https://github.com/tc39/ecma262/security/advisories/GHSA-g38c-wh3c-5h9r
   CVE-2024-6605:
     title: Firefox Android missed activation delay to prevent tapjacking
     impact: high
