@@ -208,10 +208,10 @@ class CVEAdvisory:
             + "."
         )
 
-    def to_json_5_0(self):
+    def to_json(self):
         """
         Convert advisory in yml format into
-        [CVE JSON 5.0](https://cveproject.github.io/cve-schema/schema/v5.0/docs) format.
+        [CVE JSON](https://cveproject.github.io/cve-schema/schema/docs/) format.
         """
 
         return {
@@ -296,7 +296,7 @@ class CVEAdvisory:
                 }
             },
             "dataType": "CVE_RECORD",
-            "dataVersion": "5.0",
+            "dataVersion": "5.1",
         }
 
 
