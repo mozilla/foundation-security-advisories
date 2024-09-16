@@ -36,7 +36,7 @@ def main():
 
         if cve_id not in published_cve_id_dates:
             print_cve_step(cve_id)
-            publish_cve(cve_advisory.id, cve_advisory.to_json_5_0())
+            publish_cve(cve_advisory.id, cve_advisory.to_json())
         else:
             try_update_published_cve(
                 local_cve=cve_advisory,

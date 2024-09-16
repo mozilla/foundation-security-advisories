@@ -42,7 +42,7 @@ def print_cve_step(cve_id: str):
 def publish_cve(cve_id: str, cve_json: dict):
     """
     CVE Services: Publish the content for a already existing and given
-    CVE-ID with the given data in CVE JSON 5.0 format.
+    CVE-ID with the given data in CVE JSON format.
     """
     cve_json["containers"]["cna"]["references"].sort(
         key=lambda reference: reference["url"]
@@ -86,7 +86,7 @@ def touch_cve_id(cve_id: str):
 
 
 def update_published_cve(cve_id: str, cve_json: dict):
-    """CVE Servies: Update the content of the given CVE-ID with the given data in CVE JSON 5.0 format."""
+    """CVE Servies: Update the content of the given CVE-ID with the given data in CVE JSON 5.1 format."""
     print(f"Updating {cve_id}")
     try:
         cve_api.update_published(cve_id, cve_json)
@@ -115,7 +115,7 @@ def try_update_published_cve(local_cve: CVEAdvisory, local_date: int, remote_dat
     remote_cve_json_container.pop("providerMetadata")
     if "x_legacyV4Record" in remote_cve_json_container:
         remote_cve_json_container.pop("x_legacyV4Record")
-    local_cve_json = local_cve.to_json_5_0()
+    local_cve_json = local_cve.to_json()
     local_reference_urls = [
         local_reference[0]
         for local_instance in local_cve.instances
@@ -146,6 +146,12 @@ def try_update_published_cve(local_cve: CVEAdvisory, local_date: int, remote_dat
     local_cve_json["containers"]["cna"]["references"].sort(
         key=lambda reference: reference["url"]
     )
+    # Include any other containers from the remote we do not know about (like "adp")
+    for container_name in remote_cve_json["containers"].keys():
+        if container_name not in local_cve_json["containers"].keys():
+            local_cve_json["containers"][container_name] = remote_cve_json[
+                "containers"
+            ][container_name]
 
     diff = difflib.unified_diff(
         dumps(remote_cve_json, indent=2, sort_keys=True).split("\n"),
