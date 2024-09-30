@@ -1,0 +1,114 @@
+## mfsa2024-46.yml
+announced: October 1, 2024
+impact: high
+fixed_in:
+- Firefox 131
+title: Security Vulnerabilities fixed in Firefox 131
+advisories:
+  CVE-2024-9391:
+    title: Prevent users from exiting full-screen mode in Firefox Focus for Android
+    impact: high
+    reporter: James Lee
+    description: |
+      A user who enables full-screen mode on a specially crafted web page could potentially be prevented from exiting full screen mode.  This may allow spoofing of other sites as the address bar is no longer visible.<br>*This bug only affects Firefox Focus for Android. Other versions of Firefox are unaffected.*
+    bugs:
+      - url: 1892407
+  CVE-2024-9392:
+    title: Compromised content process can bypass site isolation
+    impact: high
+    reporter: Olli Pettay
+    description: |
+      A compromised content process could have allowed for the arbitrary loading of cross-origin pages.
+    bugs:
+      - url: 1905843
+  CVE-2024-9393:
+    title: Cross-origin access to PDF contents through multipart responses
+    impact: high
+    reporter: Masato Kinugawa
+    description: |
+      An attacker could, via a specially crafted multipart response, execute arbitrary JavaScript under the `resource://pdf.js` origin.  This could allow them to access cross-origin PDF content. This access is limited to "same site" documents by the Site Isolation feature on desktop clients, but full cross-origin access is possible on Android versions.
+    bugs:
+      - url: 1918301
+  CVE-2024-9394:
+    title: Cross-origin access to JSON contents through multipart responses
+    impact: high
+    reporter: Masato Kinugawa
+    description: |
+      An attacker could, via a specially crafted multipart response, execute arbitrary JavaScript under the `resource://devtools` origin.  This could allow them to access cross-origin JSON content. This access is limited to "same site" documents by the Site Isolation feature on desktop clients, but full cross-origin access is possible on Android versions.
+    bugs:
+      - url: 1918874
+  CVE-2024-9395:
+    title: Specially crafted filename could be used to obscure download type
+    impact: moderate
+    reporter: Hafiizh
+    description: |
+      A specially crafted filename containing a large number of spaces could obscure the file's extension when displayed in the download dialog.<br>*This bug only affects Firefox for Android. Other versions of Firefox are unaffected.*
+    bugs:
+      - url: 1906024
+  CVE-2024-9396:
+    title: Potential memory corruption may occur when cloning certain objects
+    impact: moderate
+    reporter: Nils Bars
+    description: |
+      It is currently unknown if this issue is exploitable but a condition may arise where the structured clone of certain objects could lead to memory corruption.
+    bugs:
+      - url: 1912471
+  CVE-2024-9397:
+    title: Potential directory upload bypass via clickjacking
+    impact: moderate
+    reporter: Shaheen Fazim
+    description: |
+      A missing delay in directory upload UI could have made it possible for an attacker to trick a user into granting permission via clickjacking.
+    bugs:
+      - url: 1916659
+  CVE-2024-9398:
+    title: External protocol handlers could be enumerated via popups
+    impact: low
+    reporter: Satoki Tsuji
+    description: |
+      By checking the result of calls to `window.open` with specifically set protocol handlers, an attacker could determine if the application which implements that protocol handler is installed.
+    bugs:
+      - url: 1881037
+  CVE-2024-9399:
+    title: Specially crafted WebTransport requests could lead to denial of service
+    impact: low
+    reporter: Marten Richter
+    description: |
+      A website configured to initiate a specially crafted WebTransport session could crash the Firefox process leading to a denial of service condition.
+    bugs:
+      - url: 1907726
+  CVE-2024-9400:
+    title: Potential memory corruption during JIT compilation
+    impact: low
+    reporter: Gary Kwong
+    description: |
+      A potential memory corruption vulnerability could be triggered if an attacker had the ability to trigger an OOM at a specific moment during JIT compilation.
+    bugs:
+      - url: 1915249
+  CVE-2024-9401:
+    title: Memory safety bugs fixed in Firefox 131, Firefox ESR 115.16, Firefox ESR 128.3, Thunderbird 131, and Thunderbird 128.3
+    impact: high
+    reporter: Andrew Osmond, Sebastian Hengst, Andrew McCreight
+    description: |
+      Memory safety bugs present in Firefox 130, Firefox ESR 115.15, Firefox ESR 128.2, and Thunderbird 128.2. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1872744, 1897792, 1911317, 1916476
+        desc: Memory safety bugs fixed in Firefox 131, Firefox ESR 115.16, Firefox ESR 128.3, Thunderbird 131, and Thunderbird 128.3
+  CVE-2024-9402:
+    title: Memory safety bugs fixed in Firefox 131, Firefox ESR 128.3, Thunderbird 131, and Thunderbird 128.3
+    impact: high
+    reporter: Andrew Osmond, Sebastian Hengst, Andrew McCreight, Yury Delendik, the Mozilla Fuzzing Team,
+    description: |
+      Memory safety bugs present in Firefox 130, Firefox ESR 128.2, and Thunderbird 128.2. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1872744, 1897792, 1911317, 1913445, 1914106, 1914475, 1914963, 1915008, 1916476
+        desc: Memory safety bugs fixed in Firefox 131, Firefox ESR 128.3, and Thunderbird 128.3
+  CVE-2024-9403:
+    title: Memory safety bugs fixed in Firefox 131 and Thunderbird 131
+    impact: high
+    reporter: The Mozilla Fuzzing Team
+    description: |
+      Memory safety bugs present in Firefox 130. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1917807
+        desc: Memory safety bugs fixed in Firefox 131 and Thunderbird 131

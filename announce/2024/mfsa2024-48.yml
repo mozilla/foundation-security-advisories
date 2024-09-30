@@ -1,0 +1,40 @@
+## mfsa2024-48.yml
+announced: October 1, 2024
+impact: high
+fixed_in:
+- Firefox ESR 115.16
+title: Security Vulnerabilities fixed in Firefox ESR 115.16
+advisories:
+  CVE-2024-9392:
+    title: Compromised content process can bypass site isolation
+    impact: high
+    reporter: Olli Pettay
+    description: |
+      A compromised content process could have allowed for the arbitrary loading of cross-origin pages.
+    bugs:
+      - url: 1905843
+  CVE-2024-9393:
+    title: Cross-origin access to PDF contents through multipart responses
+    impact: high
+    reporter: Masato Kinugawa
+    description: |
+      An attacker could, via a specially crafted multipart response, execute arbitrary JavaScript under the `resource://pdf.js` origin.  This could allow them to access cross-origin PDF content. This access is limited to "same site" documents by the Site Isolation feature on desktop clients, but full cross-origin access is possible on Android versions.
+    bugs:
+      - url: 1918301
+  CVE-2024-9394:
+    title: Cross-origin access to JSON contents through multipart responses
+    impact: high
+    reporter: Masato Kinugawa
+    description: |
+      An attacker could, via a specially crafted multipart response, execute arbitrary JavaScript under the `resource://devtools` origin.  This could allow them to access cross-origin JSON content. This access is limited to "same site" documents by the Site Isolation feature on desktop clients, but full cross-origin access is possible on Android versions.
+    bugs:
+      - url: 1918874
+  CVE-2024-9401:
+    title: Memory safety bugs fixed in Firefox 131, Firefox ESR 115.16, Firefox ESR 128.3, Thunderbird 131, and Thunderbird 128.3
+    impact: high
+    reporter: Andrew Osmond, Sebastian Hengst, Andrew McCreight
+    description: |
+      Memory safety bugs present in Firefox 130, Firefox ESR 115.15, Firefox ESR 128.2, and Thunderbird 128.2. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1872744, 1897792, 1911317, 1916476
+        desc: Memory safety bugs fixed in Firefox 131, Firefox ESR 115.16, Firefox ESR 128.3, Thunderbird 131, and Thunderbird 128.3
