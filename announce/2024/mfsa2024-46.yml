@@ -16,11 +16,12 @@ advisories:
   CVE-2024-9392:
     title: Compromised content process can bypass site isolation
     impact: high
-    reporter: Olli Pettay
+    reporter: Jan Drescher and David Klein from IAS, TU Braunschweig
     description: |
       A compromised content process could have allowed for the arbitrary loading of cross-origin pages.
     bugs:
       - url: 1905843
+      - url: 1899154
   CVE-2024-9393:
     title: Cross-origin access to PDF contents through multipart responses
     impact: high
