@@ -1,0 +1,18 @@
+## mfsa2024-51.yml
+announced: October 9, 2024
+impact: critical
+fixed_in:
+- Firefox 131.0.2
+- Firefox ESR 128.3.1
+- Firefox ESR 115.16.1
+title: Security Vulnerability fixed in Firefox 131.0.2, Firefox ESR 128.3.1, Firefox ESR 115.16.1
+advisories:
+  CVE-2024-9680:
+    title: Use-after-free in Animation timeline
+    impact: critical
+    reporter: Damien Schaeffer from ESET
+    description: |
+      An attacker was able to achieve code execution in the content process by exploiting a use-after-free in Animation timelines.
+      We have had reports of this vulnerability being exploited in the wild.
+    bugs:
+      - url: 1923344
