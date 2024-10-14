@@ -1,0 +1,15 @@
+## mfsa2024-53.yml
+announced: October 14, 2024
+impact: high
+fixed_in:
+- Firefox 131.0.3
+title: Security Vulnerability fixed in Firefox 131.0.3
+advisories:
+  CVE-2024-9936:
+    title: Undefined behavior in selection node cache
+    impact: high
+    reporter: Atte Kettunen
+    description: |
+      When manipulating the selection node cache, an attacker may have been able to cause unexpected behavior, potentially leading to an exploitable crash.
+    bugs:
+      - url: 1920381
