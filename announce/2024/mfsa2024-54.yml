@@ -1,0 +1,14 @@
+## mfsa2024-53.yml
+announced: Oct 15, 2024
+impact: moderate
+fixed_in:
+- Firefox for iOS 131.2
+title: Security Vulnerabilities fixed in Firefox for iOS 131.2
+advisories:
+  CVE-2024-10004:
+    title: Opening external link to HTTP website could show an HTTPS padlock icon incorrectly
+    impact: moderate
+    reporter: Erik van Straten
+    description: Opening an external link to an HTTP website when Firefox iOS was previously closed and had an HTTPS tab open could in some cases result in the padlock icon showing an HTTPS indicator incorrectly
+    bugs:
+      - url: 1904885
