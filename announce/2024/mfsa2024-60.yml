@@ -1,0 +1,15 @@
+## mfsa2024-60.yml
+announced: October 28, 2024
+impact: moderate
+fixed_in:
+- Focus for iOS 132
+title: Security Vulnerabilities fixed in Focus for iOS 132
+advisories:
+  CVE-2024-10474:
+    title: Don't allow web content to open firefox-focus URLs
+    impact: moderate
+    reporter: James Lee
+    description: |
+      Focus was incorrectly allowing internal links to utilize the app scheme used for deeplinking, which could result in links potentially circumventing some URL safety checks
+    bugs:
+      - url: 1863832
