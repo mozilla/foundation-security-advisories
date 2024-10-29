@@ -1,0 +1,31 @@
+## mfsa2024-57.yml
+announced: Oct 29, 2024
+impact: high
+fixed_in:
+- Firefox ESR 115.17
+title: Security Vulnerabilities fixed in Firefox ESR 115.17
+advisories:
+  CVE-2024-10458:
+    title: Permission leak via embed or object elements
+    impact: high
+    reporter: James Lee
+    description: |
+      A permission leak could have occurred from a trusted site to an untrusted site via <code>embed</code> or <code>object</code> elements.
+    bugs:
+      - url: 1921733
+  CVE-2024-10459:
+    title: Use-after-free in layout with accessibility
+    impact: high
+    reporter: Tyson Smith
+    description: |
+      An attacker could have caused a use-after-free when accessibility was enabled, leading to a potentially exploitable crash.
+    bugs:
+      - url: 1919087
+  CVE-2024-10463:
+    title: Cross origin video frame leak
+    impact: moderate
+    reporter: Karl Tomlinson
+    description: |
+      Video frames could have been leaked between origins in some situations.
+    bugs:
+      - url: 1920800
