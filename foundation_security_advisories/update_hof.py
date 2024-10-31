@@ -75,6 +75,11 @@ https://bugzilla.mozilla.org/buglist.cgi?x=x
 """.replace("\n", "")
 
 credit_entries = {
+    "e63fe129212ef68d6d29c8762aa090d7":"Lishuo Song",
+    "d26d3f4b54a07b5db8c2e7a8cd58863c":"Seunghyun Lee (@0x10n)",
+    "8552289e4e172662b16295290c789fa9":"Nils Bars",
+    "8b37f9bddc61920163d071f779926e25":"Rifa'i Rejal Maynando",
+    "843552576234c045916e6e9248397aac":"Om Apip",
     "e0a74b5439f07d3b31735873861f5f45":"Dalmurino",
     "96c531dfd57734b6e7545668dc632153":"jackyzy823",
     "97ff7dcf51f14fadf8adc2de15c80239":"Jędrzej Krysztofiak",
@@ -503,6 +508,7 @@ twitter_entries = {
     "fe7f319c61c0b44d4cb751afda4f4aeb" : "@Gaurav_00000",
 }
 url_entries = {
+    "8b37f9bddc61920163d071f779926e25":"https://www.linkedin.com/in/rnando/",
     "b9a6307c3a098387557dab8537c59a70":"https://nomokazu.com/",
     "b9a6307c3a098387557dab8537c59a70":"https://nomokazu.com/",
     "9f059eb3b4eba569bba477ee0bc95350":"https://hackerone.com/lohigowda",
