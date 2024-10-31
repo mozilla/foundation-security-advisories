@@ -619,6 +619,7 @@ client_products = [
     "Web Compatibility",
     "DevTools",
     "Calendar",
+    "Web Compatibility",
 ]
 web_products = ["Cloud Services",
     "Data Platform and Tools",
@@ -639,6 +640,9 @@ def is_client_bug(bug):
 
     if bug['classification'] == "Client Software":
         if bug['product'] == "Emerging Markets" and bug['component'] in ["Security:  Firefox Lite"]:
+            return True
+
+        if bug['product'] == "Web Compatibility" and bug['component'] == "Tooling & Investigations":
             return True
 
         if bug['product'] not in client_products:
