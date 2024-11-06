@@ -4,6 +4,8 @@ impact: high
 fixed_in:
 - Firefox 126
 title: Security Vulnerabilities fixed in Firefox 126
+description: |
+  <em>Updated November 6, 2024 to add CVE-2024-10941 which was fixed in Firefox 126 but not included in the original advisory.</em>
 advisories:
   CVE-2024-4764:
     title: Use-after-free when audio input connected with multiple consumers
@@ -118,6 +120,15 @@ advisories:
       A file dialog shown while in full-screen mode could have resulted in the window remaining disabled.
     bugs:
       - url: 1887343
+  CVE-2024-10941:
+    title: Browser crash from invalid URI
+    impact: low
+    reporter: Anthony De Los Santos
+    description: |
+      A malicious website could have included an iframe with an malformed URI resulting in a non-exploitable browser crash.
+    bugs:
+      - url: 1880879
+      - url: 1887614
   CVE-2024-4777:
     title: Memory safety bugs fixed in Firefox 126, Firefox ESR 115.11, and Thunderbird 115.11
     impact: moderate
