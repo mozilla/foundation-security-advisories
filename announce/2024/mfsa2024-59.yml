@@ -4,6 +4,8 @@ impact: high
 fixed_in:
 - Thunderbird 132
 title: Security Vulnerabilities fixed in Thunderbird 132
+description: |
+  *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
 advisories:
   CVE-2024-10458:
     title: Permission leak via embed or object elements

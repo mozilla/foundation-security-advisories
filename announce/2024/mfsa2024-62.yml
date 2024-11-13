@@ -1,0 +1,15 @@
+## mfsa2024-62.yml
+announced: Nov 12, 2024
+impact: high
+fixed_in:
+- Thunderbird 132.0.1
+title: Security Vulnerabilities fixed in Thunderbird 132.0.1
+advisories:
+  CVE-2024-11159:
+    title: Potential disclosure of plaintext in OpenPGP encrypted message
+    impact: high
+    reporter: Several reporters
+    description: |
+      Using remote content in OpenPGP encrypted messages can lead to the disclosure of plaintext.
+    bugs:
+      - url: 1925929
