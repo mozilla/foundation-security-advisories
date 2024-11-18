@@ -16,3 +16,5 @@ advisories:
       We have had reports of this vulnerability being exploited in the wild.
     bugs:
       - url: 1923344
+      - url: https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2024-49039
+        desc: Windows sandbox escape detected with the in-the-wild exploit
