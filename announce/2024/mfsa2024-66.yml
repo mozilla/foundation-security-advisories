@@ -1,0 +1,23 @@
+## mfsa2024-66.yml
+announced: November 26, 2024
+impact: moderate
+fixed_in:
+- Firefox for iOS 133
+title: Security Vulnerabilities fixed in Firefox for iOS 133
+advisories:
+  CVE-2024-53975:
+    title: SSL security padlock icon could be visually spoofed to look secure on an HTTP page
+    impact: moderate
+    reporter: James Lee
+    description: |
+      Accessing a non-secure HTTP site that uses a non-existent port may cause the SSL padlock icon in the location URL bar to, misleadingly, appear secure.
+    bugs:
+      - url: 1843467
+  CVE-2024-53976:
+    title: Missing address from location URL bar
+    impact: moderate
+    reporter: Bharat Adhikari
+    description: |
+      Under certain circumstances, navigating to a webpage would result in the address missing from the location URL bar, making it unclear what the URL was for the loaded webpage.
+    bugs:
+      - url: 1905749
