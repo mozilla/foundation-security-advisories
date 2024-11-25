@@ -1,0 +1,24 @@
+## mfsa2024-65.yml
+announced: November 26, 2024
+impact: high
+fixed_in:
+- Firefox ESR 115.18
+title: Security Vulnerabilities fixed in Firefox ESR 115.18
+advisories:
+  CVE-2024-11691:
+    title: Memory corruption in Apple GPU drivers
+    impact: high
+    reporter: Dohyun Lee (@l33d0hyun) of USELab, Korea University & Youngho Choi of CEL, Korea University & Geumhwan Cho of USELab, Korea University
+    description: |
+      An attacker could have caused memory corruption due to a flaw in Apple's GPU driver; this can be avoided by working around the flaw. <br />*Note: This issue only affected macOS operating systems. Other operating systems are unaffected.*
+    bugs:
+      - url: 1924184
+      - url: 1914707
+  CVE-2024-11694:
+    title: CSP Bypass and XSS Exposure via Web Compatibility Shims
+    impact: moderate
+    reporter: Masato Kinugawa
+    description: |
+      Enhanced Tracking Protection's Strict mode may have inadvertently allowed a CSP `frame-src` bypass and DOM-based XSS through the Google SafeFrame shim in the Web Compatibility extension. This issue could have exposed users to malicious frames masquerading as legitimate content.
+    bugs:
+      - url: 1924167

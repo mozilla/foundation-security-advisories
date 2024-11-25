@@ -1,0 +1,139 @@
+## mfsa2024-67.yml
+announced: November 26, 2024
+impact: high
+fixed_in:
+- Thunderbird 133
+title: Security Vulnerabilities fixed in Thunderbird 133
+description: |
+  *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
+advisories:
+  CVE-2024-11691:
+    title: Memory corruption in Apple GPU drivers
+    impact: high
+    reporter: Dohyun Lee (@l33d0hyun) of USELab, Korea University & Youngho Choi of CEL, Korea University & Geumhwan Cho of USELab, Korea University
+    description: |
+      An attacker could have caused memory corruption due to a flaw in Apple's GPU driver; this can be avoided by working around the flaw. <br />*Note: This issue only affected macOS operating systems. Other operating systems are unaffected.*
+    bugs:
+      - url: 1924184
+      - url: 1914707
+  CVE-2024-11700:
+    title: Potential Tapjacking Exploit for Intent Confirmation on Android
+    impact: moderate
+    reporter: Shaheen Fazim
+    description: |
+      Malicious websites may have been able to user intent confirmation through tapjacking. This could have led to users unknowingly approving the launch of external applications, potentially exposing them to underlying vulnerabilities.
+    bugs:
+      - url: 1836921
+  CVE-2024-11692:
+    title: Select list elements could be shown over another site
+    impact: moderate
+    reporter: Shaheen Fazim
+    description: |
+      An attacker could cause a select dropdown to be shown over another tab; this could have led to user confusion and possible spoofing attacks.
+    bugs:
+      - url: 1909535
+  CVE-2024-11701:
+    title: Misleading Address Bar State During Navigation Interruption
+    impact: moderate
+    reporter: Daniel Holbert
+    description: |
+      The incorrect domain may have been displayed in the address bar during an interrupted navigation attempt. This could have led to user confusion and possible spoofing attacks.
+    bugs:
+      - url: 1914797
+  CVE-2024-11702:
+    title: Inadequate Clipboard Protection in Private Browsing Mode on Android
+    impact: moderate
+    reporter: Umar Farooq
+    description: |
+      Copying sensitive information from Private Browsing tabs on Android, such as passwords, may have inadvertently stored data in the cloud-based clipboard history if enabled.
+    bugs:
+      - url: 1918884
+  CVE-2024-11693:
+    title: Download Protections were bypassed by .library-ms files on Windows
+    impact: moderate
+    reporter: Marco Bonardo
+    description: |
+      The executable file warning was not presented when downloading .library-ms files.  <br>*Note: This issue only affected Windows operating systems. Other operating systems are unaffected.*
+    bugs:
+      - url: 1921458
+  CVE-2024-11694:
+    title: CSP Bypass and XSS Exposure via Web Compatibility Shims
+    impact: moderate
+    reporter: Masato Kinugawa
+    description: |
+      Enhanced Tracking Protection's Strict mode may have inadvertently allowed a CSP `frame-src` bypass and DOM-based XSS through the Google SafeFrame shim in the Web Compatibility extension. This issue could have exposed users to malicious frames masquerading as legitimate content.
+    bugs:
+      - url: 1924167
+  CVE-2024-11695:
+    title: URL Bar Spoofing via Manipulated Punycode and Whitespace Characters
+    impact: moderate
+    reporter: Renwa Hiwa
+    description: |
+      A crafted URL containing Arabic script and whitespace characters could have hidden the true origin of the page, resulting in a potential spoofing attack.
+    bugs:
+      - url: 1925496
+  CVE-2024-11696:
+    title: Unhandled Exception in Add-on Signature Verification
+    impact: moderate
+    reporter: Rob Wu
+    description: |
+      The application failed to account for exceptions thrown by the `loadManifestFromFile` method during add-on signature verification. This flaw, triggered by an invalid or unsupported extension manifest, could have caused runtime errors that disrupted the signature validation process. As a result, the enforcement of signature validation for unrelated add-ons may have been bypassed.  Signature validation in this context is used to ensure that third-party applications on the user's computer have not tampered with the user's extensions, limiting the impact of this issue.
+    bugs:
+      - url: 1929600
+  CVE-2024-11697:
+    title: Improper Keypress Handling in Executable File Confirmation Dialog
+    impact: low
+    reporter: Umar Farooq
+    description: |
+      When handling keypress events, an attacker may have been able to trick a user into bypassing the "Open Executable File?" confirmation dialog. This could have led to malicious code execution.
+    bugs:
+      - url: 1842187
+  CVE-2024-11704:
+    title: Potential Double-Free Vulnerability in PKCS#7 Decryption Handling
+    impact: low
+    reporter: Ronald Crane
+    description: |
+      A double-free issue could have occurred in `sec_pkcs7_decoder_start_decrypt()` when handling an error path. Under specific conditions, the same symmetric key could have been freed twice, potentially leading to memory corruption.
+    bugs:
+      - url: 1899402
+  CVE-2024-11698:
+    title: Fullscreen Lock-Up When Modal Dialog Interrupts Transition on macOS
+    impact: low
+    reporter: Kang Ali of Punggawa Cybersecurity
+    description: |
+      A flaw in handling fullscreen transitions may have inadvertently caused the application to become stuck in fullscreen mode when a modal dialog was opened during the transition. This issue left users unable to exit fullscreen mode using standard actions like pressing "Esc" or accessing right-click menus, resulting in a disrupted browsing experience until the browser is restarted.  <br>*This bug only affects the application when running on macOS. Other operating systems are unaffected.*
+    bugs:
+      - url: 1916152
+  CVE-2024-11705:
+    title: Null Pointer Dereference in NSC_DeriveKey
+    impact: low
+    reporter: coffeys
+    description: |
+      <code>NSC_DeriveKey</code> inadvertently assumed that the <code>phKey</code> parameter is always non-NULL. When it was passed as NULL, a segmentation fault (SEGV) occurred, leading to crashes. This behavior conflicted with the PKCS#11 v3.0 specification, which allows <code>phKey</code> to be NULL for certain mechanisms.
+    bugs:
+      - url: 1921768
+  CVE-2024-11706:
+    title: Null Pointer Dereference in PKCS#12 Utility
+    impact: low
+    reporter: Marc Schoenefeld
+    description: |
+      A null pointer dereference may have inadvertently occurred in `pk12util`, and specifically in the <code>SEC_ASN1DecodeItem_Util</code> function, when handling malformed or improperly formatted input files.
+    bugs:
+      - url: 1923767
+  CVE-2024-11708:
+    title: Data race with PlaybackParams
+    impact: low
+    reporter: Serban Stanca
+    description: |
+      Missing thread synchronization primitives could have led to a data race on members of the PlaybackParams structure.
+    bugs:
+      - url: 1922912
+  CVE-2024-11699:
+    title: Memory safety bugs fixed in Firefox 133, Thunderbird 133, Firefox ESR 128.5, and Thunderbird 128.5
+    impact: high
+    reporter: Andrew McCreight, Akmat Suleimanov
+    description: |
+      Memory safety bugs present in Firefox 132, Thunderbird 132, Firefox ESR 128.4, and Thunderbird 128.4. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1880582, 1929911
+        desc: Memory safety bugs fixed in Firefox 133, Thunderbird 133, Firefox ESR 128.5, and Thunderbird 128.5

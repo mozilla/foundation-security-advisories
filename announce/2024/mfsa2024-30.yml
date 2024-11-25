@@ -37,7 +37,7 @@ advisories:
     impact: moderate
     reporter: Ronald Crane
     description: |
-      A mismatch between allocator and deallocator could have lead to memory corruption.
+      A mismatch between allocator and deallocator could have led to memory corruption.
     bugs:
       - url: 1895032
   CVE-2024-6603:

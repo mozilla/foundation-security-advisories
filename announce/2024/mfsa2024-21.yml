@@ -36,7 +36,7 @@ advisories:
     impact: moderate
     reporter: Hafiizh
     description: |
-      Different techniques existed to obscure the fullscreen notification in Firefox for Android.  These could have lead to potential user confusion and spoofing attacks.<br>*This bug only affects Firefox for Android. Other versions of Firefox are unaffected.*
+      Different techniques existed to obscure the fullscreen notification in Firefox for Android.  These could have led to potential user confusion and spoofing attacks.<br>*This bug only affects Firefox for Android. Other versions of Firefox are unaffected.*
     bugs:
       - url: 1871214
       - url: 1871217

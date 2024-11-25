@@ -21,7 +21,7 @@ advisories:
     impact: high
     reporter: dalmurino
     description: |
-      Clipboard code failed to check the index on an array access. This could have lead to an out-of-bounds read.
+      Clipboard code failed to check the index on an array access. This could have led to an out-of-bounds read.
     bugs:
       - url: 1902305
   CVE-2024-6607:
@@ -79,7 +79,7 @@ advisories:
     impact: moderate
     reporter: Ronald Crane
     description: |
-      A mismatch between allocator and deallocator could have lead to memory corruption.
+      A mismatch between allocator and deallocator could have led to memory corruption.
     bugs:
       - url: 1895032
   CVE-2024-6603:
