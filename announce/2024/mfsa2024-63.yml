@@ -6,11 +6,11 @@ fixed_in:
 title: Security Vulnerabilities fixed in Firefox 133
 advisories:
   CVE-2024-11691:
-    title: Memory corruption in Apple GPU drivers
+    title: Out-of-bounds write in Apple GPU drivers via WebGL
     impact: high
     reporter: Dohyun Lee (@l33d0hyun) of USELab, Korea University & Youngho Choi of CEL, Korea University & Geumhwan Cho of USELab, Korea University
     description: |
-      An attacker could have caused memory corruption due to a flaw in Apple's GPU driver; this can be avoided by working around the flaw. <br />*Note: This issue only affected macOS operating systems. Other operating systems are unaffected.*
+      Certain WebGL operations on Apple silicon M series devices could have lead to an out-of-bounds write and memory corruption due to a flaw in Apple's GPU driver.  <br>*This bug only affected the application on Apple M series hardware. Other platforms were unaffected.*
     bugs:
       - url: 1924184
       - url: 1914707
