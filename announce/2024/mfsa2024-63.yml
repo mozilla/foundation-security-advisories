@@ -19,7 +19,7 @@ advisories:
     impact: moderate
     reporter: Shaheen Fazim
     description: |
-      Malicious websites may have been able to user intent confirmation through tapjacking. This could have led to users unknowingly approving the launch of external applications, potentially exposing them to underlying vulnerabilities.
+      Malicious websites may have been able to perform user intent confirmation through tapjacking. This could have led to users unknowingly approving the launch of external applications, potentially exposing them to underlying vulnerabilities.
     bugs:
       - url: 1836921
   CVE-2024-11692:
