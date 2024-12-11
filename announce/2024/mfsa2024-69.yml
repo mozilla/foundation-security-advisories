@@ -1,0 +1,15 @@
+## mfsa2024-69.yml
+announced: Dec 10, 2024
+impact: moderate
+fixed_in:
+- Thunderbird 128.5.2
+title: Security Vulnerabilities fixed in Thunderbird 128.5.2
+advisories:
+  CVE-2024-50336:
+    title: matrix-js-sdk has insufficient MXC URI validation which could allow client-side path traversal
+    impact: moderate
+    reporter: Patrick Cloke
+    description: |
+      The Matrix specification demands homeservers to perform validation of the server-name and media-id components of MXC URIs with the intent to prevent path traversal. However, it is not mentioned that a similar check must also be performed on the client to prevent client-side path traversal. matrix-js-sdk fails to perform this validation.
+    bugs:
+      - url: 1929264
