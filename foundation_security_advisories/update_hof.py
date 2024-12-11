@@ -395,7 +395,7 @@ credit_entries = {
     "e8abc376c3254bcb714b250241b75011" : "insertscript",
     "e8df4fcdfce3352bfa7c8cc4f30cf852" : "Thomas Imbert",
     "e8f888d34d0dea54f388def803d7b4ab" : "Vladimir Dmitriev",
-    "e977ff3c4f7a2bb8af350f3f0ead44b9" : "Dohyun Lee of DNSLab Korea University",
+    "e977ff3c4f7a2bb8af350f3f0ead44b9" : "Dohyun Lee",
     "e98a60be99d8cad03ab7bda278934d00" : "Matheus Vrech",
     "ea3d4c453e3dcd5b7c3430a9d3b5cecf" : "Jann Horn",
     "ebb36808fc8bce5670bf7c40f8f79a07" : "Gunes Acar",
