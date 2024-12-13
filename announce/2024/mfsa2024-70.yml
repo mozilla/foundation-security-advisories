@@ -1,0 +1,26 @@
+## mfsa2024-70.yml
+announced: December 11, 2024
+impact: high
+fixed_in:
+- Firefox ESR 115.18
+title: Security Vulnerabilities fixed in Thunderbird 115.18
+description: |
+  *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
+advisories:
+  CVE-2024-11691:
+    title: Out-of-bounds write in Apple GPU drivers via WebGL
+    impact: high
+    reporter: Dohyun Lee (@l33d0hyun) of USELab, Korea University & Youngho Choi of CEL, Korea University & Geumhwan Cho of USELab, Korea University
+    description: |
+      Certain WebGL operations on Apple silicon M series devices could have lead to an out-of-bounds write and memory corruption due to a flaw in Apple's GPU driver.  <br>*This bug only affected the application on Apple M series hardware. Other platforms were unaffected.*
+    bugs:
+      - url: 1924184
+      - url: 1914707
+  CVE-2024-11694:
+    title: CSP Bypass and XSS Exposure via Web Compatibility Shims
+    impact: moderate
+    reporter: Masato Kinugawa
+    description: |
+      Enhanced Tracking Protection's Strict mode may have inadvertently allowed a CSP `frame-src` bypass and DOM-based XSS through the Google SafeFrame shim in the Web Compatibility extension. This issue could have exposed users to malicious frames masquerading as legitimate content.
+    bugs:
+      - url: 1924167
