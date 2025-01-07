@@ -244,7 +244,7 @@ def replace_cve_id(cve: CVEAdvisory):
     cve.id = new_id
     for instance in cve.instances:
         with open(instance.file_name) as r:
-            file_content = r.read().replace(old_id, new_id)
+            file_content = r.read().replace(old_id + ":", new_id + ":")
         with open(instance.file_name, "w") as w:
             w.write(file_content)
         if os.getenv("CI"):
