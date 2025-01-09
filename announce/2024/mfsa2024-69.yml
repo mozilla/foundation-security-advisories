@@ -13,3 +13,4 @@ advisories:
       The Matrix specification demands homeservers to perform validation of the server-name and media-id components of MXC URIs with the intent to prevent path traversal. However, it is not mentioned that a similar check must also be performed on the client to prevent client-side path traversal. matrix-js-sdk fails to perform this validation.
     bugs:
       - url: 1929264
+    feed: false

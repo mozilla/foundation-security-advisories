@@ -1,0 +1,83 @@
+## mfsa2025-04.yml
+announced: January 7, 2025
+impact: high
+fixed_in:
+- Thunderbird 134
+title: Security Vulnerabilities fixed in Thunderbird 134
+advisories:
+  CVE-2024-50336:
+    title: matrix-js-sdk has insufficient MXC URI validation which could allow client-side path traversal
+    impact: moderate
+    reporter: Patrick Cloke
+    description: |
+      The Matrix specification demands homeservers to perform validation of the server-name and media-id components of MXC URIs with the intent to prevent path traversal. However, it is not mentioned that a similar check must also be performed on the client to prevent client-side path traversal. matrix-js-sdk fails to perform this validation.
+    bugs:
+      - url: 1929264
+    feed: false
+  CVE-2025-0237:
+    title: WebChannel APIs susceptible to confused deputy attack
+    impact: moderate
+    reporter: Andrew McCreight
+    description: |
+      The WebChannel API, which is used to transport various information across processes, did not check the sending principal but rather accepted the principal being sent. This could have led to privilege escalation attacks.
+    bugs:
+      - url: 1915257
+  CVE-2025-0238:
+    title: Use-after-free when breaking lines in text
+    impact: moderate
+    reporter: Irvan Kurniawan
+    description: |
+      Assuming a controlled failed memory allocation, an attacker could have caused a use-after-free, leading to a potentially exploitable crash.
+    bugs:
+      - url: 1915535
+  CVE-2025-0239:
+    title: Alt-Svc ALPN validation failure when redirected
+    impact: moderate
+    reporter: Paul Gerste
+    description: |
+      When using Alt-Svc, ALPN did not properly validate certificates when the original server is redirecting to an insecure site.
+    bugs:
+      - url: 1929156
+  CVE-2025-0240:
+    title: Compartment mismatch when parsing JavaScript JSON module
+    impact: moderate
+    reporter: Nils Bars
+    description: |
+      Parsing a JavaScript module as JSON could, under some circumstances, cause cross-compartment access, which may result in a use-after-free.
+    bugs:
+      - url: 1929623
+  CVE-2025-0241:
+    title: Memory corruption when using JavaScript Text Segmentation
+    impact: moderate
+    reporter: Nils Bars
+    description: |
+      When segmenting specially crafted text, segmentation would corrupt memory leading to a potentially exploitable crash.
+    bugs:
+      - url: 1933023
+  CVE-2025-0242:
+    title: Memory safety bugs fixed in Firefox 134, Thunderbird 134, Firefox ESR 115.19, Firefox ESR 128.6, Thunderbird 115.19, and Thunderbird 128.6
+    impact: high
+    reporter: Andrew McCreight, Tooru Fujisawa, and the Mozilla Fuzzing Team
+    description: |
+      Memory safety bugs present in Firefox 133, Thunderbird 133, Firefox ESR 115.18, Firefox ESR 128.5, Thunderbird 115.18, and Thunderbird 128.5. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1874523, 1926454, 1931873, 1932169
+        desc: Memory safety bugs fixed in Firefox 134, Thunderbird 134, Firefox ESR 115.19, Firefox ESR 128.6, Thunderbird 115.19, and Thunderbird 128.6
+  CVE-2025-0243:
+    title: Memory safety bugs fixed in Firefox 134, Thunderbird 134, Firefox ESR 128.6, and Thunderbird 128.6
+    impact: moderate
+    reporter: Andrew Osmond and the Mozilla Fuzzing Team
+    description: |
+      Memory safety bugs present in Firefox 133, Thunderbird 133, Firefox ESR 128.5, and Thunderbird 128.5. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1827142, 1932783
+        desc: Memory safety bugs fixed in Firefox 134, Thunderbird 134, Firefox ESR 128.6, and Thunderbird 128.6
+  CVE-2025-0247:
+    title: Memory safety bugs fixed in Firefox 134 and Thunderbird 134
+    impact: high
+    reporter: Akmat Suleimanov, Jed Davis, André Bargull, and the Mozilla Fuzzing Team
+    description: |
+      Memory safety bugs present in Firefox 133 and Thunderbird 133. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1835193, 1910021, 1919803, 1931576, 1931948, 1932173
+        desc: Memory safety bugs fixed in Firefox 134 and Thunderbird 134
