@@ -1,0 +1,23 @@
+## mfsa2025-06.yml
+announced: January 10, 2024
+impact: moderate
+fixed_in:
+- Firefox for iOS 134
+title: Security Vulnerabilities fixed in Firefox for iOS 134
+advisories:
+  CVE-2025-23108:
+    title: Firefox Mobile iOS Full Address Bar Spoof Using Open in New Tab and Javascript URI
+    impact: moderate
+    reporter: Renwa
+    description: |
+      Opening Javascript links in a new tab via long-press in the Firefox iOS client could result in a malicious script spoofing the URL of the new tab.
+    bugs:
+      - url: 1933172
+  CVE-2025-23109:
+    title: Address bar spoofing on iOS using long hostnames
+    impact: moderate
+    reporter: Khalil Zhani
+    description: |
+      Long hostnames in URLs could be leveraged to obscure the actual host of the website or spoof the website address
+    bugs:
+      - url: 1419275
