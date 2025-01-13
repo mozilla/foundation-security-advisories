@@ -2,7 +2,7 @@
 announced: January 7, 2025
 impact: moderate
 fixed_in:
-- Thunderbird ESR 128.6
+- Thunderbird 128.6
 title: Security Vulnerabilities fixed in Thunderbird ESR 128.6
 advisories:
   CVE-2025-0237:
