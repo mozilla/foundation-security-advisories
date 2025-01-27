@@ -75,6 +75,14 @@ https://bugzilla.mozilla.org/buglist.cgi?x=x
 """.replace("\n", "")
 
 credit_entries = {
+    "1608055575dcd5e30720b67f791a76b7":"Paul Gerste",
+    "a23ac0dcff0ce1a657a69b883d21a172":"Lucas B. Williams",
+    "3490e6039ac18c638dc25092b1bcd7a3":"Christian James",
+    "5e96fa378ab43940c417698a76776e5d":"Sun ZhiWei from Lenovo GIC security lab",
+    "8e6b391e991ef4dd7c1d3609be413b74":"Renwa Hiwa",
+    "b612ef16f16c1d0c74349356c0d2a6b7":"Dong-uk Kim",
+    "455583182ba2e5c9b5a802e4e7da8bf9":"Bharat (mrnoob)",
+    "f61a89bd95c4b84b6c6c79c988267950":"Jurrie Overgoor",
     "e63fe129212ef68d6d29c8762aa090d7":"Lishuo Song",
     "d26d3f4b54a07b5db8c2e7a8cd58863c":"Seunghyun Lee (@0x10n)",
     "8552289e4e172662b16295290c789fa9":"Nils Bars",
@@ -424,6 +432,7 @@ credit_entries = {
     "2e1575d6141ca69287e4f55ef6fec159" : "Jake Nicholson",
 }
 twitter_entries = {
+    "b612ef16f16c1d0c74349356c0d2a6b7":"@justlikebono",
     "fb99b1caf1b9d2533e9c960aca901dd9":"@imnarendrabhati",
     "f8c612c2ea4acc003c3d14602343b148":"@eternalsakura13",
     "27526bd467c0513ae02efb663aadd58f":"@hyhy_100",
@@ -508,6 +517,8 @@ twitter_entries = {
     "fe7f319c61c0b44d4cb751afda4f4aeb" : "@Gaurav_00000",
 }
 url_entries = {
+    "455583182ba2e5c9b5a802e4e7da8bf9":"https://www.linkedin.com/in/bharat-adhikari-726337225",
+    "f61a89bd95c4b84b6c6c79c988267950":"https://www.linkedin.com/in/jurrieovergoor/",
     "8b37f9bddc61920163d071f779926e25":"https://www.linkedin.com/in/rnando/",
     "b9a6307c3a098387557dab8537c59a70":"https://nomokazu.com/",
     "b9a6307c3a098387557dab8537c59a70":"https://nomokazu.com/",
