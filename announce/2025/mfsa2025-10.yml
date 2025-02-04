@@ -1,0 +1,99 @@
+## mfsa2025-10.yml
+announced: February 4, 2025
+impact: high
+fixed_in:
+- Thunderbird 128.7
+title: Security Vulnerabilities fixed in Thunderbird ESR 128.7
+description: |
+  *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
+advisories:
+  CVE-2025-1009:
+    title: Use-after-free in XSLT
+    impact: high
+    reporter: Ivan Fratric of Google Project Zero
+    description: |
+      An attacker could have caused a use-after-free via crafted XSLT data, leading to a potentially exploitable crash.
+    bugs:
+      - url: 1936613
+  CVE-2025-1010:
+    title: Use-after-free in Custom Highlight
+    impact: high
+    reporter: Atte Kettunen
+    description: |
+      An attacker could have caused a use-after-free via the Custom Highlight API, leading to a potentially exploitable crash.
+    bugs:
+      - url: 1936982
+  CVE-2025-1011:
+    title: A bug in WebAssembly code generation could result in a crash
+    impact: moderate
+    reporter: Nan Wang
+    description: |
+      A bug in WebAssembly code generation could have lead to a crash. It may have been possible for an attacker to leverage this to achieve code execution.
+    bugs:
+      - url: 1936454
+  CVE-2025-1012:
+    title: Use-after-free during concurrent delazification
+    impact: moderate
+    reporter: Nils Bars
+    description: |
+      A race during concurrent delazification could have led to a use-after-free.
+    bugs:
+      - url: 1939710
+  CVE-2024-11704:
+    title: Potential double-free vulnerability in PKCS#7 decryption handling
+    impact: low
+    reporter: Ronald Crane
+    description: |
+      A double-free issue could have occurred in `sec_pkcs7_decoder_start_decrypt()` when handling an error path. Under specific conditions, the same symmetric key could have been freed twice, potentially leading to memory corruption.
+    bugs:
+      - url: 1899402
+  CVE-2025-1013:
+    title: Potential opening of private browsing tabs in normal browsing windows
+    impact: low
+    reporter: Maruf Bin Murtuza
+    description: |
+      A race condition could have led to private browsing tabs being opened in normal browsing windows. This could have resulted in a potential privacy leak.
+    bugs:
+      - url: 1932555
+  CVE-2025-1014:
+    title: Certificate length was not properly checked
+    impact: low
+    reporter: Theemathas
+    description: |
+      Certificate length was not properly checked when added to a certificate store. In practice only trusted data was processed.
+    bugs:
+      - url: 1940804
+  CVE-2025-1015:
+    title: Unsanitized address book fields
+    impact: low
+    reporter: r3m0t3nu11
+    description: |
+      The Thunderbird Address Book URI fields contained unsanitized links. This could be used by an attacker to create and export an address book containing a malicious payload in a field. For example, in the “Other” field of the Instant Messaging section. If another user imported the address book, clicking on the link could result in opening a web page inside Thunderbird, and that page could execute (unprivileged) JavaScript.
+    bugs:
+      - url: 1939458
+  CVE-2025-0510:
+    title: Address of e-mail sender can be spoofed by malicious email
+    impact: high
+    reporter: Fabian Densborn
+    description: |
+      Thunderbird displayed an incorrect sender address if the From field of an email used the invalid group name syntax that is described in CVE-2024-49040.
+    bugs:
+      - url: 1940570
+  CVE-2025-1016:
+    title: Memory safety bugs fixed in Firefox 135, Thunderbird 135, Firefox ESR 115.20, Firefox ESR 128.7, Thunderbird 115.20, and Thunderbird 128.7
+    impact: high
+    reporter: Randell Jesup, Andrew McCreight, Andrew Osmond, Akmat Suleimanov and the Mozilla Fuzzing Team
+    description: |
+      Memory safety bugs present in Firefox 134, Thunderbird 134, Firefox ESR 115.19, Firefox ESR 128.6, Thunderbird 115.19, and Thunderbird 128.6. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1936601, 1936844, 1937694, 1938469, 1939583, 1940994
+        desc: Memory safety bugs fixed in Firefox 135, Thunderbird 135, Firefox ESR 115.20, Firefox ESR 128.7, Thunderbird 115.20, and Thunderbird 128.7
+  CVE-2025-1017:
+    title: Memory safety bugs fixed in Firefox 135, Thunderbird 135, Firefox ESR 128.7, and Thunderbird 128.7
+    impact: moderate
+    reporter: Sebastian Hengst, Maurice Dauer and the Mozilla Fuzzing Team
+    description: |
+      Memory safety bugs present in Firefox 134, Thunderbird 134, Firefox ESR 128.6, and Thunderbird 128.6. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1926256, 1935984, 1935471
+        desc: Memory safety bugs fixed in Firefox 135, Thunderbird 135, Firefox ESR 128.7, and Thunderbird 128.7

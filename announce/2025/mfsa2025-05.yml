@@ -4,6 +4,8 @@ impact: moderate
 fixed_in:
 - Thunderbird 128.6
 title: Security Vulnerabilities fixed in Thunderbird ESR 128.6
+description: |
+  *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
 advisories:
   CVE-2025-0237:
     title: WebChannel APIs susceptible to confused deputy attack

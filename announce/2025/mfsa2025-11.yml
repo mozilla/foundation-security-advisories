@@ -1,0 +1,108 @@
+## mfsa2025-11.yml
+announced: February 4, 2025
+impact: high
+fixed_in:
+- Thunderbird 135
+title: Security Vulnerabilities fixed in Thunderbird 135
+description: |
+  *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
+advisories:
+  CVE-2025-1009:
+    title: Use-after-free in XSLT
+    impact: high
+    reporter: Ivan Fratric of Google Project Zero
+    description: |
+      An attacker could have caused a use-after-free via crafted XSLT data, leading to a potentially exploitable crash.
+    bugs:
+      - url: 1936613
+  CVE-2025-1010:
+    title: Use-after-free in Custom Highlight
+    impact: high
+    reporter: Atte Kettunen
+    description: |
+      An attacker could have caused a use-after-free via the Custom Highlight API, leading to a potentially exploitable crash.
+    bugs:
+      - url: 1936982
+  CVE-2025-1018:
+    title: Fullscreen notification is not displayed when fullscreen is re-requested
+    impact: moderate
+    reporter: Irvan Kurniawan
+    description: |
+      The fullscreen notification is prematurely hidden when fullscreen is re-requested quickly by the user. This could have been leveraged to perform a potential spoofing attack.
+    bugs:
+      - url: 1910818
+  CVE-2025-1011:
+    title: A bug in WebAssembly code generation could result in a crash
+    impact: moderate
+    reporter: Nan Wang
+    description: |
+      A bug in WebAssembly code generation could have lead to a crash. It may have been possible for an attacker to leverage this to achieve code execution.
+    bugs:
+      - url: 1936454
+  CVE-2025-1012:
+    title: Use-after-free during concurrent delazification
+    impact: moderate
+    reporter: Nils Bars
+    description: |
+      A race during concurrent delazification could have led to a use-after-free.
+    bugs:
+      - url: 1939710
+  CVE-2025-1019:
+    title: Fullscreen notification not properly displayed
+    impact: moderate
+    reporter: Irvan Kurniawan
+    description: |
+      The z-order of the browser windows could be manipulated to hide the fullscreen notification. This could potentially be leveraged to perform a spoofing attack.
+    bugs:
+      - url: 1940162
+  CVE-2025-1013:
+    title: Potential opening of private browsing tabs in normal browsing windows
+    impact: low
+    reporter: Maruf Bin Murtuza
+    description: |
+      A race condition could have led to private browsing tabs being opened in normal browsing windows. This could have resulted in a potential privacy leak.
+    bugs:
+      - url: 1932555
+  CVE-2025-1014:
+    title: Certificate length was not properly checked
+    impact: low
+    reporter: Theemathas
+    description: |
+      Certificate length was not properly checked when added to a certificate store. In practice only trusted data was processed.
+    bugs:
+      - url: 1940804
+  CVE-2025-0510:
+    title: Address of e-mail sender can be spoofed by malicious email
+    impact: high
+    reporter: Fabian Densborn
+    description: |
+      Thunderbird displayed an incorrect sender address if the From field of an email used the invalid group name syntax that is described in CVE-2024-49040.
+    bugs:
+      - url: 1940570
+  CVE-2025-1016:
+    title: Memory safety bugs fixed in Firefox 135, Thunderbird 135, Firefox ESR 115.20, Firefox ESR 128.7, Thunderbird 115.20, and Thunderbird 128.7
+    impact: high
+    reporter: Andrew McCreight, Randell Jesup, Andrew Osmond, Akmat Suleimanov and the Mozilla Fuzzing Team
+    description: |
+      Memory safety bugs present in Firefox 134, Thunderbird 134, Firefox ESR 115.19, Firefox ESR 128.6, Thunderbird 115.19, and Thunderbird 128.6. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1936601, 1936844, 1937694, 1938469, 1939583, 1940994
+        desc: Memory safety bugs fixed in Firefox 135, Thunderbird 135, Firefox ESR 115.20, Firefox ESR 128.7, Thunderbird 115.20, and Thunderbird 128.7
+  CVE-2025-1017:
+    title: Memory safety bugs fixed in Firefox 135, Thunderbird 135, Firefox ESR 128.7, and Thunderbird 128.7
+    impact: moderate
+    reporter: Sebastian Hengst, Maurice Dauer and the Mozilla Fuzzing Team
+    description: |
+      Memory safety bugs present in Firefox 134, Thunderbird 134, Firefox ESR 128.6, and Thunderbird 128.6. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1926256, 1935984, 1935471
+        desc: Memory safety bugs fixed in Firefox 135, Thunderbird 135, Firefox ESR 128.7, and Thunderbird 128.7
+  CVE-2025-1020:
+    title: Memory safety bugs fixed in Firefox 135 and Thunderbird 135
+    impact: high
+    reporter: The Mozilla Fuzzing Team
+    description: |
+      Memory safety bugs present in Firefox 134 and Thunderbird 134. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1939063, 1942169
+        desc: Memory safety bugs fixed in Firefox 135 and Thunderbird 135

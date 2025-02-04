@@ -1,0 +1,40 @@
+## mfsa2025-08.yml
+announced: February 4, 2025
+impact: high
+fixed_in:
+- Firefox ESR 115.20
+title: Security Vulnerabilities fixed in Firefox ESR 115.20
+advisories:
+  CVE-2025-1009:
+    title: Use-after-free in XSLT
+    impact: high
+    reporter: Ivan Fratric of Google Project Zero
+    description: |
+      An attacker could have caused a use-after-free via crafted XSLT data, leading to a potentially exploitable crash.
+    bugs:
+      - url: 1936613
+  CVE-2025-1010:
+    title: Use-after-free in Custom Highlight
+    impact: high
+    reporter: Atte Kettunen
+    description: |
+      An attacker could have caused a use-after-free via the Custom Highlight API, leading to a potentially exploitable crash.
+    bugs:
+      - url: 1936982
+  CVE-2025-1012:
+    title: Use-after-free during concurrent delazification
+    impact: moderate
+    reporter: Nils Bars
+    description: |
+      A race during concurrent delazification could have led to a use-after-free.
+    bugs:
+      - url: 1939710
+  CVE-2025-1016:
+    title: Memory safety bugs fixed in Firefox 135, Thunderbird 135, Firefox ESR 115.20, Firefox ESR 128.7, Thunderbird 115.20, and Thunderbird 128.7
+    impact: high
+    reporter: Andrew Osmond, Randell Jesup, Andrew McCreight, Akmat Suleimanov and the Mozilla Fuzzing Team
+    description: |
+      Memory safety bugs present in Firefox 134, Thunderbird 134, Firefox ESR 115.19, Firefox ESR 128.6, Thunderbird 115.19, and Thunderbird 128.6. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1936601, 1936844, 1937694, 1938469, 1939583, 1940994
+        desc: Memory safety bugs fixed in Firefox 135, Thunderbird 135, Firefox ESR 115.20, Firefox ESR 128.7, Thunderbird 115.20, and Thunderbird 128.7
