@@ -5,7 +5,7 @@ fixed_in:
 - Thunderbird 135
 title: Security Vulnerabilities fixed in Thunderbird 135
 description: |
-  *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
+  *Flaws inherited from the Firefox code base are generally not exploitable through email in Thunderbird, as scripting is disabled when reading mail. However, they may pose a risk in other features that display remote web content.*
 advisories:
   CVE-2025-1009:
     title: Use-after-free in XSLT
