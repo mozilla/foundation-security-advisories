@@ -5,7 +5,7 @@ fixed_in:
 - Thunderbird 128.7
 title: Security Vulnerabilities fixed in Thunderbird ESR 128.7
 description: |
-  *Flaws inherited from the Firefox code base are generally not exploitable through email in Thunderbird, as scripting is disabled when reading mail. However, they may pose risks in browser or browser-like environments.*
+  *Flaws inherited from the Firefox code base are generally not exploitable through email in Thunderbird, as scripting is disabled when reading mail. However, they may pose a risk in other features that display remote web content.*
 advisories:
   CVE-2025-1009:
     title: Use-after-free in XSLT
