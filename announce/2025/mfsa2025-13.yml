@@ -1,0 +1,31 @@
+## mfsa2025-13.yml
+announced: February 24, 2025
+impact: high
+fixed_in:
+- Firefox for iOS 136
+title: Security Vulnerabilities fixed in Firefox for iOS 136
+advisories:
+  CVE-2025-27426:
+    title: Firefox Mobile iOS Full Address Bar Spoof Using Server-Side Redirect to internal error page
+    impact: high
+    reporter: Renwa
+    description: |
+      Malicious websites utilizing a server-side redirect to an internal error page could result in a spoofed website URL
+    bugs:
+      - url: 1933079
+  CVE-2025-27424:
+    title: Firefox Mobile iOS Address Bar Spoof Using Server-Side Redirect to non-http Scheme
+    impact: moderate
+    reporter: Renwa
+    description: |
+      Websites redirecting to a non-HTTP scheme URL could allow a website address to be spoofed for a malicious page
+    bugs:
+      - url: 1945392
+  CVE-2025-27425:
+    title: QR code user confirmation bypass with invalid protocol
+    impact: low
+    reporter: Abhinav Khanna
+    description: |
+      Scanning certain QR codes that included text with a website URL could allow the URL to be opened without presenting the user with a confirmation alert first
+    bugs:
+      - url: 1941525
