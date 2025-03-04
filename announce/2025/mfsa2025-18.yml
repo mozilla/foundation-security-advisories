@@ -7,7 +7,7 @@ title: Security Vulnerabilities fixed in Thunderbird ESR 128.8
 description: |
   *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
 advisories:
-  CVE-2024-43097::
+  CVE-2024-43097:
     title: Overflow when growing an SkRegion's RunArray
     impact: critical
     reporter: Google Android
