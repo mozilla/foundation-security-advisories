@@ -1,0 +1,90 @@
+## mfsa2025-16.yml
+announced: March 4, 2025
+impact: critical
+fixed_in:
+- Firefox ESR 128.8
+title: Security Vulnerabilities fixed in Firefox ESR 128.8
+advisories:
+  CVE-2024-43097:
+    title: Overflow when growing an SkRegion's RunArray
+    impact: critical
+    reporter: Google Android
+    feed: false
+    description: |
+      In resizeToAtLeast of SkRegion.cpp, there was a possible out of bounds write due to an integer overflow
+    bugs:
+      - url: 1945624
+  CVE-2025-1930:
+    title: AudioIPC StreamData could trigger a use-after-free in the Browser process
+    impact: high
+    reporter: dalmurino
+    description: |
+      On Windows, a compromised content process could use bad StreamData sent over AudioIPC to trigger a use-after-free in the Browser process. This could have led to a sandbox escape.
+    bugs:
+      - url: 1902309
+  CVE-2025-1931:
+    title: Use-after-free in WebTransportChild
+    impact: high
+    reporter: sherkito
+    description: |
+      It was possible to cause a use-after-free in the content process side of a WebTransport connection, leading to a potentially exploitable crash.
+    bugs:
+      - url: 1944126
+  CVE-2025-1932:
+    title: Inconsistent comparator in XSLT sorting led to out-of-bounds access
+    impact: high
+    reporter: Ivan Fratric of Google Project Zero
+    description: |
+      An inconsistent comparator in xslt/txNodeSorter could have resulted in potentially exploitable out-of-bounds access. Only affected version 122 and later.
+    bugs:
+      - url: 1944313
+  CVE-2025-1933:
+    title: JIT corruption of WASM i32 return values on 64-bit CPUs
+    impact: high
+    reporter: Xiangwei Zhang and kkdong of Tencent Security YUNDING LAB
+    description: |
+      On 64-bit CPUs, when the JIT compiles WASM i32 return values they can pick up bits from left over memory. This can potentially cause them to be treated as a different type.
+    bugs:
+      - url: 1946004
+  CVE-2025-1934:
+    title: Unexpected GC during RegExp bailout processing
+    impact: moderate
+    reporter: Nils Bars
+    description: |
+      It was possible to interrupt the processing of a RegExp bailout and run additional JavaScript, potentially triggering garbage collection when the engine was not expecting it.
+    bugs:
+      - url: 1942881
+  CVE-2025-1935:
+    title: Clickjacking the registerProtocolHandler info-bar
+    impact: low
+    reporter: Hafiizh
+    description: |
+      A web page could trick a user into setting that site as the default handler for a custom URL protocol.
+    bugs:
+      - url: 1866661
+  CVE-2025-1936:
+    title: 'Adding %00 and a fake extension to a jar: URL  changed the interpretation of the contents'
+    impact: low
+    reporter: Surya Dev Singh
+    description: |
+      jar: URLs retrieve local file content packaged in a ZIP archive. The null and everything after it was ignored when retrieving the content from the archive, but the fake extension after the null was used to determine the type of content. This could have been used to hide code in a web extension disguised as something else like an image.
+    bugs:
+      - url: 1940027
+  CVE-2025-1937:
+    title: Memory safety bugs fixed in Firefox 136, Thunderbird 136, Firefox ESR 115.21, Firefox ESR 128.8, and Thunderbird 128.8
+    impact: high
+    reporter: the Mozilla Fuzzing Team, Andrew McCreight
+    description: |
+      Memory safety bugs present in Firefox 135, Thunderbird 135, Firefox ESR 115.20, Firefox ESR 128.7, and Thunderbird 128.7. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1938471, 1940716
+        desc: Memory safety bugs fixed in Firefox 136, Thunderbird 136, Firefox ESR 115.21, Firefox ESR 128.8, and Thunderbird 128.8
+  CVE-2025-1938:
+    title: Memory safety bugs fixed in Firefox 136, Thunderbird 136, Firefox ESR 128.8, and Thunderbird 128.8
+    impact: high
+    reporter: Julien Wajsberg, the Mozilla Fuzzing Team
+    description: |
+      Memory safety bugs present in Firefox 135, Thunderbird 135, Firefox ESR 128.7, and Thunderbird 128.7. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1922889, 1935004, 1943586, 1943912, 1948111
+        desc: Memory safety bugs fixed in Firefox 136, Thunderbird 136, Firefox ESR 128.8, and Thunderbird 128.8
