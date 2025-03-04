@@ -4,7 +4,18 @@ impact: high
 fixed_in:
 - Firefox 134
 title: Security Vulnerabilities fixed in Firefox 134
+description: |
+  [Update March 4, 2025] *We discovered a Skia library update in Firefox 134 fixed CVE-2024-43097*
 advisories:
+  CVE-2024-43097:
+    title: Overflow when growing an SkRegion's RunArray
+    impact: critical
+    reporter: Google Android
+    feed: false
+    description: |
+      In resizeToAtLeast of SkRegion.cpp, there was a possible out of bounds write due to an integer overflow
+    bugs:
+      - url: 1945624
   CVE-2025-0244:
     title: Address bar spoofing using an invalid protocol scheme on Firefox for Android
     impact: high
