@@ -20,8 +20,8 @@ advisories:
     description: |
       A bad cast when processing layout with <code>input</code> elements can result in a potentially exploitable crash.
     bugs:
-      - url: 129793
-        desc: Bug 129793
+      - url: 1297934
+        desc: Bug 1297934
   CVE-2016-5276:
     title: "Heap-use-after-free in mozilla::a11y::DocAccessible::ProcessInvalidationList"
     impact: high
