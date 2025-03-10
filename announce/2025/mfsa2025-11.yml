@@ -79,6 +79,14 @@ advisories:
       Thunderbird displayed an incorrect sender address if the From field of an email used the invalid group name syntax that is described in CVE-2024-49040.
     bugs:
       - url: 1940570
+  CVE-2025-1015:
+    title: Unsanitized address book fields
+    impact: low
+    reporter: r3m0t3nu11
+    description: |
+      The Thunderbird Address Book URI fields contained unsanitized links. This could be used by an attacker to create and export an address book containing a malicious payload in a field. For example, in the “Other” field of the Instant Messaging section. If another user imported the address book, clicking on the link could result in opening a web page inside Thunderbird, and that page could execute (unprivileged) JavaScript.
+    bugs:
+      - url: 1939458
   CVE-2025-1016:
     title: Memory safety bugs fixed in Firefox 135, Thunderbird 135, Firefox ESR 115.20, Firefox ESR 128.7, Thunderbird 115.20, and Thunderbird 128.7
     impact: high

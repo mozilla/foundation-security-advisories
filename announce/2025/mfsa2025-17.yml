@@ -5,8 +5,24 @@ fixed_in:
 - Thunderbird 136
 title: Security Vulnerabilities fixed in Thunderbird 136
 description: |
-  *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
+  *Many of these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
 advisories:
+  CVE-2025-26696:
+     title: Crafted email message incorrectly shown as being encrypted
+     impact: moderate
+     reporter: Marcus Brinkmann 
+     description: |
+       Certain crafted MIME email messages that claimed to contain an encrypted OpenPGP message, which instead contained an OpenPGP signed message, were wrongly shown as being encrypted.
+     bugs:
+       - url: 1864205
+  CVE-2025-26695:
+     title: Downloading of OpenPGP keys from WKD used incorrect padding
+     impact: low
+     reporter: Daniel Huigens
+     description: |
+       When requesting an OpenPGP key from a WKD server, an incorrect padding size was used and a network observer could have learned the length of the requested email address.
+     bugs:
+       - url: 1883039
   CVE-2025-1930:
     title: AudioIPC StreamData could trigger a use-after-free in the Browser process
     impact: high
