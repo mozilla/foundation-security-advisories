@@ -1,0 +1,15 @@
+## mfsa2025-21.yml
+announced: April 1, 2025
+impact: high
+fixed_in:
+- Firefox ESR 115.22
+title: Security Vulnerabilities fixed in Firefox ESR 115.22
+advisories:
+  MFSA-RESERVE-2025-1941002:
+    title: Use-after-free triggered by XSLTProcessor
+    impact: high
+    reporter: Ivan Fratric of Google Project Zero
+    description: |
+      JavaScript code running while transforming a document with the XSLTProcessor could lead to a use-after-free.
+    bugs:
+      - url: 1941002

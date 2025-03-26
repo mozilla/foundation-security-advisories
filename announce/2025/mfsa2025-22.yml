@@ -1,0 +1,32 @@
+## mfsa2025-22.yml
+announced: April 1, 2025
+impact: high
+fixed_in:
+- Firefox ESR 128.9
+title: Security Vulnerabilities fixed in Firefox ESR 128.9
+advisories:
+  MFSA-RESERVE-2025-1941002:
+    title: Use-after-free triggered by XSLTProcessor
+    impact: high
+    reporter: Ivan Fratric of Google Project Zero
+    description: |
+      JavaScript code running while transforming a document with the XSLTProcessor could lead to a use-after-free.
+    bugs:
+      - url: 1941002
+  MFSA-RESERVE-2025-1952213:
+    title: URL Bar Spoofing via non-BMP Unicode characters
+    impact: moderate
+    reporter: Renwa Hiwa
+    description: |
+      A crafted URL containing specific Unicode characters could have hidden the true origin of the page, resulting in a potential spoofing attack.
+    bugs:
+      - url: 1952213
+  MFSA-RESERVE-2025-3:
+    title: Memory safety bugs fixed in Firefox 137, Thunderbird 137, Firefox ESR 128.9, and Thunderbird 128.9
+    impact: high
+    reporter: Sylvestre Ledru, Paul Bone and the Mozilla Fuzzing Team
+    description: |
+      Memory safety bugs present in Firefox 136, Thunderbird 136, Firefox ESR 128.8, and Thunderbird 128.8. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1850615, 1932468, 1942551, 1951017, 1951494
+        desc: Memory safety bugs fixed in Firefox 137, Thunderbird 137, Firefox ESR 128.9, and Thunderbird 128.9
