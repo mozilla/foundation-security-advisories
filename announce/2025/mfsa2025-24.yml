@@ -2,7 +2,7 @@
 announced: April 1, 2025
 impact: high
 fixed_in:
-- Thunderbird ESR 128.9
+- Thunderbird 128.9
 title: Security Vulnerabilities fixed in Thunderbird ESR 128.9
 advisories:
   CVE-2025-3028:
