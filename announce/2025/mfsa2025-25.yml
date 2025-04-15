@@ -1,0 +1,18 @@
+# mfsa2025-25.yml
+announced: April 15, 2025
+impact: high
+fixed_in:
+  - Firefox 137.0.2
+title: Security vulnerability fixed in Firefox 137.0.2
+advisories:
+  CVE-2025-3608:
+    title: Race condition in nsHttpTransaction could lead to memory corruption
+    impact: high
+    reporter: The Mozilla Fuzzing Team
+    description: |
+      A race condition existed in nsHttpTransaction that could have been exploited
+      to cause memory corruption, potentially leading to an exploitable condition.
+    bugs:
+      - url: 1951554
+      - url: https://www.cve.org/CVERecord?id=CVE-2025-3608
+        desc: CVE-2025-3608
