@@ -14,5 +14,3 @@ advisories:
       to cause memory corruption, potentially leading to an exploitable condition.
     bugs:
       - url: 1951554
-      - url: https://www.cve.org/CVERecord?id=CVE-2025-3608
-        desc: CVE-2025-3608
