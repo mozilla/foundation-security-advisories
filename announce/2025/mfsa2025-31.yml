@@ -1,0 +1,97 @@
+## mfsa2025-28.yml
+announced: April 29, 2025
+impact: high
+fixed_in:
+- Thunderbird 138
+title: Security Vulnerabilities fixed in Thunderbird 138
+advisories:
+  CVE-2025-2817:
+    title: Privilege escalation in Thunderbird Updater
+    impact: high
+    reporter: Dong-uk Kim (@justlikebono)
+    description: |
+      Thunderbird's update mechanism allowed a medium-integrity user process to interfere with the SYSTEM-level updater by manipulating the file-locking behavior. By injecting code into the user-privileged process, an attacker could bypass intended access controls, allowing SYSTEM-level file operations on paths controlled by a non-privileged user and enabling privilege escalation.
+    bugs:
+      - url: 1917536
+  MFSA-RESERVE-2025-1937097:
+    title: WebGL shader attribute memory corruption in Thunderbird for macOS
+    impact: high
+    reporter: un3xploitable & GF
+    description: |
+      Modification of specific WebGL shader attributes could trigger an out-of-bounds read, which, when chained with other vulnerabilities, could be used to escalate privileges.<br>*This bug only affects Thunderbird for macOS. Other versions of Thunderbird are unaffected.*
+    bugs:
+      - url: 1937097
+  MFSA-RESERVE-2025-1958350:
+    title: Process isolation bypass using `javascript` URI links in cross-origin frames"
+    impact: high
+    reporter: Nika Layzell
+    description: |
+      A process isolation vulnerability in Thunderbird stemmed from improper handling of javascript: URIs, which could allow content to execute in the top-level document's process instead of the intended frame, potentially enabling a sandbox escape.
+    bugs:
+      - url: 1958350
+  MFSA-RESERVE-2025-1915280:
+    title: Potential information leakage and privilege escalation in UITour actor
+    impact: moderate
+    reporter: Andrew McCreight
+    description: |
+      An attacker with control over a content process could potentially leverage the privileged UITour actor to leak sensitive information or escalate privileges.
+    bugs:
+      - url: 1915280
+  MFSA-RESERVE-2025-1945705:
+    title: Specially crafted filename could be used to obscure download type
+    impact: moderate
+    reporter: Hafiizh
+    description: |
+      A specially crafted filename containing a large number of encoded newline characters could obscure the file's extension when displayed in the download dialog.<br>*This bug only affects Thunderbird for Android. Other versions of Thunderbird are unaffected.*
+    bugs:
+      - url: 1945705
+  MFSA-RESERVE-2025-1952465:
+    title: Unsafe attribute access during XPath parsing
+    impact: moderate
+    reporter: Ivan Fratric
+    description: |
+      A vulnerability was identified in Thunderbird where XPath parsing could trigger undefined behavior due to missing null checks during attribute access. This could lead to out-of-bounds read access and potentially, memory corruption.
+    bugs:
+      - url: 1952465
+  MFSA-RESERVE-2025-1953521:
+    title: Cross-site request forgery via storage access API redirects
+    impact: moderate
+    reporter: Chris P. Fredrickson
+    description: |
+      A security vulnerability in Thunderbird allowed malicious sites to use redirects to send credentialed requests to arbitrary endpoints on any site that had invoked the Storage Access API. This enabled potential Cross-Site Request Forgery attacks across origins.
+    bugs:
+      - url: 1953521
+  MFSA-RESERVE-2025-1956698:
+    title: Potential local code execution in "copy as cURL" command
+    impact: moderate
+    reporter: Ameen Basha M K
+    description: |
+      Due to insufficient escaping of special characters in the "copy as cURL" feature, an attacker could trick a user into using this command, potentially leading to local code execution on the user's system.
+    bugs:
+      - url: 1949994, 1956698, 1960198
+  MFSA-RESERVE-2025-1929478:
+    title: Leaked library paths in Thunderbird for Android
+    impact: low
+    reporter: Seongyun Jeong
+    description: |
+      A vulnerability existed in Thunderbird for Android where potentially sensitive library locations were logged via Logcat.
+    bugs:
+      - url: 1929478
+  MFSA-RESERVE-2025-3:
+    title: Memory safety bugs fixed in Firefox 138, Thunderbird 138, Firefox ESR 128.10, and Thunderbird 128.10
+    impact: moderate
+    reporter: Maurice Dauer and the Mozilla Fuzzing Team
+    description: |
+      Memory safety bugs present in Firefox 137, Thunderbird 137, Firefox ESR 128.9, and Thunderbird 128.9. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1951161, 1952105
+        desc: Memory safety bugs fixed in Firefox 138, Thunderbird 138, Firefox ESR 128.10, and Thunderbird 128.10
+  MFSA-RESERVE-2025-4:
+    title: Memory safety bugs fixed in Firefox 138 and Thunderbird 138
+    impact: high
+    reporter: Randell Jesup, Jens Stutte, and the Mozilla Fuzzing Team
+    description: |
+      Memory safety bugs present in Firefox 137 and Thunderbird 137. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1924108, 1950780, 1959367
+        desc: Memory safety bugs fixed in Firefox 138 and Thunderbird 138
