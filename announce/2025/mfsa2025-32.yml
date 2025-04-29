@@ -13,7 +13,7 @@ advisories:
       Thunderbird's update mechanism allowed a medium-integrity user process to interfere with the SYSTEM-level updater by manipulating the file-locking behavior. By injecting code into the user-privileged process, an attacker could bypass intended access controls, allowing SYSTEM-level file operations on paths controlled by a non-privileged user and enabling privilege escalation.
     bugs:
       - url: 1917536
-  MFSA-RESERVE-2025-1937097:
+  CVE-2025-4082:
     title: WebGL shader attribute memory corruption in Thunderbird for macOS
     impact: high
     reporter: un3xploitable & GF
@@ -21,7 +21,7 @@ advisories:
       Modification of specific WebGL shader attributes could trigger an out-of-bounds read, which, when chained with other vulnerabilities, could be used to escalate privileges.<br>*This bug only affects Thunderbird for macOS. Other versions of Thunderbird are unaffected.*
     bugs:
       - url: 1937097
-  MFSA-RESERVE-2025-1958350:
+  CVE-2025-4083:
     title: |
       Process isolation bypass using "javascript:" URI links in cross-origin frames
     impact: high
@@ -30,7 +30,7 @@ advisories:
       A process isolation vulnerability in Thunderbird stemmed from improper handling of javascript: URIs, which could allow content to execute in the top-level document’s process instead of the intended frame, potentially enabling a sandbox escape.
     bugs:
       - url: 1958350
-  MFSA-RESERVE-2025-1949994:
+  CVE-2025-4084:
     title: Potential local code execution in "copy as cURL" command
     impact: moderate
     reporter: Ameen Basha M K
@@ -38,7 +38,7 @@ advisories:
       Due to insufficient escaping of the special characters in the "copy as cURL" feature, an attacker could trick a user into using this command, potentially leading to local code execution on the user's system.<br>*This bug only affects Firefox for Windows. Other versions of Firefox are unaffected.*
     bugs:
       - url: 1949994, 1956698, 1960198
-  MFSA-RESERVE-2025-1952465:
+  CVE-2025-4087:
     title: Unsafe attribute access during XPath parsing
     impact: moderate
     reporter: Ivan Fratric
@@ -46,7 +46,7 @@ advisories:
       A vulnerability was identified in Thunderbird where XPath parsing could trigger undefined behavior due to missing null checks during attribute access. This could lead to out-of-bounds read access and potentially, memory corruption.
     bugs:
       - url: 1952465
-  MFSA-RESERVE-2025-3:
+  CVE-2025-4091:
     title: Memory safety bugs fixed in Firefox 138, Thunderbird 138, Firefox ESR 128.10, and Thunderbird 128.10
     impact: moderate
     reporter: Maurice Dauer and the Mozilla Fuzzing Team
@@ -55,7 +55,7 @@ advisories:
     bugs:
       - url: 1951161, 1952105
         desc: Memory safety bugs fixed in Firefox 138, Thunderbird 138, Firefox ESR 128.10, and Thunderbird 128.10
-  MFSA-RESERVE-2025-7:
+  CVE-2025-4093:
     title: Memory safety bug fixed in Firefox ESR 128.10 and Thunderbird 128.10
     impact: high
     reporter: Andrew McCreight
