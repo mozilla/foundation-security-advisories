@@ -22,7 +22,7 @@ advisories:
     bugs:
       - url: 1937097
   MFSA-RESERVE-2025-1958350:
-    title: "Process isolation bypass using `javascript:` URI links in cross-origin frames"
+    title: Process isolation bypass using "javascript:" URI links in cross-origin frames
     impact: high
     reporter: Nika Layzell
     description: |
