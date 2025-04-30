@@ -1,0 +1,15 @@
+# mfsa2025-33.yml
+announced: April 21, 2025
+impact: moderate
+fixed_in:
+  - Focus 138
+title: Security vulnerability fixed in Focus for iOS 138
+advisories:
+  CVE-2025-3859:
+    title: Firefox Focus elide URL allows address bar spoofing
+    impact: moderate
+    reporter: James Lee
+    description: |
+      Websites directing users to long URLs that caused eliding to occur in the location view could leverage the truncating behavior to potentially trick users into thinking they were on a different webpage
+    bugs:
+      - url: 1951533
