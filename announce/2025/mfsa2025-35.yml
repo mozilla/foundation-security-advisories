@@ -1,0 +1,63 @@
+## mfsa2025-35.yml
+announced: May 13, 2025
+impact: high
+fixed_in:
+- Thunderbird 138.0.1
+title: Security Vulnerabilities fixed in Thunderbird 138.0.1
+advisories:
+  CVE-2025-3875:
+    title: Sender Spoofing via Malformed From Header in Thunderbird
+    impact: high
+    reporter: xh4vm
+    description: |
+      Thunderbird parses addresses in a way that can allow sender
+      spoofing in case the server allows an invalid From address to be
+      used. For example, if the From header contains an (invalid) value
+      "Spoofed Name <spoofed@example.com> <legitimate@example.com>",
+      Thunderbird treats spoofed@example.com as the actual address.
+    bugs:
+      - url: 1950629
+  CVE-2025-3877:
+    title: "Unsolicited File Download, Disk Space Exhaustion, and Credential Leakage via mailbox:/// Links"
+    impact: high
+    reporter: Dario Weißer
+    description: |     
+      A crafted HTML email using mailbox:/// links can trigger automatic,
+      unsolicited downloads of .pdf files to the user's desktop or home
+      directory without prompting, even if auto-saving is disabled. This
+      behavior can be abused to fill the disk with garbage data (e.g. using
+      /dev/urandom on Linux) or to leak Windows credentials via SMB links
+      when the email is viewed in HTML mode. While user interaction is
+      required to download the .pdf file, visual obfuscation can conceal
+      the download trigger. Viewing the email in HTML mode is enough to
+      load external content.
+    bugs:
+      - url: 1958580
+  CVE-2025-3909:
+    title: "JavaScript Execution via Spoofed PDF Attachment and file:/// Link"
+    impact: high
+    reporter: Dario Weißer
+    description: |     
+      Thunderbird's handling of the X-Mozilla-External-Attachment-URL header
+      can be exploited to execute JavaScript in the file:/// context. By crafting a
+      nested email attachment (message/rfc822) and setting its content type to
+      application/pdf, Thunderbird may incorrectly render it as HTML when
+      opened, allowing the embedded JavaScript to run without requiring a file
+      download. This behavior relies on Thunderbird auto-saving the attachment
+      to /tmp and linking to it via the file:/// protocol, potentially enabling
+      JavaScript execution as part of the HTML.
+    bugs:
+      - url: 1958376
+  CVE-2025-3932:
+    title: Tracking Links in Attachments Bypassed Remote Content Blocking
+    impact: low
+    reporter: Dario Weißer
+    description: |
+      It was possible to craft an email that showed a tracking link as an
+      attachment. If the user attempted to open the attachment, Thunderbird
+      automatically accessed the link. The configuration to block remote content
+      did not prevent that. Thunderbird has been fixed to no longer allow access
+      to web pages listed in the X-Mozilla-External-Attachment-URL header of an
+      email.
+    bugs:
+      - url: 1960412
