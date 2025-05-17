@@ -8,7 +8,7 @@ advisories:
   MFSA-RESERVE-2024-1966612:
     title: Out-of-bounds access when resolving Promise objects
     impact: critical
-    reporter: Edouard Bochin (@le_douds) and Tao Yan (@Ga1ois) from Palo Alto Networks working with Trend Micro's Zero Day Initiative
+    reporter: Edouard Bochin and Tao Yan from Palo Alto Networks working with Trend Micro's Zero Day Initiative
     description: |
       An attacker was able to perform an out-of-bounds read or write on a JavaScript `Promise` object.
     bugs:
