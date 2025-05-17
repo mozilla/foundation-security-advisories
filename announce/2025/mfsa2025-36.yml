@@ -16,7 +16,7 @@ advisories:
   CVE-2024-13965:
     title: Out-of-bounds access when optimizing linear sums
     impact: critical
-    reporter: Manfred Paul via Trend Micro's Zero Day Initiative
+    reporter: Manfred Paul working with Trend Micro's Zero Day Initiative
     description: |
       An attacker was able to perform an out-of-bounds read or write on a JavaScript object by confusing array index sizes.
     bugs:
