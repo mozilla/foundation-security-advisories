@@ -5,7 +5,7 @@ fixed_in:
 - Firefox 138.0.4
 title: Security Vulnerabilities fixed in Firefox 138.0.4
 advisories:
-  MFSA-RESERVE-2025-1966612:
+  CVE-2025-4920:
     title: Out-of-bounds access when resolving Promise objects
     impact: critical
     reporter: Edouard Bochin and Tao Yan from Palo Alto Networks working with Trend Micro's Zero Day Initiative
@@ -13,7 +13,7 @@ advisories:
       An attacker was able to perform an out-of-bounds read or write on a JavaScript `Promise` object.
     bugs:
       - url: 1966612
-  MFSA-RESERVE-2025-1966614:
+  CVE-2025-4921:
     title: Out-of-bounds access when optimizing linear sums
     impact: critical
     reporter: Manfred Paul working with Trend Micro's Zero Day Initiative
