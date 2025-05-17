@@ -5,7 +5,7 @@ fixed_in:
 - Firefox ESR 115.23.1
 title: Security Vulnerabilities fixed in Firefox ESR 115.23.1
 advisories:
-  MFSA-RESERVE-2024-1966612:
+  CVE-2024-13964:
     title: Out-of-bounds access when resolving Promise objects
     impact: critical
     reporter: Edouard Bochin and Tao Yan from Palo Alto Networks working with Trend Micro's Zero Day Initiative
@@ -13,7 +13,7 @@ advisories:
       An attacker was able to perform an out-of-bounds read or write on a JavaScript `Promise` object.
     bugs:
       - url: 1966612
-  MFSA-RESERVE-2024-1966614:
+  CVE-2024-13965:
     title: Out-of-bounds access when optimizing linear sums
     impact: critical
     reporter: Manfred Paul via Trend Micro's Zero Day Initiative
