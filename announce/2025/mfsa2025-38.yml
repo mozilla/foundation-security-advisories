@@ -1,0 +1,23 @@
+## mfsa2025-37.yml
+announced: May 18, 2025
+impact: critical
+fixed_in:
+- Firefox ESR 115.23.1
+title: Security Vulnerabilities fixed in Firefox ESR 115.23.1
+advisories:
+  MFSA-RESERVE-2024-1966612:
+    title: Out-of-bounds access when resolving Promise objects
+    impact: critical
+    reporter: Edouard Bochin (@le_douds) and Tao Yan (@Ga1ois) from Palo Alto Networks working with Trend Micro's Zero Day Initiative
+    description: |
+      An attacker was able to perform an out-of-bounds read or write on a JavaScript `Promise` object.
+    bugs:
+      - url: 1966612
+  MFSA-RESERVE-2024-1966614:
+    title: Out-of-bounds access when optimizing linear sums
+    impact: critical
+    reporter: Manfred Paul via Trend Micro's Zero Day Initiative
+    description: |
+      An attacker was able to perform an out-of-bounds read or write on a JavaScript object by confusing array index sizes.
+    bugs:
+      - url: 1966614
