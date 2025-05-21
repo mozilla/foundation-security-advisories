@@ -1,0 +1,15 @@
+## mfsa2025-39.yml
+announced: May 20, 2025
+impact: low
+fixed_in:
+- Firefox for iOS 139
+title: Security Vulnerabilities fixed in Firefox for iOS 139
+advisories:
+  CVE-2025-5020:
+    title: Links using non-HTTP schemes opened from other apps such as Safari could have allowed spoofing of website addresses
+    impact: low
+    reporter: James Lee
+    description: |
+      Opening maliciously-crafted URLs in Firefox from other apps such as Safari could have allowed attackers to spoof website addresses if the URLs utilized non-HTTP schemes used internally by the Firefox iOS client
+    bugs:
+      - url: 1951558
