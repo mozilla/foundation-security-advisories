@@ -1,0 +1,25 @@
+## mfsa2025-41.yml
+announced: May 20, 2025
+impact: critical
+fixed_in:
+- Thunderbird 138.0.2
+title: Security Vulnerabilities fixed in Thunderbird 138.0.2
+description: |
+  *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
+advisories:
+  CVE-2025-4918:
+    title: Out-of-bounds access when resolving Promise objects
+    impact: critical
+    reporter: Edouard Bochin and Tao Yan from Palo Alto Networks working with Trend Micro's Zero Day Initiative
+    description: |
+      An attacker was able to perform an out-of-bounds read or write on a JavaScript `Promise` object.
+    bugs:
+      - url: 1966612
+  CVE-2025-4919:
+    title: Out-of-bounds access when optimizing linear sums
+    impact: critical
+    reporter: Manfred Paul working with Trend Micro's Zero Day Initiative
+    description: |
+      An attacker was able to perform an out-of-bounds read or write on a JavaScript object by confusing array index sizes.
+    bugs:
+      - url: 1966614
