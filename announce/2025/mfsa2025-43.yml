@@ -5,7 +5,7 @@ fixed_in:
 - Firefox ESR 115.24
 title: Security Vulnerabilities fixed in Firefox ESR 115.24
 advisories:
-  MFSA-RESERVE-2025-1962421:
+  CVE-2025-5262:
     title: Double-free in libvpx encoder
     impact: critical
     reporter: Randell Jesup
@@ -14,7 +14,7 @@ advisories:
     bugs:
       - url: 1962421
     feed: false
-  MFSA-RESERVE-2025-1960745:
+  CVE-2025-5263:
     title: Error handling for script execution was incorrectly isolated from web content
     impact: moderate
     reporter: terjanq
@@ -22,7 +22,7 @@ advisories:
       Error handling for script execution was incorrectly isolated from web content, which could have allowed cross-origin leak attacks.
     bugs:
       - url: 1960745
-  MFSA-RESERVE-2025-1950001:
+  CVE-2025-5264:
     title: Potential local code execution in “Copy as cURL” command
     impact: moderate
     reporter: Ameen Basha M K
@@ -30,7 +30,7 @@ advisories:
       Due to insufficient escaping of the newline character in the “Copy as cURL” feature, an attacker could trick a user into using this command, potentially leading to local code execution on the user's system.
     bugs:
       - url: 1950001
-  MFSA-RESERVE-2025-1962301:
+  CVE-2025-5265:
     title: Potential local code execution in “Copy as cURL” command
     impact: moderate
     reporter: Ameen Basha M K
