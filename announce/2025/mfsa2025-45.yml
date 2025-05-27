@@ -1,0 +1,92 @@
+## mfsa2025-45.yml
+announced: May 27, 2025
+impact: critical
+fixed_in:
+- Thunderbird 139
+title: Security Vulnerabilities fixed in Thunderbird 139
+description: |
+  *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
+advisories:
+  CVE-2025-5262:
+    title: Double-free in libvpx encoder
+    impact: critical
+    reporter: Randell Jesup
+    description: |
+      A double-free could have occurred in `vpx_codec_enc_init_multi` after a failed allocation when initializing the encoder for WebRTC. This could have caused memory corruption and a potentially exploitable crash.
+    bugs:
+      - url: 1962421
+    feed: false
+  CVE-2025-5263:
+    title: Error handling for script execution was incorrectly isolated from web content
+    impact: moderate
+    reporter: terjanq
+    description: |
+      Error handling for script execution was incorrectly isolated from web content, which could have allowed cross-origin leak attacks.
+    bugs:
+      - url: 1960745
+  CVE-2025-5264:
+    title: Potential local code execution in “Copy as cURL” command
+    impact: moderate
+    reporter: Ameen Basha M K
+    description: |
+      Due to insufficient escaping of the newline character in the “Copy as cURL” feature, an attacker could trick a user into using this command, potentially leading to local code execution on the user's system.
+    bugs:
+      - url: 1950001
+  CVE-2025-5265:
+    title: Potential local code execution in “Copy as cURL” command
+    impact: moderate
+    reporter: Ameen Basha M K
+    description: |
+      Due to insufficient escaping of the ampersand character in the “Copy as cURL” feature, an attacker could trick a user into using this command, potentially leading to local code execution on the user's system.<br>*This bug only affects Firefox for Windows. Other versions of Firefox are unaffected.*
+    bugs:
+      - url: 1962301
+  CVE-2025-5266:
+    title: Script element events leaked cross-origin resource status
+    impact: moderate
+    reporter: Jakub Szymsza
+    description: |
+      Script elements loading cross-origin resources generated load and error events which leaked information enabling XS-Leaks attacks.
+    bugs:
+      - url: 1965628
+  CVE-2025-5270:
+    title: SNI was sometimes unencrypted
+    impact: low
+    reporter: xiulou
+    description: |
+      In certain cases, SNI could have been sent unencrypted even when encrypted DNS was enabled.
+    bugs:
+      - url: 1910298
+  CVE-2025-5271:
+    title: Devtools' preview ignored CSP headers
+    impact: low
+    reporter: Satoki Tsuji
+    description: |
+      Previewing a response in Devtools ignored CSP headers, which could have allowed content injection attacks.
+    bugs:
+      - url: 1920348
+  CVE-2025-5267:
+    title: Clickjacking vulnerability could have led to leaking saved payment card details
+    impact: low
+    reporter: Ameen Basha M K
+    description: |
+      A clickjacking vulnerability could have been used to trick a user into leaking saved payment card details to a malicious page.
+    bugs:
+      - url: 1954137
+  CVE-2025-5268:
+    title: Memory safety bugs fixed in Firefox 139, Thunderbird 139, Firefox ESR 128.11, and Thunderbird 128.11
+    impact: moderate
+    reporter: the Mozilla Fuzzing Team, Masayuki Nakano
+    description: |
+      Memory safety bugs present in Firefox 138, Thunderbird 138, Firefox ESR 128.10, and Thunderbird 128.10. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1950136, 1958121, 1960499, 1962634
+        desc: Memory safety bugs fixed in Firefox 139, Thunderbird 139, Firefox ESR 128.11, and Thunderbird 128.11
+  CVE-2025-5272:
+    title: Memory safety bugs fixed in Firefox 139 and Thunderbird 139
+    impact: moderate
+    reporter: the Mozilla Fuzzing Team, Andrew Osmond
+    description: |
+      Memory safety bugs present in Firefox 138 and Thunderbird 138. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1726254, 1742738, 1960121
+        desc: Memory safety bugs fixed in Firefox 139 and Thunderbird 139
