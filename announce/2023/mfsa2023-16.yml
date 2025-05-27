@@ -78,7 +78,7 @@ advisories:
       When reading a file, an uninitialized value could have been used as read limit.
     bugs:
       - url: 1826666
-  MFSA-TMP-2023-0002:
+  CVE-2023-32570:
     title: Race condition in dav1d decoding
     impact: moderate
     reporter: Tyson Smith

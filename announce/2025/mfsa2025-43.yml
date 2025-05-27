@@ -5,7 +5,7 @@ fixed_in:
 - Firefox ESR 115.24
 title: Security Vulnerabilities fixed in Firefox ESR 115.24
 advisories:
-  CVE-2025-5262:
+  MFSA-TMP-2025-0001:
     title: Double-free in libvpx encoder
     impact: critical
     reporter: Randell Jesup
