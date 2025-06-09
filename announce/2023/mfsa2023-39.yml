@@ -2,7 +2,7 @@
 announced: August 30, 2023
 impact: moderate
 fixed_in:
-  - Mozilla VPN client for Linux v2.16.1
+  - Mozilla VPN 2.16.1 (Linux)
 title: Security Issues fixed in Mozilla VPN for Linux v2.16.1
 advisories:
   CVE-2023-4104:

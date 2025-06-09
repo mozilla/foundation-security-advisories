@@ -2,9 +2,9 @@
 announced: November 4, 2020
 impact: moderate
 fixed_in:
-- Mozilla VPN Windows 1.2.2
-- Mozilla VPN Android 1.1.0 (1360)
-- Mozilla VPN iOS 1.0.7 (929)
+- Mozilla VPN 1.2.2 (Windows)
+- Mozilla VPN 1.1.0 (1360) (Android)
+- Mozilla VPN 1.0.7 (929) (iOS)
 title: OAuth session fixation vulnerability in Mozilla VPN
 description: |
     *An OAuth session fixation vulnerability existed in the VPN login flow.  This issue was mitigated server-side and this additional fix is aimed at eliminating residual risk for Windows, Android, and iOS clients.*
