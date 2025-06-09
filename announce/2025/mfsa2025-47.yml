@@ -1,0 +1,24 @@
+## mfsa2025-47.yml
+announced: June 10, 2025
+impact: high
+fixed_in:
+- Firefox 139.0.4
+title: Security Vulnerabilities fixed in Firefox 139.0.4
+advisories:
+  CVE-2025-49709:
+    title: Memory corruption in canvas surfaces
+    impact: high
+    reporter: Yannis Juglaret
+    description: |
+      Certain canvas operations could have lead to memory corruption.
+    bugs:
+      - url: 1966083
+  CVE-2025-49710:
+    title: Integer overflow in OrderedHashTable
+    impact: high
+    reporter: Shaheen Fazim
+    description: |
+      An integer overflow was present in <code>OrderedHashTable</code> used by the JavaScript engine
+    bugs:
+      - url: 1970095
+        
