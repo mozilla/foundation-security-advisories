@@ -4,6 +4,8 @@ impact: high
 fixed_in:
 - Thunderbird 128.10.1
 title: Security Vulnerabilities fixed in Thunderbird 128.10.1
+description: |
+  *Updated June 10, 2025 to remove CVE-2025-3877 which was mistakenly marked as fixed. This vulnerability was fixed in Thunderbird 128.11.1/139.0.2 under the identifier CVE-2025-5986.*
 advisories:
   CVE-2025-3875:
     title: Sender Spoofing via Malformed From Header in Thunderbird
@@ -17,22 +19,6 @@ advisories:
       Thunderbird treats spoofed@example.com as the actual address.
     bugs:
       - url: 1950629
-  CVE-2025-3877:
-    title: "Unsolicited File Download, Disk Space Exhaustion, and Credential Leakage via mailbox:/// Links"
-    impact: high
-    reporter: Dario Weißer
-    description: |     
-      A crafted HTML email using mailbox:/// links can trigger automatic,
-      unsolicited downloads of .pdf files to the user's desktop or home
-      directory without prompting, even if auto-saving is disabled. This
-      behavior can be abused to fill the disk with garbage data (e.g. using
-      /dev/urandom on Linux) or to leak Windows credentials via SMB links
-      when the email is viewed in HTML mode. While user interaction is
-      required to download the .pdf file, visual obfuscation can conceal
-      the download trigger. Viewing the email in HTML mode is enough to
-      load external content.
-    bugs:
-      - url: 1958580
   CVE-2025-3909:
     title: "JavaScript Execution via Spoofed PDF Attachment and file:/// Link"
     impact: high
