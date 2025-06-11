@@ -8,7 +8,7 @@ advisories:
   CVE-2025-49709:
     title: Memory corruption in canvas surfaces
     impact: high
-    reporter: Yannis Juglaret
+    reporter: Yannis Juglaret and Steven Michaud
     description: |
       Certain canvas operations could have lead to memory corruption.
     bugs:
