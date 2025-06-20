@@ -1,0 +1,47 @@
+## mfsa2025-53.yml
+announced: June 24, 2025
+impact: high
+fixed_in:
+- Firefox ESR 128.12
+title: Security Vulnerabilities fixed in Firefox ESR 128.12
+advisories:
+  CVE-2025-6424:
+    title: Use-after-free in FontFaceSet
+    impact: high
+    reporter: LJP and HexRabbit (DEVCORE Research Team)
+    description: |
+      A use-after-free in FontFaceSet resulted in a potentially exploitable crash.
+    bugs:
+      - url: 1966423
+  CVE-2025-6425:
+    title: The WebCompat WebExtension shipped with Firefox exposed a persistent UUID
+    impact: moderate
+    reporter: Rob Wu
+    description: |
+      An attacker who enumerated resources from the WebCompat extension could have obtained a persistent UUID that identified the browser, and persisted between containers and normal/private browsing mode, but not profiles.
+    bugs:
+      - url: 1717672
+  CVE-2025-6426:
+    title: No warning when opening executable terminal files on macOS
+    impact: moderate
+    reporter: pwn2car
+    description: |
+      The executable file warning did not warn users before opening files with the <code>terminal</code> extension. <br>*This bug only affects Firefox for macOS. Other versions of Firefox are unaffected.*
+    bugs:
+      - url: 1964385
+  CVE-2025-6429:
+    title: Incorrect parsing of URLs could have allowed embedding of youtube.com
+    impact: moderate
+    reporter: Masato Kinugawa
+    description: |
+      Firefox could have incorrectly parsed a URL and rewritten it to the youtube.com domain when parsing the URL specified in an <code>embed</code> tag.  This could have bypassed website security checks that restricted which domains users were allowed to embed.
+    bugs:
+      - url: 1970658
+  CVE-2025-6430:
+    title: Content-Disposition header ignored when a file is included in an embed or object tag
+    impact: moderate
+    reporter: Daniil Satyaev (Positive Technologies)
+    description: |
+      When a file download is specified via the <code>Content-Disposition</code> header, that directive would be ignored if the file was included via a <code>&lt;embed&gt;</code> or <code>&lt;object&gt;</code> tag, potentially making a website vulnerable to a cross-site scripting attack.
+    bugs:
+      - url: 1971140

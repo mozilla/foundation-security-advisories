@@ -1,0 +1,23 @@
+## mfsa2025-52.yml
+announced: June 24, 2025
+impact: high
+fixed_in:
+- Firefox ESR 115.25
+title: Security Vulnerabilities fixed in Firefox ESR 115.25
+advisories:
+  CVE-2025-6424:
+    title: Use-after-free in FontFaceSet
+    impact: high
+    reporter: LJP and HexRabbit (DEVCORE Research Team)
+    description: |
+      A use-after-free in FontFaceSet resulted in a potentially exploitable crash.
+    bugs:
+      - url: 1966423
+  CVE-2025-6425:
+    title: The WebCompat WebExtension shipped with Firefox exposed a persistent UUID
+    impact: moderate
+    reporter: Rob Wu
+    description: |
+      An attacker who enumerated resources from the WebCompat extension could have obtained a persistent UUID that identified the browser, and persisted between containers and normal/private browsing mode, but not profiles.
+    bugs:
+      - url: 1717672
