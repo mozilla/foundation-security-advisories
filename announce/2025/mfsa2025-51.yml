@@ -63,7 +63,7 @@ advisories:
       - url: 1971140
   CVE-2025-6431:
     title: The prompt in Firefox for Android that asks before opening a link in an external application could be bypassed
-    impact: low
+    impact: moderate
     reporter: Umar Farooq
     description: |
       When a link can be opened in an external application, Firefox for Android will, by default, prompt the user before doing so. An attacker could have bypassed this prompt, potentially exposing the user to security vulnerabilities or privacy leaks in external applications. <br>*This bug only affects Firefox for Android. Other versions of Firefox are unaffected.*
