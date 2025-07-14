@@ -75,6 +75,11 @@ https://bugzilla.mozilla.org/buglist.cgi?x=x
 """.replace("\n", "")
 
 credit_entries = {
+    "68c707460a51a2600859fad775ed719d":"Daniil Satyaev (Positive Technologies)",
+    "aa3c799fcefbb07626afc23425d4bad6":"un3xploitable && GF",
+    "6feb36c04afabcb979c7cb3b496f4c50":"Surya Dev Singh",
+    "6871e40909947341c765e91bd96dd765":"Maruf Bin Murtuza",
+    "c3adc589485c7704cac4990d652c3811":"MasterSplinter",
     "1608055575dcd5e30720b67f791a76b7":"Paul Gerste",
     "a23ac0dcff0ce1a657a69b883d21a172":"Lucas B. Williams",
     "3490e6039ac18c638dc25092b1bcd7a3":"Christian James",
