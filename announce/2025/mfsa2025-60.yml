@@ -1,0 +1,31 @@
+## mfsa2025-60.yml
+announced: July 22, 2025
+impact: moderate
+fixed_in:
+- Firefox for iOS 141
+title: Security Vulnerabilities fixed in Firefox for iOS 141
+advisories:
+  CVE-2025-54143:
+    title: Sandboxed iframes could allow local downloads despite sandbox restrictions
+    impact: moderate
+    reporter: Narendra Bhati
+    description: |
+      Sandboxed iframes on webpages could potentially allow downloads to the device, bypassing the expected sandbox restrictions declared on the parent page
+    bugs:
+      - url: 1912671
+  CVE-2025-54144:
+    title: Internal Firefox open-text URL scheme allowed loading of arbitrary URLs
+    impact: moderate
+    reporter: James Lee
+    description: |
+      The URL scheme used by Firefox to facilitate searching of text queries could incorrectly allow attackers to open arbitrary website URLs or internal pages if a user was tricked into clicking a link
+    bugs:
+      - url: 1946062
+  CVE-2025-54145:
+    title: Scanning a malicious URL utilizing Firefox's open-text scheme with the QR code scanner could load arbitrary websites
+    impact: moderate
+    reporter: James Lee
+    description: |
+      The QR scanner could allow arbitrary websites to be opened if a user was tricked into scanning a malicious link that leveraged Firefox's open-text URL scheme
+    bugs:
+      - url: 1946122
