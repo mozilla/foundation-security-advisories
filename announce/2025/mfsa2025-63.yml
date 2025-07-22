@@ -1,0 +1,124 @@
+## mfsa2025-63.yml
+announced: July 22, 2025
+impact: high
+fixed_in:
+- Thunderbird 140.1
+title: Security Vulnerabilities fixed in Thunderbird 140.1
+description: |
+  *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
+advisories:
+  CVE-2025-8027:
+    title: JavaScript engine only wrote partial return value to stack
+    impact: high
+    reporter: Nan Wang
+    description: |
+      On 64-bit platforms IonMonkey-JIT only wrote 32 bits of the 64-bit return value space on the stack. Baseline-JIT, however, read the entire 64 bits.
+    bugs:
+      - url: 1968423
+  CVE-2025-8028:
+    title: Large branch table could lead to truncated instruction
+    impact: high
+    reporter: Gary Kwong
+    description: |
+      On arm64, a WASM <code>br_table</code> instruction with a lot of entries could lead to the label being too far from the instruction causing truncation and incorrect computation of the branch address.
+    bugs:
+      - url: 1971581
+  CVE-2025-8029:
+    title: 'javascript: URLs executed on object and embed tags'
+    impact: moderate
+    reporter: Mirko Brodesser
+    description: |
+      Thunderbird executed <code>javascript:</code> URLs when used in <code>object</code> and <code>embed</code> tags.
+    bugs:
+      - url: 1928021
+  CVE-2025-8036:
+    title: DNS rebinding circumvents CORS
+    impact: moderate
+    reporter: Viktor Bocz
+    description: |
+      Thunderbird cached CORS preflight responses across IP address changes. This allowed circumventing CORS with DNS rebinding.
+    bugs:
+      - url: 1960834
+  CVE-2025-8037:
+    title: Nameless cookies shadow secure cookies
+    impact: moderate
+    reporter: Uku Sõrmus
+    description: |
+      Setting a nameless cookie with an equals sign in the value shadowed other cookies. Even if the nameless cookie was set over HTTP and the shadowed cookie included the <code>Secure</code> attribute.
+    bugs:
+      - url: 1964767
+  CVE-2025-8030:
+    title: Potential user-assisted code execution in “Copy as cURL” command
+    impact: moderate
+    reporter: Ameen Basha M K
+    description: |
+      Insufficient escaping in the “Copy as cURL” feature could potentially be used to trick a user into executing unexpected code.
+    bugs:
+      - url: 1968414
+  CVE-2025-8031:
+    title: Incorrect URL stripping in CSP reports
+    impact: moderate
+    reporter: Tom Schuster
+    description: |
+      The <code>username:password</code> part was not correctly stripped from URLs in CSP reports potentially leaking HTTP Basic Authentication credentials.
+    bugs:
+      - url: 1971719
+  CVE-2025-8032:
+    title: XSLT documents could bypass CSP
+    impact: moderate
+    reporter: Joe Turki
+    description: |
+      XSLT document loading did not correctly propagate the source document which bypassed its CSP.
+    bugs:
+      - url: 1974407
+  CVE-2025-8038:
+    title: CSP frame-src was not correctly enforced for paths
+    impact: low
+    reporter: Laurin Weger
+    description: |
+      Thunderbird ignored paths when checking the validity of navigations in a frame.
+    bugs:
+      - url: 1808979
+  CVE-2025-8039:
+    title: Search terms persisted in URL bar
+    impact: low
+    reporter: Sören Hentzschel
+    description: |
+      In some cases search terms persisted in the URL bar even after navigating away from the search page.
+    bugs:
+      - url: 1970997
+  CVE-2025-8033:
+    title: Incorrect JavaScript state machine for generators
+    impact: low
+    reporter: Shaheen Fazim
+    description: |
+      The JavaScript engine did not handle closed generators correctly and it was possible to resume them leading to a nullptr deref.
+    bugs:
+      - url: 1973990
+  CVE-2025-8034:
+    title: Memory safety bugs fixed in Firefox ESR 115.26, Firefox ESR 128.13, Thunderbird ESR 128.13, Firefox ESR 140.1, Thunderbird ESR 140.1, Firefox 141 and Thunderbird 141
+    impact: high
+    reporter: the Mozilla Fuzzing Team
+    description: |
+      Memory safety bugs present in Firefox ESR 115.25, Firefox ESR 128.12, Thunderbird ESR 128.12, Firefox ESR 140.0, Thunderbird ESR 140.0, Firefox 140 and Thunderbird 140. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1970422, 1970422, 1970422, 1970422
+        desc: Memory safety bugs fixed in Firefox ESR 115.26, Firefox ESR 128.13, Thunderbird ESR 128.13, Firefox ESR 140.1, Thunderbird ESR 140.1, Firefox 141 and Thunderbird 141
+  CVE-2025-8040:
+    title: Memory safety bugs fixed in Firefox ESR 140.1, Thunderbird ESR 140.1, Firefox 141 and Thunderbird 141
+    impact: high
+    reporter: Andrew McCreight, Ashley Zebrowski
+    description: |
+      Memory safety bugs present in Firefox ESR 140.0, Thunderbird ESR 140.0, Firefox 140 and Thunderbird 140. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1975058, 1975058, 1975998, 1975998
+        desc: Memory safety bugs fixed in Firefox ESR 140.1, Thunderbird ESR 140.1, Firefox 141 and Thunderbird 141
+  CVE-2025-8035:
+    title: Memory safety bugs fixed in Firefox ESR 128.13, Thunderbird ESR 128.13, Firefox ESR 140.1, Thunderbird ESR 140.1, Firefox 141 and Thunderbird 141
+    impact: high
+    reporter: the Mozilla Fuzzing Team
+    description: |
+      Memory safety bugs present in Firefox ESR 128.12, Thunderbird ESR 128.12, Firefox ESR 140.0, Thunderbird ESR 140.0, Firefox 140 and Thunderbird 140. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1975961, 1975961, 1975961
+        desc: Memory safety bugs fixed in Firefox ESR 128.13, Thunderbird ESR 128.13, Firefox ESR 140.1, Thunderbird ESR 140.1, Firefox 141 and Thunderbird 141
