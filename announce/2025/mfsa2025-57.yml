@@ -1,0 +1,40 @@
+## mfsa2025-57.yml
+announced: July 22, 2025
+impact: high
+fixed_in:
+- Firefox ESR 115.26
+title: Security Vulnerabilities fixed in Firefox ESR 115.26
+advisories:
+  CVE-2025-8027:
+    title: JavaScript engine only wrote partial return value to stack
+    impact: high
+    reporter: Nan Wang
+    description: |
+      On 64-bit platforms IonMonkey-JIT only wrote 32 bits of the 64-bit return value space on the stack. Baseline-JIT, however, read the entire 64 bits.
+    bugs:
+      - url: 1968423
+  CVE-2025-8028:
+    title: Large branch table could lead to truncated instruction
+    impact: high
+    reporter: Gary Kwong
+    description: |
+      On arm64, a WASM <code>br_table</code> instruction with a lot of entries could lead to the label being too far from the instruction causing truncation and incorrect computation of the branch address.
+    bugs:
+      - url: 1971581
+  CVE-2025-8033:
+    title: Incorrect JavaScript state machine for generators
+    impact: low
+    reporter: Shaheen Fazim
+    description: |
+      The JavaScript engine did not handle closed generators correctly and it was possible to resume them leading to a nullptr deref.
+    bugs:
+      - url: 1973990
+  CVE-2025-8034:
+    title: Memory safety bugs fixed in Firefox ESR 115.26, Firefox ESR 128.13, Thunderbird ESR 128.13, Firefox ESR 140.1, Thunderbird ESR 140.1, Firefox 141 and Thunderbird 141
+    impact: high
+    reporter: the Mozilla Fuzzing Team
+    description: |
+      Memory safety bugs present in Firefox ESR 115.25, Firefox ESR 128.12, Thunderbird ESR 128.12, Firefox ESR 140.0, Thunderbird ESR 140.0, Firefox 140 and Thunderbird 140. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1970422, 1970422, 1970422, 1970422
+        desc: Memory safety bugs fixed in Firefox ESR 115.26, Firefox ESR 128.13, Thunderbird ESR 128.13, Firefox ESR 140.1, Thunderbird ESR 140.1, Firefox 141 and Thunderbird 141
