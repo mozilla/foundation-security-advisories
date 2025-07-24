@@ -121,24 +121,26 @@ def try_update_published_cve(local_cve: CVEAdvisory, local_date: int, remote_dat
         for local_instance in local_cve.instances
         for local_reference in local_instance.references
     ]
-    # If there are references which we did not add automatically, we probably don't
-    # want to remove them, so we move them to our to-be-published object.
-    remote_extra_references = list(
-        filter(
-            lambda reference: not reference["url"] in local_reference_urls
-            and all(
-                not reference["url"].startswith(prefix)
-                for prefix in [
-                    "https://bugzilla.mozilla.org",
-                    "https://www.bugzilla.mozilla.org",
-                    "https://mozilla.org",
-                    "https://www.mozilla.org",
-                ]
-            ),
-            remote_cve_json["containers"]["cna"]["references"],
+    if "references" in remote_cve_json["containers"]["cna"]:
+        # If there are references which we did not add automatically, we probably don't
+        # want to remove them, so we move them to our to-be-published object.
+        remote_extra_references = list(
+            filter(
+                lambda reference: not reference["url"] in local_reference_urls
+                and all(
+                    not reference["url"].startswith(prefix)
+                    for prefix in [
+                        "https://bugzilla.mozilla.org",
+                        "https://www.bugzilla.mozilla.org",
+                        "https://mozilla.org",
+                        "https://www.mozilla.org",
+                    ]
+                ),
+                remote_cve_json["containers"]["cna"]["references"],
+            )
         )
-    )
-    local_cve_json["containers"]["cna"]["references"].extend(remote_extra_references)
+        local_cve_json["containers"]["cna"]["references"].extend(
+            remote_extra_references)
     # Sort the references to make sure we detect the diff correctly.
     remote_cve_json["containers"]["cna"]["references"].sort(
         key=lambda reference: reference["url"]
