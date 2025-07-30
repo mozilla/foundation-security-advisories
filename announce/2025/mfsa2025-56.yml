@@ -4,6 +4,8 @@ impact: high
 fixed_in:
 - Firefox 141
 title: Security Vulnerabilities fixed in Firefox 141
+description: |
+  *Updated July 30, 2025 to add CVE-2025-8364.*
 advisories:
   CVE-2025-8027:
     title: JavaScript engine only wrote partial return value to stack
@@ -117,6 +119,15 @@ advisories:
       The JavaScript engine did not handle closed generators correctly and it was possible to resume them leading to a nullptr deref.
     bugs:
       - url: 1973990
+  CVE-2025-8364: Address bar spoofing using an blob URI on Firefox for Android
+    title: Bob
+    impact: low
+    reporter: Rifa'i Rejal Maynando and Ameen Basha M K
+    description: |
+      A crafted URL using a blob: URI could have hidden the true origin of the page, resulting in a potential spoofing attack.<br>*Note: This issue only affected Android operating systems. Other operating systems are unaffected.*
+    bugs:
+      - url: 1909609
+      - url: 1969937
   CVE-2025-8044:
     title: Memory safety bugs fixed in Firefox 141 and Thunderbird 141
     impact: high
