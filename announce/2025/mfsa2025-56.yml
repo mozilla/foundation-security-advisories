@@ -119,8 +119,8 @@ advisories:
       The JavaScript engine did not handle closed generators correctly and it was possible to resume them leading to a nullptr deref.
     bugs:
       - url: 1973990
-  CVE-2025-8364: Address bar spoofing using an blob URI on Firefox for Android
-    title: Bob
+  CVE-2025-8364:
+    title: Address bar spoofing using an blob URI on Firefox for Android
     impact: low
     reporter: Rifa'i Rejal Maynando and Ameen Basha M K
     description: |
