@@ -39,6 +39,17 @@ def print_cve_step(cve_id: str):
         announced_cve_steps.append(cve_id)
 
 
+def is_dry_run():
+    """
+    Check if we are running in a dry run mode, which is indicated by the
+    environment variable `DRY_RUN` being set to `1`.
+    """
+    if os.getenv("DRY_RUN") == "1":
+        print("(Skipped because of DRY_RUN=1)")
+        return True
+    return False
+
+
 def publish_cve(cve_id: str, cve_json: dict):
     """
     CVE Services: Publish the content for a already existing and given
@@ -60,6 +71,8 @@ def publish_cve(cve_id: str, cve_json: dict):
         print(f"Skipping {cve_id}")
         return False
     print(f"Publishing {cve_id}")
+    if is_dry_run():
+        return
     try:
         cve_api.publish(cve_id, cve_json)
         # The timestamp on the API needs to be younger than the commit timestamp so that
@@ -82,12 +95,16 @@ def touch_cve_id(cve_id: str):
     print(
         f"Updating timestamp on {cve_id} to current date {pretty_date(datetime.now(tz=timezone.utc).timestamp())}"
     )
+    if is_dry_run():
+        return
     return cve_api._put(f"cve-id/{cve_id}").json()
 
 
 def update_published_cve(cve_id: str, cve_json: dict):
     """CVE Servies: Update the content of the given CVE-ID with the given data in CVE JSON 5.1 format."""
     print(f"Updating {cve_id}")
+    if is_dry_run():
+        return
     try:
         cve_api.update_published(cve_id, cve_json)
         # We need to update the timestamp on the CVE-ID itself, because that is what we use
@@ -195,6 +212,8 @@ def try_update_published_cve(local_cve: CVEAdvisory, local_date: int, remote_dat
 def reserve_cve_id(year: str):
     """CVE Servies: Reserve a new CVE-ID for a given year and return that new id."""
     print(f"Reserving CVE-ID for year {year}")
+    if is_dry_run():
+        raise Exception("Unable to reserve CVE-ID in dry run mode")
     try:
         response = cve_api.reserve(1, False, year)
     except HTTPError as e:
@@ -393,6 +412,8 @@ def try_set_bugzilla_alias(bug: str, cve_id: int):
             f"Should '{cve_id}' be set as an alias for bug {bug_number} on bugzilla?"
         ):
             print(f"Skipping alias assignment for {cve_id} (bug {bug})")
+            return
+        if is_dry_run():
             return
         # Try to update the alias for the given bug number. If this fails our try block will catch it.
         requests.put(
