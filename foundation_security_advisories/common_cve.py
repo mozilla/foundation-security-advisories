@@ -181,7 +181,8 @@ def try_update_published_cve(local_cve: CVEAdvisory, local_date: int, remote_dat
             f"\nThis CVE lies before the cutoff year 2023. Should the content still be updated for {local_cve.id}?",
             default=False,
         ):
-            print(f"Skipping {local_cve.id} because it lies before the cutoff year")
+            print(
+                f"Skipping {local_cve.id} because it lies before the cutoff year")
             touch_cve_id(local_cve.id)
             return False
     else:
@@ -222,7 +223,8 @@ def get_owned_cve_ids():
         cve_id = cve_advisory["cve_id"]
         owned_ids.append(cve_id)
         if cve_advisory["state"] == "PUBLISHED" or cve_advisory["state"] == "REJECTED":
-            published_dates[cve_id] = parse_iso_date(cve_advisory["time"]["modified"])
+            published_dates[cve_id] = parse_iso_date(
+                cve_advisory["time"]["modified"])
         elif cve_advisory["state"] == "RESERVED":
             continue
         else:
@@ -334,7 +336,8 @@ def get_local_cve_advisories():
                 cve_data = file_data["advisories"][cve_id]
                 if cve_id not in local_advisories:
                     year = int(cve_id.split("-")[-2])
-                    local_advisories[cve_id] = CVEAdvisory(id=cve_id, year=year)
+                    local_advisories[cve_id] = CVEAdvisory(
+                        id=cve_id, year=year)
                 for fixed_in in file_data["fixed_in"]:
                     product, version_fixed = fixed_in.rsplit(None, 1)
                     references = [parse_bug(bug) for bug in cve_data["bugs"]]
