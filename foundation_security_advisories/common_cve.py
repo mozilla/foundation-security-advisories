@@ -220,9 +220,12 @@ def get_owned_cve_ids():
     owned_ids = []
     print("-> Fetching already owned CVE-IDs")
     for cve_advisory in cve_api.list_cves():
+        if cve_advisory["state"] == "REJECTED":
+            # If we have rejected a CVE, we don't want to publish it again.
+            continue
         cve_id = cve_advisory["cve_id"]
         owned_ids.append(cve_id)
-        if cve_advisory["state"] == "PUBLISHED" or cve_advisory["state"] == "REJECTED":
+        if cve_advisory["state"] == "PUBLISHED":
             published_dates[cve_id] = parse_iso_date(
                 cve_advisory["time"]["modified"])
         elif cve_advisory["state"] == "RESERVED":
