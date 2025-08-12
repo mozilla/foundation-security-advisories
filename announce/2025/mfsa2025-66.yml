@@ -1,11 +1,9 @@
-## mfsa2025-FIXME.yml
-announced: FIXME <Month> <Day of Month>, <Year>
+## mfsa2025-66.yml
+announced: August 19, 2025
 impact: high
 fixed_in:
 - Firefox ESR 128.14
 title: Security Vulnerabilities fixed in Firefox ESR 128.14
-description: |
-  Do you want a description?
 advisories:
   MFSA-RESERVE-2025-1979527:
     title: 'Sandbox escape due to invalid pointer in the Core - Audio/Video: GMP component of Firefox'
