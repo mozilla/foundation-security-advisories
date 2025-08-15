@@ -49,7 +49,7 @@ yaml_schema = Schema({
             'title': Or(str, type(None)),
             'impact': str,
             'reporter': Or(str, type(None)),
-            'description': str,
+            Optional('description'): str,
             'bugs': [{'url': Or(str, int),
                       Optional('desc'): Or(str, type(None), int)}],
             Optional('feed'): bool,
@@ -133,9 +133,10 @@ def check_file(file_name):
                     return "Advisory title should not contain any backticks"
                 if "<code>" in advisory["title"]:
                     return f"Advisory title should not contain any <code> tags"
-            match = UNWANTED_HTML_TAG_RE.match(advisory["description"])
-            if match:
-                return f"Advisory description should only contain basic html tags used for formatting, found {match.groups()[0]}. Consider escaping < with &lt;"
+            if "description" in advisory:
+                match = UNWANTED_HTML_TAG_RE.match(advisory["description"])
+                if match:
+                    return f"Advisory description should only contain basic html tags used for formatting, found {match.groups()[0]}. Consider escaping < with &lt;"
 
     if file_name.endswith('.yml'):
         with open(file_name, "r") as f:
