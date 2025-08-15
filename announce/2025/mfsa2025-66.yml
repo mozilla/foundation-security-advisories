@@ -6,19 +6,21 @@ fixed_in:
 title: Security Vulnerabilities fixed in Firefox ESR 128.14
 advisories:
   MFSA-RESERVE-2025-1979527:
-    title: 'Sandbox escape due to invalid pointer in the Core - Audio/Video: GMP component of Firefox'
+    title: 'Sandbox escape due to invalid pointer in the Audio/Video: GMP component'
     impact: high
     reporter: Oskar
+    description: |
+      An attacker was able to perform memory corruption in the GMP process which processes encrypted media. This process is also heavily sandboxed, but represents slightly different privileges from the content process.
     bugs:
       - url: 1979527
   MFSA-RESERVE-2025-1979782:
-    title: 'Same-origin policy bypass in the Core - Graphics: Canvas2D component of Firefox'
+    title: 'Same-origin policy bypass in the Graphics: Canvas2D component'
     impact: high
     reporter: Tom Van Goethem
     bugs:
       - url: 1979782
   MFSA-RESERVE-2025-1977130:
-    title: Uninitialized memory in the Core - JavaScript Engine component of Firefox
+    title: Uninitialized memory in the JavaScript Engine component
     impact: moderate
     reporter: Irvan Kurniawan
     bugs:
