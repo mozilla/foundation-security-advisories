@@ -21,12 +21,6 @@ advisories:
     reporter: Tom Van Goethem
     bugs:
       - url: 1979782
-  MFSA-RESERVE-2025-1933572:
-    title: 'Sandbox escape due to invalid pointer in the Graphics: Canvas2D component'
-    impact: high
-    reporter: Akmat Suleimanov
-    bugs:
-      - url: 1933572
   MFSA-RESERVE-2025-1977130:
     title: Uninitialized memory in the JavaScript Engine component
     impact: moderate
