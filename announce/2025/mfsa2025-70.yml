@@ -2,7 +2,7 @@
 announced: August 19, 2025
 impact: high
 fixed_in:
-- Firefox 142
+- Thunderbird 142
 title: Security Vulnerabilities fixed in Thunderbird 142
 description: |
   *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
