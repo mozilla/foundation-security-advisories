@@ -1,0 +1,62 @@
+## mfsa2025-70.yml
+announced: August 19, 2025
+impact: high
+fixed_in:
+- Firefox 142
+title: Security Vulnerabilities fixed in Thunderbird 142
+description: |
+  *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
+advisories:
+  MFSA-RESERVE-2025-1979527:
+    title: 'Sandbox escape due to invalid pointer in the Audio/Video: GMP component'
+    impact: high
+    reporter: Oskar
+    description: |
+      An attacker was able to perform memory corruption in the GMP process which processes encrypted media. This process is also heavily sandboxed, but represents slightly different privileges from the content process.
+    bugs:
+      - url: 1979527
+  MFSA-RESERVE-2025-1979782:
+    title: 'Same-origin policy bypass in the Graphics: Canvas2D component'
+    impact: high
+    reporter: Tom Van Goethem
+    bugs:
+      - url: 1979782
+  MFSA-RESERVE-2025-1977130:
+    title: Uninitialized memory in the JavaScript Engine component
+    impact: moderate
+    reporter: Irvan Kurniawan
+    bugs:
+      - url: 1977130
+  MFSA-RESERVE-2025-1975837:
+    title: 'Denial-of-service due to out-of-memory in the Graphics: WebRender component'
+    impact: low
+    reporter: Irvan Kurniawan
+    bugs:
+      - url: 1975837
+  MFSA-RESERVE-2025-0:
+    title: Memory safety bugs fixed in Firefox 142 and Thunderbird 142
+    impact: high
+    reporter: Andy Leiserson, Maurice Dauer, Sebastian Hengst and the Mozilla Fuzzing Team
+    description: |
+      Memory safety bugs present in Firefox 141 and Thunderbird 141. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1825621, 1970079, 1976736, 1979072
+        desc: Memory safety bugs fixed in Firefox 142 and Thunderbird 142
+  MFSA-RESERVE-2025-1:
+    title: Memory safety bugs fixed in Firefox ESR 140.2, Thunderbird ESR 140.2, Firefox 142 and Thunderbird 142
+    impact: high
+    reporter: Paul Bone, Ryan VanderMeulen and the Mozilla Fuzzing Team
+    description: |
+      Memory safety bugs present in Firefox ESR 140.1, Thunderbird ESR 140.1, Firefox 141 and Thunderbird 141. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1929482, 1976376, 1979163, 1979955
+        desc: Memory safety bugs fixed in Firefox ESR 140.2, Thunderbird ESR 140.2, Firefox 142 and Thunderbird 142
+  MFSA-RESERVE-2025-2:
+    title: Memory safety bugs fixed in Firefox ESR 115.27, Firefox ESR 128.14, Thunderbird ESR 128.14, Firefox ESR 140.2, Thunderbird ESR 140.2, Firefox 142 and Thunderbird 142
+    impact: high
+    reporter: The Mozilla Fuzzing Team
+    description: |
+      Memory safety bugs present in Firefox ESR 115.26, Firefox ESR 128.13, Thunderbird ESR 128.13, Firefox ESR 140.1, Thunderbird ESR 140.1, Firefox 141 and Thunderbird 141. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1970154, 1976782, 1977166
+        desc: Memory safety bugs fixed in Firefox ESR 115.27, Firefox ESR 128.14, Thunderbird ESR 128.14, Firefox ESR 140.2, Thunderbird ESR 140.2, Firefox 142 and Thunderbird 142
