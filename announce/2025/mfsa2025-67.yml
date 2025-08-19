@@ -5,7 +5,7 @@ fixed_in:
 - Firefox ESR 140.2
 title: Security Vulnerabilities fixed in Firefox ESR 140.2
 advisories:
-  MFSA-RESERVE-2025-1979527:
+  CVE-2025-9179:
     title: 'Sandbox escape due to invalid pointer in the Audio/Video: GMP component'
     impact: high
     reporter: Oskar
@@ -13,31 +13,31 @@ advisories:
       An attacker was able to perform memory corruption in the GMP process which processes encrypted media. This process is also heavily sandboxed, but represents slightly different privileges from the content process.
     bugs:
       - url: 1979527
-  MFSA-RESERVE-2025-1979782:
+  CVE-2025-9180:
     title: 'Same-origin policy bypass in the Graphics: Canvas2D component'
     impact: high
     reporter: Tom Van Goethem
     bugs:
       - url: 1979782
-  MFSA-RESERVE-2025-1977130:
+  CVE-2025-9181:
     title: Uninitialized memory in the JavaScript Engine component
     impact: moderate
     reporter: Irvan Kurniawan
     bugs:
       - url: 1977130
-  MFSA-RESERVE-2025-1975837:
+  CVE-2025-9182:
     title: 'Denial-of-service due to out-of-memory in the Graphics: WebRender component'
     impact: low
     reporter: Irvan Kurniawan
     bugs:
       - url: 1975837
-  MFSA-RESERVE-2025-1976102:
+  CVE-2025-9183:
     title: Spoofing issue in the Address Bar component
     impact: low
     reporter: Renwa
     bugs:
       - url: 1976102
-  MFSA-RESERVE-2025-1:
+  CVE-2025-9184:
     title: Memory safety bugs fixed in Firefox ESR 140.2, Thunderbird ESR 140.2, Firefox 142 and Thunderbird 142
     impact: high
     reporter: Paul Bone, Ryan VanderMeulen and the Mozilla Fuzzing Team
@@ -46,7 +46,7 @@ advisories:
     bugs:
       - url: 1929482, 1976376, 1979163, 1979955
         desc: Memory safety bugs fixed in Firefox ESR 140.2, Thunderbird ESR 140.2, Firefox 142 and Thunderbird 142
-  MFSA-RESERVE-2025-2:
+  CVE-2025-9185:
     title: Memory safety bugs fixed in Firefox ESR 115.27, Firefox ESR 128.14, Thunderbird ESR 128.14, Firefox ESR 140.2, Thunderbird ESR 140.2, Firefox 142 and Thunderbird 142
     impact: high
     reporter: The Mozilla Fuzzing Team
