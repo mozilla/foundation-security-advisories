@@ -1,0 +1,32 @@
+## mfsa2025-69.yml
+announced: August 19, 2025
+impact: high
+fixed_in:
+- Focus for iOS 142
+title: Security Vulnerabilities fixed in Focus for iOS 142
+advisories:
+  CVE-2025-55032:
+    title: Focus incorrectly ignores Content-Disposition headers for some MIME types
+    impact: high
+    reporter: Renwa
+    description: |
+      Focus for iOS would not respect a Content-Disposition header of type Attachment and would incorrectly display the content inline, potentially allowing for XSS attacks
+    bugs:
+      - url: 1976296
+  CVE-2025-55033:
+    title: Drag and drop gestures in Focus for iOS could allow JavaScript links to be executed incorrectly
+    impact: moderate
+    reporter: Muneaki Nishimura
+    description: |
+      Dragging JavaScript links to the URL bar in Focus for iOS could be utilized to run malicious scripts, potentially resulting in XSS attacks
+    bugs:
+      - url: 1913825
+  CVE-2025-55031:
+    title: Passkey phishing within Bluetooth range
+    impact: moderate
+    reporter: Hafiizh
+    description: |
+      Malicious pages could use Focus for iOS to pass FIDO: links to the OS and trigger the hybrid passkey transport. An attacker within Bluetooth range could have used this to trick the user into using their passkey to log the attacker's computer into the target account.
+    bugs:
+      - url: 1979804
+      - url: 1979499

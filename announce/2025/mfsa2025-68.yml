@@ -1,0 +1,40 @@
+## mfsa2025-68.yml
+announced: August 19, 2025
+impact: high
+fixed_in:
+- Firefox for iOS 142
+title: Security Vulnerabilities fixed in Firefox for iOS 142
+advisories:
+  CVE-2025-55030:
+    title: Content-Disposition headers incorrectly ignored for some MIME types
+    impact: high
+    reporter: Renwa
+    description: |
+      Firefox for iOS would not respect a Content-Disposition header of type Attachment and would incorrectly display the content inline rather than downloading, potentially allowing for XSS attacks
+    bugs:
+      - url: 1976304
+  CVE-2025-55028:
+    title: JavaScript alerts could impede UI interaction or allow denial of service attacks
+    impact: moderate
+    reporter: Antoine Morin
+    description: |
+      Malicious scripts utilizing repetitive JavaScript alerts could prevent client user interaction in some scenarios and allow for denial of service attacks
+    bugs:
+      - url: 1850240
+  CVE-2025-55031:
+    title: Passkey phishing within Bluetooth range
+    impact: moderate
+    reporter: Hafiizh
+    description: |
+      Malicious pages could use Firefox for iOS to pass FIDO: links to the OS and trigger the hybrid passkey transport. An attacker within Bluetooth range could have used this to trick the user into using their passkey to log the attacker's computer into the target account.
+    bugs:
+      - url: 1979499
+      - url: 1979804
+  CVE-2025-55029:
+    title: Malicious scripts could spam popups for denial of service attacks
+    impact: low
+    reporter: Bharat
+    description: |
+      Malicious scripts could bypass the popup blocker to spam new tabs, potentially resulting in denial of service attacks
+    bugs:
+      - url: 1973577
