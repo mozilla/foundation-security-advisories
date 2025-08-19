@@ -2,7 +2,7 @@
 announced: August 19, 2025
 impact: high
 fixed_in:
-- Thunderbird ESR 128.14
+- Thunderbird 128.14
 title: Security Vulnerabilities fixed in Thunderbird 128.14
 description: |
   *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
@@ -19,12 +19,16 @@ advisories:
     title: 'Same-origin policy bypass in the Graphics: Canvas2D component'
     impact: high
     reporter: Tom Van Goethem
+    description: |
+      'Same-origin policy bypass in the Graphics: Canvas2D component.'
     bugs:
       - url: 1979782
   CVE-2025-9181:
     title: Uninitialized memory in the JavaScript Engine component
     impact: moderate
     reporter: Irvan Kurniawan
+    description: |
+      Uninitialized memory in the JavaScript Engine component.
     bugs:
       - url: 1977130
   CVE-2025-9185:
