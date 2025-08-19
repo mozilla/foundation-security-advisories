@@ -141,10 +141,10 @@ def try_update_published_cve(local_cve: CVEAdvisory, local_date: int, remote_dat
         )
         local_cve_json["containers"]["cna"]["references"].extend(
             remote_extra_references)
-    # Sort the references to make sure we detect the diff correctly.
-    remote_cve_json["containers"]["cna"]["references"].sort(
-        key=lambda reference: reference["url"]
-    )
+        # Sort the references to make sure we detect the diff correctly.
+        remote_cve_json["containers"]["cna"]["references"].sort(
+            key=lambda reference: reference["url"]
+        )
     local_cve_json["containers"]["cna"]["references"].sort(
         key=lambda reference: reference["url"]
     )
