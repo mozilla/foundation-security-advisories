@@ -55,14 +55,6 @@ advisories:
       Insufficient escaping in the “Copy as cURL” feature could potentially be used to trick a user into executing unexpected code.
     bugs:
       - url: 1968414
-  CVE-2025-8043:
-    title: Incorrect URL truncation
-    impact: moderate
-    reporter: alayersattackers
-    description: |
-      Focus incorrectly truncated URLs towards the beginning instead of around the origin.
-    bugs:
-      - url: 1970209
   CVE-2025-8031:
     title: Incorrect URL stripping in CSP reports
     impact: moderate
