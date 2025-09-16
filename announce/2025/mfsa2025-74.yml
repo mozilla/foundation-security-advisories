@@ -1,0 +1,14 @@
+## mfsa2025-74.yml
+announced: September 16, 2025
+impact: moderate
+fixed_in:
+- Firefox ESR 115.28
+title: Security Vulnerabilities fixed in Firefox ESR 115.28
+advisories:
+  CVE-2025-10533:
+    title: Integer overflow in the SVG component
+    impact: moderate
+    reporter: Andrew Creskey
+    bugs:
+      - url: 1980788
+

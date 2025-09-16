@@ -363,10 +363,11 @@ def get_local_cve_advisories():
                 for fixed_in in file_data["fixed_in"]:
                     product, version_fixed = fixed_in.rsplit(None, 1)
                     references = [parse_bug(bug) for bug in cve_data["bugs"]]
+                    description = cve_data.get("description", "").strip()
                     cve_instance = CVEAdvisoryInstance(
                         parent=local_advisories[cve_id],
                         title=cve_data["title"],
-                        description=cve_data["description"].strip(),
+                        description=description,
                         reporter=cve_data["reporter"],
                         references=references,
                         mfsa_id=file_data["mfsa_id"],
