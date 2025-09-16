@@ -1,0 +1,55 @@
+## mfsa2025-78.yml
+announced: September 16, 2025
+impact: high
+fixed_in:
+- Thunderbird 140.3
+title: Security Vulnerabilities fixed in Thunderbird 140.3
+description: |
+  *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
+advisories:
+  CVE-2025-10527:
+    title: 'Sandbox escape due to use-after-free in the Graphics: Canvas2D component'
+    impact: high
+    reporter: Oskar L
+    bugs:
+      - url: 1984825
+  CVE-2025-10528:
+    title: 'Sandbox escape due to undefined behavior, invalid pointer in the Graphics: Canvas2D component'
+    impact: high
+    reporter: Oskar L
+    bugs:
+      - url: 1986185
+  CVE-2025-10529:
+    title: Same-origin policy bypass in the Layout component
+    impact: moderate
+    reporter: Daniel Holbert
+    bugs:
+      - url: 1970490
+  CVE-2025-10532:
+    title: 'Incorrect boundary conditions in the JavaScript: GC component'
+    impact: moderate
+    reporter: Gary Kwong
+    bugs:
+      - url: 1979502
+  CVE-2025-10533:
+    title: Integer overflow in the SVG component
+    impact: moderate
+    reporter: Andrew Creskey
+    bugs:
+      - url: 1980788
+  CVE-2025-10536:
+    title: 'Information disclosure in the Networking: Cache component'
+    impact: low
+    reporter: Ibuki Sato
+    bugs:
+      - url: 1981502
+  CVE-2025-10537:
+    title: Memory safety bugs fixed in Firefox ESR 140.3, Thunderbird ESR 140.3, Firefox 143 and Thunderbird 143
+    impact: high
+    reporter: Andrew McCreight and the Mozilla Fuzzing Team
+    description: |
+      Memory safety bugs present in Firefox ESR 140.2, Thunderbird ESR 140.2, Firefox 142 and Thunderbird 142. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1938220, 1980730, 1981280, 1981283, 1984505, 1985067
+        desc: Memory safety bugs fixed in Firefox ESR 140.3, Thunderbird ESR 140.3, Firefox 143 and Thunderbird 143
+
