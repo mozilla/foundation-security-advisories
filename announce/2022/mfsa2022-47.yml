@@ -84,7 +84,7 @@ advisories:
     impact: moderate
     reporter: Armin Ebert
     description: |
-      When resolving a symlink such as <code>file:///proc/self/fd/1</code>, an error message may be produced where the symlink was resolved to a string containing unitialized memory in the buffer. <br>*This bug only affects Firefox on Unix-based operated systems (Android, Linux, MacOS). Windows is unaffected.*
+      When resolving a symlink such as <code>file:///proc/self/fd/1</code>, an error message may be produced where the symlink was resolved to a string containing uninitialized memory in the buffer. <br>*This bug only affects Firefox on Unix-based operated systems (Android, Linux, MacOS). Windows is unaffected.*
     bugs:
       - url: 1791029
   CVE-2022-45413:
