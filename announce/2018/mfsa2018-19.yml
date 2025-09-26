@@ -44,7 +44,7 @@ advisories:
     impact: high
     reporter: Nils
     description: |
-      A vulnerability can occur when capturing a media stream when the media source type is changed as the capture is occuring. This can result in stream data being cast to the wrong type causing a potentially exploitable crash. 
+      A vulnerability can occur when capturing a media stream when the media source type is changed as the capture is occurring. This can result in stream data being cast to the wrong type causing a potentially exploitable crash. 
     bugs:
       - url: 1453127
   CVE-2018-12363:

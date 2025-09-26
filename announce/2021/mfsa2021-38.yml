@@ -36,7 +36,7 @@ advisories:
     impact: moderate
     reporter: Rohan Sharma
     description: |
-      If a domain name contained a RTL character, it would cause the domain to be rendered to the right of the path. This could lead to user confusion and spoofing attacks. <br>*This bug only affects Firefox for Android. Other operating systems are unaffected.*<br>*Note*: Due to a clerical error this advisory was not included in the original announcement, and was added in Feburary 2022.
+      If a domain name contained a RTL character, it would cause the domain to be rendered to the right of the path. This could lead to user confusion and spoofing attacks. <br>*This bug only affects Firefox for Android. Other operating systems are unaffected.*<br>*Note*: Due to a clerical error this advisory was not included in the original announcement, and was added in February 2022.
     bugs:
       - url: 1704422
   CVE-2021-38493:

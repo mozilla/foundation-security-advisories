@@ -10,7 +10,7 @@ advisories:
     impact: high
     reporter: Andrew McCreight
     description: |
-      During the worker lifecycle, a use-after-free condition could have occured, which could have led to a potentially exploitable crash.
+      During the worker lifecycle, a use-after-free condition could have occurred, which could have led to a potentially exploitable crash.
     bugs:
       - url: 1839703
   CVE-2023-3417:
