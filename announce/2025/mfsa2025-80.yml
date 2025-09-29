@@ -1,0 +1,19 @@
+## mfsa2025-80.yml
+announced: September 30, 2025
+impact: high
+fixed_in:
+  - Firefox 143.0.3
+title: Security Vulnerabilities fixed in Firefox 143.0.3
+advisories:
+  CVE-2025-11152:
+    title: 'Sandbox escape due to integer overflow in the Graphics: Canvas2D component'
+    impact: high
+    reporter: Oskar L
+    bugs:
+      - url: 1987246
+  CVE-2025-11153:
+    title: 'JIT miscompilation in the JavaScript Engine: JIT component'
+    impact: high
+    reporter: Nan Wang
+    bugs:
+      - url: 1987481
