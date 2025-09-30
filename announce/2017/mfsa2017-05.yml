@@ -134,7 +134,7 @@ advisories:
     bugs:
       - url: 1328121
   CVE-2017-5417:
-    title: Addressbar spoofing by draging and dropping URLs
+    title: Addressbar spoofing by dragging and dropping URLs
     impact: moderate
     reporter: Michal Zalewski
     description: |

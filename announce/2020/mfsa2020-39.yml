@@ -58,7 +58,7 @@ advisories:
     impact: low
     reporter: Karol Frejlich
     description: |
-      When typing in a password under certain conditions, a race may have occured where the InputContext was not being correctly set for the input field, resulting in the typed passwod being saved to the keyboard dictionary.
+      When typing in a password under certain conditions, a race may have occurred where the InputContext was not being correctly set for the input field, resulting in the typed passwod being saved to the keyboard dictionary.
     bugs:
       - url: 1653862
   CVE-2020-15670:
