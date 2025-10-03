@@ -105,9 +105,9 @@ advisories:
   CVE-2025-6436:
     title: Memory safety bugs fixed in Firefox 140 and Thunderbird 140
     impact: high
-    reporter: Andrew McCreight, Gabriele Svelto, Beth Rennie (she/her), the Mozilla Fuzzing Team
+    reporter: Andrew McCreight, Gabriele Svelto, Beth Rennie (she/her), Steven Michaud, the Mozilla Fuzzing Team
     description: |
       Memory safety bugs present in Firefox 139 and Thunderbird 139. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
     bugs:
-      - url: 1941377, 1960948, 1966187, 1966505, 1970764
+      - url: 1941377, 1960948, 1966187, 1966505, 1970764, 1942930
         desc: Memory safety bugs fixed in Firefox 140 and Thunderbird 140
