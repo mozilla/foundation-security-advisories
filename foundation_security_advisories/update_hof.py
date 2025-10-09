@@ -75,6 +75,9 @@ https://bugzilla.mozilla.org/buglist.cgi?x=x
 """.replace("\n", "")
 
 credit_entries = {
+    "000a85dcddda0440171163bb09f176de":"Ibuki Sato",
+    "efa7a90190df7747adadadc239bd360b":"Oskar L",
+    "4588118826e1f4ab10199991d8ccbbd8":"sherkito",
     "68c707460a51a2600859fad775ed719d":"Daniil Satyaev (Positive Technologies)",
     "aa3c799fcefbb07626afc23425d4bad6":"un3xploitable && GF",
     "6feb36c04afabcb979c7cb3b496f4c50":"Surya Dev Singh",
