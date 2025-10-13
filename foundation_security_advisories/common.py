@@ -196,9 +196,17 @@ class CVEAdvisory:
 
     @property
     def full_description(self):
+        description = self.newest_instance.description.strip().strip('.')
+
+        if not description:
+            description = self.newest_instance.title.strip().strip('.')
+
+        if description:
+            description = description + ". "
+
         return (
-            self.newest_instance.description.strip()
-            + " This vulnerability affects "
+            description
+            + "This vulnerability affects "
             + comma_separated(
                 [
                     f"{instance.product} < {instance.version_fixed}"
@@ -247,19 +255,9 @@ class CVEAdvisory:
                     ],
                     **(
                         {
-                            "problemTypes": [
-                                {
-                                    "descriptions": [
-                                        {
-                                            "description": remove_html_tags(
-                                                self.newest_instance.title
-                                            ),
-                                            "lang": "en",
-                                            "type": "text",
-                                        }
-                                    ]
-                                }
-                            ]
+                            "title": remove_html_tags(
+                                self.newest_instance.title
+                            )
                         }
                         if self.newest_instance.title
                         else {}
