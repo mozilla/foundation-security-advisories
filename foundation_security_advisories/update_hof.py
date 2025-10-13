@@ -679,15 +679,37 @@ def is_client_bug(bug):
 
     return bug['product'] in client_products
 
+class LoggingRetry(Retry):
+    def increment(self, *args, **kwargs):
+        new_retry = super().increment(*args, **kwargs)
+        print(f"Retrying request ({self.total - new_retry.total}/{self.total}) "
+              f"after {self.backoff_factor}s backoff due to {args[0] if args else 'error'}")
+        return new_retry
+
 # Set up the requests retry/backoff strategy
-retry_strategy = Retry(
-    total=5,
+retry_strategy = LoggingRetry(
+    total=10,
     status_forcelist=[429, 500, 502, 503, 504],
-    allowed_methods=["HEAD", "GET", "OPTIONS"],
+    allowed_methods=["HEAD", "GET", "OPTIONS", "POST"],
     backoff_factor=2
 )
 adapter = HTTPAdapter(max_retries=retry_strategy)
-http = requests.Session()
+# Monkey patch a timeout into the session
+class TimeoutSession(requests.Session):
+    def request(self, *args, **kwargs):
+        if 'timeout' not in kwargs:
+            kwargs['timeout'] = (18.05, 36)
+        try:
+            response = super().request(*args, **kwargs)
+            if response.status_code != 200:
+                print(f"Response status: {response.status_code}")
+            response.raise_for_status()
+            return response
+        except Exception as e:
+            print(f"Request failed with {e}")
+            raise
+
+http = TimeoutSession()
 http.mount("https://", adapter)
 http.mount("http://", adapter)
 
@@ -1116,6 +1138,7 @@ def gather_bug_list(apikey):
     except requests.exceptions.RequestException as e:
         print(e)
         sys.exit(1)
+    print(f"Got a list of {len(bugs["bugs"])} bugs.")
     return bugs
 
 def get_hmac_key(apikey):
