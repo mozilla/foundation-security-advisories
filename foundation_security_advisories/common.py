@@ -206,10 +206,10 @@ class CVEAdvisory:
 
         return (
             description
-            + "This vulnerability affects "
+            + "This vulnerability was fixed in "
             + comma_separated(
                 [
-                    f"{instance.product} < {instance.version_fixed}"
+                    f"{instance.product} {instance.version_fixed}"
                     for instance in self.instances
                 ],
             )
