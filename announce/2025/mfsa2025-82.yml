@@ -1,0 +1,41 @@
+## mfsa2025-82.yml
+announced: October 14, 2025
+impact: high
+fixed_in:
+- Firefox ESR 115.29
+title: Security Vulnerabilities fixed in Firefox ESR 115.29
+advisories:
+  CVE-2025-11709:
+    title: Out of bounds read/write in a privileged process triggered by WebGL textures
+    impact: high
+    reporter: Oskar L
+    description: |
+      A compromised web process was able to trigger out of bounds reads and writes in a more privileged process using manipulated WebGL textures.
+    bugs:
+      - url: 1989127
+  CVE-2025-11710:
+    title: Cross-process information leaked due to malicious IPC messages
+    impact: high
+    reporter: Oskar L
+    description: |
+      A compromised web process using malicious IPC messages could have caused the privileged browser process to reveal blocks of its memory to the compromised process.
+    bugs:
+      - url: 1989899
+  CVE-2025-11711:
+    title: Some non-writable Object properties could be modified
+    impact: high
+    reporter: EntryHi
+    description: |
+      There was a way to change the value of JavaScript Object properties that were supposed to be non-writeable.
+    bugs:
+      - url: 1989978
+  CVE-2025-11714:
+    title: Memory safety bugs fixed in Firefox ESR 115.29, Firefox ESR 140.4, Thunderbird ESR 140.4, Firefox 144 and Thunderbird 144
+    impact: high
+    reporter: The Mozilla Fuzzing Team
+    description: |
+      Memory safety bugs present in Firefox ESR 115.28, Firefox ESR 140.3, Thunderbird ESR 140.3, Firefox 143 and Thunderbird 143. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1973699, 1989945, 1990970, 1991040, 1992113
+        desc: Memory safety bugs fixed in Firefox ESR 115.29, Firefox ESR 140.4, Thunderbird ESR 140.4, Firefox 144 and Thunderbird 144
+

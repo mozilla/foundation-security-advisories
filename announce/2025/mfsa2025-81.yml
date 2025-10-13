@@ -1,0 +1,124 @@
+## mfsa2025-81.yml
+announced: October 14, 2025
+impact: high
+fixed_in:
+- Firefox 144
+title: Security Vulnerabilities fixed in Firefox 144
+advisories:
+  CVE-2025-11708:
+    title: 'Use-after-free in MediaTrackGraphImpl::GetInstance()'
+    impact: high
+    reporter: Irvan Kurniawan
+    description: |
+      Use-after-free in MediaTrackGraphImpl::GetInstance()
+    bugs:
+      - url: 1988931
+  CVE-2025-11709:
+    title: Out of bounds read/write in a privileged process triggered by WebGL textures
+    impact: high
+    reporter: Oskar L
+    description: |
+      A compromised web process was able to trigger out of bounds reads and writes in a more privileged process using manipulated WebGL textures.
+    bugs:
+      - url: 1989127
+  CVE-2025-11710:
+    title: Cross-process information leaked due to malicious IPC messages
+    impact: high
+    reporter: Oskar L
+    description: |
+      A compromised web process using malicious IPC messages could have caused the privileged browser process to reveal blocks of its memory to the compromised process.
+    bugs:
+      - url: 1989899
+  CVE-2025-11711:
+    title: Some non-writable Object properties could be modified
+    impact: high
+    reporter: EntryHi
+    description: |
+      There was a way to change the value of JavaScript Object properties that were supposed to be non-writeable.
+    bugs:
+      - url: 1989978
+  CVE-2025-11716:
+    title: Sandboxed iframes allowed links to open in external apps (Android only)
+    impact: moderate
+    reporter: Axel Chong (@Haxatron)
+    description: |
+      Links in a sandboxed iframe could open an external app on Android without the required "allow-" permission.
+    bugs:
+      - url: 1818679
+  CVE-2025-11717:
+    title: The password edit screen was not hidden in Android card view
+    impact: moderate
+    reporter: msd
+    description: |
+      When switching between Android apps using the card carousel Firefox shows a black screen as its card image when a password-related screen was the last one being used. Prior to Firefox 144 the password edit screen was visible.
+    bugs:
+      - url: 1872601
+  CVE-2025-11712:
+    title: An OBJECT tag type attribute overrode browser behavior on web resources without a content-type
+    impact: moderate
+    reporter: Masato Kinugawa
+    description: |
+      A malicious page could have used the type attribute of an OBJECT tag to override the default browser behavior when encountering a web resource served without a content-type. This could have contributed to an XSS on a site that unsafely serves files without a content-type header.
+    bugs:
+      - url: 1979536
+  CVE-2025-11718:
+    title: Address bar could be spoofed on Android using visibilitychange
+    impact: moderate
+    reporter: Hafiizh
+    description: |
+      When the address bar was hidden due to scrolling on Android, a malicious page could create a fake address bar to fool the user in response to a visibilitychange event
+    bugs:
+      - url: 1980808
+  CVE-2025-11713:
+    title: Potential user-assisted code execution in “Copy as cURL” command
+    impact: moderate
+    reporter: Hafiizh
+    description: |
+      Insufficient escaping in the “Copy as cURL” feature could have been used to trick a user into executing unexpected code on Windows. This did not affect Firefox running on other operating systems.
+    bugs:
+      - url: 1986142
+  CVE-2025-11719:
+    title: Use-after-free caused by the native messaging web extension API on Windows
+    impact: moderate
+    reporter: Filip Štamcar
+    description: |
+      Starting in Firefox 143, the use of the native messaging API by web extensions on Windows could lead to crashes caused by use-after-free memory corruption.
+    bugs:
+      - url: 1991950
+  CVE-2025-11720:
+    title: Spoofing risk in Android custom tabs
+    impact: low
+    reporter: Michel Le Bihan
+    description: |
+      The Firefox and Firefox Focus UI for the Android custom tab feature only showed the "site" that was loaded, not the full hostname. User supplied content hosted on a subdomain of a site could have been used to fool a user into thinking it was content from a different subdomain of that site.
+    bugs:
+      - url: 1979534
+      - url: 1984370
+  CVE-2025-11714:
+    title: Memory safety bugs fixed in Firefox ESR 115.29, Firefox ESR 140.4, Thunderbird ESR 140.4, Firefox 144 and Thunderbird 144
+    impact: high
+    reporter: The Mozilla Fuzzing Team
+    description: |
+      Memory safety bugs present in Firefox ESR 115.28, Firefox ESR 140.3, Thunderbird ESR 140.3, Firefox 143 and Thunderbird 143. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1973699, 1989945, 1990970, 1991040, 1992113
+        desc: Memory safety bugs fixed in Firefox ESR 115.29, Firefox ESR 140.4, Thunderbird ESR 140.4, Firefox 144 and Thunderbird 144
+  CVE-2025-11715:
+    title: Memory safety bugs fixed in Firefox ESR 140.4, Thunderbird ESR 140.4, Firefox 144 and Thunderbird 144
+    impact: high
+    reporter: The Mozilla Fuzzing Team
+    description: |
+      Memory safety bugs present in Firefox ESR 140.3, Thunderbird ESR 140.3, Firefox 143 and Thunderbird 143. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1983838, 1987624, 1988244, 1988912, 1989734, 1990085, 1991899
+        desc: Memory safety bugs fixed in Firefox ESR 140.4, Thunderbird ESR 140.4, Firefox 144 and Thunderbird 144
+  CVE-2025-11721:
+    title: Memory safety bug fixed in Firefox 144 and Thunderbird 144
+    impact: high
+    reporter: 
+    description: |
+      Memory safety bug present in Firefox 143 and Thunderbird 143. This bug showed evidence of memory corruption and we presume that with enough effort this could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1986816
+        desc: Memory safety bug fixed in Firefox 144 and Thunderbird 144
+
