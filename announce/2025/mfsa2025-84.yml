@@ -58,7 +58,7 @@ advisories:
   CVE-2025-11713:
     title: Potential user-assisted code execution in “Copy as cURL” command
     impact: moderate
-    reporter: Hafiizh
+    reporter: Hafiizh & kang ali
     description: |
       Insufficient escaping in the “Copy as cURL” feature could have been used to trick a user into executing unexpected code on Windows. This did not affect the application when running on other operating systems.
     bugs:

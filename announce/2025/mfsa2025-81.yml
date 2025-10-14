@@ -64,7 +64,7 @@ advisories:
   CVE-2025-11718:
     title: Address bar could be spoofed on Android using visibilitychange
     impact: moderate
-    reporter: Hafiizh
+    reporter: Hafiizh & kang ali
     description: |
       When the address bar was hidden due to scrolling on Android, a malicious page could create a fake address bar to fool the user in response to a visibilitychange event
     bugs:
@@ -72,7 +72,7 @@ advisories:
   CVE-2025-11713:
     title: Potential user-assisted code execution in “Copy as cURL” command
     impact: moderate
-    reporter: Hafiizh
+    reporter: Hafiizh & kang ali
     description: |
       Insufficient escaping in the “Copy as cURL” feature could have been used to trick a user into executing unexpected code on Windows. This did not affect Firefox running on other operating systems.
     bugs:
