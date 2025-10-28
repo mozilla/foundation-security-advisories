@@ -1,0 +1,17 @@
+## mfsa2025-86.yml
+announced: October 28, 2025
+impact: high
+fixed_in:
+  - Firefox 144.0.2
+title: Security Vulnerabilities fixed in Firefox 144.0.2
+advisories:
+  CVE-2025-12380:
+    title: 'Use-after-free in WebGPU internals triggered from a compromised child process'
+    impact: high
+    reporter: Oskar L
+    description: |
+      Starting with Firefox 142, it was possible for a compromised child process
+      to trigger a use-after-free in the GPU or browser process using WebGPU-related
+      IPC calls. This may have been usable to escape the child process sandbox.
+    bugs:
+      - url: 1993113
