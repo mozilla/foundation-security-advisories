@@ -196,17 +196,18 @@ class CVEAdvisory:
 
     @property
     def full_description(self):
-        description = self.newest_instance.description.strip().strip('.')
+        description = self.newest_instance.description.strip()
 
         if not description:
-            description = self.newest_instance.title.strip().strip('.')
+            if not "title" in self.newest_instance:
+                raise Exception(
+                    "Advisory has neither a title nor a description")
 
-        if description:
-            description = description + ". "
+            description = self.newest_instance.title.strip().strip('.') + "."
 
         return (
             description
-            + "This vulnerability affects "
+            + " This vulnerability affects "
             + comma_separated(
                 [
                     f"{instance.product} < {instance.version_fixed}"
