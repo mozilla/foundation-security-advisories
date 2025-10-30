@@ -294,7 +294,7 @@ class CVEAdvisory:
                 }
             },
             "dataType": "CVE_RECORD",
-            "dataVersion": "5.1",
+            "dataVersion": "5.2",
         }
 
 
