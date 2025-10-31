@@ -38,7 +38,7 @@ advisories:
     impact: low
     reporter:  Brandon Perry
     description: |
-      A vulnerability in the Libical libary used by Thunderbird can allow remote attackers to cause a denial of service (use-after-free) via a crafted ICS calendar file.
+      A vulnerability in the Libical library used by Thunderbird can allow remote attackers to cause a denial of service (use-after-free) via a crafted ICS calendar file.
     bugs:
       - url: 1275400
   CVE-2018-18513:
