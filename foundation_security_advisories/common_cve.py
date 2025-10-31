@@ -28,7 +28,7 @@ cve_api = CveApi(
     org=os.getenv("CVE_ORG"),
     api_key=os.getenv("CVE_API_KEY"),
     env=os.getenv("CVE_ENV"),
-)
+) if os.getenv("CVE_ENV") else None
 
 announced_cve_steps: list[str] = []
 
@@ -324,7 +324,7 @@ def prompt_yes_no(question: str, default=True):
     return response.strip().lower() in (["", "y", "yes"] if default else ["y", "yes"])
 
 
-def get_local_cve_advisories():
+def get_local_cve_advisories(source_files=get_all_files()):
     """
     Get all the CVE advisories located in this repository as `CVEAdvisory`
     objects. Returns a dictionary of all the local CVE-IDs mapped to
@@ -332,7 +332,7 @@ def get_local_cve_advisories():
     """
     local_advisories: dict[str, CVEAdvisory] = {}
     print("\n-> Checking local files")
-    for file_name in get_all_files():
+    for file_name in source_files:
         if not file_name.endswith(".yml"):
             continue
 
@@ -350,7 +350,7 @@ def get_local_cve_advisories():
                     file_name,
                 ],
                 capture_output=True,
-            ).stdout.strip()
+            ).stdout.strip() or datetime.now().timestamp()
         )
 
         if "advisories" in file_data:
