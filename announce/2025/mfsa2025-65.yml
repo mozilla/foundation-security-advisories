@@ -18,7 +18,7 @@ advisories:
     impact: high
     reporter: Tom Van Goethem
     description: |
-      'Same-origin policy bypass in the Graphics: Canvas2D component.'
+      Same-origin policy bypass in the Graphics: Canvas2D component.
     bugs:
       - url: 1979782
   CVE-2025-9185:

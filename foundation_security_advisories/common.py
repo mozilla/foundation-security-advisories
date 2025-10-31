@@ -196,13 +196,13 @@ class CVEAdvisory:
 
     @property
     def full_description(self):
-        description = self.newest_instance.description.strip().strip('.')
+        description = self.newest_instance.description.strip()
 
         if not description:
-            description = self.newest_instance.title.strip().strip('.')
+            description = self.newest_instance.title.strip().strip('.') + "."
 
         if description:
-            description = description + ". "
+            description = description + " "
 
         return (
             description
@@ -294,7 +294,7 @@ class CVEAdvisory:
                 }
             },
             "dataType": "CVE_RECORD",
-            "dataVersion": "5.1",
+            "dataVersion": "5.2",
         }
 
 

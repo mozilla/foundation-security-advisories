@@ -20,7 +20,7 @@ advisories:
     impact: high
     reporter: Tom Van Goethem
     description: |
-      'Same-origin policy bypass in the Graphics: Canvas2D component.'
+      Same-origin policy bypass in the Graphics: Canvas2D component.
     bugs:
       - url: 1979782
   CVE-2025-9181:
@@ -36,7 +36,7 @@ advisories:
     impact: low
     reporter: Irvan Kurniawan
     description: |
-      'Denial-of-service due to out-of-memory in the Graphics: WebRender component.'
+      Denial-of-service due to out-of-memory in the Graphics: WebRender component.
     bugs:
       - url: 1975837
   CVE-2025-9184:
