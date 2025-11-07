@@ -38,7 +38,7 @@ advisories:
   MFSA-RESERVE-2025-1992902:
     title: 'JIT miscompilation in the JavaScript Engine: JIT component'
     impact: high
-    reporter: zx
+    reporter: Project KillFuzz of Qrious Secure
     bugs:
       - url: 1992902
   MFSA-RESERVE-2025-1994022:
