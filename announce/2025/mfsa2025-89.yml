@@ -1,0 +1,31 @@
+## mfsa2025-89.yml
+announced: November 11, 2025
+impact: high
+fixed_in:
+- Firefox ESR 115.30
+title: Security Vulnerabilities fixed in Firefox ESR 115.30
+advisories:
+  MFSA-RESERVE-2025-1991458:
+    title: Race condition in the Graphics component
+    impact: high
+    reporter: Irvan Kurniawan
+    bugs:
+      - url: 1991458
+  MFSA-RESERVE-2025-1991945:
+    title: 'Mitigation bypass in the DOM: Core & HTML component'
+    impact: moderate
+    reporter: Masato Kinugawa
+    bugs:
+      - url: 1991945
+  MFSA-RESERVE-2025-1994241:
+    title: Use-after-free in the Audio/Video component
+    impact: moderate
+    reporter: Andrew Osmond
+    bugs:
+      - url: 1994241
+  MFSA-RESERVE-2025-1994164:
+    title: Spoofing issue in Firefox
+    impact: low
+    reporter: Eemeli Aro
+    bugs:
+      - url: 1994164

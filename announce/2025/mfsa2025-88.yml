@@ -1,0 +1,61 @@
+## mfsa2025-88.yml
+announced: November 11, 2025
+impact: high
+fixed_in:
+- Firefox ESR 140.5
+title: Security Vulnerabilities fixed in Firefox ESR 140.5
+advisories:
+  MFSA-RESERVE-2025-1991458:
+    title: Race condition in the Graphics component
+    impact: high
+    reporter: Irvan Kurniawan
+    bugs:
+      - url: 1991458
+  MFSA-RESERVE-2025-1992130:
+    title: 'Incorrect boundary conditions in the JavaScript: WebAssembly component'
+    impact: high
+    reporter: Igor Morgenstern
+    bugs:
+      - url: 1992130
+  MFSA-RESERVE-2025-1980904:
+    title: 'Same-origin policy bypass in the DOM: Notifications component'
+    impact: moderate
+    reporter: Mochammad Nosa Shandy Prastyo
+    bugs:
+      - url: 1980904
+  MFSA-RESERVE-2025-1984940:
+    title: 'Mitigation bypass in the DOM: Security component'
+    impact: moderate
+    reporter: Daniel Veditz
+    bugs:
+      - url: 1984940
+  MFSA-RESERVE-2025-1988412:
+    title: 'Same-origin policy bypass in the DOM: Workers component'
+    impact: moderate
+    reporter: Oskar L
+    bugs:
+      - url: 1988412
+  MFSA-RESERVE-2025-1991945:
+    title: 'Mitigation bypass in the DOM: Core & HTML component'
+    impact: moderate
+    reporter: Masato Kinugawa
+    bugs:
+      - url: 1991945
+  MFSA-RESERVE-2025-1995686:
+    title: 'Use-after-free in the WebRTC: Audio/Video component'
+    impact: moderate
+    reporter: Andreas Pehrson
+    bugs:
+      - url: 1995686
+  MFSA-RESERVE-2025-1994241:
+    title: Use-after-free in the Audio/Video component
+    impact: moderate
+    reporter: Andrew Osmond
+    bugs:
+      - url: 1994241
+  MFSA-RESERVE-2025-1994164:
+    title: Spoofing issue in Firefox
+    impact: low
+    reporter: Eemeli Aro
+    bugs:
+      - url: 1994164
