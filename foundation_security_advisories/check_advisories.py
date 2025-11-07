@@ -27,7 +27,8 @@ from foundation_security_advisories.common import (
 )
 
 CVE_RE = re.compile('^(CVE|MFSA-TMP|MFSA-RESERVE)-20[0-9]{2}-[0-9]{1,9}$')
-UNWANTED_HTML_TAG_RE = re.compile('.*(<(?!\/?(code|em|it|b|a[^>]*|ul|ol|li|br|br\/|br \/)>).*>).*')
+UNWANTED_HTML_TAG_RE = re.compile(
+    '.*(<(?!\/?(code|em|it|b|a[^>]*|ul|ol|li|br|br\/|br \/)>).*>).*')
 INVALID_COLON_TITLE_LINE = re.compile('^ *title: [^\'"].*:.*[^\'"]$')
 md_schema = Schema({
     'mfsa_id': str,
@@ -55,7 +56,7 @@ yaml_schema = Schema({
             Optional('feed'): bool,
         },
     },
-    Optional('announced'): str,
+    'announced': str,
     Optional('description'): str,
     Optional('feed'): bool,
 })
@@ -113,13 +114,12 @@ def check_file(file_name):
         if "," in f:
             return f"When 'fixed_in' contains multiple products, they should be enumerated with YAML and not with commas in a string (Found '{f}')"
 
-    if 'announced' in data:
-        try:
-            date = parsedate(data['announced']).date()
-        except Exception:
-            return 'Failed to parse "{}" as a date'.format(data['announced'])
-        if not data['mfsa_id'].startswith(str(date.year)):
-            return 'Year mismatch between mfsa id ({}) and "announced" field ({})'.format(data['mfsa_id'], data['announced'])
+    try:
+        announced = parsedate(data['announced']).date()
+    except Exception:
+        return 'Failed to parse "{}" as a date'.format(data['announced'])
+    if not data['mfsa_id'].startswith(str(announced.year)):
+        return 'Year mismatch between mfsa id ({}) and "announced" field ({})'.format(data['mfsa_id'], data['announced'])
 
     try:
         schema.validate(data)
@@ -138,6 +138,10 @@ def check_file(file_name):
                 if match:
                     return f"Advisory description should only contain basic html tags used for formatting, found {match.groups()[0]}. Consider escaping < with &lt;"
 
+                if not any(advisory["description"].strip().endswith(end) for end in [".", ".*", ".)", ".</em>", ".</i>", ".</b>"]) \
+                        and announced >= date(2025, 11, 1):  # Cutoff date for this check
+                    return f"Advisory description should end with a period, not '{advisory.description.strip()[-2:]}': '{advisory.description.strip()}'"
+
     if file_name.endswith('.yml'):
         with open(file_name, "r") as f:
             for i, line in enumerate(f):
@@ -148,7 +152,8 @@ def check_file(file_name):
 
 
 def main():
-    parser = argparse.ArgumentParser(description='Check the syntax of advisory files.')
+    parser = argparse.ArgumentParser(
+        description='Check the syntax of advisory files.')
     parser.add_argument('--all', action='store_true',
                         help='Check all advisories regardless of git.')
     parser.add_argument('--staged-only', dest='staged', action='store_true',
