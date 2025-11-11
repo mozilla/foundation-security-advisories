@@ -6,6 +6,21 @@ on:
       - master
 
 jobs:
+  test:
+    name: Test CVE Generation
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone repository
+        uses: actions/checkout@v3
+      - name: Set up Python 3
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+      - name: Install Python dependencies
+        run: pip install ./
+      - name: Run Tests
+        run: test_cve_generation
+
   check:
     name: Check Advisories
     runs-on: ubuntu-latest
@@ -23,7 +38,7 @@ jobs:
 
   publish:
     name: Publish CVE Advisories
-    needs: check
+    needs: [check, test]
     if: github.ref == 'refs/heads/master' && github.repository == 'mozilla/foundation-security-advisories'
     runs-on: ubuntu-latest
     environment: prod

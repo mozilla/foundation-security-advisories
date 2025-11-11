@@ -39,6 +39,7 @@ setup(
             "check_advisories = foundation_security_advisories.check_advisories:main",
             "publish_cve_advisories = foundation_security_advisories.publish_cve_advisories:main",
             "assign_cve_ids = foundation_security_advisories.assign_cve_ids:main",
+            "test_cve_generation = foundation_security_advisories.test_cve_generation:main",
         ]
     }
 )

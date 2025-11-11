@@ -1,0 +1,126 @@
+{
+  "MFSA-TMP-2025-00001": {
+    "containers": {
+      "cna": {
+        "affected": [
+          {
+            "product": "Firefox",
+            "vendor": "Mozilla",
+            "versions": [
+              {
+                "lessThan": "128",
+                "status": "affected",
+                "version": "unspecified",
+                "versionType": "custom"
+              }
+            ]
+          },
+          {
+            "product": "Firefox ESR",
+            "vendor": "Mozilla",
+            "versions": [
+              {
+                "lessThan": "115.1",
+                "status": "affected",
+                "version": "unspecified",
+                "versionType": "custom"
+              }
+            ]
+          }
+        ],
+        "credits": [
+          {
+            "lang": "en",
+            "value": "Reporter"
+          }
+        ],
+        "descriptions": [
+          {
+            "lang": "en",
+            "supportingMedia": [
+              {
+                "base64": false,
+                "type": "text/html",
+                "value": "Description. This vulnerability affects Firefox < 128 and Firefox ESR < 115.1."
+              }
+            ],
+            "value": "Description. This vulnerability affects Firefox < 128 and Firefox ESR < 115.1."
+          }
+        ],
+        "references": [
+          {
+            "url": "https://www.mozilla.org/security/advisories/mfsa2025-01/"
+          },
+          {
+            "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=1000000"
+          }
+        ],
+        "title": "Test advisory with title and description"
+      }
+    },
+    "dataType": "CVE_RECORD",
+    "dataVersion": "5.1"
+  },
+  "MFSA-TMP-2025-00002": {
+    "containers": {
+      "cna": {
+        "affected": [
+          {
+            "product": "Firefox",
+            "vendor": "Mozilla",
+            "versions": [
+              {
+                "lessThan": "128",
+                "status": "affected",
+                "version": "unspecified",
+                "versionType": "custom"
+              }
+            ]
+          },
+          {
+            "product": "Firefox ESR",
+            "vendor": "Mozilla",
+            "versions": [
+              {
+                "lessThan": "115.1",
+                "status": "affected",
+                "version": "unspecified",
+                "versionType": "custom"
+              }
+            ]
+          }
+        ],
+        "credits": [
+          {
+            "lang": "en",
+            "value": "Reporter"
+          }
+        ],
+        "descriptions": [
+          {
+            "lang": "en",
+            "supportingMedia": [
+              {
+                "base64": false,
+                "type": "text/html",
+                "value": "Test advisory only with title. This vulnerability affects Firefox < 128 and Firefox ESR < 115.1."
+              }
+            ],
+            "value": "Test advisory only with title. This vulnerability affects Firefox < 128 and Firefox ESR < 115.1."
+          }
+        ],
+        "references": [
+          {
+            "url": "https://www.mozilla.org/security/advisories/mfsa2025-01/"
+          },
+          {
+            "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=1000000"
+          }
+        ],
+        "title": "Test advisory only with title"
+      }
+    },
+    "dataType": "CVE_RECORD",
+    "dataVersion": "5.1"
+  }
+}
