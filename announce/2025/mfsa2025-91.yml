@@ -1,0 +1,63 @@
+## mfsa2025-91.yml
+announced: November 12, 2025
+impact: high
+fixed_in:
+- Thunderbird 140.5
+title: Security Vulnerabilities fixed in Thunderbird 140.5
+description: |
+  *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
+advisories:
+  CVE-2025-13012:
+    title: Race condition in the Graphics component
+    impact: high
+    reporter: Irvan Kurniawan
+    bugs:
+      - url: 1991458
+  CVE-2025-13016:
+    title: 'Incorrect boundary conditions in the JavaScript: WebAssembly component'
+    impact: high
+    reporter: Igor Morgenstern
+    bugs:
+      - url: 1992130
+  CVE-2025-13017:
+    title: 'Same-origin policy bypass in the DOM: Notifications component'
+    impact: moderate
+    reporter: Mochammad Nosa Shandy Prastyo
+    bugs:
+      - url: 1980904
+  CVE-2025-13018:
+    title: 'Mitigation bypass in the DOM: Security component'
+    impact: moderate
+    reporter: Daniel Veditz
+    bugs:
+      - url: 1984940
+  CVE-2025-13019:
+    title: 'Same-origin policy bypass in the DOM: Workers component'
+    impact: moderate
+    reporter: Oskar L
+    bugs:
+      - url: 1988412
+  CVE-2025-13013:
+    title: 'Mitigation bypass in the DOM: Core & HTML component'
+    impact: moderate
+    reporter: Masato Kinugawa
+    bugs:
+      - url: 1991945
+  CVE-2025-13020:
+    title: 'Use-after-free in the WebRTC: Audio/Video component'
+    impact: moderate
+    reporter: Andreas Pehrson
+    bugs:
+      - url: 1995686
+  CVE-2025-13014:
+    title: Use-after-free in the Audio/Video component
+    impact: moderate
+    reporter: Andrew Osmond
+    bugs:
+      - url: 1994241
+  CVE-2025-13015:
+    title: Spoofing issue in Thunderbird
+    impact: low
+    reporter: Eemeli Aro
+    bugs:
+      - url: 1994164

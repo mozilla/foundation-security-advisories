@@ -68,7 +68,7 @@ advisories:
     impact: moderate
     reporter: Filip Štamcar
     description: |
-      Starting in Firefox 143, the use of the native messaging API by web extensions on Windows could lead to crashes caused by use-after-free memory corruption.
+      Starting in Thunderbird 143, the use of the native messaging API by web extensions on Windows could lead to crashes caused by use-after-free memory corruption.
     bugs:
       - url: 1991950
   CVE-2025-11714:
