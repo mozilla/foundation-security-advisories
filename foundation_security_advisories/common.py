@@ -199,7 +199,8 @@ class CVEAdvisory:
         description = self.newest_instance.description.strip()
 
         if not description:
-            if not "title" in self.newest_instance:
+            title = self.newest_instance.title.strip()
+            if not title:
                 raise Exception(
                     "Advisory has neither a title nor a description")
 
