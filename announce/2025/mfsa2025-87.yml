@@ -5,97 +5,97 @@ fixed_in:
 - Firefox 145
 title: Security Vulnerabilities fixed in Firefox 145
 advisories:
-  MFSA-RESERVE-2025-1986431:
+  CVE-2025-13021:
     title: 'Incorrect boundary conditions in the Graphics: WebGPU component'
     impact: high
     reporter: Atte Kettunen
     bugs:
       - url: 1986431
-  MFSA-RESERVE-2025-1988488:
+  CVE-2025-13022:
     title: 'Incorrect boundary conditions in the Graphics: WebGPU component'
     impact: high
     reporter: Atte Kettunen
     bugs:
       - url: 1988488
-  MFSA-RESERVE-2025-1991458:
+  CVE-2025-13012:
     title: Race condition in the Graphics component
     impact: high
     reporter: Irvan Kurniawan
     bugs:
       - url: 1991458
-  MFSA-RESERVE-2025-1992032:
+  CVE-2025-13023:
     title: 'Sandbox escape due to incorrect boundary conditions in the Graphics: WebGPU component'
     impact: high
     reporter: Oskar L
     bugs:
       - url: 1992032
-  MFSA-RESERVE-2025-1992130:
+  CVE-2025-13016:
     title: 'Incorrect boundary conditions in the JavaScript: WebAssembly component'
     impact: high
     reporter: Igor Morgenstern
     bugs:
       - url: 1992130
-  MFSA-RESERVE-2025-1992902:
+  CVE-2025-13024:
     title: 'JIT miscompilation in the JavaScript Engine: JIT component'
     impact: high
     reporter: Project KillFuzz of Qrious Secure
     bugs:
       - url: 1992902
-  MFSA-RESERVE-2025-1994022:
+  CVE-2025-13025:
     title: 'Incorrect boundary conditions in the Graphics: WebGPU component'
     impact: high
     reporter: Oskar L
     bugs:
       - url: 1994022
-  MFSA-RESERVE-2025-1994441:
+  CVE-2025-13026:
     title: 'Sandbox escape due to incorrect boundary conditions in the Graphics: WebGPU component'
     impact: high
     reporter: Jamie Nicol
     bugs:
       - url: 1994441
-  MFSA-RESERVE-2025-1980904:
+  CVE-2025-13017:
     title: 'Same-origin policy bypass in the DOM: Notifications component'
     impact: moderate
     reporter: Mochammad Nosa Shandy Prastyo
     bugs:
       - url: 1980904
-  MFSA-RESERVE-2025-1984940:
+  CVE-2025-13018:
     title: 'Mitigation bypass in the DOM: Security component'
     impact: moderate
     reporter: Daniel Veditz
     bugs:
       - url: 1984940
-  MFSA-RESERVE-2025-1988412:
+  CVE-2025-13019:
     title: 'Same-origin policy bypass in the DOM: Workers component'
     impact: moderate
     reporter: Oskar L
     bugs:
       - url: 1988412
-  MFSA-RESERVE-2025-1991945:
+  CVE-2025-13013:
     title: 'Mitigation bypass in the DOM: Core & HTML component'
     impact: moderate
     reporter: Masato Kinugawa
     bugs:
       - url: 1991945
-  MFSA-RESERVE-2025-1995686:
+  CVE-2025-13020:
     title: 'Use-after-free in the WebRTC: Audio/Video component'
     impact: moderate
     reporter: Andreas Pehrson
     bugs:
       - url: 1995686
-  MFSA-RESERVE-2025-1994241:
+  CVE-2025-13014:
     title: Use-after-free in the Audio/Video component
     impact: moderate
     reporter: Andrew Osmond
     bugs:
       - url: 1994241
-  MFSA-RESERVE-2025-1994164:
+  CVE-2025-13015:
     title: Spoofing issue in Firefox
     impact: low
     reporter: Eemeli Aro
     bugs:
       - url: 1994164
-  MFSA-RESERVE-2025-0:
+  CVE-2025-13027:
     title: Memory safety bugs fixed in Firefox 145 and Thunderbird 145
     impact: high
     reporter: The Mozilla Fuzzing Team
