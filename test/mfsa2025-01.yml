@@ -1,0 +1,22 @@
+# Basic testcases
+announced: January 1, 2025
+impact: low
+fixed_in:
+  - Firefox 128
+  - Firefox ESR 115.1
+title: Test Security Vulnerabilities fixed in Firefox 128 and Firefox ESR 115.1
+advisories:
+  MFSA-TMP-2025-00001:
+    title: Test advisory with title and description
+    impact: low
+    reporter: Reporter
+    description: |
+      Description.
+    bugs:
+      - url: 1000000
+  MFSA-TMP-2025-00002:
+    title: Test advisory only with title
+    impact: low
+    reporter: Reporter
+    bugs:
+      - url: 1000000
