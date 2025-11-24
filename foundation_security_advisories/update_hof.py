@@ -108,7 +108,7 @@ credit_entries = {
     "2badcfbf0635b789d02eb03086ccc1bd":"Shanbo Chen (Reshahar) of NSFOCUS Tianji Lab.",
     "f5d43940f8686622940287507ddeb1b9":"JSec of Hayyim Security",
     "b9d7ff0b05dda6647339884dddcbd462":"Zeyu Zhang",
-    "19cf699e96dadbbf1b8789b9f60b8474":"kaed.e",
+    "19cf699e96dadbbf1b8789b9f60b8474":"Kaiden Milby",
     "b35db3b4e14eb5d6b9719ce45ea3e45a":"Yaswant (Az3z3l)",
     "b9a6307c3a098387557dab8537c59a70":"Kazuki Nomoto",
     "b9a6307c3a098387557dab8537c59a70":"Kazuki Nomoto",
