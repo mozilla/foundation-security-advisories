@@ -1,0 +1,32 @@
+## mfsa2025-93.yml
+announced: December 09, 2025
+impact: high
+fixed_in:
+- Firefox ESR 115.31
+title: Security Vulnerabilities fixed in Firefox ESR 115.31
+advisories:
+  MFSA-RESERVE-2025-1996473:
+    title: 'Sandbox escape due to incorrect boundary conditions in the Graphics: CanvasWebGL component'
+    impact: high
+    reporter: Oskar L
+    bugs:
+      - url: 1996473
+  MFSA-RESERVE-2025-1996555:
+    title: 'Privilege escalation in the DOM: Notifications component'
+    impact: high
+    reporter: tiebuchen
+    bugs:
+      - url: 1996555
+  MFSA-RESERVE-2025-1996840:
+    title: 'JIT miscompilation in the JavaScript Engine: JIT component'
+    impact: high
+    reporter: Lingming Zhang
+    bugs:
+      - url: 1996840
+  MFSA-RESERVE-2025-2000218:
+    title: Same-origin policy bypass in the Request Handling component
+    impact: moderate
+    reporter: Igor Morgenstern
+    bugs:
+      - url: 2000218
+

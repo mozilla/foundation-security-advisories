@@ -1,0 +1,71 @@
+## mfsa2025-94.yml
+announced: December 09, 2025
+impact: high
+fixed_in:
+- Firefox ESR 140.6
+title: Security Vulnerabilities fixed in Firefox ESR 140.6
+advisories:
+  MFSA-RESERVE-2025-1992760:
+    title: 'Use-after-free in the WebRTC: Signaling component'
+    impact: high
+    reporter: Igor Morgenstern
+    bugs:
+      - url: 1992760
+  MFSA-RESERVE-2025-1996473:
+    title: 'Sandbox escape due to incorrect boundary conditions in the Graphics: CanvasWebGL component'
+    impact: high
+    reporter: Oskar L
+    bugs:
+      - url: 1996473
+  MFSA-RESERVE-2025-1996555:
+    title: 'Privilege escalation in the DOM: Notifications component'
+    impact: high
+    reporter: tiebuchen
+    bugs:
+      - url: 1996555
+  MFSA-RESERVE-2025-1996840:
+    title: 'JIT miscompilation in the JavaScript Engine: JIT component'
+    impact: high
+    reporter: Lingming Zhang
+    bugs:
+      - url: 1996840
+  MFSA-RESERVE-2025-1998050:
+    title: 'JIT miscompilation in the JavaScript Engine: JIT component'
+    impact: high
+    reporter: zx
+    bugs:
+      - url: 1998050
+  MFSA-RESERVE-2025-1996761:
+    title: Privilege escalation in the Netmonitor component
+    impact: moderate
+    reporter: Ameen Basha M K
+    bugs:
+      - url: 1996761
+  MFSA-RESERVE-2025-1997018:
+    title: Privilege escalation in the Netmonitor component
+    impact: moderate
+    reporter: satrya wira yudha
+    bugs:
+      - url: 1997018
+  MFSA-RESERVE-2025-1997503:
+    title: 'JIT miscompilation in the JavaScript Engine: JIT component'
+    impact: moderate
+    reporter: Rong Bao
+    bugs:
+      - url: 1997503
+  MFSA-RESERVE-2025-2000218:
+    title: Same-origin policy bypass in the Request Handling component
+    impact: moderate
+    reporter: Igor Morgenstern
+    bugs:
+      - url: 2000218
+  MFSA-RESERVE-2025-1:
+    title: Memory safety bugs fixed in Firefox ESR 140.6, Thunderbird ESR 140.6, Firefox 146 and Thunderbird 146
+    impact: moderate
+    reporter: Maurice Dauer and the Mozilla Fuzzing Team
+    description: |
+      Memory safety bugs present in Firefox ESR 140.5, Thunderbird ESR 140.5, Firefox 145 and Thunderbird 145. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1966501, 1997639
+        desc: Memory safety bugs fixed in Firefox ESR 140.6, Thunderbird ESR 140.6, Firefox 146 and Thunderbird 146
+
