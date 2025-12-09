@@ -1,0 +1,94 @@
+## mfsa2025-95.yml
+announced: December 09, 2025
+impact: high
+fixed_in:
+- Thunderbird 146
+title: Security Vulnerabilities fixed in Thunderbird 146
+description: |
+  *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
+advisories:
+  CVE-2025-14321:
+    title: 'Use-after-free in the WebRTC: Signaling component'
+    impact: high
+    reporter: Igor Morgenstern
+    bugs:
+      - url: 1992760
+  CVE-2025-14322:
+    title: 'Sandbox escape due to incorrect boundary conditions in the Graphics: CanvasWebGL component'
+    impact: high
+    reporter: Oskar L
+    bugs:
+      - url: 1996473
+  CVE-2025-14323:
+    title: 'Privilege escalation in the DOM: Notifications component'
+    impact: high
+    reporter: tiebuchen
+    bugs:
+      - url: 1996555
+  CVE-2025-14324:
+    title: 'JIT miscompilation in the JavaScript Engine: JIT component'
+    impact: high
+    reporter: Lingming Zhang
+    bugs:
+      - url: 1996840
+  CVE-2025-14325:
+    title: 'JIT miscompilation in the JavaScript Engine: JIT component'
+    impact: high
+    reporter: zx
+    bugs:
+      - url: 1998050
+  CVE-2025-14326:
+    title: 'Use-after-free in the Audio/Video: GMP component'
+    impact: moderate
+    reporter: Andrew McCreight
+    bugs:
+      - url: 1840666
+  CVE-2025-14327:
+    title: Spoofing issue in the Downloads Panel component
+    impact: moderate
+    reporter: Caro Kann
+    bugs:
+      - url: 1970743
+  CVE-2025-14328:
+    title: Privilege escalation in the Netmonitor component
+    impact: moderate
+    reporter: Ameen Basha M K
+    bugs:
+      - url: 1996761
+  CVE-2025-14329:
+    title: Privilege escalation in the Netmonitor component
+    impact: moderate
+    reporter: satrya wira yudha
+    bugs:
+      - url: 1997018
+  CVE-2025-14330:
+    title: 'JIT miscompilation in the JavaScript Engine: JIT component'
+    impact: moderate
+    reporter: Rong Bao
+    bugs:
+      - url: 1997503
+  CVE-2025-14331:
+    title: Same-origin policy bypass in the Request Handling component
+    impact: moderate
+    reporter: Igor Morgenstern
+    bugs:
+      - url: 2000218
+  CVE-2025-14332:
+    title: Memory safety bugs fixed in Firefox 146 and Thunderbird 146
+    impact: moderate
+    reporter: Jon Coppeard, Maurice Dauer and the Mozilla Fuzzing Team
+    description: |
+      Memory safety bugs present in Firefox 145 and Thunderbird 145. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1963153, 1985058, 1995637, 1997118
+        desc: Memory safety bugs fixed in Firefox 146 and Thunderbird 146
+  CVE-2025-14333:
+    title: Memory safety bugs fixed in Firefox ESR 140.6, Thunderbird ESR 140.6, Firefox 146 and Thunderbird 146
+    impact: moderate
+    reporter: Maurice Dauer and the Mozilla Fuzzing Team
+    description: |
+      Memory safety bugs present in Firefox ESR 140.5, Thunderbird ESR 140.5, Firefox 145 and Thunderbird 145. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1966501, 1997639
+        desc: Memory safety bugs fixed in Firefox ESR 140.6, Thunderbird ESR 140.6, Firefox 146 and Thunderbird 146
+
