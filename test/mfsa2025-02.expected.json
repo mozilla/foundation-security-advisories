@@ -1,0 +1,202 @@
+{
+  "MFSA-TMP-2025-00001": {
+    "containers": {
+      "cna": {
+        "affected": [
+          {
+            "product": "Firefox",
+            "vendor": "Mozilla",
+            "versions": [
+              {
+                "lessThan": "128",
+                "status": "affected",
+                "version": "unspecified",
+                "versionType": "custom"
+              }
+            ]
+          }
+        ],
+        "credits": [
+          {
+            "lang": "en",
+            "value": "Reporter"
+          }
+        ],
+        "descriptions": [
+          {
+            "lang": "en",
+            "supportingMedia": [
+              {
+                "base64": false,
+                "type": "text/html",
+                "value": "Description without a dot. This vulnerability affects Firefox < 128."
+              }
+            ],
+            "value": "Description without a dot. This vulnerability affects Firefox < 128."
+          }
+        ],
+        "references": [
+          {
+            "url": "https://www.mozilla.org/security/advisories/mfsa2025-02/"
+          },
+          {
+            "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=1000000"
+          }
+        ],
+        "title": "Test advisory"
+      }
+    },
+    "dataType": "CVE_RECORD",
+    "dataVersion": "5.1"
+  },
+  "MFSA-TMP-2025-00002": {
+    "containers": {
+      "cna": {
+        "affected": [
+          {
+            "product": "Firefox",
+            "vendor": "Mozilla",
+            "versions": [
+              {
+                "lessThan": "128",
+                "status": "affected",
+                "version": "unspecified",
+                "versionType": "custom"
+              }
+            ]
+          }
+        ],
+        "credits": [
+          {
+            "lang": "en",
+            "value": "Reporter"
+          }
+        ],
+        "descriptions": [
+          {
+            "lang": "en",
+            "supportingMedia": [
+              {
+                "base64": false,
+                "type": "text/html",
+                "value": "Description. *With a notice in asterisks.*. This vulnerability affects Firefox < 128."
+              }
+            ],
+            "value": "Description. *With a notice in asterisks.*. This vulnerability affects Firefox < 128."
+          }
+        ],
+        "references": [
+          {
+            "url": "https://www.mozilla.org/security/advisories/mfsa2025-02/"
+          },
+          {
+            "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=1000000"
+          }
+        ],
+        "title": "Test advisory"
+      }
+    },
+    "dataType": "CVE_RECORD",
+    "dataVersion": "5.1"
+  },
+  "MFSA-TMP-2025-00003": {
+    "containers": {
+      "cna": {
+        "affected": [
+          {
+            "product": "Firefox",
+            "vendor": "Mozilla",
+            "versions": [
+              {
+                "lessThan": "128",
+                "status": "affected",
+                "version": "unspecified",
+                "versionType": "custom"
+              }
+            ]
+          }
+        ],
+        "credits": [
+          {
+            "lang": "en",
+            "value": "Reporter"
+          }
+        ],
+        "descriptions": [
+          {
+            "lang": "en",
+            "supportingMedia": [
+              {
+                "base64": false,
+                "type": "text/html",
+                "value": "Description <code>With a code block</code>. This vulnerability affects Firefox < 128."
+              }
+            ],
+            "value": "Description `With a code block`. This vulnerability affects Firefox < 128."
+          }
+        ],
+        "references": [
+          {
+            "url": "https://www.mozilla.org/security/advisories/mfsa2025-02/"
+          },
+          {
+            "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=1000000"
+          }
+        ],
+        "title": "Test advisory"
+      }
+    },
+    "dataType": "CVE_RECORD",
+    "dataVersion": "5.1"
+  },
+  "MFSA-TMP-2025-00004": {
+    "containers": {
+      "cna": {
+        "affected": [
+          {
+            "product": "Firefox",
+            "vendor": "Mozilla",
+            "versions": [
+              {
+                "lessThan": "128",
+                "status": "affected",
+                "version": "unspecified",
+                "versionType": "custom"
+              }
+            ]
+          }
+        ],
+        "credits": [
+          {
+            "lang": "en",
+            "value": "Reporter"
+          }
+        ],
+        "descriptions": [
+          {
+            "lang": "en",
+            "supportingMedia": [
+              {
+                "base64": false,
+                "type": "text/html",
+                "value": "Test advisory with dot in title. This vulnerability affects Firefox < 128."
+              }
+            ],
+            "value": "Test advisory with dot in title. This vulnerability affects Firefox < 128."
+          }
+        ],
+        "references": [
+          {
+            "url": "https://www.mozilla.org/security/advisories/mfsa2025-02/"
+          },
+          {
+            "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=1000000"
+          }
+        ],
+        "title": "Test advisory with dot in title."
+      }
+    },
+    "dataType": "CVE_RECORD",
+    "dataVersion": "5.1"
+  }
+}
