@@ -1,0 +1,17 @@
+## mfsa2025-97.yml
+announced: December 15th, 2025
+impact: low
+fixed_in:
+- Firefox for iOS 144.0
+title: Security Vulnerabilities fixed in Firefox for iOS 144.0
+description: |
+  Firefox for iOS 144 was released October 12th, 2025 and the fix for CVE-2025-14744 was included in the original release; but this advisory was not published until December 16, 2025 because it was not recognized at the time.
+advisories:
+  CVE-2025-14744:
+    title: Filename spoofing via Unicode Right-to-Left Override in Firefox for iOS
+    impact: low
+    reporter: Azril
+    description: |
+      Unicode RTLO characters could allow malicious websites to spoof filenames in the downloads UI for Firefox for iOS, potentially tricking users into saving files of an unexpected file type
+    bugs:
+      - url: 1984683
