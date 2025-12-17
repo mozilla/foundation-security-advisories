@@ -140,7 +140,7 @@ def check_file(file_name):
 
                 if not any(advisory["description"].strip().endswith(end) for end in [".", ".*", ".)", ".</em>", ".</i>", ".</b>"]) \
                         and announced >= date(2025, 11, 1):  # Cutoff date for this check
-                    return f"Advisory description should end with a period, not '{advisory.description.strip()[-2:]}': '{advisory.description.strip()}'"
+                    return f"Advisory description should end with a period, not '{advisory['description'].strip()[-2:]}': '{advisory['description'].strip()}'"
 
     if file_name.endswith('.yml'):
         with open(file_name, "r") as f:

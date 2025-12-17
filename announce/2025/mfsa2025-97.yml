@@ -12,6 +12,6 @@ advisories:
     impact: low
     reporter: Azril
     description: |
-      Unicode RTLO characters could allow malicious websites to spoof filenames in the downloads UI for Firefox for iOS, potentially tricking users into saving files of an unexpected file type
+      Unicode RTLO characters could allow malicious websites to spoof filenames in the downloads UI for Firefox for iOS, potentially tricking users into saving files of an unexpected file type.
     bugs:
       - url: 1984683
