@@ -1,0 +1,22 @@
+## mfsa2025-98.yml
+announced: December 18, 2025
+impact: high
+fixed_in:
+- Firefox 146.0.1
+title: Security Vulnerabilities fixed in Firefox 146.0.1
+advisories:
+  CVE-2025-14860:
+    title: Use-after-free in the Disability Access APIs component
+    impact: high
+    reporter: Irvan Kurniawan
+    bugs:
+      - url: 2000597
+  CVE-2025-14861:
+    title: Memory safety bugs fixed in Firefox 146.0.1
+    impact: high
+    reporter: Andrew McCreight and the Mozilla Fuzzing Team
+    description: |
+      Memory safety bugs present in Firefox 146. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1996570, 1999700
+        desc: Memory safety bugs fixed in Firefox 146.0.1
