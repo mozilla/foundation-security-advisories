@@ -46,7 +46,7 @@ advisories:
     bugs:
       - url: 1602944
   CVE-2020-6792:
-     title: Message ID calculcation was based on uninitialized data
+     title: Message ID calculation was based on uninitialized data
      impact: low
      reporter: Chiaki ISHIKAWA
      description: |

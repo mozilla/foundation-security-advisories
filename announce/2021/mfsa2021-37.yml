@@ -11,6 +11,6 @@ advisories:
     impact: high
     reporter: Youssef Sammouda
     description: |
-      Firefox incorrectly accepted a newline in a HTTP/3 header, interpretting it as two separate headers. This allowed for a header splitting attack against servers using HTTP/3.
+      Firefox incorrectly accepted a newline in a HTTP/3 header, interpreting it as two separate headers. This allowed for a header splitting attack against servers using HTTP/3.
     bugs:
       - url: 1724896
