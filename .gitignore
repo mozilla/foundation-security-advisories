@@ -2,3 +2,4 @@ debuglog.*
 *.egg-info
 /build
 __pycache__
+*.actual.json

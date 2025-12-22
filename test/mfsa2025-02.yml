@@ -1,0 +1,37 @@
+# More testcases
+announced: January 1, 2025
+impact: low
+fixed_in:
+  - Firefox 128
+title: Test Security Vulnerabilities fixed in Firefox 128
+advisories:
+  MFSA-TMP-2025-00001:
+    title: Test advisory
+    impact: low
+    reporter: Reporter
+    description: |
+      Description without a dot
+    bugs:
+      - url: 1000000
+  MFSA-TMP-2025-00002:
+    title: Test advisory
+    impact: low
+    reporter: Reporter
+    description: |
+      Description. *With a notice in asterisks.*
+    bugs:
+      - url: 1000000
+  MFSA-TMP-2025-00003:
+    title: Test advisory
+    impact: low
+    reporter: Reporter
+    description: |
+      Description <code>With a code block</code>.
+    bugs:
+      - url: 1000000
+  MFSA-TMP-2025-00004:
+    title: Test advisory with dot in title.
+    impact: low
+    reporter: Reporter
+    bugs:
+      - url: 1000000
