@@ -47,7 +47,7 @@
       }
     },
     "dataType": "CVE_RECORD",
-    "dataVersion": "5.1"
+    "dataVersion": "5.2"
   },
   "MFSA-TMP-2025-00002": {
     "containers": {
@@ -97,7 +97,7 @@
       }
     },
     "dataType": "CVE_RECORD",
-    "dataVersion": "5.1"
+    "dataVersion": "5.2"
   },
   "MFSA-TMP-2025-00003": {
     "containers": {
@@ -147,7 +147,7 @@
       }
     },
     "dataType": "CVE_RECORD",
-    "dataVersion": "5.1"
+    "dataVersion": "5.2"
   },
   "MFSA-TMP-2025-00004": {
     "containers": {
@@ -197,6 +197,6 @@
       }
     },
     "dataType": "CVE_RECORD",
-    "dataVersion": "5.1"
+    "dataVersion": "5.2"
   }
 }
