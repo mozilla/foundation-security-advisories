@@ -18,8 +18,8 @@ from markdown import markdown
 GIT = os.getenv("GIT_BIN", "git")
 ADVISORIES_DIR = "announce"
 HOF_DIR = "bug-bounty-hof"
-MFSA_FILENAME_RE = re.compile("mfsa(\d{4}-\d{2,3})\.(md|yml)$")
-HOF_FILENAME_RE = re.compile("bug-bounty-hof/\w+\.yml$")
+MFSA_FILENAME_RE = re.compile(r"mfsa(\d{4}-\d{2,3})\.(md|yml)$")
+HOF_FILENAME_RE = re.compile(r"bug-bounty-hof/\w+\.yml$")
 HTML_BR_TAG_RE = re.compile(r"<br */?>")
 HTML_CODE_TAG_RE = re.compile(r"</?code>")
 HTML_TAG_RE = re.compile(r"<[^>]+>")
@@ -204,8 +204,9 @@ class CVEAdvisory:
                 raise Exception(
                     "Advisory has neither a title nor a description")
 
-            description = self.newest_instance.title.strip().strip('.') + "."
+            description = self.newest_instance.title.strip()
 
+        description = description.rstrip(".") + "."
         return (
             description
             + " This vulnerability affects "
