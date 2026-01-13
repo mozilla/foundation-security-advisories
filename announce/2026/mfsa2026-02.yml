@@ -5,31 +5,31 @@ fixed_in:
 - Firefox ESR 115.32
 title: Security Vulnerabilities fixed in Firefox ESR 115.32
 advisories:
-  MFSA-RESERVE-2026-1999257:
+  CVE-2026-0877:
     title: 'Mitigation bypass in the DOM: Security component'
     impact: high
     reporter: mingijung
     bugs:
       - url: 1999257
-  MFSA-RESERVE-2026-2004602:
+  CVE-2026-0879:
     title: Sandbox escape due to incorrect boundary conditions in the Graphics component
     impact: high
     reporter: Oskar L
     bugs:
       - url: 2004602
-  MFSA-RESERVE-2026-2005014:
+  CVE-2026-0880:
     title: Sandbox escape due to integer overflow in the Graphics component
     impact: high
     reporter: Oskar L
     bugs:
       - url: 2005014
-  MFSA-RESERVE-2026-1924125:
+  CVE-2026-0882:
     title: Use-after-free in the IPC component
     impact: high
     reporter: Randell Jesup
     bugs:
       - url: 1924125
-  MFSA-RESERVE-2026-2005658:
+  CVE-2026-0886:
     title: Incorrect boundary conditions in the Graphics component
     impact: moderate
     reporter: Oskar L
