@@ -1,0 +1,112 @@
+## mfsa2026-04.yml
+announced: January 13, 2026
+impact: high
+fixed_in:
+- Thunderbird 147
+title: Security Vulnerabilities fixed in Thunderbird 147
+description: |
+  *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
+advisories:
+  CVE-2026-0877:
+    title: 'Mitigation bypass in the DOM: Security component'
+    impact: high
+    reporter: mingijung
+    bugs:
+      - url: 1999257
+  CVE-2026-0878:
+    title: 'Sandbox escape due to incorrect boundary conditions in the Graphics: CanvasWebGL component'
+    impact: high
+    reporter: Oskar L
+    bugs:
+      - url: 2003989
+  CVE-2026-0879:
+    title: Sandbox escape due to incorrect boundary conditions in the Graphics component
+    impact: high
+    reporter: Oskar L
+    bugs:
+      - url: 2004602
+  CVE-2026-0880:
+    title: Sandbox escape due to integer overflow in the Graphics component
+    impact: high
+    reporter: Oskar L
+    bugs:
+      - url: 2005014
+  CVE-2026-0881:
+    title: Sandbox escape in the Messaging System component
+    impact: high
+    reporter: Andrew McCreight
+    bugs:
+      - url: 2005845
+  CVE-2026-0882:
+    title: Use-after-free in the IPC component
+    impact: high
+    reporter: Randell Jesup
+    bugs:
+      - url: 1924125
+  CVE-2026-0883:
+    title: Information disclosure in the Networking component
+    impact: moderate
+    reporter: Vladislav Plyatsok
+    bugs:
+      - url: 1989340
+  CVE-2026-0884:
+    title: Use-after-free in the JavaScript Engine component
+    impact: moderate
+    reporter: Gary Kwong and Nan Wang
+    bugs:
+      - url: 2003588
+  CVE-2026-0885:
+    title: 'Use-after-free in the JavaScript: GC component'
+    impact: moderate
+    reporter: Irvan Kurniawan
+    bugs:
+      - url: 2003607
+  CVE-2026-0886:
+    title: Incorrect boundary conditions in the Graphics component
+    impact: moderate
+    reporter: Oskar L
+    bugs:
+      - url: 2005658
+  CVE-2026-0887:
+    title: Clickjacking issue, information disclosure in the PDF Viewer component
+    impact: moderate
+    reporter: Lyra Rebane
+    bugs:
+      - url: 2006500
+  CVE-2026-0888:
+    title: Information disclosure in the XML component
+    impact: low
+    reporter: Pier Angelo Vendrame
+    bugs:
+      - url: 1985996
+  CVE-2026-0889:
+    title: 'Denial-of-service in the DOM: Service Workers component'
+    impact: low
+    reporter: Elysee Franchuk, Caleb Lerch
+    bugs:
+      - url: 1999084
+  CVE-2026-0890:
+    title: 'Spoofing issue in the DOM: Copy & Paste and Drag & Drop component'
+    impact: low
+    reporter: Edgar Chen
+    bugs:
+      - url: 2005081
+  CVE-2026-0891:
+    title: Memory safety bugs fixed in Firefox ESR 140.7, Thunderbird ESR 140.7, Firefox 147 and Thunderbird 147
+    impact: high
+    reporter: Andrew McCreight, Dennis Jackson and the Mozilla Fuzzing Team
+    description: |
+      Memory safety bugs present in Firefox ESR 140.6, Thunderbird ESR 140.6, Firefox 146 and Thunderbird 146. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1964722, 2000981, 2003100, 2003278
+        desc: Memory safety bugs fixed in Firefox ESR 140.7, Thunderbird ESR 140.7, Firefox 147 and Thunderbird 147
+  CVE-2026-0892:
+    title: Memory safety bugs fixed in Firefox 147 and Thunderbird 147
+    impact: moderate
+    reporter: Hiroyuki Ikezoe, Jon Coppeard, Maurice Dauer and the Mozilla Fuzzing Team
+    description: |
+      Memory safety bugs present in Firefox 146 and Thunderbird 146. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1986912, 1996718, 1999633, 2001081, 2004443
+        desc: Memory safety bugs fixed in Firefox 147 and Thunderbird 147
+
