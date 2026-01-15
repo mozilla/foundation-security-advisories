@@ -82,7 +82,7 @@ advisories:
   CVE-2026-0889:
     title: 'Denial-of-service in the DOM: Service Workers component'
     impact: low
-    reporter: Elysee Franchuk
+    reporter: Elysee Franchuk, Caleb Lerch
     bugs:
       - url: 1999084
   CVE-2026-0890:
