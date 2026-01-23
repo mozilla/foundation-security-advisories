@@ -1,0 +1,13 @@
+## mfsa2026-07.yml
+announced: January 27, 2026
+impact: moderate
+fixed_in:
+- Thunderbird 147.0.1
+title: Security Vulnerabilities fixed in Thunderbird 147.0.1
+advisories:
+  CVE-2026-0818:
+    title: CSS-based exfiltration of the content from partially encrypted emails when allowing remote content
+    impact: moderate
+    reporter: Leon Trampert, Daniel Weber, Christian Rossow, Michael Schwarz
+    bugs:
+      - url: 1881530
