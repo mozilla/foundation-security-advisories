@@ -1,0 +1,20 @@
+## mfsa2026-06.yml
+announced: January 27, 2026
+impact: high
+fixed_in:
+- Firefox 147.0.2
+title: Security Vulnerabilities fixed in Firefox 147.0.2
+advisories:
+  CVE-2026-24868:
+    title: 'Mitigation bypass in the Privacy: Anti-Tracking component'
+    impact: moderate
+    reporter: Masato Kinugawa
+    bugs:
+      - url: 2007302
+  CVE-2026-24869:
+    title: 'Use-after-free in the Layout: Scrolling and Overflow component'
+    impact: high
+    reporter: Hiroyuki Ikezoe
+    bugs:
+      - url: 2008698
+
