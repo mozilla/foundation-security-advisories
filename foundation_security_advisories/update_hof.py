@@ -75,6 +75,10 @@ https://bugzilla.mozilla.org/buglist.cgi?x=x
 """.replace("\n", "")
 
 credit_entries = {
+    "64176d023844ad35b44d971491ae8429":"Massedil",
+    "e15216d4a7d58f855a8e223c82a94d95":"Abhishek Kumar",
+    "4f22a49dcc10be2cc63a7fcd6a16cb41":"Aisle Inc.",
+    "6712c3b37bda1042e4fbca29397d9a0c":"Mochammad Nosa Shandy Prastyo",
     "000a85dcddda0440171163bb09f176de":"Ibuki Sato",
     "efa7a90190df7747adadadc239bd360b":"Oskar L",
     "4588118826e1f4ab10199991d8ccbbd8":"sherkito",
@@ -525,6 +529,7 @@ twitter_entries = {
     "fe7f319c61c0b44d4cb751afda4f4aeb" : "@Gaurav_00000",
 }
 url_entries = {
+    "e15216d4a7d58f855a8e223c82a94d95":"https://www.linkedin.com/in/abhishek-kumar-003933375/",
     "455583182ba2e5c9b5a802e4e7da8bf9":"https://www.linkedin.com/in/bharat-adhikari-726337225",
     "f61a89bd95c4b84b6c6c79c988267950":"https://www.linkedin.com/in/jurrieovergoor/",
     "8b37f9bddc61920163d071f779926e25":"https://www.linkedin.com/in/rnando/",
