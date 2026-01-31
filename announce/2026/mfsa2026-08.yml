@@ -9,5 +9,15 @@ advisories:
     title: CSS-based exfiltration of the content from partially encrypted emails when allowing remote content
     impact: moderate
     reporter: Leon Trampert, Daniel Weber, Christian Rossow, Michael Schwarz
+    description: |
+      When a user explicitly requested Thunderbird to decrypt an inline
+      OpenPGP message that was embedded in a text section of an email
+      that was formatted and styled with HTML and CSS, then the
+      decrypted contents were rendered in a context in which the CSS
+      styles from the outer messages were active. If the user had
+      additionally allowed loading of the remote content referenced by
+      the outer email message, and the email was crafted by the sender
+      using a combination of CSS rules and fonts and animations, then
+      it was possible to extract the secret contents of the email.
     bugs:
       - url: 1881530
