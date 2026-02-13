@@ -1,0 +1,16 @@
+## mfsa2026-08.yml
+announced: February 16, 2026
+impact: high
+fixed_in:
+- Firefox 147.0.4
+- Firefox ESR 140.7.1
+- Firefox ESR 115.32.1
+title: Security Vulnerabilities fixed in 147.0.4, ESR 140.7.1, and ESR 115.32.1
+advisories:
+  CVE-2026-2447:
+    title: 'Heap buffer overflow in libvpx'
+    impact: high
+    reporter: jayjayjazz
+    bugs:
+      - url: 2014390
+    feed: false
