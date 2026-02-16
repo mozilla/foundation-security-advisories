@@ -1,0 +1,17 @@
+## mfsa2026-11.yml
+announced: February 16, 2026
+impact: high
+fixed_in:
+- Thunderbird 140.7.2
+- Thunderbird 147.0.2
+title: Security Vulnerabilities fixed in Thunderbird 147.0.2 and 140.7.2
+description: |
+  *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
+advisories:
+  CVE-2026-2447:
+    title: 'Heap buffer overflow in libvpx'
+    impact: high
+    reporter: jayjayjazz
+    bugs:
+      - url: 2014390
+    feed: false
