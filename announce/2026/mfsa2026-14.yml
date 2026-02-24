@@ -1,0 +1,137 @@
+## mfsa2026-14.yml
+announced: February 24, 2026
+impact: high
+fixed_in:
+- Firefox ESR 115.33
+title: Security Vulnerabilities fixed in Firefox ESR 115.33
+advisories:
+  CVE-2026-2757:
+    title: 'Incorrect boundary conditions in the WebRTC: Audio/Video component'
+    impact: high
+    reporter: Igor Morgenstern
+    bugs:
+      - url: 2001637
+  CVE-2026-2758:
+    title: 'Use-after-free in the JavaScript: GC component'
+    impact: high
+    reporter: Gary Kwong
+    bugs:
+      - url: 2009608
+  CVE-2026-2759:
+    title: 'Incorrect boundary conditions in the Graphics: ImageLib component'
+    impact: high
+    reporter: stevej
+    bugs:
+      - url: 2010933
+  CVE-2026-2760:
+    title: 'Sandbox escape due to incorrect boundary conditions in the Graphics: WebRender component'
+    impact: high
+    reporter: Oskar L
+    bugs:
+      - url: 2011062
+  CVE-2026-2761:
+    title: 'Sandbox escape in the Graphics: WebRender component'
+    impact: high
+    reporter: Oskar L
+    bugs:
+      - url: 2011063
+  CVE-2026-2763:
+    title: Use-after-free in the JavaScript Engine component
+    impact: high
+    reporter: Information to follow
+    bugs:
+      - url: 2012018
+  CVE-2026-2764:
+    title: 'JIT miscompilation, use-after-free in the JavaScript Engine: JIT component'
+    impact: high
+    reporter: Information to follow
+    bugs:
+      - url: 2012608
+  CVE-2026-2769:
+    title: 'Use-after-free in the Storage: IndexedDB component'
+    impact: high
+    reporter: Information to follow
+    bugs:
+      - url: 2014550
+  CVE-2026-2770:
+    title: 'Use-after-free in the DOM: Bindings (WebIDL) component'
+    impact: high
+    reporter: Information to follow
+    bugs:
+      - url: 2014585
+  CVE-2026-2771:
+    title: 'Undefined behavior in the DOM: Core & HTML component'
+    impact: high
+    reporter: Information to follow
+    bugs:
+      - url: 2014593
+  CVE-2026-2772:
+    title: 'Use-after-free in the Audio/Video: Playback component'
+    impact: high
+    reporter: Information to follow
+    bugs:
+      - url: 2014827
+  CVE-2026-2773:
+    title: Incorrect boundary conditions in the Web Audio component
+    impact: high
+    reporter: Information to follow
+    bugs:
+      - url: 2014832
+  CVE-2026-2774:
+    title: Integer overflow in the Audio/Video component
+    impact: high
+    reporter: Information to follow
+    bugs:
+      - url: 2014883
+  CVE-2026-2775:
+    title: 'Mitigation bypass in the DOM: HTML Parser component'
+    impact: high
+    reporter: Information to follow
+    bugs:
+      - url: 2015199
+  CVE-2026-2776:
+    title: Sandbox escape due to incorrect boundary conditions in the Telemetry component in External Software
+    impact: high
+    reporter: Sajeeb Lohani
+    bugs:
+      - url: 2015266
+  CVE-2026-2777:
+    title: Privilege escalation in the Messaging System component
+    impact: high
+    reporter: Richard Belisle
+    bugs:
+      - url: 2015305
+  CVE-2026-2778:
+    title: 'Sandbox escape due to incorrect boundary conditions in the DOM: Core & HTML component'
+    impact: high
+    reporter: Sajeeb Lohani
+    bugs:
+      - url: 2016358
+  CVE-2026-2787:
+    title: 'Use-after-free in the DOM: Window and Location component'
+    impact: moderate
+    reporter: Information to follow
+    bugs:
+      - url: 2014560
+  CVE-2026-2788:
+    title: 'Incorrect boundary conditions in the Audio/Video: GMP component'
+    impact: moderate
+    reporter: Information to follow
+    bugs:
+      - url: 2014824
+  CVE-2026-2789:
+    title: 'Use-after-free in the Graphics: ImageLib component'
+    impact: moderate
+    reporter: Information to follow
+    bugs:
+      - url: 2015179
+  CVE-2026-2793:
+    title: Memory safety bugs fixed in Firefox ESR 115.33, Firefox ESR 140.8, Thunderbird ESR 140.8, Firefox 148 and Thunderbird 148
+    impact: high
+    reporter: Andrew McCreight, Christian Holler
+    description: |
+      Memory safety bugs present in Firefox ESR 115.32, Firefox ESR 140.7, Thunderbird ESR 140.7, Firefox 147 and Thunderbird 147. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 2015196, 2016423, 2016498
+        desc: Memory safety bugs fixed in Firefox ESR 115.33, Firefox ESR 140.8, Thunderbird ESR 140.8, Firefox 148 and Thunderbird 148
+

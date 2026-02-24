@@ -1,0 +1,323 @@
+## mfsa2026-13.yml
+announced: February 24, 2026
+impact: high
+fixed_in:
+- Firefox 148
+title: Security Vulnerabilities fixed in Firefox 148
+advisories:
+  CVE-2026-2757:
+    title: 'Incorrect boundary conditions in the WebRTC: Audio/Video component'
+    impact: high
+    reporter: Igor Morgenstern
+    bugs:
+      - url: 2001637
+  CVE-2026-2794:
+    title: Information disclosure due to uninitialized memory in Firefox and Firefox Focus for Android
+    impact: high
+    reporter: stevej
+    bugs:
+      - url: 2008365
+  CVE-2026-2758:
+    title: 'Use-after-free in the JavaScript: GC component'
+    impact: high
+    reporter: Gary Kwong
+    bugs:
+      - url: 2009608
+  CVE-2026-2759:
+    title: 'Incorrect boundary conditions in the Graphics: ImageLib component'
+    impact: high
+    reporter: stevej
+    bugs:
+      - url: 2010933
+  CVE-2026-2795:
+    title: 'Use-after-free in the JavaScript: GC component'
+    impact: high
+    reporter: x0e
+    bugs:
+      - url: 2010940
+  CVE-2026-2760:
+    title: 'Sandbox escape due to incorrect boundary conditions in the Graphics: WebRender component'
+    impact: high
+    reporter: Oskar L
+    bugs:
+      - url: 2011062
+  CVE-2026-2761:
+    title: 'Sandbox escape in the Graphics: WebRender component'
+    impact: high
+    reporter: Oskar L
+    bugs:
+      - url: 2011063
+  CVE-2026-2762:
+    title: 'Integer overflow in the JavaScript: Standard Library component'
+    impact: high
+    reporter: André Bargull
+    bugs:
+      - url: 2011649
+  CVE-2026-2763:
+    title: Use-after-free in the JavaScript Engine component
+    impact: high
+    reporter: Information to follow
+    bugs:
+      - url: 2012018
+  CVE-2026-2764:
+    title: 'JIT miscompilation, use-after-free in the JavaScript Engine: JIT component'
+    impact: high
+    reporter: Information to follow
+    bugs:
+      - url: 2012608
+  CVE-2026-2796:
+    title: 'JIT miscompilation in the JavaScript: WebAssembly component'
+    impact: high
+    reporter: Information to follow
+    bugs:
+      - url: 2013165
+  CVE-2026-2797:
+    title: 'Use-after-free in the JavaScript: GC component'
+    impact: high
+    reporter: Information to follow
+    bugs:
+      - url: 2013561
+  CVE-2026-2765:
+    title: Use-after-free in the JavaScript Engine component
+    impact: high
+    reporter: Information to follow
+    bugs:
+      - url: 2013562
+  CVE-2026-2766:
+    title: 'Use-after-free in the JavaScript Engine: JIT component'
+    impact: high
+    reporter: Information to follow
+    bugs:
+      - url: 2013583
+  CVE-2026-2767:
+    title: 'Use-after-free in the JavaScript: WebAssembly component'
+    impact: high
+    reporter: Sajeeb Lohani
+    bugs:
+      - url: 2013741
+  CVE-2026-2768:
+    title: 'Sandbox escape in the Storage: IndexedDB component'
+    impact: high
+    reporter: Sajeeb Lohani
+    bugs:
+      - url: 2014101
+  CVE-2026-2798:
+    title: 'Use-after-free in the DOM: Core & HTML component'
+    impact: high
+    reporter: Sajeeb Lohani
+    bugs:
+      - url: 2014136
+  CVE-2026-2769:
+    title: 'Use-after-free in the Storage: IndexedDB component'
+    impact: high
+    reporter: Information to follow
+    bugs:
+      - url: 2014550
+  CVE-2026-2799:
+    title: 'Use-after-free in the DOM: Core & HTML component'
+    impact: high
+    reporter: Information to follow
+    bugs:
+      - url: 2014551
+  CVE-2026-2770:
+    title: 'Use-after-free in the DOM: Bindings (WebIDL) component'
+    impact: high
+    reporter: Information to follow
+    bugs:
+      - url: 2014585
+  CVE-2026-2771:
+    title: 'Undefined behavior in the DOM: Core & HTML component'
+    impact: high
+    reporter: Information to follow
+    bugs:
+      - url: 2014593
+  CVE-2026-2772:
+    title: 'Use-after-free in the Audio/Video: Playback component'
+    impact: high
+    reporter: Information to follow
+    bugs:
+      - url: 2014827
+  CVE-2026-2773:
+    title: Incorrect boundary conditions in the Web Audio component
+    impact: high
+    reporter: Information to follow
+    bugs:
+      - url: 2014832
+  CVE-2026-2774:
+    title: Integer overflow in the Audio/Video component
+    impact: high
+    reporter: Information to follow
+    bugs:
+      - url: 2014883
+  CVE-2026-2775:
+    title: 'Mitigation bypass in the DOM: HTML Parser component'
+    impact: high
+    reporter: Information to follow
+    bugs:
+      - url: 2015199
+  CVE-2026-2776:
+    title: Sandbox escape due to incorrect boundary conditions in the Telemetry component in External Software
+    impact: high
+    reporter: Sajeeb Lohani
+    bugs:
+      - url: 2015266
+  CVE-2026-2777:
+    title: Privilege escalation in the Messaging System component
+    impact: high
+    reporter: Richard Belisle
+    bugs:
+      - url: 2015305
+  CVE-2026-2778:
+    title: 'Sandbox escape due to incorrect boundary conditions in the DOM: Core & HTML component'
+    impact: high
+    reporter: Sajeeb Lohani
+    bugs:
+      - url: 2016358
+  CVE-2026-2779:
+    title: 'Incorrect boundary conditions in the Networking: JAR component'
+    impact: moderate
+    reporter: Alex Mayorga
+    bugs:
+      - url: 1164141
+  CVE-2026-2800:
+    title: Spoofing issue in the WebAuthn component in Firefox for Android
+    impact: moderate
+    reporter: hafiizh & kang ali
+    bugs:
+      - url: 1988145
+  CVE-2026-2780:
+    title: Privilege escalation in the Netmonitor component
+    impact: moderate
+    reporter: RyotaK
+    bugs:
+      - url: 2007829
+  CVE-2026-2781:
+    title: Integer overflow in the Libraries component in NSS
+    impact: moderate
+    reporter: Clay Ver Valen
+    bugs:
+      - url: 2009552
+  CVE-2026-2801:
+    title: 'Incorrect boundary conditions in the JavaScript: WebAssembly component'
+    impact: moderate
+    reporter: Kanaru Sato
+    bugs:
+      - url: 2009901
+  CVE-2026-2782:
+    title: Privilege escalation in the Netmonitor component
+    impact: moderate
+    reporter: Cody
+    bugs:
+      - url: 2010743
+  CVE-2026-2783:
+    title: 'Information disclosure due to JIT miscompilation in the JavaScript Engine: JIT component'
+    impact: moderate
+    reporter: x0e
+    bugs:
+      - url: 2010943
+  CVE-2026-2802:
+    title: 'Race condition in the JavaScript: GC component'
+    impact: moderate
+    reporter: Gary Kwong
+    bugs:
+      - url: 2011069
+  CVE-2026-2803:
+    title: Information disclosure, mitigation bypass in the Settings UI component
+    impact: moderate
+    reporter: Skywarp
+    bugs:
+      - url: 2012012
+  CVE-2026-2784:
+    title: 'Mitigation bypass in the DOM: Security component'
+    impact: moderate
+    reporter: D. Santos
+    bugs:
+      - url: 2012984
+  CVE-2026-2785:
+    title: Invalid pointer in the JavaScript Engine component
+    impact: moderate
+    reporter: Information to follow
+    bugs:
+      - url: 2013549
+  CVE-2026-2804:
+    title: 'Use-after-free in the JavaScript: WebAssembly component'
+    impact: moderate
+    reporter: Information to follow
+    bugs:
+      - url: 2013584
+  CVE-2026-2786:
+    title: Use-after-free in the JavaScript Engine component
+    impact: moderate
+    reporter: Information to follow
+    bugs:
+      - url: 2013612
+  CVE-2026-2805:
+    title: 'Invalid pointer in the DOM: Core & HTML component'
+    impact: moderate
+    reporter: Information to follow
+    bugs:
+      - url: 2014549
+  CVE-2026-2787:
+    title: 'Use-after-free in the DOM: Window and Location component'
+    impact: moderate
+    reporter: Information to follow
+    bugs:
+      - url: 2014560
+  CVE-2026-2788:
+    title: 'Incorrect boundary conditions in the Audio/Video: GMP component'
+    impact: moderate
+    reporter: Information to follow
+    bugs:
+      - url: 2014824
+  CVE-2026-2789:
+    title: 'Use-after-free in the Graphics: ImageLib component'
+    impact: moderate
+    reporter: Information to follow
+    bugs:
+      - url: 2015179
+  CVE-2026-2806:
+    title: 'Uninitialized memory in the Graphics: Text component'
+    impact: low
+    reporter: Zijie Zhao
+    bugs:
+      - url: 2006199
+  CVE-2026-2790:
+    title: 'Same-origin policy bypass in the Networking: JAR component'
+    impact: low
+    reporter: Surya Dev Singh
+    bugs:
+      - url: 2008426
+  CVE-2026-2791:
+    title: 'Mitigation bypass in the Networking: Cache component'
+    impact: low
+    reporter: Information to follow
+    bugs:
+      - url: 2015220
+  CVE-2026-2807:
+    title: Memory safety bugs fixed in Firefox 148 and Thunderbird 148
+    impact: high
+    reporter: Agi Sferro, Andrew McCreight, Randell Jesup, Tom Schuster
+    description: |
+      Memory safety bugs present in Firefox 147 and Thunderbird 147. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1756056, 1999402, 2004872, 2006037, 2012855
+        desc: Memory safety bugs fixed in Firefox 148 and Thunderbird 148
+  CVE-2026-2792:
+    title: Memory safety bugs fixed in Firefox ESR 140.8, Thunderbird ESR 140.8, Firefox 148 and Thunderbird 148
+    impact: high
+    reporter: Andrew McCreight, Maurice Dauer, Olli Pettay, Ryan Hunt
+    description: |
+      Memory safety bugs present in Firefox ESR 140.7, Thunderbird ESR 140.7, Firefox 147 and Thunderbird 147. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 2008912, 2010050, 2010275, 2012331
+        desc: Memory safety bugs fixed in Firefox ESR 140.8, Thunderbird ESR 140.8, Firefox 148 and Thunderbird 148
+  CVE-2026-2793:
+    title: Memory safety bugs fixed in Firefox ESR 115.33, Firefox ESR 140.8, Thunderbird ESR 140.8, Firefox 148 and Thunderbird 148
+    impact: high
+    reporter: Andrew McCreight, Christian Holler
+    description: |
+      Memory safety bugs present in Firefox ESR 115.32, Firefox ESR 140.7, Thunderbird ESR 140.7, Firefox 147 and Thunderbird 147. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 2015196, 2016423, 2016498
+        desc: Memory safety bugs fixed in Firefox ESR 115.33, Firefox ESR 140.8, Thunderbird ESR 140.8, Firefox 148 and Thunderbird 148
+
