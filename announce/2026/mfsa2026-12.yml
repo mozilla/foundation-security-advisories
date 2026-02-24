@@ -1,0 +1,15 @@
+## mfsa2026-12.yml
+announced: February 20, 2026
+impact: high
+fixed_in:
+- Firefox for iOS 147.4
+title: Security Vulnerabilities fixed in Firefox for iOS 147.4
+advisories:
+  CVE-2026-2634:
+    title: Spoofed web content presented under trusted domains using scripted navigation on Firefox iOS
+    impact: high
+    reporter: Renwa
+    description: |
+      Malicious scripts could cause desynchronization between the address bar and web content before a response is received in Firefox iOS, allowing attacker-controlled pages to be presented under spoofed domains.
+    bugs:
+      - url: 1975529
