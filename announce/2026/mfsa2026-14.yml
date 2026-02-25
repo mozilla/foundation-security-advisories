@@ -20,7 +20,7 @@ advisories:
   CVE-2026-2759:
     title: 'Incorrect boundary conditions in the Graphics: ImageLib component'
     impact: high
-    reporter: stevej
+    reporter: Steven Julian
     bugs:
       - url: 2010933
   CVE-2026-2760:
