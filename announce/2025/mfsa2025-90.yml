@@ -91,12 +91,6 @@ advisories:
     reporter: Andrew Osmond
     bugs:
       - url: 1994241
-  CVE-2025-13015:
-    title: Spoofing issue in Thunderbird
-    impact: low
-    reporter: Eemeli Aro
-    bugs:
-      - url: 1994164
   CVE-2025-13027:
     title: Memory safety bugs fixed in Firefox 145 and Thunderbird 145
     impact: high
