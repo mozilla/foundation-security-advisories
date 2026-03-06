@@ -56,37 +56,37 @@ advisories:
   CVE-2026-2763:
     title: Use-after-free in the JavaScript Engine component
     impact: high
-    reporter: Information to follow
+    reporter: Evyatar Ben Asher, Keane Lucas, Nicholas Carlini, Newton Cheng, Daniel Freeman, Alex Gaynor, and Joel Weinberger using Claude from Anthropic
     bugs:
       - url: 2012018
   CVE-2026-2764:
     title: 'JIT miscompilation, use-after-free in the JavaScript Engine: JIT component'
     impact: high
-    reporter: Information to follow
+    reporter: Evyatar Ben Asher, Keane Lucas, Nicholas Carlini, Newton Cheng, Daniel Freeman, Alex Gaynor, and Joel Weinberger using Claude from Anthropic
     bugs:
       - url: 2012608
   CVE-2026-2796:
     title: 'JIT miscompilation in the JavaScript: WebAssembly component'
     impact: high
-    reporter: Information to follow
+    reporter: Evyatar Ben Asher, Keane Lucas, Nicholas Carlini, Newton Cheng, Daniel Freeman, Alex Gaynor, and Joel Weinberger using Claude from Anthropic
     bugs:
       - url: 2013165
   CVE-2026-2797:
     title: 'Use-after-free in the JavaScript: GC component'
     impact: high
-    reporter: Information to follow
+    reporter: Evyatar Ben Asher, Keane Lucas, Nicholas Carlini, Newton Cheng, Daniel Freeman, Alex Gaynor, and Joel Weinberger using Claude from Anthropic
     bugs:
       - url: 2013561
   CVE-2026-2765:
     title: Use-after-free in the JavaScript Engine component
     impact: high
-    reporter: Information to follow
+    reporter: Evyatar Ben Asher, Keane Lucas, Nicholas Carlini, Newton Cheng, Daniel Freeman, Alex Gaynor, and Joel Weinberger using Claude from Anthropic
     bugs:
       - url: 2013562
   CVE-2026-2766:
     title: 'Use-after-free in the JavaScript Engine: JIT component'
     impact: high
-    reporter: Information to follow
+    reporter: Evyatar Ben Asher, Keane Lucas, Nicholas Carlini, Newton Cheng, Daniel Freeman, Alex Gaynor, and Joel Weinberger using Claude from Anthropic
     bugs:
       - url: 2013583
   CVE-2026-2767:
@@ -110,49 +110,49 @@ advisories:
   CVE-2026-2769:
     title: 'Use-after-free in the Storage: IndexedDB component'
     impact: high
-    reporter: Information to follow
+    reporter: Evyatar Ben Asher, Keane Lucas, Nicholas Carlini, Newton Cheng, Daniel Freeman, Alex Gaynor, and Joel Weinberger using Claude from Anthropic
     bugs:
       - url: 2014550
   CVE-2026-2799:
     title: 'Use-after-free in the DOM: Core & HTML component'
     impact: high
-    reporter: Information to follow
+    reporter: Evyatar Ben Asher, Keane Lucas, Nicholas Carlini, Newton Cheng, Daniel Freeman, Alex Gaynor, and Joel Weinberger using Claude from Anthropic
     bugs:
       - url: 2014551
   CVE-2026-2770:
     title: 'Use-after-free in the DOM: Bindings (WebIDL) component'
     impact: high
-    reporter: Information to follow
+    reporter: Evyatar Ben Asher, Keane Lucas, Nicholas Carlini, Newton Cheng, Daniel Freeman, Alex Gaynor, and Joel Weinberger using Claude from Anthropic
     bugs:
       - url: 2014585
   CVE-2026-2771:
     title: 'Undefined behavior in the DOM: Core & HTML component'
     impact: high
-    reporter: Information to follow
+    reporter: Evyatar Ben Asher, Keane Lucas, Nicholas Carlini, Newton Cheng, Daniel Freeman, Alex Gaynor, and Joel Weinberger using Claude from Anthropic
     bugs:
       - url: 2014593
   CVE-2026-2772:
     title: 'Use-after-free in the Audio/Video: Playback component'
     impact: high
-    reporter: Information to follow
+    reporter: Evyatar Ben Asher, Keane Lucas, Nicholas Carlini, Newton Cheng, Daniel Freeman, Alex Gaynor, and Joel Weinberger using Claude from Anthropic
     bugs:
       - url: 2014827
   CVE-2026-2773:
     title: Incorrect boundary conditions in the Web Audio component
     impact: high
-    reporter: Information to follow
+    reporter: Evyatar Ben Asher, Keane Lucas, Nicholas Carlini, Newton Cheng, Daniel Freeman, Alex Gaynor, and Joel Weinberger using Claude from Anthropic
     bugs:
       - url: 2014832
   CVE-2026-2774:
     title: Integer overflow in the Audio/Video component
     impact: high
-    reporter: Information to follow
+    reporter: Evyatar Ben Asher, Keane Lucas, Nicholas Carlini, Newton Cheng, Daniel Freeman, Alex Gaynor, and Joel Weinberger using Claude from Anthropic
     bugs:
       - url: 2014883
   CVE-2026-2775:
     title: 'Mitigation bypass in the DOM: HTML Parser component'
     impact: high
-    reporter: Information to follow
+    reporter: Evyatar Ben Asher, Keane Lucas, Nicholas Carlini, Newton Cheng, Daniel Freeman, Alex Gaynor, and Joel Weinberger using Claude from Anthropic
     bugs:
       - url: 2015199
   CVE-2026-2776:
@@ -236,43 +236,43 @@ advisories:
   CVE-2026-2785:
     title: Invalid pointer in the JavaScript Engine component
     impact: moderate
-    reporter: Information to follow
+    reporter: Evyatar Ben Asher, Keane Lucas, Nicholas Carlini, Newton Cheng, Daniel Freeman, Alex Gaynor, and Joel Weinberger using Claude from Anthropic
     bugs:
       - url: 2013549
   CVE-2026-2804:
     title: 'Use-after-free in the JavaScript: WebAssembly component'
     impact: moderate
-    reporter: Information to follow
+    reporter: Evyatar Ben Asher, Keane Lucas, Nicholas Carlini, Newton Cheng, Daniel Freeman, Alex Gaynor, and Joel Weinberger using Claude from Anthropic
     bugs:
       - url: 2013584
   CVE-2026-2786:
     title: Use-after-free in the JavaScript Engine component
     impact: moderate
-    reporter: Information to follow
+    reporter: Evyatar Ben Asher, Keane Lucas, Nicholas Carlini, Newton Cheng, Daniel Freeman, Alex Gaynor, and Joel Weinberger using Claude from Anthropic
     bugs:
       - url: 2013612
   CVE-2026-2805:
     title: 'Invalid pointer in the DOM: Core & HTML component'
     impact: moderate
-    reporter: Information to follow
+    reporter: Evyatar Ben Asher, Keane Lucas, Nicholas Carlini, Newton Cheng, Daniel Freeman, Alex Gaynor, and Joel Weinberger using Claude from Anthropic
     bugs:
       - url: 2014549
   CVE-2026-2787:
     title: 'Use-after-free in the DOM: Window and Location component'
     impact: moderate
-    reporter: Information to follow
+    reporter: Evyatar Ben Asher, Keane Lucas, Nicholas Carlini, Newton Cheng, Daniel Freeman, Alex Gaynor, and Joel Weinberger using Claude from Anthropic
     bugs:
       - url: 2014560
   CVE-2026-2788:
     title: 'Incorrect boundary conditions in the Audio/Video: GMP component'
     impact: moderate
-    reporter: Information to follow
+    reporter: Evyatar Ben Asher, Keane Lucas, Nicholas Carlini, Newton Cheng, Daniel Freeman, Alex Gaynor, and Joel Weinberger using Claude from Anthropic
     bugs:
       - url: 2014824
   CVE-2026-2789:
     title: 'Use-after-free in the Graphics: ImageLib component'
     impact: moderate
-    reporter: Information to follow
+    reporter: Evyatar Ben Asher, Keane Lucas, Nicholas Carlini, Newton Cheng, Daniel Freeman, Alex Gaynor, and Joel Weinberger using Claude from Anthropic
     bugs:
       - url: 2015179
   CVE-2026-2806:
@@ -290,7 +290,7 @@ advisories:
   CVE-2026-2791:
     title: 'Mitigation bypass in the Networking: Cache component'
     impact: low
-    reporter: Information to follow
+    reporter: Evyatar Ben Asher, Keane Lucas, Nicholas Carlini, Newton Cheng, Daniel Freeman, Alex Gaynor, and Joel Weinberger using Claude from Anthropic
     bugs:
       - url: 2015220
   CVE-2026-2807:
