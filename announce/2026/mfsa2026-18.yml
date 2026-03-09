@@ -1,0 +1,15 @@
+## mfsa2026-18.yml
+announced: March 2, 2026
+impact: high
+fixed_in:
+- Focus for iOS 148.2
+title: Security Vulnerabilities fixed in Focus for iOS 148.2
+advisories:
+  CVE-2026-2919:
+    title: Attacker-controlled content shown under spoofed domains in Focus for iOS via stalled navigation and iframe redirect
+    impact: high
+    reporter: Renwa Hiwa
+    description: |
+      Malicious scripts could display attacker-controlled web content under spoofed domains in Focus for iOS by stalling a _self navigation to an invalid port and triggering an iframe redirect, causing the UI to display a trusted domain without user interaction.
+    bugs:
+      - url: 1975842
