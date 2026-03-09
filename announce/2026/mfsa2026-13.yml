@@ -188,7 +188,7 @@ advisories:
   CVE-2026-2780:
     title: Privilege escalation in the Netmonitor component
     impact: moderate
-    reporter: RyotaK
+    reporter: RyotaK of GMO Flatt Security Inc.
     bugs:
       - url: 2007829
   CVE-2026-2781:

@@ -8,7 +8,7 @@ advisories:
   CVE-2026-0877:
     title: 'Mitigation bypass in the DOM: Security component'
     impact: high
-    reporter: mingijung
+    reporter: Mingi Jung (정민기입니다)
     bugs:
       - url: 1999257
   CVE-2026-0879:

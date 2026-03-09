@@ -22,7 +22,7 @@ advisories:
   CVE-2026-2759:
     title: 'Incorrect boundary conditions in the Graphics: ImageLib component'
     impact: high
-    reporter: stevej
+    reporter: Steven Julian
     bugs:
       - url: 2010933
   CVE-2026-2760:
@@ -148,7 +148,7 @@ advisories:
   CVE-2026-2780:
     title: Privilege escalation in the Netmonitor component
     impact: moderate
-    reporter: RyotaK
+    reporter: RyotaK of GMO Flatt Security Inc.
     bugs:
       - url: 2007829
   CVE-2026-2781:
