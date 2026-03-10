@@ -1,0 +1,28 @@
+## mfsa2026-19.yml
+announced: March 10, 2026
+impact: high
+fixed_in:
+- Firefox 148.0.2
+title: Security Vulnerabilities fixed in Firefox 148.0.2
+advisories:
+  CVE-2026-3845:
+    title: 'Heap buffer overflow in the Audio/Video: Playback component in Firefox for Android'
+    impact: high
+    reporter: Crixer
+    bugs:
+      - url: 2020174
+  CVE-2026-3846:
+    title: 'Same-origin policy bypass in the CSS Parsing and Computation component'
+    impact: high
+    reporter: Jun Yang of Tencent Zhuque Lab
+    bugs:
+      - url: 2018400
+  CVE-2026-3847:
+    title: Memory safety bugs fixed in Firefox 148.0.2
+    impact: high
+    reporter: Jon Coppeard and the Mozilla Fuzzing Team
+    description: |
+      Memory safety bugs present in Firefox 148.0.2. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 2017513, 2017622, 2019341
+        desc: Memory safety bugs fixed in Firefox 148.0.2
