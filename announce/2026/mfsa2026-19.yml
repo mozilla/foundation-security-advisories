@@ -14,7 +14,7 @@ advisories:
   CVE-2026-3846:
     title: 'Same-origin policy bypass in the CSS Parsing and Computation component'
     impact: high
-    reporter: Jun Yang of Tencent Zhuque Lab
+    reporter: Jun Yang
     bugs:
       - url: 2018400
   CVE-2026-3847:
