@@ -1,0 +1,112 @@
+## mfsa2026-21.yml
+announced: March 24, 2026
+impact: high
+fixed_in:
+- Firefox ESR 115.34
+title: Security Vulnerabilities fixed in Firefox ESR 115.34
+advisories:
+  MFSA-RESERVE-2026-2011129:
+    title: 'Race condition, use-after-free in the Graphics: WebRender component'
+    impact: high
+    reporter: Oskar L
+    bugs:
+      - url: 2011129
+  MFSA-RESERVE-2026-2016349:
+    title: 'Incorrect boundary conditions in the Graphics: Canvas2D component'
+    impact: high
+    reporter: Sajeeb Lohani
+    bugs:
+      - url: 2016349
+  MFSA-RESERVE-2026-2016351:
+    title: 'Incorrect boundary conditions in the Graphics: Canvas2D component'
+    impact: high
+    reporter: Sajeeb Lohani
+    bugs:
+      - url: 2016351
+  MFSA-RESERVE-2026-2016368:
+    title: Sandbox escape due to incorrect boundary conditions in the Telemetry component
+    impact: high
+    reporter: Sajeeb Lohani
+    bugs:
+      - url: 2016368
+  MFSA-RESERVE-2026-2016374:
+    title: Sandbox escape due to incorrect boundary conditions, integer overflow in the XPCOM component
+    impact: high
+    reporter: Sajeeb Lohani
+    bugs:
+      - url: 2016374
+  MFSA-RESERVE-2026-2016375:
+    title: Sandbox escape due to incorrect boundary conditions, integer overflow in the XPCOM component
+    impact: high
+    reporter: Sajeeb Lohani
+    bugs:
+      - url: 2016375
+  MFSA-RESERVE-2026-2017512:
+    title: Use-after-free in the CSS Parsing and Computation component
+    impact: high
+    reporter: Fabius Artrel
+    bugs:
+      - url: 2017512
+  MFSA-RESERVE-2026-2017643:
+    title: Sandbox escape in the Responsive Design Mode component
+    impact: high
+    reporter: Tom Ritter
+    bugs:
+      - url: 2017643
+  MFSA-RESERVE-2026-2018102:
+    title: 'Incorrect boundary conditions in the Audio/Video: Playback component'
+    impact: high
+    reporter: Sajeeb Lohani
+    bugs:
+      - url: 2018102
+  MFSA-RESERVE-2026-2018430:
+    title: Incorrect boundary conditions, integer overflow in the Graphics component
+    impact: high
+    reporter: Sajeeb Lohani
+    bugs:
+      - url: 2018430
+  MFSA-RESERVE-2026-2020190:
+    title: 'Use-after-free in the Layout: Text and Fonts component'
+    impact: high
+    reporter: Sota Wada
+    bugs:
+      - url: 2020190
+  MFSA-RESERVE-2026-2020906:
+    title: 'JIT miscompilation in the JavaScript Engine: JIT component'
+    impact: high
+    reporter: maxpl0it working with Trend Micro Zero Day Initiative
+    bugs:
+      - url: 2020906
+  MFSA-RESERVE-2026-2021863:
+    title: 'Incorrect boundary conditions in the Layout: Text and Fonts component'
+    impact: high
+    reporter: Matej Smycka
+    bugs:
+      - url: 2021863
+  MFSA-RESERVE-2026-2015091:
+    title: 'Incorrect boundary conditions in the Graphics: Canvas2D component'
+    impact: moderate
+    reporter: Jun Yang
+    bugs:
+      - url: 2015091
+  MFSA-RESERVE-2026-2015267:
+    title: 'Incorrect boundary conditions in the Graphics: Canvas2D component'
+    impact: moderate
+    reporter: Sajeeb Lohani
+    bugs:
+      - url: 2015267
+  MFSA-RESERVE-2026-2016329:
+    title: 'Incorrect boundary conditions in the Audio/Video: GMP component'
+    impact: moderate
+    reporter: Sajeeb Lohani
+    bugs:
+      - url: 2016329
+  MFSA-RESERVE-2026-2:
+    title: Memory safety bugs fixed in Firefox ESR 115.34, Firefox ESR 140.9, Thunderbird ESR 140.9, Firefox 149 and Thunderbird 149
+    impact: high
+    reporter: Christian Holler, Timothy Nikkel, Tom Schuster and the Mozilla Fuzzing Team
+    description: |
+      Memory safety bugs present in Firefox ESR 115.33, Firefox ESR 140.8, Thunderbird ESR 140.8, Firefox 148 and Thunderbird 148. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 2013762, 2015291, 2016591, 2016661, 2016664, 2017303, 2017894, 2018090, 2018196, 2018379, 2019112, 2022090, 2022243, 2022351, 2022478, 2022676
+        desc: Memory safety bugs fixed in Firefox ESR 115.34, Firefox ESR 140.9, Thunderbird ESR 140.9, Firefox 149 and Thunderbird 149
