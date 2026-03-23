@@ -5,229 +5,229 @@ fixed_in:
 - Firefox 149
 title: Security Vulnerabilities fixed in Firefox 149
 advisories:
-  MFSA-RESERVE-2026-2011129:
+  CVE-2026-4684:
     title: 'Race condition, use-after-free in the Graphics: WebRender component'
     impact: high
     reporter: Oskar L
     bugs:
       - url: 2011129
-  MFSA-RESERVE-2026-2016349:
+  CVE-2026-4685:
     title: 'Incorrect boundary conditions in the Graphics: Canvas2D component'
     impact: high
     reporter: Sajeeb Lohani
     bugs:
       - url: 2016349
-  MFSA-RESERVE-2026-2016351:
+  CVE-2026-4686:
     title: 'Incorrect boundary conditions in the Graphics: Canvas2D component'
     impact: high
     reporter: Sajeeb Lohani
     bugs:
       - url: 2016351
-  MFSA-RESERVE-2026-2016368:
+  CVE-2026-4687:
     title: Sandbox escape due to incorrect boundary conditions in the Telemetry component
     impact: high
     reporter: Sajeeb Lohani
     bugs:
       - url: 2016368
-  MFSA-RESERVE-2026-2016373:
+  CVE-2026-4688:
     title: Sandbox escape due to use-after-free in the Disability Access APIs component
     impact: high
     reporter: Sajeeb Lohani
     bugs:
       - url: 2016373
-  MFSA-RESERVE-2026-2016374:
+  CVE-2026-4689:
     title: Sandbox escape due to incorrect boundary conditions, integer overflow in the XPCOM component
     impact: high
     reporter: Sajeeb Lohani
     bugs:
       - url: 2016374
-  MFSA-RESERVE-2026-2016375:
+  CVE-2026-4690:
     title: Sandbox escape due to incorrect boundary conditions, integer overflow in the XPCOM component
     impact: high
     reporter: Sajeeb Lohani
     bugs:
       - url: 2016375
-  MFSA-RESERVE-2026-2017512:
+  CVE-2026-4691:
     title: Use-after-free in the CSS Parsing and Computation component
     impact: high
     reporter: Fabius Artrel
     bugs:
       - url: 2017512
-  MFSA-RESERVE-2026-2017643:
+  CVE-2026-4692:
     title: Sandbox escape in the Responsive Design Mode component
     impact: high
     reporter: Tom Ritter
     bugs:
       - url: 2017643
-  MFSA-RESERVE-2026-2018102:
+  CVE-2026-4693:
     title: 'Incorrect boundary conditions in the Audio/Video: Playback component'
     impact: high
     reporter: Sajeeb Lohani
     bugs:
       - url: 2018102
-  MFSA-RESERVE-2026-2018430:
+  CVE-2026-4694:
     title: Incorrect boundary conditions, integer overflow in the Graphics component
     impact: high
     reporter: Sajeeb Lohani
     bugs:
       - url: 2018430
-  MFSA-RESERVE-2026-2020030:
+  CVE-2026-4695:
     title: 'Incorrect boundary conditions in the Audio/Video: Web Codecs component'
     impact: high
     reporter: Atte Kettunen
     bugs:
       - url: 2020030
-  MFSA-RESERVE-2026-2020190:
+  CVE-2026-4696:
     title: 'Use-after-free in the Layout: Text and Fonts component'
     impact: high
     reporter: Sota Wada
     bugs:
       - url: 2020190
-  MFSA-RESERVE-2026-2020422:
+  CVE-2026-4697:
     title: 'Incorrect boundary conditions in the Audio/Video: Web Codecs component'
     impact: high
     reporter: Lorenzo
     bugs:
       - url: 2020422
-  MFSA-RESERVE-2026-2020906:
+  CVE-2026-4698:
     title: 'JIT miscompilation in the JavaScript Engine: JIT component'
     impact: high
     reporter: maxpl0it working with Trend Micro Zero Day Initiative
     bugs:
       - url: 2020906
-  MFSA-RESERVE-2026-2021863:
+  CVE-2026-4699:
     title: 'Incorrect boundary conditions in the Layout: Text and Fonts component'
     impact: high
     reporter: Matej Smycka
     bugs:
       - url: 2021863
-  MFSA-RESERVE-2026-2003766:
+  CVE-2026-4700:
     title: 'Mitigation bypass in the Networking: HTTP component'
     impact: moderate
     reporter: pizzahunthack1
     bugs:
       - url: 2003766
-  MFSA-RESERVE-2026-2009303:
+  CVE-2026-4701:
     title: Use-after-free in the JavaScript Engine component
     impact: moderate
     reporter: Gary Kwong
     bugs:
       - url: 2009303
-  MFSA-RESERVE-2026-2010097:
+  CVE-2026-4722:
     title: Privilege escalation in the IPC component
     impact: moderate
     reporter: Nika Layzell
     bugs:
       - url: 2010097
-  MFSA-RESERVE-2026-2013560:
+  CVE-2026-4702:
     title: JIT miscompilation in the JavaScript Engine component
     impact: moderate
     reporter: Evyatar Ben Asher, Keane Lucas, Nicholas Carlini, Newton Cheng, Daniel Freeman, Alex Gaynor, and Joel Weinberger using Claude from Anthropic
     bugs:
       - url: 2013560
-  MFSA-RESERVE-2026-2013573:
+  CVE-2026-4723:
     title: Use-after-free in the JavaScript Engine component
     impact: moderate
     reporter: Evyatar Ben Asher, Keane Lucas, Nicholas Carlini, Newton Cheng, Daniel Freeman, Alex Gaynor, and Joel Weinberger using Claude from Anthropic
     bugs:
       - url: 2013573
-  MFSA-RESERVE-2026-2014865:
+  CVE-2026-4724:
     title: Undefined behavior in the Audio/Video component
     impact: moderate
     reporter: Evyatar Ben Asher, Keane Lucas, Nicholas Carlini, Newton Cheng, Daniel Freeman, Alex Gaynor, and Joel Weinberger using Claude from Anthropic
     bugs:
       - url: 2014865
-  MFSA-RESERVE-2026-2014868:
+  CVE-2026-4704:
     title: 'Denial-of-service in the WebRTC: Signaling component'
     impact: moderate
     reporter: Evyatar Ben Asher, Keane Lucas, Nicholas Carlini, Newton Cheng, Daniel Freeman, Alex Gaynor, and Joel Weinberger using Claude from Anthropic
     bugs:
       - url: 2014868
-  MFSA-RESERVE-2026-2014873:
+  CVE-2026-4705:
     title: 'Undefined behavior in the WebRTC: Signaling component'
     impact: moderate
     reporter: Evyatar Ben Asher, Keane Lucas, Nicholas Carlini, Newton Cheng, Daniel Freeman, Alex Gaynor, and Joel Weinberger using Claude from Anthropic
     bugs:
       - url: 2014873
-  MFSA-RESERVE-2026-2015091:
+  CVE-2026-4706:
     title: 'Incorrect boundary conditions in the Graphics: Canvas2D component'
     impact: moderate
     reporter: Jun Yang
     bugs:
       - url: 2015091
-  MFSA-RESERVE-2026-2015267:
+  CVE-2026-4707:
     title: 'Incorrect boundary conditions in the Graphics: Canvas2D component'
     impact: moderate
     reporter: Sajeeb Lohani
     bugs:
       - url: 2015267
-  MFSA-RESERVE-2026-2015268:
+  CVE-2026-4708:
     title: Incorrect boundary conditions in the Graphics component
     impact: moderate
     reporter: Sajeeb Lohani
     bugs:
       - url: 2015268
-  MFSA-RESERVE-2026-2016329:
+  CVE-2026-4709:
     title: 'Incorrect boundary conditions in the Audio/Video: GMP component'
     impact: moderate
     reporter: Sajeeb Lohani
     bugs:
       - url: 2016329
-  MFSA-RESERVE-2026-2016370:
+  CVE-2026-4710:
     title: Incorrect boundary conditions in the Audio/Video component
     impact: moderate
     reporter: Sajeeb Lohani
     bugs:
       - url: 2016370
-  MFSA-RESERVE-2026-2017002:
+  CVE-2026-4711:
     title: 'Use-after-free in the Widget: Cocoa component'
     impact: moderate
     reporter: Josh Aas
     bugs:
       - url: 2017002
-  MFSA-RESERVE-2026-2017108:
+  CVE-2026-4725:
     title: 'Sandbox escape due to use-after-free in the Graphics: Canvas2D component'
     impact: moderate
     reporter: Jun Yang
     bugs:
       - url: 2017108
-  MFSA-RESERVE-2026-2017666:
+  CVE-2026-4712:
     title: 'Information disclosure in the Widget: Cocoa component'
     impact: moderate
     reporter: Josh Aas
     bugs:
       - url: 2017666
-  MFSA-RESERVE-2026-2018113:
+  CVE-2026-4713:
     title: Incorrect boundary conditions in the Graphics component
     impact: moderate
     reporter: Sajeeb Lohani
     bugs:
       - url: 2018113
-  MFSA-RESERVE-2026-2018126:
+  CVE-2026-4714:
     title: Incorrect boundary conditions in the Audio/Video component
     impact: moderate
     reporter: Sajeeb Lohani
     bugs:
       - url: 2018126
-  MFSA-RESERVE-2026-2018405:
+  CVE-2026-4715:
     title: 'Uninitialized memory in the Graphics: Canvas2D component'
     impact: moderate
     reporter: Jun Yang
     bugs:
       - url: 2018405
-  MFSA-RESERVE-2026-2018592:
+  CVE-2026-4716:
     title: Incorrect boundary conditions, uninitialized memory in the JavaScript Engine component
     impact: moderate
     reporter: Pwn2addr
     bugs:
       - url: 2018592
-  MFSA-RESERVE-2026-2021695:
+  CVE-2026-4717:
     title: Privilege escalation in the Netmonitor component
     impact: moderate
     reporter: Satoki Tsuji
     bugs:
       - url: 2021695
-  MFSA-RESERVE-2026-1955311:
+  CVE-2026-4726:
     title: Denial-of-service in the XML component
     impact: low
     reporter: Hanno Boeck
@@ -239,31 +239,31 @@ advisories:
     reporter: Jan Horak
     bugs:
       - url: 1988467
-  MFSA-RESERVE-2026-2008112:
+  CVE-2026-4727:
     title: Denial-of-service in the Libraries component in NSS
     impact: low
     reporter: Cody
     bugs:
       - url: 2008112
-  MFSA-RESERVE-2026-2013179:
+  CVE-2026-4728:
     title: 'Spoofing issue in the Privacy: Anti-Tracking component'
     impact: low
     reporter: Aswinkumar Gokulakannan
     bugs:
       - url: 2013179
-  MFSA-RESERVE-2026-2014864:
+  CVE-2026-4718:
     title: 'Undefined behavior in the WebRTC: Signaling component'
     impact: low
     reporter: Evyatar Ben Asher, Keane Lucas, Nicholas Carlini, Newton Cheng, Daniel Freeman, Alex Gaynor, and Joel Weinberger using Claude from Anthropic
     bugs:
       - url: 2014864
-  MFSA-RESERVE-2026-2016367:
+  CVE-2026-4719:
     title: 'Incorrect boundary conditions in the Graphics: Text component'
     impact: low
     reporter: Sajeeb Lohani
     bugs:
       - url: 2016367
-  MFSA-RESERVE-2026-0:
+  CVE-2026-4720:
     title: Memory safety bugs fixed in Firefox ESR 140.9, Thunderbird ESR 140.9, Firefox 149 and Thunderbird 149
     impact: high
     reporter: Christian Holler, Gabriele Svelto, Tom Schuster and the Mozilla Fuzzing Team
@@ -272,7 +272,7 @@ advisories:
     bugs:
       - url: 2004652, 2019372, 2021922, 2022567, 2022733
         desc: Memory safety bugs fixed in Firefox ESR 140.9, Thunderbird ESR 140.9, Firefox 149 and Thunderbird 149
-  MFSA-RESERVE-2026-1:
+  CVE-2026-4729:
     title: Memory safety bugs fixed in Firefox 149 and Thunderbird 149
     impact: high
     reporter: Christian Holler, Fatih Kilic, Tom Schuster and the Mozilla Fuzzing Team
@@ -281,7 +281,7 @@ advisories:
     bugs:
       - url: 1944033, 1997282, 2009213, 2011412, 2021925, 2022034
         desc: Memory safety bugs fixed in Firefox 149 and Thunderbird 149
-  MFSA-RESERVE-2026-2:
+  CVE-2026-4721:
     title: Memory safety bugs fixed in Firefox ESR 115.34, Firefox ESR 140.9, Thunderbird ESR 140.9, Firefox 149 and Thunderbird 149
     impact: high
     reporter: Christian Holler, Timothy Nikkel, Tom Schuster and the Mozilla Fuzzing Team
