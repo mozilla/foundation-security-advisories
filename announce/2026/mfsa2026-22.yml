@@ -151,10 +151,11 @@ advisories:
       - url: 2015268
   CVE-2026-4709:
     title: 'Incorrect boundary conditions in the Audio/Video: GMP component'
-    impact: moderate
+    impact: high
     reporter: Sajeeb Lohani
     bugs:
       - url: 2016329
+      - url: 2016342
   CVE-2026-4710:
     title: Incorrect boundary conditions in the Audio/Video component
     impact: moderate
