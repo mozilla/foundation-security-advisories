@@ -59,7 +59,7 @@ def publish_cve(cve_id: str, cve_json: dict):
         key=lambda reference: reference["url"]
     )
     diff = difflib.unified_diff(
-        "",
+        [""],
         dumps(cve_json, indent=2, sort_keys=True).split("\n"),
         lineterm="",
         fromfile=f"Remote (not yet published)",
