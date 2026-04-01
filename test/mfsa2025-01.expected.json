@@ -8,22 +8,16 @@
             "vendor": "Mozilla",
             "versions": [
               {
-                "lessThan": "128",
-                "status": "affected",
-                "version": "unspecified",
-                "versionType": "custom"
-              }
-            ]
-          },
-          {
-            "product": "Firefox ESR",
-            "vendor": "Mozilla",
-            "versions": [
+                "lessThanOrEqual": "115.*",
+                "status": "unaffected",
+                "version": "115.1",
+                "versionType": "rpm"
+              },
               {
-                "lessThan": "115.1",
-                "status": "affected",
-                "version": "unspecified",
-                "versionType": "custom"
+                "lessThanOrEqual": "*",
+                "status": "unaffected",
+                "version": "128",
+                "versionType": "rpm"
               }
             ]
           }
@@ -41,10 +35,10 @@
               {
                 "base64": false,
                 "type": "text/html",
-                "value": "Description. This vulnerability affects Firefox < 128 and Firefox ESR < 115.1."
+                "value": "Description. This vulnerability was fixed in Firefox 128 and Firefox ESR 115.1."
               }
             ],
-            "value": "Description. This vulnerability affects Firefox < 128 and Firefox ESR < 115.1."
+            "value": "Description. This vulnerability was fixed in Firefox 128 and Firefox ESR 115.1."
           }
         ],
         "references": [
@@ -70,22 +64,16 @@
             "vendor": "Mozilla",
             "versions": [
               {
-                "lessThan": "128",
-                "status": "affected",
-                "version": "unspecified",
-                "versionType": "custom"
-              }
-            ]
-          },
-          {
-            "product": "Firefox ESR",
-            "vendor": "Mozilla",
-            "versions": [
+                "lessThanOrEqual": "115.*",
+                "status": "unaffected",
+                "version": "115.1",
+                "versionType": "rpm"
+              },
               {
-                "lessThan": "115.1",
-                "status": "affected",
-                "version": "unspecified",
-                "versionType": "custom"
+                "lessThanOrEqual": "*",
+                "status": "unaffected",
+                "version": "128",
+                "versionType": "rpm"
               }
             ]
           }
@@ -103,10 +91,10 @@
               {
                 "base64": false,
                 "type": "text/html",
-                "value": "Test advisory only with title. This vulnerability affects Firefox < 128 and Firefox ESR < 115.1."
+                "value": "Test advisory only with title. This vulnerability was fixed in Firefox 128 and Firefox ESR 115.1."
               }
             ],
-            "value": "Test advisory only with title. This vulnerability affects Firefox < 128 and Firefox ESR < 115.1."
+            "value": "Test advisory only with title. This vulnerability was fixed in Firefox 128 and Firefox ESR 115.1."
           }
         ],
         "references": [
