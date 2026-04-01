@@ -172,6 +172,16 @@ def comma_separated(sequence: list[str], conjunction="and"):
         return sequence[0]
 
 
+def sort_instances(instances: list["CVEAdvisoryInstance"]):
+    """
+    Sort advisory instances by the version they were fixed in.
+    """
+    return sorted(
+        instances,
+        key=lambda instance: instance.version_fixed.split(".")[0],
+    )
+
+
 @dataclass
 class CVEAdvisory:
     """A collection of `CVEAdvisoryInstance`s with the same CVE-ID."""
@@ -209,15 +219,28 @@ class CVEAdvisory:
         description = description.rstrip(".") + "."
         return (
             description
-            + " This vulnerability affects "
+            + " This vulnerability was fixed in "
             + comma_separated(
                 [
-                    f"{instance.product} < {instance.version_fixed}"
+                    f"{instance.product} {instance.version_fixed}"
                     for instance in self.instances
                 ],
             )
             + "."
         )
+
+    @property
+    def products(self):
+        """
+        Returns a map of product names and advisory instances for this CVE advisory.
+        """
+        products = {}
+        for instance in sort_instances(self.instances):
+            product_name = instance.product.replace(" ESR", "")
+            if product_name not in products:
+                products[product_name] = []
+            products[product_name].append(instance)
+        return products
 
     def to_json(self):
         """
@@ -230,18 +253,21 @@ class CVEAdvisory:
                 "cna": {
                     "affected": [
                         {
-                            "product": instance.product,
+                            "product": product,
                             "vendor": "Mozilla",
                             "versions": [
                                 {
-                                    "lessThan": instance.version_fixed,
-                                    "status": "affected",
-                                    "version": "unspecified",
-                                    "versionType": "custom",
+                                    "status": "unaffected",
+                                    "version": instance.version_fixed,
+                                    "lessThanOrEqual": f"{instance.version_fixed.split('.')[0]}.*"
+                                    if i != len(instances) - 1
+                                    else "*",
+                                    "versionType": "rpm",
                                 }
+                                for i, instance in enumerate(sort_instances(instances))
                             ],
                         }
-                        for instance in self.instances
+                        for product, instances in self.products.items()
                     ],
                     "descriptions": [
                         {

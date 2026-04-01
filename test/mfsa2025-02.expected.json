@@ -8,10 +8,10 @@
             "vendor": "Mozilla",
             "versions": [
               {
-                "lessThan": "128",
-                "status": "affected",
-                "version": "unspecified",
-                "versionType": "custom"
+                "lessThanOrEqual": "*",
+                "status": "unaffected",
+                "version": "128",
+                "versionType": "rpm"
               }
             ]
           }
@@ -29,10 +29,10 @@
               {
                 "base64": false,
                 "type": "text/html",
-                "value": "Description without a dot. This vulnerability affects Firefox < 128."
+                "value": "Description without a dot. This vulnerability was fixed in Firefox 128."
               }
             ],
-            "value": "Description without a dot. This vulnerability affects Firefox < 128."
+            "value": "Description without a dot. This vulnerability was fixed in Firefox 128."
           }
         ],
         "references": [
@@ -58,10 +58,10 @@
             "vendor": "Mozilla",
             "versions": [
               {
-                "lessThan": "128",
-                "status": "affected",
-                "version": "unspecified",
-                "versionType": "custom"
+                "lessThanOrEqual": "*",
+                "status": "unaffected",
+                "version": "128",
+                "versionType": "rpm"
               }
             ]
           }
@@ -79,10 +79,10 @@
               {
                 "base64": false,
                 "type": "text/html",
-                "value": "Description. *With a notice in asterisks.*. This vulnerability affects Firefox < 128."
+                "value": "Description. *With a notice in asterisks.*. This vulnerability was fixed in Firefox 128."
               }
             ],
-            "value": "Description. *With a notice in asterisks.*. This vulnerability affects Firefox < 128."
+            "value": "Description. *With a notice in asterisks.*. This vulnerability was fixed in Firefox 128."
           }
         ],
         "references": [
@@ -108,10 +108,10 @@
             "vendor": "Mozilla",
             "versions": [
               {
-                "lessThan": "128",
-                "status": "affected",
-                "version": "unspecified",
-                "versionType": "custom"
+                "lessThanOrEqual": "*",
+                "status": "unaffected",
+                "version": "128",
+                "versionType": "rpm"
               }
             ]
           }
@@ -129,10 +129,10 @@
               {
                 "base64": false,
                 "type": "text/html",
-                "value": "Description <code>With a code block</code>. This vulnerability affects Firefox < 128."
+                "value": "Description <code>With a code block</code>. This vulnerability was fixed in Firefox 128."
               }
             ],
-            "value": "Description `With a code block`. This vulnerability affects Firefox < 128."
+            "value": "Description `With a code block`. This vulnerability was fixed in Firefox 128."
           }
         ],
         "references": [
@@ -158,10 +158,10 @@
             "vendor": "Mozilla",
             "versions": [
               {
-                "lessThan": "128",
-                "status": "affected",
-                "version": "unspecified",
-                "versionType": "custom"
+                "lessThanOrEqual": "*",
+                "status": "unaffected",
+                "version": "128",
+                "versionType": "rpm"
               }
             ]
           }
@@ -179,10 +179,10 @@
               {
                 "base64": false,
                 "type": "text/html",
-                "value": "Test advisory with dot in title. This vulnerability affects Firefox < 128."
+                "value": "Test advisory with dot in title. This vulnerability was fixed in Firefox 128."
               }
             ],
-            "value": "Test advisory with dot in title. This vulnerability affects Firefox < 128."
+            "value": "Test advisory with dot in title. This vulnerability was fixed in Firefox 128."
           }
         ],
         "references": [
