@@ -5,7 +5,7 @@ fixed_in:
 - Firefox ESR 115.34.1
 title: Security Vulnerabilities fixed in Firefox ESR 115.34.1
 advisories:
-  MFSA-RESERVE-2026-0:
+  CVE-2026-5731:
     title: Memory safety bugs fixed in Firefox ESR 115.34.1, Firefox ESR 140.9.1, Thunderbird ESR 140.9.1, Firefox 149.0.2 and Thunderbird 149.0.2
     impact: high
     reporter: Brian Grinstead, Christian Holler, Tom Schuster and the Mozilla Fuzzing Team
