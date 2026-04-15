@@ -75,6 +75,12 @@ https://bugzilla.mozilla.org/buglist.cgi?x=x
 """.replace("\n", "")
 
 credit_entries = {
+    "d904c68feab199ecd085ce0f2441b597":"Jun Yang",
+    "7ce3265c8b58d56a081dd90da74e933e":"Alessio Ghidini",
+    "e76791baf22f34ca224d64718aa75232":"Steven Julian",
+    "5abc191f4de86d0c7ad1479647173eb7":"RyotaK of GMO Flatt Security Inc.",
+    "44c55034071e3fd50533f70128df8cab":"Lyra Rebane",
+    "e1316083bec34ba90c409d360d6cb2e6":"Mingi Jung (정민기입니다)",
     "64176d023844ad35b44d971491ae8429":"Massedil",
     "e15216d4a7d58f855a8e223c82a94d95":"Abhishek Kumar",
     "4f22a49dcc10be2cc63a7fcd6a16cb41":"Aisle Inc.",
@@ -529,6 +535,7 @@ twitter_entries = {
     "fe7f319c61c0b44d4cb751afda4f4aeb" : "@Gaurav_00000",
 }
 url_entries = {
+    "5abc191f4de86d0c7ad1479647173eb7":"https://ryotak.net",
     "e15216d4a7d58f855a8e223c82a94d95":"https://www.linkedin.com/in/abhishek-kumar-003933375/",
     "455583182ba2e5c9b5a802e4e7da8bf9":"https://www.linkedin.com/in/bharat-adhikari-726337225",
     "f61a89bd95c4b84b6c6c79c988267950":"https://www.linkedin.com/in/jurrieovergoor/",
