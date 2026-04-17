@@ -1,0 +1,71 @@
+## mfsa2026-31.yml
+announced: April 21, 2026
+impact: high
+fixed_in:
+- Firefox ESR 115.35
+title: Security Vulnerabilities fixed in Firefox ESR 115.35
+advisories:
+  MFSA-RESERVE-2026-2014596:
+    title: 'Use-after-free in the DOM: Core & HTML component'
+    impact: high
+    reporter: Evyatar Ben Asher, Keane Lucas, Nicholas Carlini, Newton Cheng, Daniel Freeman, Alex Gaynor, and Joel Weinberger using Claude from Anthropic
+    bugs:
+      - url: 2014596
+  MFSA-RESERVE-2026-2022610:
+    title: 'Information disclosure due to uninitialized memory in the Graphics: Canvas2D component'
+    impact: high
+    reporter: Inseo An
+    bugs:
+      - url: 2022610
+  MFSA-RESERVE-2026-2023407:
+    title: 'Privilege escalation in the Graphics: WebRender component'
+    impact: high
+    reporter: choeseyeong
+    bugs:
+      - url: 2023407
+  MFSA-RESERVE-2026-2027499:
+    title: Incorrect boundary conditions in the WebRTC component
+    impact: high
+    reporter: jmwebdevelopement
+    bugs:
+      - url: 2027499
+  MFSA-RESERVE-2026-2027541:
+    title: Use-after-free in the JavaScript Engine component
+    impact: high
+    reporter: Xuehao Guo
+    bugs:
+      - url: 2027541
+  CVE-2026-2781:
+    title: Integer overflow in the Libraries component in NSS
+    impact: moderate
+    reporter: Clay Ver Valen
+    bugs:
+      - url: 2009552
+  MFSA-RESERVE-2026-2021080:
+    title: 'Spoofing issue in the DOM: Core & HTML component'
+    impact: moderate
+    reporter: Farras Givari
+    bugs:
+      - url: 2021080
+  MFSA-RESERVE-2026-2023209:
+    title: Other issue in the Libraries component in NSS
+    impact: moderate
+    reporter: Haruto Kimura
+    bugs:
+      - url: 2023209
+  MFSA-RESERVE-2026-2026089:
+    title: Incorrect boundary conditions in the Libraries component in NSS
+    impact: moderate
+    reporter: sseehra
+    bugs:
+      - url: 2026089
+  MFSA-RESERVE-2026-1:
+    title: Memory safety bugs fixed in Firefox ESR 115.35, Firefox ESR 140.10, Thunderbird ESR 140.10, Firefox 150 and Thunderbird 150
+    impact: high
+    reporter: Andrew McCreight, Ashley Zebrowski, Brian Grinstead, Christian Holler, Maurice Dauer, Tom Schuster and the Mozilla Fuzzing Team
+    description: |
+      Memory safety bugs present in Firefox ESR 115.34, Firefox ESR 140.9, Thunderbird ESR 140.9, Firefox 149 and Thunderbird 149. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1935995, 1999158, 2015952, 2021909, 2022026, 2022041, 2022088, 2022276, 2022335, 2022338, 2022373, 2022597, 2022874, 2023276, 2023544, 2023551, 2023599, 2023608, 2023814, 2024233, 2024239, 2024241, 2024242, 2024250, 2024251, 2024343, 2024422, 2024425, 2024440, 2024442, 2024446, 2024458, 2024463, 2024478, 2024650, 2024653, 2024654, 2024655, 2024656, 2024661, 2024662, 2024668, 2024919, 2025278, 2025349, 2025350, 2025354, 2025360, 2025363, 2025370, 2025379, 2025381, 2025399, 2025400, 2025403, 2025407, 2025415, 2025420, 2025427, 2025429, 2025430, 2025479, 2025489, 2025493, 2025497, 2025502, 2025515, 2025517, 2025526, 2025609, 2025948, 2025949, 2025951, 2025953, 2025955, 2025962, 2025969, 2025970, 2025971, 2025973, 2025976, 2025977, 2026280, 2026285, 2026293, 2026296, 2026310, 2027237, 2027260, 2027268, 2027277, 2027284, 2027291, 2027293, 2027298, 2027330, 2027342, 2027345, 2027359, 2027365, 2027378, 2027754, 2027959, 2027962, 2027964, 2027971, 2027974, 2027979, 2027982, 2027995, 2028001, 2028267, 2028268, 2028275, 2028288, 2028290, 2028291, 2028528, 2028551, 2028627, 2028879, 2028889, 2029061, 2029071, 2029283, 2029296, 2029314, 2029323, 2029411, 2029423, 2029424, 2029425, 2029427, 2029436, 2029440, 2029449, 2029450, 2029458, 2029462, 2029468, 2029472, 2029690, 2029707, 2029708, 2029728, 2029802, 2029896, 2029906, 2030106, 2030118, 2030123, 2030135, 2030230, 2030320
+        desc: Memory safety bugs fixed in Firefox ESR 115.35, Firefox ESR 140.10, Thunderbird ESR 140.10, Firefox 150 and Thunderbird 150
+

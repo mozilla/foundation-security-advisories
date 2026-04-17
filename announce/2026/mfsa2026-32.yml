@@ -1,0 +1,164 @@
+## mfsa2026-32.yml
+announced: April 21, 2026
+impact: high
+fixed_in:
+- Firefox ESR 140.10
+title: Security Vulnerabilities fixed in Firefox ESR 140.10
+advisories:
+  MFSA-RESERVE-2026-2014596:
+    title: 'Use-after-free in the DOM: Core & HTML component'
+    impact: high
+    reporter: Evyatar Ben Asher, Keane Lucas, Nicholas Carlini, Newton Cheng, Daniel Freeman, Alex Gaynor, and Joel Weinberger using Claude from Anthropic
+    bugs:
+      - url: 2014596
+  MFSA-RESERVE-2026-2021769:
+    title: Use-after-free in the WebRTC component
+    impact: high
+    reporter: Nan Wang
+    bugs:
+      - url: 2021769
+  MFSA-RESERVE-2026-2022604:
+    title: 'Uninitialized memory in the Audio/Video: Web Codecs component'
+    impact: high
+    reporter: Inseo An
+    bugs:
+      - url: 2022604
+  MFSA-RESERVE-2026-2022610:
+    title: 'Information disclosure due to uninitialized memory in the Graphics: Canvas2D component'
+    impact: high
+    reporter: Inseo An
+    bugs:
+      - url: 2022610
+  MFSA-RESERVE-2026-2023407:
+    title: 'Privilege escalation in the Graphics: WebRender component'
+    impact: high
+    reporter: choeseyeong
+    bugs:
+      - url: 2023407
+  MFSA-RESERVE-2026-2025883:
+    title: 'Uninitialized memory in the Audio/Video: Web Codecs component'
+    impact: high
+    reporter: Joren Afman
+    bugs:
+      - url: 2025883
+  MFSA-RESERVE-2026-2027499:
+    title: Incorrect boundary conditions in the WebRTC component
+    impact: high
+    reporter: jmwebdevelopement
+    bugs:
+      - url: 2027499
+  MFSA-RESERVE-2026-2027501:
+    title: Incorrect boundary conditions in the WebRTC component
+    impact: high
+    reporter: jmwebdevelopement
+    bugs:
+      - url: 2027501
+  MFSA-RESERVE-2026-2027541:
+    title: Use-after-free in the JavaScript Engine component
+    impact: high
+    reporter: Xuehao Guo
+    bugs:
+      - url: 2027541
+  MFSA-RESERVE-2026-2013588:
+    title: 'Invalid pointer in the JavaScript: WebAssembly component'
+    impact: moderate
+    reporter: Evyatar Ben Asher, Keane Lucas, Nicholas Carlini, Newton Cheng, Daniel Freeman, Alex Gaynor, and Joel Weinberger using Claude from Anthropic
+    bugs:
+      - url: 2013588
+  MFSA-RESERVE-2026-2016164:
+    title: 'Use-after-free in the Widget: Cocoa component'
+    impact: moderate
+    reporter: Steven Michaud
+    bugs:
+      - url: 2016164
+  MFSA-RESERVE-2026-2017857:
+    title: Privilege escalation in the Networking component
+    impact: moderate
+    reporter: kiyong
+    bugs:
+      - url: 2017857
+  MFSA-RESERVE-2026-2021080:
+    title: 'Spoofing issue in the DOM: Core & HTML component'
+    impact: moderate
+    reporter: Farras Givari
+    bugs:
+      - url: 2021080
+  MFSA-RESERVE-2026-2021666:
+    title: Mitigation bypass in the File Handling component
+    impact: moderate
+    reporter: Tomoya Nakanishi
+    bugs:
+      - url: 2021666
+  MFSA-RESERVE-2026-2022162:
+    title: 'Incorrect boundary conditions in the DOM: Device Interfaces component'
+    impact: moderate
+    reporter: Florian
+    bugs:
+      - url: 2022162
+  MFSA-RESERVE-2026-2022419:
+    title: Information disclosure in the Form Autofill component
+    impact: moderate
+    reporter: ABDULAZIZ ALASAIQAH
+    bugs:
+      - url: 2022419
+  MFSA-RESERVE-2026-2023207:
+    title: Incorrect boundary conditions in the Libraries component in NSS
+    impact: moderate
+    reporter: Haruto Kimura
+    bugs:
+      - url: 2023207
+  MFSA-RESERVE-2026-2023209:
+    title: Other issue in the Libraries component in NSS
+    impact: moderate
+    reporter: Haruto Kimura
+    bugs:
+      - url: 2023209
+  MFSA-RESERVE-2026-2023753:
+    title: Privilege escalation in the Debugger component
+    impact: moderate
+    reporter: Tomoya Nakanishi
+    bugs:
+      - url: 2023753
+  MFSA-RESERVE-2026-2024220:
+    title: 'Other issue in the Storage: IndexedDB component'
+    impact: moderate
+    reporter: Dai
+    bugs:
+      - url: 2024220
+  MFSA-RESERVE-2026-2025067:
+    title: 'Mitigation bypass in the DOM: Security component'
+    impact: moderate
+    reporter: Rayhan Hanaputra
+    bugs:
+      - url: 2025067
+  MFSA-RESERVE-2026-2026089:
+    title: Incorrect boundary conditions in the Libraries component in NSS
+    impact: moderate
+    reporter: sseehra
+    bugs:
+      - url: 2026089
+  MFSA-RESERVE-2026-2021770:
+    title: 'Incorrect boundary conditions in the WebRTC: Networking component'
+    impact: low
+    reporter: Nan Wang
+    bugs:
+      - url: 2021770
+  MFSA-RESERVE-2026-1:
+    title: Memory safety bugs fixed in Firefox ESR 115.35, Firefox ESR 140.10, Thunderbird ESR 140.10, Firefox 150 and Thunderbird 150
+    impact: high
+    reporter: Andrew McCreight, Ashley Zebrowski, Brian Grinstead, Christian Holler, Maurice Dauer, Tom Schuster and the Mozilla Fuzzing Team
+    description: |
+      Memory safety bugs present in Firefox ESR 115.34, Firefox ESR 140.9, Thunderbird ESR 140.9, Firefox 149 and Thunderbird 149. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1935995, 1999158, 2015952, 2021909, 2022026, 2022041, 2022088, 2022276, 2022335, 2022338, 2022373, 2022597, 2022874, 2023276, 2023544, 2023551, 2023599, 2023608, 2023814, 2024233, 2024239, 2024241, 2024242, 2024250, 2024251, 2024343, 2024422, 2024425, 2024440, 2024442, 2024446, 2024458, 2024463, 2024478, 2024650, 2024653, 2024654, 2024655, 2024656, 2024661, 2024662, 2024668, 2024919, 2025278, 2025349, 2025350, 2025354, 2025360, 2025363, 2025370, 2025379, 2025381, 2025399, 2025400, 2025403, 2025407, 2025415, 2025420, 2025427, 2025429, 2025430, 2025479, 2025489, 2025493, 2025497, 2025502, 2025515, 2025517, 2025526, 2025609, 2025948, 2025949, 2025951, 2025953, 2025955, 2025962, 2025969, 2025970, 2025971, 2025973, 2025976, 2025977, 2026280, 2026285, 2026293, 2026296, 2026310, 2027237, 2027260, 2027268, 2027277, 2027284, 2027291, 2027293, 2027298, 2027330, 2027342, 2027345, 2027359, 2027365, 2027378, 2027754, 2027959, 2027962, 2027964, 2027971, 2027974, 2027979, 2027982, 2027995, 2028001, 2028267, 2028268, 2028275, 2028288, 2028290, 2028291, 2028528, 2028551, 2028627, 2028879, 2028889, 2029061, 2029071, 2029283, 2029296, 2029314, 2029323, 2029411, 2029423, 2029424, 2029425, 2029427, 2029436, 2029440, 2029449, 2029450, 2029458, 2029462, 2029468, 2029472, 2029690, 2029707, 2029708, 2029728, 2029802, 2029896, 2029906, 2030106, 2030118, 2030123, 2030135, 2030230, 2030320
+        desc: Memory safety bugs fixed in Firefox ESR 115.35, Firefox ESR 140.10, Thunderbird ESR 140.10, Firefox 150 and Thunderbird 150
+  MFSA-RESERVE-2026-2:
+    title: Memory safety bugs fixed in Firefox ESR 140.10, Thunderbird ESR 140.10, Firefox 150 and Thunderbird 150
+    impact: high
+    reporter: Alex Franchuk, Andrew McCreight, Brian Grinstead, Christian Holler, Jan de Mooij, Maurice Dauer, Sebastian Hengst, Tom Schuster and the Mozilla Fuzzing Team
+    description: |
+      Memory safety bugs present in Firefox ESR 140.9, Thunderbird ESR 140.9, Firefox 149 and Thunderbird 149. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 2010727, 2019004, 2019224, 2019547, 2020378, 2022381, 2022608, 2022785, 2023120, 2023128, 2023140, 2023279, 2023836, 2023882, 2023925, 2023950, 2023959, 2023965, 2024243, 2024245, 2024247, 2024253, 2024346, 2024357, 2024416, 2024420, 2024429, 2024432, 2024455, 2024466, 2024468, 2024476, 2024664, 2024666, 2024669, 2024670, 2024671, 2024761, 2024918, 2025292, 2025332, 2025348, 2025384, 2025395, 2025458, 2025461, 2025463, 2025481, 2025483, 2025485, 2025494, 2025506, 2025511, 2025513, 2025520, 2026277, 2026282, 2026288, 2026289, 2026311, 2026312, 2026869, 2027152, 2027161, 2027238, 2027261, 2027269, 2027274, 2027280, 2027281, 2027300, 2027302, 2027331, 2027339, 2027340, 2027738, 2027975, 2028000, 2028011, 2028289, 2028525, 2028728, 2028887, 2028888, 2028896, 2029063, 2029064, 2029290, 2029291, 2029294, 2029300, 2029304, 2029316, 2029317, 2029401, 2029415, 2029430, 2029457, 2029727, 2029735, 2029743, 2029752, 2029754, 2029776, 2029809, 2030324, 2030370
+        desc: Memory safety bugs fixed in Firefox ESR 140.10, Thunderbird ESR 140.10, Firefox 150 and Thunderbird 150
+
