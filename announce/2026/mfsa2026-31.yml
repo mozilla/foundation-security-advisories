@@ -5,31 +5,31 @@ fixed_in:
 - Firefox ESR 115.35
 title: Security Vulnerabilities fixed in Firefox ESR 115.35
 advisories:
-  MFSA-RESERVE-2026-2014596:
+  CVE-2026-6746:
     title: 'Use-after-free in the DOM: Core & HTML component'
     impact: high
     reporter: Evyatar Ben Asher, Keane Lucas, Nicholas Carlini, Newton Cheng, Daniel Freeman, Alex Gaynor, and Joel Weinberger using Claude from Anthropic
     bugs:
       - url: 2014596
-  MFSA-RESERVE-2026-2022610:
+  CVE-2026-6749:
     title: 'Information disclosure due to uninitialized memory in the Graphics: Canvas2D component'
     impact: high
     reporter: Inseo An
     bugs:
       - url: 2022610
-  MFSA-RESERVE-2026-2023407:
+  CVE-2026-6750:
     title: 'Privilege escalation in the Graphics: WebRender component'
     impact: high
     reporter: choeseyeong
     bugs:
       - url: 2023407
-  MFSA-RESERVE-2026-2027499:
+  CVE-2026-6752:
     title: Incorrect boundary conditions in the WebRTC component
     impact: high
     reporter: jmwebdevelopement
     bugs:
       - url: 2027499
-  MFSA-RESERVE-2026-2027541:
+  CVE-2026-6754:
     title: Use-after-free in the JavaScript Engine component
     impact: high
     reporter: Xuehao Guo
@@ -41,25 +41,25 @@ advisories:
     reporter: Clay Ver Valen
     bugs:
       - url: 2009552
-  MFSA-RESERVE-2026-2021080:
+  CVE-2026-6762:
     title: 'Spoofing issue in the DOM: Core & HTML component'
     impact: moderate
     reporter: Farras Givari
     bugs:
       - url: 2021080
-  MFSA-RESERVE-2026-2023209:
+  CVE-2026-6767:
     title: Other issue in the Libraries component in NSS
     impact: moderate
     reporter: Haruto Kimura
     bugs:
       - url: 2023209
-  MFSA-RESERVE-2026-2026089:
+  CVE-2026-6772:
     title: Incorrect boundary conditions in the Libraries component in NSS
     impact: moderate
     reporter: sseehra
     bugs:
       - url: 2026089
-  MFSA-RESERVE-2026-1:
+  CVE-2026-6785:
     title: Memory safety bugs fixed in Firefox ESR 115.35, Firefox ESR 140.10, Thunderbird ESR 140.10, Firefox 150 and Thunderbird 150
     impact: high
     reporter: Andrew McCreight, Ashley Zebrowski, Brian Grinstead, Christian Holler, Maurice Dauer, Tom Schuster and the Mozilla Fuzzing Team
