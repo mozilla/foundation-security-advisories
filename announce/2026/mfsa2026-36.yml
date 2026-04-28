@@ -14,7 +14,7 @@ advisories:
   CVE-2026-7321:
     title: 'Sandbox escape due to incorrect boundary conditions in the WebRTC: Networking component'
     impact: moderate
-    reporter: Bugmon
+    reporter: The Mozilla Fuzzing Team
     bugs:
       - url: 2029461
   CVE-2026-7322:
