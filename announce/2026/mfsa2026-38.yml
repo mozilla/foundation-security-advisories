@@ -1,0 +1,43 @@
+## mfsa2026-38.yml
+announced: April 30, 2026
+impact: high
+fixed_in:
+- Thunderbird 150.0.1
+title: Security Vulnerabilities fixed in Thunderbird 150.0.1
+description: |
+  *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
+advisories:
+  CVE-2026-7320:
+    title: Information disclosure due to incorrect boundary conditions in the Audio/Video component
+    impact: high
+    reporter: Xuehao Guo
+    bugs:
+      - url: 2027433
+  CVE-2026-7322:
+    title: Memory safety bugs fixed in Thunderbird ESR 140.10.1 and Thunderbird 150.0.1
+    impact: critical
+    reporter: C.M.Chang, Christian Holler, Steve Fink and the Mozilla Fuzzing Team
+    description: |
+      Memory safety bugs present in Thunderbird ESR 140.10.0 and Thunderbird 150.0.0. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 2021904, 2022731, 2027158, 2027733, 2027973, 2027976, 2028231, 2028731, 2028886, 2029067, 2029700, 2029724, 2029806, 2029814, 2030108, 2030111, 2031524, 2031921, 2032040
+        desc: Memory safety bugs fixed in Thunderbird ESR 140.10.1 and Thunderbird 150.0.1
+  CVE-2026-7323:
+    title: Memory safety bugs fixed in Thunderbird ESR 140.10.1 and Thunderbird 150.0.1
+    impact: high
+    reporter: Ryan Hunt, Steve Fink and the Mozilla Fuzzing Team
+    description: |
+      Memory safety bugs present in Thunderbird ESR 140.10.0 and Thunderbird 150.0.0. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 2028537, 2029911, 2031121, 2033602
+        desc: Memory safety bugs fixed in Thunderbird ESR 140.10.1 and Thunderbird 150.0.1
+  CVE-2026-7324:
+    title: Memory safety bugs fixed in Thunderbird 150.0.1
+    impact: high
+    reporter: The Mozilla Fuzzing Team
+    description: |
+      Memory safety bugs present in Thunderbird 150.0.0. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 2029419, 2029717, 2029769, 2029886
+        desc: Memory safety bugs fixed in Thunderbird 150.0.1
+
