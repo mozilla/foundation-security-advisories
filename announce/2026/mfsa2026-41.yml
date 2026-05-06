@@ -1,0 +1,35 @@
+## mfsa2026-41.yml
+announced: May 07, 2026
+impact: high
+fixed_in:
+- Firefox ESR 140.10.2
+title: Security Vulnerabilities fixed in Firefox ESR 140.10.2
+advisories:
+  MFSA-RESERVE-2026-2034352:
+    title: 'Use-after-free in the DOM: Networking component'
+    impact: high
+    reporter: Kevin Brosnan
+    bugs:
+      - url: 2034352
+  MFSA-RESERVE-2026-2029301:
+    title: 'Incorrect boundary conditions in the Audio/Video: Playback component'
+    impact: high
+    reporter: The Mozilla Fuzzing Team
+    bugs:
+      - url: 2029301
+  MFSA-RESERVE-2026-2035939:
+    title: Other issue in the WebRTC component
+    impact: high
+    reporter: Michael Froman
+    bugs:
+      - url: 2035939
+  MFSA-RESERVE-2026-0:
+    title: Memory safety bugs fixed in Firefox ESR 115.35.2, Firefox ESR 140.10.2 and Firefox 150.0.2
+    impact: high
+    reporter: Andrew McCreight, Christian Holler, Lee Salzman, Maurice Dauer, Tom Schuster, Wayne Mery and the Mozilla Fuzzing Team
+    description: |
+      Memory safety bugs present in Firefox ESR 115.35.1, Firefox ESR 140.10.1 and Firefox 150.0.1. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1806249, 2021977, 2022576, 2022722, 2024439, 2027883, 2029463, 2030323, 2032042, 2032043, 2033270, 2033637, 2034422, 2034496, 2035879, 2036516
+        desc: Memory safety bugs fixed in Firefox ESR 115.35.2, Firefox ESR 140.10.2 and Firefox 150.0.2
+
