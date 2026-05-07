@@ -5,25 +5,25 @@ fixed_in:
 - Firefox ESR 140.10.2
 title: Security Vulnerabilities fixed in Firefox ESR 140.10.2
 advisories:
-  MFSA-RESERVE-2026-2034352:
+  CVE-2026-8090:
     title: 'Use-after-free in the DOM: Networking component'
     impact: high
     reporter: Kevin Brosnan
     bugs:
       - url: 2034352
-  MFSA-RESERVE-2026-2029301:
+  CVE-2026-8091:
     title: 'Incorrect boundary conditions in the Audio/Video: Playback component'
     impact: high
     reporter: The Mozilla Fuzzing Team
     bugs:
       - url: 2029301
-  MFSA-RESERVE-2026-2035939:
+  CVE-2026-8094:
     title: Other issue in the WebRTC component
     impact: high
     reporter: Michael Froman
     bugs:
       - url: 2035939
-  MFSA-RESERVE-2026-0:
+  CVE-2026-8092:
     title: Memory safety bugs fixed in Firefox ESR 115.35.2, Firefox ESR 140.10.2 and Firefox 150.0.2
     impact: high
     reporter: Andrew McCreight, Christian Holler, Lee Salzman, Maurice Dauer, Tom Schuster, Wayne Mery and the Mozilla Fuzzing Team

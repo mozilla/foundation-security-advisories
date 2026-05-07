@@ -5,13 +5,13 @@ fixed_in:
 - Firefox 150.0.2
 title: Security Vulnerabilities fixed in Firefox 150.0.2
 advisories:
-  MFSA-RESERVE-2026-2034352:
+  CVE-2026-8090:
     title: 'Use-after-free in the DOM: Networking component'
     impact: high
     reporter: Kevin Brosnan
     bugs:
       - url: 2034352
-  MFSA-RESERVE-2026-0:
+  CVE-2026-8092:
     title: Memory safety bugs fixed in Firefox ESR 115.35.2, Firefox ESR 140.10.2 and Firefox 150.0.2
     impact: high
     reporter: Andrew McCreight, Christian Holler, Lee Salzman, Maurice Dauer, Tom Schuster, Wayne Mery and the Mozilla Fuzzing Team
@@ -20,7 +20,7 @@ advisories:
     bugs:
       - url: 1806249, 2021977, 2022576, 2022722, 2024439, 2027883, 2029463, 2030323, 2032042, 2032043, 2033270, 2033637, 2034422, 2034496, 2035879, 2036516
         desc: Memory safety bugs fixed in Firefox ESR 115.35.2, Firefox ESR 140.10.2 and Firefox 150.0.2
-  MFSA-RESERVE-2026-1:
+  CVE-2026-8093:
     title: Memory safety bugs fixed in Firefox 150.0.2
     impact: high
     reporter: Andy Leiserson, Jan de Mooij, Michael Froman and the Mozilla Fuzzing Team
