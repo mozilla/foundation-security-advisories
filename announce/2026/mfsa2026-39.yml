@@ -19,6 +19,12 @@ advisories:
     reporter: The Mozilla Fuzzing Team
     bugs:
       - url: 2029461
+  CVE-2026-8091:
+    title: 'Incorrect boundary conditions in the Audio/Video: Playback component'
+    impact: high
+    reporter: The Mozilla Fuzzing Team
+    bugs:
+      - url: 2029301
   CVE-2026-7322:
     title: Memory safety bugs fixed in Thunderbird ESR 140.10.1 and Thunderbird 150.0.1
     impact: critical
