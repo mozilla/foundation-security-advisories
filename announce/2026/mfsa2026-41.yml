@@ -11,12 +11,6 @@ advisories:
     reporter: Kevin Brosnan
     bugs:
       - url: 2034352
-  CVE-2026-8091:
-    title: 'Incorrect boundary conditions in the Audio/Video: Playback component'
-    impact: high
-    reporter: The Mozilla Fuzzing Team
-    bugs:
-      - url: 2029301
   CVE-2026-8094:
     title: Other issue in the WebRTC component
     impact: high

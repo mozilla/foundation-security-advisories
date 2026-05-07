@@ -235,6 +235,12 @@ advisories:
     reporter: The Mozilla Fuzzing Team
     bugs:
       - url: 2029461
+  CVE-2026-8091:
+    title: 'Incorrect boundary conditions in the Audio/Video: Playback component'
+    impact: high
+    reporter: The Mozilla Fuzzing Team
+    bugs:
+      - url: 2029301
   CVE-2026-6784:
     title: Memory safety bugs fixed in Firefox 150 and Thunderbird 150
     impact: high
@@ -242,7 +248,7 @@ advisories:
     description: |
       Memory safety bugs present in Firefox 149 and Thunderbird 149. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
     bugs:
-      - url: 1536243, 1745382, 1851073, 1893400, 1963301, 2001319, 2002899, 2012436, 2014435, 2016901, 2019916, 2020486, 2020612, 2020817, 2021788, 2022051, 2022367, 2022431, 2023302, 2023670, 2024225, 2024238, 2024240, 2024265, 2024367, 2024369, 2024424, 2024760, 2025281, 2025361, 2025387, 2025466, 2025954, 2025958, 2026278, 2026292, 2026297, 2026378, 2027148, 2027287, 2027341, 2027384, 2027427, 2027694, 2027993, 2028009, 2028270, 2028416, 2028524, 2029295, 2029301, 2029699, 2029800, 2029801
+      - url: 1536243, 1745382, 1851073, 1893400, 1963301, 2001319, 2002899, 2012436, 2014435, 2016901, 2019916, 2020486, 2020612, 2020817, 2021788, 2022051, 2022367, 2022431, 2023302, 2023670, 2024225, 2024238, 2024240, 2024265, 2024367, 2024369, 2024424, 2024760, 2025281, 2025361, 2025387, 2025466, 2025954, 2025958, 2026278, 2026292, 2026297, 2026378, 2027148, 2027287, 2027341, 2027384, 2027427, 2027694, 2027993, 2028009, 2028270, 2028416, 2028524, 2029295, 2029699, 2029800, 2029801
         desc: Memory safety bugs fixed in Firefox 150 and Thunderbird 150
   CVE-2026-6785:
     title: Memory safety bugs fixed in Firefox ESR 115.35, Firefox ESR 140.10, Thunderbird ESR 140.10, Firefox 150 and Thunderbird 150
