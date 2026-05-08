@@ -1,0 +1,34 @@
+## mfsa2026-43.yml
+announced: May 08, 2026
+impact: high
+fixed_in:
+- Thunderbird 150.0.2
+title: Security Vulnerabilities fixed in Thunderbird 150.0.2
+description: |
+  *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
+advisories:
+  CVE-2026-8090:
+    title: 'Use-after-free in the DOM: Networking component'
+    impact: high
+    reporter: Kevin Brosnan
+    bugs:
+      - url: 2034352
+  CVE-2026-8092:
+    title: Memory safety bugs fixed in Thunderbird ESR 140.10.2 and Thunderbird 150.0.2
+    impact: high
+    reporter: Andrew McCreight, Christian Holler, Lee Salzman, Maurice Dauer, Tom Schuster, Wayne Mery and the Mozilla Fuzzing Team
+    description: |
+      Memory safety bugs present in Thunderbird ESR 140.10.1 and Thunderbird 150.0.1. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1806249, 2021977, 2022576, 2022722, 2024439, 2027883, 2029463, 2030323, 2032042, 2032043, 2033270, 2033637, 2034422, 2034496, 2035879, 2036516
+        desc: Memory safety bugs fixed in Thunderbird ESR 140.10.2 and Thunderbird 150.0.2
+  CVE-2026-8093:
+    title: Memory safety bugs fixed in Thunderbird 150.0.2
+    impact: high
+    reporter: Andy Leiserson, Jan de Mooij, Michael Froman and the Mozilla Fuzzing Team
+    description: |
+      Memory safety bugs present in Thunderbird 150.0.1. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1981270, 2027154, 2028332, 2029327, 2029428, 2029894, 2032189, 2034837, 2035968, 2036256
+        desc: Memory safety bugs fixed in Thunderbird 150.0.2
+
