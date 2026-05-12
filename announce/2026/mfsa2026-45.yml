@@ -32,6 +32,7 @@ advisories:
   CVE-2026-8401:
     title: Sandbox escape in the Profile Backup component
     impact: high
-    reporter: Andrew McCreight
+    reporter: ggwhyp
     bugs:
       - url: 2038679
+
