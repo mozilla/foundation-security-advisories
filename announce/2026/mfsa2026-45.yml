@@ -20,7 +20,7 @@ advisories:
   CVE-2026-8390:
     title: 'Use-after-free in the JavaScript: WebAssembly component'
     impact: high
-    reporter: Bill Demirkapi
+    reporter: OpenAI Preparedness, Bill Demirkapi
     bugs:
       - url: 2038081
   CVE-2026-8391:
