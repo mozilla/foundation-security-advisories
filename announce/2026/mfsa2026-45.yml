@@ -1,0 +1,32 @@
+## mfsa2026-45.yml
+announced: May 12, 2026
+impact: high
+fixed_in:
+- Firefox 150.0.3
+title: Security Vulnerabilities fixed in Firefox 150.0.3
+advisories:
+  MFSA-RESERVE-2026-2036978:
+    title: 'Incorrect boundary conditions in the JavaScript Engine: JIT component'
+    impact: high
+    reporter: ggwhyp
+    bugs:
+      - url: 2036978
+  MFSA-RESERVE-2026-2036983:
+    title: 'JIT miscompilation in the JavaScript Engine: JIT component'
+    impact: high
+    reporter: ggwhyp
+    bugs:
+      - url: 2036983
+  MFSA-RESERVE-2026-2038081:
+    title: 'Use-after-free in the JavaScript: WebAssembly component'
+    impact: high
+    reporter: Bill Demirkapi
+    bugs:
+      - url: 2038081
+  MFSA-RESERVE-2026-2038575:
+    title: Other issue in the JavaScript Engine component
+    impact: high
+    reporter: ggwhyp
+    bugs:
+      - url: 2038575
+
