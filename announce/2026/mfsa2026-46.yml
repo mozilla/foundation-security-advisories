@@ -1,0 +1,215 @@
+## mfsa2026-46.yml
+announced: May 19, 2026
+impact: high
+fixed_in:
+- Firefox 151
+title: Security Vulnerabilities fixed in Firefox 151
+advisories:
+  MFSA-RESERVE-2026-2003171:
+    title: Sandbox escape in Firefox and Firefox Focus for Android
+    impact: high
+    reporter: Daisuke Hatakeyama
+    bugs:
+      - url: 2003171
+  MFSA-RESERVE-2026-2029070:
+    title: 'Incorrect boundary conditions in the Audio/Video: Web Codecs component'
+    impact: high
+    reporter: zx
+    bugs:
+      - url: 2029070
+  MFSA-RESERVE-2026-2038439:
+    title: 'Use-after-free in the DOM: Bindings (WebIDL) component'
+    impact: high
+    reporter: Satoki Tsuji
+    bugs:
+      - url: 2038439
+  MFSA-RESERVE-2026-2038678:
+    title: Sandbox escape in the IPC component
+    impact: high
+    reporter: Nika Layzell
+    bugs:
+      - url: 2038678
+  MFSA-RESERVE-2026-2038803:
+    title: 'Same-origin policy bypass in the DOM: Networking component'
+    impact: high
+    reporter: satyamasd
+    bugs:
+      - url: 2038803
+  MFSA-RESERVE-2026-1355639:
+    title: 'Integer overflow in the Widget: Win32 component'
+    impact: moderate
+    reporter: q1
+    bugs:
+      - url: 1355639
+  MFSA-RESERVE-2026-1965430:
+    title: 'Same-origin policy bypass in the Networking: HTTP component'
+    impact: moderate
+    reporter: Jakub Szymsza
+    bugs:
+      - url: 1965430
+  MFSA-RESERVE-2026-2018513:
+    title: Spoofing issue in the Toolbar component in Firefox for Android
+    impact: moderate
+    reporter: yfbug123
+    bugs:
+      - url: 2018513
+  MFSA-RESERVE-2026-2021727:
+    title: Privilege escalation in the Application Update component
+    impact: moderate
+    reporter: Tomoya Nakanishi
+    bugs:
+      - url: 2021727
+  MFSA-RESERVE-2026-2029511:
+    title: Sandbox escape due to use-after-free in the Disability Access APIs component
+    impact: moderate
+    reporter: stevej
+    bugs:
+      - url: 2029511
+  MFSA-RESERVE-2026-2030747:
+    title: Incorrect boundary conditions, integer overflow in the Audio/Video component
+    impact: moderate
+    reporter: Ameen Basha M K
+    bugs:
+      - url: 2030747
+  MFSA-RESERVE-2026-2031064:
+    title: 'Privilege escalation in the DOM: Workers component'
+    impact: moderate
+    reporter: lebr0nli
+    bugs:
+      - url: 2031064
+  MFSA-RESERVE-2026-2032427:
+    title: 'Integer overflow in the Networking: JAR component'
+    impact: moderate
+    reporter: Yaqoub Aldurayhim
+    bugs:
+      - url: 2032427
+  MFSA-RESERVE-2026-2033850:
+    title: Privilege escalation in the Enterprise Policies component
+    impact: moderate
+    reporter: Mateusz Dobrzyński
+    bugs:
+      - url: 2033850
+  MFSA-RESERVE-2026-2034713:
+    title: 'Information disclosure, sandbox escape in the Security: Process Sandboxing component'
+    impact: moderate
+    reporter: Yaqoub Aldurayhim
+    bugs:
+      - url: 2034713
+  MFSA-RESERVE-2026-2034754:
+    title: 'Sandbox escape due to incorrect boundary conditions in the Widget: Win32 component'
+    impact: moderate
+    reporter: Ameen Basha M K
+    bugs:
+      - url: 2034754
+  MFSA-RESERVE-2026-2038669:
+    title: Sandbox escape in the XUL component
+    impact: moderate
+    reporter: Tom Schuster
+    bugs:
+      - url: 2038669
+  MFSA-RESERVE-2026-1940116:
+    title: Spoofing issue in WebExtensions
+    impact: low
+    reporter: Kanaru Sato
+    bugs:
+      - url: 1940116
+  MFSA-RESERVE-2026-1962625:
+    title: Spoofing issue in the Form Autofill component
+    impact: low
+    reporter: Hafiizh
+    bugs:
+      - url: 1962625
+  MFSA-RESERVE-2026-2004804:
+    title: 'Mitigation bypass in the DOM: Security component'
+    impact: low
+    reporter: Manojkumar Jaganathan
+    bugs:
+      - url: 2004804
+  MFSA-RESERVE-2026-2021222:
+    title: Spoofing issue in the Web Speech component
+    impact: low
+    reporter: Qadhafy Muhammad Tera
+    bugs:
+      - url: 2021222
+  MFSA-RESERVE-2026-2025170:
+    title: Spoofing issue in the Popup Blocker component
+    impact: low
+    reporter: Satoki Tsuji
+    bugs:
+      - url: 2025170
+  MFSA-RESERVE-2026-2025740:
+    title: 'Information disclosure in the DOM: Security component'
+    impact: low
+    reporter: Shihab Mirza
+    bugs:
+      - url: 2025740
+  MFSA-RESERVE-2026-2025849:
+    title: Information disclosure in the IP Protection component
+    impact: low
+    reporter: Rintaro Kobayashi
+    bugs:
+      - url: 2025849
+  MFSA-RESERVE-2026-2027173:
+    title: 'Information disclosure in the Graphics: WebGPU component'
+    impact: low
+    reporter: Inseo An
+    bugs:
+      - url: 2027173
+  MFSA-RESERVE-2026-2030467:
+    title: 'Denial-of-service due to invalid pointer in the Audio/Video: Web Codecs component'
+    impact: low
+    reporter: Tristan Madani
+    bugs:
+      - url: 2030467
+  MFSA-RESERVE-2026-2031123:
+    title: 'Mitigation bypass in the DOM: Security component'
+    impact: low
+    reporter: Atsushi Sada
+    bugs:
+      - url: 2031123
+  MFSA-RESERVE-2026-2032174:
+    title: Privilege escalation in the Security component
+    impact: low
+    reporter: pakhunov.anton.n
+    bugs:
+      - url: 2032174
+  MFSA-RESERVE-2026-2032604:
+    title: 'Same-origin policy bypass in the Networking: JAR component'
+    impact: low
+    reporter: Surya Dev Singh
+    bugs:
+      - url: 2032604
+  MFSA-RESERVE-2026-2033275:
+    title: 'Privilege escalation in the WebRTC: Audio/Video component'
+    impact: low
+    reporter: pakhunov.anton.n
+    bugs:
+      - url: 2033275
+  MFSA-RESERVE-2026-0:
+    title: Memory safety bugs fixed in Firefox 151
+    impact: high
+    reporter: Andrew Creskey, Andrew Osmond, Dana Keeler, Henri Sivonen, Jed Davis, John Schanck, Jon Coppeard, Justin Link, Michael Froman, Nika Layzell, Noah Lokocz, Randell Jesup, Steve Fink, Tom Schuster and the Mozilla Fuzzing Team
+    description: |
+      Memory safety bugs present in Firefox 150. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1362365, 1860538, 1929005, 1983353, 1998526, 2023271, 2023943, 2024244, 2024260, 2024443, 2024665, 2024774, 2024916, 2025346, 2025357, 2025406, 2025434, 2025488, 2025496, 2025942, 2025947, 2025968, 2026279, 2027159, 2027239, 2027276, 2027308, 2027310, 2027324, 2027329, 2027363, 2027381, 2027382, 2027383, 2028274, 2028884, 2029060, 2029065, 2029068, 2029281, 2029293, 2029297, 2029303, 2029439, 2029448, 2029703, 2029720, 2029721, 2029723, 2029770, 2029771, 2029782, 2029818, 2029885, 2030100, 2030379, 2030385, 2030979, 2031119, 2031122, 2034119, 2034791, 2035209, 2036666, 2037986
+        desc: Memory safety bugs fixed in Firefox 151
+  MFSA-RESERVE-2026-1:
+    title: Memory safety bugs fixed in Firefox ESR 140.11 and Firefox 151
+    impact: moderate
+    reporter: Nika Layzell, Randell Jesup, Timothy Nikkel, Tom Schuster and the Mozilla Fuzzing Team
+    description: |
+      Memory safety bugs present in Firefox ESR 140.10 and Firefox 150. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1784128, 1883230, 1983677, 2022390, 2023116, 2023657, 2024255, 2024418, 2024441, 2024447, 2024966, 2025412, 2025467, 2025940, 2025950, 2025956, 2026284, 2027247, 2027255, 2027288, 2027306, 2027322, 2027332, 2027333, 2028266, 2028292, 2028319, 2028526, 2028870, 2028876, 2028882, 2029062, 2029309, 2029414, 2029422, 2029428, 2029447, 2029732, 2029785, 2029793, 2029813, 2029899, 2031028, 2031457, 2032039, 2033610, 2033854, 2034498, 2034628, 2034978, 2035966, 2036668, 2036905, 2036930
+        desc: Memory safety bugs fixed in Firefox ESR 140.11 and Firefox 151
+  MFSA-RESERVE-2026-2:
+    title: Memory safety bugs fixed in Firefox ESR 115.36, Firefox ESR 140.11 and Firefox 151
+    impact: high
+    reporter: Andrew McCreight, Valentin Gosu and the Mozilla Fuzzing Team
+    description: |
+      Memory safety bugs present in Firefox ESR 115.35, Firefox ESR 140.10 and Firefox 150. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 1860195, 2029325, 2029429, 2029910, 2035915
+        desc: Memory safety bugs fixed in Firefox ESR 115.36, Firefox ESR 140.11 and Firefox 151
+
