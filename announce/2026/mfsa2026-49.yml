@@ -1,0 +1,15 @@
+## mfsa2026-49.yml
+announced: May 19, 2026
+impact: high
+fixed_in:
+- Firefox for iOS 151.0
+title: Security Vulnerabilities fixed in Firefox for iOS 151.0
+advisories:
+  CVE-2026-8706:
+    title: Sensitive user data could be leaked to other applications through Reader mode
+    impact: high
+    reporter: Muneaki Nishimura
+    description: |
+      Firefox for iOS hosted Reader mode on an unauthenticated local web server, allowing another application on the same device to request arbitrary URLs and receive the response rendered with the signed-in user's cookies.
+    bugs:
+      - url: 2036618
