@@ -5,7 +5,7 @@ fixed_in:
 - Firefox ESR 140.11
 title: Security Vulnerabilities fixed in Firefox ESR 140.11
 advisories:
-  MFSA-RESERVE-2026-2029070:
+  CVE-2026-8946:
     title: 'Incorrect boundary conditions in the Audio/Video: Web Codecs component'
     impact: high
     reporter: zx
@@ -17,7 +17,7 @@ advisories:
     reporter: ggwhyp
     bugs:
       - url: 2036978
-  MFSA-RESERVE-2026-2038439:
+  CVE-2026-8947:
     title: 'Use-after-free in the DOM: Bindings (WebIDL) component'
     impact: high
     reporter: Satoki Tsuji
@@ -35,85 +35,85 @@ advisories:
     reporter: ggwhyp
     bugs:
       - url: 2038679
-  MFSA-RESERVE-2026-1355639:
+  CVE-2026-8949:
     title: 'Integer overflow in the Widget: Win32 component'
     impact: moderate
     reporter: q1
     bugs:
       - url: 1355639
-  MFSA-RESERVE-2026-1965430:
+  CVE-2026-8950:
     title: 'Same-origin policy bypass in the Networking: HTTP component'
     impact: moderate
     reporter: Jakub Szymsza
     bugs:
       - url: 1965430
-  MFSA-RESERVE-2026-2029511:
+  CVE-2026-8953:
     title: Sandbox escape due to use-after-free in the Disability Access APIs component
     impact: moderate
     reporter: stevej
     bugs:
       - url: 2029511
-  MFSA-RESERVE-2026-2030747:
+  CVE-2026-8954:
     title: Incorrect boundary conditions, integer overflow in the Audio/Video component
     impact: moderate
     reporter: Ameen Basha M K
     bugs:
       - url: 2030747
-  MFSA-RESERVE-2026-2031064:
+  CVE-2026-8955:
     title: 'Privilege escalation in the DOM: Workers component'
     impact: moderate
     reporter: lebr0nli
     bugs:
       - url: 2031064
-  MFSA-RESERVE-2026-2032427:
+  CVE-2026-8956:
     title: 'Integer overflow in the Networking: JAR component'
     impact: moderate
     reporter: Yaqoub Aldurayhim
     bugs:
       - url: 2032427
-  MFSA-RESERVE-2026-2033850:
+  CVE-2026-8957:
     title: Privilege escalation in the Enterprise Policies component
     impact: moderate
     reporter: Mateusz Dobrzyński
     bugs:
       - url: 2033850
-  MFSA-RESERVE-2026-2034713:
+  CVE-2026-8958:
     title: 'Information disclosure, sandbox escape in the Security: Process Sandboxing component'
     impact: moderate
     reporter: Yaqoub Aldurayhim
     bugs:
       - url: 2034713
-  MFSA-RESERVE-2026-2034754:
+  CVE-2026-8959:
     title: 'Sandbox escape due to incorrect boundary conditions in the Widget: Win32 component'
     impact: moderate
     reporter: Ameen Basha M K
     bugs:
       - url: 2034754
-  MFSA-RESERVE-2026-1962625:
+  CVE-2026-8961:
     title: Spoofing issue in the Form Autofill component
     impact: low
     reporter: Hafiizh
     bugs:
       - url: 1962625
-  MFSA-RESERVE-2026-2004804:
+  CVE-2026-8962:
     title: 'Mitigation bypass in the DOM: Security component'
     impact: low
     reporter: Manojkumar Jaganathan
     bugs:
       - url: 2004804
-  MFSA-RESERVE-2026-2030467:
+  CVE-2026-8968:
     title: 'Denial-of-service due to invalid pointer in the Audio/Video: Web Codecs component'
     impact: low
     reporter: Tristan Madani
     bugs:
       - url: 2030467
-  MFSA-RESERVE-2026-2032174:
+  CVE-2026-8970:
     title: Privilege escalation in the Security component
     impact: low
     reporter: pakhunov.anton.n
     bugs:
       - url: 2032174
-  MFSA-RESERVE-2026-1:
+  CVE-2026-8974:
     title: Memory safety bugs fixed in Firefox ESR 140.11 and Firefox 151
     impact: moderate
     reporter: Nika Layzell, Randell Jesup, Timothy Nikkel, Tom Schuster and the Mozilla Fuzzing Team
@@ -122,7 +122,7 @@ advisories:
     bugs:
       - url: 1784128, 1883230, 1983677, 2022390, 2023116, 2023657, 2024255, 2024418, 2024441, 2024447, 2024966, 2025412, 2025467, 2025940, 2025950, 2025956, 2026284, 2027247, 2027255, 2027288, 2027306, 2027322, 2027332, 2027333, 2028266, 2028292, 2028319, 2028526, 2028870, 2028876, 2028882, 2029062, 2029309, 2029414, 2029422, 2029428, 2029447, 2029732, 2029785, 2029793, 2029813, 2029899, 2031028, 2031457, 2032039, 2033610, 2033854, 2034498, 2034628, 2034978, 2035966, 2036668, 2036905, 2036930
         desc: Memory safety bugs fixed in Firefox ESR 140.11 and Firefox 151
-  MFSA-RESERVE-2026-2:
+  CVE-2026-8975:
     title: Memory safety bugs fixed in Firefox ESR 115.36, Firefox ESR 140.11 and Firefox 151
     impact: high
     reporter: Andrew McCreight, Valentin Gosu, Nika Layzell, Tom Schuster and the Mozilla Fuzzing Team
