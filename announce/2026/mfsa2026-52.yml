@@ -1,0 +1,15 @@
+## mfsa2026-52.yml
+announced: May 25, 2026
+impact: low
+fixed_in:
+- Firefox for iOS 151.1
+title: Security Vulnerabilities fixed in Firefox for iOS 151.1
+advisories:
+  CVE-2026-9078:
+    title: Firefox iOS RTL Domain Rendering Issue in Link Preview
+    impact: low
+    reporter: Barath Stalin K
+    description: |
+      Firefox for iOS displayed specially crafted right-to-left (RTL) and internationalized domain names (IDNs) incorrectly in link preview UI surfaces. A crafted RTL hostname could visually reorder portions of the displayed domain, causing attacker-controlled sites to appear as trusted origins.
+    bugs:
+      - url: 2029371
