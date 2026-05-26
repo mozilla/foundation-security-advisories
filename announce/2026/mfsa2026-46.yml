@@ -8,7 +8,7 @@ advisories:
   CVE-2026-8945:
     title: Sandbox escape in Firefox and Firefox Focus for Android
     impact: high
-    reporter: Daisuke Hatakeyama
+    reporter: Daisuke Hatakeyama and Shota Matsuda
     bugs:
       - url: 2003171
   CVE-2026-8946:
