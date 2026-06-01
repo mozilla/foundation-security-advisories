@@ -1,0 +1,23 @@
+## mfsa2026-53.yml
+announced: June 1, 2026
+impact: high
+fixed_in:
+- Firefox for iOS 151.2
+title: Security Vulnerabilities fixed in Firefox for iOS 151.2
+advisories:
+  CVE-2026-9308:
+    title: Arbitrary JavaScript execution in Reader View due to wrong HTML replacement order
+    impact: high
+    reporter: Muneaki Nishimura
+    description: |
+      Firefox for iOS Reader View replaced page content in its HTML template before replacing other internal placeholders. A malicious page could include a placeholder string that was later substituted with JSON-LD data, potentially resulting in arbitrary JavaScript execution.
+    bugs:
+      - url: 2039422
+  CVE-2026-9309:
+    title: Arbitrary JavaScript execution in internal pages via Reader View JSON-LD injection
+    impact: high
+    reporter: Muneaki Nishimura
+    description: |
+      Firefox for iOS Reader View did not properly escape HTML tags in JSON-LD metadata. A malicious page could inject markup that changed Reader View behavior and leaked sensitive URL parameters. These parameters could then be used to access internal pages, potentially resulting in arbitrary JavaScript execution in an internal origin.
+    bugs:
+      - url: 2036573
