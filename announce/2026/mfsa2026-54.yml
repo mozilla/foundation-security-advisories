@@ -1,0 +1,20 @@
+## mfsa2026-54.yml
+announced: June 2, 2026
+impact: high
+fixed_in:
+- Firefox 151.0.3
+title: Security Vulnerabilities fixed in Firefox 151.0.3
+advisories:
+  CVE-2026-10701:
+    title: 'Incorrect boundary conditions in the Graphics: Text component'
+    impact: high
+    reporter: taiho kim
+    bugs:
+      - url: 2038537
+  CVE-2026-10702:
+    title: 'JIT miscompilation in the JavaScript Engine: JIT component'
+    impact: high
+    reporter: Nebula Security
+    bugs:
+      - url: 2040903
+
