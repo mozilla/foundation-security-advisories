@@ -417,11 +417,21 @@ def try_set_bugzilla_alias(bug: str, cve_id: int):
         if is_dry_run():
             return
         # Try to update the alias for the given bug number. If this fails our try block will catch it.
-        requests.put(
+        # Bugzilla's REST API requires a JSON body; using `data=` would form-encode it and the
+        # alias would be silently ignored.
+        response = requests.put(
             f"https://bugzilla.mozilla.org/rest/bug/{bug_number}",
-            data={"alias": cve_id},
+            json={"alias": cve_id},
             headers={"X-BUGZILLA-API-KEY": BUGZILLA_API_KEY},
         )
+        # Surface Bugzilla's error body, which explains *why* a request was rejected
+        # (raise_for_status alone only gives the status code). Bugzilla also returns
+        # HTTP 200 for some errors, so check the JSON "error" field too.
+        if not response.ok:
+            raise RuntimeError(f"{response.status_code}: {response.text}")
+        result = response.json()
+        if result.get("error"):
+            raise RuntimeError(result.get("message", result))
         print(f"Assigned alias {cve_id} to bug {bug}")
     except Exception as e:
         print(f"Failed to assign alias {cve_id} to bug {bug} - {e}")
