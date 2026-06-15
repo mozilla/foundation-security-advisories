@@ -1,0 +1,23 @@
+## mfsa2026-56.yml
+announced: June 16, 2026
+impact: high
+fixed_in:
+- Firefox for iOS 152.0
+title: Security Vulnerabilities fixed in Firefox for iOS 152.0
+advisories:
+  CVE-2026-53899:
+    title: Cross-origin cookies could be leaked when opening a PDF link
+    impact: high
+    reporter: Muneaki Nishimura
+    description: |
+      Firefox for iOS used partial domain matching when attaching cookies to PDF requests, allowing a malicious site on a suffix domain to receive cookies belonging to the target site.
+    bugs:
+      - url: 2042909
+  CVE-2026-53900:
+    title: Cookie injection was possible when opening a PDF link
+    impact: high
+    reporter: Muneaki Nishimura
+    description: |
+      Firefox for iOS preserved cookies set on the initial PDF request across cross-origin HTTP redirects in TemporaryDocument, allowing a malicious site to inject arbitrary cookies into requests to an unrelated target domain.
+    bugs:
+      - url: 2043204
