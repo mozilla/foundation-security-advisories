@@ -1,0 +1,77 @@
+## mfsa2026-59.yml
+announced: June 16, 2026
+impact: high
+fixed_in:
+- Firefox ESR 115.37
+title: Security Vulnerabilities fixed in Firefox ESR 115.37
+advisories:
+  CVE-2026-12289:
+    title: 'Privilege escalation in the Graphics: WebRender component'
+    impact: high
+    reporter: choeseyeong
+    bugs:
+      - url: 2023443
+  CVE-2026-12290:
+    title: Memory safety bug fixed in Firefox ESR 115.37
+    impact: high
+    reporter: jayjayjazz
+    bugs:
+      - url: 2024852
+  CVE-2026-12291:
+    title: 'Use-after-free in the Networking: HTTP component'
+    impact: high
+    reporter: Zijie Zhao
+    bugs:
+      - url: 2036929
+  CVE-2026-12294:
+    title: 'Sandbox escape in the DOM: Workers component'
+    impact: high
+    reporter: Quy Pham
+    bugs:
+      - url: 2039873
+  CVE-2026-12295:
+    title: 'Sandbox escape in the DOM: Navigation component'
+    impact: high
+    reporter: Yaqoub Aldurayhim
+    bugs:
+      - url: 2040160
+  CVE-2026-12297:
+    title: Sandbox escape due to incorrect boundary conditions in the Networking component
+    impact: high
+    reporter: zx
+    bugs:
+      - url: 2041610
+  CVE-2026-12299:
+    title: 'JIT miscompilation in the DOM: Core & HTML component'
+    impact: high
+    reporter: Hyeonjun Ahn
+    bugs:
+      - url: 2043139
+  CVE-2026-12302:
+    title: 'Mitigation bypass in the DOM: Security component'
+    impact: moderate
+    reporter: lebr0nli
+    bugs:
+      - url: 2034489
+  CVE-2026-12330:
+    title: Incorrect boundary conditions in the Internationalization component
+    impact: moderate
+    reporter: Mozilla Fuzzing Team
+    bugs:
+      - url: 2029326
+  CVE-2026-12325:
+    title: 'Denial-of-service in the Graphics: ImageLib component'
+    impact: low
+    reporter: Securin
+    bugs:
+      - url: 2039443
+  CVE-2026-12328:
+    title: Memory safety bugs fixed in Firefox ESR 115.37, Firefox ESR 140.12, Thunderbird ESR 140.12, Firefox 152 and Thunderbird 152
+    impact: high
+    reporter: Andrew McCreight, Randell Jesup, Tom Ritter and the Mozilla Fuzzing Team
+    description: |
+      Memory safety bugs present in Firefox ESR 115.36, Firefox ESR 140.11, Thunderbird ESR 140.11, Firefox 151 and Thunderbird 151. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 2029402, 2038477, 2039726, 2041373, 2042268, 2042451, 2042782, 2042858, 2042929, 2042965, 2043213
+        desc: High Severity memory safety bugs fixed in Firefox ESR 115.37, Firefox ESR 140.12, Thunderbird ESR 140.12, Firefox 152 and Thunderbird 152
+
