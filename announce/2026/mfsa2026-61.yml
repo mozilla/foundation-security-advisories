@@ -1,0 +1,190 @@
+# mfsa2026-61.yml
+announced: June 16, 2026
+impact: high
+fixed_in:
+- Thunderbird 140.12
+title: Security Vulnerabilities fixed in Thunderbird 140.12
+description: |
+  *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
+advisories:
+  CVE-2026-12289:
+    title: 'Privilege escalation in the Graphics: WebRender component'
+    impact: high
+    reporter: choeseyeong
+    bugs:
+      - url: 2023443
+  CVE-2026-12290:
+    title: Memory safety bug fixed in Thunderbird ESR 140.12
+    impact: high
+    reporter: jayjayjazz
+    bugs:
+      - url: 2024852
+  CVE-2026-12291:
+    title: 'Use-after-free in the Networking: HTTP component'
+    impact: high
+    reporter: Zijie Zhao
+    bugs:
+      - url: 2036929
+  CVE-2026-12292:
+    title: Incorrect boundary conditions in the Web Audio component
+    impact: high
+    reporter: Zijie Zhao
+    bugs:
+      - url: 2038465
+  CVE-2026-12294:
+    title: 'Sandbox escape in the DOM: Workers component'
+    impact: high
+    reporter: Quy Pham
+    bugs:
+      - url: 2039873
+  CVE-2026-12295:
+    title: 'Sandbox escape in the DOM: Navigation component'
+    impact: high
+    reporter: Yaqoub Aldurayhim
+    bugs:
+      - url: 2040160
+  CVE-2026-12298:
+    title: Memory safety bug fixed in Thunderbird ESR 140.12
+    impact: high
+    reporter: Haruka Yamazaki
+    bugs:
+      - url: 2041981
+  CVE-2026-12296:
+    title: 'Sandbox escape in the Security: Process Sandboxing component'
+    impact: high
+    reporter: Yaqoub Aldurayhim
+    bugs:
+      - url: 2040515
+  CVE-2026-12297:
+    title: Sandbox escape due to incorrect boundary conditions in the Networking component
+    impact: high
+    reporter: zx
+    bugs:
+      - url: 2041610
+  CVE-2026-12299:
+    title: 'JIT miscompilation in the DOM: Core & HTML component'
+    impact: high
+    reporter: Hyeonjun Ahn
+    bugs:
+      - url: 2043139
+  CVE-2026-12329:
+    title: Memory safety bug fixed in Thunderbird ESR 140.12
+    impact: high
+    reporter: Michael Froman
+    bugs:
+      - url: 2044738
+  CVE-2026-12302:
+    title: 'Mitigation bypass in the DOM: Security component'
+    impact: moderate
+    reporter: lebr0nli
+    bugs:
+      - url: 2034489
+  CVE-2026-12304:
+    title: 'Same-origin policy bypass in the Networking: Cookies component'
+    impact: moderate
+    reporter: Yaqoub Aldurayhim
+    bugs:
+      - url: 2034944
+  CVE-2026-12305:
+    title: Memory safety bug fixed in Thunderbird ESR 140.12
+    impact: moderate
+    reporter: Zijie Zhao
+    bugs:
+      - url: 2037290
+  CVE-2026-12306:
+    title: Memory safety bug fixed in Thunderbird ESR 140.12
+    impact: moderate
+    reporter: Mihalis Haatainen
+    bugs:
+      - url: 2037323
+  CVE-2026-12307:
+    title: Memory safety bug fixed in Thunderbird ESR 140.12
+    impact: moderate
+    reporter: Atsushi Sada
+    bugs:
+      - url: 2038133
+  CVE-2026-12308:
+    title: Memory safety bug fixed in Thunderbird ESR 140.12
+    impact: moderate
+    reporter: Mihalis Haatainen
+    bugs:
+      - url: 2038302
+  CVE-2026-12309:
+    title: Memory safety bug fixed in Thunderbird ESR 140.12
+    impact: moderate
+    reporter: Yaqoub Aldurayhim
+    bugs:
+      - url: 2038476
+  CVE-2026-12310:
+    title: Memory safety bug fixed in Thunderbird ESR 140.12
+    impact: moderate
+    reporter: Carl Pearson
+    bugs:
+      - url: 2039707
+  CVE-2026-12311:
+    title: 'Information disclosure, sandbox escape in the Security: Process Sandboxing component'
+    impact: moderate
+    reporter: Yaqoub Aldurayhim
+    bugs:
+      - url: 2040177
+  CVE-2026-12312:
+    title: Memory safety bug fixed in Thunderbird ESR 140.12
+    impact: moderate
+    reporter: Rintaro Kawasugi
+    bugs:
+      - url: 2040383
+  CVE-2026-12313:
+    title: 'Information disclosure, sandbox escape in the Security: Process Sandboxing component'
+    impact: moderate
+    reporter: evyatar
+    bugs:
+      - url: 2040477
+  CVE-2026-12314:
+    title: Memory safety bug fixed in Thunderbird ESR 140.12
+    impact: moderate
+    reporter: satyamasd
+    bugs:
+      - url: 2041856
+  CVE-2026-12315:
+    title: 'Mitigation bypass in the DOM: Security component'
+    impact: moderate
+    reporter: Nguyen Minh
+    bugs:
+      - url: 2042058
+  CVE-2026-12330:
+    title: Incorrect boundary conditions in the Internationalization component
+    impact: moderate
+    reporter: Mozilla Fuzzing Team
+    bugs:
+      - url: 2029326
+  CVE-2026-12324:
+    title: 'Incorrect boundary conditions in the Graphics: CanvasWebGL component'
+    impact: low
+    reporter: Mihalis Haatainen
+    bugs:
+      - url: 2038444
+  CVE-2026-12325:
+    title: 'Denial-of-service in the Graphics: ImageLib component'
+    impact: low
+    reporter: Securin
+    bugs:
+      - url: 2039443
+  CVE-2026-12327:
+    title: Memory safety bugs fixed in Firefox ESR 140.12, Thunderbird ESR 140.12, Firefox 152 and Thunderbird 152
+    impact: moderate
+    reporter: Christian Holler, Jens Stutte, Nika Layzell, Randell Jesup, Tom Schuster and the Mozilla Fuzzing Team
+    description: |
+      Memory safety bugs present in Firefox ESR 140.11, Thunderbird ESR 140.11, Firefox 151 and Thunderbird 151. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 2011842, 2023902, 2025512, 2027312, 2029444, 2036571, 2036900, 2036936, 2037995, 2038551, 2040717, 2042724
+        desc: Moderate Severity memory safety bugs fixed in Firefox ESR 140.12, Thunderbird ESR 140.12, Firefox 152 and Thunderbird 152
+  CVE-2026-12328:
+    title: Memory safety bugs fixed in Firefox ESR 115.37, Firefox ESR 140.12, Thunderbird ESR 140.12, Firefox 152 and Thunderbird 152
+    impact: high
+    reporter: Andrew McCreight, Randell Jesup, Tom Ritter and the Mozilla Fuzzing Team
+    description: |
+      Memory safety bugs present in Firefox ESR 115.36, Firefox ESR 140.11, Thunderbird ESR 140.11, Firefox 151 and Thunderbird 151. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 2029402, 2038477, 2039726, 2041373, 2042268, 2042451, 2042782, 2042858, 2042929, 2042965, 2043213
+        desc: High Severity memory safety bugs fixed in Firefox ESR 115.37, Firefox ESR 140.12, Thunderbird ESR 140.12, Firefox 152 and Thunderbird 152
+
