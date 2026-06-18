@@ -206,7 +206,7 @@ advisories:
   CVE-2026-12322:
     title: 'Clickjacking issue in the Widget: Gtk component'
     impact: low
-    reporter: Jivk
+    reporter: Abdan Alkayyis
     bugs:
       - url: 2033848
   CVE-2026-12323:
