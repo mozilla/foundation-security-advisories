@@ -1,5 +1,7 @@
 # MFSA: Mozilla Foundation Security Advisories
 
+This is a private repository but the main branch is published as CVEs and on our website!
+
 Canonical source for Mozilla Foundation Security Advisories. http://www.mozilla.org/security/announce/
 
 [![Build Status](https://circleci.com/gh/mozilla/foundation-security-advisories.svg?style=svg)](https://circleci.com/gh/mozilla/foundation-security-advisories)
