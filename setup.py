@@ -15,7 +15,7 @@ setup(
     description='Tools supporting the Mozilla Foundation Security Advisories',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    url='https://github.com/mozilla/foundation-security-advisories',
+    url='https://github.com/mozilla/foundation-security-advisories-private',
     author='Tom Ritter',
     license='MPL-2.0',
     classifiers=[

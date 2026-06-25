@@ -3,7 +3,7 @@ name: Push
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   test:
@@ -39,7 +39,7 @@ jobs:
   publish:
     name: Publish CVE Advisories
     needs: [check, test]
-    if: github.ref == 'refs/heads/master' && github.repository == 'mozilla/foundation-security-advisories'
+    if: github.ref == 'refs/heads/main' && github.repository == 'mozilla/foundation-security-advisories-private'
     runs-on: ubuntu-latest
     environment: prod
     permissions:

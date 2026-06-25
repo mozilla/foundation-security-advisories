@@ -4,8 +4,6 @@ This is a private repository but the main branch is published as CVEs and on our
 
 Canonical source for Mozilla Foundation Security Advisories. http://www.mozilla.org/security/announce/
 
-[![Build Status](https://circleci.com/gh/mozilla/foundation-security-advisories.svg?style=svg)](https://circleci.com/gh/mozilla/foundation-security-advisories)
-
 ## Writing new announcements
 
 Announcements are written in [Markdown](http://daringfireball.net/projects/markdown/basics) or [YAML](http://yaml.org/spec/1.1/). They should
@@ -174,8 +172,8 @@ informed which file has a problem and the commit will be aborted.
 
 Advisories are written and assigned as per the process described in the
 [Security/Firefox/Security Bug Life Cycle/Security Advisories](https://wiki.mozilla.org/Security/Firefox/Security_Bug_Life_Cycle/Security_Advisories)
-wiki page. Once advisories have a CVE id, and are pushed to the master branch of this repository
-([mozilla/foundation-security-advisories](https://github.com/mozilla/foundation-security-advisories)), they will
+wiki page. Once advisories have a CVE id, and are pushed to the main branch of this repository
+([mozilla/foundation-security-advisories-private](https://github.com/mozilla/foundation-security-advisories-private)), they will
 automatically be published to CVE Services by GitHub Actions running the
 [publish_cve_advisories](foundation_security_advisories/publish_cve_advisories.py) script. This will also update already
 published advisories, for example in cases of a typo.
