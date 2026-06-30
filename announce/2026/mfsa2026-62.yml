@@ -1,0 +1,18 @@
+## mfsa2026-62.yml
+announced: June 30, 2026
+impact: high
+fixed_in:
+- Firefox 152.0.4
+title: Security Vulnerabilities fixed in Firefox 152.0.4
+advisories:
+  MFSA-RESERVE-2026-2:
+    title: Memory safety bugs fixed in Firefox 152.0.4
+    impact: high
+    reporter: Christian Holler, Gabriele Svelto, Greg Stoll and the Mozilla Fuzzing Team
+    description: |
+      Memory safety bugs present in Firefox 152.0.3. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 2043241, 2045514, 2045576, 2045623, 2045765, 2049409, 2049840
+        desc: High Severity memory safety bugs fixed in Firefox 152.0.4
+      - url: 2046814
+        desc: Moderate Severity memory safety bugs fixed in Firefox 152.0.4
