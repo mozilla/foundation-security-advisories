@@ -10,8 +10,71 @@ import subprocess
 
 from foundation_security_advisories.common import (
     CVEAdvisory,
+    get_modified_files,
+    parse_yml_file,
 )
 from foundation_security_advisories.common_cve import *
+
+
+def find_placeholder_cve_ids(files):
+    """MFSA-RESERVE placeholder CVE IDs found in the given .yml advisory files."""
+    ids = []
+    for fn in files:
+        if not fn.endswith(".yml"):
+            continue
+        try:
+            data = parse_yml_file(fn)
+        except Exception:
+            continue  # check_advisories will report parse errors
+        for cve_id in data.get("advisories", {}):
+            if cve_id.startswith("MFSA-RESERVE"):
+                ids.append(cve_id)
+    return ids
+
+
+def prompt_main():
+    staged = get_modified_files(staged_only=True)
+    placeholders = find_placeholder_cve_ids(staged)
+
+    if not placeholders:
+        return 0
+
+    print("\nThe following advisories have placeholder CVE IDs:")
+    for cve_id in placeholders:
+        print(f"  {cve_id}")
+    print("CI will assign them automatically, but doing it locally also sets Bugzilla aliases.")
+
+    # Open the terminal directly so interactive prompts work even when stdin is
+    # redirected (e.g. in a git hook). Bail out silently if no terminal is attached.
+    try:
+        tty = open("/dev/tty", "r")
+    except OSError:
+        return 0
+
+    import sys
+    old_stdin = sys.stdin
+    sys.stdin = tty
+    try:
+        if not os.getenv("CVE_ENV"):
+            print("To assign locally: fill in .env, then: source .env && assign_cve_ids")
+            return 0
+
+        if not prompt_yes_no("\nAssign CVE IDs now?", default=False):
+            return 0
+
+        local_cve_advisories = get_local_cve_advisories(source_files=staged)
+        for cve_id, cve_advisory in local_cve_advisories.items():
+            if cve_id.startswith("MFSA-RESERVE"):
+                print(f"\n-> {cve_id}")
+                if replace_cve_id(cve_advisory):
+                    try_set_bugzilla_alias(cve_id.split("-")[-1], cve_advisory.id)
+                    for instance in cve_advisory.instances:
+                        subprocess.run(["git", "add", instance.file_name])
+    finally:
+        sys.stdin = old_stdin
+        tty.close()
+
+    return 0
 
 
 def main():

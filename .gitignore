@@ -3,3 +3,4 @@ debuglog.*
 /build
 __pycache__
 *.actual.json
+.env
