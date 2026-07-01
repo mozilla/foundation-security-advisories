@@ -1,0 +1,25 @@
+## mfsa2026-64.yml
+announced: June 30, 2026
+impact: high
+fixed_in:
+- Thunderbird 140.12.1
+title: Security Vulnerabilities fixed in Thunderbird 140.12.1
+description: |
+  *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
+advisories:
+  CVE-2026-57962:
+    title: Denial-of-service via malicious LDAP address-book server
+    impact: medium
+    reporter: Michael Bommarito
+    description: |
+      A malicious LDAP server, which a Thunderbird user is configured to query for address-book autocomplete, can stash arbitrarily large amounts of attacker-supplied data into the Thunderbird LDAP client until it crashes due to memory exhaustion.
+    bugs:
+      - url: 2042872
+  CVE-2026-57963:
+    title: Chat UI manipulation by injection
+    impact: high
+    reporter: Michael Bommarito
+    description: |
+      An attacker who can send HTML chat messages (via Matrix or XMPP) can inject arbitrary styled content, phishing links, and CSS that manipulates the chat UI.
+    bugs:
+      - url: 2042910
