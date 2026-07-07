@@ -1,0 +1,15 @@
+## mfsa2026-65.yml
+announced: July 5, 2026
+impact: moderate
+fixed_in:
+- Firefox for iOS 152.3
+title: Security Vulnerabilities fixed in Firefox for iOS 152.3
+advisories:
+  CVE-2026-13356:
+    title: Interrupted navigation could allow address bar origin spoofing in Firefox for iOS
+    impact: moderate
+    reporter: Azza Tegar Naufal Ataullah
+    description: |
+      A malicious webpage could interrupt a pending navigation by enqueuing a synchronous JavaScript dialog, causing the browser UI to display the destination origin in the address bar while continuing to render attacker-controlled content.
+    bugs:
+      - url: 2047768
