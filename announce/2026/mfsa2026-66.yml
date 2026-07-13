@@ -1,0 +1,15 @@
+## mfsa2026-66.yml
+announced: July 13, 2026
+impact: low
+fixed_in:
+- Firefox for iOS 152.4
+title: Security Vulnerabilities fixed in Firefox for iOS 152.4
+advisories:
+  CVE-2026-14906:
+    title: Malicious webpage titles could allow overwriting of bundled PDF resources when saving webpages as PDFs in Firefox for iOS
+    impact: low
+    reporter: Muneaki Nishimura
+    description: |
+      Pages with malicious titles could potentially allow saved PDF content to overwrite PDF files or bundled content within the Firefox for iOS application sandbox.
+    bugs:
+      - url: 2045842
