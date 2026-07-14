@@ -1,0 +1,23 @@
+## mfsa2026-67.yml
+announced: July 14, 2026
+impact: critical
+fixed_in:
+- Firefox 152.0.6
+title: Security Vulnerabilities fixed in Firefox 152.0.6
+advisories:
+  CVE-2026-15718:
+    title: 'Invalid pointer in the JavaScript: WebAssembly component'
+    impact: critical
+    reporter: Christian Holler
+    bugs:
+      - url: 2045443
+    description: |
+      We are aware that exploit code for this is public however we are not aware of any attacks in the wild abusing this flaw.
+  CVE-2026-15719:
+    title: 'Site isolation in the DOM: Navigation component'
+    impact: critical
+    reporter: Atsushi Sada
+    bugs:
+      - url: 2043820
+    description: |
+      We are aware that exploit code for this is public however we are not aware of any attacks in the wild abusing this flaw.
