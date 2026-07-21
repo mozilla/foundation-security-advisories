@@ -1,0 +1,404 @@
+## mfsa2026-68.yml
+announced: July 21, 2026
+impact: high
+fixed_in:
+- Firefox 153
+title: Security Vulnerabilities fixed in Firefox 153
+advisories:
+  CVE-2026-16349:
+    title: 'Same-origin policy bypass in the DOM: Navigation component'
+    impact: high
+    reporter: Tran Quac
+    bugs:
+      - url: 2034682
+  CVE-2026-16350:
+    title: 'Incorrect boundary conditions in the Audio/Video: cubeb component'
+    impact: high
+    reporter: Tomoya Nakanishi
+    bugs:
+      - url: 2042033
+  CVE-2026-16362:
+    title: 'Use-after-free in the WebRTC: Audio/Video component'
+    impact: high
+    reporter: crixer
+    bugs:
+      - url: 2043188
+  CVE-2026-16351:
+    title: 'Sandbox escape due to use-after-free in the DOM: Navigation component'
+    impact: high
+    reporter: Yaqoub Aldurayhim
+    bugs:
+      - url: 2045468
+  CVE-2026-16352:
+    title: Sandbox escape due to use-after-free in the Disability Access APIs component
+    impact: high
+    reporter: Oskar L
+    bugs:
+      - url: 2046416
+  CVE-2026-16363:
+    title: 'JIT miscompilation in the JavaScript: WebAssembly component'
+    impact: high
+    reporter: Nebula Security
+    bugs:
+      - url: 2047689
+  CVE-2026-16364:
+    title: 'Incorrect boundary conditions in the Audio/Video: Playback component'
+    impact: high
+    reporter: stevej
+    bugs:
+      - url: 2047802
+  CVE-2026-16365:
+    title: 'Privilege escalation in the DOM: Workers component'
+    impact: high
+    reporter: Khanh Nguyen
+    bugs:
+      - url: 2049149
+  CVE-2026-16366:
+    title: 'Privilege escalation in the DOM: Navigation component'
+    impact: high
+    reporter: Khanh Nguyen
+    bugs:
+      - url: 2049181
+  CVE-2026-16353:
+    title: 'Invalid pointer in the DOM: Bindings (WebIDL) component'
+    impact: high
+    reporter: fedek
+    bugs:
+      - url: 2049523
+  CVE-2026-16354:
+    title: 'Information disclosure in the Graphics: ImageLib component'
+    impact: high
+    reporter: satyamasd
+    bugs:
+      - url: 2050626
+  CVE-2026-16367:
+    title: Sandbox escape due to invalid pointer in the Disability Access APIs component
+    impact: high
+    reporter: Oskar L
+    bugs:
+      - url: 2050627
+  CVE-2026-16368:
+    title: 'Incorrect boundary conditions in the JavaScript: WebAssembly component'
+    impact: high
+    reporter: Nebula Security
+    bugs:
+      - url: 2051015
+  CVE-2026-16369:
+    title: 'Integer overflow in the JavaScript: WebAssembly component'
+    impact: high
+    reporter: Amy Burnett of OpenAI
+    bugs:
+      - url: 2051854
+  CVE-2026-16355:
+    title: 'JIT miscompilation in the JavaScript Engine: JIT component'
+    impact: high
+    reporter: Amy Burnett of OpenAI
+    bugs:
+      - url: 2052207
+  CVE-2026-16356:
+    title: Sandbox escape due to use-after-free in the Disability Access APIs component
+    impact: high
+    reporter: Oskar L
+    bugs:
+      - url: 2052562
+  CVE-2026-16357:
+    title: Incorrect boundary conditions in the Graphics component
+    impact: high
+    reporter: 5up3rh3i
+    bugs:
+      - url: 2053326
+  CVE-2026-16370:
+    title: 'Mitigation bypass in the DOM: Networking component'
+    impact: moderate
+    reporter: tiebuchen
+    bugs:
+      - url: 1996495
+  CVE-2026-16371:
+    title: 'Privilege escalation in the DOM: Navigation component'
+    impact: moderate
+    reporter: stevej
+    bugs:
+      - url: 2008369
+  CVE-2026-16372:
+    title: 'Privilege escalation in the DOM: Content Processes component'
+    impact: moderate
+    reporter: Sajeeb Lohani
+    bugs:
+      - url: 2013800
+  CVE-2026-16373:
+    title: Information disclosure in the Privacy component in Firefox for Android
+    impact: moderate
+    reporter: Satoki Tsuji
+    bugs:
+      - url: 2021964
+  CVE-2026-16374:
+    title: Information disclosure in the Framework component in DevTools
+    impact: moderate
+    reporter: Tomoya Nakanishi
+    bugs:
+      - url: 2027519
+  CVE-2026-16375:
+    title: 'Site isolation issue in the Networking: HTTP component'
+    impact: moderate
+    reporter: pakhunov.anton.n
+    bugs:
+      - url: 2032140
+  CVE-2026-16376:
+    title: 'Denial-of-service in the Graphics: WebGPU component'
+    impact: moderate
+    reporter: Mihalis Haatainen
+    bugs:
+      - url: 2035733
+  CVE-2026-16377:
+    title: Mitigation bypass in the PDF Viewer component
+    impact: moderate
+    reporter: Nikola Kojic
+    bugs:
+      - url: 2037770
+  CVE-2026-16378:
+    title: 'Other issue in the DOM: Copy & Paste and Drag & Drop component'
+    impact: moderate
+    reporter: Farhad Sajid Barbhuiya
+    bugs:
+      - url: 2038868
+  CVE-2026-16379:
+    title: 'Privilege escalation in the DOM: Content Processes component'
+    impact: moderate
+    reporter: Shu Takahashi
+    bugs:
+      - url: 2039452
+  CVE-2026-16358:
+    title: 'Site isolation issue in the Graphics: WebRender component'
+    impact: moderate
+    reporter: Hcamael
+    bugs:
+      - url: 2040119
+  CVE-2026-16380:
+    title: Mitigation bypass in the Networking component
+    impact: moderate
+    reporter: Rintaro Kawasugi
+    bugs:
+      - url: 2040386
+  CVE-2026-16381:
+    title: 'Same-origin policy bypass in the Networking: DNS component'
+    impact: moderate
+    reporter: Rintaro Kawasugi
+    bugs:
+      - url: 2041001
+  CVE-2026-16382:
+    title: 'Mitigation bypass in the DOM: Service Workers component'
+    impact: moderate
+    reporter: Yaqoub Aldurayhim
+    bugs:
+      - url: 2041864
+  CVE-2026-16383:
+    title: 'Mitigation bypass in the DOM: Networking component'
+    impact: moderate
+    reporter: Ibuki Sato and Tomoya Nakanishi
+    bugs:
+      - url: 2041902
+  CVE-2026-16384:
+    title: 'Information disclosure due to uninitialized memory in the Graphics: WebGPU component'
+    impact: moderate
+    reporter: 5up3rh3i
+    bugs:
+      - url: 2041911
+  CVE-2026-16385:
+    title: 'Information disclosure due to uninitialized memory in the Graphics: WebGPU component'
+    impact: moderate
+    reporter: 5up3rh3i
+    bugs:
+      - url: 2041912
+  CVE-2026-16386:
+    title: 'Information disclosure due to uninitialized memory in the Graphics: WebGPU component'
+    impact: moderate
+    reporter: 5up3rh3i
+    bugs:
+      - url: 2041916
+  CVE-2026-16387:
+    title: Site isolation issue in the Networking component
+    impact: moderate
+    reporter: Atsushi Sada
+    bugs:
+      - url: 2043200
+  CVE-2026-16388:
+    title: 'Sandbox escape in the DOM: Networking component'
+    impact: moderate
+    reporter: Yaqoub Aldurayhim
+    bugs:
+      - url: 2043845
+  CVE-2026-16389:
+    title: Incorrect boundary conditions, integer overflow in the Libraries component in NSS
+    impact: moderate
+    reporter: Tomoya Nakanishi
+    bugs:
+      - url: 2043887
+  CVE-2026-16390:
+    title: Mitigation bypass in the Enterprise Policies component
+    impact: moderate
+    reporter: Souma Ohsawa
+    bugs:
+      - url: 2044527
+  CVE-2026-16391:
+    title: 'Information disclosure in the Storage: IndexedDB component'
+    impact: moderate
+    reporter: Tomoya Nakanishi
+    bugs:
+      - url: 2044536
+  CVE-2026-16392:
+    title: 'JIT miscompilation in the JavaScript Engine: JIT component'
+    impact: moderate
+    reporter: Gary Kwong
+    bugs:
+      - url: 2044606
+  CVE-2026-16393:
+    title: 'Incorrect boundary conditions in the Graphics: WebGPU component'
+    impact: moderate
+    reporter: Atsushi Sada
+    bugs:
+      - url: 2045410
+  CVE-2026-16359:
+    title: 'Incorrect boundary conditions in the Audio/Video: GMP component'
+    impact: moderate
+    reporter: Jacolon Walker
+    bugs:
+      - url: 2045424
+  CVE-2026-16394:
+    title: 'Mitigation bypass in the DOM: Security component'
+    impact: moderate
+    reporter: Nithissh
+    bugs:
+      - url: 2046748
+  CVE-2026-16395:
+    title: Integer overflow in the Audio/Video component
+    impact: moderate
+    reporter: stevej
+    bugs:
+      - url: 2047221
+  CVE-2026-16396:
+    title: Privilege escalation in WebExtensions
+    impact: moderate
+    reporter: Quy Pham
+    bugs:
+      - url: 2047240
+  CVE-2026-16397:
+    title: Clickjacking issue in the WebExtensions component in Firefox for Android
+    impact: moderate
+    reporter: Hafiizh
+    bugs:
+      - url: 2047608
+  CVE-2026-16398:
+    title: Site isolation issue in the Graphics component
+    impact: moderate
+    reporter: stevej
+    bugs:
+      - url: 2048345
+  CVE-2026-16399:
+    title: 'Site isolation issue in the DOM: Navigation component'
+    impact: moderate
+    reporter: Yaqoub Aldurayhim
+    bugs:
+      - url: 2049981
+  CVE-2026-16400:
+    title: 'Information disclosure in the DOM: Security component'
+    impact: moderate
+    reporter: Rintaro Kawasugi
+    bugs:
+      - url: 2050430
+  CVE-2026-16401:
+    title: Privilege escalation in the Data Loss Prevention component
+    impact: moderate
+    reporter: Brian Carpenter
+    bugs:
+      - url: 2052565
+  CVE-2026-16402:
+    title: 'Integer overflow in the Graphics: ImageLib component'
+    impact: moderate
+    reporter: Kai Martin
+    bugs:
+      - url: 2052703
+  CVE-2026-16403:
+    title: Spoofing issue in the Address Bar component
+    impact: low
+    reporter: Renwa
+    bugs:
+      - url: 1972244
+  CVE-2026-16404:
+    title: Spoofing issue in Firefox for Android
+    impact: low
+    reporter: Khiem Tran
+    bugs:
+      - url: 2020253
+  CVE-2026-16405:
+    title: 'Information disclosure in the Networking: WebSockets component'
+    impact: low
+    reporter: Yaqoub Aldurayhim
+    bugs:
+      - url: 2036591
+  CVE-2026-16406:
+    title: Mitigation bypass in the Networking component
+    impact: low
+    reporter: Rintaro Kawasugi
+    bugs:
+      - url: 2040382
+  CVE-2026-16407:
+    title: 'Mitigation bypass in the DOM: Service Workers component'
+    impact: low
+    reporter: bug2own
+    bugs:
+      - url: 2044063
+  CVE-2026-16408:
+    title: 'Integer overflow in the Audio/Video: Playback component'
+    impact: low
+    reporter: 5up3rh3i
+    bugs:
+      - url: 2050477
+  CVE-2026-16409:
+    title: 'Invalid pointer in the Security: PSM component'
+    impact: low
+    reporter: Artur Cygan
+    bugs:
+      - url: 2052134
+  CVE-2026-16410:
+    title: 'JIT miscompilation in the JavaScript Engine: JIT component'
+    impact: low
+    reporter: Amy Burnett of OpenAI
+    bugs:
+      - url: 2053680
+  CVE-2026-16411:
+    title: Memory safety bugs fixed in Firefox 153
+    impact: high
+    reporter: C.M.Chang, Christian Holler, David Parks, Dennis Jackson, Gabriele Svelto, Hafiizh, Henrik Skupin, Jan de Mooij, Jens Stutte, Paul Theriault, Randell Jesup, Rob Wu, Tom Ritter, Tom Schuster and the Mozilla Fuzzing Team
+    description: |
+      Memory safety bugs present in Firefox 152. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 2048936, 2049804
+        desc: High-severity memory safety bugs fixed in Firefox 153
+      - url: 1420800, 1598946, 1767921, 2013993, 2025417, 2027325, 2027364, 2029433, 2029807, 2029901, 2029922, 2030102, 2030563, 2032110, 2037801, 2042756, 2044625, 2045609, 2047920, 2048491, 2048492, 2048800, 2050534, 2050662, 2050871
+        desc: Moderate-severity memory safety bugs fixed in Firefox 153
+      - url:  2006467, 2027346, 2027349, 2027353, 2027362, 2027371, 2027373, 2028954, 2029694, 2036906, 2038964, 2039460, 2040522, 2040834, 2043275, 2045394, 2045606, 2052060 
+        desc: Low-severity memory safety bugs fixed in Firefox 153
+  CVE-2026-16412:
+    title: Memory safety bugs fixed in Firefox ESR 140.13 and Firefox 153
+    impact: high
+    reporter: Christian Holler, Frederik Braun, Justin Link, Simon Friedberger, Tom Ritter, Tom Schuster and the Mozilla Fuzzing Team
+    description: |
+      Memory safety bugs present in Firefox ESR 140.12 and Firefox 152. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 2043035, 2045057, 2045187, 2045402, 2045417, 2045482, 2045611, 2045618, 2045756, 2046917, 2047718
+        desc: High-severity memory safety bugs fixed in Firefox ESR 140.13 and Firefox 153
+      - url: 2005113, 2025369, 2026301, 2028663, 2029761, 2042242, 2043271, 2043300, 2044612, 2045378, 2045406, 2045407, 2045616, 2045626, 2045730, 2045732, 2045769, 2045771, 2047957, 2048934, 2049818, 2049822, 2050151, 2050368, 2051653, 2051658
+        desc: Moderate-severity memory safety bugs fixed in Firefox ESR 140.13 and Firefox 153
+      - url: 2045413, 2053635, 2053637
+        desc: Low-severity memory safety bugs fixed in Firefox ESR 140.13 and Firefox 153
+  CVE-2026-16360:
+    title: Memory safety bugs fixed in Firefox ESR 115.38, Firefox ESR 140.13 and Firefox 153
+    impact: high
+    reporter: Andrew McCreight, Jan de Mooij, Tom Ritter, Vincent Hilla and the Mozilla Fuzzing Team
+    description: |
+      Memory safety bugs present in Firefox ESR 115.37, Firefox ESR 140.12 and Firefox 152. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 2022635, 2028004, 2035756, 2045184, 2045185, 2045198, 2045392, 2045395, 2045396, 2045397, 2045405, 2045414, 2045415, 2045451, 2045454, 2045508, 2045510, 2045513, 2045515, 2045518, 2045604, 2045607, 2045612, 2045617, 2045619, 2045624, 2045625, 2045729, 2045737, 2045741, 2045742, 2045763, 2045767, 2045770, 2045772, 2045773, 2045783, 2045833, 2045848, 2045865, 2045875, 2045957, 2047723, 2047729, 2048795, 2048799, 2048801, 2049392, 2049397, 2049398, 2049399, 2049404, 2049405, 2049407, 2049812, 2050657, 2050668, 2050990, 2053166, 2053273, 2053576, 2053583, 2053587
+        desc: High-severity memory safety bugs fixed in Firefox ESR 115.38, Firefox ESR 140.13 and Firefox 153
+      - url: 2043739, 2045281, 2045614, 2045744, 2045775, 2047719, 2049805, 2051666
+        desc: Moderate-severity memory safety bugs fixed in Firefox ESR 115.38, Firefox ESR 140.13 and Firefox 153

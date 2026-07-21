@@ -1,0 +1,102 @@
+## mfsa2026-69.yml
+announced: July 21, 2026
+impact: critical
+fixed_in:
+- Firefox ESR 115.38
+title: Security Vulnerabilities fixed in Firefox ESR 115.38
+advisories:
+  CVE-2026-15719:
+    title: 'Site isolation issue in the DOM: Navigation component'
+    impact: critical
+    reporter: Atsushi Sada
+    bugs:
+      - url: 2043820
+    description: |
+      We are aware that exploit code for this is public however we are not aware of any attacks in the wild abusing this flaw.
+  CVE-2026-16349:
+    title: 'Same-origin policy bypass in the DOM: Navigation component'
+    impact: high
+    reporter: Tran Quac
+    bugs:
+      - url: 2034682
+  CVE-2026-16350:
+    title: 'Incorrect boundary conditions in the Audio/Video: cubeb component'
+    impact: high
+    reporter: Tomoya Nakanishi
+    bugs:
+      - url: 2042033
+  CVE-2026-16351:
+    title: 'Sandbox escape due to use-after-free in the DOM: Navigation component'
+    impact: high
+    reporter: Yaqoub Aldurayhim
+    bugs:
+      - url: 2045468
+  CVE-2026-16352:
+    title: Sandbox escape due to use-after-free in the Disability Access APIs component
+    impact: high
+    reporter: Oskar L
+    bugs:
+      - url: 2046416
+  CVE-2026-16353:
+    title: 'Invalid pointer in the DOM: Bindings (WebIDL) component'
+    impact: high
+    reporter: fedek
+    bugs:
+      - url: 2049523
+  CVE-2026-16354:
+    title: 'Information disclosure in the Graphics: ImageLib component'
+    impact: high
+    reporter: satyamasd
+    bugs:
+      - url: 2050626
+  CVE-2026-16355:
+    title: 'JIT miscompilation in the JavaScript Engine: JIT component'
+    impact: high
+    reporter: Amy Burnett of OpenAI
+    bugs:
+      - url: 2052207
+  CVE-2026-16356:
+    title: Sandbox escape due to use-after-free in the Disability Access APIs component
+    impact: high
+    reporter: Oskar L
+    bugs:
+      - url: 2052562
+  CVE-2026-16357:
+    title: Incorrect boundary conditions in the Graphics component
+    impact: high
+    reporter: 5up3rh3i
+    bugs:
+      - url: 2053326
+  CVE-2026-16358:
+    title: 'Site isolation issue in the Graphics: WebRender component'
+    impact: moderate
+    reporter: Hcamael
+    bugs:
+      - url: 2040119
+  CVE-2026-16359:
+    title: 'Incorrect boundary conditions in the Audio/Video: GMP component'
+    impact: moderate
+    reporter: Jacolon Walker
+    bugs:
+      - url: 2045424
+  CVE-2026-16360:
+    title: Memory safety bugs fixed in Firefox ESR 115.38, Firefox ESR 140.13 and Firefox 153
+    impact: high
+    reporter: Andrew McCreight, Jan de Mooij, Tom Ritter, Vincent Hilla and the Mozilla Fuzzing Team
+    description: |
+      Memory safety bugs present in Firefox ESR 115.37, Firefox ESR 140.12 and Firefox 152. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 2022635, 2028004, 2035756, 2045184, 2045185, 2045198, 2045392, 2045395, 2045396, 2045397, 2045405, 2045414, 2045415, 2045451, 2045454, 2045508, 2045510, 2045513, 2045515, 2045518, 2045604, 2045607, 2045612, 2045617, 2045619, 2045624, 2045625, 2045729, 2045737, 2045741, 2045742, 2045763, 2045767, 2045770, 2045772, 2045773, 2045783, 2045833, 2045848, 2045865, 2045875, 2045957, 2047723, 2047729, 2048795, 2048799, 2048801, 2049392, 2049397, 2049398, 2049399, 2049404, 2049405, 2049407, 2049812, 2050657, 2050668, 2050990, 2053166, 2053273, 2053576, 2053583, 2053587
+        desc: High-severity memory safety bugs fixed in Firefox ESR 115.38, Firefox ESR 140.13 and Firefox 153
+      - url: 2043739, 2045281, 2045614, 2045744, 2045775, 2047719, 2049805, 2051666
+        desc: Moderate-severity memory safety bugs fixed in Firefox ESR 115.38, Firefox ESR 140.13 and Firefox 153
+  CVE-2026-16361:
+    title: Memory safety bugs fixed in Firefox ESR 115.38 and Firefox ESR 140.13
+    impact: high
+    reporter: The Mozilla Fuzzing Team
+    description: |
+      Memory safety bugs present in Firefox ESR 115.37 and Firefox ESR 140.12. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+    bugs:
+      - url: 2029734, 2036518
+        desc: High-severity memory safety bugs fixed in Firefox ESR 115.38 and Firefox ESR 140.13
+
