@@ -52,7 +52,7 @@ advisories:
   CVE-2026-8953:
     title: Sandbox escape due to use-after-free in the Disability Access APIs component
     impact: moderate
-    reporter: stevej
+    reporter: Steven Julian
     bugs:
       - url: 2029511
   CVE-2026-8954:

@@ -1,10 +1,20 @@
-## mfsa2026-70.yml
+## mfsa2026-72.yml
 announced: July 21, 2026
 impact: critical
 fixed_in:
-- Firefox ESR 140.13
-title: Security Vulnerabilities fixed in Firefox ESR 140.13
+- Thunderbird 140.13
+title: Security Vulnerabilities fixed in Thunderbird 140.13
+description: |
+  *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
 advisories:
+  CVE-2026-14899:
+    title: Off-by-one out of bounds read in MIME header parser for forwarding
+    impact: moderate
+    reporter: Claude, Kai Engert
+    bugs:
+      - url: 2046137
+    description: |
+      The code to parse MIME headers for display when forwarding a message (if the setting to view all headers was enabled) had an off-by-one error, allowing a single byte to be read from the memory after the buffer for the headers, and potentially crashing Thunderbird.
   CVE-2026-15718:
     title: 'Invalid pointer in the JavaScript: WebAssembly component'
     impact: critical
@@ -102,7 +112,7 @@ advisories:
   CVE-2026-16371:
     title: 'Privilege escalation in the DOM: Navigation component'
     impact: moderate
-    reporter: Steven Julian
+    reporter: stevej
     bugs:
       - url: 2008369
   CVE-2026-16374:
@@ -184,36 +194,35 @@ advisories:
     bugs:
       - url: 2036591
   CVE-2026-16412:
-    title: Memory safety bugs fixed in Firefox ESR 140.13 and Firefox 153
+    title: Memory safety bugs fixed in Thunderbird ESR 140.13 and Thunderbird 153
     impact: high
     reporter: Christian Holler, Frederik Braun, Justin Link, Simon Friedberger, Tom Ritter, Tom Schuster and the Mozilla Fuzzing Team
     description: |
-      Memory safety bugs present in Firefox ESR 140.12 and Firefox 152. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+      Memory safety bugs present in Thunderbird ESR 140.12 and Thunderbird 152. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
     bugs:
       - url: 2043035, 2045057, 2045187, 2045402, 2045417, 2045482, 2045611, 2045618, 2045756, 2046917, 2047718
-        desc: High-severity memory safety bugs fixed in Firefox ESR 140.13 and Firefox 153
+        desc: High-severity memory safety bugs fixed in Thunderbird ESR 140.13 and Thunderbird 153
       - url: 2005113, 2025369, 2026301, 2028663, 2029761, 2042242, 2043271, 2043300, 2044612, 2045378, 2045406, 2045407, 2045616, 2045626, 2045730, 2045732, 2045769, 2045771, 2047957, 2048934, 2049818, 2049822, 2050151, 2050368, 2051653, 2051658
-        desc: Moderate-severity memory safety bugs fixed in Firefox ESR 140.13 and Firefox 153
+        desc: Moderate-severity memory safety bugs fixed in Thunderbird ESR 140.13 and Thunderbird 153
       - url: 2045413, 2053635, 2053637
-        desc: Low-severity memory safety bugs fixed in Firefox ESR 140.13 and Firefox 153
+        desc: Low-severity memory safety bugs fixed in Thunderbird ESR 140.13 and Thunderbird 153
   CVE-2026-16360:
-    title: Memory safety bugs fixed in Firefox ESR 115.38, Firefox ESR 140.13 and Firefox 153
+    title: Memory safety bugs fixed in Thunderbird ESR 140.13 and Thunderbird 153
     impact: high
     reporter: Andrew McCreight, Jan de Mooij, Tom Ritter, Vincent Hilla and the Mozilla Fuzzing Team
     description: |
-      Memory safety bugs present in Firefox ESR 115.37, Firefox ESR 140.12 and Firefox 152. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+      Memory safety bugs present in Thunderbird ESR 140.12 and Thunderbird 152. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
     bugs:
       - url: 2022635, 2028004, 2035756, 2045184, 2045185, 2045198, 2045392, 2045395, 2045396, 2045397, 2045405, 2045414, 2045415, 2045451, 2045454, 2045508, 2045510, 2045513, 2045515, 2045518, 2045604, 2045607, 2045612, 2045617, 2045619, 2045624, 2045625, 2045729, 2045737, 2045741, 2045742, 2045763, 2045767, 2045770, 2045772, 2045773, 2045783, 2045833, 2045848, 2045865, 2045875, 2045957, 2047723, 2047729, 2048795, 2048799, 2048801, 2049392, 2049397, 2049398, 2049399, 2049404, 2049405, 2049407, 2049812, 2050657, 2050668, 2050990, 2053166, 2053273, 2053576, 2053583, 2053587
-        desc: High-severity memory safety bugs fixed in Firefox ESR 115.38, Firefox ESR 140.13 and Firefox 153
+        desc: High-severity memory safety bugs fixed in Thunderbird ESR 140.13 and Thunderbird 153
       - url: 2043739, 2045281, 2045614, 2045744, 2045775, 2047719, 2049805, 2051666
-        desc: Moderate-severity memory safety bugs fixed in Firefox ESR 115.38, Firefox ESR 140.13 and Firefox 153
+        desc: Moderate-severity memory safety bugs fixed in Thunderbird ESR 140.13 and Thunderbird 153
   CVE-2026-16361:
-    title: Memory safety bugs fixed in Firefox ESR 115.38 and Firefox ESR 140.13
+    title: Memory safety bugs fixed in Thunderbird ESR 140.13
     impact: high
     reporter: The Mozilla Fuzzing Team
     description: |
-      Memory safety bugs present in Firefox ESR 115.37 and Firefox ESR 140.12. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
+      Memory safety bugs present in Thunderbird ESR 140.12. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.
     bugs:
       - url: 2029734, 2036518
-        desc: High-severity memory safety bugs fixed in Firefox ESR 115.38 and Firefox ESR 140.13
-
+        desc: High-severity memory safety bugs fixed in Thunderbird ESR 140.13
