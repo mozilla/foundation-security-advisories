@@ -356,7 +356,7 @@ advisories:
   CVE-2026-16409:
     title: 'Invalid pointer in the Security: PSM component'
     impact: low
-    reporter: Artur Cygan
+    reporter: Artur Cygan of Trail of Bits in partnership with OpenAI
     bugs:
       - url: 2052134
   CVE-2026-16410:
