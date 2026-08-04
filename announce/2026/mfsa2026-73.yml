@@ -1,0 +1,13 @@
+## mfsa2026-73.yml
+announced: August 04, 2026
+impact: high
+fixed_in:
+- Firefox 153.0.3
+title: Security Vulnerabilities fixed in Firefox for Android 153.0.3
+advisories:
+  CVE-2026-18809:
+    title: Information disclosure in Firefox for Android and Firefox Focus for Android
+    impact: high
+    reporter: The Mozilla Fuzzing Team
+    bugs:
+      - url: 2055683
