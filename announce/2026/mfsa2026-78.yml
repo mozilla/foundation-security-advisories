@@ -1,0 +1,363 @@
+## mfsa2026-78.yml
+announced: August 18, 2026
+impact: high
+fixed_in:
+- Thunderbird 154
+title: Security Vulnerabilities fixed in Thunderbird 154
+description: |
+  *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
+advisories:
+  CVE-2026-75874:
+    title: Sandbox escape in the Remote Settings Client component
+    impact: high
+    reporter: crixer
+    bugs:
+      - url: 2039972
+  CVE-2026-74934:
+    title: 'Site isolation issue in the Graphics: CanvasWebGL component'
+    impact: high
+    reporter: satyamasd
+    bugs:
+      - url: 2050584
+  CVE-2026-74935:
+    title: 'Privilege escalation in the DOM: Networking component'
+    impact: high
+    reporter: Yaqoub Aldurayhim
+    bugs:
+      - url: 2051013
+  CVE-2026-74936:
+    title: 'Use-after-free in the JavaScript: WebAssembly component'
+    impact: high
+    reporter: Amy Burnett of OpenAI
+    bugs:
+      - url: 2052688
+  CVE-2026-74937:
+    title: 'Use-after-free in the JavaScript: GC component'
+    impact: high
+    reporter: Amy Burnett of OpenAI
+    bugs:
+      - url: 2053337
+  CVE-2026-74938:
+    title: 'Mitigation bypass in the JavaScript: GC component'
+    impact: high
+    reporter: Amy Burnett of OpenAI
+    bugs:
+      - url: 2053688
+  CVE-2026-74939:
+    title: 'Privilege escalation in the DOM: Navigation component'
+    impact: high
+    reporter: choeseyeong
+    bugs:
+      - url: 2054416
+  CVE-2026-74940:
+    title: 'Use-after-free in the Graphics: Text component'
+    impact: high
+    reporter: kiyong
+    bugs:
+      - url: 2054842
+  CVE-2026-74941:
+    title: 'Privilege escalation in the Graphics: CanvasWebGL component'
+    impact: high
+    reporter: Jacolon Walker
+    bugs:
+      - url: 2055056
+  CVE-2026-74942:
+    title: Privilege escalation in the Remote Settings Client component
+    impact: high
+    reporter: Gal Ankonina
+    bugs:
+      - url: 2056571
+  CVE-2026-74943:
+    title: 'Use-after-free in the Graphics: ImageLib component'
+    impact: high
+    reporter: Abdulaziz Alasaiqah
+    bugs:
+      - url: 2057308
+  CVE-2026-74944:
+    title: 'Use-after-free in the DOM: Core & HTML component'
+    impact: high
+    reporter: Amy Burnett of OpenAI
+    bugs:
+      - url: 2057778
+  CVE-2026-74945:
+    title: 'Information disclosure in the Graphics: Text component'
+    impact: high
+    reporter: Abdulaziz Alasaiqah
+    bugs:
+      - url: 2057808
+  CVE-2026-74946:
+    title: 'Privilege escalation due to incorrect boundary conditions in the Graphics: CanvasWebGL component'
+    impact: high
+    reporter: locust1b
+    bugs:
+      - url: 2059997
+  CVE-2026-74947:
+    title: Privilege escalation due to invalid pointer in the Graphics component
+    impact: high
+    reporter: navapon
+    bugs:
+      - url: 2060010
+  CVE-2026-74948:
+    title: Information disclosure in the Graphics component
+    impact: high
+    reporter: Yaqoub Aldurayhim
+    bugs:
+      - url: 2060106
+  CVE-2026-74949:
+    title: 'Privilege escalation due to use-after-free in the Graphics: Canvas2D component'
+    impact: high
+    reporter: r00tdaddy
+    bugs:
+      - url: 2060245
+  CVE-2026-74950:
+    title: Privilege escalation in the Downloads API component
+    impact: moderate
+    reporter: Frederik Braun
+    bugs:
+      - url: 1880253
+  CVE-2026-74952:
+    title: Privilege escalation in the Application Update component
+    impact: moderate
+    reporter: Tomoya Nakanishi
+    bugs:
+      - url: 2021757
+  CVE-2026-74953:
+    title: 'Privilege escalation in the Networking: Cookies component'
+    impact: moderate
+    reporter: Satoki Tsuji
+    bugs:
+      - url: 2022382
+  CVE-2026-74954:
+    title: 'Information disclosure due to side-channel in the Storage: Cache API component'
+    impact: moderate
+    reporter: Tomoya Nakanishi
+    bugs:
+      - url: 2025732
+  CVE-2026-74955:
+    title: Privilege escalation in the Request Handling component
+    impact: moderate
+    reporter: jmwebdevelopement
+    bugs:
+      - url: 2029265
+  CVE-2026-74956:
+    title: 'Same-origin policy bypass in the DOM: Service Workers component'
+    impact: moderate
+    reporter: pakhunov.anton.n
+    bugs:
+      - url: 2032406
+  CVE-2026-74957:
+    title: Mitigation bypass in the Safe Browsing component
+    impact: moderate
+    reporter: Tomoya Nakanishi
+    bugs:
+      - url: 2041906
+  CVE-2026-74958:
+    title: Information disclosure in the WebRTC component
+    impact: moderate
+    reporter: Tomoya Nakanishi
+    bugs:
+      - url: 2045368
+  CVE-2026-74959:
+    title: 'Mitigation bypass in the Storage: Cache API component'
+    impact: moderate
+    reporter: David Bors at Snyk Security Labs
+    bugs:
+      - url: 2047853
+  CVE-2026-74960:
+    title: Site isolation issue in the WebExtensions component
+    impact: moderate
+    reporter: Khanh Nguyen
+    bugs:
+      - url: 2049148
+  CVE-2026-74961:
+    title: Side-channel in the Web Audio component
+    impact: moderate
+    reporter: Rintaro Kawasugi
+    bugs:
+      - url: 2050380
+  CVE-2026-74962:
+    title: 'Site isolation issue in the Networking: Cookies component'
+    impact: moderate
+    reporter: Yaqoub Aldurayhim
+    bugs:
+      - url: 2050425
+  CVE-2026-74963:
+    title: 'Same-origin policy bypass in the Networking: Cookies component'
+    impact: moderate
+    reporter: 5up3rh3i
+    bugs:
+      - url: 2050482
+  CVE-2026-74964:
+    title: Integer overflow in the Graphics component
+    impact: moderate
+    reporter: 5up3rh3i
+    bugs:
+      - url: 2053327
+  CVE-2026-74965:
+    title: Privilege escalation in the Shell Integration component
+    impact: moderate
+    reporter: Khanh Nguyen
+    bugs:
+      - url: 2053455
+  CVE-2026-74966:
+    title: Information disclosure in the Form Autofill component
+    impact: moderate
+    reporter: The Mozilla Fuzzing Team
+    bugs:
+      - url: 2054776
+  CVE-2026-74967:
+    title: 'Same-origin policy bypass in the Audio/Video: Playback component'
+    impact: moderate
+    reporter: The Mozilla Fuzzing Team
+    bugs:
+      - url: 2055697
+  CVE-2026-74968:
+    title: 'Site isolation issue in the Graphics: WebRender component'
+    impact: moderate
+    reporter: kiyong
+    bugs:
+      - url: 2055738
+  CVE-2026-74969:
+    title: 'Use-after-free in the Layout: Text and Fonts component'
+    impact: moderate
+    reporter: Hyeonjun Ahn
+    bugs:
+      - url: 2056065
+  CVE-2026-74970:
+    title: Site isolation issue in the Graphics component
+    impact: moderate
+    reporter: Abdulaziz Alasaiqah
+    bugs:
+      - url: 2056558
+  CVE-2026-74971:
+    title: 'Information disclosure in the DOM: UI Events & Focus Handling component'
+    impact: moderate
+    reporter: avlidienbrunn
+    bugs:
+      - url: 2057204
+  CVE-2026-74972:
+    title: 'Information disclosure in the DOM: Push Subscriptions component'
+    impact: moderate
+    reporter: Kagami Rosylight
+    bugs:
+      - url: 2059053
+  CVE-2026-74973:
+    title: Race condition, use-after-free in the Graphics component
+    impact: moderate
+    reporter: r00tdaddy
+    bugs:
+      - url: 2060357
+  CVE-2026-74974:
+    title: 'Same-origin policy bypass in the Graphics: ImageLib component'
+    impact: moderate
+    reporter: The Mozilla Fuzzing Team
+    bugs:
+      - url: 2061794
+  CVE-2026-74976:
+    title: 'JIT miscompilation in the JavaScript Engine: JIT component'
+    impact: low
+    reporter: anbu
+    bugs:
+      - url: 1952164
+  CVE-2026-74977:
+    title: Integer overflow in the Graphics component
+    impact: low
+    reporter: Vladimir Meier
+    bugs:
+      - url: 2028440
+  CVE-2026-74978:
+    title: Clickjacking issue in the Widget component
+    impact: low
+    reporter: hafidzaulia28
+    bugs:
+      - url: 2036097
+  CVE-2026-74979:
+    title: Mitigation bypass in the Add-ons Manager component
+    impact: low
+    reporter: Tomoya Nakanishi
+    bugs:
+      - url: 2045676
+  CVE-2026-74981:
+    title: 'Site isolation issue in the Audio/Video: Web Codecs component'
+    impact: low
+    reporter: 5up3rh3i
+    bugs:
+      - url: 2050480
+  CVE-2026-74982:
+    title: Denial-of-service in the Widget component
+    impact: low
+    reporter: Riski Muhammad Ivan
+    bugs:
+      - url: 2051788
+  CVE-2026-74983:
+    title: Mitigation bypass in the Data Loss Prevention component
+    impact: low
+    reporter: 5up3rh3i
+    bugs:
+      - url: 2051897
+  CVE-2026-74984:
+    title: Race condition in the JavaScript Engine component
+    impact: low
+    reporter: Amy Burnett of OpenAI
+    bugs:
+      - url: 2053670
+  CVE-2026-74985:
+    title: Privilege escalation in the Enterprise Policies component
+    impact: low
+    reporter: The Mozilla Fuzzing Team
+    bugs:
+      - url: 2059825
+  CVE-2026-74986:
+    title: Site isolation issue in the CSS Parsing and Computation component
+    impact: low
+    reporter: 5up3rh3i
+    bugs:
+      - url: 2060048
+  CVE-2026-74987:
+    title: Internally found bugs fixed in Thunderbird ESR 140.14, Thunderbird ESR 153.1 and Thunderbird 154
+    impact: high
+    reporter: Nicolas Silva, Tom Ritter and the Mozilla Fuzzing Team
+    description: |
+      Internally found bugs present in Thunderbird ESR 140.13, Thunderbird ESR 153.0 and Thunderbird 153. Some of these bugs showed evidence of memory corruption or another security-relevant defect and we presume that with enough effort some of these could have been exploited.
+    bugs:
+      - url: 2048797, 2050536, 2053272, 2053579, 2057115, 2057116, 2057130, 2057991, 2057995, 2058002, 2058008, 2058032, 2058102, 2058667
+        desc: High Severity internally found bugs fixed in Thunderbird ESR 140.14, Thunderbird ESR 153.1 and Thunderbird 154
+      - url: 1500946, 1788109, 2045379, 2045380, 2049339, 2049393, 2053580, 2054662, 2054665, 2054673, 2054785, 2058645
+        desc: Moderate Severity internally found bugs fixed in Thunderbird ESR 140.14, Thunderbird ESR 153.1 and Thunderbird 154
+      - url: 2059424
+        desc: Low Severity internally found bugs fixed in Thunderbird ESR 140.14, Thunderbird ESR 153.1 and Thunderbird 154
+  CVE-2026-74988:
+    title: Internally found bugs fixed in Thunderbird ESR 153.1 and Thunderbird 154
+    impact: high
+    reporter: Gabriele Svelto, Tom Ritter, Tom Schuster and the Mozilla Fuzzing Team
+    description: |
+      Internally found bugs present in Thunderbird ESR 153.0 and Thunderbird 153. Some of these bugs showed evidence of memory corruption or another security-relevant defect and we presume that with enough effort some of these could have been exploited.
+    bugs:
+      - url: 2045796, 2046734, 2051424, 2054721, 2057994, 2058094, 2058611, 2058615, 2058616, 2061315
+        desc: High Severity internally found bugs fixed in Thunderbird ESR 153.1 and Thunderbird 154
+      - url: 2018164, 2045404, 2045507, 2045711, 2052403, 2053174, 2054643, 2054667, 2054671, 2054674, 2054687, 2054717, 2054761, 2054787, 2055676, 2056779, 2056781, 2058629, 2059019, 2059138
+        desc: Moderate Severity internally found bugs fixed in Thunderbird ESR 153.1 and Thunderbird 154
+      - url: 2053153, 2053262, 2054763, 2059198, 2059224
+        desc: Low Severity internally found bugs fixed in Thunderbird ESR 153.1 and Thunderbird 154
+  CVE-2026-74989:
+    title: Internally found bugs fixed in Thunderbird 154
+    impact: moderate
+    reporter: Christian Holler, Ryan Hunt, Tom Ritter and the Mozilla Fuzzing Team
+    description: |
+      Internally found bugs present in Thunderbird 153. Some of these bugs showed evidence of memory corruption or another security-relevant defect and we presume that with enough effort some of these could have been exploited.
+    bugs:
+      - url: 2027388, 2029750, 2029794, 2043298, 2045126, 2049810, 2051741
+        desc: Moderate Severity internally found bugs fixed in Thunderbird 154
+      - url: 2022257, 2027351, 2027380, 2029289
+        desc: Low Severity internally found bugs fixed in Thunderbird 154
+  CVE-2026-74990:
+    title: Internally found bugs fixed in Thunderbird ESR 140.14, Thunderbird ESR 153.1 and Thunderbird 154
+    impact: high
+    reporter: Christian Holler, Jan de Mooij, Tom Ritter and the Mozilla Fuzzing Team
+    description: |
+      Internally found bugs present in Thunderbird ESR 140.13, Thunderbird ESR 153.0 and Thunderbird 153. Some of these bugs showed evidence of memory corruption or another security-relevant defect and we presume that with enough effort some of these could have been exploited.
+    bugs:
+      - url: 2045774, 2048490, 2050864, 2053159, 2053260, 2053261, 2053582, 2053599, 2053607, 2053608, 2053853, 2054626, 2054627, 2054635, 2054677, 2054740, 2054832, 2056792, 2057098, 2057100, 2057101, 2057103, 2057117, 2057118, 2058048, 2058049, 2058622, 2058623, 2058665, 2058666, 2059121, 2059164, 2059188
+        desc: High Severity internally found bugs fixed in Thunderbird ESR 140.14, Thunderbird ESR 153.1 and Thunderbird 154
+      - url: 2045762, 2052401, 2058208
+        desc: Moderate Severity internally found bugs fixed in Thunderbird ESR 140.14, Thunderbird ESR 153.1 and Thunderbird 154
