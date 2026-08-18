@@ -1,0 +1,91 @@
+## mfsa2026-75.yml
+announced: August 18, 2026
+impact: high
+fixed_in:
+- Firefox ESR 115.39
+title: Security Vulnerabilities fixed in Firefox ESR 115.39
+advisories:
+  CVE-2026-74934:
+    title: 'Site isolation issue in the Graphics: CanvasWebGL component'
+    impact: high
+    reporter: satyamasd
+    bugs:
+      - url: 2050584
+  CVE-2026-74935:
+    title: 'Privilege escalation in the DOM: Networking component'
+    impact: high
+    reporter: Yaqoub Aldurayhim
+    bugs:
+      - url: 2051013
+  CVE-2026-74939:
+    title: 'Privilege escalation in the DOM: Navigation component'
+    impact: high
+    reporter: choeseyeong
+    bugs:
+      - url: 2054416
+  CVE-2026-74940:
+    title: 'Use-after-free in the Graphics: Text component'
+    impact: high
+    reporter: kiyong
+    bugs:
+      - url: 2054842
+  CVE-2026-74942:
+    title: Privilege escalation in the Remote Settings Client component
+    impact: high
+    reporter: Gal Ankonina
+    bugs:
+      - url: 2056571
+  CVE-2026-74943:
+    title: 'Use-after-free in the Graphics: ImageLib component'
+    impact: high
+    reporter: Abdulaziz Alasaiqah
+    bugs:
+      - url: 2057308
+  CVE-2026-74945:
+    title: 'Information disclosure in the Graphics: Text component'
+    impact: high
+    reporter: Abdulaziz Alasaiqah
+    bugs:
+      - url: 2057808
+  CVE-2026-74946:
+    title: 'Privilege escalation due to incorrect boundary conditions in the Graphics: CanvasWebGL component'
+    impact: high
+    reporter: locust1b
+    bugs:
+      - url: 2059997
+  CVE-2026-74948:
+    title: Information disclosure in the Graphics component
+    impact: high
+    reporter: Yaqoub Aldurayhim
+    bugs:
+      - url: 2060106
+  CVE-2026-74969:
+    title: 'Use-after-free in the Layout: Text and Fonts component'
+    impact: moderate
+    reporter: Hyeonjun Ahn
+    bugs:
+      - url: 2056065
+  CVE-2026-74973:
+    title: Race condition, use-after-free in the Graphics component
+    impact: moderate
+    reporter: r00tdaddy
+    bugs:
+      - url: 2060357
+  CVE-2026-74974:
+    title: 'Same-origin policy bypass in the Graphics: ImageLib component'
+    impact: moderate
+    reporter: The Mozilla Fuzzing Team
+    bugs:
+      - url: 2061794
+  CVE-2026-74990:
+    title: Internally found bugs fixed in Firefox ESR 115.39, Firefox ESR 140.14, Firefox ESR 153.1 and Firefox 154
+    impact: high
+    reporter: Christian Holler, Jan de Mooij, Tom Ritter and the Mozilla Fuzzing Team
+    description: |
+      Internally found bugs present in Firefox ESR 115.38, Firefox ESR 140.13, Firefox ESR 153.0 and Firefox 153. Some of these bugs showed evidence of memory corruption or another security-relevant defect and we presume that with enough effort some of these could have been exploited.
+    bugs:
+      - url: 2045774, 2048490, 2050864, 2053159, 2053260, 2053261, 2053582, 2053599, 2053607, 2053608, 2053853, 2054626, 2054627, 2054635, 2054677, 2054740, 2054832, 2056792, 2057098, 2057100, 2057101, 2057103, 2057117, 2057118, 2058048, 2058049, 2058622, 2058623, 2058665, 2058666, 2059121, 2059164, 2059188
+        desc: High Severity internally found bugs fixed in Firefox ESR 115.39, Firefox ESR 140.14, Firefox ESR 153.1 and Firefox 154
+      - url: 2045762, 2052401, 2058208
+        desc: Moderate Severity internally found bugs fixed in Firefox ESR 115.39, Firefox ESR 140.14, Firefox ESR 153.1 and Firefox 154
+
