@@ -77,12 +77,6 @@ advisories:
     reporter: Yaqoub Aldurayhim
     bugs:
       - url: 2060106
-  CVE-2026-74949:
-    title: 'Privilege escalation due to use-after-free in the Graphics: Canvas2D component'
-    impact: high
-    reporter: r00tdaddy
-    bugs:
-      - url: 2060245
   CVE-2026-74953:
     title: 'Privilege escalation in the Networking: Cookies component'
     impact: moderate
@@ -155,6 +149,12 @@ advisories:
     reporter: Kagami Rosylight
     bugs:
       - url: 2059053
+  CVE-2026-74949:
+    title: 'Use-after-free in the Graphics: Canvas2D component'
+    impact: moderate
+    reporter: r00tdaddy
+    bugs:
+      - url: 2060245
   CVE-2026-74973:
     title: Race condition, use-after-free in the Graphics component
     impact: moderate
