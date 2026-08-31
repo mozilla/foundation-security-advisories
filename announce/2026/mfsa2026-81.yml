@@ -1,0 +1,15 @@
+## mfsa2026-81.yml
+announced: August 31, 2026
+impact: moderate
+fixed_in:
+- Firefox for iOS 155.0
+title: Security Vulnerabilities fixed in Firefox for iOS 155.0
+advisories:
+  CVE-2026-81267:
+    title: Stalled popup navigation could allow address bar origin spoofing in Firefox for iOS
+    impact: moderate
+    reporter: Azza Tegar Naufal Ataullah
+    description: |
+      A malicious webpage could stall a popup's cross-origin navigation after commit, causing the address bar to display the destination origin while continuing to render attacker-controlled content.
+    bugs:
+      - url: 2052758
