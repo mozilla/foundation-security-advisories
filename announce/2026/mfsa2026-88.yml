@@ -1,0 +1,225 @@
+## mfsa2026-88.yml
+announced: September 01, 2026
+impact: high
+fixed_in:
+- Thunderbird 153.2
+title: Security Vulnerabilities fixed in Thunderbird 153.2
+description: |
+  *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
+advisories:
+  CVE-2026-84639:
+    title: Uninitialized memory in MIME parsing
+    impact: high
+    reporter: Ramesh Adhikari, Dr. Faruk Kazi (CoE-CNDS Lab, VJTI, Mumbai, India)
+    description: |
+      Triggering an error condition in certain MIME bodies would cause uninitialized
+      memory to be used.
+    bugs:
+      - url: 2061087
+  CVE-2026-84640:
+    title: One byte overflow read in mail parser
+    impact: medium
+    reporter: Ramesh Adhikari, Dr. Faruk Kazi (CoE-CNDS Lab, VJTI, Mumbai, India)
+    description: |
+      A maliciously constructed mail header could lead to a one byte read past the end
+      of a buffer.
+    bugs:
+      - url: 2063964
+  CVE-2026-84641:
+    title: Information disclosure due to malicious IMAP server response
+    impact: low
+    reporter: ABDULAZIZ ALASAIQAH
+    description: |
+      A malicious IMAP server can trigger use-after-free and heap-memory disclosure
+      by sending a crafted ID response. Heap contents can ultimately be persisted
+      to prefs.js.
+    bugs:
+      - url: 2057805
+  CVE-2026-84637:
+    title: Calendar invitation attachments could launch local executables
+    impact: low
+    reporter: Trung Nguyen
+    description: |
+      Malicious calendar invitations could use file URI attachments to launch
+      local or network-hosted executables on Windows, bypassing Thunderbird's
+      normal executable attachment protections. With the new invitation display
+      enabled, the attachment could also appear under a misleading filename.
+    bugs:
+      - url: 2043878
+  CVE-2026-84642:
+    title: Allowed UNC hostnames for attachments interpreted as a regular expression
+    impact: low
+    reporter: ChinhNguyen, Lowk3yz
+    description: |
+      The values of the mail.allowed_attachment_hostnames advanced config setting
+      were used in a regular expression without escaping. For some possible valid
+      hostnames, this could allow certain unintended hostnames to also match and
+      serve remote attachments.
+    bugs:
+      - url: 2060462
+  CVE-2026-75874:
+    title: Sandbox escape in the Remote Settings Client component
+    impact: high
+    reporter: crixer
+    bugs:
+      - url: 2039972
+  CVE-2026-84118:
+    title: 'Use-after-free in the JavaScript: GC component'
+    impact: high
+    reporter: x0e
+    bugs:
+      - url: 2057457
+  CVE-2026-84119:
+    title: 'Sandbox escape due to use-after-free in the DOM: Navigation component'
+    impact: high
+    reporter: Yaqoub Aldurayhim
+    bugs:
+      - url: 2057817
+  CVE-2026-84120:
+    title: Use-after-free in the Audio/Video component
+    impact: high
+    reporter: Ukyo Akai
+    bugs:
+      - url: 2058911
+  CVE-2026-84121:
+    title: 'Sandbox escape due to use-after-free in the DOM: Security component'
+    impact: high
+    reporter: Yaqoub Aldurayhim
+    bugs:
+      - url: 2059018
+  CVE-2026-84122:
+    title: Use-after-free in the Audio/Video component
+    impact: high
+    reporter: Hyeonjun Ahn
+    bugs:
+      - url: 2059965
+  CVE-2026-84123:
+    title: 'Privilege escalation due to use-after-free in the Graphics: WebGPU component'
+    impact: high
+    reporter: Yaqoub Aldurayhim
+    bugs:
+      - url: 2060047
+  CVE-2026-84124:
+    title: 'Use-after-free in the DOM: Core & HTML component'
+    impact: high
+    reporter: Hyeonjun Ahn
+    bugs:
+      - url: 2061110
+  CVE-2026-84125:
+    title: 'Use-after-free in the DOM: Core & HTML component'
+    impact: high
+    reporter: Yaqoub Aldurayhim
+    bugs:
+      - url: 2063871
+  CVE-2026-74952:
+    title: Privilege escalation in the Application Update component
+    impact: moderate
+    reporter: Tomoya Nakanishi
+    bugs:
+      - url: 2021757
+  CVE-2026-84129:
+    title: 'Site isolation issue in the DOM: Navigation component'
+    impact: moderate
+    reporter: Yaqoub Aldurayhim
+    bugs:
+      - url: 2055028
+  CVE-2026-84130:
+    title: 'Information disclosure in the Graphics: WebGPU component'
+    impact: moderate
+    reporter: 5up3rh3i
+    bugs:
+      - url: 2057834
+  CVE-2026-84131:
+    title: Privilege escalation due to invalid pointer in the Graphics component
+    impact: moderate
+    reporter: navapon
+    bugs:
+      - url: 2060008
+  CVE-2026-84132:
+    title: 'Information disclosure in the Networking: HTTP component'
+    impact: moderate
+    reporter: Shu Takahashi
+    bugs:
+      - url: 2063020
+  CVE-2026-84133:
+    title: 'Site isolation issue in the DOM: Push Subscriptions component'
+    impact: low
+    reporter: pakhunov.anton.n
+    bugs:
+      - url: 2032388
+  CVE-2026-84134:
+    title: Other issue in the Profile Backup component
+    impact: low
+    reporter: 5up3rh3i
+    bugs:
+      - url: 2044882
+  CVE-2026-84136:
+    title: 'Other issue in the DOM: Navigation component'
+    impact: low
+    reporter: Apentota
+    bugs:
+      - url: 2048699
+  CVE-2026-84137:
+    title: 'Spoofing issue in the DOM: Core & HTML component'
+    impact: low
+    reporter: Riski Muhammad Ivan
+    bugs:
+      - url: 2051146
+  CVE-2026-84139:
+    title: 'Clickjacking issue in the DOM: Events component'
+    impact: low
+    reporter: Long Nguyen
+    bugs:
+      - url: 2060153
+  CVE-2026-84140:
+    title: 'Site isolation issue in the DOM: Navigation component'
+    impact: low
+    reporter: Mohamed Mbarek
+    bugs:
+      - url: 2063780
+  CVE-2026-84141:
+    title: 'Integer overflow in the Graphics: ImageLib component'
+    impact: low
+    reporter: nguyentuanhung1149
+    bugs:
+      - url: 2063994
+  CVE-2026-84143:
+    title: Internally found bugs fixed in Thunderbird 155, Thunderbird ESR 153.2 and Thunderbird ESR 140.15
+    impact: high
+    reporter: Jan de Mooij, Tom Ritter and the Mozilla Fuzzing Team
+    description: |
+      Internally found bugs present in Thunderbird 154, Thunderbird ESR 153.1 and Thunderbird ESR 140.14. Some of these bugs showed evidence of memory corruption or another security-relevant defect and we presume that with enough effort some of these could have been exploited.
+    bugs:
+      - url: 2048793, 2054645, 2057114, 2059109, 2061287
+        desc: High Severity internally found bugs fixed in Thunderbird 155, Thunderbird ESR 153.2 and Thunderbird ESR 140.15
+      - url: 2054631, 2054657, 2055007, 2055681, 2057107, 2058087, 2058088, 2058090, 2058095, 2058101, 2059183, 2059185, 2061301, 2061325
+        desc: Moderate Severity internally found bugs fixed in Thunderbird 155, Thunderbird ESR 153.2 and Thunderbird ESR 140.15
+      - url: 2057108
+        desc: Low Severity internally found bugs fixed in Thunderbird 155, Thunderbird ESR 153.2 and Thunderbird ESR 140.15
+  CVE-2026-84144:
+    title: Internally found bugs fixed in Thunderbird 155 and Thunderbird ESR 153.2
+    impact: high
+    reporter: Leo Tenenbaum, Tom Ritter and the Mozilla Fuzzing Team
+    description: |
+      Internally found bugs present in Thunderbird 154 and Thunderbird ESR 153.1. Some of these bugs showed evidence of memory corruption or another security-relevant defect and we presume that with enough effort some of these could have been exploited.
+    bugs:
+      - url: 2054625, 2059002, 2061775
+        desc: High Severity internally found bugs fixed in Thunderbird 155 and Thunderbird ESR 153.2
+      - url: 2054619, 2054620, 2054624, 2054702, 2054726, 2054775, 2055703, 2058006, 2058013, 2058098, 2058627, 2058661, 2059127, 2059128, 2059180, 2059199, 2059205, 2061320, 2061430, 2061495, 2061505, 2061532, 2061799
+        desc: Moderate Severity internally found bugs fixed in Thunderbird 155 and Thunderbird ESR 153.2
+      - url: 2054691, 2058085, 2059144, 2059191, 2059192, 2061521, 2062395, 2062404
+        desc: Low Severity internally found bugs fixed in Thunderbird 155 and Thunderbird ESR 153.2
+  CVE-2026-84145:
+    title: Internally found bugs fixed in Thunderbird 155, Thunderbird ESR 153.2 and Thunderbird ESR 140.15
+    impact: high
+    reporter: Leo Tenenbaum, Tom Ritter and the Mozilla Fuzzing Team
+    description: |
+      Internally found bugs present in Thunderbird 154, Thunderbird ESR 153.1 and Thunderbird ESR 140.14. Some of these bugs showed evidence of memory corruption or another security-relevant defect and we presume that with enough effort some of these could have been exploited.
+    bugs:
+      - url: 2054640, 2054650, 2054652, 2055693, 2055705, 2058051, 2058652, 2058660, 2059027, 2061220, 2061242, 2061285, 2061300, 2061316, 2061397
+        desc: High Severity internally found bugs fixed in Thunderbird 155, Thunderbird ESR 153.2 and Thunderbird ESR 140.15
+      - url: 2055678
+        desc: Moderate Severity internally found bugs fixed in Thunderbird 155, Thunderbird ESR 153.2 and Thunderbird ESR 140.15
+      - url: 2058001, 2059139, 2062400, 2062419
+        desc: Low Severity internally found bugs fixed in Thunderbird 155, Thunderbird ESR 153.2 and Thunderbird ESR 140.15
+
