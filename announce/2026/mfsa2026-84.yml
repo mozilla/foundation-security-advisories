@@ -1,0 +1,88 @@
+## mfsa2026-84.yml
+announced: September 01, 2026
+impact: high
+fixed_in:
+- Firefox ESR 140.15
+title: Security Vulnerabilities fixed in Firefox ESR 140.15
+advisories:
+  CVE-2026-75874:
+    title: Sandbox escape in the Remote Settings Client component
+    impact: high
+    reporter: crixer
+    bugs:
+      - url: 2039972
+  CVE-2026-16365:
+    title: 'Privilege escalation in the DOM: Workers component'
+    impact: high
+    reporter: Khanh Nguyen
+    bugs:
+      - url: 2049149
+  CVE-2026-84119:
+    title: 'Sandbox escape due to use-after-free in the DOM: Navigation component'
+    impact: high
+    reporter: Yaqoub Aldurayhim
+    bugs:
+      - url: 2057817
+  CVE-2026-84120:
+    title: Use-after-free in the Audio/Video component
+    impact: high
+    reporter: Ukyo Akai
+    bugs:
+      - url: 2058911
+  CVE-2026-84121:
+    title: 'Sandbox escape due to use-after-free in the DOM: Security component'
+    impact: high
+    reporter: Yaqoub Aldurayhim
+    bugs:
+      - url: 2059018
+  CVE-2026-84122:
+    title: Use-after-free in the Audio/Video component
+    impact: high
+    reporter: Hyeonjun Ahn
+    bugs:
+      - url: 2059965
+  CVE-2026-84124:
+    title: 'Use-after-free in the DOM: Core & HTML component'
+    impact: high
+    reporter: Hyeonjun Ahn
+    bugs:
+      - url: 2061110
+  CVE-2026-16371:
+    title: 'Privilege escalation in the DOM: Navigation component'
+    impact: moderate
+    reporter: Steven Julian
+    bugs:
+      - url: 2008369
+  CVE-2026-84131:
+    title: Privilege escalation due to invalid pointer in the Graphics component
+    impact: moderate
+    reporter: navapon
+    bugs:
+      - url: 2060008
+  CVE-2026-84143:
+    title: Internally found bugs fixed in Firefox 155, Firefox ESR 153.2 and Firefox ESR 140.15
+    impact: high
+    reporter: Jan de Mooij, Tom Ritter and the Mozilla Fuzzing Team
+    description: |
+      Internally found bugs present in Firefox 154, Firefox ESR 153.1 and Firefox ESR 140.14. Some of these bugs showed evidence of memory corruption or another security-relevant defect and we presume that with enough effort some of these could have been exploited.
+    bugs:
+      - url: 2048793, 2054645, 2057114, 2059109, 2061287
+        desc: High Severity internally found bugs fixed in Firefox 155, Firefox ESR 153.2 and Firefox ESR 140.15
+      - url: 2054631, 2054657, 2055007, 2055681, 2057107, 2058087, 2058088, 2058090, 2058095, 2058101, 2059183, 2059185, 2061301, 2061325
+        desc: Moderate Severity internally found bugs fixed in Firefox 155, Firefox ESR 153.2 and Firefox ESR 140.15
+      - url: 2057108
+        desc: Low Severity internally found bugs fixed in Firefox 155, Firefox ESR 153.2 and Firefox ESR 140.15
+  CVE-2026-84145:
+    title: Internally found bugs fixed in Firefox 155, Firefox ESR 153.2, Firefox ESR 140.15 and Firefox ESR 115.40
+    impact: high
+    reporter: Leo Tenenbaum, Tom Ritter and the Mozilla Fuzzing Team
+    description: |
+      Internally found bugs present in Firefox 154, Firefox ESR 153.1, Firefox ESR 140.14 and Firefox ESR 115.39. Some of these bugs showed evidence of memory corruption or another security-relevant defect and we presume that with enough effort some of these could have been exploited.
+    bugs:
+      - url: 2054640, 2054650, 2054652, 2055693, 2055705, 2058051, 2058652, 2058660, 2059027, 2061220, 2061242, 2061285, 2061300, 2061316, 2061397
+        desc: High Severity internally found bugs fixed in Firefox 155, Firefox ESR 153.2, Firefox ESR 140.15 and Firefox ESR 115.40
+      - url: 2055678
+        desc: Moderate Severity internally found bugs fixed in Firefox 155, Firefox ESR 153.2, Firefox ESR 140.15 and Firefox ESR 115.40
+      - url: 2058001, 2059139, 2062400, 2062419
+        desc: Low Severity internally found bugs fixed in Firefox 155, Firefox ESR 153.2, Firefox ESR 140.15 and Firefox ESR 115.40
+
