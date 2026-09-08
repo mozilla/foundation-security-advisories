@@ -1,0 +1,15 @@
+## mfsa2026-89.yml
+announced: September 8, 2026
+impact: low
+fixed_in:
+- Firefox for iOS 155.1
+title: Security Vulnerabilities fixed in Firefox for iOS 155.1
+advisories:
+  CVE-2026-86853:
+    title: Repeated external URL scheme launches could potentially cause a denial of service in Firefox for iOS
+    impact: low
+    reporter: Amit Gajbhare
+    description: |
+      A malicious webpage could repeatedly trigger external URL schemes, causing system prompts or external application launches. This could make Firefox for iOS temporarily unusable until the page is closed.
+    bugs:
+      - url: 1847631
