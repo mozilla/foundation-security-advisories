@@ -1,0 +1,136 @@
+## mfsa2026-91.yml
+announced: September 15, 2026
+impact: high
+fixed_in:
+- Firefox ESR 115.41
+title: Security Vulnerabilities fixed in Firefox ESR 115.41
+description: |
+  **Note**: We have changed how we publish advisories. We no longer roll all internally identified memory safety vulnerabilities into a single CVE and are now issuing an advisory for every individual bug.
+advisories:
+  CVE-2026-92006:
+    title: 'Privilege escalation due to incorrect boundary conditions in the Graphics: CanvasWebGL component'
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2057121
+  CVE-2026-92007:
+    title: 'Privilege escalation due to incorrect boundary conditions in the Graphics: CanvasWebGL component'
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2058064
+  CVE-2026-92008:
+    title: 'Privilege escalation due to incorrect boundary conditions in the Graphics: CanvasWebGL component'
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2058065
+  CVE-2026-92009:
+    title: 'Privilege escalation due to incorrect boundary conditions in the Graphics: CanvasWebGL component'
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2058066
+  CVE-2026-92010:
+    title: 'Privilege escalation due to incorrect boundary conditions in the Graphics: CanvasWebGL component'
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2058067
+  CVE-2026-92011:
+    title: 'Privilege escalation due to incorrect boundary conditions in the Graphics: CanvasWebGL component'
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2058068
+  CVE-2026-92012:
+    title: 'Privilege escalation due to incorrect boundary conditions in the Graphics: CanvasWebGL component'
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2058069
+  CVE-2026-92013:
+    title: 'Privilege escalation due to incorrect boundary conditions in the Graphics: CanvasWebGL component'
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2058078
+  CVE-2026-92014:
+    title: Privilege escalation due to incorrect boundary conditions in the Graphics component
+    impact: high
+    reporter: Jacolon Walker
+    bugs:
+      - url: 2060000
+  CVE-2026-92015:
+    title: Privilege escalation in the WebExtensions component
+    impact: high
+    reporter: Quy Pham
+    bugs:
+      - url: 2060235
+  CVE-2026-92017:
+    title: 'Privilege escalation in the DOM: Service Workers component'
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2061777
+  CVE-2026-92018:
+    title: 'Sandbox escape in the DOM: Core & HTML component'
+    impact: high
+    reporter: Quy Pham
+    bugs:
+      - url: 2064287
+  CVE-2026-92019:
+    title: Mitigation bypass in the Remote Settings Client component
+    impact: high
+    reporter: Shu Takahashi
+    bugs:
+      - url: 2065636
+  CVE-2026-92020:
+    title: 'Privilege escalation due to incorrect boundary conditions in the Graphics: WebRender component'
+    impact: high
+    reporter: Rintaro Kawasugi
+    bugs:
+      - url: 2066329
+  CVE-2026-92022:
+    title: 'Use-after-free in the DOM: HTML Parser component'
+    impact: high
+    reporter: Seohyeon Maeng
+    bugs:
+      - url: 2068059
+  CVE-2026-92023:
+    title: Use-after-free in the XML component
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2068342
+  CVE-2026-92024:
+    title: Use-after-free in the SVG component
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2068354
+  CVE-2026-92025:
+    title: 'Use-after-free in the DOM: Navigation component'
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2068361
+  CVE-2026-92027:
+    title: 'Use-after-free in the DOM: Streams component'
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2068433
+  CVE-2026-92028:
+    title: 'Use-after-free in the DOM: Core & HTML component'
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2068440
+  CVE-2026-92029:
+    title: Use-after-free in the SVG component
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2068445
+
