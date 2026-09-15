@@ -1,0 +1,206 @@
+## mfsa2026-95.yml
+announced: September 15, 2026
+impact: high
+fixed_in:
+- Thunderbird 140.16
+title: Security Vulnerabilities fixed in Thunderbird 140.16
+description: |
+  *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
+  **Note**: We have changed how we publish advisories. We no longer roll all internally identified memory safety vulnerabilities into a single CVE and are now issuing an advisory for every individual bug.
+advisories:
+  CVE-2026-92238:
+    title: Ambiguous parsing of mail headers
+    impact: medium
+    reporter: Ramesh Adhikari, Dr. Faruk Kazi (CoE-CNDS Lab, VJTI, Mumbai, India)
+    description: |
+      A maliciously constructed mail header could lead to multiple fields being
+      parsed as one, or potential memory safety violations.
+    bugs:
+      - url: 2060601
+  CVE-2026-92239:
+    title: Buffer overrun in IMAP
+    impact: medium
+    reporter: Ramesh Adhikari, Dr. Faruk Kazi (CoE-CNDS Lab, VJTI, Mumbai, India)
+    description: |
+      A maliciously constructed IMAP line could cause an out-of-bounds buffer read.
+    bugs:
+      - url: 2060488
+  CVE-2026-92240:
+    title: Out-of-bounds read in IMAP response parser
+    impact: low
+    reporter: Ahmed Albalawi
+    description: |
+      A malicious or compromised IMAP server can trigger an out-of-bounds read in
+      the IMAP response parser by sending an untagged '* ID' response, crashing
+      Thunderbird. The affected parsing path is reachable before authentication.
+    bugs:
+      - url: 2069113
+  CVE-2026-92005:
+    title: 'Use-after-free in the Audio/Video: Web Codecs component'
+    impact: high
+    reporter: devdharan9424@gmail.com
+    bugs:
+      - url: 2056051
+  CVE-2026-92006:
+    title: 'Privilege escalation due to incorrect boundary conditions in the Graphics: CanvasWebGL component'
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2057121
+  CVE-2026-92007:
+    title: 'Privilege escalation due to incorrect boundary conditions in the Graphics: CanvasWebGL component'
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2058064
+  CVE-2026-92008:
+    title: 'Privilege escalation due to incorrect boundary conditions in the Graphics: CanvasWebGL component'
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2058065
+  CVE-2026-92009:
+    title: 'Privilege escalation due to incorrect boundary conditions in the Graphics: CanvasWebGL component'
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2058066
+  CVE-2026-92010:
+    title: 'Privilege escalation due to incorrect boundary conditions in the Graphics: CanvasWebGL component'
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2058067
+  CVE-2026-92011:
+    title: 'Privilege escalation due to incorrect boundary conditions in the Graphics: CanvasWebGL component'
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2058068
+  CVE-2026-92012:
+    title: 'Privilege escalation due to incorrect boundary conditions in the Graphics: CanvasWebGL component'
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2058069
+  CVE-2026-92013:
+    title: 'Privilege escalation due to incorrect boundary conditions in the Graphics: CanvasWebGL component'
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2058078
+  CVE-2026-92014:
+    title: Privilege escalation due to incorrect boundary conditions in the Graphics component
+    impact: high
+    reporter: Jacolon Walker
+    bugs:
+      - url: 2060000
+  CVE-2026-92015:
+    title: Privilege escalation in the WebExtensions component
+    impact: high
+    reporter: Quy Pham
+    bugs:
+      - url: 2060235
+  CVE-2026-92016:
+    title: Use-after-free in the Disability Access APIs component
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2061327
+  CVE-2026-92017:
+    title: 'Privilege escalation in the DOM: Service Workers component'
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2061777
+  CVE-2026-92018:
+    title: 'Sandbox escape in the DOM: Core & HTML component'
+    impact: high
+    reporter: Quy Pham
+    bugs:
+      - url: 2064287
+  CVE-2026-92019:
+    title: Mitigation bypass in the Remote Settings Client component
+    impact: high
+    reporter: Shu Takahashi
+    bugs:
+      - url: 2065636
+  CVE-2026-92020:
+    title: 'Privilege escalation due to incorrect boundary conditions in the Graphics: WebRender component'
+    impact: high
+    reporter: Rintaro Kawasugi
+    bugs:
+      - url: 2066329
+  CVE-2026-92021:
+    title: 'Use-after-free in the JavaScript Engine: JIT component'
+    impact: high
+    reporter: Tomer Fichman
+    bugs:
+      - url: 2067208
+  CVE-2026-92022:
+    title: 'Use-after-free in the DOM: HTML Parser component'
+    impact: high
+    reporter: Seohyeon Maeng
+    bugs:
+      - url: 2068059
+  CVE-2026-92023:
+    title: Use-after-free in the XML component
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2068342
+  CVE-2026-92024:
+    title: Use-after-free in the SVG component
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2068354
+  CVE-2026-92025:
+    title: 'Use-after-free in the DOM: Navigation component'
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2068361
+  CVE-2026-92026:
+    title: Use-after-free in the Networking component
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2068378
+  CVE-2026-92027:
+    title: 'Use-after-free in the DOM: Streams component'
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2068433
+  CVE-2026-92028:
+    title: 'Use-after-free in the DOM: Core & HTML component'
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2068440
+  CVE-2026-92029:
+    title: Use-after-free in the SVG component
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2068445
+  CVE-2026-92030:
+    title: 'Mitigation bypass in the DOM: Copy & Paste and Drag & Drop component'
+    impact: moderate
+    reporter: anas cherni
+    bugs:
+      - url: 2058417
+  CVE-2026-92031:
+    title: 'Information disclosure in the Graphics: ImageLib component'
+    impact: moderate
+    reporter: Qi Qin
+    bugs:
+      - url: 2067971
+  CVE-2026-92032:
+    title: Sandbox escape due to invalid pointer in the Graphics component
+    impact: moderate
+    reporter: Mozilla
+    bugs:
+      - url: 2068437
+
