@@ -1,9 +1,9 @@
-## mfsa2026-94.yml
-announced: September 15, 2026
+## mfsa2026-96.yml
+announced: September 16, 2026
 impact: high
 fixed_in:
-- Thunderbird 156
-title: Security Vulnerabilities fixed in Thunderbird 156
+- Thunderbird 153.3
+title: Security Vulnerabilities fixed in Thunderbird 153.3
 description: |
   *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
 
@@ -96,12 +96,6 @@ advisories:
     reporter: Quy Pham
     bugs:
       - url: 2060235
-  CVE-2026-92034:
-    title: Site isolation issue in the Graphics component
-    impact: high
-    reporter: Steven Julian
-    bugs:
-      - url: 2060295
   CVE-2026-92035:
     title: Sandbox escape due to incorrect boundary conditions in the Graphics component
     impact: high
@@ -168,12 +162,6 @@ advisories:
     reporter: Mozilla
     bugs:
       - url: 2068378
-  CVE-2026-92036:
-    title: 'Incorrect boundary conditions in the Networking: HTTP component'
-    impact: high
-    reporter: Mozilla
-    bugs:
-      - url: 2068416
   CVE-2026-92027:
     title: 'Use-after-free in the DOM: Streams component'
     impact: high
@@ -192,12 +180,6 @@ advisories:
     reporter: Mozilla
     bugs:
       - url: 2068445
-  CVE-2026-92037:
-    title: 'Incorrect boundary conditions in the DOM: Animation component'
-    impact: high
-    reporter: Mozilla
-    bugs:
-      - url: 2068460
   CVE-2026-92038:
     title: Mitigation bypass in the Remote Settings Client component
     impact: high
@@ -210,12 +192,6 @@ advisories:
     reporter: tiebuchen
     bugs:
       - url: 2001265
-  CVE-2026-92040:
-    title: 'Use-after-free in the JavaScript: WebAssembly component'
-    impact: moderate
-    reporter: Mozilla
-    bugs:
-      - url: 2024248
   CVE-2026-92041:
     title: 'Mitigation bypass in the DOM: Networking component'
     impact: moderate
@@ -276,18 +252,6 @@ advisories:
     reporter: Mozilla
     bugs:
       - url: 2061295
-  CVE-2026-92050:
-    title: Sandbox escape due to race condition in the XPConnect component
-    impact: moderate
-    reporter: Mozilla
-    bugs:
-      - url: 2061387
-  CVE-2026-92051:
-    title: Spoofing issue due to invalid pointer in the Graphics component
-    impact: moderate
-    reporter: Mozilla
-    bugs:
-      - url: 2061393
   CVE-2026-92052:
     title: 'Privilege escalation due to uninitialized memory in the Graphics: CanvasWebGL component'
     impact: moderate
@@ -354,24 +318,12 @@ advisories:
     reporter: Mozilla
     bugs:
       - url: 2027336
-  CVE-2026-92061:
-    title: 'Incorrect boundary conditions in the Security: Process Sandboxing component'
-    impact: low
-    reporter: Mozilla
-    bugs:
-      - url: 2041758
   CVE-2026-92062:
     title: Privilege escalation in the Session Restore component
     impact: low
     reporter: Mozilla
     bugs:
       - url: 2054670
-  CVE-2026-92063:
-    title: Denial-of-service in the Audio/Video component
-    impact: low
-    reporter: He Huang
-    bugs:
-      - url: 2055737
   CVE-2026-92064:
     title: 'Sandbox escape due to incorrect boundary conditions in the Widget: Win32 component'
     impact: low
@@ -384,12 +336,6 @@ advisories:
     reporter: Mozilla
     bugs:
       - url: 2058018
-  CVE-2026-92066:
-    title: Sandbox escape in the Profile Backup component
-    impact: low
-    reporter: Mozilla
-    bugs:
-      - url: 2058093
   CVE-2026-92067:
     title: 'Use-after-free in the Widget: Gtk component'
     impact: low
