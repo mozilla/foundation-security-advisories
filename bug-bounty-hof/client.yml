@@ -1,4 +1,103 @@
 names:
+- name: "wlayzz"
+  bugs: [2055885]
+  date: 2026-08-25
+- name: "Trung Nguyen"
+  bugs: [2043878]
+  date: 2026-08-20
+- name: "Shu Takahashi [:kq5y]"
+  bugs: [2063384, 2039452]
+  date: 2026-08-19
+- name: "x0e"
+  bugs: [2057457]
+  date: 2026-08-14
+- name: "AiPy"
+  bugs: [2059655, 2044882, 2060048, 2050482, 2051897, 2050480, 2053327, 2053326, 2050477]
+  date: 2026-08-14
+- name: "Ukyo Akai"
+  bugs: [2058911]
+  date: 2026-08-09
+- name: "Hyeonjun Ahn [:deayzl]"
+  bugs: [2056065, 2054351]
+  date: 2026-08-07
+- name: "r00tdaddy"
+  bugs: [2060357, 2060245]
+  date: 2026-08-06
+- name: "Yaqoub Aldurayhim"
+  bugs: [2060106, 2051013, 2050425, 2045468, 2049981]
+  date: 2026-08-05
+- name: "jmwebdevelopement"
+  bugs: [2029265]
+  date: 2026-08-04
+- name: "Tomoya Nakanishi"
+  bugs: [2045368, 2025732, 2041906]
+  date: 2026-08-03
+- name: "locust1b"
+  bugs: [2059997]
+  date: 2026-08-03
+- name: "navapon"
+  bugs: [2060010]
+  date: 2026-08-03
+- name: "satyamasd"
+  bugs: [2050584]
+  date: 2026-07-30
+- name: "Jacolon Walker [:call_eax]"
+  bugs: [2055056]
+  date: 2026-07-29
+- name: "thegoldmandm"
+  bugs: [2055742]
+  date: 2026-07-29
+- name: "Uwez Khan"
+  bugs: [2056164]
+  date: 2026-07-29
+- name: "ABDULAZIZ ALASAIQAH"
+  bugs: [2057308, 2056558]
+  date: 2026-07-28
+- name: "kiyong"
+  bugs: [2055738]
+  date: 2026-07-22
+- name: "Rintaro Kawasugi"
+  bugs: [2050380, 2040386, 2050430]
+  date: 2026-07-21
+- name: "choeseyeong[:s3zer0]"
+  bugs: [2054416]
+  date: 2026-07-21
+- name: "hafidzaulia28"
+  bugs: [2036097]
+  date: 2026-07-18
+- name: "Vladimir Meier"
+  bugs: [2028440]
+  date: 2026-07-15
+- name: "Tran Quac"
+  bugs: [2034682]
+  date: 2026-07-15
+- name: "Oskar L"
+  bugs: [2052562, 2046416]
+  date: 2026-07-10
+- name: "crixer"
+  bugs: [2043188]
+  date: 2026-07-08
+- name: "Brian Carpenter of Geeknik Labs & Farm"
+  bugs: [2052565]
+  date: 2026-07-07
+  twitter: "@geeknik"
+  url: https://twitter.com/@geeknik
+- name: "Kai Martin"
+  bugs: [2052703]
+  date: 2026-07-06
+- name: "Hafiizh"
+  bugs: [1842361, 2049034]
+  date: 2026-07-06
+  url: https://www.linkedin.com/in/hafiizh-7aa6bb31/
+- name: "Satoki Tsuji"
+  bugs: [2022382]
+  date: 2026-07-03
+- name: "Khanh Nguyen"
+  bugs: [2049149]
+  date: 2026-07-02
+- name: "Muneaki Nishimura (a.k.a. nishimunea)"
+  bugs: [2045842]
+  date: 2026-07-02
 - name: "Rintaro Kawasugi"
   bugs: [2041001, 2040383, 2040382]
   date: 2026-06-29
