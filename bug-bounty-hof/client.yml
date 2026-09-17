@@ -1,4 +1,200 @@
 names:
+- name: "Rintaro Kawasugi"
+  bugs: [2041001, 2040383, 2040382]
+  date: 2026-06-29
+- name: "Atsushi Sada"
+  bugs: [2045410, 2038133, 2031123]
+  date: 2026-06-29
+- name: "Nithissh"
+  bugs: [2046748]
+  date: 2026-06-29
+- name: "Tomoya Nakanishi"
+  bugs: [2021757, 2027519, 2042033, 2041902, 2043887, 2021727]
+  date: 2026-06-29
+- name: "Steven Julian"
+  bugs: [2047802, 2048345, 2047221, 2029511]
+  date: 2026-06-27
+- name: "Gary Kwong"
+  bugs: [2044606]
+  date: 2026-06-25
+  url: https://www.ygitsoftware.com/
+- name: "Azza Tegar Naufal Ataullah"
+  bugs: [2047768]
+  date: 2026-06-25
+- name: "fedek"
+  bugs: [2049523]
+  date: 2026-06-24
+- name: "James Lee"
+  bugs: [1791300, 1951566]
+  date: 2026-06-24
+  twitter: "@Windowsrcer"
+  url: https://twitter.com/@Windowsrcer
+- name: "Sajeeb Lohani"
+  bugs: [2013800, 2017867, 2015267, 2015268, 2016349, 2016351, 2018102, 2018126, 2018430]
+  date: 2026-06-23
+- name: "AiPy"
+  bugs: [2041912, 2039568, 2041911, 2041916]
+  date: 2026-06-23
+- name: "Nikola Kojic"
+  bugs: [2037770]
+  date: 2026-06-22
+- name: "Quy Pham [:0x4lter]"
+  bugs: [2047240, 2039873]
+  date: 2026-06-22
+- name: "Hafiizh"
+  bugs: [1978587, 1962625]
+  date: 2026-06-19
+  url: https://www.linkedin.com/in/hafiizh-7aa6bb31/
+- name: "Yaqoub Aldurayhim"
+  bugs: [2034944, 2040177, 2041864, 2036591, 2043845, 2040160, 2040515, 2038476, 2034713, 2032427]
+  date: 2026-06-17
+- name: "satyamasd"
+  bugs: [2041856, 2038803]
+  date: 2026-06-17
+- name: "Hyeonjun Ahn [:deayzl]"
+  bugs: [2043139]
+  date: 2026-06-17
+- name: "Bahaa Naamneh"
+  bugs: [1870516]
+  date: 2026-06-17
+- name: "Jacolon Walker [:call_eax]"
+  bugs: [2045424]
+  date: 2026-06-16
+- name: "Mihalis Haatainen"
+  bugs: [2035733, 2037323, 2038302, 2038444]
+  date: 2026-06-10
+- name: "Zijie Zhao"
+  bugs: [2038465, 2036929]
+  date: 2026-06-10
+- name: "Ibuki Sato"
+  bugs: [2040110]
+  date: 2026-06-10
+- name: "zx from qriousec"
+  bugs: [2041610, 2026182]
+  date: 2026-06-10
+- name: "Muneaki Nishimura (a.k.a. nishimunea)"
+  bugs: [2042909, 2043204, 2036573, 2039422, 2036618]
+  date: 2026-06-10
+- name: "Securin Disclose"
+  bugs: [2039443]
+  date: 2026-06-09
+- name: "Renwa Hiwa"
+  bugs: [1975667, 1972244]
+  date: 2026-06-09
+- name: "Carl Pearson"
+  bugs: [2039707]
+  date: 2026-06-02
+- name: "haruka yamazaki"
+  bugs: [2041981]
+  date: 2026-06-01
+- name: "Zhong Zhaochen"
+  bugs: [1996495]
+  date: 2026-05-31
+- name: "choeseyeong[:s3zer0]"
+  bugs: [2023443, 2023407]
+  date: 2026-05-28
+- name: "Farhad Sajid Barbhuiya"
+  bugs: [2038868]
+  date: 2026-05-28
+- name: "lebr0nli (Alan Li) [:lebr0nli]"
+  bugs: [2034489]
+  date: 2026-05-27
+- name: "jody ritonga"
+  bugs: [2035027]
+  date: 2026-05-27
+- name: "Bill Demirkapi"
+  bugs: [2038081]
+  date: 2026-05-27
+- name: "taiho kim"
+  bugs: [2038537]
+  date: 2026-05-27
+- name: "Rifa'i Rejal Maynando"
+  bugs: [1873489]
+  date: 2026-05-26
+  url: https://www.linkedin.com/in/rnando/
+- name: "Richard Belisle"
+  bugs: [2015647, 2016923]
+  date: 2026-05-20
+- name: "ggwhyp"
+  bugs: [2036978, 2036983, 2038575, 2038669, 2038573]
+  date: 2026-05-20
+- name: "Satoki Tsuji"
+  bugs: [2038439, 2021964, 2025170, 2021695]
+  date: 2026-05-20
+- name: "ryujinx+1"
+  bugs: [2033848]
+  date: 2026-05-13
+- name: "Ameen Basha M K"
+  bugs: [2034754, 2030747]
+  date: 2026-05-13
+  twitter: "@ameenbasha111"
+  url: https://twitter.com/@ameenbasha111
+- name: "Mateusz Dobrzyński"
+  bugs: [2033850]
+  date: 2026-05-13
+- name: "jmwebdevelopement"
+  bugs: [2026933, 2027499, 2027501]
+  date: 2026-04-28
+- name: "Manojkumar J"
+  bugs: [2004804]
+  date: 2026-04-22
+  url: https://www.linkedin.com/in/manojkumar-j-7ba35b202/
+- name: "Xuehao Guo"
+  bugs: [2027433, 2027541]
+  date: 2026-04-22
+- name: "lebr0nli of National Yang Ming Chiao Tung University: Dept. of CS: Security and Systems Lab"
+  bugs: [2031064]
+  date: 2026-04-22
+- name: "Surya Dev Singh"
+  bugs: [2032604]
+  date: 2026-04-22
+- name: "Haruto Kimura"
+  bugs: [2023478]
+  date: 2026-04-22
+- name: "Oskar L"
+  bugs: [1983381, 2011129]
+  date: 2026-04-15
+- name: "Inseo An"
+  bugs: [2022604, 2022610]
+  date: 2026-04-15
+- name: "Daisuke Hatakeyama and Shota Matsuda"
+  bugs: [2003171]
+  date: 2026-04-11
+- name: "crixer"
+  bugs: [2027564]
+  date: 2026-04-09
+- name: "kiyong"
+  bugs: [2017857]
+  date: 2026-04-08
+- name: "Nan Wang"
+  bugs: [2021769]
+  date: 2026-04-08
+  twitter: "@eternalsakura13"
+  url: https://twitter.com/@eternalsakura13
+- name: "Rayhan Hanaputra"
+  bugs: [2025067]
+  date: 2026-04-08
+- name: "azoz12r34"
+  bugs: [2022419]
+  date: 2026-04-08
+- name: "hafiizh (https://www.linkedin.com/in/hafiizh-7aa6bb31) & kang ali (https://www.linkedin.com/in/mohammad-ali-syarief)"
+  bugs: [1992585]
+  date: 2026-04-08
+  url: https://www.linkedin.com/in/hafiizh-7aa6bb31/
+- name: "Josh Aas"
+  bugs: [2017666]
+  date: 2026-04-02
+- name: "Jun Yang"
+  bugs: [2018405]
+  date: 2026-04-02
+- name: "Atte Kettunen"
+  bugs: [2020030]
+  date: 2026-04-02
+  twitter: "@attekett"
+  url: https://twitter.com/@attekett
+- name: "Matej Smycka"
+  bugs: [2021863]
+  date: 2026-04-02
 - name: Haruto Kimura
   date: 2026-03-25
 - name: Gary Kwong
