@@ -1,0 +1,470 @@
+## mfsa2026-101.yml
+announced: September 30, 2026
+impact: high
+fixed_in:
+- Thunderbird 157
+title: Security Vulnerabilities fixed in Thunderbird 157
+description: |
+  *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
+
+  **Note**: We have changed how we publish advisories. We no longer roll all internally identified memory safety vulnerabilities into a single CVE and are now issuing an advisory for every individual bug.
+advisories:
+  CVE-2026-103500:
+    title: Heap buffer overflow opening large email
+    impact: low
+    reporter: Ahmed Albalawi <ahmedalbalawij@gmail.com>
+    description: |
+      An attacker could cause a heap buffer overflow by getting a user to open an email that is greater than or equal to 2GB in size.
+    bugs:
+      - url: 2070267
+  CVE-2026-100756:
+    title: 'Incorrect boundary conditions in the Audio/Video: Playback component'
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2047721
+  CVE-2026-100757:
+    title: Use-after-free in the Widget component
+    impact: high
+    reporter: Mohamed Mbarek
+    bugs:
+      - url: 2049352
+  CVE-2026-100758:
+    title: 'Sandbox escape in the DOM: Navigation component'
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2049792
+  CVE-2026-100759:
+    title: 'Uninitialized memory in the Storage: Quota Manager component'
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2054736
+  CVE-2026-100760:
+    title: 'Sandbox escape in the Security: Process Sandboxing component'
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2058017
+  CVE-2026-100761:
+    title: 'Privilege escalation due to use-after-free in the Graphics: WebGPU component'
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2059020
+  CVE-2026-100762:
+    title: 'Sandbox escape due to use-after-free in the DOM: Content Processes component'
+    impact: high
+    reporter: Yaqoub Aldurayhim
+    bugs:
+      - url: 2059404
+  CVE-2026-100763:
+    title: 'Incorrect boundary conditions in the Graphics: WebGPU component'
+    impact: high
+    reporter: Shaheen Fazim
+    bugs:
+      - url: 2059929
+  CVE-2026-100764:
+    title: 'Privilege escalation due to incorrect boundary conditions in the Graphics: WebGPU component'
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2061290
+  CVE-2026-100765:
+    title: 'Use-after-free in the JavaScript: WebAssembly component'
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2061399
+  CVE-2026-100766:
+    title: 'Information disclosure in the Networking: JAR component'
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2061526
+  CVE-2026-100767:
+    title: 'Use-after-free in the Networking: Cache component'
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2063680
+  CVE-2026-100768:
+    title: 'Use-after-free in the Graphics: WebGPU component'
+    impact: high
+    reporter: Yaqoub Aldurayhim
+    bugs:
+      - url: 2064832
+  CVE-2026-100769:
+    title: 'Use-after-free in the JavaScript: WebAssembly component'
+    impact: high
+    reporter: Tomer Fichman
+    bugs:
+      - url: 2067190
+  CVE-2026-100770:
+    title: 'Sandbox escape due to use-after-free in the DOM: Content Processes component'
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2068322
+  CVE-2026-100771:
+    title: 'Undefined behavior in the DOM: Streams component'
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2068336
+  CVE-2026-100772:
+    title: 'Use-after-free in the DOM: Core & HTML component'
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2068340
+  CVE-2026-100773:
+    title: 'Use-after-free in the Storage: IndexedDB component'
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2068346
+  CVE-2026-100774:
+    title: 'Use-after-free in the DOM: Core & HTML component'
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2068351
+  CVE-2026-100775:
+    title: Sandbox escape in the Graphics component
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2068367
+  CVE-2026-100776:
+    title: 'Use-after-free in the JavaScript: WebAssembly component'
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2068374
+  CVE-2026-100777:
+    title: 'Use-after-free in the Graphics: Canvas2D component'
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2068375
+  CVE-2026-100778:
+    title: 'Sandbox escape due to use-after-free in the DOM: Core & HTML component'
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2068406
+  CVE-2026-100779:
+    title: Use-after-free in the XSLT component
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2068417
+  CVE-2026-100780:
+    title: 'Use-after-free in the DOM: Core & HTML component'
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2068422
+  CVE-2026-100781:
+    title: 'Sandbox escape due to incorrect boundary conditions in the Graphics: WebRender component'
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2068434
+  CVE-2026-100782:
+    title: Privilege escalation due to incorrect boundary conditions in the Graphics component
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2068456
+  CVE-2026-100783:
+    title: Uninitialized memory in the Audio/Video component
+    impact: high
+    reporter: 5up3rh3i
+    bugs:
+      - url: 2069804
+  CVE-2026-100784:
+    title: 'Use-after-free in the Layout: Text and Fonts component'
+    impact: high
+    reporter: 5up3rh3i
+    bugs:
+      - url: 2070264
+  CVE-2026-100785:
+    title: 'Use-after-free in the DOM: Core & HTML component'
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2071064
+  CVE-2026-100786:
+    title: Sandbox escape due to use-after-free in the Graphics component
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2071067
+  CVE-2026-100787:
+    title: Sandbox escape in the XUL component
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2071068
+  CVE-2026-100788:
+    title: 'Invalid pointer in the JavaScript: WebAssembly component'
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2072413
+  CVE-2026-100789:
+    title: 'Use-after-free in the Graphics: Canvas2D component'
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2072429
+  CVE-2026-100790:
+    title: Use-after-free in the XSLT component
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2072432
+  CVE-2026-100791:
+    title: 'Use-after-free in the DOM: Core & HTML component'
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2072433
+  CVE-2026-100792:
+    title: 'JIT miscompilation in the JavaScript: WebAssembly component'
+    impact: high
+    reporter: Amy Burnett of OpenAI
+    bugs:
+      - url: 2073266
+  CVE-2026-100793:
+    title: JIT miscompilation in the JavaScript Engine component
+    impact: high
+    reporter: Amy Burnett of OpenAI
+    bugs:
+      - url: 2073268
+  CVE-2026-100794:
+    title: Sandbox escape due to incorrect boundary conditions in the Internationalization component
+    impact: moderate
+    reporter: Mozilla
+    bugs:
+      - url: 2028871
+  CVE-2026-96869:
+    title: Information disclosure in the Networking component
+    impact: moderate
+    reporter: Carlo Di Dato
+    bugs:
+      - url: 2041248
+  CVE-2026-100795:
+    title: Denial-of-service in the Networking component
+    impact: moderate
+    reporter: Rintaro Kobayashi
+    bugs:
+      - url: 2048871
+  CVE-2026-100796:
+    title: 'Use-after-free in the JavaScript: WebAssembly component'
+    impact: moderate
+    reporter: SecBuddyF, Tencent KeenLab (CodeBuddy Security)
+    bugs:
+      - url: 2049604
+  CVE-2026-100797:
+    title: 'Privilege escalation due to use-after-free in the Graphics: WebRender component'
+    impact: moderate
+    reporter: Mozilla
+    bugs:
+      - url: 2050542
+  CVE-2026-100798:
+    title: 'Cryptography misuse in Storage: Quota Manager component'
+    impact: moderate
+    reporter: Mozilla
+    bugs:
+      - url: 2055694
+  CVE-2026-100799:
+    title: 'Uninitialized memory in the Graphics: WebGPU component'
+    impact: moderate
+    reporter: 5up3rh3i
+    bugs:
+      - url: 2056217
+  CVE-2026-100800:
+    title: Sandbox escape due to use-after-free in the Disability Access APIs component
+    impact: moderate
+    reporter: Mozilla
+    bugs:
+      - url: 2056767
+  CVE-2026-100801:
+    title: Privilege escalation in the DLL Services component
+    impact: moderate
+    reporter: Mozilla
+    bugs:
+      - url: 2057112
+  CVE-2026-100802:
+    title: 'Uninitialized memory in the Graphics: WebGPU component'
+    impact: moderate
+    reporter: 5up3rh3i
+    bugs:
+      - url: 2057833
+  CVE-2026-100803:
+    title: Same-origin policy bypass in the WebExtensions component
+    impact: moderate
+    reporter: Yaqoub Aldurayhim
+    bugs:
+      - url: 2057988
+  CVE-2026-100804:
+    title: 'Sandbox escape due to use-after-free in the Preferences: Backend component'
+    impact: moderate
+    reporter: Mozilla
+    bugs:
+      - url: 2058647
+  CVE-2026-100805:
+    title: Race condition, use-after-free in the Audio/Video component
+    impact: moderate
+    reporter: Hyeonjun Ahn
+    bugs:
+      - url: 2058785
+  CVE-2026-100806:
+    title: 'Uninitialized memory in the Graphics: WebGPU component'
+    impact: moderate
+    reporter: Mozilla
+    bugs:
+      - url: 2060408
+  CVE-2026-100807:
+    title: 'Privilege escalation in the DOM: Service Workers component'
+    impact: moderate
+    reporter: Khanh Nguyen
+    bugs:
+      - url: 2062740
+  CVE-2026-100808:
+    title: 'Mitigation bypass in the DOM: Service Workers component'
+    impact: moderate
+    reporter: WinD39
+    bugs:
+      - url: 2063488
+  CVE-2026-100809:
+    title: Same-origin policy bypass in the DevTools component
+    impact: moderate
+    reporter: Finn Westendorf
+    bugs:
+      - url: 2063658
+  CVE-2026-100810:
+    title: Other issue in the DevTools component
+    impact: moderate
+    reporter: Finn Westendorf
+    bugs:
+      - url: 2064034
+  CVE-2026-100811:
+    title: 'Sandbox escape due to use-after-free in the DOM: Core & HTML component'
+    impact: moderate
+    reporter: Yaqoub Aldurayhim
+    bugs:
+      - url: 2067973
+  CVE-2026-100812:
+    title: Denial-of-service in the Graphics component
+    impact: moderate
+    reporter: Mozilla
+    bugs:
+      - url: 2068335
+  CVE-2026-100813:
+    title: 'Invalid pointer in the JavaScript Engine: JIT component'
+    impact: moderate
+    reporter: Mozilla
+    bugs:
+      - url: 2068376
+  CVE-2026-100814:
+    title: 'Incorrect boundary conditions in the JavaScript Engine: JIT component'
+    impact: moderate
+    reporter: Mozilla
+    bugs:
+      - url: 2068385
+  CVE-2026-100815:
+    title: Use-after-free in the CSS Parsing and Computation component
+    impact: moderate
+    reporter: Mozilla
+    bugs:
+      - url: 2068404
+  CVE-2026-100816:
+    title: 'Site isolation issue in the DOM: Networking component'
+    impact: moderate
+    reporter: Rintaro Kawasugi
+    bugs:
+      - url: 2068648
+  CVE-2026-100817:
+    title: 'Other issue in the JavaScript: WebAssembly component'
+    impact: moderate
+    reporter: Mozilla
+    bugs:
+      - url: 2068670
+  CVE-2026-100818:
+    title: 'Sandbox escape due to use-after-free in the Widget: Gtk component'
+    impact: moderate
+    reporter: Mozilla
+    bugs:
+      - url: 2069399
+  CVE-2026-100819:
+    title: Sandbox escape due to incorrect boundary conditions in the XPCOM component
+    impact: moderate
+    reporter: Mozilla
+    bugs:
+      - url: 2071069
+  CVE-2026-100820:
+    title: Privilege escalation in the Address Bar component
+    impact: moderate
+    reporter: Tran Quac
+    bugs:
+      - url: 2071645
+  CVE-2026-100821:
+    title: Site isolation issue in the Panning and Zooming component
+    impact: moderate
+    reporter: Nguyen Thanh Nguyen
+    bugs:
+      - url: 2071784
+  CVE-2026-100822:
+    title: 'Spoofing issue in the Networking: HTTP component'
+    impact: low
+    reporter: Tomoya Nakanishi
+    bugs:
+      - url: 2051115
+  CVE-2026-100824:
+    title: Privilege escalation in the Places component
+    impact: low
+    reporter: Mozilla
+    bugs:
+      - url: 2054767
+  CVE-2026-100825:
+    title: 'Use-after-free in the JavaScript Engine: JIT component'
+    impact: low
+    reporter: x0e
+    bugs:
+      - url: 2057465
+  CVE-2026-100826:
+    title: 'Denial-of-service in the Storage: StorageManager component'
+    impact: low
+    reporter: Mozilla
+    bugs:
+      - url: 2059222
+  CVE-2026-100828:
+    title: Mitigation bypass in the Bookmarks & History component
+    impact: low
+    reporter: Rintaro Kawasugi
+    bugs:
+      - url: 2066019
+  CVE-2026-100829:
+    title: 'Mitigation bypass in the DOM: Security component'
+    impact: low
+    reporter: Rintaro Kawasugi
+    bugs:
+      - url: 2066321
+  CVE-2026-100830:
+    title: 'Mitigation bypass in the DOM: Navigation component'
+    impact: low
+    reporter: Finn Westendorf
+    bugs:
+      - url: 2066770
+  CVE-2026-100831:
+    title: 'Use-after-free in the DOM: UI Events & Focus Handling component'
+    impact: low
+    reporter: Mozilla
+    bugs:
+      - url: 2067172
+
