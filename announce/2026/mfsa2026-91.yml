@@ -79,12 +79,6 @@ advisories:
     reporter: Quy Pham
     bugs:
       - url: 2064287
-  CVE-2026-92019:
-    title: Mitigation bypass in the Remote Settings Client component
-    impact: high
-    reporter: Shu Takahashi
-    bugs:
-      - url: 2065636
   CVE-2026-92020:
     title: 'Privilege escalation due to incorrect boundary conditions in the Graphics: WebRender component'
     impact: high
@@ -133,4 +127,10 @@ advisories:
     reporter: Mozilla
     bugs:
       - url: 2068445
+  CVE-2026-92019:
+    title: Mitigation bypass in the Remote Settings Client component
+    impact: moderate
+    reporter: Shu Takahashi
+    bugs:
+      - url: 2065636
 

@@ -7,12 +7,6 @@ title: Security Vulnerabilities fixed in Firefox 156
 description: |
   **Note**: We have changed how we publish advisories. We no longer roll all internally identified memory safety vulnerabilities into a single CVE and are now issuing an advisory for every individual bug.
 advisories:
-  CVE-2026-92033:
-    title: Privilege escalation in Firefox for Android
-    impact: high
-    reporter: Steven Julian
-    bugs:
-      - url: 2047339
   CVE-2026-92005:
     title: 'Use-after-free in the Audio/Video: Web Codecs component'
     impact: high
@@ -103,12 +97,6 @@ advisories:
     reporter: Quy Pham
     bugs:
       - url: 2064287
-  CVE-2026-92019:
-    title: Mitigation bypass in the Remote Settings Client component
-    impact: high
-    reporter: Shu Takahashi
-    bugs:
-      - url: 2065636
   CVE-2026-92020:
     title: 'Privilege escalation due to incorrect boundary conditions in the Graphics: WebRender component'
     impact: high
@@ -199,6 +187,12 @@ advisories:
     reporter: Atsushi Sada
     bugs:
       - url: 2029482
+  CVE-2026-92033:
+    title: Privilege escalation in Firefox for Android
+    impact: moderate
+    reporter: Steven Julian
+    bugs:
+      - url: 2047339
   CVE-2026-92042:
     title: 'Race condition in the DOM: Content Processes component'
     impact: moderate
@@ -295,6 +289,12 @@ advisories:
     reporter: r00tdaddy
     bugs:
       - url: 2065346
+  CVE-2026-92019:
+    title: Mitigation bypass in the Remote Settings Client component
+    impact: moderate
+    reporter: Shu Takahashi
+    bugs:
+      - url: 2065636
   CVE-2026-92057:
     title: Mitigation bypass in the Enterprise Policies component
     impact: moderate
