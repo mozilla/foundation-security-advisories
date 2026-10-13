@@ -1,0 +1,112 @@
+## mfsa2026-106.yml
+announced: October 13, 2026
+impact: high
+fixed_in:
+- Firefox ESR 115.43
+title: Security Vulnerabilities fixed in Firefox ESR 115.43
+description: |
+  **Note**: We have changed how we publish advisories. We no longer roll all internally identified memory safety vulnerabilities into a single CVE and are now issuing an advisory for every individual bug.
+advisories:
+  CVE-2026-109706:
+    title: 'Use-after-free in the Storage: IndexedDB component'
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2053649
+  CVE-2026-109710:
+    title: 'Use-after-free in the Graphics: Text component'
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2068338
+  CVE-2026-109712:
+    title: Sandbox escape due to uninitialized memory in the Graphics component
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2068420
+  CVE-2026-109715:
+    title: Incorrect boundary conditions in the JavaScript Engine component
+    impact: high
+    reporter: Amy Burnett of OpenAI
+    bugs:
+      - url: 2073267
+  CVE-2026-109716:
+    title: Incorrect boundary conditions in the JavaScript Engine component
+    impact: high
+    reporter: Amy Burnett of OpenAI
+    bugs:
+      - url: 2073269
+  CVE-2026-109718:
+    title: Use-after-free in the XML component
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2073692
+  CVE-2026-109719:
+    title: 'Race condition, use-after-free in the Graphics: CanvasWebGL component'
+    impact: high
+    reporter: Shu Takahashi  of Velcore Consulting Inc.
+    bugs:
+      - url: 2073969
+  CVE-2026-109722:
+    title: 'JIT miscompilation in the JavaScript Engine: JIT component'
+    impact: high
+    reporter: Amy Burnett of OpenAI
+    bugs:
+      - url: 2074164
+  CVE-2026-109725:
+    title: 'Use-after-free in the DOM: Core & HTML component'
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2074208
+  CVE-2026-109726:
+    title: Use-after-free in the SVG component
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2074212
+  CVE-2026-109727:
+    title: Use-after-free in the Audio/Video component
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2074213
+  CVE-2026-109728:
+    title: 'Use-after-free in the DOM: Animation component'
+    impact: high
+    reporter: Amy Burnett of OpenAI
+    bugs:
+      - url: 2074625
+  CVE-2026-109729:
+    title: 'Use-after-free in the JavaScript Engine: JIT component'
+    impact: high
+    reporter: Tomer Fichman
+    bugs:
+      - url: 2074632
+  CVE-2026-109730:
+    title: Integer overflow in the Graphics component
+    impact: high
+    reporter: Robert Longson
+    bugs:
+      - url: 2074896
+  CVE-2026-109732:
+    title: 'Use-after-free in the DOM: Streams component'
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2075998
+  CVE-2026-109733:
+    title: 'JIT miscompilation in the JavaScript Engine: JIT component'
+    impact: high
+    reporter: Amy Burnett of OpenAI
+    bugs:
+      - url: 2076269
+  CVE-2026-109753:
+    title: Incorrect boundary conditions in the Layout component
+    impact: moderate
+    reporter: Mozilla
+    bugs:
+      - url: 2068441
+
