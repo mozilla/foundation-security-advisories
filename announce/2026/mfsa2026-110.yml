@@ -1,0 +1,386 @@
+## mfsa2026-110.yml
+announced: October 13, 2026
+impact: high
+fixed_in:
+- Thunderbird 153.5
+title: Security Vulnerabilities fixed in Thunderbird 153.5
+description: |
+  *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
+
+  **Note**: We have changed how we publish advisories. We no longer roll all internally identified memory safety vulnerabilities into a single CVE and are now issuing an advisory for every individual bug.
+advisories:
+  CVE-2026-110249:
+    title: Denial-of-service in the Exchange email component
+    impact: low
+    reporter: SuyZ <nguyentuanhung1149@gmail.com>
+    description: |
+      A malicious, compromised, or MITM-controlled Exchange server can return a single well-formed SOAP response containing an element with enough attributes to keep Thunderbird's main thread CPU-bound for seconds to hours.
+    bugs:
+      - url: 2077826
+  CVE-2026-109704:
+    title: Privilege escalation in the Application Update component
+    impact: high
+    reporter: Noel
+    bugs:
+      - url: 2037979
+  CVE-2026-109705:
+    title: Sandbox escape, site isolation issue due to incorrect boundary conditions, use-after-free in the Networking component
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2040905
+  CVE-2026-109706:
+    title: 'Use-after-free in the Storage: IndexedDB component'
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2053649
+  CVE-2026-109707:
+    title: Sandbox escape due to use-after-free in the Networking component
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2059150
+  CVE-2026-109708:
+    title: Sandbox escape due to incorrect boundary conditions in the Networking component
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2059151
+  CVE-2026-109709:
+    title: 'Information disclosure, privilege escalation in the Security: Process Sandboxing component'
+    impact: high
+    reporter: Yaqoub Aldurayhim
+    bugs:
+      - url: 2067976
+  CVE-2026-109710:
+    title: 'Use-after-free in the Graphics: Text component'
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2068338
+  CVE-2026-109711:
+    title: 'Use-after-free in the Graphics: Canvas2D component'
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2068344
+  CVE-2026-109712:
+    title: Sandbox escape due to uninitialized memory in the Graphics component
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2068420
+  CVE-2026-109713:
+    title: Use-after-free in the Crash Reporting component
+    impact: high
+    reporter: locust1b
+    bugs:
+      - url: 2068421
+  CVE-2026-109715:
+    title: Incorrect boundary conditions in the JavaScript Engine component
+    impact: high
+    reporter: Amy Burnett of OpenAI
+    bugs:
+      - url: 2073267
+  CVE-2026-109716:
+    title: Incorrect boundary conditions in the JavaScript Engine component
+    impact: high
+    reporter: Amy Burnett of OpenAI
+    bugs:
+      - url: 2073269
+  CVE-2026-109717:
+    title: 'Use-after-free in the DOM: Bindings (WebIDL) component'
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2073647
+  CVE-2026-109718:
+    title: Use-after-free in the XML component
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2073692
+  CVE-2026-109719:
+    title: 'Race condition, use-after-free in the Graphics: CanvasWebGL component'
+    impact: high
+    reporter: Shu Takahashi  of Velcore Consulting Inc.
+    bugs:
+      - url: 2073969
+  CVE-2026-109720:
+    title: 'JIT miscompilation in the JavaScript: WebAssembly component'
+    impact: high
+    reporter: Amy Burnett of OpenAI
+    bugs:
+      - url: 2074160
+  CVE-2026-109721:
+    title: 'Incorrect boundary conditions in the JavaScript Engine: JIT component'
+    impact: high
+    reporter: Amy Burnett of OpenAI
+    bugs:
+      - url: 2074161
+  CVE-2026-109722:
+    title: 'JIT miscompilation in the JavaScript Engine: JIT component'
+    impact: high
+    reporter: Amy Burnett of OpenAI
+    bugs:
+      - url: 2074164
+  CVE-2026-109723:
+    title: 'Integer overflow in the Layout: Text and Fonts component'
+    impact: high
+    reporter: Amy Burnett of OpenAI
+    bugs:
+      - url: 2074171
+  CVE-2026-109724:
+    title: 'Use-after-free in the DOM: Core & HTML component'
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2074193
+  CVE-2026-109725:
+    title: 'Use-after-free in the DOM: Core & HTML component'
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2074208
+  CVE-2026-109726:
+    title: Use-after-free in the SVG component
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2074212
+  CVE-2026-109727:
+    title: Use-after-free in the Audio/Video component
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2074213
+  CVE-2026-109728:
+    title: 'Use-after-free in the DOM: Animation component'
+    impact: high
+    reporter: Amy Burnett of OpenAI
+    bugs:
+      - url: 2074625
+  CVE-2026-109729:
+    title: 'Use-after-free in the JavaScript Engine: JIT component'
+    impact: high
+    reporter: Tomer Fichman
+    bugs:
+      - url: 2074632
+  CVE-2026-109730:
+    title: Integer overflow in the Graphics component
+    impact: high
+    reporter: Robert Longson
+    bugs:
+      - url: 2074896
+  CVE-2026-109731:
+    title: 'Incorrect boundary conditions in the Graphics: Canvas2D component'
+    impact: high
+    reporter: Amy Burnett of OpenAI
+    bugs:
+      - url: 2075436
+  CVE-2026-109732:
+    title: 'Use-after-free in the DOM: Streams component'
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2075998
+  CVE-2026-109733:
+    title: 'JIT miscompilation in the JavaScript Engine: JIT component'
+    impact: high
+    reporter: Amy Burnett of OpenAI
+    bugs:
+      - url: 2076269
+  CVE-2026-109734:
+    title: 'Mitigation bypass in the DOM: Security component'
+    impact: moderate
+    reporter: Mirko Brodesser
+    bugs:
+      - url: 1926318
+  CVE-2026-109736:
+    title: Frame poisoning in the Layout component
+    impact: moderate
+    reporter: Mozilla
+    bugs:
+      - url: 2029784
+  CVE-2026-109737:
+    title: Mitigation bypass in the Enterprise Policies component
+    impact: moderate
+    reporter: Souma Ohsawa
+    bugs:
+      - url: 2044525
+  CVE-2026-109738:
+    title: 'Use-after-free in the Audio/Video: Playback component'
+    impact: moderate
+    reporter: Mozilla
+    bugs:
+      - url: 2047722
+  CVE-2026-109740:
+    title: 'Sandbox escape due to incorrect boundary conditions in the Widget: Win32 component'
+    impact: moderate
+    reporter: Mozilla
+    bugs:
+      - url: 2057113
+  CVE-2026-109741:
+    title: 'Use-after-free in the Storage: Bucket File System component'
+    impact: moderate
+    reporter: Mozilla
+    bugs:
+      - url: 2058651
+  CVE-2026-109742:
+    title: Information disclosure in the PDF Viewer component
+    impact: moderate
+    reporter: Mozilla
+    bugs:
+      - url: 2058800
+  CVE-2026-109743:
+    title: Privilege escalation in the Panning and Zooming component
+    impact: moderate
+    reporter: Mozilla
+    bugs:
+      - url: 2059195
+  CVE-2026-109744:
+    title: 'Other issue in the DOM: File component'
+    impact: moderate
+    reporter: Mozilla
+    bugs:
+      - url: 2059211
+  CVE-2026-109745:
+    title: 'Sandbox escape due to uninitialized memory in the DOM: Web Serial component'
+    impact: moderate
+    reporter: Mozilla
+    bugs:
+      - url: 2061784
+  CVE-2026-109782:
+    title: Mitigation bypass in the File Handling component
+    impact: moderate
+    reporter: Abdulrahman Alzahrani
+    bugs:
+      - url: 2067465
+  CVE-2026-109751:
+    title: Information disclosure in the Networking component
+    impact: moderate
+    reporter: Mozilla
+    bugs:
+      - url: 2068372
+  CVE-2026-109752:
+    title: 'Use-after-free in the DOM: Workers component'
+    impact: moderate
+    reporter: Mozilla
+    bugs:
+      - url: 2068407
+  CVE-2026-109753:
+    title: Incorrect boundary conditions in the Layout component
+    impact: moderate
+    reporter: Mozilla
+    bugs:
+      - url: 2068441
+  CVE-2026-109754:
+    title: 'Incorrect boundary conditions in the DOM: Editor component'
+    impact: moderate
+    reporter: Mozilla
+    bugs:
+      - url: 2068443
+  CVE-2026-109756:
+    title: 'Privilege escalation in the DOM: Navigation component'
+    impact: moderate
+    reporter: Mozilla
+    bugs:
+      - url: 2069258
+  CVE-2026-109757:
+    title: Sandbox escape due to race condition in the Networking component
+    impact: moderate
+    reporter: Yaqoub Aldurayhim
+    bugs:
+      - url: 2069910
+  CVE-2026-109759:
+    title: Site isolation issue in the Networking component
+    impact: moderate
+    reporter: Myungyong Lee
+    bugs:
+      - url: 2070252
+  CVE-2026-109760:
+    title: 'Mitigation bypass in the Networking: HTTP component'
+    impact: moderate
+    reporter: Myungyong Lee
+    bugs:
+      - url: 2070633
+  CVE-2026-109762:
+    title: Incorrect boundary conditions in the SVG component
+    impact: moderate
+    reporter: Mozilla
+    bugs:
+      - url: 2072438
+  CVE-2026-109763:
+    title: Mitigation bypass in the File Handling component
+    impact: moderate
+    reporter: Riku Bamba
+    bugs:
+      - url: 2072501
+  CVE-2026-109764:
+    title: Mitigation bypass in the Enterprise Policies component
+    impact: moderate
+    reporter: HyeonSeung Kim
+    bugs:
+      - url: 2073382
+  CVE-2026-109765:
+    title: 'Race condition, use-after-free in the Graphics: Text component'
+    impact: moderate
+    reporter: Shu Takahashi  of Velcore Consulting Inc.
+    bugs:
+      - url: 2073396
+  CVE-2026-109766:
+    title: Mitigation bypass in the Enterprise Policies component
+    impact: moderate
+    reporter: Souma Ohsawa
+    bugs:
+      - url: 2074406
+  CVE-2026-109767:
+    title: Information disclosure in the Networking component
+    impact: moderate
+    reporter: Mozilla
+    bugs:
+      - url: 2074963
+  CVE-2026-109783:
+    title: Mitigation bypass in the File Handling component
+    impact: moderate
+    reporter: Mozilla
+    bugs:
+      - url: 2075533
+  CVE-2026-109770:
+    title: 'Spoofing issue in the DOM: Web Serial component'
+    impact: low
+    reporter: Mozilla
+    bugs:
+      - url: 2059230
+  CVE-2026-109775:
+    title: Denial-of-service in the WebRTC component
+    impact: low
+    reporter: Shu Takahashi  of Velcore Consulting Inc.
+    bugs:
+      - url: 2068255
+  CVE-2026-109776:
+    title: Race condition in the XPCOM component
+    impact: low
+    reporter: Mozilla
+    bugs:
+      - url: 2069395
+  CVE-2026-109777:
+    title: 'Information disclosure in the Storage: IndexedDB component'
+    impact: low
+    reporter: Shu Takahashi  of Velcore Consulting Inc.
+    bugs:
+      - url: 2069638
+  CVE-2026-109778:
+    title: Privilege escalation in the WebExtensions component
+    impact: low
+    reporter: Mozilla
+    bugs:
+      - url: 2070547
+  CVE-2026-109781:
+    title: 'Denial-of-service in the Printing: Output component'
+    impact: low
+    reporter: Nguyen Thanh Nguyen
+    bugs:
+      - url: 2072852
+
