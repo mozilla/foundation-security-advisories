@@ -1,0 +1,70 @@
+## mfsa2026-114.yml
+announced: October 20, 2026
+impact: high
+fixed_in:
+- Thunderbird 158.0.1
+title: Security Vulnerabilities fixed in Thunderbird 158.0.1
+description: |
+  *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
+
+  **Note**: We have changed how we publish advisories. We no longer roll all internally identified memory safety vulnerabilities into a single CVE and are now issuing an advisory for every individual bug.1
+advisories:
+  CVE-2026-113866:
+    title: Account password sent unencrypted during Exchange account setup
+    impact: high
+    reporter: Magnus Melin
+    description: |
+      When setting up an account, Thunderbird's Exchange AutoDiscover lookup also queried the domain's AutoDiscover service over plain HTTP. Due to a bug, that unencrypted request included the credentials the user had entered, allowing a network attacker to obtain the user's password.
+    bugs:
+      - url: 2080121
+  CVE-2026-113867:
+    title: Stanza injection in XMPP chat
+    impact: high
+    reporter: Magnus Melin
+    description: |
+      Thunderbird did not escape attribute values when serializing outgoing XMPP stanzas. Because values from incoming requests were echoed back in automatic replies, a remote XMPP user could send a crafted request that caused Thunderbird to inject arbitrary stanzas into the user's connection, which the server would then process as if sent by the user. This could be used to send messages or change contact and subscription settings on behalf of the user, without any interaction. This bug only affects Thunderbird's chat feature with XMPP accounts.
+    bugs:
+      - url: 2080073
+  CVE-2026-113868:
+    title: Uninitialized memory disclosure and out-of-bounds read in POP3 and SMTP NTLM authentication
+    impact: high
+    reporter: Nguyen Tuan Hung (VNU HCM - UIT)
+    description: |
+      When authenticating to a POP3 or SMTP server using NTLM, Thunderbird did not check whether the server's challenge was valid base64. A malicious server could send a challenge that caused Thunderbird to include uninitialized heap memory in its NTLM response, disclosing that memory to the server. A challenge consisting only of base64 padding also caused an out-of-bounds read, crashing Thunderbird. This affected accounts configured to use NTLM or GSSAPI authentication. The uninitialized memory disclosure only affected NTLM.
+    bugs:
+      - url: 2076569
+  CVE-2026-113869:
+    title: Use-after-free in S/MIME decryption during a security device password prompt
+    impact: moderate
+    reporter: Stefan Tatschner
+    description: |
+      When Thunderbird asked for a security device password (for example a smartcard PIN or the Primary Password) while decrypting an S/MIME message, the message load could finish or be cancelled while the prompt was open. This freed the message decoder while it was still in use, causing a use-after-free and a potentially exploitable crash.
+    bugs:
+      - url: 2075530
+  CVE-2026-113399:
+    title: Incorrect boundary conditions in the SVG component
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2079938
+  CVE-2026-113470:
+    title: Cryptographic issue in the Security Block-lists, Allow-lists, and other State component
+    impact: high
+    reporter: Wayne
+    description: |
+      Mozilla blocked compromised intermediate eMudhra certificates via OneCRL on the 17th of October which was distributed to clients via RemoteSettings the same day. This update contains the updated OneCRL block list, ensuring clients will block the compromised certificates even if RemoteSettings is disabled by policy or otherwise unavailable in the user's network environment.
+    bugs:
+      - url: 2083382
+  CVE-2026-113400:
+    title: 'Uninitialized memory in the Audio/Video: cubeb component'
+    impact: moderate
+    reporter: Mozilla
+    bugs:
+      - url: 2061768
+  CVE-2026-113401:
+    title: Denial-of-service in the PDF Viewer component
+    impact: low
+    reporter: Ahmed Hesham
+    bugs:
+      - url: 2073714
+
