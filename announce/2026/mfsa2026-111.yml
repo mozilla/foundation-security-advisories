@@ -1,0 +1,36 @@
+## mfsa2026-111.yml
+announced: October 20, 2026
+impact: high
+fixed_in:
+- Firefox 158.0.1
+title: Security Vulnerabilities fixed in Firefox 158.0.1
+description: |
+  **Note**: We have changed how we publish advisories. We no longer roll all internally identified memory safety vulnerabilities into a single CVE and are now issuing an advisory for every individual bug.
+advisories:
+  CVE-2026-113399:
+    title: Incorrect boundary conditions in the SVG component
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2079938
+  CVE-2026-113470:
+    title: Cryptographic issue in the Security Block-lists, Allow-lists, and other State component
+    impact: high
+    reporter: Wayne
+    description: |
+      Mozilla blocked compromised intermediate eMudhra certificates via OneCRL on the 17th of October which was distributed to clients via RemoteSettings the same day. This update contains the updated OneCRL block list, ensuring clients will block the compromised certificates even if RemoteSettings is disabled by policy or otherwise unavailable in the user's network environment.
+    bugs:
+      - url: 2083382
+  CVE-2026-113400:
+    title: 'Uninitialized memory in the Audio/Video: cubeb component'
+    impact: moderate
+    reporter: Mozilla
+    bugs:
+      - url: 2061768
+  CVE-2026-113401:
+    title: Denial-of-service in the PDF Viewer component
+    impact: low
+    reporter: Ahmed Hesham
+    bugs:
+      - url: 2073714
+
