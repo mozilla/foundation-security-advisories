@@ -5,7 +5,7 @@ fixed_in:
 - Thunderbird 155
 title: Security Vulnerabilities fixed in Thunderbird 155
 description: |
-  *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
+  *In general, some of these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
 advisories:
   CVE-2026-84639:
     title: Uninitialized memory in MIME parsing

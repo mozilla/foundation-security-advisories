@@ -5,7 +5,7 @@ fixed_in:
 - Thunderbird 140.13
 title: Security Vulnerabilities fixed in Thunderbird 140.13
 description: |
-  *In general, these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
+  *In general, some of these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
 advisories:
   CVE-2026-14899:
     title: Off-by-one out of bounds read in MIME header parser for forwarding
