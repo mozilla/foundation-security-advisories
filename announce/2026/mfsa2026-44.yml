@@ -5,7 +5,7 @@ fixed_in:
 - Thunderbird 140.10.2
 title: Security Vulnerabilities fixed in Thunderbird 140.10.2
 description: |
-  *In general, some of these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
+  *Many of these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, however they may pose risks in browser or browser-like contexts.*
 advisories:
   CVE-2026-8090:
     title: 'Use-after-free in the DOM: Networking component'

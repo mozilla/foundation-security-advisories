@@ -5,7 +5,7 @@ fixed_in:
 - Thunderbird 158.0.1
 title: Security Vulnerabilities fixed in Thunderbird 158.0.1
 description: |
-  *In general, some of these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, but are potentially risks in browser or browser-like contexts.*
+  *Many of these flaws cannot be exploited through email in the Thunderbird product because scripting is disabled when reading mail, however they may pose risks in browser or browser-like contexts.*
 
   **Note**: We have changed how we publish advisories. We no longer roll all internally identified memory safety vulnerabilities into a single CVE and are now issuing an advisory for every individual bug.1
 advisories:
