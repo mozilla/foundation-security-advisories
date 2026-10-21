@@ -1,0 +1,14 @@
+## mfsa2026-116.yml
+announced: October 21, 2026
+impact: high
+fixed_in:
+- Firefox 158.0.2
+title: Security Vulnerabilities fixed in Firefox for Android 158.0.2
+advisories:
+  CVE-2026-113470:
+    title: Cryptographic issue in the Security Block-lists, Allow-lists, and other State component
+    impact: high
+    reporter: Wayne
+    bugs:
+      - url: 2084311
+
