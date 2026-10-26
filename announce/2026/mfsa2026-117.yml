@@ -1,0 +1,23 @@
+## mfsa2026-117.yml
+announced: October 26, 2026
+impact: moderate
+fixed_in:
+- Firefox for iOS 156.1
+title: Security Vulnerabilities fixed in Firefox for iOS 156.1
+advisories:
+  CVE-2026-116632:
+    title: Facetime protocol handler enabled spoofing
+    impact: moderate
+    reporter: xisigr
+    description: |
+      A malicious web page could insert arbitrary text into the FaceTime call prompt shown by iOS, potentialy allowing it to display a phishing message inside system UI.
+    bugs:
+      - url: 1328815
+  CVE-2026-116631:
+    title: 'External protocol handler (tel:) address bar spoof'
+    impact: low
+    reporter: Yuyang Zhou
+    description: |
+      A malicious web page could open a tel link in a window that was showing a different website, causing the phone-call prompt to appear as if that site had requested the call.
+    bugs:
+      - url: 1297353
