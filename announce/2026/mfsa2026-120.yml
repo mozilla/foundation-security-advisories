@@ -712,7 +712,7 @@ advisories:
   CVE-2026-117976:
     title: 'Site isolation issue in the DOM: Navigation component'
     impact: moderate
-    reporter: Shu Takahashi  of Velcore Consulting Inc.
+    reporter: Shu Takahashi of Velcore Consulting Inc.
     bugs:
       - url: 2076816
   CVE-2026-117977:
@@ -850,7 +850,7 @@ advisories:
   CVE-2026-117999:
     title: Race condition in the IPC component
     impact: low
-    reporter: Treeherder Bug Filer
+    reporter: Mozilla
     bugs:
       - url: 2071379
   CVE-2026-118000:
