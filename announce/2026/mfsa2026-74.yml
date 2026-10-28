@@ -47,24 +47,12 @@ advisories:
     reporter: choeseyeong
     bugs:
       - url: 2054416
-  CVE-2026-74940:
-    title: 'Use-after-free in the Graphics: Text component'
-    impact: high
-    reporter: kiyong
-    bugs:
-      - url: 2054842
   CVE-2026-74941:
     title: 'Privilege escalation in the Graphics: CanvasWebGL component'
     impact: high
     reporter: Jacolon Walker
     bugs:
       - url: 2055056
-  CVE-2026-74942:
-    title: Privilege escalation in the Remote Settings Client component
-    impact: high
-    reporter: Gal Ankonina
-    bugs:
-      - url: 2056571
   CVE-2026-74943:
     title: 'Use-after-free in the Graphics: ImageLib component'
     impact: high
@@ -83,12 +71,6 @@ advisories:
     reporter: Abdulaziz Alasaiqah
     bugs:
       - url: 2057808
-  CVE-2026-74946:
-    title: 'Privilege escalation due to incorrect boundary conditions in the Graphics: CanvasWebGL component'
-    impact: high
-    reporter: locust1b
-    bugs:
-      - url: 2059997
   CVE-2026-74947:
     title: Privilege escalation due to invalid pointer in the Graphics component
     impact: high
@@ -104,7 +86,7 @@ advisories:
   CVE-2026-74950:
     title: Privilege escalation in the Downloads API component
     impact: moderate
-    reporter: Frederik Braun
+    reporter: Trend Micro's Zero Day Initiative
     bugs:
       - url: 1880253
   CVE-2026-74951:
@@ -203,30 +185,30 @@ advisories:
     reporter: The Mozilla Fuzzing Team
     bugs:
       - url: 2054776
+  CVE-2026-74940:
+    title: 'Use-after-free in the Graphics: Text component'
+    impact: moderate
+    reporter: kiyong
+    bugs:
+      - url: 2054842
   CVE-2026-74967:
     title: 'Same-origin policy bypass in the Audio/Video: Playback component'
     impact: moderate
     reporter: The Mozilla Fuzzing Team
     bugs:
       - url: 2055697
-  CVE-2026-74968:
-    title: 'Site isolation issue in the Graphics: WebRender component'
-    impact: moderate
-    reporter: kiyong
-    bugs:
-      - url: 2055738
   CVE-2026-74969:
-    title: 'Use-after-free in the Layout: Text and Fonts component'
+    title: 'Race condition, use-after-free in the Layout: Text and Fonts component'
     impact: moderate
     reporter: Hyeonjun Ahn
     bugs:
       - url: 2056065
-  CVE-2026-74970:
-    title: Site isolation issue in the Graphics component
+  CVE-2026-74942:
+    title: Privilege escalation in the Remote Settings Client component
     impact: moderate
-    reporter: Abdulaziz Alasaiqah
+    reporter: Gal Ankonina
     bugs:
-      - url: 2056558
+      - url: 2056571
   CVE-2026-74971:
     title: 'Information disclosure in the DOM: UI Events & Focus Handling component'
     impact: moderate
@@ -239,6 +221,12 @@ advisories:
     reporter: Kagami Rosylight
     bugs:
       - url: 2059053
+  CVE-2026-74946:
+    title: 'Information disclosure due to incorrect boundary conditions in the Graphics: CanvasWebGL component'
+    impact: moderate
+    reporter: locust1b
+    bugs:
+      - url: 2059997
   CVE-2026-74949:
     title: 'Use-after-free in the Graphics: Canvas2D component'
     impact: moderate
@@ -317,6 +305,18 @@ advisories:
     reporter: Amy Burnett of OpenAI
     bugs:
       - url: 2053670
+  CVE-2026-74968:
+    title: 'Site isolation issue in the Graphics: WebRender component'
+    impact: low
+    reporter: kiyong
+    bugs:
+      - url: 2055738
+  CVE-2026-74970:
+    title: Site isolation issue in the Graphics component
+    impact: low
+    reporter: Abdulaziz Alasaiqah
+    bugs:
+      - url: 2056558
   CVE-2026-74985:
     title: Privilege escalation in the Enterprise Policies component
     impact: low
