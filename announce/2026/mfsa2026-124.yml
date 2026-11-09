@@ -1,0 +1,26 @@
+## mfsa2026-124.yml
+announced: November 09, 2026
+impact: high
+fixed_in:
+- Firefox for iOS 160.0
+title: Security Vulnerabilities fixed in Firefox for iOS 160.0
+advisories:
+  CVE-2026-121842:
+    title: Privilege escalation in the Reader View component in Firefox for iOS
+    impact: high
+    reporter: navapon
+    bugs:
+      - url: 2076233
+  CVE-2026-121843:
+    title: Privilege escalation in Firefox for iOS
+    impact: high
+    reporter: Hoang Quan
+    bugs:
+      - url: 2083030
+  CVE-2026-121841:
+    title: Other issue in Firefox for iOS
+    impact: moderate
+    reporter: Hoang Quan & tu3n.4nh
+    bugs:
+      - url: 2081874
+
