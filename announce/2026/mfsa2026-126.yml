@@ -1,0 +1,176 @@
+## mfsa2026-126.yml
+announced: November 10, 2026
+impact: high
+fixed_in:
+- Firefox ESR 115.45
+title: Security Vulnerabilities fixed in Firefox ESR 115.45
+advisories:
+  CVE-2026-109736:
+    title: Frame poisoning in the Layout component
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2029784
+  CVE-2026-124853:
+    title: 'Sandbox escape due to incorrect boundary conditions in the Graphics: Text component'
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2058035
+  CVE-2026-124952:
+    title: Use-after-free in the Audio/Video component
+    impact: high
+    reporter: andrew.kemeklis
+    bugs:
+      - url: 2071647
+  CVE-2026-124857:
+    title: 'Use-after-free in the Graphics: Canvas2D component'
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2073695
+  CVE-2026-124858:
+    title: 'Use-after-free in the DOM: HTML Parser component'
+    impact: high
+    reporter: Amy Burnett of OpenAI
+    bugs:
+      - url: 2074172
+  CVE-2026-124859:
+    title: 'Sandbox escape due to incorrect boundary conditions in the Storage: Cache API component'
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2074179
+  CVE-2026-124860:
+    title: Use-after-free in the Audio/Video component
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2074194
+  CVE-2026-124861:
+    title: 'Sandbox escape due to use-after-free in the Audio/Video: cubeb component'
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2074210
+  CVE-2026-124863:
+    title: 'Use-after-free in the DOM: HTML Parser component'
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2075975
+  CVE-2026-124864:
+    title: 'Sandbox escape due to use-after-free in the DOM: Service Workers component'
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2075976
+  CVE-2026-124865:
+    title: Use-after-free in the Audio/Video component
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2076414
+  CVE-2026-124872:
+    title: Use-after-free in the Cycle Collector component
+    impact: high
+    reporter: OpenAI Codex Security (kylebot)
+    bugs:
+      - url: 2079689
+  CVE-2026-124874:
+    title: 'Same-origin policy bypass in the Networking: HTTP component'
+    impact: high
+    reporter: Minseong Kim
+    bugs:
+      - url: 2080420
+  CVE-2026-124875:
+    title: 'Incorrect boundary conditions in the DOM: CSS Object Model component'
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2081380
+  CVE-2026-124876:
+    title: Use-after-free in the CSS Parsing and Computation component
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2081550
+  CVE-2026-124877:
+    title: 'Use-after-free in the Layout: Positioned component'
+    impact: high
+    reporter: OpenAI Codex Security (kylebot)
+    bugs:
+      - url: 2081939
+  CVE-2026-124880:
+    title: 'Use-after-free in the DOM: Core & HTML component'
+    impact: high
+    reporter: OpenAI Codex Security (kylebot)
+    bugs:
+      - url: 2081966
+  CVE-2026-124881:
+    title: Use-after-free in the CSS Parsing and Computation component
+    impact: high
+    reporter: OpenAI Codex Security (kylebot)
+    bugs:
+      - url: 2081980
+  CVE-2026-124882:
+    title: Use-after-free in the CSS Parsing and Computation component
+    impact: high
+    reporter: OpenAI Codex Security (kylebot)
+    bugs:
+      - url: 2081982
+  CVE-2026-124885:
+    title: 'Use-after-free in the Graphics: Text component'
+    impact: high
+    reporter: OpenAI Codex Security (kylebot)
+    bugs:
+      - url: 2082006
+  CVE-2026-124890:
+    title: 'Use-after-free in the DOM: Core & HTML component'
+    impact: high
+    reporter: OpenAI Codex Security (kylebot)
+    bugs:
+      - url: 2082039
+  CVE-2026-124895:
+    title: 'Use-after-free in the Storage: localStorage & sessionStorage component'
+    impact: high
+    reporter: OpenAI Codex Security (kylebot)
+    bugs:
+      - url: 2082109
+  CVE-2026-124898:
+    title: 'Use-after-free in the DOM: Editor component'
+    impact: high
+    reporter: OpenAI Codex Security (kylebot)
+    bugs:
+      - url: 2082205
+  CVE-2026-124899:
+    title: 'Use-after-free in the Layout: Text and Fonts component'
+    impact: high
+    reporter: OpenAI Codex Security (kylebot)
+    bugs:
+      - url: 2082451
+  CVE-2026-124901:
+    title: 'Other issue in the Networking: JAR component'
+    impact: high
+    reporter: dodoh4t
+    bugs:
+      - url: 2083626
+  CVE-2026-124902:
+    title: Same-origin policy bypass due to race condition in the Audio/Video component
+    impact: high
+    reporter: dodoh4t
+    bugs:
+      - url: 2083629
+  CVE-2026-124903:
+    title: Sandbox escape due to use-after-free in the IPC component
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2084673
+  CVE-2026-124905:
+    title: 'Sandbox escape in the DOM: Navigation component'
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2086254
+
