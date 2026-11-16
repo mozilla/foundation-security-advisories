@@ -56,7 +56,7 @@ advisories:
     bugs:
       - url: 2059110
   CVE-2026-117868:
-    title: 'Sandbox escape in the DOM: Networking component'
+    title: 'Privilege escalation in the DOM: Networking component'
     impact: high
     reporter: Yaqoub Aldurayhim
     bugs:
@@ -718,7 +718,7 @@ advisories:
   CVE-2026-117977:
     title: Other issue in the Console component
     impact: moderate
-    reporter: quanhx
+    reporter: quanhx <Hoang Quan>
     bugs:
       - url: 2077418
   CVE-2026-117978:
