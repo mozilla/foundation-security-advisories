@@ -1,0 +1,20 @@
+## mfsa2026-130.yml
+announced: November 17, 2026
+impact: high
+fixed_in:
+- Firefox 160.0.1
+title: Security Vulnerabilities fixed in Firefox 160.0.1
+advisories:
+  CVE-2026-130020:
+    title: 'Privilege escalation due to incorrect boundary conditions in the Graphics: CanvasWebGL component on Android'
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2068592
+  CVE-2026-130021:
+    title: 'Use-after-free in the Audio/Video: Playback component'
+    impact: high
+    reporter: Mozilla
+    bugs:
+      - url: 2088644
+
