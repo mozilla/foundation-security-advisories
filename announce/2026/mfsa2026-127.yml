@@ -299,18 +299,18 @@ advisories:
     reporter: Mozilla
     bugs:
       - url: 2086254
-  CVE-2026-124906:
-    title: 'Use-after-free in the Graphics: WebRender component'
-    impact: high
-    reporter: Mozilla
-    bugs:
-      - url: 2086296
   CVE-2026-124907:
     title: 'Privilege escalation, sandbox escape due to use-after-free in the Graphics: CanvasWebGL component'
     impact: high
     reporter: Mozilla
     bugs:
       - url: 2087324
+  CVE-2026-124906:
+    title: 'Use-after-free in the Graphics: WebRender component'
+    impact: moderate
+    reporter: Yendric Van Roey and Yarne Ramakers
+    bugs:
+      - url: 2086296
   CVE-2026-124909:
     title: Information disclosure in the Private Browsing component
     impact: moderate
