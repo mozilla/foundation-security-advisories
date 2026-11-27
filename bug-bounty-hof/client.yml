@@ -295,745 +295,1030 @@ names:
   bugs: [2021863]
   date: 2026-04-02
 - name: Haruto Kimura
+  bugs: [2023207, 2023209]
   date: 2026-03-25
 - name: Gary Kwong
+  bugs: [2009303, 2009608, 2011069, 2018075, 2023343, 2023384]
   date: 2026-03-25
   url: https://www.ygitsoftware.com/
 - name: Tomoya Nakanishi
+  bugs: [2023753]
   date: 2026-03-25
 - name: Satoki Tsuji
+  bugs: [2024531]
   date: 2026-03-25
 - name: paranoidmoth
+  bugs: [1880429]
   date: 2026-03-18
 - name: Sajeeb Lohani
+  bugs: [2013739, 2013741, 2014101, 2014136, 2015266, 2016358, 2016361, 2016367, 2016368, 2016370, 2016373, 2016374, 2016375, 2018113]
   date: 2026-03-18
 - name: Sota Wada
+  bugs: [2020190]
   date: 2026-03-18
 - name: Lorenzo
+  bugs: [2020422]
   date: 2026-03-18
 - name: Rintaro Kobayashi
+  bugs: [2023493, 2025849]
   date: 2026-03-17
 - name: Alan Li (lebr0nli)
+  bugs: [2016915]
   date: 2026-03-11
 - name: crixer
+  bugs: [2020174]
   date: 2026-03-11
 - name: Jun Yang
+  bugs: [2015091, 2017108, 2018400]
   date: 2026-03-04
 - name: Fabius Artrel
+  bugs: [2017512]
   date: 2026-03-04
 - name: Pwn2addr
+  bugs: [2018592]
   date: 2026-03-04
 - name: Iacob Razvan Mihai
+  bugs: [2019402]
   date: 2026-03-04
 - name: Renwa Hiwa
+  bugs: [1975529, 1975842]
   date: 2026-02-25
 - name: Saidina Hikam
+  bugs: [2009902]
   date: 2026-02-25
 - name: Qadhafy Muhammad Tera
+  bugs: [2012152, 2021222]
   date: 2026-02-25
 - name: Aisle Inc.
+  bugs: [2001637]
   date: 2026-02-19
 - name: Clay Ver Valen
+  bugs: [2009552]
   date: 2026-02-19
 - name: Oskar L
+  bugs: [2003989, 2004602, 2005014, 2005658, 2011062, 2011063]
   date: 2026-02-19
 - name: Richard Belisle
+  bugs: [2015305, 2015959]
   date: 2026-02-19
 - name: pizzahunthack1
+  bugs: [2003766]
   date: 2026-02-18
 - name: Steven Julian
+  bugs: [2008365, 2010933]
   date: 2026-02-18
 - name: Daniel Santos [:dsantos98]
+  bugs: [2012984]
   date: 2026-02-18
 - name: talus
+  bugs: [2010940, 2010943, 2013777]
   date: 2026-02-11
 - name: Alessio Ghidini
+  bugs: [2014014]
   date: 2026-02-11
 - name: Hafiizh
+  bugs: [1988145]
   date: 2026-01-28
   url: https://www.linkedin.com/in/hafiizh-7aa6bb31/
 - name: Mingi Jung (정민기입니다)
+  bugs: [1999257]
   date: 2026-01-21
 - name: Atte Kettunen
+  bugs: [1997866, 2000441, 2000823, 2002460]
   date: 2026-01-21
   twitter: "@attekett"
   url: https://twitter.com/@attekett
 - name: Lyra Rebane
+  bugs: [2006500]
   date: 2026-01-21
 - name: RyotaK of GMO Flatt Security Inc.
+  bugs: [2007829]
   date: 2026-01-21
   url: https://ryotak.net
 - name: Surya Dev Singh
+  bugs: [2008426]
   date: 2026-01-21
 - name: Masato Kinugawa
+  bugs: [2007302]
   date: 2026-01-14
 - name: zx from qriousec
+  bugs: [1992902, 1998050]
   date: 2025-12-17
 - name: Luan Herrera
+  bugs: [1794274]
   date: 2025-12-15
 - name: Irvan Kurniawan (sourc7)
+  bugs: [1991458, 2000597, 2003607]
   date: 2025-12-10
   url: https://www.linkedin.com/in/sourc7/
 - name: Gary Kwong
+  bugs: [1999464, 2000469, 2003588, 2003589]
   date: 2025-12-10
   url: https://www.ygitsoftware.com/
 - name: Nan Wang
+  bugs: [1995160, 1997029, 2004377]
   date: 2025-12-10
   twitter: "@eternalsakura13"
   url: https://twitter.com/@eternalsakura13
 - name: Lingming Zhang
+  bugs: [1996840]
   date: 2025-11-27
 - name: Aisle Inc.
+  bugs: [1992130, 1992760, 2000218]
   date: 2025-11-26
 - name: Oskar L
+  bugs: [1988412, 1989899, 1992032, 1993113, 1994022, 1996473]
   date: 2025-11-26
 - name: Ameen Basha M K
+  bugs: [1996761]
   date: 2025-11-26
   twitter: "@ameenbasha111"
   url: https://twitter.com/@ameenbasha111
 - name: satrya wira yudha
+  bugs: [1997018]
   date: 2025-11-26
 - name: Zhong Zhaochen
+  bugs: [1996555]
   date: 2025-11-19
 - name: Atte Kettunen
+  bugs: [1986431, 1988488]
   date: 2025-11-12
   twitter: "@attekett"
   url: https://twitter.com/@attekett
 - name: Abhishek Kumar
+  bugs: [1970743]
   date: 2025-11-12
   url: https://www.linkedin.com/in/abhishek-kumar-003933375/
 - name: Rong Bao [:csmantle]
+  bugs: [1997503]
   date: 2025-11-05
 - name: Masato Kinugawa
+  bugs: [1991945]
   date: 2025-10-29
 - name: Massedil
+  bugs: [1872601]
   date: 2025-10-22
 - name: Mochammad Nosa Shandy Prastyo
+  bugs: [1980904]
   date: 2025-10-08
 - name: Irvan Kurniawan (sourc7)
+  bugs: [1975837, 1977130, 1977386, 1988931]
   date: 2025-09-24
   url: https://www.linkedin.com/in/sourc7/
 - name: Oskar L
+  bugs: [1979527, 1984825, 1986185, 1987246, 1988114, 1989127, 1990169]
   date: 2025-09-24
 - name: Nan Wang
+  bugs: [1968423, 1987481, 1987611]
   date: 2025-09-17
   twitter: "@eternalsakura13"
   url: https://twitter.com/@eternalsakura13
 - name: Masato Kinugawa
+  bugs: [1979536]
   date: 2025-09-10
 - name: Kang Ali
+  bugs: [1974025, 1979499, 1980808]
   date: 2025-09-03
 - name: Hafiizh
+  bugs: [1974025, 1979499, 1980808]
   date: 2025-08-29
   url: https://www.linkedin.com/in/hafiizh-7aa6bb31/
 - name: Ibuki Sato
+  bugs: [1981502]
   date: 2025-08-27
 - name: Axel Chong
+  bugs: [1791312]
   date: 2025-08-27
 - name: Renwa Hiwa
+  bugs: [1975566, 1976102, 1976296, 1976304]
   date: 2025-08-26
 - name: Mayank Bansal
+  bugs: [1970438]
   date: 2025-08-20
 - name: Antoine Morin
+  bugs: [1850240]
   date: 2025-08-06
 - name: Bharat (mrnoob)
+  bugs: [1973577]
   date: 2025-08-06
   url: https://www.linkedin.com/in/bharat-adhikari-726337225
 - name: Muneaki Nishimura (a.k.a. nishimunea)
+  bugs: [1913825]
   date: 2025-08-06
 - name: sherkito
+  bugs: [1944126]
   date: 2025-07-30
 - name: Ameen Basha M K
+  bugs: [1968414, 1975874]
   date: 2025-07-23
   twitter: "@ameenbasha111"
   url: https://twitter.com/@ameenbasha111
 - name: Luan Herrera
+  bugs: [1794273]
   date: 2025-07-21
 - name: James Lee
+  bugs: [1874904]
   date: 2025-07-16
   twitter: "@Windowsrcer"
   url: https://twitter.com/@Windowsrcer
 - name: wuyimin
+  bugs: [1862115]
   date: 2025-07-16
 - name: Gary Kwong
+  bugs: [1971581, 1979502]
   date: 2025-07-02
   url: https://www.ygitsoftware.com/
 - name: P Umar Farooq
+  bugs: [1942716]
   date: 2025-07-02
 - name: Daniil Satyaev (Positive Technologies)
+  bugs: [1971140]
   date: 2025-06-25
 - name: Narendra Bhati from Suma Soft Pvt. Ltd
+  bugs: [1902198, 1902740, 1912671]
   date: 2025-06-18
   twitter: "@imnarendrabhati"
   url: https://twitter.com/@imnarendrabhati
 - name: James Lee
+  bugs: [1794389, 1795715, 1796516, 1851653, 1859647, 1874580, 1875643, 1875725, 1875726, 1876143, 1876144, 1884313, 1906971, 1907229, 1907232, 1911956, 1911957, 1912423, 1924306, 1927933, 1946062, 1946122, 1949267, 1951210, 1951215, 1951331, 1951558, 1951570, 1951572, 1951579, 1952161, 1957550]
   date: 2025-06-18
   twitter: "@Windowsrcer"
   url: https://twitter.com/@Windowsrcer
 - name: Masato Kinugawa
+  bugs: [1970658]
   date: 2025-06-18
 - name: Laurin Weger
+  bugs: [1808979]
   date: 2025-06-16
 - name: LJP from DEVCORE Research Team
+  bugs: [1966423]
   date: 2025-06-11
   twitter: "@ljp_tw"
   url: https://twitter.com/@ljp_tw
 - name: HexRabbit from DEVCORE Research Team
+  bugs: [1966423]
   date: 2025-06-11
   twitter: "@h3xr4bb1t"
   url: https://twitter.com/@h3xr4bb1t
 - name: Shaheen Fazim
+  bugs: [1845741, 1864167, 1908869, 1909185, 1912035, 1912123, 1921013, 1945317, 1970095, 1973990]
   date: 2025-06-11
   twitter: "@shaheenfazim"
   url: https://twitter.com/@shaheenfazim
 - name: Nan Wang
+  bugs: [1970545]
   date: 2025-06-11
   twitter: "@eternalsakura13"
   url: https://twitter.com/@eternalsakura13
 - name: Xiangwei Zhang of Tencent Security YUNDING LAB
+  bugs: [1970563]
   date: 2025-06-11
 - name: alayershunters
   date: 2025-06-10
 - name: Kirtikumar Anandrao Ramchandani
+  bugs: [1670725]
   date: 2025-05-29
 - name: Rifa'i Rejal Maynando
+  bugs: [1871810, 1909609]
   date: 2025-05-29
   url: https://www.linkedin.com/in/rnando/
 - name: Khalil Zhani
+  bugs: [1419275, 1555609]
   date: 2025-05-28
 - name: Alan Li (lebr0nli)
+  bugs: [1966927]
   date: 2025-05-28
 - name: Gary Kwong
+  bugs: [1966325]
   date: 2025-05-21
   url: https://www.ygitsoftware.com/
 - name: Hafiizh
+  bugs: [1825177, 1830583, 1837687, 1841283, 1842371, 1842374, 1856620, 1860408, 1863627, 1869162, 1870998, 1901685, 1906410, 1909866, 1915769, 1920431, 1945705, 1950529, 1952138, 1952702, 1955182, 1958746, 1959320]
   date: 2025-05-14
   url: https://www.linkedin.com/in/hafiizh-7aa6bb31/
 - name: Ameen Basha M K
+  bugs: [1832262, 1949994, 1950001, 1950315, 1951287, 1951293, 1951889, 1952182, 1953262, 1953424, 1953765, 1954137, 1955270, 1955824, 1956221, 1956698, 1958198, 1960198, 1962301, 1962516]
   date: 2025-04-30
   twitter: "@ameenbasha111"
   url: https://twitter.com/@ameenbasha111
 - name: Satoki Tsuji
+  bugs: [1920348]
   date: 2025-04-23
 - name: un3xploitable
+  bugs: [1937097]
   date: 2025-04-02
 - name: GF
+  bugs: [1937097]
   date: 2025-04-02
 - name: p0her
+  bugs: [1937294]
   date: 2025-04-02
 - name: James Lee
+  bugs: [1843469, 1874573, 1912709, 1951533]
   date: 2025-03-26
   twitter: "@Windowsrcer"
   url: https://twitter.com/@Windowsrcer
 - name: Renwa Hiwa
+  bugs: [1933079, 1933172, 1945392, 1952213]
   date: 2025-03-26
 - name: Gary Kwong
+  bugs: [1941876, 1953609]
   date: 2025-03-19
   url: https://www.ygitsoftware.com/
 - name: Ronald Crane
+  bugs: [1891882]
   date: 2025-03-12
   url: https://www.zippenhop.com/
 - name: Barath Stalin K
+  bugs: [1948536, 1957290]
   date: 2025-03-11
 - name: Ameen Basha M K
+  bugs: [1950056, 1951282]
   date: 2025-03-06
   twitter: "@ameenbasha111"
   url: https://twitter.com/@ameenbasha111
 - name: MasterSplinter
+  bugs: [1922357]
   date: 2025-02-19
 - name: Xiangwei Zhang of Tencent Security YUNDING LAB
+  bugs: [1946004]
   date: 2025-02-19
 - name: kkdong of Tencent Security YUNDING LAB
+  bugs: [1946004]
   date: 2025-02-19
 - name: Luan Herrera
+  bugs: [1795781]
   date: 2025-02-12
 - name: Shaheen Fazim
+  bugs: [1908488]
   date: 2025-02-12
   twitter: "@shaheenfazim"
   url: https://twitter.com/@shaheenfazim
 - name: Abhinav Khanna
+  bugs: [1941525]
   date: 2025-02-05
 - name: Nils Bars
+  bugs: [1938615, 1939710, 1942881]
   date: 2025-02-05
 - name: Jurrie Overgoor
+  bugs: [1944665]
   date: 2025-02-05
   url: https://www.linkedin.com/in/jurrieovergoor/
 - name: Hafiizh
+  bugs: [1866661]
   date: 2025-01-22
   url: https://www.linkedin.com/in/hafiizh-7aa6bb31/
 - name: Irvan Kurniawan (sourc7)
+  bugs: [1910818, 1940162]
   date: 2025-01-22
   url: https://www.linkedin.com/in/sourc7/
 - name: Maruf Bin Murtuza
+  bugs: [1932555]
   date: 2025-01-22
 - name: Surya Dev Singh
+  bugs: [1940027]
   date: 2025-01-22
 - name: Atte Kettunen
+  bugs: [1936982]
   date: 2025-01-15
   twitter: "@attekett"
   url: https://twitter.com/@attekett
 - name: Farras Givari
+  bugs: [1939087]
   date: 2025-01-10
 - name: P Umar Farooq
+  bugs: [1929584]
   date: 2025-01-08
 - name: Sohom Datta
+  bugs: [1789134]
   date: 2024-12-18
 - name: Narendra Bhati from Suma Soft Pvt. Ltd
+  bugs: [1872520]
   date: 2024-12-18
   twitter: "@imnarendrabhati"
   url: https://twitter.com/@imnarendrabhati
 - name: Nan Wang
+  bugs: [1936454]
   date: 2024-12-18
   twitter: "@eternalsakura13"
   url: https://twitter.com/@eternalsakura13
 - name: Dalmurino
+  bugs: [1902309]
   date: 2024-12-11
 - name: Nils Bars
+  bugs: [1929623, 1933022, 1933023]
   date: 2024-12-11
 - name: Irvan Kurniawan (sourc7)
+  bugs: [1915535]
   date: 2024-12-04
   url: https://www.linkedin.com/in/sourc7/
 - name: Paul Gerste
+  bugs: [1929156]
   date: 2024-12-04
 - name: Jurrie Overgoor
+  bugs: [1895342]
   date: 2024-11-27
   url: https://www.linkedin.com/in/jurrieovergoor/
 - name: Dohyun Lee
+  bugs: [1914707, 1924184]
   date: 2024-11-20
   twitter: "@l33d0hyun"
   url: https://twitter.com/@l33d0hyun
 - name: Christian James
+  bugs: [1928779]
   date: 2024-11-20
 - name: Lucas B. Williams
+  bugs: [1928858]
   date: 2024-11-20
 - name: David Henninger
   date: 2024-11-20
 - name: Johannes Henninger
+  bugs: [1929017]
   date: 2024-11-20
 - name: Shaheen Fazim
+  bugs: [1836921, 1909535, 1916659]
   date: 2024-11-14
   twitter: "@shaheenfazim"
   url: https://twitter.com/@shaheenfazim
 - name: Bharat (mrnoob)
+  bugs: [1905749]
   date: 2024-11-14
   url: https://www.linkedin.com/in/bharat-adhikari-726337225
 - name: P Umar Farooq
+  bugs: [1842187, 1847625, 1918884]
   date: 2024-11-14
 - name: Masato Kinugawa
+  bugs: [1914521, 1924167]
   date: 2024-11-14
 - name: Renwa Hiwa
+  bugs: [1925496]
   date: 2024-11-14
 - name: James Lee
+  bugs: [1843467, 1863832, 1921656, 1921733]
   date: 2024-11-13
   twitter: "@Windowsrcer"
   url: https://twitter.com/@Windowsrcer
 - name: Sun ZhiWei from Lenovo GIC security lab
+  bugs: [1926463]
   date: 2024-11-13
 - name: Ali Syarief
+  bugs: [1916152]
   date: 2024-11-01
   url: https://www.linkedin.com/in/mohammad-ali-syarief/
 - name: Ronald Crane
+  bugs: [1899402]
   date: 2024-10-23
   url: https://www.zippenhop.com/
 - name: Damien Schaeffer (ESET)
+  bugs: [1923344]
   date: 2024-10-16
 - name: Dong-uk Kim
+  bugs: [1917536]
   date: 2024-10-08
   twitter: "@justlikebono"
   url: https://twitter.com/@justlikebono
 - name: Atte Kettunen
+  bugs: [1920381]
   date: 2024-10-08
   twitter: "@attekett"
   url: https://twitter.com/@attekett
 - name: Hafiizh
+  bugs: [1920423]
   date: 2024-10-08
   url: https://www.linkedin.com/in/hafiizh-7aa6bb31/
 - name: Satoki Tsuji
+  bugs: [1881037]
   date: 2024-09-26
 - name: Masato Kinugawa
+  bugs: [1909241, 1918301, 1918874]
   date: 2024-09-24
 - name: Ali Syarief
+  bugs: [1918853]
   date: 2024-09-24
   url: https://www.linkedin.com/in/mohammad-ali-syarief/
 - name: Andrei Enache
+  bugs: [1913000]
   date: 2024-09-20
 - name: Lishuo Song
+  bugs: [1916581]
   date: 2024-09-17
 - name: Thomas Orlita
+  bugs: [1862537]
   date: 2024-09-10
 - name: Hafiizh
+  bugs: [1842587, 1843032, 1865413, 1868970, 1903187, 1906024, 1909163]
   date: 2024-09-10
   url: https://www.linkedin.com/in/hafiizh-7aa6bb31/
 - name: Nils Bars
+  bugs: [1901411, 1904644, 1912471, 1912715]
   date: 2024-09-10
 - name: James Lee
+  bugs: [1863838, 1874907, 1874910, 1874964, 1884642, 1892407, 1894326]
   date: 2024-09-03
   twitter: "@Windowsrcer"
   url: https://twitter.com/@Windowsrcer
 - name: Gary Kwong
+  bugs: [1906981, 1915249]
   date: 2024-08-30
   url: https://www.ygitsoftware.com/
 - name: Om Apip
+  bugs: [1872841]
   date: 2024-08-27
 - name: Gregory Pappas
+  bugs: [1906744]
   date: 2024-08-20
 - name: Dohyun Lee
+  bugs: [1908496]
   date: 2024-08-20
   twitter: "@l33d0hyun"
   url: https://twitter.com/@l33d0hyun
 - name: Seunghyun Lee (@0x10n)
+  bugs: [1911909]
   date: 2024-08-20
 - name: "Rifa'i Rejal Maynando"
+  bugs: [1873367]
   date: 2024-08-06
   url: https://www.linkedin.com/in/rnando/
 - name: Raphael Shaniyazov
+  bugs: [1886469, 1892296, 1894891]
   date: 2024-08-06
 - name: Yangkang of 360 ATA Team
+  bugs: [1907806]
   date: 2024-08-06
   twitter: "@dnpushme"
   url: https://twitter.com/@dnpushme
 - name: Shaheen Fazim
+  bugs: [1836786, 1839074, 1875354, 1897648, 1908344, 1912537]
   date: 2024-08-06
   twitter: "@shaheenfazim"
   url: https://twitter.com/@shaheenfazim
 - name: P Umar Farooq
+  bugs: [1877820]
   date: 2024-07-30
 - name: Irvan Kurniawan (sourc7)
+  bugs: [1906727]
   date: 2024-07-30
   url: https://www.linkedin.com/in/sourc7/
 - name: Dalmurino
+  bugs: [1902307]
   date: 2024-07-23
 - name: Kirtikumar Anandrao Ramchandani
+  bugs: [1891319]
   date: 2024-07-16
 - name: Nan Wang
+  bugs: [1903041]
   date: 2024-07-16
   twitter: "@eternalsakura13"
   url: https://twitter.com/@eternalsakura13
 - name: pwn2car
+  bugs: [1888340]
   date: 2024-07-02
 - name: Nils Bars
+  bugs: [1900523, 1902983]
   date: 2024-06-19
 - name: Ronald Crane
+  bugs: [1748105, 1886598, 1893075, 1893332, 1895032]
   date: 2024-06-18
   url: https://www.zippenhop.com/
 - name: Dalmurino
+  bugs: [1902305]
   date: 2024-06-18
 - name: Paul Ducos-Saksela
+  bugs: [1821839]
   date: 2024-06-11
 - name: Bahaa Naamneh
+  bugs: [1871488]
   date: 2024-06-11
 - name: Raphael Shaniyazov
+  bugs: [1883396, 1891234]
   date: 2024-06-11
 - name: Irvan Kurniawan (sourc7)
+  bugs: [1839258, 1893270, 1893891, 1895081, 1895579, 1896555]
   date: 2024-06-11
   url: https://www.linkedin.com/in/sourc7/
 - name: Aidan Stephenson and Yannik Marchand.
+  bugs: [1880374]
   date: 2024-05-28
 - name: Lukas Bernhard
+  bugs: [1886683, 1888892, 1895055, 1895086]
   date: 2024-05-28
 - name: Axel Chong
+  bugs: [1837514]
   date: 2024-05-21
 - name: Muneaki Nishimura (a.k.a. nishimunea)
+  bugs: [1878489]
   date: 2024-05-21
 - name: Adam Berry
+  bugs: [1878578]
   date: 2024-05-21
 - name: James Lee
+  bugs: [1874560]
   date: 2024-05-14
   twitter: "@Windowsrcer"
   url: https://twitter.com/@Windowsrcer
 - name: Luan Herrera
+  bugs: [1888695]
   date: 2024-05-14
 - name: jackyzy823
+  bugs: [1889066]
   date: 2024-05-14
 - name: Hafiizh
+  bugs: [1871214, 1871217, 1886082]
   date: 2024-05-07
   url: https://www.linkedin.com/in/hafiizh-7aa6bb31/
 - name: Satoki Tsuji
+  bugs: [1883693]
   date: 2024-05-07
 - name: Thomas Rinsma
+  bugs: [1893645]
   date: 2024-04-30
 - name: Shaheen Fazim
+  bugs: [1886108]
   date: 2024-04-16
   twitter: "@shaheenfazim"
   url: https://twitter.com/@shaheenfazim
 - name: Nan Wang
+  bugs: [1884518, 1885829, 1889317]
   date: 2024-04-16
   twitter: "@eternalsakura13"
   url: https://twitter.com/@eternalsakura13
 - name: Jędrzej Krysztofiak
+  bugs: [1887320]
   date: 2024-04-02
 - name: Ronald Crane
+  bugs: [1870414, 1874489, 1879444, 1880692, 1883158, 1884457]
   date: 2024-03-26
   url: https://www.zippenhop.com/
 - name: Gary Kwong
+  bugs: [1870925, 1871618, 1874502, 1877357, 1879939, 1881417, 1884427]
   date: 2024-03-26
   url: https://www.ygitsoftware.com/
 - name: Lukas Bernhard
+  bugs: [1871089, 1871947, 1884552, 1885828]
   date: 2024-03-26
 - name: Gregory Pappas
+  bugs: [1883678]
   date: 2024-03-26
 - name: Islam
+  bugs: [1875248]
   date: 2024-03-23
 - name: Hanno Böck
+  bugs: [1870262, 1870579]
   date: 2024-03-19
   url: https://hboeck.de/
 - name: Nan Wang
+  bugs: [1883944]
   date: 2024-03-19
   twitter: "@eternalsakura13"
   url: https://twitter.com/@eternalsakura13
 - name: P1umer
+  bugs: [1879237, 1880719, 1882481]
   date: 2024-03-12
 - name: Nan Wang
+  bugs: [1882751]
   date: 2024-03-12
   twitter: "@eternalsakura13"
   url: https://twitter.com/@eternalsakura13
 - name: goodbyeselene
+  bugs: [1872920]
   date: 2024-03-05
 - name: Hafiizh
+  bugs: [1828259, 1833814, 1860065, 1876675]
   date: 2024-03-05
   url: https://www.linkedin.com/in/hafiizh-7aa6bb31/
 - name: James Lee
+  bugs: [1855030, 1855575, 1860075, 1863831, 1868003, 1868005]
   date: 2024-03-05
   twitter: "@Windowsrcer"
   url: https://twitter.com/@Windowsrcer
 - name: Satoki Tsuji
+  bugs: [1770094]
   date: 2024-02-20
 - name: Shaheen Fazim
+  bugs: [1866100]
   date: 2024-02-20
   twitter: "@shaheenfazim"
   url: https://twitter.com/@shaheenfazim
 - name: Muneaki Nishimura (a.k.a. nishimunea)
+  bugs: [1850158, 1863788, 1879739]
   date: 2024-02-20
 - name: scarlet
+  bugs: [1816390]
   date: 2024-02-06
 - name: Yaksh Bariya
+  bugs: [1868314]
   date: 2024-02-06
 - name: Andrew McCreight [:mccr8]
+  bugs: [1877879]
   date: 2024-02-06
 - name: Artem Chaikin and Kyle Hickinson - Brave Software
+  bugs: [1875925]
   date: 2024-02-06
 - name: Max Inden
+  bugs: [1875701]
   date: 2024-02-05
 - name: Renan Rios (hyhy_100)
+  bugs: [1864587]
   date: 2024-01-30
   twitter: "@hyhy_100"
   url: https://twitter.com/@hyhy_100
 - name: Johan Carlsson
+  bugs: [1864385]
   date: 2024-01-23
   url: https://www.linkedin.com/in/joaxcar
 - name: Narendra Bhati from Suma Soft Pvt. Ltd
+  bugs: [1873223]
   date: 2024-01-23
   twitter: "@imnarendrabhati"
   url: https://twitter.com/@imnarendrabhati
 - name: Dohyun Lee
+  bugs: [1843782]
   date: 2024-01-09
   twitter: "@l33d0hyun"
   url: https://twitter.com/@l33d0hyun
 - name: Yangkang of 360 ATA Team
+  bugs: [1871838]
   date: 2024-01-09
   twitter: "@dnpushme"
   url: https://twitter.com/@dnpushme
 - name: Irvan Kurniawan (sourc7)
+  bugs: [1791283, 1826791, 1838197, 1840144, 1868629]
   date: 2023-12-19
   url: https://www.linkedin.com/in/sourc7/
 - name: Ronald Crane
+  bugs: [1813337, 1868673, 1868901]
   date: 2023-12-19
   url: https://www.zippenhop.com/
 - name: Hafiizh
+  bugs: [1823316, 1857430, 1863083, 1863863]
   date: 2023-12-19
   url: https://www.linkedin.com/in/hafiizh-7aa6bb31/
 - name: Axel Chong
+  bugs: [1865914]
   date: 2023-12-05
 - name: mozbugz
+  bugs: [1865488]
   date: 2023-12-05
 - name: Young Min Kim (CompSec Lab at Seoul National University)
+  bugs: [1783504]
   date: 2023-11-28
   twitter: "@ylemkimon"
   url: https://twitter.com/@ylemkimon
 - name: Yangkang of 360 ATA Team
+  bugs: [1854076, 1861344, 1864118]
   date: 2023-11-28
   twitter: "@dnpushme"
   url: https://twitter.com/@dnpushme
 - name: Kent Bayron
+  bugs: [1844025]
   date: 2023-11-28
 - name: P1umer
+  bugs: [1862473]
   date: 2023-11-14
 - name: Muneaki Nishimura (a.k.a. nishimunea)
+  bugs: [1850200, 1861405, 1861420]
   date: 2023-11-14
 - name: JSec of Hayyim Security
+  bugs: [1841050]
   date: 2023-11-07
 - name: Edward "JankhJankh" Prior
+  bugs: [1828334]
   date: 2023-11-07
 - name: Looben Yang
+  bugs: [1856765]
   date: 2023-10-24
 - name: Rachmat Abdul Rokhim
+  bugs: [1858570]
   date: 2023-10-24
 - name: Shanbo Chen (Reshahar) of NSFOCUS Tianji Lab.
+  bugs: [1860001]
   date: 2023-10-24
 - name: Luan Herrera
+  bugs: [1741034]
   date: 2023-10-17
 - name: Irwan
+  bugs: [1850019]
   date: 2023-10-17
 - name: Yaswant (Az3z3l)
+  bugs: [1800587]
   date: 2023-10-10
   twitter: "@Az3z3l"
   url: https://twitter.com/Az3z3l
 - name: Kaiden Milby
   date: 2023-10-10
 - name: Godson Bastin
+  bugs: [1801501]
   date: 2023-10-03
 - name: Zeyu Zhang
+  bugs: [1817848]
   date: 2023-10-03
 - name: Meta-Press.es Dev Team
+  bugs: [1848694]
   date: 2023-10-03
 - name: Lukas Bernhard
+  bugs: [1845248, 1847397, 1851599]
   date: 2023-09-19
 - name: Dohyun Lee
+  bugs: [1810280]
   date: 2023-09-12
   twitter: "@l33d0hyun"
   url: https://twitter.com/@l33d0hyun
 - name: pwn2car
+  bugs: [1836705]
   date: 2023-09-12
 - name: Yangkang of 360 ATA Team
+  bugs: [1848901, 1849704]
   date: 2023-09-12
   twitter: "@dnpushme"
   url: https://twitter.com/@dnpushme
 - name: salah eddine louffidi
+  bugs: [1848199]
   date: 2023-09-06
 - name: sonakkbi
+  bugs: [1846683, 1846685, 1846686, 1846687, 1846688, 1846689]
   date: 2023-09-05
 - name: Shaheen Fazim
+  bugs: [1823720, 1845739]
   date: 2023-09-05
   twitter: "@shaheenfazim"
   url: https://twitter.com/@shaheenfazim
 - name: Ronald Crane
+  bugs: [1823172, 1823551, 1848454]
   date: 2023-08-29
   url: https://www.zippenhop.com/
 - name: fffvr
+  bugs: [1846694]
   date: 2023-08-15
 - name: Axel Chong
+  bugs: [1791322, 1791733, 1818679, 1839073]
   date: 2023-08-08
 - name: P Umar Farooq
+  bugs: [1839079, 1840777, 1843758]
   date: 2023-08-01
 - name: Yu Chendong
+  bugs: [1824420]
   date: 2023-08-01
 - name: Irvan Kurniawan (sourc7)
+  bugs: [1839007, 1841368]
   date: 2023-07-25
   url: https://www.linkedin.com/in/sourc7/
 - name: Looben Yang
+  bugs: [1840273]
   date: 2023-07-25
 - name: Muneaki Nishimura (a.k.a. nishimunea)
+  bugs: [1840958]
   date: 2023-07-25
 - name: Kazuki Nomoto
+  bugs: [1786934, 1787034]
   date: 2023-07-18
   url: https://nomokazu.com/
 - name: Lohith Gowda M
+  bugs: [1837916]
   date: 2023-07-18
   url: https://hackerone.com/lohigowda
 - name: zx from qriousec
+  bugs: [1821959, 1834711]
   date: 2023-06-27
 - name: Meta-Press.es Dev Team
+  bugs: [1837993]
   date: 2023-06-27
 - name: Martin Hostettler
+  bugs: [1839464]
   date: 2023-06-27
 - name: P Umar Farooq
+  bugs: [1837675]
   date: 2023-06-27
 - name: Ameen Basha M K
+  bugs: [1810191, 1813299, 1828429]
   date: 2023-06-13
   twitter: "@ameenbasha111"
   url: https://twitter.com/@ameenbasha111
 - name: Hafiizh
+  bugs: [1821884, 1821886, 1826116, 1826622, 1832627]
   date: 2023-06-13
   url: https://www.linkedin.com/in/hafiizh-7aa6bb31/
 - name: Irvan Kurniawan (sourc7)
+  bugs: [1707956, 1718566, 1818797, 1824892, 1826002, 1832195]
   date: 2023-06-13
   url: https://www.linkedin.com/in/sourc7/
 - name: chaykin.artem
+  bugs: [1795496]
   date: 2023-06-07
 - name: Irwan
+  bugs: [1790913]
   date: 2023-06-06
 - name: Shaheen Fazim
+  bugs: [1816287]
   date: 2023-05-23
   twitter: "@shaheenfazim"
   url: https://twitter.com/@shaheenfazim
 - name: Gary Kwong
+  bugs: [1831232, 1833517]
   date: 2023-05-23
   url: https://www.ygitsoftware.com/
 - name: Rohan Sharma
+  bugs: [1704420]
   date: 2023-05-17
 - name: Ronald Crane
+  bugs: [1820359, 1826666, 1827035]
   date: 2023-05-16
   url: https://www.zippenhop.com/
 - name: Jun Kokatsu
+  bugs: [1811999]
   date: 2023-04-18
   twitter: "@shhnjk "
   url: https://twitter.com/@shhnjk 
 - name: P1umer and xmzyshypnc
+  bugs: [1823379]
   date: 2023-04-18
 - name: Dohyun Lee
+  bugs: [1794292]
   date: 2023-04-04
   twitter: "@l33d0hyun"
   url: https://twitter.com/@l33d0hyun
 - name: Looben Yang
+  bugs: [1823365, 1824200]
   date: 2023-04-04
 - name: Luan Herrera
+  bugs: [1794268]
   date: 2022-12-13
 - name: Mohamed Sabt & Gwendal Patat
+  bugs: [1801134]
   date: 2022-12-13
 - name: Vadim
   date: 2022-12-13
 - name: Axel Chong
+  bugs: [1777206, 1791201]
   date: 2022-11-22
 - name: Irvan Kurniawan (sourc7)
+  bugs: [1789371, 1790815, 1793829]
   date: 2022-11-15
   url: https://www.linkedin.com/in/sourc7/
 - name: Atte Kettunen
+  bugs: [1749292, 1791314]
   date: 2022-11-08
   twitter: "@attekett"
   url: https://twitter.com/@attekett
 - name: April King
+  bugs: [1797235]
   date: 2022-11-08
   url: https://grayduck.mn
 - name: Matthias Zoellner
+  bugs: [1746139]
   date: 2022-11-05
 - name: Sam Ezeh
+  bugs: [1767194]
   date: 2022-11-01
 - name: Tim Coen
+  bugs: [1771161]
   date: 2022-11-01
 - name: Hafiizh
+  bugs: [1789348, 1795815]
   date: 2022-10-26
   url: https://www.linkedin.com/in/hafiizh-7aa6bb31/
 - name: scarlet
+  bugs: [1790311]
   date: 2022-10-26
 - name: Armin Ebert
+  bugs: [1791029, 1793314]
   date: 2022-10-26
   url: https://rawsec.net/
 - name: Jayateertha Guruprasad
+  bugs: [1793551]
   date: 2022-10-26
   twitter: "JayateerthaG"
   url: https://twitter.com/JayateerthaG
 - name: James Lee
+  bugs: [1789128]
   date: 2022-10-11
   twitter: "@Windowsrcer"
   url: https://twitter.com/@Windowsrcer
 - name: Suhwan Song of SNU CompSec Lab
+  bugs: [1792643]
   date: 2022-10-11
 - name: Willy R. Vasquez (wrv)
+  bugs: [1767360]
   date: 2022-10-07
 - name: Ronald Crane
+  bugs: [1716082]
   date: 2022-10-06
   url: https://www.zippenhop.com/
 - name: Axel Chong
+  bugs: [1779993]
   date: 2022-09-20
 - name: Andrei Enache
+  bugs: [1789439]
   date: 2022-09-20
 - name: Armin Ebert
+  bugs: [1690979, 1769155, 1771685, 1782211, 1787633, 1789503]
   date: 2022-09-20
   url: https://rawsec.net/
 - name: Irvan Kurniawan (sourc7)
+  bugs: [1737722, 1743329]
   date: 2022-08-23
   url: https://www.linkedin.com/in/sourc7/
 - name: Abraruddin Khan and Omair
+  bugs: [1755806]
   date: 2022-08-23
   url: https://krashconsulting.com
 - name: Muhammad R. Maulana
@@ -1041,90 +1326,122 @@ names:
   twitter: "@agamimaulana"
   url: https://twitter.com/@agamimaulana
 - name: Gary Kwong of yGit Software
+  bugs: [1777604]
   date: 2022-07-28
   url: https://www.ygitsoftware.com/
 - name: Muneaki Nishimura (a.k.a. nishimunea)
+  bugs: [1653822]
   date: 2022-07-19
 - name: Young Min Kim (CompSec Lab at Seoul National University)
+  bugs: [1750422]
   date: 2022-07-19
   twitter: "@ylemkimon"
   url: https://twitter.com/@ylemkimon
 - name: akucybersec
+  bugs: [1773894]
   date: 2022-07-12
 - name: Gustavo Grieco
+  bugs: [1387919]
   date: 2022-07-05
 - name: Kirin of Tencent Security Xuanwu Lab
+  bugs: [1764112]
   date: 2022-07-05
   twitter: "@Pwnrin"
   url: https://twitter.com/@Pwnrin
 - name: Muneaki Nishimura (a.k.a. nishimunea)
+  bugs: [1654416, 1767205]
   date: 2022-06-28
 - name: Irwan
+  bugs: [1759951]
   date: 2022-06-28
 - name: Young Min Kim (CompSec Lab at Seoul National University)
+  bugs: [1745324]
   date: 2022-06-14
 - name: Irvan Kurniawan (sourc7)
+  bugs: [1694513, 1744872, 1745595, 1746448, 1756388, 1761275]
   date: 2022-06-14
   url: https://www.linkedin.com/in/sourc7/
 - name: Armin Ebert
+  bugs: [1755081, 1765951, 1768537, 1770888]
   date: 2022-06-14
   url: https://rawsec.net/
 - name: Jean Paul Degabriele
+  bugs: [1740549]
   date: 2022-05-31
 - name: Atte Kettunen
+  bugs: [1743767]
   date: 2022-05-31
   twitter: "@attekett"
   url: https://twitter.com/@attekett
 - name: Cybeats PSI Team
+  bugs: [1767590]
   date: 2022-05-31
 - name: Jannis Rautenstrauch
+  bugs: [1731614]
   date: 2022-05-24
 - name: Kirin of Tencent Security Xuanwu Lab
+  bugs: [1768337]
   date: 2022-05-24
   twitter: "@Pwnrin"
   url: https://twitter.com/@Pwnrin
 - name: Gary Kwong of yGit Software
+  bugs: [1766806, 1769410]
   date: 2022-05-24
   url: https://www.ygitsoftware.com/
 - name: Johan Francsics
   date: 2022-05-24
 - name: Ronald Crane
+  bugs: [1454072]
   date: 2022-05-11
   url: https://www.zippenhop.com/
 - name: Luan Herrera
+  bugs: [1735923]
   date: 2022-05-10
 - name: Linus Särud
+  bugs: [1747388]
   date: 2022-05-10
   url: https://zulln.se/
 - name: Nikita Moiseyev (mirror12k)
+  bugs: [1760024]
   date: 2022-05-10
 - name: Chaobin Zhang
+  bugs: [1765049]
   date: 2022-05-10
   url: https://github.com/zhchbin
 - name: Gareth Heyes
+  bugs: [1757210]
   date: 2022-05-03
   url: https://garethheyes.co.uk/
 - name: Naly
+  bugs: [1657032]
   date: 2022-04-12
 - name: Hafiizh
+  bugs: [1740459]
   date: 2022-04-12
   url: https://www.linkedin.com/in/hafiizh-7aa6bb31/
 - name: Trung Pham
+  bugs: [1761981]
   date: 2022-04-12
 - name: Suhwan Song of SNU CompSec Lab
+  bugs: [1735265]
   date: 2022-04-05
 - name: Mateusz Sionkowski
+  bugs: [1760674]
   date: 2022-04-05
   url: https://www.youtube.com/channel/UCUbCnVzyWy4087CAxvL-cbA
 - name: Alison Huffman
+  bugs: [1654986]
   date: 2022-03-22
 - name: Sohom Datta
+  bugs: [1751678]
   date: 2022-03-22
 - name: Axel '0vercl0k' Souchet
+  bugs: [1755621]
   date: 2022-03-15
   twitter: "@0vercl0k"
   url: https://twitter.com/@0vercl0k
 - name: Yangkang of 360 ATA Team
+  bugs: [1758062, 1758070]
   date: 2022-03-08
   twitter: "@dnpushme"
   url: https://twitter.com/@dnpushme
@@ -1133,6 +1450,7 @@ names:
   twitter: "@hosselot"
   url: https://twitter.com/@hosselot
 - name: Kirin of Tencent Security Xuanwu Lab
+  bugs: [1751609]
   date: 2022-03-01
   twitter: "@Pwnrin"
   url: https://twitter.com/@Pwnrin
@@ -1141,54 +1459,70 @@ names:
   twitter: "@maxpl0it"
   url: https://twitter.com/@maxpl0it
 - name: Rohan Sharma
+  bugs: [1704422]
   date: 2022-02-22
 - name: sharan
+  bugs: [1725626]
   date: 2022-02-22
 - name: Ed McManus
+  bugs: [1744352]
   date: 2022-02-22
 - name: bo13oy of Qihoo 360 Vulcan Team
+  bugs: [1745874, 1747526, 1750679]
   date: 2022-02-22
 - name: Dohyun Lee of DNSLab Korea University
+  bugs: [1752291]
   date: 2022-02-22
   twitter: "@l33d0hyun"
   url: https://twitter.com/@l33d0hyun
 - name: Aryan Sinha
+  bugs: [1741515]
   date: 2022-02-15
   url: https://www.aryansinha.com/
 - name: Brandon Perry
   date: 2022-02-10
 - name: Armin Ebert
+  bugs: [1752888]
   date: 2022-02-08
   url: https://rawsec.net/
 - name: Young Min Kim (CompSec Lab at Seoul National University)
+  bugs: [1741888]
   date: 2022-02-01
 - name: Muhammad R. Maulana
   date: 2022-02-01
   twitter: "@agamimaulana"
   url: https://twitter.com/@agamimaulana
 - name: Kirtikumar Anandrao Ramchandani (@Kirtikumar_A_R); Patrick Walker (@HomeSen); & Eric Lawrence (@ericlaw)
+  bugs: [1728742]
   date: 2022-01-25
 - name: Gary Kwong of yGit Software
+  bugs: [1750935]
   date: 2022-01-25
   url: https://www.ygitsoftware.com/
 - name: Codermak
+  bugs: [1738320]
   date: 2022-01-18
   twitter: "@arshadkazmi42"
   url: https://twitter.com/@arshadkazmi42
 - name: Johan Carlsson
+  bugs: [1739957]
   date: 2022-01-18
   url: https://www.linkedin.com/in/joaxcar
 - name: James Lee
+  bugs: [1743931]
   date: 2022-01-11
   twitter: "@Windowsrcer"
   url: https://twitter.com/@Windowsrcer
 - name: Darkspirit
+  bugs: [1748602]
   date: 2022-01-11
 - name: Alexey(lalka)
   date: 2022-01-06
 - name: Luan Herrera
+  bugs: [1740985]
   date: 2022-01-04
 - name: Irvan Kurniawan (sourc7)
+  bugs: [1695986, 1739220, 1743226]
   date: 2022-01-04
   url: https://www.linkedin.com/in/sourc7/
 - name: Mart Gil Robles (Mart at FlowCrypt)
@@ -1196,105 +1530,138 @@ names:
   twitter: "@_martgilph"
   url: https://twitter.com/_martgilph
 - name: Matheus Vrech
+  bugs: [1692655]
   date: 2021-12-14
 - name: Ronald Crane
+  bugs: [1713955]
   date: 2021-12-14
   url: https://www.zippenhop.com/
 - name: Seb Patane
+  bugs: [1732435]
   date: 2021-12-14
   twitter: "@sebbity"
   url: https://twitter.com/@sebbity
 - name: Irvan Kurniawan (sourc7)
+  bugs: [1730156, 1730750, 1735071, 1739091, 1739923, 1740389]
   date: 2021-12-14
   url: https://www.linkedin.com/in/sourc7/
 - name: bo13oy of Cyber Kunlun Lab
+  bugs: [1738237, 1742334]
   date: 2021-12-14
 - name: Atte Kettunen
+  bugs: [1742382]
   date: 2021-12-14
   twitter: "@attekett"
   url: https://twitter.com/@attekett
 - name: Alesandro Ortiz
+  bugs: [1705211, 1744158]
   date: 2021-12-14
 - name: Mattias Jacobsson
+  bugs: [1737252]
   date: 2021-11-30
 - name: Irwan
+  bugs: [1739934]
   date: 2021-11-30
 - name: Sunwoo Kim and Youngmin Kim of SNU CompSec Lab
+  bugs: [1730120]
   date: 2021-11-23
 - name: Asumu Takikawa and Ioanna Dimitriou
+  bugs: [1739683]
   date: 2021-11-23
 - name: smolikraphael
+  bugs: [1723281]
   date: 2021-11-09
 - name: Armin Ebert
+  bugs: [1729517, 1738418]
   date: 2021-11-09
   url: https://rawsec.net/
 - name: Jun Kokatsu
+  bugs: [1735034]
   date: 2021-11-02
   twitter: "@shhnjk"
   url: https://twitter.com/@shhnjk
 - name: Raphael Shaniyazov
+  bugs: [1366818]
   date: 2021-10-26
 - name: Hanno Böck
+  bugs: [1530175]
   date: 2021-10-26
   url: https://hboeck.de/
 - name: Ademar Nowasky Junior
+  bugs: [1718571]
   date: 2021-10-26
   twitter: "@nowaskyjr"
   url: https://twitter.com/@nowaskyjr
 - name: Hou JingYi
+  bugs: [1731779]
   date: 2021-10-26
   twitter: "@hjy79425575"
   url: https://twitter.com/@hjy79425575
 - name: Hafiizh
+  bugs: [1736886]
   date: 2021-10-26
   url: https://www.linkedin.com/in/hafiizh-7aa6bb31/
 - name: Cornelius Aschermann, Sergej Schumilo
   date: 2021-09-29
 - name: Ademar Nowasky Junior
+  bugs: [1719203]
   date: 2021-09-28
   twitter: "@nowaskyjr"
   url: https://twitter.com/@nowaskyjr
 - name: kageshiron
   date: 2021-09-28
 - name: Irvan Kurniawan (sourc7)
+  bugs: [1716129, 1717922, 1718796, 1719088, 1722204, 1726621]
   date: 2021-09-28
   url: https://www.linkedin.com/in/sourc7/
 - name: m.cooolie
   date: 2021-09-28
 - name: Yangkang of 360 ATA Team
+  bugs: [1725335, 1729642]
   date: 2021-09-07
   twitter: "@dnpushme"
   url: https://twitter.com/@dnpushme
 - name: James Lee
+  bugs: [1719026, 1721107]
   date: 2021-08-24
   twitter: "@Windowsrcer"
   url: https://twitter.com/@Windowsrcer
 - name: Piotr Duszynski
+  bugs: [1704110]
   date: 2021-08-17
 - name: Maor Kleinberger
+  bugs: [1716028]
   date: 2021-08-10
 - name: Lukas Bernhard
+  bugs: [1715318, 1720031]
   date: 2021-07-27
 - name: Irvan Kurniawan (sourc7)
+  bugs: [1679589, 1696816, 1699835, 1700235, 1701942, 1706401, 1709976, 1713259]
   date: 2021-06-15
   url: https://www.linkedin.com/in/sourc7/
 - name: Gary Kwong of yGit Software
+  bugs: [1707422, 1707774]
   date: 2021-06-08
   url: https://www.ygitsoftware.com/
 - name: Zhong Zhaochen
+  bugs: [1663571]
   date: 2021-06-01
 - name: Harshit Mahendra
+  bugs: [1709257]
   date: 2021-06-01
   twitter: "@hm_harshit"
   url: https://twitter.com/@hm_harshit
 - name: Muneaki Nishimura (a.k.a. nishimunea)
+  bugs: [1670127]
   date: 2021-05-25
 - name: Ronald Crane
+  bugs: [1706501]
   date: 2021-04-27
   url: https://www.zippenhop.com/
 - name: Tomer Laor; Naif Mehanna; Vitaly Dyadyuk; Antonin Durey; Pierre Laperdrix; Clémentine Maurice; Yossi Oren; Romain Rouvoy; Walter Rudametkin; Yuval Yarom
   date: 2021-04-13
 - name: Abraruddin Khan and Omair
+  bugs: [1699077]
   date: 2021-04-13
   url: https://krashconsulting.com
 - name: Daniel Santos
@@ -1302,30 +1669,40 @@ names:
   twitter: "@bananabr"
   url: https://twitter.com/@bananabr
 - name: Dongsung Kim
+  bugs: [1658869]
   date: 2021-04-06
   twitter: "@kid1ng"
   url: https://twitter.com/@kid1ng
 - name: Armin Ebert
+  bugs: [1690146]
   date: 2021-04-06
   url: https://rawsec.net/
 - name: Colin D. Munro
+  bugs: [1701834]
   date: 2021-04-06
   url: https://www.tattiebogle.net/
 - name: Muneaki Nishimura (a.k.a. nishimunea)
+  bugs: [1684349, 1684624, 1684627]
   date: 2021-03-23
 - name: Irvan Kurniawan (sourc7)
+  bugs: [1684837, 1692684, 1694698, 1696844]
   date: 2021-03-23
   url: https://www.linkedin.com/in/sourc7/
 - name: Abraruddin Khan and Omair
+  bugs: [1692832]
   date: 2021-03-16
   url: https://krashconsulting.com
 - name: Hany Ragab; Enrico Barberis; Herbert Bos; Cristiano Giuffrida
+  bugs: [1692972]
   date: 2021-03-16
 - name: Ben Seri
+  bugs: [1676868]
   date: 2021-03-02
 - name: Masato Kinugawa
+  bugs: [1528997, 1542194]
   date: 2021-02-23
 - name: Ademar Nowasky Junior
+  bugs: [1687342]
   date: 2021-02-23
   twitter: "@nowaskyjr"
   url: https://twitter.com/@nowaskyjr
@@ -1333,86 +1710,115 @@ names:
   date: 2021-02-23
   url: https://rawsec.net/
 - name: Gabriel Corona
+  bugs: [1652612]
   date: 2021-02-09
 - name: Arvind
   date: 2021-02-09
   twitter: "@ar_arv1nd"
 - name: fatal0
+  bugs: [1684761]
   date: 2021-02-02
   twitter: "@fatal0_"
   url: https://twitter.com/@fatal0_
 - name: Brian Carpenter of Geeknik Labs & Farm
+  bugs: [1678938, 1685145]
   date: 2021-02-01
   twitter: "@geeknik"
   url: https://twitter.com/@geeknik
 - name: Vijay Tikudave
+  bugs: [1683536]
   date: 2021-01-26
 - name: Michał Bentkowski
+  bugs: [1683627]
   date: 2021-01-26
 - name: Vladimir Dmitriev
+  bugs: [1684300]
   date: 2021-01-26
 - name: Gary Kwong of yGit Software
+  bugs: [1684020]
   date: 2021-01-12
   url: https://www.ygitsoftware.com/
 - name: Nils André-Chang
+  bugs: [1684623]
   date: 2021-01-12
   url: https://www.nilsand.re/
 - name: Luca Moretto
+  bugs: [1678545]
   date: 2021-01-05
 - name: Muhammad R. Maulana
   date: 2020-12-21
   twitter: "@agamimaulana"
   url: https://twitter.com/@agamimaulana
 - name: Muneaki Nishimura (a.k.a. nishimunea)
+  bugs: [1657026, 1658672, 1658865, 1659035, 1663261]
   date: 2020-12-15
 - name: Irvan Kurniawan (sourc7)
+  bugs: [1666300, 1667113, 1675755]
   date: 2020-12-15
   url: https://www.linkedin.com/in/sourc7/
 - name: Nimrod Aviram
+  bugs: [1562841]
   date: 2020-12-08
 - name: Pete Freitag
   date: 2020-12-08
   url: "https://foundeo.com/"
 - name: Michał Bentkowski
+  bugs: [1669945]
   date: 2020-12-08
 - name: Gary Kwong of yGit Software
+  bugs: [1666051, 1667685, 1678785]
   date: 2020-12-08
   url: https://www.ygitsoftware.com/
 - name: Pham Bao of VinCSS (Member of Vingroup)
+  bugs: [1681022]
   date: 2020-12-08
 - name: Abraruddin Khan and Omair
+  bugs: [1663466]
   date: 2020-12-01
   url: https://krashconsulting.com
 - name: Gabriel Corona
+  bugs: [1672528]
   date: 2020-12-01
 - name: Nils André-Chang
+  bugs: [1673847]
   date: 2020-12-01
   url: https://www.nilsand.re/
 - name: Abdulrahman Alqabandi of Microsoft Browser Vulnerability Research
+  bugs: [1338637, 1656741]
   date: 2020-11-19
   twitter: "@qab"
   url: https://twitter.com/@qab
 - name: Ulrich Günther
+  bugs: [1674541]
   date: 2020-11-10
 - name: Bharadwaj Machiraju
+  bugs: [1669466]
   date: 2020-11-03
 - name: Pedro Oliveira
+  bugs: [1661071]
   date: 2020-10-27
   twitter: "@kanytu"
   url: https://twitter.com/@kanytu
 - name: Zijie Zhao
+  bugs: [1670358]
   date: 2020-10-27
 - name: David Schütz
+  bugs: [1641287]
   date: 2020-10-26
 - name: Yassine Tioual
+  bugs: [1657916]
   date: 2020-10-21
 - name: Kaizer Soze
+  bugs: [1665820]
   date: 2020-10-20
 - name: XiaoXiong(superxx) of Qihoo 360 CERT
+  bugs: [1649160]
   date: 2020-10-13
 - name: Aleksejs Popovs
+  bugs: [1642028]
   date: 2020-10-13
 - name: Brian Carpenter of Geeknik Labs & Farm
+  bugs: [1669096]
   date: 2020-10-13
   twitter: "@geeknik"
   url: https://twitter.com/@geeknik
@@ -1423,89 +1829,119 @@ names:
 - name: Krzysztof `vnd’ Katowicz-Kowalewski
   date: 2020-09-28
 - name: Rotem Kerner
+  bugs: [1658881]
   date: 2020-09-22
   url: http://www.kerneronsec.com/
 - name: Lukas Bernhard
+  bugs: [1660211]
   date: 2020-09-22
 - name: Brian Carpenter of Geeknik Labs & Farm
+  bugs: [1654211, 1663452]
   date: 2020-09-22
   twitter: "@geeknik"
   url: https://twitter.com/@geeknik
 - name: Michael Smith
+  bugs: [1535795]
   date: 2020-09-08
 - name: Daniel Fröjdendahl
+  bugs: [1646140]
   date: 2020-09-08
 - name: Iain Nicol of Iainteractive
+  bugs: [1645915]
   date: 2020-09-01
   url: https://www.iainnicol.com/
 - name: Kaizer Soze
+  bugs: [1658214]
   date: 2020-08-27
 - name: Richard Thomas and Tom Chothia of University of Birmingham
+  bugs: [1641487]
   date: 2020-08-25
 - name: Gary Kwong of yGit Software
+  bugs: [1652854, 1657812]
   date: 2020-08-11
   url: https://www.ygitsoftware.com/
 - name: Andrea Palazzo
   date: 2020-08-06
 - name: obmi
+  bugs: [1634872]
   date: 2020-07-28
 - name: Guido Vranken
+  bugs: [1636771]
   date: 2020-07-28
 - name: Xiaoyin Liu
+  bugs: [1643199]
   date: 2020-07-28
 - name: superxx
+  bugs: [1649160]
   date: 2020-07-28
 - name: Pedro Oliveira
   date: 2020-07-28
   twitter: "@kanytu"
   url: https://twitter.com/@kanytu
 - name: Muneaki Nishimura (a.k.a. nishimunea)
+  bugs: [1653827, 1654131, 1656746, 1656747, 1657055, 1657251, 1658184, 1658231]
   date: 2020-07-28
 - name: Johannes Wikner; Cristiano Giuffrida; Herbert Bos and Kaveh Razavi of VUSec; Vrije Universiteit Amsterdam
+  bugs: [1644174]
   date: 2020-07-14
 - name: Gunes Acar
+  bugs: [1450853]
   date: 2020-07-10
 - name: Brian Smith
+  bugs: [1067214]
   date: 2020-07-08
   url: https://briansmith.org/
 - name: Andrea.
+  bugs: [1613941]
   date: 2020-07-07
 - name: Jesse Luoto
+  bugs: [1634952]
   date: 2020-06-22
   twitter: "@luotojesse"
   url: https://twitter.com/@luotojesse
 - name: Marcin 'Icewall' Noga of Cisco Talos
   date: 2020-06-22
 - name: Riccardo Ancarani
+  bugs: [1642400]
   date: 2020-06-22
   twitter: "@dottor_morte"
   url: https://twitter.com/@dottor_morte
 - name: Eliya Stein
+  bugs: [1584582]
   date: 2020-06-08
 - name: Deian Stefan
+  bugs: [1640737]
   date: 2020-06-08
 - name: Vinoth Kumar
+  bugs: [1631739, 1632387]
   date: 2020-06-02
 - name: Abdellah Nadi
   date: 2020-06-01
   url: https://hackerone.com/abdellah29
 - name: Ophir LOJKINE
+  bugs: [1614468]
   date: 2020-06-01
 - name: David Yesland
+  bugs: [1615471]
   date: 2020-06-01
 - name: Rayyan Bijoora
+  bugs: [1623888, 1629506]
   date: 2020-06-01
   twitter: "@Bijoora"
   url: https://facebook.com/Bijoora
 - name: Muneaki Nishimura (a.k.a. nishimunea)
+  bugs: [1386163]
   date: 2020-05-18
 - name: Francisco Alonso
+  bugs: [1620818, 1626728]
   date: 2020-05-18
   twitter: "@revskills"
   url: https://twitter.com/@revskills
 - name: Wen Xu of SSLab Georgia Tech
+  bugs: [1626152]
   date: 2020-05-18
 - name: Adrian
+  bugs: [1528587]
   date: 2020-03-16
 - name: Daniel Tomescu
   date: 2020-03-16
@@ -1519,48 +1955,64 @@ names:
   date: 2020-03-09
   url: https://www.linkedin.com/in/ismailtasdelen/
 - name: Ahmed Elsobky
+  bugs: [1605318]
   date: 2020-03-02
   twitter: "@0xsobky"
   url: https://twitter.com/@0xsobky
 - name: Philip Okhonko
+  bugs: [1543025]
   date: 2020-02-24
   twitter: "@sysmus28"
   url: https://twitter.com/@sysmus28
 - name: Brian Carpenter of Geeknik Labs & Farm
+  bugs: [1610880]
   date: 2020-02-24
   twitter: "@geeknik"
   url: https://twitter.com/@geeknik
 - name: Leon Visscher
+  bugs: [1614919]
   date: 2020-02-24
 - name: Luan Herrera
+  bugs: [1578317]
   date: 2020-02-10
 - name: Ophir LOJKINE
+  bugs: [1607742]
   date: 2020-02-10
 - name: Niklas Baumstark
+  bugs: [1538028, 1554110]
   date: 2020-02-03
 - name: terjanq
+  bugs: [1602944]
   date: 2020-02-03
 - name: Matheus Vrech
+  bugs: [1605814]
   date: 2020-02-03
 - name: Joshua Graham of TSS
+  bugs: [1606596]
   date: 2020-02-03
 - name: Thomas Imbert
+  bugs: [1599005, 1599008, 1610426]
   date: 2020-02-03
   twitter: "@masthoon"
   url: https://twitter.com/@masthoon
 - name: Antonio Sanso
+  bugs: [1471684]
   date: 2020-01-13
   twitter: "@asanso"
   url: https://twitter.com/@asanso
 - name: Vladimir Metnew
+  bugs: [1596668]
   date: 2020-01-13
   twitter: "@vladimir_metnew"
   url: https://twitter.com/@vladimir_metnew
 - name: Michał Bentkowski
+  bugs: [1599181, 1602843]
   date: 2020-01-06
 - name: bo13oy of Qihoo 360 Vulcan Team
+  bugs: [1603055]
   date: 2020-01-06
 - name: Anonymous
+  bugs: [1604804]
   date: 2020-01-06
 - name: Thomas Imbert
   date: 2019-12-30
@@ -1571,6 +2023,7 @@ names:
 - name: Michał Bentkowski
   date: 2019-12-13
 - name: Abdulrahman Alqabandi of Microsoft Browser Vulnerability Research
+  bugs: [1352840, 1460286]
   date: 2019-12-09
   twitter: "@qab"
   url: https://twitter.com/@qab
@@ -1585,46 +2038,59 @@ names:
   date: 2019-12-02
   url: https://facebook.com/tkrawool
 - name: Matthew Somerville
+  bugs: [1597645]
   date: 2019-12-02
 - name: Diego Calleja
+  bugs: [1586293, 1594181]
   date: 2019-11-26
 - name: Craig Disselkoen
+  bugs: [1586176]
   date: 2019-11-25
 - name: Mohammed Fayez Ahmed Albanna
   date: 2019-11-22
   url: https://www.linkedin.com/in/mohammedfayez
 - name: Looben Yang
+  bugs: [1546331]
   date: 2019-11-18
 - name: Julien Maladrie
   date: 2019-11-18
 - name: Nils
+  bugs: [1544668, 1544670, 1548816, 1551836, 1559093, 1564449, 1564821, 1566784, 1574101, 1577719, 1578671, 1581084, 1591334]
   date: 2019-11-18
 - name: Mikhail
+  bugs: [1594181]
   date: 2019-11-18
 - name: Vladimir Metnew
   date: 2019-11-14
   twitter: "@vladimir_metnew"
   url: https://twitter.com/@vladimir_metnew
 - name: Nikhil Mittal
+  bugs: [1567118]
   date: 2019-11-05
   twitter: "@c0d3G33k"
   url: https://twitter.com/@c0d3G33k
 - name: Konark Modi of Cliqz GmbH
+  bugs: [1588928]
   date: 2019-10-21
   twitter: "@konarkmodi"
   url: https://twitter.com/@konarkmodi
 - name: Holger Fuhrmannek
+  bugs: [1574980]
   date: 2019-10-07
 - name: Zhanjia Song
+  bugs: [1577107]
   date: 2019-10-07
 - name: Guido Vranken
+  bugs: [1576307, 1577953]
   date: 2019-10-07
 - name: Alexander Nagy
   date: 2019-10-01
   url: https://axen-cyber.com
 - name: Guido Vranken
+  bugs: [1576295]
   date: 2019-09-26
 - name: Nils
+  bugs: [1531277, 1532553, 1536405, 1539125, 1542465]
   date: 2019-09-23
 - name: Anurag Jain
   date: 2019-09-23
@@ -1633,18 +2099,22 @@ names:
 - name: derision.t
   date: 2019-09-16
 - name: James Lee
+  bugs: [1557763]
   date: 2019-09-09
   twitter: "@Windowsrcer"
   url: https://twitter.com/@Windowsrcer
 - name: Paul Stone of Context Information Security
+  bugs: [1559715]
   date: 2019-09-09
 - name: Prateek
   date: 2019-09-09
 - name: Luan Herrera
   date: 2019-09-03
 - name: Zhanjia Song
+  bugs: [1501152]
   date: 2019-08-26
 - name: Francisco Alonso
+  bugs: [1569493]
   date: 2019-08-26
   twitter: "@revskills"
   url: https://twitter.com/@revskills
@@ -1653,31 +2123,39 @@ names:
   twitter: "@ally_o_malley"
   url: https://twitter.com/@ally_o_malley
 - name: José María Acuña Morgado
+  bugs: [1407574]
   date: 2019-08-19
   url: https://tecnoblog.guru/
 - name: Atte Kettunen
+  bugs: [1494061]
   date: 2019-08-19
   twitter: "@attekett"
   url: https://twitter.com/@attekett
 - name: Looben Yang
+  bugs: [1545345, 1565526]
   date: 2019-08-12
 - name: Ronald Crane
+  bugs: [1475096, 1540884]
   date: 2019-08-12
   url: https://www.zippenhop.com/
 - name: Seb Patane
+  bugs: [1551913, 1552206]
   date: 2019-08-05
   twitter: "@sebbity"
   url: https://twitter.com/@sebbity
 - name: Rakesh Mane
+  bugs: [1562033]
   date: 2019-08-05
   url: https://rakeshmane.com/
 - name: Taegeon Lee
+  bugs: [1562493]
   date: 2019-08-05
 - name: Onkar Sonawane
   date: 2019-08-05
 - name: Harry Gertos
   date: 2019-07-31
 - name: Wladimir Palant
+  bugs: [1452037]
   date: 2019-07-17
 - name: Gaurav Popalghat
   date: 2019-07-17
@@ -1687,56 +2165,71 @@ names:
   date: 2019-07-16
   url: http://linkedin.com/in/karthik-kumar-reddy-3b10b4128
 - name: Hanno Böck
+  bugs: [1528481, 1542593]
   date: 2019-07-15
   url: https://hboeck.de/
 - name: Luigi Gubello
+  bugs: [1558299]
   date: 2019-07-15
   url: https://gubello.me
 - name: Mikhail
+  bugs: [1561404, 1562493]
   date: 2019-07-15
 - name: Luis Merino - Brandon Perry
+  bugs: [1553820]
   date: 2019-07-01
 - name: Brian Carpenter
+  bugs: [1556933]
   date: 2019-07-01
   twitter: "@geeknik"
   url: https://twitter.com/@geeknik
 - name:  Linus Särud
+  bugs: [1555523]
   date: 2019-06-24
 - name: Rakesh Mane
+  bugs: [1556230]
   date: 2019-06-24
   url: https://rakeshmane.com/
 - name: Gregory Smiley of Security Compass
   date: 2019-06-10
 - name: Abdulrahman Alqabandi of Microsoft Browser Vulnerability Research
+  bugs: [1317873, 1392955, 1424870, 1427448, 1429881, 1431371, 1435548, 1436159, 1488143, 1488676, 1543191]
   date: 2019-06-03
   twitter: "@qab"
   url: https://twitter.com/@qab
 - name: James Lee
+  bugs: [1549833]
   date: 2019-06-03
   twitter: "@Windowsrcer"
   url: https://twitter.com/@Windowsrcer
 - name: Niklas Baumstark
   date: 2019-05-24
 - name: crixer
+  bugs: [1532525]
   date: 2019-04-29
 - name: Tushar Rawool
   date: 2019-04-22
   url: https://facebook.com/tkrawool
 - name: Luật Nguyễn
+  bugs: [1540221]
   date: 2019-04-22
   twitter: l4wio
   url: https://twitter.com/l4wio
 - name: Thomas Imbert
+  bugs: [1542581]
   date: 2019-04-22
   twitter: "@masthoon"
   url: https://twitter.com/@masthoon
 - name: Andrey
+  bugs: [1483510]
   date: 2019-04-18
 - name: Tzachy Horesh
+  bugs: [1528939]
   date: 2019-04-09
 - name: Philip Okhonko
   date: 2019-04-09
 - name: Ronald Crane
+  bugs: [1532465, 1533554]
   date: 2019-04-08
   url: https://www.zippenhop.com/
 - name: jensvoid
@@ -1744,49 +2237,65 @@ names:
   twitter: "@jensvoid"
   url: https://twitter.com/@jensvoid
 - name: Niklas Baumstark
+  bugs: [1528829]
   date: 2019-03-21
 - name: Nils
+  bugs: [1492823, 1499861, 1509442, 1514682, 1516018]
   date: 2019-03-11
 - name: Samuel Groß
+  bugs: [1530958]
   date: 2019-03-11
 - name: Rojan Rijal
   date: 2019-03-11
 - name: Aral
+  bugs: [1506665, 1521639, 1524246]
   date: 2019-03-04
 - name: Joshua Graham of TSS & Brendan Scarvell
+  bugs: [1530103]
   date: 2019-03-04
 - name: Bruno Keith and Niklas Baumstark from the Phoenhex Team
+  bugs: [1528829]
   date: 2019-02-27
 - name: AaylaSecura1138
+  bugs: [1528909, 1526218]
   date: 2019-02-27
 - name: Tushar Rawool
   date: 2019-02-23
   url: https://facebook.com/tkrawool
 - name: cgvwzq
+  bugs: [1460538]
   date: 2019-02-19
 - name: mlfbrown
+  bugs: [1521360]
   date: 2019-02-19
 - name: Mikhail
+  bugs: [1521639]
   date: 2019-02-19
 - name: Brandon Wieser
+  bugs: [1525145]
   date: 2019-02-19
   url: https://cybersensei.io/
 - name: Jianjun Chen
+  bugs: [1447631]
   date: 2019-02-11
   twitter: whucjj
   url: https://twitter.com/whucjj
 - name: p4fg
+  bugs: [1518627]
   date: 2019-02-11
   twitter: "@p4fg"
   url: https://twitter.com/@p4fg
 - name: Kalel
+  bugs: [1524246]
   date: 2019-02-11
 - name: Ronald Crane
+  bugs: [1448505, 1458741, 1512758]
   date: 2019-02-04
   url: https://www.zippenhop.com/
 - name: Harry Gertos
   date: 2019-01-28
 - name: Abdulrahman Alqabandi of Microsoft Browser Vulnerability Research
+  bugs: [1521708]
   date: 2019-01-28
   twitter: "@qab"
   url: https://twitter.com/@qab
@@ -1794,45 +2303,58 @@ names:
   date: 2019-01-28
   url: https://hboeck.de/
 - name: R at Zero Day LLC
+  bugs: [1495011]
   date: 2019-01-07
 - name: Yaniv Frank with SophosLabs
+  bugs: [1510114]
   date: 2019-01-07
 - name: Sree Visakh Jain (@sreevisakhjain)
   date: 2018-12-28
   url: https://www.wayanadweb.com
 - name: Clément Lavoillotte
+  bugs: [1486637]
   date: 2018-12-17
   twitter: "@clavoillotte"
   url: https://twitter.com/@clavoillotte
 - name: James Lee
+  bugs: [1487964]
   date: 2018-12-17
   twitter: "@Windowsrcer"
   url: https://twitter.com/@Windowsrcer
 - name: Jan Andre Ikenmeyer
   date: 2018-12-17
 - name: Steven M Crane
+  bugs: [1513201]
   date: 2018-12-17
   twitter: "@stevenmcrane "
   url: https://twitter.com/@stevenmcrane 
 - name: Ruslan Habalov and Dario Weißer
+  bugs: [1420738]
   date: 2018-11-26
 - name: Jack Wrenn
+  bugs: [1309630]
   date: 2018-11-19
   url: https://jswrenn.com/
 - name: Kalel
+  bugs: [1501482]
   date: 2018-11-19
 - name: Björn Ruytenberg
+  bugs: [1447087]
   date: 2018-11-12
   url: https://bjornweb.nl/
 - name: Jens Gorontzi
+  bugs: [1486415, 1493629, 1500759, 1501482, 1513201]
   date: 2018-11-12
   url: https://koelner-pc-hilfe.de
 - name: Omair
+  bugs: [1488295]
   date: 2018-11-12
   url: https://krashconsulting.com
 - name: Diego Calleja
+  bugs: [1500759]
   date: 2018-11-12
 - name: Atte Kettunen
+  bugs: [1504452]
   date: 2018-11-12
   twitter: "@attekett"
   url: https://twitter.com/@attekett
@@ -1841,16 +2363,21 @@ names:
   twitter: "@qab"
   url: https://twitter.com/@qab
 - name: Zhanjia Song
+  bugs: [1489020]
   date: 2018-10-29
 - name: R at Zero Day LLC
+  bugs: [1500011]
   date: 2018-10-23
 - name: Tim Hemel
+  bugs: [1342678]
   date: 2018-10-15
   url: https://www.securesoftware.nl
 - name: Ronald Crane
+  bugs: [1483699]
   date: 2018-10-15
   url: https://www.zippenhop.com/
 - name: Artur Osiński (Virtual_ManPL)
+  bugs: [1495321]
   date: 2018-10-15
   url: https://bugzilla.mozilla.org/user_profile?user_id=342842
 - name: Jun Kokatsu
@@ -1858,37 +2385,49 @@ names:
   twitter: "@shhnjk "
   url: https://twitter.com/@shhnjk 
 - name: Eduard Wirch
+  bugs: [1493629]
   date: 2018-10-08
   url: https://ewirch.github.io/
 - name: mathiaswu
   date: 2018-09-17
 - name: Nils
+  bugs: [1459693, 1464345, 1464784, 1470260, 1477704]
   date: 2018-09-17
 - name: James Lee of Kryptos Logic
+  bugs: [1468523]
   date: 2018-09-17
   twitter: "@Windowsrcer"
   url: https://twitter.com/@Windowsrcer
 - name: Taegeon Lee
+  bugs: [1488803]
   date: 2018-09-17
 - name: Clémentine Maurice
+  bugs: [1333724]
   date: 2018-09-10
   twitter: "@BloodyTangerine"
   url: https://twitter.com/@BloodyTangerine
 - name: Max May
+  bugs: [1345045]
   date: 2018-08-30
 - name: Looben Yang
+  bugs: [1480965]
   date: 2018-08-30
 - name: Clavoillotte
+  bugs: [1481907]
   date: 2018-08-30
   twitter: "@clavoillotte"
   url: https://twitter.com/@clavoillotte
 - name: Zhanjia Song
+  bugs: [1459383]
   date: 2018-08-21
 - name: Holger Fuhrmannek
+  bugs: [1473113]
   date: 2018-08-21
 - name: Andrei Cristian Petcu
+  bugs: [1478849, 1480965, 1488803]
   date: 2018-08-21
 - name: Yiğit Can YILMAZ
+  bugs: [1484753]
   date: 2018-08-21
 - name: Jordi Chancel
   date: 2018-08-09
@@ -1897,387 +2436,520 @@ names:
   twitter: "@konarkmodi"
   url: https://twitter.com/@konarkmodi
 - name: 1lastBr3ath
+  bugs: [1469916]
   date: 2018-07-04
 - name: Jun Kokatsu
+  bugs: [1447853]
   date: 2018-07-02
   twitter: "@shhnjk "
   url: https://twitter.com/@shhnjk 
 - name: Anonymous
   date: 2018-07-02
 - name: Ronald Crane
+  bugs: [1449355, 1449358, 1450353, 1452202, 1452253, 1453505, 1454092, 1454448, 1454821, 1458048, 1464618]
   date: 2018-06-25
   url: https://www.zippenhop.com/
 - name: Abdulrahman Alqabandi of Microsoft Browser Vulnerability Research
+  bugs: [1425197, 1436482, 1438025, 1465160, 1468217]
   date: 2018-06-18
   twitter: "@qab"
   url: https://twitter.com/@qab
 - name: Omair
+  bugs: [1436332]
   date: 2018-06-05
   url: https://krashconsulting.com
 - name: R at Zero Day LLC
+  bugs: [1463244]
   date: 2018-06-04
 - name: Francisco Alonso
+  bugs: [1452375]
   date: 2018-05-31
   twitter: "@revskills"
   url: https://twitter.com/@revskills
 - name: Nils
+  bugs: [1443092, 1448774, 1450881, 1453127, 1457288, 1459162]
   date: 2018-05-21
 - name: guyio
+  bugs: [1451908]
   date: 2018-04-30
 - name: Jun Kokatsu
+  bugs: [1453814, 1453818, 1454027, 1456652]
   date: 2018-04-28
   twitter: "@shhnjk "
   url: https://twitter.com/@shhnjk 
 - name: Wladimir Palant
+  bugs: [1447969, 1449548, 1449898, 1452075]
   date: 2018-04-24
 - name: Matt Koidin
   date: 2018-04-02
 - name: Khalil Zhani
+  bugs: [1416045]
   date: 2018-04-02
 - name: Masato Kinugawa
+  bugs: [1432358, 1432870]
   date: 2018-04-02
 - name: Wladimir Palant
   date: 2018-03-28
 - name: A.
+  bugs: [1443891]
   date: 2018-03-27
 - name: Nils
+  bugs: [1399091, 1399400, 1400540, 1410808, 1412252, 1414490, 1415541, 1416878, 1417010, 1417405, 1417661, 1418000, 1418922, 1419363, 1422092, 1423159, 1425000, 1426345, 1430557, 1431336, 1444086]
   date: 2018-03-27
 - name: Tadj Youssouf
+  bugs: [1442840]
   date: 2018-03-26
 - name: Ronald Crane
+  bugs: [1434490, 1444668, 1444673]
   date: 2018-03-26
   url: https://www.zippenhop.com/
 - name: xisigr
+  bugs: [1395508]
   date: 2018-03-12
 - name: James Grant
+  bugs: [1428947]
   date: 2018-03-12
 - name: Jordi Chancel
+  bugs: [1281075, 1435908]
   date: 2018-03-05
 - name: Root Object
+  bugs: [1440926, 1443891]
   date: 2018-03-05
   url: http://0days.engineer
 - name: Jun Kokatsu
+  bugs: [1418470, 1432170]
   date: 2018-02-26
   twitter: "@shhnjk "
   url: https://twitter.com/@shhnjk 
 - name: Abdulrahman Alqabandi of Microsoft Browser Vulnerability Research
+  bugs: [1317023, 1422467, 1425224, 1425267, 1427289, 1429379, 1247968]
   date: 2018-02-12
   twitter: "@qab"
   url: https://twitter.com/@qab
 - name: rugk
   date: 2018-02-08
 - name: Konark Modi of Cliqz GmbH
+  bugs: [1410106]
   date: 2018-02-05
   twitter: "@konarkmodi"
   url: https://twitter.com/@konarkmodi
 - name: Francisco Alonso
+  bugs: [1424766]
   date: 2018-01-25
   twitter: "@revskills"
   url: https://twitter.com/@revskills
 - name: Zhang Hanming from 360 Vulcan team
+  bugs: [1430589]
   date: 2018-01-25
 - name: Rob Wu
+  bugs: [1390882, 1426363]
   date: 2018-01-22
   url: https://robwu.nl
 - name: Omair
+  bugs: [1420698]
   date: 2018-01-22
   url: https://krashconsulting.com
 - name: Looben Yang
+  bugs: [1418074, 1422215, 1423086]
   date: 2018-01-12
 - name: Ronen Zilberman
+  bugs: [1396399]
   date: 2018-01-12
 - name: Inko
+  bugs: [1421324]
   date: 2018-01-12
 - name: David Dworken
+  bugs: [1422924]
   date: 2018-01-12
 - name: Nils
+  bugs: [1387427, 1406750]
   date: 2017-12-18
 - name: Jerry Decime
+  bugs: [1409449]
   date: 2017-12-18
   twitter: "@declme"
   url: https://twitter.com/@declme
 - name: Anonymous
+  bugs: [1418447]
   date: 2017-12-18
 - name: Dhiraj Mishra
+  bugs: [1418780]
   date: 2017-12-18
   twitter: "@RandomDhiraj"
   url: https://twitter.com/@RandomDhiraj
 - name: Jun Kokatsu
+  bugs: [1366357, 1408708, 1408990, 1414425, 1419166, 1420507]
   date: 2017-12-18
   twitter: "@shhnjk "
   url: https://twitter.com/@shhnjk 
 - name: Ronald Crane
   date: 2017-12-04
 - name: Daniel Jackson
+  bugs: [1420001]
   date: 2017-12-04
 - name: Filipe Gomes
+  bugs: [1406395]
   date: 2017-11-20
 - name: Zhang Hanming from 360 Vulcan team
+  bugs: [1413815]
   date: 2017-11-20
 - name: Looben Yang
+  bugs: [1416450]
   date: 2017-11-20
 - name: Omair
+  bugs: [1398381, 1402372]
   date: 2017-11-13
   url: https://krashconsulting.com
 - name: Mario Gomes
+  bugs: [1321619]
   date: 2017-11-09
   twitter: "@netfuzzer"
   url: https://twitter.com/@netfuzzer
 - name: Muneaki Nishimura (a.k.a. nishimunea)
+  bugs: [1296976]
   date: 2017-10-23
 - name: Khalil Zhani
+  bugs: [1402368]
   date: 2017-10-11
 - name: Holger Fuhrmannek
+  bugs: [1349511, 1402798]
   date: 2017-10-09
 - name: Jordi Chancel
+  bugs: [1358009]
   date: 2017-10-09
 - name: Rayyan Bijoora
+  bugs: [1370497]
   date: 2017-10-09
   url: https://facebook.com/Bijoora
 - name: Ezra Caltum
+  bugs: [1401339]
   date: 2017-10-09
 - name: Abdulrahman Alqabandi of Microsoft Browser Vulnerability Research
+  bugs: [1322864]
   date: 2017-09-18
   twitter: "@qab"
   url: https://twitter.com/@qab
 - name: Ronald Crane
+  bugs: [1356704, 1371484, 1379411, 1379414]
   date: 2017-09-18
 - name: Nils
+  bugs: [1363396, 1363723, 1365189, 1365602, 1370072, 1371259, 1376087, 1378112, 1378113, 1378147, 1380284, 1380292, 1398581]
   date: 2017-09-18
 - name: Jun Kokatsu
+  bugs: [1325923, 1396320]
   date: 2017-09-11
   twitter: "@shhnjk "
   url: https://twitter.com/@shhnjk 
 - name: José María Acuña Morgado
+  bugs: [1368981]
   date: 2017-09-05
   url: https://tecnoblog.guru/
 - name: Khalil Zhani
+  bugs: [1393624]
   date: 2017-09-05
 - name: Raphael Saniyazov
   date: 2017-08-29
 - name: Abhishek Arya
+  bugs: [1383951, 1388243]
   date: 2017-08-29
 - name: Jack Will
+  bugs: [1390980]
   date: 2017-08-22
 - name: Filipe Gomes
+  bugs: [1379949]
   date: 2017-07-31
 - name: Wladimir Palant
+  bugs: [1380616]
   date: 2017-07-31
 - name: Looben Yang
+  bugs: [1374047]
   date: 2017-07-17
 - name: Rhys Enniks
+  bugs: [1377426]
   date: 2017-07-17
 - name: Eili Masami of Tachibana Lab
+  bugs: [1320273]
   date: 2017-07-10
 - name: José María Acuña Morgado
   date: 2017-07-10
   url: https://tecnoblog.guru/
 - name: Thanh Bui
+  bugs: [1368859]
   date: 2017-06-22
 - name: Arthur Edelstein
+  bugs: [1344034]
   date: 2017-06-19
 - name: Takeshi Terada of Mitsui Bussan Secure Directions Inc.
+  bugs: [1353975]
   date: 2017-06-19
   url: http://www.mbsd.jp/
 - name: Abhishek Arya
+  bugs: [1366595, 1371889]
   date: 2017-06-19
 - name: Ronald Crane
+  bugs: [1369913]
   date: 2017-06-19
 - name: Nils
+  bugs: [1343642, 1349946, 1350683, 1355039, 1356558, 1356985, 1359547]
   date: 2017-06-12
 - name: Yuji Tounai of NTT Communications
+  bugs: [1361326]
   date: 2017-06-12
   twitter: "@yousukezan"
   url: https://twitter.com/@yousukezan
 - name: Jun Kokatsu
+  bugs: [1367531, 1358248]
   date: 2017-06-12
   twitter: "@shhnjk "
   url: https://twitter.com/@shhnjk 
 - name: Antonio Sanso
+  bugs: [1352039]
   date: 2017-06-05
   twitter: "@asanso"
   url: https://twitter.com/@asanso
 - name: F. Alonso revskills
+  bugs: [1356824]
   date: 2017-06-05
   twitter: "@revskills"
   url: https://twitter.com/@revskills
 - name: Tobias Klein
+  bugs: [1357090]
   date: 2017-06-05
   url: http://www.trapkit.de/
 - name: Samuel Erb
   date: 2017-06-05
 - name: Nicolas Trippar of Zimperium zLabs
+  bugs: [1368490]
   date: 2017-06-05
 - name: Ronald Crane
+  bugs: [1298125, 1355639, 1356636, 1356650, 1356668, 1356711]
   date: 2017-05-22
 - name: Holger Fuhrmannek
+  bugs: [1215648, 1345461, 1348645, 1349310]
   date: 2017-05-19
 - name: Seb Petane
+  bugs: [1336964, 1336979, 1342742]
   date: 2017-05-19
   twitter: "@sebbity"
   url: https://twitter.com/@sebbity
 - name: Michał Bentkowski
+  bugs: [1360309]
   date: 2017-05-19
 - name: Brian Carpenter of Geeknik Labs & Farm
   date: 2017-05-15
   twitter: "@geeknik"
   url: https://twitter.com/@geeknik
 - name: SkyLined
+  bugs: [1353312]
   date: 2017-05-15
   url: https://skylined.nl
 - name: Amit Sangra
+  bugs: [1360842]
   date: 2017-05-09
 - name: Muneaki Nishimura (a.k.a. nishimunea)
   date: 2017-04-24
 - name: Rafael Gieschke
+  bugs: [1226979]
   date: 2017-04-24
 - name: Looben Yang
+  bugs: [1326084]
   date: 2017-04-24
 - name: Falko Strenzke of cryptosource GmbH
+  bugs: [1240290]
   date: 2017-04-17
 - name: Oliver Wagner
+  bugs: [1322896]
   date: 2017-04-10
 - name: Atte Kettunen
+  bugs: [1333858]
   date: 2017-04-10
   twitter: "@attekett"
   url: https://twitter.com/@attekett
 - name: Chamal De Silva
+  bugs: [1344467]
   date: 2017-04-10
 - name: Samuel Groß
   date: 2017-04-10
 - name: Jordi Chancel
+  bugs: [1273537]
   date: 2017-03-31
 - name: Haosheng Wang
   date: 2017-03-31
   twitter: "@fatal0_"
   url: https://twitter.com/@fatal0_
 - name: Zhou Yuyang
+  bugs: [1340411]
   date: 2017-03-31
 - name: Chun Han Hsiao
+  bugs: [1343505]
   date: 2017-03-31
 - name: Nils
+  bugs: [1314442, 1317258, 1322107, 1334876, 1338772, 1340127, 1340186, 1343795, 1346654, 1347075, 1347168, 1347979, 1348115]
   date: 2017-03-31
 - name: Ronald Crane
+  bugs: [1334246, 1334290, 1344380, 1347748, 1348143, 1349340, 1349719]
   date: 2017-03-31
 - name: Nicolas Grégoire of AGARRI
+  bugs: [1311687, 1336828, 1336830, 1336832, 1336836]
   date: 2017-03-27
   url: http://www.agarri.fr/
 - name: Chamal De Silva
+  bugs: [1342661, 1344461]
   date: 2017-03-27
 - name: Muneaki Nishimura (a.k.a. nishimunea)
+  bugs: [1073952, 1319070, 1328325]
   date: 2017-03-21
 - name: Yasin Soliman
+  bugs: [1346653]
   date: 2017-03-20
 - name: Holger Fuhrmannek
+  bugs: [1321814]
   date: 2017-03-06
 - name: Rh0
+  bugs: [1325200, 1334933]
   date: 2017-03-06
 - name:  Abhishek Arya
+  bugs: [1326372]
   date: 2017-02-22
 - name: Atte Kettunen
+  bugs: [1328323, 1333846, 1337504]
   date: 2017-02-22
   twitter: "@attekett"
   url: https://twitter.com/@attekett
 - name: Looben Yang
+  bugs: [1325511]
   date: 2017-02-14
 - name: Abdulrahman Alqabandi of Microsoft Browser Vulnerability Research
+  bugs: [1319370, 1321719]
   date: 2017-02-13
   twitter: "@qab"
   url: https://twitter.com/@qab
 - name: KSoze
   date: 2017-02-13
 - name: André Bargull
+  bugs: [1285960]
   date: 2017-01-30
 - name: Garming Sam and Douglas Bagnall (Catalyst IT)
+  bugs: [1310467]
   date: 2017-01-30
 - name: Filipe Gomes
+  bugs: [1329403]
   date: 2017-01-30
 - name: José María Acuña Morgado
   date: 2017-01-10
   url: https://tecnoblog.guru/
 - name: Aral Yaman
+  bugs: [1301381]
   date: 2016-12-19
 - name: Atte Kettunen
+  bugs: [1306628, 1306883, 1306890]
   date: 2016-12-19
   twitter: "@attekett"
   url: https://twitter.com/@attekett
 - name: Andrew Krasichkov
+  bugs: [1312272, 1316826]
   date: 2016-12-19
 - name: insertscript
+  bugs: [1317641, 1319122]
   date: 2016-12-19
   twitter: "@insertscript"
   url: https://twitter.com/@insertscript
 - name: Abdulrahman Alqabandi of Microsoft Browser Vulnerability Research
+  bugs: [1318911]
   date: 2016-12-19
   twitter: "@qab"
   url: https://twitter.com/@qab
 - name: Looben Yang
+  bugs: [1319271]
   date: 2016-12-19
 - name: Wladimir Palant
+  bugs: [1320039, 1320057]
   date: 2016-12-19
 - name: Armin Ebert
+  bugs: [1323338]
   date: 2016-12-17
   url: https://rawsec.net/
 - name: Muneaki Nishimura (a.k.a. nishimunea)
+  bugs: [1290760, 1305208, 1312294, 1318897]
   date: 2016-12-12
 - name: Filipe Gomes
+  bugs: [1315543]
   date: 2016-11-28
 - name: Brian Carpenter of Geeknik Labs & Farm
+  bugs: [1317670]
   date: 2016-11-28
   twitter: "@geeknik"
   url: https://twitter.com/@geeknik
 - name: Nils
+  bugs: [1291665, 1294677, 1295097, 1301777, 1302973, 1308922, 1309198]
   date: 2016-11-07
 - name: KSoze
   date: 2016-11-07
 - name: Raphael Shaniyazov
+  bugs: [1306696]
   date: 2016-10-10
 - name: Ronald Crane
+  bugs: [1302817, 1306142, 1308036, 1317545, 1318766]
   date: 2016-10-10
 - name: q1@lastland.net
   date: 2016-10-10
 - name: Abhishek Arya
+  bugs: [1292443]
   date: 2016-10-03
 - name: "John Whitlock"
   date: 2016-10-01
 - name: Joshua Yabut
+  bugs: [1304117]
   date: 2016-09-30
 - name: Knud
+  bugs: [1255779]
   date: 2016-09-26
   url: https://labs.f-secure.com/
 - name: Muneaki Nishimura (a.k.a. nishimunea)
+  bugs: [1267019, 1278053, 1279787, 1290714, 1290732, 1293931, 1295945]
   date: 2016-09-26
 - name: Samuel Groß
+  bugs: [1287266, 1299686]
   date: 2016-09-26
 - name: Holger Fuhrmannek
+  bugs: [1246945, 1246972, 1247239]
   date: 2016-09-12
 - name: Abhishek Arya
+  bugs: [1274126, 1288946, 1297934]
   date: 2016-09-12
 - name: Yuyang Zhou
+  bugs: [1292159]
   date: 2016-09-12
 - name: Jordi Chancel
   date: 2016-09-12
 - name: Daniel D.
   date: 2016-09-12
 - name: Ronald Crane
+  bugs: [1288561, 1295747, 1296391, 1297808]
   date: 2016-09-12
 - name: Anonymous
   date: 2016-08-29
 - name: Nils
+  bugs: [1276857, 1276897, 1278915, 1279819, 1279984, 1280387, 1282076, 1283625, 1286183, 1287316, 1287721]
   date: 2016-08-29
 - name: Abdulrahman Alqabandi of Microsoft Browser Vulnerability Research
+  bugs: [1295914]
   date: 2016-08-22
   twitter: "@qab"
   url: https://twitter.com/@qab
 - name: Brian 'geeknik' Carpenter
+  bugs: [1284690]
   date: 2016-08-15
 - name: Mei Wang of GearTeam Qihoo 360.
+  bugs: [1289970]
   date: 2016-08-15
 - name: Atte Kettunen
+  bugs: [1291016]
   date: 2016-08-15
   twitter: "@attekett"
   url: https://twitter.com/@attekett
 - name: Looben Yang
+  bugs: [1279146, 1282992, 1286487, 1291244]
   date: 2016-08-15
 - name: Gustavo Grieco
   date: 2016-08-08
@@ -2286,69 +2958,95 @@ names:
 - name: Rafay Baloch
   date: 2016-07-15
 - name: Nikita Arykov - Security Architect at Pushwoosh Inc.
+  bugs: [1277475]
   date: 2016-07-01
 - name: Jay Gilbert
+  bugs: [1277583]
   date: 2016-07-01
 - name:  Abdulrahman Alqabandi of Microsoft Browser Vulnerability Research
+  bugs: [1278013, 1281071]
   date: 2016-07-01
   twitter: "@qab"
   url: https://twitter.com/@qab
 - name: Muneaki Nishimura 
   date: 2016-07-01
 - name: Atte Kettunen 
+  bugs: [1279814, 1283826]
   date: 2016-07-01
   twitter: "@attekett"
   url: https://twitter.com/@attekett
 - name: Aral Yaman
+  bugs: [1248580]
   date: 2016-06-27
 - name: Abhishek Arya
+  bugs: [1266106]
   date: 2016-06-27
 - name: Georg Koppen
+  bugs: [1268854]
   date: 2016-06-27
 - name: Nils
+  bugs: [1276013, 1276688, 1277272]
   date: 2016-06-27
 - name: Jordi Chancel
   date: 2016-06-10
 - name: Gustavo Grieco
   date: 2016-06-09
 - name: Abhishek Arya 
+  bugs: [1244595, 1266926, 1266963, 1272983]
   date: 2016-05-23
 - name: Jordi Chancel 
+  bugs: [1273129]
   date: 2016-05-23
 - name: Toni Huttunen
+  bugs: [1255270]
   date: 2016-05-16
 - name: firehack
+  bugs: [1270381, 1271460]
   date: 2016-05-16
 - name: Looben Yang
+  bugs: [1268303]
   date: 2016-05-09
 - name: Rafael Gieschke
+  bugs: [1226977]
   date: 2016-05-02
 - name: Holger Fuhrmannek
+  bugs: [1246944, 1254925]
   date: 2016-05-02
 - name: Hanno Böck
+  bugs: [1190248]
   date: 2016-04-18
   url: https://hboeck.de/
 - name: sushi Anton Larsson
+  bugs: [1261933]
   date: 2016-04-18
 - name: Yuyang Zhou
+  bugs: [1263974]
   date: 2016-04-18
 - name: Muneaki Nishimura (a.k.a. nishimunea)
+  bugs: [1258188]
   date: 2016-04-11
 - name: Looben Yang 
+  bugs: [1261776]
   date: 2016-04-08
 - name: Nils
+  bugs: [1232273]
   date: 2016-03-28
 - name: Francisco Alonso (revskills)
+  bugs: [1244493]
   date: 2016-03-28
   twitter: "@revskills"
   url: https://twitter.com/@revskills
 - name: Frederic Besler @ LAF INTL
+  bugs: [1253664]
   date: 2016-03-28
 - name: Looben Yang
+  bugs: [1234949, 1252330]
   date: 2016-03-21
 - name: Sascha Just
+  bugs: [1254721]
   date: 2016-03-21
 - name: Tsubasa Iinuma of Gehirn Inc.
+  bugs: [1245264]
   date: 2016-03-14
   twitter: "@llamakko_cafe"
   url: https://twitter.com/@llamakko_cafe
@@ -2359,160 +3057,221 @@ names:
 - name: Chamal De Silva
   date: 2016-03-07
 - name: Dominique Hazaël-Massieux
+  bugs: [1240760]
   date: 2016-02-29
 - name: Jordi Chancel
+  bugs: [1238692, 1246956]
   date: 2016-02-29
 - name: Nicolas Golubovic
+  bugs: [1243178]
   date: 2016-02-22
 - name: Quarkslab security engineer Francis Gabriel
+  bugs: [1245528]
   date: 2016-02-22
 - name: Luke Li
+  bugs: [1246742]
   date: 2016-02-19
 - name: Ronald Crane
+  bugs: [1224396, 1228103, 1230768]
   date: 2016-02-16
 - name: James Clawson
+  bugs: [1242322]
   date: 2016-02-16
 - name: Nicolas Grégoire of AGARRI
+  bugs: [1243335]
   date: 2016-02-16
   url: http://www.agarri.fr/
 - name: jasonpang2011
+  bugs: [1245724]
   date: 2016-02-16
 - name: Abdulrahman Alqabandi of Microsoft Browser Vulnerability Research
+  bugs: [1228754, 1233936]
   date: 2016-02-08
   twitter: "@qab"
   url: https://twitter.com/@qab
 - name: Philipp Kewisch
+  bugs: [1199628]
   date: 2016-02-05
 - name: Frédéric Hoguin
+  bugs: [1237219]
   date: 2016-02-05
 - name: Alexander Klink
+  bugs: [1212138]
   date: 2016-02-01
 - name: Aki Helin
+  bugs: [1208100]
   date: 2016-01-25
 - name: Muneaki Nishimura (a.k.a. nishimunea)
+  bugs: [1208946, 1227462]
   date: 2016-01-25
 - name: Gustavo Grieco
+  bugs: [1231761]
   date: 2016-01-25
 - name: musicDespiteEverything
+  bugs: [1233784]
   date: 2016-01-25
 - name: Tooru Fujisawa
+  bugs: [1241100]
   date: 2016-01-25
 - name: Abhishek Arya
+  bugs: [1177948, 1180988, 1181011, 1190210, 1194562, 1222809]
   date: 2016-01-11
 - name: Aki Helin 
+  bugs: [1220450]
   date: 2016-01-04
 - name: Ronald Crane
+  bugs: [1174015, 1176340, 1182908, 1186621, 1187459, 1188010, 1204061, 1204155, 1214782, 1215319, 1216837, 1217663, 1218124, 1218217, 1219339, 1219814, 1220493, 1226387, 1232069]
   date: 2015-12-28
 - name: Ken Okuyama
   date: 2015-12-28
 - name: Tsubasa Iinuma of Gehirn Inc.
+  bugs: [1228950]
   date: 2015-12-14
   twitter: "@llamakko_cafe"
   url: https://twitter.com/@llamakko_cafe
 - name: Masato Kinugawa
+  bugs: [1160890]
   date: 2015-12-04
 - name: Holger Fuhrmannek 
+  bugs: [1177861]
   date: 2015-12-04
 - name: Muneaki Nishimura 
   date: 2015-11-30
 - name: jmamj90
+  bugs: [1227052]
   date: 2015-11-24
 - name: Ucha Gobejishvili
+  bugs: [1199923]
   date: 2015-11-23
 - name: Looben Yang
+  bugs: [1205900, 1218326]
   date: 2015-11-20
 - name: cgvwzq
+  bugs: [1185256]
   date: 2015-11-16
 - name: Artur Osiński (Virtual_ManPL)
+  bugs: [1214571]
   date: 2015-11-09
   url: https://bugzilla.mozilla.org/user_profile?user_id=342842
 - name: Gustavo Grieco
+  bugs: [1211262]
   date: 2015-11-02
 - name: Aki Helin 
+  bugs: [1213744]
   date: 2015-10-26
 - name: Atte Kettunen 
+  bugs: [1215837]
   date: 2015-10-26
   twitter: "@attekett"
   url: https://twitter.com/@attekett
 - name: Jordi Chancel
+  bugs: [1116385]
   date: 2015-10-19
 - name: Frans Rosén
+  bugs: [1211871]
   date: 2015-10-14
 - name: Michał Bentkowski
+  bugs: [1199430]
   date: 2015-10-12
 - name: Abdulrahman Alqabandi of Microsoft Browser Vulnerability Research
+  bugs: [1208339]
   date: 2015-10-12
   twitter: "@qab"
   url: https://twitter.com/@qab
 - name: Shinto K Anto 
+  bugs: [1210302]
   date: 2015-10-12
   twitter: "@5hint0"
   url: https://twitter.com/@5hint0
 - name: Muneaki Nishimura (a.k.a. nishimunea)
+  bugs: [1223743, 1224529, 1224906, 1224910]
   date: 2015-10-12
 - name: "Iaf Intel"
   date: 2015-10-01
 - name: musicDespiteEverything
+  bugs: [1191423]
   date: 2015-09-28
 - name: Muneaki Nishimura (a.k.a. nishimunea)
+  bugs: [1198078, 1207556]
   date: 2015-09-28
 - name: Jordi Chancel
+  bugs: [1189082, 1202234]
   date: 2015-09-24
 - name: Ronald Crane
+  bugs: [1171603, 1172055, 1172144, 1172187, 1174023, 1178033, 1182723, 1185081, 1186725, 1189860, 1190526, 1191463, 1198979, 1199400, 1206211]
   date: 2015-09-21
 - name: Gustavo Grieco
+  bugs: [1184009, 1203078]
   date: 2015-09-21
 - name: Mario Heiderich
+  bugs: [1182778]
   date: 2015-09-18
 - name: Spandan Veggalam
+  bugs: [1192401]
   date: 2015-09-18
 - name: Looben Yang
+  bugs: [1185820, 1187018, 1196079, 1200004]
   date: 2015-09-14
 - name: Atte Kettunen
+  bugs: [1200148]
   date: 2015-09-14
   twitter: "@attekett"
   url: https://twitter.com/@attekett
 - name: KSoze
   date: 2015-09-12
 - name: Muneaki Nishimura (a.k.a. nishimunea)
+  bugs: [1196740]
   date: 2015-09-04
 - name: Armin Ebert
+  bugs: [1151366]
   date: 2015-08-31
   url: https://rawsec.net/
 - name: Bas Venis
+  bugs: [1042699]
   date: 2015-08-28
 - name: Khalil Zhani
+  bugs: [1192226]
   date: 2015-08-28
 - name: Juho Nurminen
+  bugs: [1195976]
   date: 2015-08-28
 - name: Mario Gomes
+  bugs: [1189814]
   date: 2015-08-25
   twitter: "@netfuzzer"
   url: https://twitter.com/@netfuzzer
 - name: Holger Fuhrmannek
+  bugs: [1184500]
   date: 2015-08-17
 - name: Siraje Amarniss of Fukusa
+  bugs: [1191284]
   date: 2015-08-10
   url: https://fukusa.nl
 - name: Shally Li
   date: 2015-08-03
 - name: Frederic Besler @ LAF INTL
+  bugs: [1170344]
   date: 2015-08-03
 - name: kaleemshaik786
   date: 2015-07-27
 - name: Aki Helin
+  bugs: [1154598, 1175396]
   date: 2015-07-27
 - name: Massimiliano Tomassoli
+  bugs: [1144107]
   date: 2015-07-20
 - name: Abhishek Arya
+  bugs: [1158651, 1159127]
   date: 2015-07-20
 - name: Yossi Oren
   date: 2015-07-20
 - name: Francisco Alonso
+  bugs: [1170390]
   date: 2015-07-20
   twitter: "@revskills"
   url: https://twitter.com/@revskills
 - name: SkyLined
+  bugs: [1179484]
   date: 2015-07-20
   url: https://skylined.nl
 - name: "Iaf Intel"
@@ -2520,45 +3279,62 @@ names:
 - name: Clément Lefèvre
   date: 2015-06-29
 - name: André Bargull
+  bugs: [1105914]
   date: 2015-06-29
 - name: Ron Crane
+  bugs: [1170794, 1170809]
   date: 2015-06-29
 - name: David Chan
+  bugs: [1172226]
   date: 2015-06-29
 - name: Ronald Crane
+  bugs: [1166900, 1167332, 1167356, 1167370, 1167888, 1168207, 1172189]
   date: 2015-06-17
 - name: Looben Yang
+  bugs: [1150805, 1154076, 1155546, 1166924, 1169867]
   date: 2015-06-16
 - name: Aki Helin
+  bugs: [1080995, 1127765]
   date: 2015-06-15
 - name: Ucha Gobejishvili
+  bugs: [1140537]
   date: 2015-06-15
 - name: Muneaki Nishimura (a.k.a. nishimunea)
   date: 2015-06-15
 - name: Ronald Crane
   date: 2015-05-28
 - name: Armin Ebert
+  bugs: [1111960]
   date: 2015-05-25
   url: https://rawsec.net/
 - name: Frederic Besler @ LAF INTL
+  bugs: [1154672, 1154683]
   date: 2015-05-25
 - name: Atte Kettunen
+  bugs: [1149542, 1158452, 1163583]
   date: 2015-05-25
   twitter: "@attekett"
   url: https://twitter.com/@attekett
 - name: Jann Horn
+  bugs: [1163422]
   date: 2015-05-23
 - name: Joshua J. Drake
+  bugs: [1149605]
   date: 2015-05-05
 - name: Abhishek Arya
+  bugs: [1141919, 1143535]
   date: 2015-04-27
 - name: Dougall Johnson
+  bugs: [1152280]
   date: 2015-04-27
 - name: Scott Bell
+  bugs: [1153478]
   date: 2015-04-20
 - name:  Muneaki Nishimura 
+  bugs: [1162018, 1162411, 1164397]
   date: 2015-04-13
 - name: Jordi Chancel 
+  bugs: [1125013]
   date: 2015-04-06
 - name: Hanno Boeck 
   date: 2015-04-06
@@ -2567,55 +3343,76 @@ names:
   date: 2015-04-06
   url: https://rawsec.net/
 - name: Muneaki Nishimura
+  bugs: [1148328]
   date: 2015-04-06
 - name: "Frederic Besler @ LAF INTL"
   date: 2015-04-01
 - name: Looben Yang
+  bugs: [1140804]
   date: 2015-03-30
 - name: Aki Helin
+  bugs: [1129855]
   date: 2015-03-23
 - name: Paul
+  bugs: [1130541, 1142210]
   date: 2015-03-23
 - name: Mariusz Mlynski
+  bugs: [1145870]
   date: 2015-03-23
 - name: l.pontorieri
+  bugs: [968334]
   date: 2015-03-16
 - name: Nils
+  bugs: [1106398, 1106402, 1114990, 1114992, 1114993, 1114996, 1115349, 1115381, 1117140, 1134131, 1134560, 1134561]
   date: 2015-03-16
 - name: Abhishek Arya
+  bugs: [1018783, 1085175, 1113005, 1117304, 1133160, 1135511, 1135534]
   date: 2015-03-16
 - name: Muneaki Nishimura
+  bugs: [1111834]
   date: 2015-03-09
 - name: Hanno Boeck 
+  bugs: [1130224]
   date: 2015-03-09
   url: https://hboeck.de/
 - name: Takeshi Terada of Mitsui Bussan Secure Directions Inc.
+  bugs: [1048535]
   date: 2015-03-02
   url: http://www.mbsd.jp/
 - name: Michal Zalewski
+  bugs: [891693, 1094536]
   date: 2015-02-25
   url: http://lcamtuf.coredump.cx/
 - name: Aki Helin 
+  bugs: [1106596]
   date: 2015-02-23
 - name: Armin Ebert
+  bugs: [1128126]
   date: 2015-02-23
   url: https://rawsec.net/
 - name: pantrombka
+  bugs: [1128939]
   date: 2015-02-23
 - name: joev
+  bugs: [1120261]
   date: 2015-02-19
 - name: André Bargull
+  bugs: [1105045]
   date: 2015-02-09
 - name: Hanno Böck
+  bugs: [1109371]
   date: 2015-02-09
   url: https://hboeck.de/
 - name: Enrique Rando
+  bugs: [1120398]
   date: 2015-02-09
 - name: Atte Kettunen
+  bugs: [1092363, 1092370]
   date: 2015-01-30
   twitter: "@attekett"
   url: https://twitter.com/@attekett
 - name: Holger Fuhrmannek
+  bugs: [1012609]
   date: 2015-01-26
 - name: Armin Ebert
   date: 2015-01-26
@@ -2625,107 +3422,141 @@ names:
 - name: Jordi Chancel
   date: 2015-01-12
 - name: Muneaki Nishimura (a.k.a. nishimunea)
+  bugs: [1065909]
   date: 2015-01-12
 - name: Mitchell Harper
+  bugs: [1108455]
   date: 2014-12-22
   twitter: "@HarperMitchell"
   url: https://twitter.com/@HarperMitchell
 - name: Looben Yang
+  bugs: [1089328, 1090142, 1091962, 1105194]
   date: 2014-12-15
 - name: Abhishek Arya
+  bugs: [1063327, 1075336, 1099437, 1030667]
   date: 2014-12-12
 - name: Muneaki Nishimura (a.k.a. nishimunea)
+  bugs: [1069762, 1106713]
   date: 2014-12-08
 - name: Atte Kettunen
+  bugs: [1095925, 1098497]
   date: 2014-11-20
   twitter: "@attekett"
   url: https://twitter.com/@attekett
 - name: jkeks
   date: 2014-11-10
 - name: lifeasageek
+  bugs: [1074280]
   date: 2014-11-10
 - name: SkyLined
+  bugs: [1088635]
   date: 2014-11-10
   url: https://skylined.nl
 - name: Brian Smith
+  bugs: [1064670]
   date: 2014-11-08
   url: https://briansmith.org/
 - name: Michal Zalewski
+  bugs: [1063733]
   date: 2014-11-03
   url: http://lcamtuf.coredump.cx/
 - name: "Check Point Vulnerability Research"
   date: 2014-10-01
 - name: Abhishek Arya
+  bugs: [1018524, 1044706, 1046534, 1066089]
   date: 2014-09-29
 - name: KSoze
   date: 2014-09-15
 - name: Antoine Delignat-Lavaud
+  bugs: [1064636]
   date: 2014-09-08
   url: https://antoine.delignat-lavaud.fr
 - name: Holger Fuhrmannek
+  bugs: [945192, 1047831, 991533]
   date: 2014-09-08
 - name: Atte Kettunen
+  bugs: [1020205, 1020411, 1041466, 1041512]
   date: 2014-08-25
   twitter: "@attekett"
   url: https://twitter.com/@attekett
 - name: Michal Zalewski
+  bugs: [1045977]
   date: 2014-08-25
   url: http://lcamtuf.coredump.cx/
 - name: Yu Dongsong
   date: 2014-08-11
 - name: Looben Yang
+  bugs: [1029299]
   date: 2014-08-04
 - name: regenrecht working with HP's Zero Day Initiative
+  bugs: [1037641]
   date: 2014-08-04
 - name: Tyson Smith
+  bugs: [963150]
   date: 2014-07-28
 - name: Jethro Beekman - Security Researcher at University of California - Berkeley
+  bugs: [1023121]
   date: 2014-07-02
 - name: Tyson Smith
+  bugs: [966006, 978862]
   date: 2014-06-25
 - name: blinky
   date: 2014-06-17
 - name: Jordi Chancel
+  bugs: [1005462]
   date: 2014-06-16
 - name: James Kitchener
   date: 2014-06-16
 - name: Abhishek Arya
+  bugs: [969226, 989183, 989210, 999274, 1005584]
   date: 2014-06-04
 - name: Looben Yang
+  bugs: [1011859]
   date: 2014-06-02
 - name: Jann Horn
   date: 2014-05-29
 - name: Nicolas Francois
+  bugs: [1005552]
   date: 2014-05-19
 - name: Nils
+  bugs: [1009160]
   date: 2014-05-15
 - name: Daniel DeFreez
   date: 2014-05-12
 - name: Atte Kettunen
+  bugs: [982285]
   date: 2014-05-12
   twitter: "@attekett"
   url: https://twitter.com/@attekett
 - name: KSoze
   date: 2014-04-29
 - name: Holger Fuhrmannek
+  bugs: [961676, 995289]
   date: 2014-04-28
 - name: Mariusz Mlynski
+  bugs: [987003, 993423]
   date: 2014-04-21
 - name: Gábor Molnár
+  bugs: [924329]
   date: 2014-04-14
 - name: "Zaza Crub"
   date: 2014-04-01
 - name: Eric Seidel
+  bugs: [798158]
   date: 2014-03-31
 - name: Mariusz Mlynski
+  bugs: [931768]
   date: 2014-03-31
 - name: Atte Kettunen
+  bugs: [934939, 952756, 966311, 966636]
   date: 2014-03-24
   twitter: "@attekett"
   url: https://twitter.com/@attekett
 - name: Aki Helin
+  bugs: [963086]
   date: 2014-03-17
 - name: Abhishek Arya
+  bugs: [906684, 916404, 944579, 955911, 955913, 981279]
   date: 2014-03-17
 - name: Roee Hay
   date: 2014-02-24
@@ -2734,30 +3565,42 @@ names:
   twitter: "@jupenur"
   url: https://twitter.com/@jupenur
 - name: Holger Fuhrmannek
+  bugs: [925747]
   date: 2014-02-03
 - name: Masato Kinugawa
+  bugs: [947592, 949706]
   date: 2014-02-03
 - name: Tyson Smith
+  bugs: [963198]
   date: 2014-02-03
 - name: TPS
+  bugs: [956524]
   date: 2014-01-16
 - name: Jordi Chancel
+  bugs: [910783, 916726, 927541, 941482]
   date: 2013-12-16
 - name: Tyson Smith
+  bugs: [930381]
   date: 2013-12-09
 - name: Abhishek Arya
+  bugs: [914966, 936327]
   date: 2013-11-25
 - name: Atte Kettunen
+  bugs: [923649, 928798, 932449]
   date: 2013-11-18
   twitter: "@attekett"
   url: https://twitter.com/@attekett
 - name: jdschwa
+  bugs: [938341]
   date: 2013-11-18
 - name: Chris
+  bugs: [917380]
   date: 2013-11-06
 - name: sachin shinde
+  bugs: [851353]
   date: 2013-11-04
 - name: Masato Kinugawa
+  bugs: [871161]
   date: 2013-10-16
 - name: "Gabor Molnar"
   date: 2013-10-01
@@ -2766,15 +3609,20 @@ names:
 - name: KSoze
   date: 2013-09-30
 - name: Abhishek Arya
+  bugs: [830132, 846612, 856428, 865076, 871099, 890769, 893308, 893484, 896159, 914017]
   date: 2013-09-30
 - name: lifeasageek
+  bugs: [918864]
   date: 2013-09-30
 - name: Takeshi Terada of Mitsui Bussan Secure Directions Inc.
+  bugs: [782581]
   date: 2013-09-09
   url: http://www.mbsd.jp/
 - name: Aki Helin
+  bugs: [883514, 890179]
   date: 2013-09-09
 - name: Atte Kettunen
+  bugs: [884459, 885539, 888820]
   date: 2013-09-09
   twitter: "@attekett"
   url: https://twitter.com/@attekett
@@ -2785,58 +3633,77 @@ names:
 - name: Jordi Chancel
   date: 2013-07-29
 - name: Context Information Security
+  bugs: [890277]
   date: 2013-07-22
 - name: Sebas (@0xroot)
   date: 2013-07-22
   url: https://bishopfox.com/
 - name: Seb Patane
+  bugs: [888314, 888361, 890853]
   date: 2013-07-15
   twitter: "@sebbity"
   url: https://twitter.com/@sebbity
 - name: "Ash"
   date: 2013-07-01
 - name: Holger Fuhrmannek
+  bugs: [859072]
   date: 2013-07-01
 - name: Atte Kettunen
+  bugs: [874869, 874915, 874952, 876118, 876252, 877125, 878392]
   date: 2013-06-17
   twitter: "@attekett"
   url: https://twitter.com/@attekett
 - name: federico lanusse
+  bugs: [879787]
   date: 2013-06-17
 - name: Aki Helin
+  bugs: [878751]
   date: 2013-06-10
 - name: Fabián Cuchietti
+  bugs: [868267]
   date: 2013-06-03
 - name: Abhishek Arya
+  bugs: [849727, 849732, 851781, 859014, 859016, 865537, 868300]
   date: 2013-06-03
 - name: Benjamin Kunz Mejri
+  bugs: [875818]
   date: 2013-06-03
   url: https://www.vulnerability-lab.com
 - name: Paul Stone of Context Information Security
+  bugs: [711043]
   date: 2013-05-23
 - name: Johnathan Kuskos
+  bugs: [866915]
   date: 2013-05-20
 - name: Mariusz Mlynski
+  bugs: [863933, 873966, 865947, 865948, 866823]
   date: 2013-05-15
 - name: Seb Patane
+  bugs: [850492, 867056]
   date: 2013-05-15
   twitter: "@sebbity"
   url: https://twitter.com/@sebbity
 - name: Nils
+  bugs: [860971]
   date: 2013-04-14
 - name: "Ash"
   date: 2013-04-01
 - name: Robert Kugler
+  bugs: [854088]
   date: 2013-04-01
 - name: Abhishek Arya
+  bugs: [769120, 771318, 771961, 784918, 785574, 786111, 786895, 788950, 803853, 812893, 815489, 816359, 819623, 821737, 824862, 825721, 827190, 830192, 831287, 831668, 835814, 838489, 842078, 844403, 850931, 845093]
   date: 2013-03-25
 - name: Frédéric Hoguin
+  bugs: [848417]
   date: 2013-03-11
 - name: Nicolas
   date: 2013-03-07
 - name: Nils
+  bugs: [817439, 831095, 831673, 832899]
   date: 2013-03-04
 - name: Holger Fuhrmannek
+  bugs: [830134]
   date: 2013-03-04
 - name: Fourteenforty Research Institute Japan
   date: 2013-03-04
@@ -2845,71 +3712,96 @@ names:
 - name: Scott Bell
   date: 2013-02-04
 - name: Mariusz Mlynski
+  bugs: [792405, 813901]
   date: 2013-01-18
 - name: split with Chris McGowan and Michal Zalewski
+  bugs: [762705]
   date: 2013-01-09
 - name: Chris McGowen
   date: 2013-01-08
 - name: ISHIKAWA, Chiaki
+  bugs: [809064]
   date: 2013-01-07
 - name: miaubiz
+  bugs: [815795]
   date: 2013-01-07
 - name: Atte Kettunen
+  bugs: [819014]
   date: 2013-01-07
   twitter: "@attekett"
   url: https://twitter.com/@attekett
 - name: "Ash"
   date: 2013-01-01
 - name: Atte Kettunen
+  bugs: [814713]
   date: 2012-12-17
   twitter: "@attekett"
   url: https://twitter.com/@attekett
 - name: Abhishek Arya
+  bugs: [769303, 771873, 771976, 771994, 773207, 774548, 774597, 776213, 777578, 778428, 787831, 788959, 792305, 795592, 795708, 795734, 795750, 795804, 798677, 798853, 801957, 802902, 804927, 805287, 812161, 815500]
   date: 2012-12-17
 - name: miaubiz
+  bugs: [787827, 802778]
   date: 2012-12-10
 - name: Mariusz Mlynski
+  bugs: [796866, 800666, 803870]
   date: 2012-12-10
 - name: Arthur Gerkis
+  bugs: [816253]
   date: 2012-12-10
 - name: Masato Kinugawa
+  bugs: [800363, 801681, 802026]
   date: 2012-12-03
 - name: Atte Kettunen
   date: 2012-11-29
   twitter: "@attekett"
   url: https://twitter.com/@attekett
 - name: Michal Zalewski
+  bugs: [741050, 796475]
   date: 2012-11-19
   url: http://lcamtuf.coredump.cx/
 - name: Antoine Delignat-Lavaud
+  bugs: [802557]
   date: 2012-10-18
   url: https://antoine.delignat-lavaud.fr
 - name: alice0775
+  bugs: [783260]
   date: 2012-10-01
 - name: breen.machine
+  bugs: [796106]
   date: 2012-10-01
 - name: Abhishek Arya
+  bugs: [762280, 765139, 765621, 767765, 772346, 785720, 786142, 791905]
   date: 2012-09-27
 - name: miaubiz
+  bugs: [775228, 775852, 777028, 780963, 785734, 787704, 790879]
   date: 2012-09-24
 - name: Atte Kettunen
+  bugs: [758200, 759802, 785753, 785967, 787493, 787722]
   date: 2012-09-22
   twitter: "@attekett"
   url: https://twitter.com/@attekett
 - name: Mariusz Mlynski
+  bugs: [775009]
   date: 2012-09-20
 - name: Robert Kugler
+  bugs: [792106]
   date: 2012-09-18
 - name: Ms2ger of Igalia
+  bugs: [783867]
   date: 2012-08-27
   url: https://twitter.com/Ms2ger
 - name: Arthur Gerkis
+  bugs: [782141]
   date: 2012-08-22
 - name: Soroush Dalili
+  bugs: [725770]
   date: 2012-08-15
 - name: Jordi Chancel
+  bugs: [700080]
   date: 2012-08-14
 - name: Juliano Rizzo and Thai Duong
+  bugs: [779413]
   date: 2012-08-04
   twitter: "@xorninja"
   url: https://twitter.com/@xorninja
@@ -2918,8 +3810,10 @@ names:
 - name: microrffr
   date: 2012-07-30
 - name: Frédéric Hoguin
+  bugs: [775794]
   date: 2012-07-20
 - name: "Sevenspade"
+  bugs: [771859]
   date: 2012-07-01
 - name: "Colby Russell"
   date: 2012-07-01
@@ -2928,179 +3822,247 @@ names:
 - name: Soroush Dalili
   date: 2012-06-29
 - name: Mariusz Mlynski
+  bugs: [756719, 757376, 765527, 768101, 769108]
   date: 2012-06-28
 - name: Karthikeyan Bhargavan
+  bugs: [767778]
   date: 2012-06-26
 - name: Mario Heiderich
+  bugs: [750096]
   date: 2012-06-15
 - name: Arthur Gerkis
+  bugs: [750109, 760996]
   date: 2012-06-10
 - name: Abhishek Arya
+  bugs: [745548, 747688, 750066, 752902, 756241, 759249]
   date: 2012-06-02
 - name: Adam Barth
+  bugs: [751422]
   date: 2012-05-04
 - name: Paul Stone of Context Information Security
+  bugs: [670514]
   date: 2012-05-03
 - name: James Forshaw
+  bugs: [748764]
   date: 2012-05-02
 - name: Jeroen van der Gun
   date: 2012-04-14
 - name: Matias Juntunen
   date: 2012-04-10
 - name: Kaspar Brand
+  bugs: [715073]
   date: 2012-03-31
 - name: Chris McGowen
   date: 2012-03-30
 - name: Aki Helin
+  bugs: [738985]
   date: 2012-03-28
 - name: Jordi Chancel
+  bugs: [687745, 691014]
   date: 2012-03-23
 - name: Atte Kettunen
+  bugs: [734288]
   date: 2012-03-09
   twitter: "@attekett"
   url: https://twitter.com/@attekett
 - name: Ms2ger of Igalia
+  bugs: [727547]
   date: 2012-02-22
   url: https://twitter.com/Ms2ger
 - name: Soroush Dalili
+  bugs: [704354]
   date: 2012-02-21
 - name: Mariusz Mlynski
+  bugs: [719994]
   date: 2012-02-04
 - name:  "Atte Kettunen from OUSPG"
+  bugs: [720103]
   date: 2012-02-02
   twitter: "@attekett"
   url: https://twitter.com/@attekett
 - name: Nicolas Grégoire of AGARRI
+  bugs: [702466]
   date: 2012-01-28
   url: http://www.agarri.fr/
 - name: Blair Strang
+  bugs: [684555]
   date: 2011-12-08
 - name: Vitaly Nevgen
+  bugs: [701071]
   date: 2011-12-07
   url: https://facebook.com/vitaly.nevgen
 - name: Aki Helin
+  bugs: [691299, 694953, 701806]
   date: 2011-11-30
 - name: Scott Zimmermann
+  bugs: [701259]
   date: 2011-11-14
   url: https://github.com/sczi
 - name: Team sutegoma2 - Japanese CTF team from AVTOKYO
+  bugs: [690225]
   date: 2011-10-19
   url: http://ja.avtokyo.org/projects/sutegoma2
 - name: Thai "thaidn" Duong
+  bugs: [665814]
   date: 2011-10-02
   twitter: "@xorninja"
   url: https://twitter.com/@xorninja
 - name: Rh0
+  bugs: [682727]
   date: 2011-10-02
 - name: Mariusz Mlynski
+  bugs: [657462, 672485]
   date: 2011-09-30
 - name: Aral Yaman
+  bugs: [674042]
   date: 2011-09-26
 - name: Marc Schoenefeld
+  bugs: [674776]
   date: 2011-09-21
 - name: Mark Kaplan
+  bugs: [684815]
   date: 2011-09-14
 - name: Ben Hawkes
+  bugs: [682335]
   date: 2011-09-09
 - name: Scott Zimmermann
+  bugs: [675747]
   date: 2011-08-05
   url: https://github.com/sczi
 - name: David Rees
+  bugs: [653926]
   date: 2011-07-25
 - name: ahu
+  bugs: [672789]
   date: 2011-07-25
 - name: Mike Cardwell
+  bugs: [664983]
   date: 2011-07-21
   url: https://www.grepular.com/
 - name: Aki Helin
+  bugs: [653672]
   date: 2011-07-07
 - name: Michael Jordon of Context IS
+  bugs: [665934, 665936]
   date: 2011-07-07
 - name: Vivekanand Bolajwar
+  bugs: [655660]
   date: 2011-06-24
 - name: Haifei Li
+  bugs: [579593]
   date: 2011-06-15
 - name: Chris Rohlf
+  bugs: [664009]
   date: 2011-06-15
   url: https://struct.github.io
 - name: Jordi Chancel
+  bugs: [638018]
   date: 2011-06-10
 - name: nasalislarvatus3000
+  bugs: [655836]
   date: 2011-06-10
 - name: Rafael Gieschke
   date: 2011-05-31
 - name: Paul Stone of Context Information Security
+  bugs: [659349]
   date: 2011-05-26
 - name: Pablo P
+  bugs: [655742]
   date: 2011-05-24
 - name: Rh0
+  bugs: [651990]
   date: 2011-05-19
 - name: Ian Beer
+  bugs: [635705, 645565]
   date: 2011-04-25
 - name: ACROS
+  bugs: [642469, 651990, 655742]
   date: 2011-04-14
   url: https://acrossecurity.com/
 - name: db
+  bugs: [644069]
   date: 2011-03-28
 - name: Zach Hoffman
+  bugs: [635776]
   date: 2011-03-03
   twitter: "@zrhoffman"
   url: https://twitter.com/@zrhoffman
 - name: Aki Helin
+  bugs: [619021, 635977]
   date: 2011-02-24
 - name: Christian Holler
+  bugs: [617935, 621137, 621202, 622167, 623297, 623301, 623863, 624439, 626464, 629650]
   date: 2011-02-03
 - name: Jan de Mooij
   date: 2011-02-03
 - name: Marc Schoenefeld
+  bugs: [594536]
   date: 2011-01-28
 - name: Martin Barbella
+  bugs: [617247, 624187]
   date: 2011-01-28
 - name: Soroush Dalili
   date: 2011-01-20
 - name: shutdown
+  bugs: [626297, 626745]
   date: 2011-01-20
 - name: Daniel Kozlowski
+  bugs: [626631]
   date: 2011-01-20
 - name: Ian Beer
+  bugs: [623998]
   date: 2011-01-07
 - name: Jan de Mooij
   date: 2010-12-21
 - name: timeless
+  bugs: [603333]
   date: 2010-12-14
 - name: Christian Holler
+  bugs: [615657]
   date: 2010-12-08
 - name: Zach Hoffman
+  bugs: [616659]
   date: 2010-12-06
   twitter: "@zrhoffman"
   url: https://twitter.com/@zrhoffman
 - name: Marc Schoenefeld
+  bugs: [588233, 594547]
   date: 2010-12-04
 - name: Dirk Heinrich
+  bugs: [608336]
   date: 2010-12-04
 - name: Jordi Chancel
   date: 2010-11-10
 - name: echo
+  bugs: [609437]
   date: 2010-11-09
 - name: Christian Holler and Maximilian Grothusmann
+  bugs: [615657]
   date: 2010-11-09
 - name: Alex Miller
+  bugs: [607160]
   date: 2010-10-26
 - name: David Huang
+  bugs: [579744]
   date: 2010-10-11
   url: https://www.linshunghuang.com/
 - name: Sergey Glazunov
+  bugs: [588929]
   date: 2010-10-11
 - name: gfleischer
+  bugs: [589041]
   date: 2010-10-11
 - name: Rain
   date: 2010-10-11
 - name: team509
+  bugs: [592477]
   date: 2010-10-11
 - name: Giorgio Maone of NoScript
+  bugs: [593174]
   date: 2010-10-11
   url: https://maone.net
 - name: Michal Zalewski
+  bugs: [602780]
   date: 2010-10-11
   url: http://lcamtuf.coredump.cx/
 - name: "Aki Helin"
